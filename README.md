@@ -1,6 +1,6 @@
 # Secure Contain RimWorld
 
-Adds objects and containment procedures from the SCP Foundation project. Includes creatures, weapons, apparel, objects, and factions.
+RimWorld mod that adds objects and containment procedures from the SCP Foundation project. Includes creatures, weapons, apparel, objects, and factions.
 
 Here's some links:
 
