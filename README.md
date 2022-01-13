@@ -32,6 +32,6 @@ Programming + art by DeeMainiac
 
 Original SCP Foundation logo by Far2 Licensed under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/3.0/)
 
-Content relating to the SCP Foundation, including the SCP Foundation logo, is licensed under Creative Commons Sharealike 3.0 and all concepts originate from http://www.scpwiki.com and its authors.
+Content relating to the SCP Foundation, including the SCP Foundation logo, is licensed under [Creative Commons Sharealike 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and all concepts originate from http://www.scpwiki.com and its authors.
 
 See the full credits file to see a much better representation of everything in particular, and the specifics about using this project's XML/art assets in your own projects. 
