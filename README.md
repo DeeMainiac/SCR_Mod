@@ -24,6 +24,7 @@ Also adds non-anomalous gear and apparel to help capture SCPs and keep those D-C
 Pay attention to an object's classifications to ensure the safety of your colonists. Or don't. There are three classifications: Containment class, Disruption class, and Risk class. They help indicate what effects the SCP has at a glance, and each one is listed in an object's information menu. A Safe, Dark, Notice-classed SCP doesn't mean it isn't dangerous.
 
 Some of the classifications may have been adjusted thanks to the Rim being quite different than the Foundation's normal stomping grounds (or are completely made up because they don't have vanilla/canon Disruption/Risk classes). 
+
 While knowing the SCP's entry can help in some cases, it isn't essential to play this mod.
 
 # Credits
