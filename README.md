@@ -12,7 +12,7 @@ STEAM  NEXUSMODS
 
 Adds several species of SCPs to wander the Rim; either neutral or outright hostile to pawn life.
 
-Adds anomalous weapons and apparel that add all sorts of effects. From a pistol that turns headshots into meals to a submachine gun that's alive and shoots teeth, you'll be surprised what you'll find in the hands of raiders or deep in ancient ruins.
+Adds anomalous weapons and apparel that add all sorts of effects. From a pistol that turns headshots into meals to a katana that makes a pawn crazy with power, you'll be surprised what you'll find in the hands of raiders or deep in ancient ruins.
 
 Adds special 'containment procedures' for all anomalous entities that can appear. From simple powered shelves that keep an object from degrading to specialized walls and security doodads to lock up the nastiest the Rim has to offer. Don't forget: If it has a will of it's own, it will probably try to escape!
 
