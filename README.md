@@ -14,7 +14,7 @@ Adds several species of SCPs to wander the Rim; either neutral or outright hosti
 
 Adds anomalous weapons and apparel that add all sorts of effects. From a pistol that turns headshots into meals to a katana that makes a pawn crazy with power, you'll be surprised what you'll find in the hands of raiders or deep in ancient ruins.
 
-Adds special 'containment procedures' for all anomalous entities that can appear. From simple powered shelves that keep an object from degrading to specialized walls and security doodads to lock up the nastiest the Rim has to offer. Don't forget: If it has a will of it's own, it will probably try to escape!
+Adds special 'containment procedures' for all anomalous entities that can appear. From simple powered shelves that keep an object from degrading to specialized walls and security doodads to lock up the nastiest the Rim has to offer. Don't forget: If it has a will of it's own, it will probably try to escape! Though not all SCPs have to be contained. After all, [SCP-5185](https://scp-wiki.wikidot.com/scp-5185)s are good boys.
 
 Adds event(s) and factions so your storyteller keeps you on your toes. From [SCP-3199](https://scp-wiki.wikidot.com/scp-3199) attacks to Chaos Insurgency [SCP-3033](https://scp-wiki.wikidot.com/scp-3033) raids, you'll see the weaponized forms of SCPs you'll be tempted to enact on others too.
 
