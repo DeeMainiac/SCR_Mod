@@ -10,7 +10,7 @@ STEAM  NEXUSMODS
 
 # Features
 
-Adds several species of SCPs to wander the Rim; either neutral or outright hostile to pawn life.
+Adds several species of SCPs to wander the Rim; either neutral or outright hostile to your colonists lives.
 
 Adds anomalous weapons and apparel that add all sorts of effects. From a pistol that turns headshots into meals to a katana that makes a pawn crazy with power, you'll be surprised what you'll find in the hands of raiders or deep in ancient ruins.
 
