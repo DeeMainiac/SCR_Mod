@@ -18,7 +18,7 @@ Adds event(s) and factions so your storyteller keeps you on your toes. From [SCP
 
 Adds non-anomalous gear and apparel to help capture SCPs and keep those D-Class in their place.
 
-Also adds special 'containment procedures' for all anomalous entities that can appear. From simple powered shelves that keep an object from degrading to specialized walls and security doodads to lock up the nastiest the Rim has to offer. Don't forget: If it has a will of it's own, it will probably try to escape! Though not all SCPs have to be contained. After all, [SCP-5185](https://scp-wiki.wikidot.com/scp-5185)s are good boys.
+Also adds special 'containment procedures' for all anomalous entities that can appear. From simple powered shelves that keep an object from degrading to specialized walls and security doodads to lock up the nastiest the Rim has to offer. Don't forget: If it has a will of it's own, it will probably try to escape! Though not all SCPs have to be contained... after all, [SCP-5185](https://scp-wiki.wikidot.com/scp-5185)s are good boys with a little training.
 
 Pay attention to an object's classifications to ensure the safety of your colonists. Or don't. There are three classifications: Containment class, Disruption class, and Risk class. They help indicate what effects the SCP has at a glance, and each one is listed in an object's information menu. A Safe, Dark, Notice-classed SCP doesn't mean it isn't dangerous.
 
