@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="EggFertBase">
+		<defName>SCR_SCP3199Egg</defName>
+		<label>SCP-3199 egg (fert.)</label>
+		<description>An egg regurgitated by an SCP-3199 instance. Contain it before it hatches.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CKeter</li>
+					<li>SCR_DKeneq</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>2</containmentTier>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval/EggOval_A</texPath>
+			<drawSize>1.5</drawSize>
+			<color>(219, 219, 206)</color>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<statBases>
+			<DeteriorationRate>0.001</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<MarketValue>0</MarketValue>
+		</statBases>
+		<ingestible>
+			<!-- to prevent pawns from being able to eat it -->
+			<foodType>Tree</foodType>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherPawn>SCR_SCP3199R</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

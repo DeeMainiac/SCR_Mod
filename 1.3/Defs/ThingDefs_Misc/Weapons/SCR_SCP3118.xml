@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCR_Bullet_SCP3188R</defName>
+    <label>pistol bullet</label>
+	<thingClass>SecureContainRimworld.SCR_Projectile_LunchGun</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>55</speed>
+	  
+    </projectile>
+  </ThingDef>
+  
+<ThingDef ParentName="BaseGun">
+    <defName>SCR_SCP3188R</defName>
+    <label>SCP-3188</label>
+    <description>SCP-3188 is a Beretta M9 that, upon hitting it's victim in the head, causes a previously eaten meal to appear next to that pawn.</description>
+    <modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+
+	<classRating>
+		<li>SCR_CSafe</li>
+		<li>SCR_DVlam</li>
+		<li>SCR_RNotice</li>
+	</classRating>
+	</li>
+	</modExtensions>
+	<graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/SCR_SCP3118</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<thingCategories>
+			<li>SCPWeapons</li>
+		</thingCategories>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <weaponTags>
+      <li>SimpleGun</li>
+	  <li>SCR_SCP</li>
+    </weaponTags>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+	    <relicChance>2</relicChance>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SCR_Bullet_SCP3188R</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>Shot_Autopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

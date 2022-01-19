@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ThoughtDef>
+    <defName>SCR_EquippedLivingWeapon</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_LivingWeaponEquipped</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>living weapon equipped</label>
+        <description>My weapon is alive.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SCR_EquippedLivingWeaponPsycho</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_LivingWeaponEquippedPsycho</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Psychopath</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>living weapon equipped</label>
+        <description>My weapon is alive.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SCR_EquippedKatana</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_EquippedKatana</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>SCP-572 equipped</label>
+        <description>This katana's balance is perfect! It's cutting power is immense... I will take their heads, and with it, their power. I am invincible!</description>
+        <baseMoodEffect>50</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SCR_MikeUnit</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_SCP3033Mike</workerClass>
+    <validWhileDespawned>false</validWhileDespawned>
+    <stages>
+      <li>
+        <label>SCP-3033-1 implant</label>
+        <description>My body is not my own, and is being used as a weapon.</description>
+        <baseMoodEffect>50</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  
+    <ThoughtDef>
+    <defName>SCR_MikeUnitIdle</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_SCP3033MikeIdle</workerClass>
+    <validWhileDespawned>false</validWhileDespawned>
+    <stages>
+      <li>
+        <label>SCP-3033-1 implant</label>
+        <description>Get this thing out of my head before I can't control myself again!</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+
+
+
+
+
+
+
+
+</Defs>

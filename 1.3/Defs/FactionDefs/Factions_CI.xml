@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<FactionDef ParentName="FactionBase">
+    <defName>SCR_CI</defName>
+    <label>Chaos Insurgency</label>
+    <description>A terrorist group of former SCP-Foundation personnel who have defected and stolen several SCPs from them. They use anomalies to build a utopian future, where humanity is the master of everything. They employ SCPs whenever advantageous and steal others to achieve their goals. They often test on lone, unsuspecting colonies and tribes much like the SCP-Foundation does on D-Class. While they do maintain a visible base or two, they still operate in roaming groups.</description>
+    <pawnSingular>insurgent</pawnSingular>
+    <pawnsPlural>insurgents</pawnsPlural>
+	<listOrderPriority>10</listOrderPriority>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Chaos Insurgency</fixedName>
+	<leaderTitle>Delta Commander</leaderTitle>
+	<leaderTitleFemale>Delta Commander</leaderTitleFemale>
+    <factionIconPath>World/WorldObjects/Expanding/ChaosInsurgency</factionIconPath>
+    <colorSpectrum>
+      <li>(1, 1, 1)</li>
+    </colorSpectrum>
+	<canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <humanlikeFaction>true</humanlikeFaction>
+	<leaderForceGenerateNewPawn>True</leaderForceGenerateNewPawn>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <techLevel>Spacer</techLevel>
+							<!-- Ideology dlc stuff -->
+	<allowedCultures><li>Astropolitan</li></allowedCultures>
+	<requiredMemes>
+	   <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+	   <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+	   <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+	</requiredMemes>
+	<disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+	</disallowedMemes>
+	<disallowedPrecepts>
+	</disallowedPrecepts>
+	
+	
+	
+	<pawnGroupMakers>
+	      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>0</commonality>
+        <options>
+          <Drifter>10</Drifter>
+          <Thrasher>3</Thrasher>
+          <Scavenger>10</Scavenger>
+          <Pirate>10</Pirate>
+          <Grenadier_EMP>0.25</Grenadier_EMP>
+          <Grenadier_Smoke>0.25</Grenadier_Smoke>
+          <Grenadier_Destructive>2</Grenadier_Destructive>
+          <Mercenary_Gunner>10</Mercenary_Gunner>
+          <Mercenary_Heavy>6</Mercenary_Heavy>
+          <Mercenary_Slasher>3</Mercenary_Slasher>
+          <Mercenary_Sniper>7</Mercenary_Sniper>
+          <Mercenary_Elite>10</Mercenary_Elite>
+		  <PirateBoss>10</PirateBoss>
+        </options>
+      </li>
+	
+	 <!-- SCP-3033-1 raids, melee-only -->
+	 <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <SCR_SCP30331_Mike>12</SCR_SCP30331_Mike>
+		  <SCR_SCP30332_Controller>1</SCR_SCP30332_Controller>
+        </options>
+      </li>
+	
+	      <li>
+        <!-- Base defense, mainly ranged with melee mix-ins -->
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Thrasher>3</Thrasher>
+          <Pirate>10</Pirate>
+          <Grenadier_Destructive>2</Grenadier_Destructive>
+          <Mercenary_Slasher>3</Mercenary_Slasher>
+          <Mercenary_Sniper>10</Mercenary_Sniper>
+          <Mercenary_Gunner>10</Mercenary_Gunner>
+          <Mercenary_Elite>10</Mercenary_Elite>
+          <PirateBoss>10</PirateBoss>
+		  <SCR_SCP30331_Mike>12</SCR_SCP30331_Mike>
+		  <SCR_SCP30332_Controller>1</SCR_SCP30332_Controller>
+        </options>
+      </li>
+	
+	</pawnGroupMakers>
+	
+    <naturalEnemy>true</naturalEnemy>
+     <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+        <commonality>0.5</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>0.25</commonality>
+      </li>
+	        <li>
+        <categories>
+          <li>Pirate</li>
+        </categories>
+        <commonality>0.25</commonality>
+      </li>
+    </backstoryFilters>
+     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>50</configurationListOrderPriority>
+  </FactionDef>
+  
+  </Defs>

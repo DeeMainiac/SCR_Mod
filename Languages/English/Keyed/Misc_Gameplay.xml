@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+
+
+<!-- Letter Incidents -->
+
+<LetterLabelSCP3199Attack>SCP-3199 Invasion</LetterLabelSCP3199Attack>
+<LetterSCP3199Attack>A flock of SCP-3199 have appeared.\n\nContain or kill them.\n\nThey will probably leave the area in a few days.</LetterSCP3199Attack>
+
+<LetterLabelContainmentBreach>Containment Breach</LetterLabelContainmentBreach>
+<LetterContainmentBreach>One or more SCPs are trying to escape containment!\n\nQuell their advances or kill them.</LetterContainmentBreach>
+
+<MBReason>The final straw was: </MBReason>
+
+<!-- SCP-specific messages -->
+
+<SCP113>SCP-113 changed the pawn's gender to </SCP113>
+<SCP113F>nothing happened.</SCP113F>
+
+<!-- unused -->
+
+<LetterLabelCISCP3033Raid>Chaos Insurgency Raid</LetterLabelCISCP3033Raid>
+<LetterCISCP3033Raid>The Chaos Insurgency has sent SCP-3033 "Mike" units to assault the colony.\n\nThey are attacking immediately.</LetterCISCP3033Raid>
+
+<LetterLabelCISCP3033RaidFriendly>Chaos Insurgency Reinforcements</LetterLabelCISCP3033RaidFriendly>
+<LetterCISCP3033RaidFriendly>The Chaos Insurgency has sent SCP-3033 "Mike" units to help you out.</LetterCISCP3033RaidFriendly>
+
+<!-- ///////////////////////Containment Procedures\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+<!-- I don't recommend translating the primary class names (i.e., 'Vlam'), since they're special classification words -->
+
+<SCR_Contain>Containment class</SCR_Contain>
+<SCR_Disrupt>Disruption class</SCR_Disrupt>
+<SCR_Risk>Risk class</SCR_Risk>
+
+<!-- Containment -->
+
+<SCR_CSafe>Safe</SCR_CSafe>
+<SCR_CSafeDesc>This SCP is fairly easy to contain, and probably can't break out of containment on its own.</SCR_CSafeDesc>
+
+<SCR_CEuclid>Euclid</SCR_CEuclid>
+<SCR_CEuclidDesc>This SCP can probably break out of containment by itself, but advanced containment methods help prevent this.</SCR_CEuclidDesc>
+
+<SCR_CKeter>Keter</SCR_CKeter>
+<SCR_CKeterDesc>This SCP is difficult to contain with advanced containment methods, or is resource intensive to do so.</SCR_CKeterDesc>
+
+<SCR_CThaumiel>Thaumiel</SCR_CThaumiel>
+<SCR_CThaumielDesc>This SCP contains or helps contain other SCPs.</SCR_CThaumielDesc>
+
+<SCR_CApollyon>Apollyon</SCR_CApollyon>
+<SCR_CApollyonDesc>This SCP is not containable by any means.</SCR_CApollyonDesc>
+
+
+<!-- Disruption -->
+
+<SCR_DDark>Dark</SCR_DDark>
+<SCR_DDarkDesc>Danger risk is incredibly low, that of no concern, or a danger to only a specific pawn or thing.</SCR_DDarkDesc>
+
+<SCR_DVlam>Vlam</SCR_DVlam>
+<SCR_DVlamDesc>A danger to a small group of pawns. It has a small range, and can be neutralized somewhat easily.</SCR_DVlamDesc>
+
+<SCR_DKeneq>Keneq</SCR_DKeneq>
+<SCR_DKeneqDesc>A danger to a moderate group of pawns. It has a moderate range, and has a similar difficulty to neutralize.</SCR_DKeneqDesc>
+
+<SCR_DEkhi>Ekhi</SCR_DEkhi>
+<SCR_DEkhiDesc>A danger to a large group of pawns, potentially worldwide. It spreads quickly and is quite the consuming task to deal with.</SCR_DEkhiDesc>
+
+<!-- heheh the player is Amida class -->
+
+<!-- Risk -->
+
+<SCR_RNotice>Notice</SCR_RNotice>
+<SCR_RNoticeDesc>This SCP is pretty much inert. It has little or no effect on the pawns around it.</SCR_RNoticeDesc>
+
+<SCR_RCaution>Caution</SCR_RCaution>
+<SCR_RCautionDesc>Mild or moderate effects emanate from this SCP.</SCR_RCautionDesc>
+
+<SCR_RWarning>Warning</SCR_RWarning>
+<SCR_RWarningDesc>Moderate to significant effects emanate from this SCP.</SCR_RWarningDesc>
+
+<SCR_RDanger>Danger</SCR_RDanger>
+<SCR_RDangerDesc>Significant to extreme effects emanate from this SCP.</SCR_RDangerDesc>
+
+<SCR_RCritical>Critical</SCR_RCritical>
+<SCR_RCriticalDesc>Near instant or extremely severe effects are felt from this SCP. Nearby pawns cannot recover from these effects.</SCR_RCriticalDesc>
+
+</LanguageData>

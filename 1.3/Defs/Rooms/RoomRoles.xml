@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RoomRoleDef>
+    <defName>SCR_ContainmentRoom</defName>
+    <label>containment room</label>
+    <workerClass>SecureContainRimworld.RoomRoleWorker_ContainmentRoom</workerClass>
+    <relatedStats>
+      <li>Cleanliness</li>
+	  <li>Space</li>
+    </relatedStats>
+  </RoomRoleDef>
+
+</Defs>

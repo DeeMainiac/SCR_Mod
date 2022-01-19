@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <IncidentDef>
+    <defName>SCR_Incident_SCP3199_Hunt</defName>
+    <label>SCP-3199 flock</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_SCP3199</workerClass>
+    <baseChance>2.0</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>ManhunterPack</tale>
+  </IncidentDef>
+  
+  <!--
+  <IncidentDef>
+    <defName>SCR_Incident_CI_SCP3033Raid</defName>
+    <label>Chaos Insurgency Raid</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_CI_SCP3033</workerClass>
+    <baseChance>5.0</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>Raid</tale>
+  </IncidentDef>
+-->
+
+  <IncidentDef>
+    <defName>SCR_Incident_ContainBreach</defName>
+    <label>Containment Breach</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_ContainmentBreach</workerClass>
+    <baseChance>5.0</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>Raid</tale>
+  </IncidentDef>
+</Defs>

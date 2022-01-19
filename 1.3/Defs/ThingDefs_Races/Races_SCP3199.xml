@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="SCR_SCP_Base">
+    <defName>SCR_SCP3199R</defName>
+    <label>SCP-3199</label>
+    <description>SCP-3199 is a bipedal humanoid that will attack its prey with claws and an acid-spray. Its eggs are difficult to get rid of, and each instance carries an egg with it shortly after birth. Killing an SCP-3199 will cause an egg to spawn.</description>
+	<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+
+	<classRating>
+		<li>SCR_CKeter</li>
+		<li>SCR_DKeneq</li>
+		<li>SCR_RNotice</li>
+	</classRating>
+
+	<containmentTier>2</containmentTier>
+	<willManhuntAfterBreach>true</willManhuntAfterBreach>
+	
+	</li>
+	</modExtensions>
+	
+	<statBases>
+      <MoveSpeed>6.9</MoveSpeed>
+      <MarketValue>300</MarketValue>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>300</ComfyTemperatureMax>
+	<FilthRate>18</FilthRate>
+    </statBases>
+	    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>SCR_SCP3199Egg</eggUnfertilizedDef>
+        <eggFertilizedDef>SCR_SCP3199Egg</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>1.5</eggLayIntervalDays>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <race>
+	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
+	<deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_SCP3199_SpawnEgg</deathActionWorkerClass>
+      <body>SCR_Neck</body>
+	  <herdAnimal>true</herdAnimal>
+      <predator>true</predator>
+	  <needsRest>false</needsRest>
+      <baseBodySize>2</baseBodySize>
+      <baseHungerRate>0.3</baseHungerRate>
+      <baseHealthScale>2.5</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+      <leatherDef>Leather_Patch</leatherDef>
+      <wildness>0.9</wildness>
+      <trainability>None</trainability>
+      <gestationPeriodDays>10</gestationPeriodDays>
+      <nameOnTameChance>1</nameOnTameChance>
+      <lifeExpectancy>30</lifeExpectancy>
+	  <manhunterOnTameFailChance>100</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>100</manhunterOnDamageChance>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2</minAge>
+          <soundWounded>Pawn_Wildboar_Wounded</soundWounded>
+          <soundDeath>Pawn_Wildboar_Death</soundDeath>
+          <soundCall>Pawn_Wildboar_Call</soundCall>
+          <soundAngry>Pawn_Wildboar_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tools>
+	<li>
+        <label>claws</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+  <!--
+  <ThingDef ParentName="BaseBullet">
+		<defName>SCR_AcidSpray</defName>
+		<label>acid spray</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>SCR_AcidDamage</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>30</speed>
+		</projectile>
+	</ThingDef>
+  -->
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SCR_SCP3199R</defName>
+    <label>SCP-3199</label>
+    <race>SCR_SCP3199R</race>
+    <combatPower>250</combatPower>
+
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP3199/SCR_SCP3199</texPath>
+          <drawSize>1</drawSize>
+		  <color>(219, 219, 206)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP3199/SCR_Dessicated_SCP3199</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP3199/SCR_SCP3199</texPath>
+          <drawSize>1.8</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData> 
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP3199/SCR_Dessicated_SCP3199</texPath>
+          <drawSize>1.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  </Defs>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>SCR_TranqGuns</defName>
+    <label>tranquilizers</label>
+	<tab>SCR_SCP</tab>
+    <description>Allows the production of tranquilizers or other non-lethal weapons to temporarily inhibit some SCPs in order to further contain them.</description>
+    <baseCost>900</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>BlowbackOperation</li>
+    </prerequisites>
+    <researchViewX>1.0</researchViewX>
+    <researchViewY>1.0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>SCR_ContainCrate</defName>
+    <label>basic containment crate</label>
+	<tab>SCR_SCP</tab>
+    <description>Allows for the construction of specialized, powered containment vessels for all different kinds of SCPs.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+    </prerequisites>
+    <researchViewX>1.0</researchViewX>
+    <researchViewY>2.0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>SCR_AdvContainCrate</defName>
+    <label>advanced containment crate</label>
+	<tab>SCR_SCP</tab>
+    <description>Allows for the construction of more advanced containment vessels for the harder to contain SCPs.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>SCR_ContainCrate</li>
+    </prerequisites>
+    <researchViewX>2.0</researchViewX>
+    <researchViewY>2.0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>SCR_WallTier1</defName>
+    <label>steel reinforced walls</label>
+	<tab>SCR_SCP</tab>
+    <description>Allows for the construction of concrete walls strengthened with steel rebar. Keeps some SCPs contained.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>2.0</researchViewX>
+    <researchViewY>3.0</researchViewY>
+  </ResearchProjectDef>
+  
+    <ResearchProjectDef>
+    <defName>SCR_WallTier2</defName>
+    <label>plasteel reinforced walls</label>
+	<tab>SCR_SCP</tab>
+    <description>Allows for the construction of concrete walls strengthened with plasteel rebar. Keeps most SCPs contained.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>SCR_WallTier1</li>
+    </prerequisites>
+    <researchViewX>3.0</researchViewX>
+    <researchViewY>3.0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>SCR_SecurityDoors</defName>
+    <label>security doors</label>
+	<tab>SCR_SCP</tab>
+    <description>Allows for the construction of reinforced doors to prevent SCPs from escaping containment whilst powered.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+	<li>SCR_WallTier1</li>
+    <li>Autodoors</li>
+    </prerequisites>
+    <researchViewX>2.0</researchViewX>
+    <researchViewY>4.0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>SCR_BlastDoors</defName>
+    <label>blast doors</label>
+	<tab>SCR_SCP</tab>
+    <description>Allows for the construction of strong blast doors to prevent SCPs from escaping containment, even without power to the doors.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+	<li>SCR_WallTier2</li>
+    <li>SCR_SecurityDoors</li>
+    </prerequisites>
+    <researchViewX>3.0</researchViewX>
+    <researchViewY>4.0</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

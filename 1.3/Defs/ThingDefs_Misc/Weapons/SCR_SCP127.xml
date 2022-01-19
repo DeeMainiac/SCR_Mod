@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BaseBullet">
+	<defName>SCR_Bullet_SCP127R</defName>
+	<label>tooth bullet</label>
+	<graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<projectile>
+		<flyOverhead>false</flyOverhead>
+		<damageDef>Bullet</damageDef>
+		<damageAmountBase>9</damageAmountBase>
+		<speed>55</speed>
+	</projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseGun">
+	<defName>SCR_SCP127R</defName>
+	<label>SCP-127</label>
+	<description>SCP-127 is a living MP5K that shoots humanlike teeth.</description>
+	    <modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+
+	<classRating>
+	<li>SCR_CSafe</li>
+	<li>SCR_DVlam</li>
+	<li>SCR_RCaution</li>
+	</classRating>	
+		<containmentTier>1</containmentTier>
+	</li>
+	</modExtensions>
+	<graphicData>
+		<texPath>Things/Item/Equipment/WeaponRanged/SCR_SCP127</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>Interact_SMG</soundInteract>
+	<weaponTags>
+	<li>SCR_SCP</li>
+	</weaponTags>
+	 <weaponClasses>
+      <li>RangedLight</li>
+      <li>ShortShots</li>
+    </weaponClasses>
+	 <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+	<statBases>
+		<MarketValue>400</MarketValue>
+		<Mass>5.5</Mass>
+		<AccuracyTouch>0.91</AccuracyTouch>
+		<AccuracyShort>0.71</AccuracyShort>
+		<AccuracyMedium>0.50</AccuracyMedium>
+		<AccuracyLong>0.32</AccuracyLong>
+		<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+	</statBases>
+			<thingCategories>
+			<li>SCPWeapons</li>
+		</thingCategories>
+		    <relicChance>2</relicChance>
+	<verbs>
+		<li>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>SCR_Bullet_SCP127R</defaultProjectile>
+			        <warmupTime>.5</warmupTime>
+			<range>23</range>
+			<soundCast>Shot_MachinePistol</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</li>
+	</verbs>
+</ThingDef>
+</Defs>
