@@ -24,6 +24,7 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Mod Version:**
+List the version and where you downloaded the mod from (i.e., Steam Workshop, etc.)
  -  [e.g. 22]
 
 
