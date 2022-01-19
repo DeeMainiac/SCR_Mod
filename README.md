@@ -1,4 +1,6 @@
-# Secure Contain RimWorld
+<img src="About/Preview.png">
+
+# What is it?
 
 [RimWorld](https://store.steampowered.com/app/294100/RimWorld/) mod that adds stuff from the [SCP Foundation](http://www.scpwiki.com) project. Includes creatures, weapons, apparel, objects, factions, and containment procedures.
 
