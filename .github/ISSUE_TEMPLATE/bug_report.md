@@ -27,6 +27,8 @@ If applicable, add screenshots to help explain your problem.
 List the version and where you downloaded the mod from (i.e., Steam Workshop, etc.)
  -  [e.g. 22]
 
+**Modlist**
+PLEASE do not have an incredible number of mods loaded for testing. Reduce your modlist down to very few mods. 
 
 **Additional context**
 Add any other context about the problem here.
