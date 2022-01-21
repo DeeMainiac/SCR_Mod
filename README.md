@@ -36,6 +36,4 @@ SCP-113, SCP-127, SCP-250, SCP-262, SCP-475, SCP-529, SCP-572, SCP-762, SCP-3033
 
 Programming + art by DeeMainiac
 
-Content relating to the SCP Foundation, including the SCP Foundation logo, is licensed under [Creative Commons Sharealike 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and all concepts originate from http://www.scpwiki.com and its authors.
-
-See the full credits file to see a much better representation of everything in particular, and the specifics about using this project's XML/art assets in your own projects. 
+Content relating to the SCP Foundation, including the SCP Foundation logo, is licensed under [Creative Commons Sharealike 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and all concepts originate from http://www.scpwiki.com and its authors. This includes the sprites/xml in this project as well. However, keep in mind most sprites I've done for this project are spliced, so I don't recommend using them anywhere but for the context of RimWorld.
