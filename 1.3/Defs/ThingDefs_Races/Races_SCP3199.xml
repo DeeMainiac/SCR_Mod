@@ -34,6 +34,7 @@
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>1.5</eggLayIntervalDays>
         <eggCountRange>1</eggCountRange>
+		<eggLayFemaleOnly>false</eggLayFemaleOnly>
       </li>
     </comps>
     <race>
@@ -53,8 +54,8 @@
       <gestationPeriodDays>10</gestationPeriodDays>
       <nameOnTameChance>1</nameOnTameChance>
       <lifeExpectancy>30</lifeExpectancy>
-	  <manhunterOnTameFailChance>100</manhunterOnTameFailChance>
-	  <manhunterOnDamageChance>100</manhunterOnDamageChance>
+	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>

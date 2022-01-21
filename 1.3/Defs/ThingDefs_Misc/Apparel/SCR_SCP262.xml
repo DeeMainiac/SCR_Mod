@@ -12,8 +12,8 @@
 		<li>SCR_CEuclid</li>
 		<li>SCR_DVlam</li>
 		<li>SCR_RNotice</li>
-
 	</classRating>	
+	
 	</li>
 	</modExtensions>
 		<graphicData>
@@ -33,7 +33,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>+0.5</MoveSpeed>
-			<WorkSpeedGlobal>+0.5</WorkSpeedGlobal>
+			<WorkSpeedGlobal>+0.75</WorkSpeedGlobal>
 			<MeleeHitChance>0.3</MeleeHitChance>
 			<MeleeDodgeChance>+.1</MeleeDodgeChance>
 			<AimingDelayFactor>-0.05</AimingDelayFactor>

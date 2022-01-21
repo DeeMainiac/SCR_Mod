@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingSetMakerDef[defName="MapGen_AncientTempleContents"]/root[@Class="ThingSetMaker_Sum"]/options[1]/thingSetMaker[@Class="ThingSetMaker_Count"]/fixedParams/filter/thingDefs</xpath>		
+        <success>Always</success>
+        <value>
+              <li>SCR_SCP475R</li>
+              <li>SCR_SCP113R</li>
+			  <li>SCR_SCP762R</li>
+			  <li>SCR_SCP127R</li>
+			  <li>SCR_SCP572R</li>
+			  <li>SCR_SCP3118R</li>
+			  <li>SCR_SCP262R</li>
+        </value>
+    </Operation>
+</Patch>

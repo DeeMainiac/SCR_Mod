@@ -3,7 +3,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCR_SCP475R</defName>
 		<label>SCP-475</label>
-		<description>SCP-475 is a small pope carved from soap. It cleans the user greatly, and increases their ideoligious fervor towards their current ideoligion (requires Ideology).</description>
+		<description>SCP-475 is a small pope carved from a bar of soap. It cleans the user and increases their ideoligious fervor towards their current ideoligion (requires Ideology).</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -38,15 +38,15 @@
 			<Beauty>6</Beauty>
 		</statBases>
 		<comps>
+		<!-- TODO: add compatibility with dub's hygiene-->
 			<li Class="CompProperties_Usable">
 				<useJob>UseArtifact</useJob>
 				<useLabel>Use</useLabel>
 				<useDuration>60</useDuration>
 			</li>
-			<!-- doesn't work yet, try making a custom compproperty
-			<li MayRequire="Ludeon.RimWorld.Ideology" Class="CompProperties_AbilityReassure">
-				<baseCertaintyGain>1</baseCertaintyGain>
-			</li> -->
+			<li MayRequire="Ludeon.RimWorld.Ideology" Class="CompProperties_UseEffect">
+				<compClass>SecureContainRimworld.CompUseEffect_UseSCP475</compClass>
+			</li>
 		</comps>
 	</ThingDef>
 </Defs>

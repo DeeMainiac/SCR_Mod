@@ -22,27 +22,7 @@
 		<li>brrainz.harmony</li>
 </loadAfter>
 
-<description>Adds objects and containment procedures from the SCP Foundation project. Includes creatures, weapons, apparel, artifacts, and factions.
+<description>Adds stuff from the SCP Foundation project. Includes creatures, weapons, apparel, objects, factions, buildings, research projects, furniture, and containment procedures.</description>
 
-&lt;size=24&gt;Current SCPs&lt;/size&gt;
-
-SCP-113, SCP-127, SCP-250, SCP-262, SCP-529, SCP-572, SCP-3033 (1 and 2), SCP-3118, SCP-3199, SCP-5185
-
-
-&lt;size=24&gt;Compatibility&lt;/size&gt;
-
-I recommend having Ideology, but it's optional.
-
-no compatibility/incompatibility information yet. Although I'm pretty sure there's no compatibility with Combat Extended.
-
-&lt;size=24&gt;Credits&lt;/size&gt;
-
-Programming + art by DeeMainiac
-
-Content relating to the SCP Foundation, including the SCP Foundation logo, is licensed under Creative Commons Sharealike 3.0 and all concepts originate from http://www.scpwiki.com and its authors.
-That being said, head to the GitHub page to see the full, unadulterated credits.
-
-
-</description>
 </ModMetaData>
   <!-- =================================================================== -->

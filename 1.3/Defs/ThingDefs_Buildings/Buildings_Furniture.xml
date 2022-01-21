@@ -2,12 +2,12 @@
 <Defs>
 
 <ThingDef ParentName="FurnitureWithQualityBase" Name="SCR_ShelfBase" Abstract="True">
-    <thingClass>Building_Storage</thingClass>
+    <thingClass>SecureContainRimworld.Building_SCRShelfStorage</thingClass>
 	<graphicData>
       <texPath>Things/Building/Furniture/Shelf</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3,2)</drawSize>
-    </graphicData>
+    </graphicData>	
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
