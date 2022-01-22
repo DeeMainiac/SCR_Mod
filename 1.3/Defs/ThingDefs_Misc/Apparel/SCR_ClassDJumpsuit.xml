@@ -40,11 +40,7 @@
       <layers>
         <li>OnSkin</li>
       </layers>
-      <tags>
-        <li>IndustrialBasic</li>
-      </tags>
 	  <defaultOutfitTags>
-        <li>Worker</li>
         <li>Slave</li>
       </defaultOutfitTags>
     </apparel>
@@ -53,11 +49,9 @@
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
-        <li>CraftingSpot</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
-	<!-- Fix colors not behaving-->
 
 </Defs>
 
