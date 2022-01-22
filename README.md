@@ -6,9 +6,7 @@
 
 Here's some links:
 
-STEAM  NEXUSMODS
-
-[Trello](https://trello.com/b/k7sHcryO/scr) for upcoming features and other things like that
+STEAM  NEXUSMODS [Trello](https://trello.com/b/k7sHcryO/scr) for upcoming features
 
 # Features
 
