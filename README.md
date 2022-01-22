@@ -14,7 +14,7 @@ Adds several species of SCPs to wander the Rim; either neutral or outright hosti
 
 Adds anomalous weapons and apparel that add all sorts of effects. From a pistol that turns headshots into meals to a katana that makes a pawn crazy with power, you'll be surprised what you'll find in the hands of raiders or deep in ancient ruins.
 
-Adds event(s) and factions so your storyteller keeps you on your toes. From [SCP-3199](https://scp-wiki.wikidot.com/scp-3199) attacks to Chaos Insurgency [SCP-3033](https://scp-wiki.wikidot.com/scp-3033) raids, you'll see the weaponized forms of SCPs you'll be tempted to use too.
+Adds events and factions so your storyteller keeps you on your toes. From [SCP-3199](https://scp-wiki.wikidot.com/scp-3199) attacks to Chaos Insurgency [SCP-3033](https://scp-wiki.wikidot.com/scp-3033) raids, you'll see the weaponized forms of SCPs you'll be tempted to use too.
 
 Adds non-anomalous gear and apparel to help capture SCPs and keep those D-Class in their place.
 
