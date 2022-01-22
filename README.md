@@ -6,11 +6,11 @@
 
 Here's some links:
 
-STEAM  NEXUSMODS [Trello](https://trello.com/b/k7sHcryO/scr) for upcoming features
+[Steam Workshop (download link)](https://steamcommunity.com/sharedfiles/filedetails/?id=2728183627) | [Trello (for future features)](https://trello.com/b/k7sHcryO/scr) 
 
 # Features
 
-Adds several species of SCPs to wander the Rim; either neutral or outright hostile to your colonists lives.
+Adds several species of SCPs to wander the Rim; either neutral or outright hostile to your colonists lives. Some are traded across the Rim as pets, others are found out in the wilderness.
 
 Adds anomalous weapons and apparel that add all sorts of effects. From a pistol that turns headshots into meals to a katana that makes a pawn crazy with power, you'll be surprised what you'll find in the hands of raiders or deep in ancient ruins.
 
@@ -26,9 +26,9 @@ Some of the classifications may have been adjusted thanks to the Rim being quite
 
 While knowing the SCP's entry can help in some cases, it isn't essential to play this mod.
 
-# Current SCPs you can encounter
+# Current SCPs
 
-SCP-113, SCP-127, SCP-250, SCP-262, SCP-475, SCP-529, SCP-572, SCP-762, SCP-3033 (1 and 2), SCP-3118, SCP-3199, SCP-5185
+SCP-113 (The Gender-Switcher), SCP-127(The Living Gun), SCP-250(Most of an Allosaurus), SCP-262(A Coat of Many Arms), SCP-475(Soap of a Pope), SCP-529(Josie the Half-Cat), SCP-572(Katana of Apparent Invincibility), SCP-762(Immortal Iron Maiden), SCP-3033 (1 and 2)(A Human Weapon), SCP-3118(Lunch Gun), SCP-3199(Humans, Refuted), SCP-5185(fine spiders by dado)
 
 # Credits
 
