@@ -4,7 +4,7 @@
 <ThingDef ParentName="BuildingBase">
 		<defName>SCR_SCP762R</defName>
 		<label>SCP-762</label>
-		<description>SCP-762 is an ancient Iron Maiden that keeps it's prisoner in a state of suspended animation painfully.</description>
+		<description>SCP-762 is an ancient iron maiden that keeps it's prisoner in a state of suspended animation... painfully.</description>
 				<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -44,17 +44,12 @@
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<size>(2,2)</size>
-		<designationCategory>Misc</designationCategory>
 		<hasInteractionCell>true</hasInteractionCell>
 		<interactionCellOffset>(1,0,0)</interactionCellOffset>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
 			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
 		</building>
-		<costList>
-			<Steel>250</Steel>
-			<ComponentIndustrial>4</ComponentIndustrial>
-		</costList>
 		<comps>
 			<li Class="CompProperties_EmptyStateGraphic">
 				<graphicData>

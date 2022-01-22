@@ -9,7 +9,7 @@
     <baseCost>900</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
-      <li>BlowbackOperation</li>
+      <li>Gunsmithing</li>
     </prerequisites>
     <researchViewX>1.0</researchViewX>
     <researchViewY>1.0</researchViewY>
