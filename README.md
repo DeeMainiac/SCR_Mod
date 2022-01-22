@@ -39,8 +39,8 @@ Programming + art by DeeMainiac
 Content relating to the SCP Foundation, including the SCP Foundation logo, is licensed under [Creative Commons Sharealike 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and all concepts originate from http://www.scpwiki.com and its authors. This includes the sprites/xml in this project as well. However, keep in mind most sprites I've done for this project are spliced, so I don't recommend using them anywhere but for the context of RimWorld.
 
 
-# Contact me
+# Contact
 
-send a bug report right here on GitHub
+Send a bug report right here on GitHub
 
 @me on the RimWorld discord (DeeMainiac#2893) preferably in #mod-general 
