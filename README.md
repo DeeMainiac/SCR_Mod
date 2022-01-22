@@ -28,7 +28,7 @@ Some of the classifications may have been adjusted thanks to the Rim being quite
 
 While knowing the SCP's entry can help in some cases, it isn't essential to play this mod.
 
-# Current SCPs you can encounter (in varying levels of finished)
+# Current SCPs you can encounter
 
 SCP-113, SCP-127, SCP-250, SCP-262, SCP-475, SCP-529, SCP-572, SCP-762, SCP-3033 (1 and 2), SCP-3118, SCP-3199, SCP-5185
 
