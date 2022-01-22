@@ -42,4 +42,5 @@ Content relating to the SCP Foundation, including the SCP Foundation logo, is li
 # Contact me
 
 send a bug report right here on GitHub
+
 @me on the RimWorld discord (DeeMainiac#2893) preferably in #mod-general 
