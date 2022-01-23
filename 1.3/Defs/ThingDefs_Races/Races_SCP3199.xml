@@ -46,7 +46,7 @@
 	  <needsRest>false</needsRest>
       <baseBodySize>2</baseBodySize>
       <baseHungerRate>0.3</baseHungerRate>
-      <baseHealthScale>2.5</baseHealthScale>
+      <baseHealthScale>2</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
       <leatherDef>Leather_Patch</leatherDef>
       <wildness>0.9</wildness>
