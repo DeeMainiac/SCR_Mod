@@ -31,7 +31,11 @@
 		</thingCategories>
 		<tradeTags>
 			<li>Artifact</li>
+			<li>ExoticMisc</li>
 		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.001</Mass>
 			<MarketValue>1000</MarketValue>

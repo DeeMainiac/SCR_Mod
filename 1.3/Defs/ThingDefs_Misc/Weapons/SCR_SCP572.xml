@@ -1,62 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-<ThingDef ParentName="BaseWeapon">
-    <defName>SCR_SCP572R</defName>
-    <label>SCP-572</label>
-    <description>SCP-572 is a katana in poor condition that makes its user believe they are capable of dangerous feats. This drives them to violence.</description>
-    	
+	<ThingDef ParentName="BaseWeapon">
+		<defName>SCR_SCP572R</defName>
+		<label>SCP-572</label>
+		<description>SCP-572 is a katana in poor condition that makes its user believe they are capable of dangerous feats. This drives them to violence.</description>
 		<modExtensions>
-		<li Class="SecureContainRimworld.CProceduresExtension">
-
-	<classRating>
-		<li>SCR_CSafe</li>
-		<li>SCR_DVlam</li>
-		<li>SCR_RCaution</li>
-	</classRating>	
-	</li>
-	</modExtensions>
-	
-	<smeltable>false</smeltable>
-    <burnableByRecipe>false</burnableByRecipe>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DVlam</li>
+					<li>SCR_RCaution</li>
+				</classRating>
+			</li>
+		</modExtensions>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
 		<thingCategories>
 			<li>SCPWeapons</li>
 		</thingCategories>
-    <weaponClasses>
-      <li>Melee</li>
-    </weaponClasses>
-	<graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/SCR_SCP572</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <weaponTags>
-      <li>MedievalMeleeAdvanced</li>
-      <li>LongSword</li>
-	  <li>SCR_SCP</li>
-    </weaponTags>
-	 <!-- No one wants to buy this thing lol
-	 <tradeTags>
-      <li>ExoticMisc</li>
-    </tradeTags> -->
-    <statBases>
-      <Mass>1.5</Mass>
-    </statBases>
-    <relicChance>2</relicChance>
-    <equippedAngleOffset>-65</equippedAngleOffset>
-    <tools>
-      <li>
-        <label>edge</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>3</power>
-        <cooldownTime>1</cooldownTime>
-      </li>
-    </tools>
-  </ThingDef>
-
-
-
-
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/SCR_SCP572</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>LongSword</li>
+			<li>SCR_SCP</li>
+		</weaponTags>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<MarketValue>400</MarketValue>
+			<Mass>1.5</Mass>
+		</statBases>
+		<relicChance>2</relicChance>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 </Defs>
