@@ -126,7 +126,7 @@
     <defName>SCR_SCP3199R</defName>
     <label>SCP-3199</label>
     <race>SCR_SCP3199R</race>
-    <combatPower>250</combatPower>
+    <combatPower>200</combatPower>
 
     <lifeStages>
       <li>
