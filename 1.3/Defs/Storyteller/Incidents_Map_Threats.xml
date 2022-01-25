@@ -9,7 +9,7 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP3199</workerClass>
-    <baseChance>7.0</baseChance>
+    <baseChance>5.0</baseChance>
     <category>ThreatBig</category>
     <pointsScaleable>true</pointsScaleable>
     <tale>ManhunterPack</tale>
