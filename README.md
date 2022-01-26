@@ -36,7 +36,7 @@ SCP-572(Katana of Apparent Invincibility), SCP-762(Immortal Iron Maiden),
 
 SCP-3033 (1 and 2)(A Human Weapon), SCP-3118(Lunch Gun), SCP-3199(Humans, Refuted),
 
-SCP-5185(fine spiders by dado), SCP-5893(Ignitive Stygimolochs)
+SCP-5185(fine spiders by dado), (not on steam and unfinished) SCP-5893(Ignitive Stygimolochs)
 
 # Credits
 
