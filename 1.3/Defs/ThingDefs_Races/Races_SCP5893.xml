@@ -9,7 +9,7 @@
 				<classRating>
 					<li>SCR_CEuclid</li>
 					<li>SCR_DKeneq</li>
-					<li>SCR_RWarning</li>
+					<li>SCR_RDanger</li>
 				</classRating>
 				<containmentTier>1</containmentTier>
 			</li>
@@ -57,18 +57,18 @@
 			<manhunterOnTameFailChance>.7</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<wildBiomes>
-				<AridShrubland>.02</AridShrubland>
-				<BorealForest>.04</BorealForest>
-				<ColdBog>.02</ColdBog>
-				<TemperateForest>.04</TemperateForest>
-				<TemperateSwamp>.04</TemperateSwamp>
-				<TropicalRainforest>.04</TropicalRainforest>
-				<TropicalSwamp>.04</TropicalSwamp>
+				<AridShrubland>.2</AridShrubland>
+				<BorealForest>.1</BorealForest>
+				<ColdBog>.2</ColdBog>
+				<TemperateForest>.1</TemperateForest>
+				<TemperateSwamp>.1</TemperateSwamp>
+				<TropicalRainforest>.1</TropicalRainforest>
+				<TropicalSwamp>.1</TropicalSwamp>
 				<IceSheet>0</IceSheet>
 				<SeaIce>0</SeaIce>
-				<Tundra>.02</Tundra>
-				<Desert>.02</Desert>
-				<ExtremeDesert>.02</ExtremeDesert>
+				<Tundra>.2</Tundra>
+				<Desert>.2</Desert>
+				<ExtremeDesert>.2</ExtremeDesert>
 			</wildBiomes>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>25</lifeExpectancy>
@@ -106,34 +106,26 @@
 			<li>
 				<label>head</label>
 				<capacities>
-					<li>Blunt</li>
+					<li>SCR_Flame</li>
 				</capacities>
-				<power>14</power>
+				<power>12</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>10</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
 			</li>
 			<li>
 				<label>teeth</label>
 				<capacities>
 					<li>Bite</li>
-					<li>Cut</li>
+					<li>SCR_Flame</li>
 				</capacities>
-				<power>16</power>
+				<power>6</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.7</chanceFactor>
+				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
+		
+
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCR_SCP5893R</defName>
@@ -150,8 +142,8 @@
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP5893/SCR_SCP5893</texPath>
-					<drawSize>.5</drawSize>
+					<texPath>Things/Pawn/Animal/SCR_SCP5893/SCR_Dessicated_SCP5893</texPath>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
@@ -160,8 +152,8 @@
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP5893/SCR_SCP5893</texPath>
-					<drawSize>1.75</drawSize>
+					<texPath>Things/Pawn/Animal/SCR_SCP5893/SCR_Dessicated_SCP5893</texPath>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
@@ -170,8 +162,8 @@
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP5893/SCR_SCP5893</texPath>
-					<drawSize>1</drawSize>
+					<texPath>Things/Pawn/Animal/SCR_SCP5893/SCR_Dessicated_SCP5893</texPath>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

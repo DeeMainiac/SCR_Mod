@@ -55,18 +55,18 @@
 	  <manhunterOnTameFailChance>.7</manhunterOnTameFailChance>
 	  <manhunterOnDamageChance>1</manhunterOnDamageChance>
 	  			<wildBiomes>
-				<AridShrubland>.02</AridShrubland>
+				<AridShrubland>.1</AridShrubland>
 				<BorealForest>0</BorealForest>
 				<ColdBog>0</ColdBog>
-				<TemperateForest>.004</TemperateForest>
-				<TemperateSwamp>.004</TemperateSwamp>
+				<TemperateForest>.04</TemperateForest>
+				<TemperateSwamp>.04</TemperateSwamp>
 				<TropicalRainforest>0</TropicalRainforest>
 				<TropicalSwamp>0</TropicalSwamp>
 				<IceSheet>0</IceSheet>
 				<SeaIce>0</SeaIce>
 				<Tundra>0</Tundra>
-				<Desert>.02</Desert>
-				<ExtremeDesert>.02</ExtremeDesert>
+				<Desert>.2</Desert>
+				<ExtremeDesert>.1</ExtremeDesert>
 			</wildBiomes>
       <gestationPeriodDays>20</gestationPeriodDays>
       <lifeExpectancy>20</lifeExpectancy>

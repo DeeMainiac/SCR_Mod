@@ -66,7 +66,7 @@
           <minAge>0.2</minAge>
           <soundWounded>Pawn_Wildboar_Wounded</soundWounded>
           <soundDeath>Pawn_Wildboar_Death</soundDeath>
-          <soundCall>Pawn_Wildboar_Call</soundCall>
+          <soundCall>Pawn_Wildboar_Wounded</soundCall>
           <soundAngry>Pawn_Wildboar_Angry</soundAngry>
         </li>
       </lifeStageAges>
