@@ -71,7 +71,18 @@
     </stages>
   </ThoughtDef>
 
-
+   <ThoughtDef>
+    <defName>SCR_Infected_SCP1797</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_KittenFlu</workerClass>
+    <validWhileDespawned>false</validWhileDespawned>
+    <stages>
+      <li>
+        <label>SCP-1797</label>
+        <description>I'm growing tumors! They're kind of shaped like cats...</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef> 
 
 
 
