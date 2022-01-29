@@ -32,7 +32,7 @@ SCP-113 (The Gender-Switcher), SCP-127(The Living Gun), SCP-250(Most of an Allos
 
 SCP-262(A Coat of Many Arms), SCP-475(Soap of a Pope), SCP-529(Josie the Half-Cat),
 
-SCP-572(Katana of Apparent Invincibility), SCP-762(Immortal Iron Maiden),(Not on steam yet) SCP-1797(Kitten Flu)
+SCP-572(Katana of Apparent Invincibility), SCP-762(Immortal Iron Maiden), SCP-1797(Kitten Flu)
 
 SCP-3033 (1 and 2)(A Human Weapon), SCP-3118(Lunch Gun), SCP-3199(Humans, Refuted),
 
