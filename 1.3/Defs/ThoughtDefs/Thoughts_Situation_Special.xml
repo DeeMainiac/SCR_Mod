@@ -77,9 +77,9 @@
     <validWhileDespawned>false</validWhileDespawned>
     <stages>
       <li>
-        <label>SCP-1797</label>
+        <label>Sick with SCP-1797</label>
         <description>I'm growing tumors! They're kind of shaped like cats...</description>
-        <baseMoodEffect>-5</baseMoodEffect>
+        <baseMoodEffect>-8</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef> 
