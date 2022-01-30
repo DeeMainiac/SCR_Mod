@@ -6,7 +6,7 @@
 
 Here's some links:
 
-[Steam Workshop (download link)](https://steamcommunity.com/sharedfiles/filedetails/?id=2728183627) | [Trello (for future features)](https://trello.com/b/k7sHcryO/scr) 
+[Steam Workshop (download link)](https://steamcommunity.com/sharedfiles/filedetails/?id=2728183627) | [Trello (for future features)](https://trello.com/b/k7sHcryO/scr) | [Wiki (for a tutorial for modders)](https://github.com/DeeMainiac/SCR_Mod/wiki)
 
 # Features
 
