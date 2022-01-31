@@ -1,172 +1,163 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-<ThingDef ParentName="FurnitureWithQualityBase" Name="SCR_ShelfBase" Abstract="True">
-    <thingClass>SecureContainRimworld.Building_SCRShelfStorage</thingClass>
-	<graphicData>
-      <texPath>Things/Building/Furniture/Shelf</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3,2)</drawSize>
-    </graphicData>	
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.4</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
-	<pathCost>100</pathCost>
-    <stuffCategories>
-      <li>Metallic</li>
-    </stuffCategories>
-    <costStuffCount>30</costStuffCount>
-    <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
-      <Mass>8</Mass>
-      <WorkToBuild>600</WorkToBuild>
-      <Flammability>0.0</Flammability>
-      <Beauty>-0.5</Beauty>
-    </statBases>
-    <size>(2,1)</size>
-	    <defaultPlacingRot>South</defaultPlacingRot>
-    <building>
-      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <fixedStorageSettings>
-        <filter>
-          <disallowNotEverStorable>true</disallowNotEverStorable>
-          <categories>
-            <li>SCPWeapons</li>
-			<li>SCPApparel</li>
-			<li>SCPObjects</li>
-          </categories>
-        </filter>
-      </fixedStorageSettings>
-      <defaultStorageSettings>
-        <priority>Important</priority>
-        <filter>
-          <categories>
-            <li>SCPWeapons</li>
-			<li>SCPApparel</li>
-          </categories>
-        </filter>
-      </defaultStorageSettings>
-    </building>
-	    <inspectorTabs>
-      <li>ITab_Storage</li>
-    </inspectorTabs>
-	<surfaceType>Item</surfaceType>
-    <canOverlapZones>false</canOverlapZones>
-    <researchPrerequisites>
-      <li>ComplexFurniture</li>
-    </researchPrerequisites>
-	 <comps>
-          <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>250</basePowerConsumption>
-      </li>
-	  <li Class="CompProperties_Glower">
-        <glowRadius>3</glowRadius>
-        <glowColor>(217,217,208,0)</glowColor>
-      </li>
-    </comps>
-</ThingDef>
-
-
-<ThingDef ParentName="SCR_ShelfBase">
-    <defName>SCR_Shelf</defName>
-    <label>Containment Crate</label>
-    <description>Simple weapon or apparel containment for SCPs. Includes liquids or other resources required for their containment or feeding. Requires power.</description>
-    <researchPrerequisites>
-	<li>SCR_ContainCrate</li>
-	</researchPrerequisites>
-  </ThingDef>
-
-  <ThingDef ParentName="SCR_ShelfBase">
-    <defName>SCR_AdvShelf</defName>
-    <label>Advanced Containment Crate</label>
-    <description>more secure crate for containing SCPs in. Includes more advanced features such as immobilization or acid baths. Requires power.</description>
-	<researchPrerequisites>
-	<li>SCR_AdvContainCrate</li>
-	</researchPrerequisites>
-  </ThingDef>
- 
-  <ThingDef ParentName="SCR_ShelfBase">
-    <defName>SCR_ContainPedestal</defName>
-    <label>Containment Pedestal</label>
-    <description>Pedestal capable of containing most inanimate, small object SCPs. Requires power.</description>
-      <graphicData>
-      <texPath>Things/Furniture/SCR_ContainmentPedestal</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,1)</drawSize>
-	  <drawRotated>false</drawRotated>
-    </graphicData>
-	
-	    <castEdgeShadows>false</castEdgeShadows>
-	    <size>(1,1)</size>
-	  <stuffCategories>
-      <li>Metallic</li>
-	  <li>Stony</li>
-    </stuffCategories>
-	<costStuffCount>30</costStuffCount>
-    <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
-      <Mass>5</Mass>
-      <WorkToBuild>1000</WorkToBuild>
-      <Flammability>0.0</Flammability>
-      <Beauty>-0.5</Beauty>
-    </statBases>
-	<building>
-	    <defaultStorageSettings>
-        <priority>Important</priority>
-        <filter>
-          <categories>
-			<li>SCPObjects</li>
-          </categories>
-        </filter>
-      </defaultStorageSettings>
-	</building>
-	<researchPrerequisites>
-	<li>SCR_ContainCrate</li>
-	</researchPrerequisites>
-  </ThingDef>
-  
-    <ThingDef ParentName="SCR_ShelfBase">
-    <defName>SCR_AdvContainPedestal</defName>
-    <label>Advanced Containment Pedestal</label>
-    <description>Pedestal capable of containing most, if not all, inanimate, small object SCPs. Includes more advanced features like immobilization or acid baths. Requires power.</description>
-      <graphicData>
-      <texPath>Things/Furniture/SCR_ContainmentPedestal</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,1)</drawSize>
-      <drawRotated>false</drawRotated>
-    </graphicData>
-	<castEdgeShadows>false</castEdgeShadows>
-		<size>(1,1)</size>
-	  <stuffCategories>
-      <li>Metallic</li>
-	  <li>Stony</li>
-    </stuffCategories>
-	    <costStuffCount>70</costStuffCount>
-    <statBases>
-      <MaxHitPoints>700</MaxHitPoints>
-      <Mass>5</Mass>
-      <WorkToBuild>1000</WorkToBuild>
-      <Flammability>0.0</Flammability>
-      <Beauty>1</Beauty>
-    </statBases>
+	<ThingDef ParentName="FurnitureWithQualityBase" Name="SCR_ShelfBase" Abstract="True">
+		<thingClass>SecureContainRimworld.Building_SCRShelfStorage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Shelf</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+		</graphicData>
+		<tickerType>Long</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>100</pathCost>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-0.5</Beauty>
+		</statBases>
+		<size>(2,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		<building>
-	    <defaultStorageSettings>
-        <priority>Important</priority>
-        <filter>
-          <categories>
-			<li>SCPObjects</li>
-          </categories>
-        </filter>
-      </defaultStorageSettings>
-	</building>
-	
-	<researchPrerequisites>
-	<li>SCR_AdvContainCrate</li>
-	</researchPrerequisites>
-  </ThingDef>
-
- 
-  </Defs>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>SCPWeapons</li>
+						<li>SCPApparel</li>
+						<li>SCPObjects</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>SCPWeapons</li>
+						<li>SCPApparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="SCR_ShelfBase">
+		<defName>SCR_Shelf</defName>
+		<label>Containment Crate</label>
+		<description>Simple weapon or apparel containment for SCPs. Includes liquids or other resources required for their containment or feeding. Requires power.</description>
+		<researchPrerequisites>
+			<li>SCR_ContainCrate</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<ThingDef ParentName="SCR_ShelfBase">
+		<defName>SCR_AdvShelf</defName>
+		<label>Advanced Containment Crate</label>
+		<description>Very secure crate for containing SCPs in. Includes more advanced features such as immobilization or acid baths. Requires power.</description>
+		<researchPrerequisites>
+			<li>SCR_AdvContainCrate</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<ThingDef ParentName="SCR_ShelfBase">
+		<defName>SCR_ContainPedestal</defName>
+		<label>Containment Pedestal</label>
+		<description>Pedestal capable of containing most inanimate, small object SCPs. Requires power.</description>
+		<graphicData>
+			<texPath>Things/Furniture/SCR_ContainmentPedestal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>5</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>-0.5</Beauty>
+		</statBases>
+		<building>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>SCPObjects</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<researchPrerequisites>
+			<li>SCR_ContainCrate</li>
+		</researchPrerequisites>
+	</ThingDef>
+	<ThingDef ParentName="SCR_ShelfBase">
+		<defName>SCR_AdvContainPedestal</defName>
+		<label>Advanced Containment Pedestal</label>
+		<description>Pedestal capable of containing most, if not all, inanimate, small object SCPs. Includes more advanced features like immobilization or acid baths. Requires power.</description>
+		<graphicData>
+			<texPath>Things/Furniture/SCR_ContainmentPedestal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<statBases>
+			<MaxHitPoints>700</MaxHitPoints>
+			<Mass>5</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<building>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>SCPObjects</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<researchPrerequisites>
+			<li>SCR_AdvContainCrate</li>
+		</researchPrerequisites>
+	</ThingDef>
+</Defs>
