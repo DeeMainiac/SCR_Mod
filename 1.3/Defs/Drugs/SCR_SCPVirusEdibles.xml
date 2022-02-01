@@ -61,7 +61,7 @@
     <graphicData>
       <texPath>Things/Item/Drug/Penoxycyline</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-	  <color>(219, 219, 206)</color>
+	  <color>(219, 219, 255)</color>
     </graphicData>
     <rotatable>false</rotatable>
     <stackLimit>1</stackLimit>
