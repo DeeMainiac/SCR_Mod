@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="SCR_VirusConsume" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Beauty>-4</Beauty>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>150</stackLimit>
+    <thingCategories>
+      <li>Drugs</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Drugs</li>
+    </tradeTags>
+    <alwaysHaulable>true</alwaysHaulable>
+    <pathCost>14</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <allowedArchonexusCount>-1</allowedArchonexusCount>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <chairSearchRadius>8</chairSearchRadius>
+	  <ingestSound>Ingest_Pill</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Take {0}</ingestCommandString>
+      <ingestReportString>Taking {0}.</ingestReportString>
+    </ingestible>
+	<comps>
+	      <li Class="CompProperties_Forbiddable"/>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="SCR_VirusConsume">
+    <defName>SCR_SCP1797Consume</defName>
+    <label>SCP-1797 sample</label>
+    <description>A sample of SCP-1797.</description>
+	    		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CEuclid</li>
+					<li>SCR_DKeneq</li>
+					<li>SCR_RWarning</li>
+				</classRating>
+				<containmentTier>1</containmentTier>
+			</li>
+		</modExtensions>
+    <descriptionHyperlinks>
+      <HediffDef>SCR_SCP1797R</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Penoxycyline</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(219, 219, 206)</color>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>1000</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <tableDesired>false</tableDesired>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SCR_SCP1797R</hediffDef>
+          <severity>0.05</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+    </comps>
+    <allowedArchonexusCount>5</allowedArchonexusCount>
+  </ThingDef>
+
+
+</Defs>

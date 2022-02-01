@@ -28,7 +28,7 @@
 <PawnKindDef ParentName="SCR_CIBase">
 	<defName>SCR_SCP30331_Mike</defName>
 	<defaultFactionType>SCR_CI</defaultFactionType>
-	<combatPower>140</combatPower>
+	<combatPower>100</combatPower>
     <apparelMoney>400~700</apparelMoney>
     <weaponMoney>500~700</weaponMoney>
 	<weaponTags>
