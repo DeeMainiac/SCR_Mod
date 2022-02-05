@@ -18,6 +18,7 @@
     <stackLimit>150</stackLimit>
     <thingCategories>
       <li>Drugs</li>
+	  <li>SCPObjects</li>
     </thingCategories>
     <tradeTags>
       <li>Drugs</li>
@@ -28,7 +29,7 @@
     <drawGUIOverlay>true</drawGUIOverlay>
     <allowedArchonexusCount>-1</allowedArchonexusCount>
     <ingestible>
-      <preferability>NeverForNutrition</preferability>
+      <preferability>Processed</preferability>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
       <chairSearchRadius>8</chairSearchRadius>
 	  <ingestSound>Ingest_Pill</ingestSound>
@@ -41,7 +42,7 @@
 	</comps>
   </ThingDef>
 
-  <ThingDef ParentName="SCR_VirusConsume">
+  <ThingDef ParentName="DrugPillBase">
     <defName>SCR_SCP1797Consume</defName>
     <label>SCP-1797 sample</label>
     <description>A sample of SCP-1797.</description>
@@ -83,10 +84,35 @@
         </li>
       </outcomeDoers>
     </ingestible>
-    <comps>
-    </comps>
     <allowedArchonexusCount>5</allowedArchonexusCount>
   </ThingDef>
 
+  <RecipeDef>
+    <defName>SCR_AdministerSCP1797R</defName>
+    <label>administer SCP-1797</label>
+    <description>Administer a sample of SCP-1797.</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Administering SCP-1797.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>60</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+      <thingDefs>
+        <li>SCR_SCP1797Consume</li>
+      </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_SCP1797Consume</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
 
 </Defs>
