@@ -15,7 +15,7 @@
 			</li>
 		</modExtensions>
 		<statBases>
-			<MoveSpeed>50</MoveSpeed>
+			<MoveSpeed>60</MoveSpeed>
 			<MarketValue>500</MarketValue>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<FilthRate>0</FilthRate>

@@ -9,11 +9,35 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP3199</workerClass>
-    <baseChance>5.0</baseChance>
+    <baseChance>2</baseChance>
     <category>ThreatBig</category>
     <pointsScaleable>true</pointsScaleable>
     <tale>ManhunterPack</tale>
-	<minRefireDays>15</minRefireDays>
+	<minRefireDays>20</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>SCR_Incident_SCP131Join</defName>
+    <label>pair of SCP-131s join</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_SCP131</workerClass>
+    <baseChance>0.5</baseChance>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>SCR_Incident_ContainBreach</defName>
+    <label>Containment Breach</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_ContainmentBreach</workerClass>
+    <baseChance>5.0</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>Raid</tale>
   </IncidentDef>
   
   <!--
@@ -30,17 +54,4 @@
     <tale>Raid</tale>
   </IncidentDef>
 -->
-
-  <IncidentDef>
-    <defName>SCR_Incident_ContainBreach</defName>
-    <label>Containment Breach</label>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>SecureContainRimworld.IncidentWorker_ContainmentBreach</workerClass>
-    <baseChance>5.0</baseChance>
-    <category>ThreatBig</category>
-    <pointsScaleable>true</pointsScaleable>
-    <tale>Raid</tale>
-  </IncidentDef>
 </Defs>
