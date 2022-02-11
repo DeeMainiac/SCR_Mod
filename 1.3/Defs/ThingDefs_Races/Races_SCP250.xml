@@ -134,7 +134,6 @@
 			<min>1</min>
 			<max>1</max>
 		</wildGroupSize>
-	<canArriveManhunter>false</canArriveManhunter>
     <lifeStages>
       <li>
         <bodyGraphicData>

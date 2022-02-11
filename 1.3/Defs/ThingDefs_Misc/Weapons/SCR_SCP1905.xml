@@ -3,8 +3,8 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>SCR_Bullet_SCP1905R</defName>
-		<label>.577 Tyrannosaur round</label>
-		<thingClass>SecureContainRimworld.SCR_Projectile_LunchGun</thingClass>
+		<label> .577 Tyrannosaur round</label>
+		<thingClass>SecureContainRimworld.SCR_Projectile_DinoHunter</thingClass>
 		<graphicData>
 		<texPath>Things/Projectile/Bullet_Big</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -23,13 +23,11 @@
 			<MeatAmount>0</MeatAmount>
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
-		<!--
-	<deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_DestroyBody</deathActionWorkerClass>
-		-->
 		<butcherProducts>
 			<Plasteel>1</Plasteel>
 		</butcherProducts>
 		<race>
+			<deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_DestroyBody</deathActionWorkerClass>
 			<body>QuadrupedAnimalWithPaws</body>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
@@ -137,6 +135,7 @@
 		<label>SCP-1905-1</label>
 		<race>SCR_SCP19051R</race>
 		<combatPower>200</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
 				<labelMale>SCP-1905-2</labelMale>
