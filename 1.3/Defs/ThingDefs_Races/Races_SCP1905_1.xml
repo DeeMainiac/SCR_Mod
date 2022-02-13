@@ -143,19 +143,19 @@
 				<labelFemale>SCP-1905-1</labelFemale>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_2</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_1</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.5</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.5</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
@@ -163,19 +163,19 @@
 				<labelFemale>SCP-1905-1</labelFemale>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_2</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>2.4</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_1</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>2.4</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>2.4</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>2.4</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

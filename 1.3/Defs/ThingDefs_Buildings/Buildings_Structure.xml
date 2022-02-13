@@ -72,20 +72,6 @@
         <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
     </building>
-    <damageMultipliers>
-      <li>
-        <damageDef>Bomb</damageDef>
-        <multiplier>2</multiplier>
-      </li>
-	  <li>
-	  <damageDef>Mining</damageDef>
-	  <multiplier>.5</multiplier>
-	  </li>
-      <li>
-        <damageDef>Thump</damageDef>
-        <multiplier>2</multiplier>
-      </li>
-    </damageMultipliers>
   </ThingDef>
 
   <ThingDef ParentName="SCR_Wall">
@@ -112,6 +98,22 @@
         <li>SCR_Autodoor</li>
       </relatedBuildCommands>
     </building>
+	
+	    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+	  <li>
+	  <damageDef>Mining</damageDef>
+	  <multiplier>.5</multiplier>
+	  </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+    </damageMultipliers>
+	
   </ThingDef>
 
   <ThingDef ParentName="SCR_Wall">
