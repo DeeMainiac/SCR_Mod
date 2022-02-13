@@ -149,7 +149,7 @@
 	    <damageMultipliers>
       <li>
         <damageDef>Bomb</damageDef>
-        <multiplier>1.4</multiplier>
+        <multiplier>1.8</multiplier>
       </li>
 	  <li>
 	  <damageDef>Mining</damageDef>
@@ -157,7 +157,7 @@
 	  </li>
       <li>
         <damageDef>Thump</damageDef>
-        <multiplier>1.4</multiplier>
+        <multiplier>1.8</multiplier>
       </li>
     </damageMultipliers>
 	
