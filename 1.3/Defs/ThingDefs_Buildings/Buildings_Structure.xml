@@ -57,6 +57,13 @@
       <li>Metallic</li>
       <li>Stony</li>
     </stuffCategories>
+	
+	<recipeMaker>
+	<researchPrerequisites>
+	<li>SCR_WallTier1</li>
+	</researchPrerequisites>
+	</recipeMaker>
+	
     <building>
       <isInert>true</isInert>
       <isPlaceOverableWall>true</isPlaceOverableWall>
@@ -76,7 +83,7 @@
 	  </li>
       <li>
         <damageDef>Thump</damageDef>
-        <multiplier>3</multiplier>
+        <multiplier>2</multiplier>
       </li>
     </damageMultipliers>
   </ThingDef>
@@ -85,7 +92,7 @@
     <defName>SCR_StrengthenedWall</defName>
     <label>steel strengthened wall</label>
     <description>An impassable wall strengthened with steel. Capable of holding up a roof and keeping in SCPs.</description>
-		<modExtensions>
+	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 	<containmentTier>1</containmentTier>
 	</li>
@@ -98,9 +105,7 @@
       <li>Stony</li>
 	  <li>Metallic</li>
     </stuffCategories>
-	<recipeMaker>
-	<researchPrerequisite>SCR_WallTier1</researchPrerequisite>
-	</recipeMaker>
+
     <building>
       <relatedBuildCommands>
         <li>Door</li>
@@ -129,7 +134,9 @@
       <li>Metallic</li>
     </stuffCategories>
 	<recipeMaker>
-	<researchPrerequisite>SCR_WallTier2</researchPrerequisite>
+	<researchPrerequisites>
+	<li>SCR_WallTier2</li>
+	</researchPrerequisites>
 	</recipeMaker>
 
     <building>
@@ -137,6 +144,21 @@
         <li>SCR_AutoBlastdoor</li>
       </relatedBuildCommands>
     </building>
+	    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>1.4</multiplier>
+      </li>
+	  <li>
+	  <damageDef>Mining</damageDef>
+	  <multiplier>.5</multiplier>
+	  </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>1.4</multiplier>
+      </li>
+    </damageMultipliers>
+	
   </ThingDef>
   
 																<!-- Doors -->
@@ -177,7 +199,9 @@
       <li Class="CompProperties_Styleable" />
     </comps>
 	<recipeMaker>
-	<researchPrerequisite>SCR_SecurityDoors</researchPrerequisite>
+	<researchPrerequisites>
+	<li>SCR_SecurityDoors</li>
+	</researchPrerequisites>
 	</recipeMaker>
     <designationHotKey>Misc2</designationHotKey>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -195,6 +219,7 @@
 	</li>
 	</modExtensions>
 	<statBases>
+	  <MaxHitPoints>2000</MaxHitPoints>
       <WorkToBuild>1100</WorkToBuild>
     </statBases>
     <graphicData>
@@ -213,7 +238,9 @@
     </costList>
     <costStuffCount>25</costStuffCount>
 	<recipeMaker>    
-	<researchPrerequisite>SCR_BlastDoors</researchPrerequisite>
+	<researchPrerequisites>
+	<li>SCR_BlastDoors</li>
+	</researchPrerequisites>
 	</recipeMaker>
     <comps>
       <li Class="CompProperties_Power">

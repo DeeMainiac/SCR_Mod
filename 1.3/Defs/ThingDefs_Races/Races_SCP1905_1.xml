@@ -16,9 +16,10 @@
 			</li>
 		</modExtensions>
 		<statBases>
-			<MoveSpeed>10</MoveSpeed>
+			<MoveSpeed>7</MoveSpeed>
 			<MarketValue>500</MarketValue>
-			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMax>1000</ComfyTemperatureMax>
 			<FilthRate>0</FilthRate>
 			<MeatAmount>0</MeatAmount>
 			<LeatherAmount>0</LeatherAmount>
@@ -29,6 +30,7 @@
 		<race>
 			<deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_DestroyBody</deathActionWorkerClass>
 			<body>QuadrupedAnimalWithPaws</body>
+			<bloodDef>Filth_FireFoam</bloodDef>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<needsRest>false</needsRest>
@@ -100,7 +102,6 @@
 				</surpriseAttack>
 			</li>
 			<li>
-				<label>beak</label>
 				<capacities>
 					<li>Bite</li>
 				</capacities>

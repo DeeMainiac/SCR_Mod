@@ -20,6 +20,9 @@
       <MarketValue>100</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
     </statBases>
+		<butcherProducts>
+			<SCR_SCP1797Consume>1</SCR_SCP1797Consume>
+		</butcherProducts>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <predator>true</predator>

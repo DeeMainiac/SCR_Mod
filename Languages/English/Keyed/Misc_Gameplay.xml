@@ -16,10 +16,13 @@
 <LetterLabelSCP131Join>SCP-131s join</LetterLabelSCP131Join>
 <LetterSCP131Join>A pair of SCP-131s, abandoned or lost, have wandered into the area.\n\nThey seem to adore human contact and are joining the colony.</LetterSCP131Join>
 
+
 <!-- SCP-specific messages -->
 
 <SCP113>SCP-113 changed this pawn's gender to </SCP113>
 <SCP113F>nothing happened.</SCP113F>
+
+<MessageSCP1905Spawn>An SCP-1905-1 instance has appeared, and is attacking your colonists!</MessageSCP1905Spawn>
 
 <!-- unused -->
 
