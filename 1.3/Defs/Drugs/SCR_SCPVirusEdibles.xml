@@ -37,6 +37,7 @@
       <ingestCommandString>Take {0}</ingestCommandString>
       <ingestReportString>Taking {0}.</ingestReportString>
     </ingestible>
+	    <orderedTakeGroup>Drug</orderedTakeGroup>
 	<comps>
 	      <li Class="CompProperties_Forbiddable"/>
 	</comps>
@@ -96,7 +97,7 @@
     <targetsBodyPart>false</targetsBodyPart>
     <anesthetize>false</anesthetize>
     <workAmount>60</workAmount>
-    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
     <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
     <ingredients>
       <li>
