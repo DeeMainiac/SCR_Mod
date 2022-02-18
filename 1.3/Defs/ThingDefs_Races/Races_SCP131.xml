@@ -43,7 +43,7 @@
 			<wildness>0</wildness>
 			<petness>1</petness>
 			<trainability>Intermediate</trainability>
-			<gestationPeriodDays>10</gestationPeriodDays>
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<lifeExpectancy>50</lifeExpectancy>
 			<nuzzleMtbHours>8</nuzzleMtbHours>

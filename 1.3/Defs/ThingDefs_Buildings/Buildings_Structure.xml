@@ -59,7 +59,7 @@
     </stuffCategories>
 	
 	<recipeMaker>
-	<researchPrerequisites>
+	<researchPrerequisites Inherit="False">
 	<li>SCR_WallTier1</li>
 	</researchPrerequisites>
 	</recipeMaker>
@@ -94,7 +94,6 @@
 
     <building>
       <relatedBuildCommands>
-        <li>Door</li>
         <li>SCR_Autodoor</li>
       </relatedBuildCommands>
     </building>
@@ -136,10 +135,12 @@
       <li>Metallic</li>
     </stuffCategories>
 	<recipeMaker>
-	<researchPrerequisites>
+	<researchPrerequisites Inherit="False">
 	<li>SCR_WallTier2</li>
 	</researchPrerequisites>
 	</recipeMaker>
+
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 
     <building>
       <relatedBuildCommands>
