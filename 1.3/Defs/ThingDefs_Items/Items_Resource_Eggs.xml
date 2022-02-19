@@ -32,7 +32,7 @@
 	<ThingDef ParentName="SCR_EggBase">
 		<defName>SCR_SCP3199Egg</defName>
 		<label>SCP-3199 egg (fert.)</label>
-		<description>An egg regurgitated by an SCP-3199 instance.</description>
+		<description>A strong, egg-like object regurgitated by an SCP-3199 instance. Completely inedible. With enough time, it should hatch into an SCP-3199 instance. It's hatch time can be paused by a high-tier containment crate. It can only be destroyed by exposure to very cold temperatures (-90C or -130F)</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -58,7 +58,12 @@
 			<li Class="SecureContainRimworld.CompProperties_SCRHatcher">
 				<hatcherDaystoHatch>2</hatcherDaystoHatch>
 				<hatcherPawn>SCR_SCP3199R</hatcherPawn>
-			</li>
+			</li>	
+		<li Class="CompProperties_TemperatureRuinable">
+        <minSafeTemperature>-90</minSafeTemperature>
+        <maxSafeTemperature>2000</maxSafeTemperature>
+        <progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+      </li>
 		</comps>
 	</ThingDef>
 	
