@@ -67,6 +67,36 @@
 		</comps>
 	</ThingDef>
 	
+	<ThingDef ParentName="ResourceBase">
+		<defName>SCR_SCP3199EggRuined</defName>
+		<label>neutralized SCP-3199 egg</label>
+		<description>An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of plasteel.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval/EggOval_A</texPath>
+			<drawSize>1.5</drawSize>
+			<color>(219, 219, 206)</color>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>false</useHitPoints>
+		<techLevel>Ultra</techLevel>
+		<thingCategories>
+			<li>SCPObjects</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<statBases>
+			<Mass>0.001</Mass>
+			<MarketValue>6</MarketValue>
+			<Beauty>-6</Beauty>
+		</statBases>
+	</ThingDef>
+	
 	<ThingDef ParentName="EggFertBase">
 		<defName>SCR_SCP5893Egg</defName>
 		<label>SCP-5893 egg (fert.)</label>

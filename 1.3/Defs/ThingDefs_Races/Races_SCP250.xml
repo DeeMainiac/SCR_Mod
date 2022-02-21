@@ -15,7 +15,7 @@
 	</classRating>
 	<containmentTier>1</containmentTier>
 	<isTranqable>false</isTranqable>
-	
+	<hatesRoofs>true</hatesRoofs>
 	</li>
 	</modExtensions>
   <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>

@@ -616,4 +616,95 @@
     </corePart>
   </BodyDef>
 
+<!-- Snail. For now, SCP-111 -->
+
+<BodyDef>
+		<defName>SCR_Snail</defName>
+		<label>snail</label>
+		<corePart>
+			<def>Body</def>
+			<coverage>0.50</coverage>
+			<height>Middle</height>
+			<depth>Outside</depth>
+
+			<parts>
+				<li>
+					<def>Heart</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>lungs</customLabel>
+
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+
+				<li>
+					<def>Stomach</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Liver</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>kidney</customLabel>
+
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				
+				<li>
+					<def>Leg</def>
+					<customLabel>foot</customLabel>
+					<coverage>0.15</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>Head</def>
+					<coverage>0.1</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Skull</def>
+							<coverage>0.15</coverage>
+							<depth>Inside</depth>
+							<parts>
+								<li>
+									<def>Brain</def>
+									<coverage>0.5</coverage>
+									<depth>Inside</depth>
+								</li>
+							</parts>
+						</li>
+						<li>
+							<def>Eye</def>
+							<customLabel>left eyestalk</customLabel>
+
+							<coverage>0.15</coverage>
+						</li>
+						<li>
+							<def>Eye</def>
+							<customLabel>right eyestalk</customLabel>
+
+							<coverage>0.15</coverage>
+						</li>
+						<li>
+							<def>Jaw</def>
+							<coverage>0.1</coverage>
+
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
 </Defs>

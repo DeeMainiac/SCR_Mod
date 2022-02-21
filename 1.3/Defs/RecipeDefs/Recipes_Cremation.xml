@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>SCR_CremateSCP3199Egg</defName>
+    <label>cremate neutralized SCP-3199 egg</label>
+    <description>Cremate a neutralized SCP-3199 egg to get rid of it completely.</description>
+    <jobString>Cremating.</jobString>
+    <workAmount>360</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+	<recipeUsers>
+	<li>ElectricCrematorium</li>
+	<li>ElectricSmelter</li>
+	</recipeUsers>
+	 <products>
+      <Plasteel>2</Plasteel>
+    </products>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>SCPObjects</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_SCP3199EggRuined</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+</Defs>

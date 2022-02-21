@@ -134,13 +134,14 @@
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCR_SCP19051R</defName>
 		<label>SCP-1905-1</label>
+		<labelMale>SCP-1905-2</labelMale>
+		<labelFemale>SCP-1905-1</labelFemale>
 		<race>SCR_SCP19051R</race>
 		<combatPower>200</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
-				<labelMale>SCP-1905-2</labelMale>
-				<labelFemale>SCP-1905-1</labelFemale>
+
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_2</texPath>
 					<drawSize>1.5</drawSize>
@@ -159,8 +160,6 @@
 				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
-				<labelMale>SCP-1905-2</labelMale>
-				<labelFemale>SCP-1905-1</labelFemale>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_2</texPath>
 					<drawSize>2.4</drawSize>

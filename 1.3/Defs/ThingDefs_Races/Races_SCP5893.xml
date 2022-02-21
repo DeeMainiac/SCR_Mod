@@ -12,6 +12,7 @@
 					<li>SCR_RDanger</li>
 				</classRating>
 				<containmentTier>1</containmentTier>
+				<hatesRoofs>true</hatesRoofs>
 			</li>
 		</modExtensions>
 		<statBases>
