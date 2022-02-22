@@ -686,13 +686,13 @@
 						</li>
 						<li>
 							<def>Eye</def>
-							<customLabel>left eyestalk</customLabel>
+							<customLabel>left eye</customLabel>
 
 							<coverage>0.15</coverage>
 						</li>
 						<li>
 							<def>Eye</def>
-							<customLabel>right eyestalk</customLabel>
+							<customLabel>right eye</customLabel>
 
 							<coverage>0.15</coverage>
 						</li>

@@ -118,4 +118,27 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+		<ThingDef ParentName="EggFertBase">
+		<defName>SCR_SCP111Egg</defName>
+		<label>SCP-111 egg (fert.)</label>
+		<description>A fertilized SCP-111 egg. If all goes well, it should hatch into an instance of SCP-111. There isn't any way to tell what kind will hatch from this egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DeteriorationRate>.5</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>8.5</hatcherDaystoHatch>
+				<hatcherPawn>SCR_SCP111R</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
 </Defs>

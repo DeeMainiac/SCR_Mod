@@ -27,7 +27,7 @@
 	  <deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
       <herdAnimal>true</herdAnimal>
       <body>SCR_Snail</body>
-      <baseBodySize>.1</baseBodySize>
+      <baseBodySize>.08</baseBodySize>
       <baseHealthScale>1.75</baseHealthScale>
       <baseHungerRate>0.425</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
@@ -37,7 +37,6 @@
       <roamMtbDays>2</roamMtbDays>
       <petness>0.6</petness>
       <trainability>Intermediate</trainability>
-      <packAnimal>true</packAnimal>
       <lifeExpectancy>10</lifeExpectancy>
       <lifeStageAges>
         <li>
@@ -78,8 +77,17 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
+	<comps>
+	    <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>SCR_SCP111Egg</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>20</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1~2</eggCountRange>
+      </li>
+	</comps>
+	
   </ThingDef>
-
   <PawnKindDef Name="Horse" ParentName="AnimalKindBase">
     <defName>SCR_SCP111R</defName>
     <label>SCP-111</label>
@@ -101,10 +109,6 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/SCR_SCP111/SCR_SCP111</texPath>
           <drawSize>.5</drawSize>
-          <shadowData>
-            <volume>(0.4, 0.3, 0.3)</volume>
-            <offset>(0,0,-0.2)</offset>
-          </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/SCR_SCP111/Dessicated_SCR_SCP111</texPath>
@@ -114,29 +118,21 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/SCR_SCP111/SCR_SCP111</texPath>
-          <drawSize>1</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.45, 0.45)</volume>
-            <offset>(0,0,-0.25)</offset>
-          </shadowData>
+          <drawSize>.9</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/SCR_SCP111/SCR_SCP111</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>.9</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/SCR_SCP111/SCR_SCP111</texPath>
-          <drawSize>1</drawSize>
-          <shadowData>
-            <volume>(0.8, 0.6, 0.6)</volume>
-            <offset>(0,0,-0.3)</offset>
-          </shadowData>
+          <drawSize>.9</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/SCR_SCP111/Dessicated_SCR_SCP111</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>.9</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
