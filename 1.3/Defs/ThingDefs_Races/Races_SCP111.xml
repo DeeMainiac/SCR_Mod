@@ -27,7 +27,7 @@
 	  <deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
       <herdAnimal>true</herdAnimal>
       <body>SCR_Snail</body>
-      <baseBodySize>.08</baseBodySize>
+      <baseBodySize>.1</baseBodySize>
       <baseHealthScale>1.75</baseHealthScale>
       <baseHungerRate>0.425</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
@@ -38,6 +38,20 @@
       <petness>0.6</petness>
       <trainability>Intermediate</trainability>
       <lifeExpectancy>10</lifeExpectancy>
+	  	  		<wildBiomes>
+				<AridShrubland>.1</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>.5</TemperateForest>
+				<TemperateSwamp>.7</TemperateSwamp>
+				<TropicalRainforest>.7</TropicalRainforest>
+				<TropicalSwamp>.4</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -88,7 +102,7 @@
 	</comps>
 	
   </ThingDef>
-  <PawnKindDef Name="Horse" ParentName="AnimalKindBase">
+  <PawnKindDef Name="SCR_SCP111R" ParentName="AnimalKindBase">
     <defName>SCR_SCP111R</defName>
     <label>SCP-111</label>
     <race>SCR_SCP111R</race>

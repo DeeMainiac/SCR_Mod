@@ -35,7 +35,7 @@
 <!-- ///////////////////////Containment Procedures\\\\\\\\\\\\\\\\\\\\\\\\ -->
 
 
-<!-- I don't recommend translating the primary class names (i.e., 'Vlam'), since they're special classification words -->
+<!-- I don't recommend translating the primary class names (e.g, 'Vlam'), since they're special classification words -->
 
 <SCR_Contain>Containment class</SCR_Contain>
 <SCR_Disrupt>Disruption class</SCR_Disrupt>
@@ -73,7 +73,7 @@
 <SCR_DEkhi>Ekhi</SCR_DEkhi>
 <SCR_DEkhiDesc>A danger to a large group of pawns, potentially worldwide. It spreads quickly and is quite the consuming task to deal with.</SCR_DEkhiDesc>
 
-<!-- heheh the player is Amida class -->
+<!-- hehehe the player is Amida class -->
 
 <!-- Risk -->
 
