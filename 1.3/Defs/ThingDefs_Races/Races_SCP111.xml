@@ -36,7 +36,7 @@
       <wildness>0.5</wildness>
       <roamMtbDays>2</roamMtbDays>
       <petness>0.6</petness>
-      <trainability>Intermediate</trainability>
+      <trainability>None</trainability>
       <lifeExpectancy>10</lifeExpectancy>
 	  	  		<wildBiomes>
 				<AridShrubland>.1</AridShrubland>
