@@ -3,7 +3,7 @@
 	<ThingDef ParentName="SCR_SCP_Base">
 		<defName>SCR_SCP131R</defName>
 		<label>SCP-131</label>
-		<description>SCP-131 is a round and teardrop-shaped wheeled creature that wanders colonies, affectionately looking for colonists to bond with.</description>
+		<description>SCP-131 is an extremely fast, round and teardrop-shaped wheeled creature that wanders colonies, affectionately looking for colonists to bond with.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -15,7 +15,7 @@
 			</li>
 		</modExtensions>
 		<statBases>
-			<MoveSpeed>60</MoveSpeed>
+			<MoveSpeed>50</MoveSpeed>
 			<MarketValue>500</MarketValue>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<FilthRate>0</FilthRate>
