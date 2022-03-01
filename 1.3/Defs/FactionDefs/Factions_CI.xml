@@ -23,6 +23,8 @@
     <autoFlee>false</autoFlee>
     <canUseAvoidGrid>true</canUseAvoidGrid>
     <techLevel>Spacer</techLevel>
+	<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+	
 							<!-- Ideology dlc stuff -->
 	<allowedCultures><li>Astropolitan</li></allowedCultures>
 	<requiredMemes>
