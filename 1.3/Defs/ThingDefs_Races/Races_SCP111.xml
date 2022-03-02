@@ -64,8 +64,8 @@
         <li>
           <def>AnimalAdult</def>
           <minAge>0.6</minAge>
-          <soundWounded>Pawn_DogSmall_Wounded</soundWounded>
-          <soundDeath>Pawn_DogSmall_Death</soundDeath>
+          <soundWounded>Pawn_DogSmall_Injured</soundWounded>
+          <soundDeath>Pawn_DogSmall_Dead</soundDeath>
           <soundCall>Pawn_DogSmall_Call</soundCall>
           <soundAngry>Pawn_DogSmall_Angry</soundAngry>
         </li>

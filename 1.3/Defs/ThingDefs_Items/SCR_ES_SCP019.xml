@@ -18,6 +18,7 @@
 			<texPath>Things/Item/Artifacts/SCR_ES_SCP019</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>.5</drawSize>
+			<onGroundRandomRotateAngle>30</onGroundRandomRotateAngle>
 		</graphicData>
 		<thingClass>ThingWithComps</thingClass>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
