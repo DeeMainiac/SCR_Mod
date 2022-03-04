@@ -57,11 +57,9 @@
     </stages>
   </ThoughtDef>
   
-  
     <ThoughtDef>
     <defName>SCR_MikeUnitIdle</defName>
    <workerClass>SecureContainRimworld.ThoughtWorker_SCP3033MikeIdle</workerClass>
-    <validWhileDespawned>false</validWhileDespawned>
     <stages>
       <li>
         <label>SCP-3033-1 implant</label>
@@ -74,7 +72,6 @@
    <ThoughtDef>
     <defName>SCR_Infected_SCP1797</defName>
    <workerClass>SecureContainRimworld.ThoughtWorker_KittenFlu</workerClass>
-    <validWhileDespawned>false</validWhileDespawned>
     <stages>
       <li>
         <label>Sick with SCP-1797</label>
@@ -84,8 +81,22 @@
     </stages>
   </ThoughtDef> 
 
-
-
+  <ThoughtDef>
+    <defName>SCR_SCPES019_BadThought</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
+    <durationDays>5</durationDays>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>used SCP-ES-019</label>
+        <description>That was a very worrying broadcast I listened to.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 
 
 
