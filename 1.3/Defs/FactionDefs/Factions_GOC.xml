@@ -4,7 +4,7 @@
 <FactionDef ParentName="FactionBase">
     <defName>SCR_GOC</defName>
     <label>Global Occult Coalition</label>
-    <description>A large collection of anomalous/occult organizations that act similarly to the Earth-based United Nations. They seek to keep humanlikes safe and unaware of anomalous/paranormal entities by destroying them. They have shaky relationships with powerful groups that hold and use anomalous entities.</description>
+    <description>A large collection of anomalous/occult organizations. They seek to keep humanlikes safe and unaware of anomalous/paranormal entities by destroying them. They have particularly shaky relationships with powerful groups that hold and use anomalous entities.</description>
    <!-- <pawnSingular>insurgent</pawnSingular>
     <pawnsPlural>insurgents</pawnsPlural> -->
 	<listOrderPriority>11</listOrderPriority>
@@ -147,13 +147,13 @@
         <categories>
           <li>Offworld</li>
         </categories>
-        <commonality>0.25</commonality>
+        <commonality>0.30</commonality>
       </li>
 	        <li>
         <categories>
           <li>Pirate</li>
         </categories>
-        <commonality>0.25</commonality>
+        <commonality>0.2</commonality>
       </li>
     </backstoryFilters>
      <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>

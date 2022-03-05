@@ -3,7 +3,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCR_ES_SCP019R</defName>
 		<label>SCP-ES-019</label>
-		<description>SCP-ES-019 is a small red and black MP3 player with headphones. It emits strange audio and can cause mental breaks in listeners.</description>
+		<description>SCP-ES-019 is a small red and black MP3 player with headphones. It emits strange audio that can cause mental breaks in listeners.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -42,8 +42,8 @@
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>UseArtifact</useJob>
-				<useLabel>Listen</useLabel>
-				<useDuration>240</useDuration>
+				<useLabel>Listen to broadcast</useLabel>
+				<useDuration>360</useDuration>
 			</li>
 			<li Class="CompProperties_UseEffect">
 				<compClass>SecureContainRimworld.CompUseEffect_UseSCPES019</compClass>

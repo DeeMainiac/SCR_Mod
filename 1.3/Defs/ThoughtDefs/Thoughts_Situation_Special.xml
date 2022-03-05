@@ -93,7 +93,7 @@
       <li>
         <label>used SCP-ES-019</label>
         <description>That was a very worrying broadcast I listened to.</description>
-        <baseMoodEffect>-10</baseMoodEffect>
+        <baseMoodEffect>-15</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

@@ -22,6 +22,8 @@
 <SCP113>SCP-113 changed this pawn's gender to </SCP113>
 <SCP113F>nothing happened.</SCP113F>
 
+<SCPES019> just lost a lot of faith in their ideologion!</SCPES019>
+
 <MessageSCP1905Spawn>An SCP-1905-1 instance has appeared, and is attacking your colonists!</MessageSCP1905Spawn>
 
 <!-- unused -->
@@ -33,7 +35,6 @@
 <LetterCISCP3033RaidFriendly>The Chaos Insurgency has sent SCP-3033 "Mike" units to help you out.</LetterCISCP3033RaidFriendly>
 
 <!-- ///////////////////////Containment Procedures\\\\\\\\\\\\\\\\\\\\\\\\ -->
-
 
 <!-- I don't recommend translating the primary class names (e.g, 'Vlam'), since they're special classification words -->
 
