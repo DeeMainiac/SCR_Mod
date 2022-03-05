@@ -93,12 +93,24 @@
       <li>
         <label>used SCP-ES-019</label>
         <description>That was a very worrying broadcast I listened to.</description>
-        <baseMoodEffect>-15</baseMoodEffect>
+        <baseMoodEffect>-20</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
 
-
+   <ThoughtDef>
+    <defName>SCR_SCP113_BadThought</defName>
+	<showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
+	<durationDays>15</durationDays>
+    <stages>
+      <li>
+        <label>used SCP-113</label>
+        <description>My body has been forcibly changed...</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef> 
 
 
 
