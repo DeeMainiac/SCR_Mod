@@ -20,7 +20,7 @@
 	<ThingDef ParentName="BaseGun">
 		<defName>SCR_SCP1905R</defName>
 		<label>SCP-1905</label>
-		<description>SCP-1905 is an elephant gun dubbed the "Dino Hunter Model 6" that causes fiberglass dinosaurs to apparate and attack, should a pawn be near it.</description>
+		<description>SCP-1905 is an elephant gun dubbed the "Dino Hunter Model 6" that causes fiberglass dinosaurs to apparate and attack, should a humanlike pawn be near it.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>

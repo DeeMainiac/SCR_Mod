@@ -135,7 +135,7 @@
           <drawSize>.9</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCR_SCP111/SCR_SCP111</texPath>
+          <texPath>Things/Pawn/Animal/SCR_SCP111/Dessicated_SCR_SCP111</texPath>
           <drawSize>.9</drawSize>
         </dessicatedBodyGraphicData>
       </li>
