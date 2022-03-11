@@ -5,7 +5,7 @@
 
     <defName>SCR_SCP1675R</defName>
     <label>SCP-1675</label>
-    <description></description>
+    <description>SCP-1675 is an autonomous robot that targets geese and spouts anti-goose propaganda in french.</description>
     		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -25,6 +25,7 @@
     </statBases>
     <uiIconScale>1.1</uiIconScale>
     <race>
+	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>Lancer</body>
       <baseHealthScale>0.72</baseHealthScale>
       <baseHungerRate>0</baseHungerRate>
@@ -65,21 +66,18 @@
     </tools>
 	
   </ThingDef>
-  <PawnKindDef Name="SCR_SCP1675R" ParentName="BaseMechanoid">
+  <PawnKindDef Name="SCR_SCP1675R">
     <defName>SCR_SCP1675R</defName>
-    <label>SCR_SCP1675</label>
+    <label>SCP-1675</label>
     <race>SCR_SCP1675R</race>
     <combatPower>5</combatPower>
     <ecoSystemWeight>1</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Centipede</texPath>
+          <texPath>Things/Pawn/Mechanoid/Scyther</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>3</drawSize>
-          <shadowData>
-            <volume>(0.6, 0.8, 0.6)</volume>
-          </shadowData>
+			<drawSize>.8</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>

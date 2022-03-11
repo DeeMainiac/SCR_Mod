@@ -2,7 +2,6 @@
 
 <LanguageData>
 
-
 <!-- Letter Incidents -->
 
 <LetterLabelSCP3199Attack>SCP-3199 Invasion</LetterLabelSCP3199Attack>
@@ -41,6 +40,7 @@
 <SCR_Contain>Containment class</SCR_Contain>
 <SCR_Disrupt>Disruption class</SCR_Disrupt>
 <SCR_Risk>Risk class</SCR_Risk>
+
 
 <!-- Containment -->
 
