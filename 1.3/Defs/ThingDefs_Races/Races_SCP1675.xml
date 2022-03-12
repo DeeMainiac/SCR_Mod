@@ -5,7 +5,7 @@
 
     <defName>SCR_SCP1675R</defName>
     <label>SCP-1675</label>
-    <description>SCP-1675 is an autonomous robot that targets geese and spouts anti-goose propaganda in french.</description>
+    <description>SCP-1675 is an autonomous robot that wanders aimlessly until a goose appears. It spouts anti-goose propaganda in French.</description>
     		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -21,20 +21,33 @@
       <MarketValue>550</MarketValue>
       <ComfyTemperatureMin>-35</ComfyTemperatureMin>
       <ComfyTemperatureMax>45</ComfyTemperatureMax>
-      <FilthRate>16</FilthRate>
+	  <FilthRate>0</FilthRate>
     </statBases>
     <uiIconScale>1.1</uiIconScale>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
-      <body>Lancer</body>
+      <body>Scyther</body>
       <baseHealthScale>0.72</baseHealthScale>
       <baseHungerRate>0</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
-      <leatherDef>Leather_Patch</leatherDef>
       <wildness>0</wildness>
       <roamMtbDays>2</roamMtbDays>
       <trainability>None</trainability>
       <lifeExpectancy>100</lifeExpectancy>
+	  	  		<wildBiomes>
+				<AridShrubland>.2</AridShrubland>
+				<BorealForest>.2</BorealForest>
+				<ColdBog>.2</ColdBog>
+				<TemperateForest>.2</TemperateForest>
+				<TemperateSwamp>.2</TemperateSwamp>
+				<TropicalRainforest>.2</TropicalRainforest>
+				<TropicalSwamp>.2</TropicalSwamp>
+				<IceSheet>.2</IceSheet>
+				<SeaIce>.2</SeaIce>
+				<Tundra>.2</Tundra>
+				<Desert>.2</Desert>
+				<ExtremeDesert>.2</ExtremeDesert>
+			</wildBiomes>
       <lifeStageAges>
         <li>
           <def>MechanoidFullyFormed</def>
@@ -44,7 +57,6 @@
           <soundCall>Pawn_Mech_Centipede_Call</soundCall>
         </li>
       </lifeStageAges>
-	        <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
       <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
@@ -53,13 +65,33 @@
 	  <li>AnimalExotic</li>
     </tradeTags>
     <tools>
+	      <li>
+        <label>left grabber</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right grabber</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
       <li>
         <label>head</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>5</power>
-        <cooldownTime>2.9</cooldownTime>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
@@ -75,9 +107,9 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Scyther</texPath>
+          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>.8</drawSize>
+			<drawSize>1</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
