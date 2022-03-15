@@ -35,7 +35,7 @@
 			<predator>false</predator>
 			<needsRest>false</needsRest>
 			<baseBodySize>.15</baseBodySize>
-			<baseHungerRate>0</baseHungerRate>
+			<baseHungerRate>0.00000001</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Leather_Patch</leatherDef>
