@@ -15,6 +15,7 @@
 	</classRating>
 	
 	<containmentTier>2</containmentTier>
+	<willManhuntAfterBreach>true</willManhuntAfterBreach>
 	
 	</li>
 	</modExtensions>
@@ -22,7 +23,8 @@
     <statBases>
       <MoveSpeed>4.4</MoveSpeed>
       <MarketValue>100</MarketValue>
-      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
 	  <FilthRate>8</FilthRate>
     </statBases>
     <race>
