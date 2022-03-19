@@ -4,10 +4,9 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>SCR_SCP939R</defName>
     <label>SCP-939</label>
-    <description>SCP-939 is a quadrapedal creature that imitates human voices and emits a potent memory-altering gas.</description>
+    <description>SCP-939 is a quadrupedal creature that imitates the humanlike voices of those they kill. They also emit a potent memory-altering gas.</description>
 	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
-
 	<classRating>
 		<li>SCR_CKeter</li>
 		<li>SCR_DKeneq</li>
@@ -31,18 +30,18 @@
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <predator>true</predator>
-      <baseBodySize>2</baseBodySize>
+      <baseBodySize>2.1</baseBodySize>
       <maxPreyBodySize>2.5</maxPreyBodySize>
       <baseHungerRate>0.25</baseHungerRate>
-      <baseHealthScale>1.5</baseHealthScale>
+      <baseHealthScale>1.6</baseHealthScale>
       <foodType>CarnivoreAnimalStrict</foodType>
       <leatherDef>Leather_Light</leatherDef>
       <wildness>.9</wildness>
       <petness>1</petness>
       <trainability>Intermediate</trainability>
       <nameOnTameChance>1</nameOnTameChance>
-	  <manhunterOnTameFailChance>0.80</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>5.00</manhunterOnDamageChance>
+	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>5</manhunterOnDamageChance>
 	  <gestationPeriodDays>12</gestationPeriodDays>
       <litterSizeCurve>
         <points>
@@ -138,13 +137,22 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>5</power>
+        <power>10</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+	<comps>
+	      <li Class="CompProperties_GiveHediffSeverity">
+        <hediff>SCR_SCP939BreathHediff</hediff>
+        <range>3</range>
+        <severityPerSecond>0.005</severityPerSecond>
+        <drugExposure>false</drugExposure>
+        <allowMechs>false</allowMechs>
+      </li>
+	</comps>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">

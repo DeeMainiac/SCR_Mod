@@ -81,6 +81,18 @@
     </stages>
   </ThoughtDef> 
 
+   <ThoughtDef>
+    <defName>SCR_Infected_SCP939</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_SCP939</workerClass>
+    <stages>
+      <li>
+        <label>SCP-939 nearby</label>
+        <description>I'm starting to forget what I was supposed to be doing...</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef> 
+
   <ThoughtDef>
     <defName>SCR_SCPES019_BadThought</defName>
     <showBubble>true</showBubble>

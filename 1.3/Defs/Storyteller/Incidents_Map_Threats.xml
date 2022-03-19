@@ -17,6 +17,20 @@
   </IncidentDef>
 
   <IncidentDef>
+    <defName>SCR_Incident_SCP939_Hunt</defName>
+    <label>SCP-3199 pack</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_SCP939</workerClass>
+    <baseChance>3.2</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>ManhunterPack</tale>
+	<minRefireDays>20</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
     <defName>SCR_Incident_SCP131Join</defName>
     <label>pair of SCP-131s join</label>
     <category>Misc</category>

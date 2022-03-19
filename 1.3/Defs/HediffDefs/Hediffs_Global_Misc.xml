@@ -65,6 +65,30 @@
     </stages>
   </HediffDef>
   
-  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>SCR_SCP939BreathHediff</defName>
+    <label>SCP-939 breath</label>
+    <description>An amnesia-inducing substance exhaled from SCP-939. Only a problem in closed rooms.
+\nNaturally recovers over time as the body filters it out.</description>
+	<initialSeverity>.15</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>45000~100000</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+      </li>
+    </comps>
+   <stages>
+      <li>
+        <minSeverity>0.15</minSeverity>
+        <label>moderate</label>
+      </li>
+      <li>
+        <minSeverity>0.30</minSeverity>
+        <label>severe</label>
+      </li>
+    </stages>
+  </HediffDef>
   
 </Defs>

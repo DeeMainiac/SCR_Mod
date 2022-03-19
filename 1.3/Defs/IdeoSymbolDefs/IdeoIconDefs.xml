@@ -8,6 +8,14 @@
 			<li>Transhumanist</li>
 		</memes>
 	</IdeoIconDef>
+	
+		<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIChicagoSpirit</defName>
+		<iconPath>UI/Icons/ChicagoSpirit</iconPath>
+		<memes>
+			<li>Raider</li>
+		</memes>
+	</IdeoIconDef>
 
 	<IdeoIconDef>
 		<defName>Ideoligion_SCR_GOIChurchBrokeGod</defName>
@@ -16,7 +24,20 @@
 			<li>Transhumanist</li>
 		</memes>
 	</IdeoIconDef>
-
+	
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIChurchSecondHytoth</defName>
+		<iconPath>UI/Icons/ChurchSecondHytoth</iconPath>
+		<memes>
+			<li>PainIsVirtue</li>
+		</memes>
+	</IdeoIconDef>
+	
+		<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIFactory</defName>
+		<iconPath>UI/Icons/Factory</iconPath>
+	</IdeoIconDef>
+	
 	<IdeoIconDef>
 		<defName>Ideoligion_SCR_GOIFifthChurch</defName>
 		<iconPath>UI/Icons/FifthChurch</iconPath>
@@ -56,6 +77,14 @@
 	<IdeoIconDef>
 		<defName>Ideoligion_SCR_GOISharkPunch</defName>
 		<iconPath>UI/Icons/SPC</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOITouHei</defName>
+		<iconPath>UI/Icons/TouHeiHeavyIndustries</iconPath>
+		<memes>
+			<li>Transhumanist</li>
+		</memes>
 	</IdeoIconDef>
 
 	<IdeoIconDef>

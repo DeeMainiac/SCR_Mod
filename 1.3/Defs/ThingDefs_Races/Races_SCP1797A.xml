@@ -130,6 +130,15 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+	<!--	<comps>
+	      <li Class="CompProperties_GiveHediffSeverity">
+        <hediff>SCR_SCP1797R</hediff>
+        <range>1</range>
+        <severityPerSecond>0.000005</severityPerSecond>
+        <drugExposure>false</drugExposure>
+        <allowMechs>false</allowMechs>
+      </li>
+	</comps> -->
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">

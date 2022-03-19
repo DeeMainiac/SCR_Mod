@@ -52,7 +52,6 @@
     </statBases>
     <pathCost>30</pathCost>
     <passability>PassThroughOnly</passability>
-    <designationCategory>Joy</designationCategory>
 </ThingDef>
 
 </Defs>
