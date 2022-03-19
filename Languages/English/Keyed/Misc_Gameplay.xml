@@ -66,10 +66,10 @@
 <SCR_DDarkDesc>Danger risk is incredibly low, that of no concern, or a danger to only a specific pawn or thing.</SCR_DDarkDesc>
 
 <SCR_DVlam>Vlam</SCR_DVlam>
-<SCR_DVlamDesc>A danger to a small group of pawns. It has a small range, and can be neutralized somewhat easily.</SCR_DVlamDesc>
+<SCR_DVlamDesc>A danger to a small group of pawns, has a small range, and/or can be neutralized somewhat easily.</SCR_DVlamDesc>
 
 <SCR_DKeneq>Keneq</SCR_DKeneq>
-<SCR_DKeneqDesc>A danger to a moderate group of pawns. It has a moderate range, and has a similar difficulty to neutralize.</SCR_DKeneqDesc>
+<SCR_DKeneqDesc>A danger to a moderate group of pawns, has a moderate range, and probably has a similar difficulty to neutralize.</SCR_DKeneqDesc>
 
 <SCR_DEkhi>Ekhi</SCR_DEkhi>
 <SCR_DEkhiDesc>A danger to a large group of pawns, potentially worldwide. It spreads quickly and is quite the consuming task to deal with.</SCR_DEkhiDesc>
