@@ -75,11 +75,6 @@
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
     </race>
-    <tradeTags>
-      <li>AnimalUncommon</li>
-      <li>AnimalFighter</li>
-	  <li>AnimalExotic</li>
-    </tradeTags>
     <tools>
       <li>
         <label>left claws</label>

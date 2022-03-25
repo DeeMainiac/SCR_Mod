@@ -52,6 +52,22 @@
           </points>
         </acceptPercentFactorPerThreatPointsCurve>
       </li>
+	  
+	  <!-- SCP Events -->
+	        <li Class="StorytellerCompProperties_OnOffCycle">
+        <category>SCR_SCPThreat</category>
+        <minDaysPassed>15.0</minDaysPassed>
+        <onDays>15.0</onDays>
+        <offDays>10.0</offDays>
+        <numIncidentsRange>1~1.1</numIncidentsRange>
+        <acceptPercentFactorPerThreatPointsCurve>
+          <points>
+            <li>(800, 1)</li>
+            <li>(2800, 0)</li>
+          </points>
+        </acceptPercentFactorPerThreatPointsCurve>
+      </li>
+	  
       <!-- Home misc incidents-->
       <li Class="StorytellerCompProperties_CategoryMTB">
         <category>Misc</category>

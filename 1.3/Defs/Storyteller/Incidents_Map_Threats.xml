@@ -68,4 +68,48 @@
     <tale>Raid</tale>
   </IncidentDef>
 -->
+
+
+<!-- Storyteller Events -->
+
+<IncidentDef>
+    <defName>SCR_Incident_SCP3199_Hunt_Storyteller</defName>
+    <label>SCP-3199 flock</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_SCP3199</workerClass>
+    <baseChance>3</baseChance>
+    <category>SCR_SCPThreat</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>ManhunterPack</tale>
+	<minRefireDays>20</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>SCR_Incident_SCP939_Hunt_Storyteller</defName>
+    <label>SCP-3199 pack</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_SCP939</workerClass>
+    <baseChance>3</baseChance>
+    <category>SCR_SCPThreat</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>ManhunterPack</tale>
+	<minRefireDays>20</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>SCR_Incident_SCP131Join_Storyteller</defName>
+    <label>pair of SCP-131s join</label>
+    <category>SCR_SCPThreat</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_SCP131</workerClass>
+    <baseChance>.5</baseChance>
+  </IncidentDef>
+
+
 </Defs>
