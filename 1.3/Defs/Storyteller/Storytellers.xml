@@ -5,7 +5,7 @@
     <defName>SCR_Nobody</defName>
     <label>Nobody</label>
     <description>Nobody's true motives are unknown. Regardless, they are very interested in SCPs and will send them your way more often than normal, for better or worse. They're also interested in more events, though that's through no fault of their own.</description>
-    <portraitLarge>UI/HeroArt/Storytellers/Nobody</portraitLarge>
+	<portraitLarge>UI/HeroArt/Storytellers/Nobody</portraitLarge>
     <portraitTiny>UI/HeroArt/Storytellers/NobodyTiny</portraitTiny>
     <listOrder>42</listOrder>
     <comps>
