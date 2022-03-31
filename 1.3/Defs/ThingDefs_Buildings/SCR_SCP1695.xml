@@ -4,7 +4,7 @@
 <ThingDef ParentName="BuildingBase">
 		<defName>SCR_SCP1695R</defName>
 		<label>SCP-1695</label>
-		<description>SCP-1695 is an aperature that, when a pawn is placed inside, turns them into Meaty the Meatworm. Removing the pawn reverts the transformation.</description>
+		<description>SCP-1695 is a machine with an aperature that, when a pawn is placed inside, turns them into a meatworm. Removing the pawn from it reverts the transformation.</description>
 				<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -18,9 +18,9 @@
 		<thingClass>Building_CryptosleepCasket</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Buildings/SCR_SCP762</texPath>
+			<texPath>Things/Buildings/SCR_SCP1695Closed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2, 2)</drawSize>
+			<drawSize>(1, 2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<rotatable>false</rotatable>
@@ -53,9 +53,9 @@
 		<comps>
 			<li Class="CompProperties_EmptyStateGraphic">
 				<graphicData>
-					<texPath>Things/Buildings/SCR_SCP762</texPath>
+					<texPath>Things/Buildings/SCR_SCP1695</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
-					<drawSize>(2, 2)</drawSize>
+					<drawSize>(1, 2)</drawSize>
 				</graphicData>
 			</li>
 		</comps>
