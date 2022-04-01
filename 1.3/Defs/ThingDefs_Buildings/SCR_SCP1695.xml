@@ -20,7 +20,7 @@
 		<graphicData>
 			<texPath>Things/Buildings/SCR_SCP1695Closed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1, 2)</drawSize>
+			<drawSize>3</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<rotatable>false</rotatable>
@@ -43,9 +43,9 @@
 			<Mass>20</Mass>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<size>(2,2)</size>
+		<size>(1,3)</size>
 		<hasInteractionCell>true</hasInteractionCell>
-		<interactionCellOffset>(1,0,0)</interactionCellOffset>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
 			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
@@ -55,7 +55,7 @@
 				<graphicData>
 					<texPath>Things/Buildings/SCR_SCP1695</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
-					<drawSize>(1, 2)</drawSize>
+					<drawSize>3</drawSize>
 				</graphicData>
 			</li>
 		</comps>
