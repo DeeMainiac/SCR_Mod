@@ -20,7 +20,7 @@
 		<graphicData>
 			<texPath>Things/Buildings/SCR_SCP1695Closed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>3</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<rotatable>false</rotatable>
