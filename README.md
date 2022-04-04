@@ -34,11 +34,13 @@ Check this [wiki page](https://github.com/DeeMainiac/SCR_Mod/wiki/List-of-SCPs-a
 
 # Credits
 
-Programming + art (not icons) by DeeMainiac
+SCP-ES-019 sprite and SCP-939 sprites by Monti ( Monti#9691 | [Steam profile](https://steamcommunity.com/id/montyi/) )
+
+Nobody Storyteller Icon by MingoMongo on DeviantArt under CC-BY-SA 3.0 [found here](https://www.deviantart.com/mingomongo/art/SCP-Nobody-Simple-Logo-750830298).
 
 Content relating to the SCP Foundation, including the SCP Foundation logo and other logos/icons, is licensed under [Creative Commons Sharealike 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and all concepts originate from http://www.scpwiki.com and its authors. This includes the sprites/xml in this project as well. However, keep in mind most sprites I've done for this project are spliced, so I don't recommend using them anywhere but for the context of RimWorld.
 
-Nobody Storyteller Icon by MingoMongo on DeviantArt under CC-BY-SA 3.0 [found here](https://www.deviantart.com/mingomongo/art/SCP-Nobody-Simple-Logo-750830298).
+Programming + the rest of the art (not icons) by DeeMainiac
 
 # Contact
 
