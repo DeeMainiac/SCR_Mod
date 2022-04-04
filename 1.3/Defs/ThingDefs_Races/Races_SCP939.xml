@@ -30,7 +30,7 @@
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <predator>true</predator>
-      <baseBodySize>2.1</baseBodySize>
+      <baseBodySize>2.2</baseBodySize>
       <maxPreyBodySize>2.5</maxPreyBodySize>
       <baseHungerRate>0.25</baseHungerRate>
       <baseHealthScale>1.6</baseHealthScale>
@@ -163,19 +163,17 @@
         <labelPlural>SCP-939 puppies</labelPlural>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/SCR_SCP939/SCR_SCP939</texPath>
-          <drawSize>1.05</drawSize>
-          <color>(123,104,89)</color>
+          <drawSize>1.0</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
-          <drawSize>1.05</drawSize>
+          <drawSize>1.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/SCR_SCP939/SCR_SCP939</texPath>
-          <drawSize>1.7</drawSize>
-          <color>(123,104,89)</color>
+          <drawSize>1.8</drawSize>
           <shadowData>
             <volume>(0.25, 0.3, 0.25)</volume>
             <offset>(0,0,-0.15)</offset>
@@ -183,14 +181,13 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
-          <drawSize>1.7</drawSize>
+          <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/SCR_SCP939/SCR_SCP939</texPath>
-          <drawSize>2</drawSize>
-          <color>(123,104,89)</color>
+          <drawSize>3</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>
             <offset>(0,0,-0.15)</offset>
@@ -198,7 +195,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
-          <drawSize>2.15</drawSize>
+          <drawSize>3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

@@ -17,7 +17,7 @@
 		<graphicData>
 			<texPath>Things/Item/Artifacts/SCR_ES_SCP019</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>.35</drawSize>
+			<drawSize>.6</drawSize>
 			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 		</graphicData>
 		<thingClass>ThingWithComps</thingClass>
