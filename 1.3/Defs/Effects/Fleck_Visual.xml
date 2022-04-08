@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>SCR_FleckSCP1762R</defName>
+    <graphicData>
+      <texPath>Things/Mote/SCR_SCP1762_2</texPath>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.50</fadeInTime>
+    <solidTime>20</solidTime>
+    <fadeOutTime>0.5</fadeOutTime>
+    <growthRate>0.05</growthRate>
+  </FleckDef>
+  
+  </Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <EffecterDef>
+    <defName>SCR_EffecterSCP1762R</defName>
+    <children>
+     <!-- <li>
+        <subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+        <soundDef>FireBurning</soundDef>
+      </li> -->
+      <li>
+        <subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+        <soundDef>Ambience_Autobong</soundDef>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>SCR_FleckSCP1762R</fleckDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <rotationRate>-10~10</rotationRate>
+        <speed>0.5~1</speed>
+        <scale>0.1~.1</scale>
+        <chancePerTick>0.08</chancePerTick>
+        <positionOffset>(0,0,0.5)</positionOffset>
+      </li>
+    </children>
+  </EffecterDef>
+
+
+</Defs>
