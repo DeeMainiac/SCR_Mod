@@ -4,7 +4,7 @@
 <ThingDef ParentName="BuildingBase">
 		<defName>SCR_SCP1762R</defName>
 		<label>SCP-1762</label>
-		<description>SCP-1762 is a cardboard box with "Here Be Dragons" written on it in crayon. It has several living origami dragons that come out of it, and fly around it.</description>
+		<description>SCP-1762 is a silvery cardboard box with "Here Be Dragons" written on it in permanent marker. It has several living origami dragons that come out of it, and fly around it.</description>
 				<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
