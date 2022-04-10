@@ -4,7 +4,7 @@
 <ThingDef ParentName="BuildingBase">
 		<defName>SCR_SCP1762R</defName>
 		<label>SCP-1762</label>
-		<description>SCP-1762 is a cardboard box with "Here Be Dragons" written on it. It has several anomalous origami dragons that can appear from within, and fly around it.</description>
+		<description>SCP-1762 is a cardboard box with "Here Be Dragons" written on it in crayon. It has several living origami dragons that come out of it, and fly around it.</description>
 				<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -49,11 +49,18 @@
 		</building>
 		<comps>
       <li Class="CompProperties_SmokeCloudMaker">
-        <sourceStreamEffect>SCR_EffecterSCP1762R</sourceStreamEffect>
-        <cloudRadius>2</cloudRadius>
-        <fleckScale>.1</fleckScale>
+       <sourceStreamEffect>SCR_EffecterSCP1762R</sourceStreamEffect>
+        <cloudRadius>2.1</cloudRadius>
+        <fleckScale>.09</fleckScale>
         <cloudFleck>SCR_FleckSCP1762R</cloudFleck>
-        <fleckSpawnMTB>25</fleckSpawnMTB>
+        <fleckSpawnMTB>35</fleckSpawnMTB>
+      </li>
+	        <li Class="CompProperties_SmokeCloudMaker">
+       <sourceStreamEffect>SCR_EffecterSCP1762R</sourceStreamEffect>
+        <cloudRadius>2.1</cloudRadius>
+        <fleckScale>.09</fleckScale>
+        <cloudFleck>SCR_Fleck2SCP1762R</cloudFleck>
+        <fleckSpawnMTB>50</fleckSpawnMTB>
       </li>
 		</comps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>

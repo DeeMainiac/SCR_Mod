@@ -4,23 +4,14 @@
   <EffecterDef>
     <defName>SCR_EffecterSCP1762R</defName>
     <children>
-     <!-- <li>
-        <subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
-        <soundDef>FireBurning</soundDef>
-      </li> -->
       <li>
-        <subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
-        <soundDef>Ambience_Autobong</soundDef>
-      </li>
-      <li>
-        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-        <fleckDef>SCR_FleckSCP1762R</fleckDef>
-        <spawnLocType>OnSource</spawnLocType>
-        <rotationRate>-10~10</rotationRate>
-        <speed>0.5~1</speed>
-        <scale>0.1~.1</scale>
-        <chancePerTick>0.08</chancePerTick>
-        <positionOffset>(0,0,0.5)</positionOffset>
+        <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+        <scale>.000001</scale>
+        <chancePerTick>0.0001</chancePerTick>
+        <positionRadius>10</positionRadius>
+        <moteDef>SCR_MoteSCP1762R</moteDef>
+        <speed>1~1</speed>
+        <angle>10~80</angle>
       </li>
     </children>
   </EffecterDef>
