@@ -90,19 +90,19 @@
 				<labelFemale>SCP-131-A</labelFemale>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP131/SCR_SCP131b</texPath>
-					<drawSize>0.3</drawSize>
+					<drawSize>0.5</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP131/SCR_SCP131a</texPath>
-					<drawSize>0.3</drawSize>
+					<drawSize>0.5</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP131/SCR_Dessicated_SCP131a</texPath>
-					<drawSize>0.3</drawSize>
+					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP131/SCR_Dessicated_SCP131a</texPath>
-					<drawSize>0.3</drawSize>
+					<drawSize>0.5</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
@@ -110,19 +110,19 @@
 				<labelFemale>SCP-131-A</labelFemale>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP131/SCR_SCP131b</texPath>
-					<drawSize>0.6</drawSize>
+					<drawSize>0.7</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP131/SCR_SCP131a</texPath>
-					<drawSize>0.6</drawSize>
+					<drawSize>0.7</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP131/SCR_Dessicated_SCP131a</texPath>
-					<drawSize>0.6</drawSize>
+					<drawSize>0.7</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP131/SCR_Dessicated_SCP131a</texPath>
-					<drawSize>0.6</drawSize>
+					<drawSize>0.7</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

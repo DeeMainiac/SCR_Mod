@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!--====================================== SCP-610 ======================================== -->
+
+  <ThingDef ParentName="PlantBase">
+    <defName>SCR_SCP610_Grass</defName>
+    <label>tainted grass</label>
+    <description>Wild grass found in SCP-610 zones. Grows anywhere there is a little light and minimally fertile ground.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Flammability>1.3</Flammability>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/SCR_SCP610_Grass</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.05</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growDays>2.5</growDays>
+      <leaflessGraphicPath>Things/Plant/SCR_SCP610_Grass</leaflessGraphicPath>
+      <harvestWork>40</harvestWork>
+      <maxMeshCount>9</maxMeshCount>
+      <visualSizeRange>0.4~0.6</visualSizeRange>
+      <topWindExposure>0.4</topWindExposure>
+      <wildOrder>1</wildOrder>
+    </plant>
+  </ThingDef>
+
+
+</Defs>
