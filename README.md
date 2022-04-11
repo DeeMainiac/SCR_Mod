@@ -34,7 +34,7 @@ Check this [wiki page](https://github.com/DeeMainiac/SCR_Mod/wiki/List-of-SCPs-a
 
 # Credits
 
-SCP-ES-019 sprite and SCP-939 sprites by Monti ( Monti#9691 | [Steam profile](https://steamcommunity.com/id/montyi/) )
+SCP-ES-019 sprite, SCP-939 sprites, SCP-1762 sprites, SCP-1695 sprites, and SCP-131 sprites by Monti ( Monti#9691 | [Steam profile](https://steamcommunity.com/id/montyi/) )
 
 Nobody Storyteller Icon by MingoMongo on DeviantArt under CC-BY-SA 3.0 [found here](https://www.deviantart.com/mingomongo/art/SCP-Nobody-Simple-Logo-750830298).
 
