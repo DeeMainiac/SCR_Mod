@@ -7,9 +7,15 @@
 		<label>fire</label>
 	</ToolCapacityDef>
 
+	<ToolCapacityDef>
+		<defName>SCR_SCP610_InfectingBite</defName>
+		<label>bite</label>
+	</ToolCapacityDef>
 
-
-
+	<ToolCapacityDef>
+		<defName>SCR_SCP610_InfectingScratch</defName>
+		<label>scratch</label>
+	</ToolCapacityDef>
 
 
 

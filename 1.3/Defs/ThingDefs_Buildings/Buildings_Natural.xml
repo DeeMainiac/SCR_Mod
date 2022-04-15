@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>SCR_SCP610Hive</defName>
+    <label>SCP-610 hive</label>
+    <description>A hive-like structure created by something infested by SCP-610. It causes the nearby area to be covered in a fleshy substance, as well as spawn more SCP-610 instances.</description>
+    <thingClass>Hive</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Natural/Hive</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.6</drawSize>
+    </graphicData>
+    <uiIconScale>0.65</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>2.0</Flammability>
+    </statBases>
+    <pathCost>42</pathCost>
+    <receivesSignals>true</receivesSignals>
+    <blockWind>true</blockWind>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <killedLeavings>
+      <InsectJelly>30</InsectJelly>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_CanBeDormant">
+        <startsDormant>true</startsDormant>
+        <canWakeUpFogged>false</canWakeUpFogged>
+      </li>
+      <li Class="CompProperties_WakeUpDormant" />
+      <li Class="CompProperties_SpawnerPawn">
+        <spawnablePawnKinds>
+          <li>SCR_SCP610B</li>
+          <li>SCR_SCP610A</li>
+        </spawnablePawnKinds>
+        <lordJob>LordJob_DefendAndExpandHive</lordJob>
+        <spawnSound>Hive_Spawn</spawnSound>
+        <initialPawnsPoints>300</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>1500</maxSpawnedPawnsPoints>
+      </li>
+      <li Class="CompProperties_SelfhealHitpoints">
+        <ticksPerHeal>3000</ticksPerHeal> <!-- 60k ticks = 1 day, 10 hp per day -->
+      </li>
+      <li Class="CompProperties_SpawnerHives" />
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>6</heatPerSecond>
+        <heatPushMaxTemperature>38</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_SpawnerFilth">
+        <filthDef>Filth_Slime</filthDef>
+        <spawnCountOnSpawn>10</spawnCountOnSpawn>
+        <spawnMtbHours>4</spawnMtbHours>
+        <spawnRadius>5</spawnRadius>
+      </li>
+      <li Class="CompProperties_Maintainable">
+        <ticksHealthy>60000</ticksHealthy>
+        <ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
+        <damagePerTickRare>1</damagePerTickRare>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  </Defs>

@@ -19,6 +19,9 @@
         <severityPerDayImmune>-0.4947</severityPerDayImmune>
         <immunityPerDayNotSick>-0.06</immunityPerDayNotSick>
       </li>
+	  <li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+      </li>
     </comps>
     <stages>
       <li>
@@ -80,5 +83,72 @@
       </li>
     </stages>
   </HediffDef>
-  
+ 
+<!-- SCP-610 -->
+
+<HediffDef ParentName="InfectionBase">
+    <defName>SCR_SCP610Infection</defName>
+    <label>SCP-610 infection</label>
+    <labelNoun>an SCP-610 infection</labelNoun>
+    <description>SCP-610 infection in a wound. Even with treatment, this illness causes large growths of scar tissue and boils. It will cause the victim to attempt to infect others. It is fatal, after which the body will reanimate and grow additional limbs.</description>
+    <makesSickThought>true</makesSickThought>
+    <lethalSeverity>1</lethalSeverity>
+    <tendable>true</tendable>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>12</baseTendDurationHours>
+        <severityPerDayTended>-0.53</severityPerDayTended>
+      </li>
+      <!--<li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.84</severityPerDayNotImmune>
+        <immunityPerDaySick>0.6441</immunityPerDaySick>
+        <severityPerDayImmune>-0.70</severityPerDayImmune>
+        <immunityPerDayNotSick>-0.40</immunityPerDayNotSick>
+      </li> -->
+      <li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>minor</label>
+        <becomeVisible>false</becomeVisible>
+      </li> 
+      <li>
+        <minSeverity>0.33</minSeverity>
+        <label>major</label>
+		<lifeThreatening>true</lifeThreatening>
+        <painOffset>0.08</painOffset>
+      </li>
+      <li>
+        <minSeverity>0.78</minSeverity>
+        <label>extreme</label>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.12</painOffset>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.87</minSeverity>
+        <label>extreme</label>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.85</painOffset>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+ 
   </Defs>

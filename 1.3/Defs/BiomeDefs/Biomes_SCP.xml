@@ -4,13 +4,25 @@
   <BiomeDef>
     <defName>SCR_SCP610Biome</defName>
     <label>SCP-610 Plaguelands</label>
-    <description>A region that SCP-610 has taken over. The majority of surfaces are covered in a fleshy substance, and all other life is infested with SCP-610. Don't let the moving ones touch you. Warning: Difficult starting location due to sparse resources and wildlife hostility.</description>
-    <workerClass>SecureContainRimworld.SCR_BiomeWorker_SCP610</workerClass>
+    <description>A region that SCP-610 has taken over. The majority of surfaces are covered in a fleshy substance, and all other life is infested with SCP-610. Don't let the moving ones touch you. Warning: Difficult starting location due to sparse resources, wildlife hostility, and SCP-610's fatal disease.</description>
+    	    <modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+		<li>SCR_CKeter</li>
+		<li>SCR_DEkhi</li>
+		<li>SCR_RDanger</li>
+	</classRating>
+	
+	<containmentTier>0</containmentTier>
+	
+	</li>
+	</modExtensions>
+	<workerClass>SecureContainRimworld.SCR_BiomeWorker_SCP610</workerClass>
     <allowFarmingCamps>false</allowFarmingCamps>
     <animalDensity>0.5</animalDensity>
     <plantDensity>0.5</plantDensity>
     <settlementSelectionWeight>0.001</settlementSelectionWeight>
-    <movementDifficulty>2</movementDifficulty>
+    <movementDifficulty>2.5</movementDifficulty>
 	<canAutoChoose>false</canAutoChoose>
     <texture>World/Biomes/SCR_BiomeSCP610</texture>
     <forageability>0.5</forageability>
@@ -73,11 +85,11 @@
       </li>
     </terrainsByFertility>
     <baseWeatherCommonalities>
-      <Clear>18</Clear>
+      <Clear>15</Clear>
       <Fog>1</Fog>
-      <Rain>2</Rain>
+      <Rain>3</Rain>
       <DryThunderstorm>.25</DryThunderstorm>
-      <RainyThunderstorm>1</RainyThunderstorm>
+      <RainyThunderstorm>2</RainyThunderstorm>
       <FoggyRain>1</FoggyRain>
       <SnowGentle>4</SnowGentle>
       <SnowHard>2</SnowHard>
@@ -87,17 +99,19 @@
 	<!--  <Plant_Brambles>0.5</Plant_Brambles> -->
 	 <Plant_Dandelion>0.6</Plant_Dandelion>
 	 <Plant_HealrootWild>0.05</Plant_HealrootWild>
-	 <Plant_TreeDrago>0.2</Plant_TreeDrago>
-	 <Plant_TreeOak>0.1</Plant_TreeOak>
+	 <Plant_Agave>.1</Plant_Agave>
+	 <Plant_TreeDrago>0.25</Plant_TreeDrago>
+	 <Plant_TreeOak>0.15</Plant_TreeOak>
 	 <Plant_Rafflesia>0.05</Plant_Rafflesia>
 	 
     </wildPlants>
     <wildAnimals>
-      <GuineaPig>0.017</GuineaPig>
-      <Rat>1.3</Rat>
-      <Hare>1.3</Hare>
+	<SCR_SCP610A>1.0</SCR_SCP610A>
+	<SCR_SCP610B>3.0</SCR_SCP610B>
+      <Rat>1.0</Rat>
+      <Hare>1.0</Hare>
       <Boomrat>0.5</Boomrat>
-      <Boomalope>0.5</Boomalope>
+      <Boomalope>0.6</Boomalope>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
