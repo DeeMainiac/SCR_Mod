@@ -106,8 +106,8 @@
 	 
     </wildPlants>
     <wildAnimals>
-	<SCR_SCP610A>1.0</SCR_SCP610A>
-	<SCR_SCP610B>3.0</SCR_SCP610B>
+	<SCR_SCP610A>.9</SCR_SCP610A>
+	<SCR_SCP610B>.9</SCR_SCP610B>
       <Rat>1.0</Rat>
       <Hare>1.0</Hare>
       <Boomrat>0.5</Boomrat>

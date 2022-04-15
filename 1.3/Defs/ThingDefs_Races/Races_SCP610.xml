@@ -39,8 +39,8 @@
       <nameOnTameChance>0</nameOnTameChance>
       <trainability>None</trainability>
       <wildness>10</wildness>
-      <manhunterOnTameFailChance>10</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.0</manhunterOnDamageChance>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -234,8 +234,8 @@
       <nameOnTameChance>0</nameOnTameChance>
       <trainability>None</trainability>
       <wildness>10</wildness>
-      <manhunterOnTameFailChance>10</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.0</manhunterOnDamageChance>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
