@@ -19,6 +19,8 @@
 <LetterLabelSCP131Join>SCP-131s join</LetterLabelSCP131Join>
 <LetterSCP131Join>A pair of SCP-131s, abandoned or lost, have wandered into the area.\n\nThey seem to adore human contact and are joining the colony.</LetterSCP131Join>
 
+<LetterLabelSCP610Local>SCP-610 formation</LetterLabelSCP610Local>
+<LetterSCP610Local>A few SCP-610 instances formed nearby.</LetterSCP610Local>
 
 <!-- SCP-specific messages -->
 

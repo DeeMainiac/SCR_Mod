@@ -9,11 +9,11 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP3199</workerClass>
-    <baseChance>3.2</baseChance>
+    <baseChance>3</baseChance>
     <category>ThreatBig</category>
     <pointsScaleable>true</pointsScaleable>
     <tale>ManhunterPack</tale>
-	<minRefireDays>20</minRefireDays>
+	<minRefireDays>30</minRefireDays>
   </IncidentDef>
 
   <IncidentDef>
@@ -69,8 +69,21 @@
   </IncidentDef>
 -->
 
+  <IncidentDef>
+    <defName>SCR_Incident_SCP610Form</defName>
+    <label>SCP-610 formation</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_SCP610_Local</workerClass>
+    <baseChance>3</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>ManhunterPack</tale>
+	<minRefireDays>20</minRefireDays>
+  </IncidentDef>
 
-<!-- Storyteller Events -->
+<!-- Storyteller Specific Events -->
 
 <IncidentDef>
     <defName>SCR_Incident_SCP3199_Hunt_Storyteller</defName>

@@ -4,7 +4,7 @@
   <BiomeDef>
     <defName>SCR_SCP610Biome</defName>
     <label>SCP-610 Plaguelands</label>
-    <description>A region that SCP-610 has taken over. The majority of surfaces are covered in a fleshy substance, and all other life is infested with SCP-610. Don't let the moving ones touch you. Warning: Difficult starting location due to sparse resources, wildlife hostility, and SCP-610's fatal disease.</description>
+    <description>A region that SCP-610 has taken over. The majority of surfaces are covered in a fleshy substance, and most life is infested with SCP-610. Don't let them touch you.\n\nWarning: Difficult starting location due to sparse resources, wildlife hostility, and SCP-610's fatal disease.</description>
     	    <modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 	<classRating>
@@ -99,15 +99,15 @@
 	<!--  <Plant_Brambles>0.5</Plant_Brambles> -->
 	 <Plant_Dandelion>0.6</Plant_Dandelion>
 	 <Plant_HealrootWild>0.05</Plant_HealrootWild>
-	 <Plant_Agave>.1</Plant_Agave>
+	 <Plant_Agave>.09</Plant_Agave>
 	 <Plant_TreeDrago>0.25</Plant_TreeDrago>
 	 <Plant_TreeOak>0.15</Plant_TreeOak>
 	 <Plant_Rafflesia>0.05</Plant_Rafflesia>
 	 
     </wildPlants>
     <wildAnimals>
-	<SCR_SCP610A>.9</SCR_SCP610A>
-	<SCR_SCP610B>.9</SCR_SCP610B>
+	<SCR_SCP610A>1.0</SCR_SCP610A>
+	<SCR_SCP610B>1.0</SCR_SCP610B>
       <Rat>1.0</Rat>
       <Hare>1.0</Hare>
       <Boomrat>0.5</Boomrat>

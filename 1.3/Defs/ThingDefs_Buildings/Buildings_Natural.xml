@@ -9,6 +9,7 @@
     <graphicData>
       <texPath>Things/Building/Natural/Hive</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <color>(170,43,0)</color>
       <drawSize>1.6</drawSize>
     </graphicData>
     <uiIconScale>0.65</uiIconScale>
@@ -40,11 +41,11 @@
         </spawnablePawnKinds>
         <lordJob>LordJob_DefendAndExpandHive</lordJob>
         <spawnSound>Hive_Spawn</spawnSound>
-        <initialPawnsPoints>300</initialPawnsPoints>
+        <initialPawnsPoints>200</initialPawnsPoints>
         <maxSpawnedPawnsPoints>1500</maxSpawnedPawnsPoints>
       </li>
       <li Class="CompProperties_SelfhealHitpoints">
-        <ticksPerHeal>3000</ticksPerHeal> <!-- 60k ticks = 1 day, 10 hp per day -->
+        <ticksPerHeal>3000</ticksPerHeal> <!-- 60k ticks = 1 day, 20 hp per day -->
       </li>
       <li Class="CompProperties_SpawnerHives" />
       <li Class="CompProperties_HeatPusher">

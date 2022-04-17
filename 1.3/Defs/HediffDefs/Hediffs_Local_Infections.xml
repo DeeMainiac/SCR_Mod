@@ -90,7 +90,7 @@
     <defName>SCR_SCP610Infection</defName>
     <label>SCP-610 infection</label>
     <labelNoun>an SCP-610 infection</labelNoun>
-    <description>SCP-610 infection in a wound. Even with treatment, this illness causes large growths of scar tissue and boils. It will cause the victim to attempt to infect others. It is fatal, after which the body will reanimate and grow additional limbs.</description>
+    <description>SCP-610 infection. A fatal infection inflicted by a creature infested with SCP-610. Even with treatment, this illness can cause large growths of scar tissue and boils. After death, the body will reanimate after some time.</description>
     <makesSickThought>true</makesSickThought>
     <lethalSeverity>1</lethalSeverity>
     <tendable>true</tendable>
@@ -107,12 +107,14 @@
       </li> -->
       <li Class="HediffCompProperties_Discoverable">
         <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+		<letterType>NegativeEvent</letterType>
       </li>
     </comps>
     <stages>
       <li>
         <label>minor</label>
-        <becomeVisible>false</becomeVisible>
+		<painOffset>0.08</painOffset>
+		<lifeThreatening>true</lifeThreatening>
       </li> 
       <li>
         <minSeverity>0.33</minSeverity>
