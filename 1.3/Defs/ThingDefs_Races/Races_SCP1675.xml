@@ -99,6 +99,7 @@
 	
   </ThingDef>
   <PawnKindDef Name="SCR_SCP1675R">
+    <defaultFactionType></defaultFactionType>
     <defName>SCR_SCP1675R</defName>
     <label>SCP-1675</label>
     <race>SCR_SCP1675R</race>

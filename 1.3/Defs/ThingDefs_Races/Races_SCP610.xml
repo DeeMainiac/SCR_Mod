@@ -27,6 +27,7 @@
 	  <ArmorRating_Blunt>.35</ArmorRating_Blunt>
     </statBases>
     <race>
+	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <animalType>Canine</animalType>
       <body>Human</body>
       <predator>true</predator>
@@ -206,6 +207,7 @@
 	  <ArmorRating_Blunt>.55</ArmorRating_Blunt>
     </statBases>
     <race>
+	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <animalType>Canine</animalType>
       <body>Human</body>
       <predator>true</predator>
