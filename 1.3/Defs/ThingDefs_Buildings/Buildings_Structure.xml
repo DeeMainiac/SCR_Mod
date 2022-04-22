@@ -14,7 +14,6 @@
 	  <linkFlags>
 	  <li>Wall</li>
 	  </linkFlags>
-	  
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -58,11 +57,9 @@
       <li>Stony</li>
     </stuffCategories>
 	
-	<recipeMaker>
 	<researchPrerequisites Inherit="False">
 	<li>SCR_WallTier1</li>
 	</researchPrerequisites>
-	</recipeMaker>
 	
     <building>
       <isInert>true</isInert>
@@ -134,14 +131,10 @@
 	  <li>Stony</li>
       <li>Metallic</li>
     </stuffCategories>
-	<recipeMaker>
 	<researchPrerequisites Inherit="False">
 	<li>SCR_WallTier2</li>
 	</researchPrerequisites>
-	</recipeMaker>
-
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-
     <building>
       <relatedBuildCommands>
         <li>SCR_AutoBlastdoor</li>
@@ -201,11 +194,9 @@
       <li Class="CompProperties_Breakdownable"/>
       <li Class="CompProperties_Styleable" />
     </comps>
-	<recipeMaker>
 	<researchPrerequisites>
 	<li>SCR_SecurityDoors</li>
 	</researchPrerequisites>
-	</recipeMaker>
     <designationHotKey>Misc2</designationHotKey>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
@@ -239,12 +230,10 @@
       <Steel>120</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
-    <costStuffCount>25</costStuffCount>
-	<recipeMaker>    
+    <costStuffCount>25</costStuffCount>  
 	<researchPrerequisites>
 	<li>SCR_BlastDoors</li>
 	</researchPrerequisites>
-	</recipeMaker>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -305,25 +294,7 @@
       <isInert>true</isInert>
       <ai_chillDestination>false</ai_chillDestination>
       <ai_neverTrashThis>true</ai_neverTrashThis>
-     <!-- <relatedBuildCommands>
-        <li>Fence</li>
-        <li>FenceGate</li>
-      </relatedBuildCommands> -->
     </building>
-
-    <comps>
-     <!-- <li Class="CompProperties_AnimalPenMarker"/> -->
-    <!--  <li Class="CompProperties_Forbiddable" /> -->
-    </comps>
-  <!--  <inspectorTabs>
-      <li>ITab_PenAutoCut</li>
-      <li>ITab_PenFood</li>
-      <li>ITab_PenAnimals</li>
-    </inspectorTabs>
-    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-    <placeWorkers>
-      <li>PlaceWorker_AnimalPenMarker</li>
-    </placeWorkers> -->
   </ThingDef>
 
 </Defs>
