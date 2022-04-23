@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>SCR_SCP1797Meat</defName>
+    <label>SCP-1797-A meat</label>
+    <description>Meat from SCP-1797-A. Can be used to create a pill used to infect pawns with SCP-1797.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small/Meat_Small_b</texPath>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.9</MarketValue> <!-- Can be used like meat in recipes -->
+      <Mass>0.045</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.05</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <foodType>Meat</foodType>
+    </ingestible>
+    <thingCategories>
+      <li>SCPMeat</li>
+    </thingCategories>
+    <allowedArchonexusCount>0</allowedArchonexusCount>
+  </ThingDef>
+
+
+
+
+
+</Defs>

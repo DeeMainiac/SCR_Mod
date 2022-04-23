@@ -32,7 +32,7 @@
       <baseHealthScale>0.3</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
       <leatherDef>Leather_Light</leatherDef>
-	  <useMeatFrom>Cat</useMeatFrom>
+	  <specificMeatDef>SCR_SCP1797Meat</specificMeatDef>
       <wildness>0</wildness>
       <petness>1</petness>
       <trainability>None</trainability>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef Name="SCR_VirusConsume" Abstract="True">
+  <ThingDef Name="SCR_VirusConsume" ParentName="MakeableDrugBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
     <drawerType>MapMeshOnly</drawerType>
@@ -17,7 +17,6 @@
     <altitudeLayer>Item</altitudeLayer>
     <stackLimit>150</stackLimit>
     <thingCategories>
-      <li>Drugs</li>
 	  <li>SCPObjects</li>
     </thingCategories>
     <tradeTags>
@@ -29,7 +28,8 @@
     <drawGUIOverlay>true</drawGUIOverlay>
     <allowedArchonexusCount>-1</allowedArchonexusCount>
     <ingestible>
-      <preferability>Processed</preferability>
+      <preferability>NeverForNutrition</preferability>
+	  <drugCategory>Any</drugCategory>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
       <chairSearchRadius>8</chairSearchRadius>
 	  <ingestSound>Ingest_Pill</ingestSound>
@@ -43,7 +43,7 @@
 	</comps>
   </ThingDef>
 
-  <ThingDef ParentName="DrugPillBase">
+  <ThingDef ParentName="SCR_VirusConsume">
     <defName>SCR_SCP1797Consume</defName>
     <label>SCP-1797 sample</label>
     <description>A sample of SCP-1797.</description>
@@ -72,12 +72,9 @@
       <MarketValue>1000</MarketValue>
       <Mass>0.3</Mass>
       <Flammability>0.5</Flammability>
-      <Nutrition>0.08</Nutrition>
     </statBases>
     <ingestible>
       <foodType>Processed</foodType>
-      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-      <tableDesired>false</tableDesired>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>SCR_SCP1797R</hediffDef>
@@ -85,6 +82,22 @@
         </li>
       </outcomeDoers>
     </ingestible>
+	    <recipeMaker>
+      <researchPrerequisite>PenoxycylineProduction</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+	  <SCR_SCP1797Meat>10</SCR_SCP1797Meat>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
     <allowedArchonexusCount>5</allowedArchonexusCount>
   </ThingDef>
 
