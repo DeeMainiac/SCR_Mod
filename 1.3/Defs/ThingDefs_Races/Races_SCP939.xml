@@ -26,6 +26,7 @@
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
 	  <FilthRate>8</FilthRate>
     </statBases>
+			<tradeTags Inherit="False" />
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>QuadrupedAnimalWithPawsAndTail</body>
