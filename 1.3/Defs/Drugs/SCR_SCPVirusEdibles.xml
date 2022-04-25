@@ -83,7 +83,6 @@
       </outcomeDoers>
     </ingestible>
 	    <recipeMaker>
-      <researchPrerequisite>PenoxycylineProduction</researchPrerequisite>
       <recipeUsers>
         <li>DrugLab</li>
       </recipeUsers>

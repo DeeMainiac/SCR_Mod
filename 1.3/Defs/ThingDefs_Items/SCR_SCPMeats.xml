@@ -7,11 +7,12 @@
     <label>SCP-1797-A meat</label>
     <description>Meat from SCP-1797-A. Can be used to create a pill used to infect pawns with SCP-1797.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small/Meat_Small_b</texPath>
+      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
+	        <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-      <MarketValue>1.9</MarketValue> <!-- Can be used like meat in recipes -->
+      <MarketValue>.9</MarketValue> <!-- Can be used like meat in recipes -->
       <Mass>0.045</Mass>
       <MaxHitPoints>60</MaxHitPoints>
       <Flammability>0.2</Flammability>
