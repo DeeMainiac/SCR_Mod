@@ -28,8 +28,7 @@
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>Scyther</body>
       <baseHealthScale>0.72</baseHealthScale>
-	  <baseHungerRate>0.00000001</baseHungerRate>
-      <foodType>VegetarianRoughAnimal</foodType>
+      <foodType>None</foodType>
       <wildness>0</wildness>
       <roamMtbDays>2</roamMtbDays>
       <trainability>None</trainability>

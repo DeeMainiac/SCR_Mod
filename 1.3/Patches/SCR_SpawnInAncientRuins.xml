@@ -2,16 +2,29 @@
 
 <Patch>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingSetMakerDef[defName="MapGen_AncientTempleContents"]/root[@Class="ThingSetMaker_Sum"]/options[1]/thingSetMaker[@Class="ThingSetMaker_Count"]/fixedParams/filter/thingDefs</xpath>		
-        <success>Always</success>
+        <xpath>/Defs/ThingSetMakerDef[defName="MapGen_AncientTempleContents"]/root/options/li[2]/thingSetMaker/fixedParams/filter/thingDefs</xpath>		
         <value>
+		<!-- Weapons/Apparel -->
+		
+		<li>SCR_SCP1905R</li>
+		<li>SCR_SCP572R</li>
+		<li>SCR_SCP127R</li>
+		<li>SCR_SCP3188R</li> <!-- misnamed, is supposed to be 3118 -->
+		<li>SCR_SCP262R</li>
+
+		<!-- Artifacts/Objects -->
+		
               <li>SCR_SCP475R</li>
               <li>SCR_SCP113R</li>
+			  <li>SCR_ES_SCP019R</li>
+			  
+		<!-- Buildings -->
+		
+			  <li>SCR_SCP1695R</li>
+			  <li>SCR_SCP2228R</li>
+			  <li>SCR_SCP1762R</li>
 			  <li>SCR_SCP762R</li>
-			  <li>SCR_SCP127R</li>
-			  <li>SCR_SCP572R</li>
-			  <li>SCR_SCP3118R</li>
-			  <li>SCR_SCP262R</li>
+
         </value>
     </Operation>
 </Patch>

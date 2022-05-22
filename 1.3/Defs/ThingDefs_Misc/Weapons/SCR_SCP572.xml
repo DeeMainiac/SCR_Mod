@@ -27,8 +27,6 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<weaponTags>
-			<li>MedievalMeleeAdvanced</li>
-			<li>LongSword</li>
 			<li>SCR_SCP</li>
 		</weaponTags>
 		<tradeTags>

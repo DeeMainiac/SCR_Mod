@@ -31,6 +31,20 @@
 
 <MessageSCP1905Spawn>An SCP-1905-1 instance has appeared, and is attacking your colonists!</MessageSCP1905Spawn>
 
+<!-- Mod Menu Stuff-->
+
+<SCP610ToggleTitle>SCP-610 Biome Spawn</SCP610ToggleTitle>
+<SCP610ToggleDesc>Stops SCP-610 biome from generating on world map. Requires a new save to take effect.</SCP610ToggleDesc>
+
+<SCP3199ToggleTitle>SCP-3199 Toggle</SCP3199ToggleTitle>
+<SCP3199ToggleDesc>Stops SCP-3199 from spawning from events. Does not kill ones already on map.</SCP3199ToggleDesc>
+
+<SCP939ToggleTitle>SCP-939 Toggle</SCP939ToggleTitle>
+<SCP939ToggleDesc>Stops SCP-939 from spawning from events. Does not kill ones already on map.</SCP939ToggleDesc>
+
+<SCP19051ToggleTitle>SCP-1905-1 Toggle</SCP19051ToggleTitle>
+<SCP19051ToggleDesc>Stops SCP-1905-1 from spawning. Does not kill ones already on map.</SCP19051ToggleDesc>
+
 <!-- unused -->
 
 <LetterLabelCISCP3033Raid>Chaos Insurgency Raid</LetterLabelCISCP3033Raid>

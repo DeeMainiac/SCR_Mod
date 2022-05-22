@@ -40,7 +40,6 @@
     <soundInteract>Interact_Shotgun</soundInteract>
 		<weaponTags>
 			<li>SCR_SCP</li>
-			<li>SniperRifle</li>
 		</weaponTags>
 		<weaponClasses>
 		<li>LongShots</li>

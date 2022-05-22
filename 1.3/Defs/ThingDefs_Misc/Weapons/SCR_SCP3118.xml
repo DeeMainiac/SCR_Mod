@@ -15,9 +15,9 @@
 		</projectile>
 	</ThingDef>
 	<ThingDef ParentName="BaseGun">
-		<defName>SCR_SCP3188R</defName>
-		<label>SCP-3188</label>
-		<description>SCP-3188 is a Beretta M9 that, upon hitting it's victim in the head, causes a previously eaten meal to appear next to that pawn.</description>
+		<defName>SCR_SCP3188R</defName> <!-- fat fingered the name of this boi, label is correct -->
+		<label>SCP-3118</label>
+		<description>SCP-3118 is a Beretta M9 that, upon hitting it's victim in the head, causes a previously eaten meal to appear next to that pawn.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
