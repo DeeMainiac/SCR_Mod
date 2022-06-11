@@ -138,4 +138,17 @@
     </stages>
   </ThoughtDef> 
 
+  <ThoughtDef>
+    <defName>SCR_CarryingCeramicSeahorse</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_SmolSeahorse</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>carrying SCP-732-J</label>
+        <description>It's so cute and charismatic!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
 </Defs>

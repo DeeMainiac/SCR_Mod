@@ -31,8 +31,8 @@
         <milkAmount>14</milkAmount>
       </li>
 	   <li Class="CompProperties_EggLayer">
-        <eggUnfertilizedDef>SCR_SCP3199Egg</eggUnfertilizedDef>
-        <eggFertilizedDef>SCR_SCP3199Egg</eggFertilizedDef>
+        <eggUnfertilizedDef>SCR_SCP2371JPSeed</eggUnfertilizedDef>
+        <eggFertilizedDef>SCR_SCP2371JPSeed</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>6.66</eggLayIntervalDays>
         <eggCountRange>1</eggCountRange>
