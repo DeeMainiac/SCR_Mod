@@ -100,9 +100,10 @@
 		<ThingDef ParentName="EggFertBase">
 		<defName>SCR_SCP2371JPSeed</defName>
 		<label>SCP-2371-JP seed</label>
-		<description>A SCP-5893 seed. If planted in a pot, it should grow into an instance of SCP-5893.</description>
+		<description>A SCP-2371-JP seed. If planted in a pot, it should grow into an instance of SCP-2371-JP.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(195,237,195)</color>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
