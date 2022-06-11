@@ -97,6 +97,27 @@
 		</statBases>
 	</ThingDef>
 	
+		<ThingDef ParentName="EggFertBase">
+		<defName>SCR_SCP2371JPSeed</defName>
+		<label>SCP-2371-JP seed</label>
+		<description>A SCP-5893 seed. If planted in a pot, it should grow into an instance of SCP-5893.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DeteriorationRate>.5</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>13</hatcherDaystoHatch>
+				<hatcherPawn>SCR_SCP2371JP</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
 	<ThingDef ParentName="EggFertBase">
 		<defName>SCR_SCP5893Egg</defName>
 		<label>SCP-5893 egg (fert.)</label>
