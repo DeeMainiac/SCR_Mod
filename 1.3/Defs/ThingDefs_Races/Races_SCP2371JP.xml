@@ -4,7 +4,7 @@
 <ThingDef ParentName="AnimalThingBase">
     <defName>SCR_SCP2371JP</defName>
     <label>SCP-2371-JP</label>
-    <description>SCP-2371-JP is a plant that transforms into a cow-like creature. Their meat tastes too much like beef, repulsing vegetarians alike.</description>
+    <description>SCP-2371-JP is a plant that transforms into a cow-like creature. Their meat tastes too much like beef, repulsing vegetarians.</description>
     	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 
@@ -27,8 +27,8 @@
     <comps>
       <li Class="CompProperties_Milkable">
         <milkDef>Milk</milkDef>
-        <milkIntervalDays>1</milkIntervalDays>
-        <milkAmount>14</milkAmount>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>10</milkAmount>
       </li>
 	   <li Class="CompProperties_EggLayer">
         <eggUnfertilizedDef>SCR_SCP2371JPSeed</eggUnfertilizedDef>
@@ -199,7 +199,7 @@
         <femaleGraphicData>
           <texPath>Things/Pawn/Animal/Cow/Cow</texPath>
           <drawSize>2.6</drawSize>
-          <color>(200,200,200)</color>
+          <color>(195,237,195)</color>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
             <offset>(0,0,-0.3)</offset>

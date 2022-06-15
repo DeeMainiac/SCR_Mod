@@ -99,10 +99,10 @@
 	
 		<ThingDef ParentName="EggFertBase">
 		<defName>SCR_SCP2371JPSeed</defName>
-		<label>SCP-2371-JP seed</label>
-		<description>A SCP-2371-JP seed. If planted in a pot, it should grow into an instance of SCP-2371-JP.</description>
+		<label>SCP-2371-JP seedling</label>
+		<description>A SCP-2371-JP seedling. It should grow into an instance of SCP-2371-JP.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<texPath>Things/Plant/CornPlant_Immature</texPath>
 			<color>(195,237,195)</color>
 		</graphicData>
 		<statBases>
@@ -113,7 +113,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>13</hatcherDaystoHatch>
+				<hatcherDaystoHatch>15</hatcherDaystoHatch>
 				<hatcherPawn>SCR_SCP2371JP</hatcherPawn>
 			</li>
 		</comps>
