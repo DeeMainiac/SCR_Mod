@@ -36,12 +36,12 @@
       <dieIfLeafless>true</dieIfLeafless>
 	  <harvestTag>Standard</harvestTag>
       <sowWork>750</sowWork>
-      <growDays>16</growDays>
+      <growDays>3</growDays>
+	  <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
       <visualSizeRange>0.2~0.5</visualSizeRange>
       <sowMinSkill>8</sowMinSkill>
       <sowTags>
         <li>Ground</li>
-        <li>Decorative</li>
       </sowTags>
       <sowResearchPrerequisites Inherit="False">
         <li>TreeSowing</li>
