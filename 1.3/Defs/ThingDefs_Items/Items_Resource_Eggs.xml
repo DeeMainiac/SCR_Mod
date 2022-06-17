@@ -163,4 +163,26 @@
 		</comps>
 	</ThingDef>
 	
+			<ThingDef ParentName="EggFertBase">
+		<defName>SCR_SCP2584Egg</defName>
+		<label>SCP-2584 egg (fert.)</label>
+		<description>A fertilized SCP-2584 egg. If all goes well, it should hatch into an instance of SCP-2584.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DeteriorationRate>.5</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>.0001</hatcherDaystoHatch>
+				<hatcherPawn>SCR_SCP2584R</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
 </Defs>

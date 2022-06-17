@@ -5,7 +5,7 @@
     <defName>SCR_SCP4074R</defName>
     <label>SCP-4074</label>
     <description>SCP-4074 is a moth orchid flower that emits sunlight and heat.</description>
-        	<modExtensions>
+    <modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 
 	<classRating>
