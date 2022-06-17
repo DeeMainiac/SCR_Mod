@@ -42,6 +42,8 @@
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>45</eggLayIntervalDays>
         <eggCountRange>1</eggCountRange>
+		<eggLayFemaleOnly>false</eggLayFemaleOnly>
+
       </li>
     </comps>
     <race>
