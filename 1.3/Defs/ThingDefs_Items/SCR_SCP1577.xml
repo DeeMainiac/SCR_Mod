@@ -46,7 +46,7 @@
 			<li Class="CompProperties_UseEffect">
         <compClass>CompUseEffect_DestroySelf</compClass>
       </li>
-			<li MayRequire="Ludeon.RimWorld.Ideology" Class="CompProperties_UseEffect">
+			<li Class="CompProperties_UseEffect">
 				<compClass>SecureContainRimworld.CompUseEffect_UseSCP1577</compClass>
 			</li>
 		</comps>
