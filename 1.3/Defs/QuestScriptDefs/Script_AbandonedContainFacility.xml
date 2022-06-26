@@ -6,7 +6,6 @@
     <rootSelectionWeight>1.0</rootSelectionWeight>
     <rootMinPoints>300</rootMinPoints>
     <canGiveRoyalFavor>true</canGiveRoyalFavor>
-    <expireDaysRange>8~10</expireDaysRange>
 	 <autoAccept>true</autoAccept>
     <successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">Raided_BanditCamp</successHistoryEvent>
     <questNameRules>

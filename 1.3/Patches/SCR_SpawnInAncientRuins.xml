@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
+<!-- This enables the following SCPs to spawn in ancient danger loot (and I believe the ancient danger sealed crate loot (ideology) as well) -->
 <Patch>
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingSetMakerDef[defName="MapGen_AncientTempleContents"]/root/options/li[2]/thingSetMaker/fixedParams/filter/thingDefs</xpath>		
@@ -18,6 +19,7 @@
               <li>SCR_SCP113R</li>
 			  <li>SCR_ES_SCP019R</li>
 			  <li>SCR_SCP732J</li>
+			  <li>SCR_SCP1577R</li>
 			  
 		<!-- Buildings -->
 		

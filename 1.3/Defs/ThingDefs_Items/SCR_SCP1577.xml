@@ -17,7 +17,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/SCR_SCP1577</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>.55</drawSize>
+			<drawSize>.8</drawSize>
 			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 		</graphicData>
 		<thingClass>ThingWithComps</thingClass>
