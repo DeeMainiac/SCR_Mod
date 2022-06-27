@@ -5,7 +5,7 @@
     <defName>SCR_AbandContainFacilQuest</defName>
     <rootSelectionWeight>1.0</rootSelectionWeight>
     <rootMinPoints>300</rootMinPoints>
-    <canGiveRoyalFavor>true</canGiveRoyalFavor>
+    <canGiveRoyalFavor>false</canGiveRoyalFavor>
 	 <autoAccept>true</autoAccept>
     <successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">Raided_BanditCamp</successHistoryEvent>
     <questNameRules>
