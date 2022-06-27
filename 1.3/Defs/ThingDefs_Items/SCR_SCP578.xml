@@ -18,11 +18,11 @@
 		</modExtensions>
 	<tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Things/Item/Resource/Chemfuel</texPath>
+      <texPath>Things/Item/SCR_SCP578</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.7</drawSize>
+      <drawSize>0.6</drawSize>
     </graphicData>
-    <stackLimit>150</stackLimit>
+    <stackLimit>100</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
@@ -55,6 +55,7 @@
 	<graphicData>
       <texPath>Things/Item/Resource/Jade</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+	  			<color>(255, 7, 7)</color>
     </graphicData>
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
