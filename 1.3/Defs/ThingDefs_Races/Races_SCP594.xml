@@ -4,7 +4,7 @@
 <ThingDef ParentName="AnimalThingBase">
     <defName>SCR_SCP594R</defName>
     <label>SCP-594</label>
-    <description>SCP-594 is a sheep/ram-like creature that can weaponize static electricity. A great source of wool, milk, and 'Thunder Mutton'.</description>
+    <description>SCP-594 is a sheep/ram-like creature that can weaponize static electricity. A great source of wool, milk, and meat.</description>
       	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 
