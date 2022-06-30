@@ -4,7 +4,7 @@
   <ThingDef ParentName="SCR_SCP_Base">
     <defName>SCR_SCP3199R</defName>
     <label>SCP-3199</label>
-    <description>SCP-3199 is a bipedal humanoid that will attack its prey with claws and an acid-spray. Its eggs are difficult to get rid of, and each instance carries an egg with it shortly after birth. Killing an SCP-3199 instance will cause an egg to spawn. Eggs will only stop hatching in cold temperatures, at which then you can dispose of them.</description>
+    <description>SCP-3199 is a bipedal humanoid that will attack its prey with claws and an acid-spray. Its eggs are difficult to get rid of, and each instance carries an egg with it shortly after birth. Killing an SCP-3199 instance will not kill the egg inside it. Eggs will only stop hatching in cold temperatures, at which then you can dispose of them.</description>
 	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 

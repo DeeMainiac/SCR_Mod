@@ -2,9 +2,15 @@
 <Defs>
 
 
+
 	<ToolCapacityDef>
 		<defName>SCR_Flame</defName>
 		<label>fire</label>
+	</ToolCapacityDef>
+
+	<ToolCapacityDef>
+		<defName>SCR_Electric</defName>
+		<label>static electricity</label>
 	</ToolCapacityDef>
 
 	<ToolCapacityDef>
