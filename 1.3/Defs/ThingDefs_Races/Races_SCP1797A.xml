@@ -22,6 +22,7 @@
     </statBases>
 		<butcherProducts>
 			<SCR_SCP1797Consume>1</SCR_SCP1797Consume>
+			<SCR_SCP1797Meat>30</SCR_SCP1797Meat>
 		</butcherProducts>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
@@ -32,7 +33,6 @@
       <baseHealthScale>0.3</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
       <leatherDef>Leather_Light</leatherDef>
-	  <specificMeatDef>SCR_SCP1797Meat</specificMeatDef>
       <wildness>0</wildness>
       <petness>1</petness>
       <trainability>None</trainability>

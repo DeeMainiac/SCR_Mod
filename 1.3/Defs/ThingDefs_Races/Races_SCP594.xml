@@ -5,7 +5,19 @@
     <defName>SCR_SCP594R</defName>
     <label>SCP-594</label>
     <description>SCP-594 is a sheep/ram-like creature that can weaponize static electricity. A great source of wool, milk, and 'Thunder Mutton'.</description>
-    <statBases>
+      	<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+
+	<classRating>
+		<li>SCR_CEuclid</li>
+		<li>SCR_DVlam</li>
+		<li>SCR_RNotice</li>
+	</classRating>
+	<containmentTier>1</containmentTier>
+	<hatesRoofs>true</hatesRoofs>
+	</li>
+	</modExtensions>
+	<statBases>
       <MoveSpeed>4.8</MoveSpeed>
       <MarketValue>400</MarketValue>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
@@ -28,12 +40,12 @@
     <race>
       <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithHooves</body>
-      <baseBodySize>0.75</baseBodySize>
+      <baseBodySize>0.8</baseBodySize>
       <baseHealthScale>0.7</baseHealthScale>
       <baseHungerRate>0.2</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Plain</leatherDef>
-      <gestationPeriodDays>5.661</gestationPeriodDays>
+      <gestationPeriodDays>5.66</gestationPeriodDays>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
