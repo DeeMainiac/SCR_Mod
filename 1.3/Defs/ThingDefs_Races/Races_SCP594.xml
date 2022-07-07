@@ -64,7 +64,7 @@
 	  <manhunterOnDamageChance>1</manhunterOnDamageChance>
 	  			<wildBiomes>
 				<AridShrubland>0</AridShrubland>
-				<BorealForest>.2</BorealForest>
+				<BorealForest>.25</BorealForest>
 				<ColdBog>.2</ColdBog>
 				<TemperateForest>0</TemperateForest>
 				<TemperateSwamp>0</TemperateSwamp>
