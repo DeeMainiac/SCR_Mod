@@ -29,7 +29,7 @@
       <body>SCR_Snail</body>
       <baseBodySize>.1</baseBodySize>
       <baseHealthScale>1.75</baseHealthScale>
-      <baseHungerRate>0.425</baseHungerRate>
+      <baseHungerRate>0.08</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Patch</leatherDef>
       <gestationPeriodDays>8.5</gestationPeriodDays>

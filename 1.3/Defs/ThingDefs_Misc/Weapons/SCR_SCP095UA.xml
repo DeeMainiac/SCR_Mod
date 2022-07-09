@@ -3,7 +3,7 @@
 <ThingDef ParentName="BaseGun">
 		<defName>SCR_SCP095UA</defName>
 		<label>SCP-095-UA</label>
-		<description>SCP-095-UA is an incendiary rocket launcher with an extremely accurate projectile.</description>
+		<description>SCP-095-UA is an incendiary rocket launcher with an extremely, unnaturally, accurate projectile. It has strange, likely sarkic symbols and blood on the inside of the barrel.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -17,7 +17,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/SCR_SCP095UA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>1.1</drawSize>
 			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
 		</graphicData>
 		<techLevel>Ultra</techLevel>
