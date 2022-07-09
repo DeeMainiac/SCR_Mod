@@ -92,7 +92,7 @@
 				<TropicalSwamp>.1</TropicalSwamp>
 				<IceSheet>0</IceSheet>
 				<SeaIce>0</SeaIce>
-				<Tundra>.2</Tundra>
+				<Tundra>0</Tundra>
 				<Desert>.2</Desert>
 				<ExtremeDesert>.4</ExtremeDesert>
 			</wildBiomes>
