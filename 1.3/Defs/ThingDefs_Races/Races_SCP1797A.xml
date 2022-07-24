@@ -39,6 +39,20 @@
       <nuzzleMtbHours>12</nuzzleMtbHours>
       <nameOnTameChance>1</nameOnTameChance>
       <lifeExpectancy>2</lifeExpectancy>
+	  	  	  	<wildBiomes>
+				<AridShrubland>0</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>0</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
