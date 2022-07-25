@@ -2,7 +2,7 @@
 <Defs>
   
     <JoyGiverDef>
-    <defName>Play_SCR_SCP2228</defName>
+    <defName>Play_SCR_SCP2228R</defName>
     <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
     <baseChance>2</baseChance>
     <thingDefs>
@@ -14,10 +14,9 @@
       <li>Manipulation</li>
     </requiredCapacities>
   </JoyGiverDef>
-
   
     <JoyGiverDef>
-    <defName>Play_SCR_SCP1762</defName>
+    <defName>Play_SCR_SCP1762R</defName>
     <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
     <baseChance>2</baseChance>
     <thingDefs>
@@ -25,6 +24,17 @@
     </thingDefs>
     <jobDef>SCR_PlaySCP1762R</jobDef>
     <joyKind>SCR_JoyfulSCP</joyKind>
+  </JoyGiverDef>
+
+    <JoyGiverDef>
+    <defName>Listen_SCR_SCP043R</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>2</baseChance>
+    <thingDefs>
+      <li>SCR_SCP043R</li>
+    </thingDefs>
+    <jobDef>SCR_ListenSCP043R</jobDef>
+    <joyKind>Meditative</joyKind>
   </JoyGiverDef>
 
 </Defs>

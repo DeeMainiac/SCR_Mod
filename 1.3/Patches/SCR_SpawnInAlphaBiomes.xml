@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!-- Spawns SCPs in Alpha Biome (mod) biomes. If you don't have the mod, this doesn't do anything. -->
-
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>

@@ -25,7 +25,17 @@
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
 
-
+  <JobDef>
+    <defName>SCR_ListenSCP043R</defName>
+    <driverClass>JobDriver_SitFacingBuilding</driverClass>
+    <reportString>listening to SCP-043.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>3</joyMaxParticipants>
+    <joyXpPerTick>0.005</joyXpPerTick>
+    <joyKind>Meditative</joyKind>
+    <taleOnCompletion>PlayedGame</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
 
 
 

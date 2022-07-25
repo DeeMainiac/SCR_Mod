@@ -3,7 +3,7 @@
 <ThingDef ParentName="BuildingBase">
 <defName>SCR_SCP043R</defName>
     <label>SCP-043</label>
-    <description>SCP-043 is a single vinyl record of "The White Album" by The Beatles without any ridges on it. It will play the whole album except for the last song, where a voice will speak about music theory if the listener wishes.</description>
+    <description>SCP-043 is a single vinyl record of "The White Album" by The Beatles without any grooves in it. The whole album will play except for the last song, where instead a voice will speak about music theory if the listener wishes.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -15,7 +15,7 @@
 			</li>
 		</modExtensions>
 	<graphicData>
-      <texPath>Things/Buildings/SCR_SCP2228</texPath>
+      <texPath>Things/Buildings/SCR_SCP043</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shadowData>
         <volume>(0.65, 0.25, 0.6)</volume>
@@ -47,7 +47,7 @@
       <Mass>5</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>4</Beauty>
-      <JoyGainFactor>1.2</JoyGainFactor>
+      <JoyGainFactor>1.5</JoyGainFactor>
     </statBases>
     <pathCost>30</pathCost>
     <passability>PassThroughOnly</passability>
