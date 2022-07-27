@@ -33,7 +33,7 @@
       <predator>true</predator>
       <petness>0</petness>
       <baseBodySize>1</baseBodySize>
-      <baseHungerRate>0.35</baseHungerRate>
+      <baseHungerRate>0.5</baseHungerRate>
       <baseHealthScale>1</baseHealthScale>
       <maxPreyBodySize>1.1</maxPreyBodySize>
       <foodType>CarnivoreAnimalStrict</foodType>
@@ -213,7 +213,7 @@
       <predator>true</predator>
       <petness>0</petness>
       <baseBodySize>2</baseBodySize>
-      <baseHungerRate>0.15</baseHungerRate>
+      <baseHungerRate>0.5</baseHungerRate>
       <baseHealthScale>1.2</baseHealthScale>
       <maxPreyBodySize>2</maxPreyBodySize>
       <foodType>CarnivoreAnimalStrict</foodType>

@@ -97,7 +97,6 @@
     <comps>
       <li Class="HediffCompProperties_TendDuration">
         <baseTendDurationHours>12</baseTendDurationHours>
-        <severityPerDayTended>-0.53</severityPerDayTended>
       </li>
       <!--<li Class="HediffCompProperties_Immunizable">
         <severityPerDayNotImmune>0.84</severityPerDayNotImmune>

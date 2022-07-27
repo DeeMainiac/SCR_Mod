@@ -58,11 +58,6 @@
         <spawnMtbHours>4</spawnMtbHours>
         <spawnRadius>5</spawnRadius>
       </li>
-      <li Class="CompProperties_Maintainable">
-        <ticksHealthy>60000</ticksHealthy>
-        <ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
-        <damagePerTickRare>1</damagePerTickRare>
-      </li>
     </comps>
   </ThingDef>
   
