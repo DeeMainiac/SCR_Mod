@@ -83,6 +83,18 @@
 	<minRefireDays>20</minRefireDays>
   </IncidentDef>
 
+  <IncidentDef>
+    <defName>SCR_Incident_SCP848_Growth</defName>
+    <label>cluster of SCP-848s found</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_SCP848</workerClass>
+    <baseChance>.5</baseChance>	
+	<minRefireDays>30</minRefireDays>
+  </IncidentDef>
+
 <!-- Storyteller Specific Events -->
 
 <IncidentDef>
@@ -123,6 +135,5 @@
     <workerClass>SecureContainRimworld.IncidentWorker_SCP131</workerClass>
     <baseChance>.5</baseChance>
   </IncidentDef>
-
 
 </Defs>

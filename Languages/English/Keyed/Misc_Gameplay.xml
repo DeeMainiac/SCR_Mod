@@ -39,18 +39,21 @@
 <SCP610ToggleDesc>Stops SCP-610 biome from generating on world map. Requires a new save to take effect.</SCP610ToggleDesc>
 
 <SCP3199ToggleTitle>SCP-3199 Toggle</SCP3199ToggleTitle>
-<SCP3199ToggleDesc>Stops SCP-3199 from spawning from events. Does not kill ones already on map.</SCP3199ToggleDesc>
+<SCP3199ToggleDesc>Stops SCP-3199 from spawning from events, and stops their eggs from hatching.</SCP3199ToggleDesc>
 
 <SCP939ToggleTitle>SCP-939 Toggle</SCP939ToggleTitle>
-<SCP939ToggleDesc>Stops SCP-939 from spawning from events. Does not kill ones already on map.</SCP939ToggleDesc>
+<SCP939ToggleDesc>Stops SCP-939 from spawning from events.</SCP939ToggleDesc>
 
 <SCP19051ToggleTitle>SCP-1905-1 Toggle</SCP19051ToggleTitle>
-<SCP19051ToggleDesc>Stops SCP-1905-1 from spawning. Does not kill ones already on map.</SCP19051ToggleDesc>
+<SCP19051ToggleDesc>Stops SCP-1905-1 from spawning.</SCP19051ToggleDesc>
 
 <!-- unused -->
 
 <LetterLabelCISCP3033Raid>Chaos Insurgency Raid</LetterLabelCISCP3033Raid>
 <LetterCISCP3033Raid>The Chaos Insurgency has sent SCP-3033 "Mike" units to assault the colony.\n\nThey are attacking immediately.</LetterCISCP3033Raid>
+
+<LetterLabelSCP848>SCP-848 Cluster</LetterLabelSCP848>
+<LetterSCP848>A few SCP-848-1s and their webs have grown in the area.</LetterSCP848>
 
 <LetterLabelCISCP3033RaidFriendly>Chaos Insurgency Reinforcements</LetterLabelCISCP3033RaidFriendly>
 <LetterCISCP3033RaidFriendly>The Chaos Insurgency has sent SCP-3033 "Mike" units to help you out.</LetterCISCP3033RaidFriendly>

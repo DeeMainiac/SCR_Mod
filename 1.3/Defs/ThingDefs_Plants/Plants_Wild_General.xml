@@ -31,5 +31,64 @@
     </plant>
   </ThingDef>
 
+<!--====================================== SCP-848 ======================================== -->
+<!-- Not technically a plant, but it works better this way -->
+
+  <ThingDef ParentName="PlantBaseNonEdible">
+    <defName>SCR_SCP848R</defName>
+    <label>SCP-848-2</label>
+    <description>SCP-848-2 is the web of SCP-848, an anomalous golden silk orb weaver. Occasionally, SCP-848-2 will catch other SCPs or creatures, even if they're not from the area.</description>
+        
+		<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+		<li>SCR_CEuclid</li>
+		<li>SCR_DVlam</li>
+		<li>SCR_RNotice</li>
+	</classRating>
+	<containmentTier>0</containmentTier>
+	
+	</li>
+	</modExtensions>
+	<statBases>
+	<BeautyOutdoors>3</BeautyOutdoors>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Nutrition>0.01</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/SCR_SCP848/SCR_SCP848</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.1, 0.1, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <pathCost>69</pathCost>
+    <ingestible>	
+	<foodType>Tree</foodType>
+			<preferability>NeverForNutrition</preferability>
+	</ingestible> 	
+    <plant>
+	<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
+	  <neverBlightable>true</neverBlightable>
+      <growMinGlow>0</growMinGlow>
+      <fertilitySensitivity>0.15</fertilitySensitivity>
+      <growDays>15</growDays>
+      <visualSizeRange>0.8~1.2</visualSizeRange>
+      <topWindExposure>0.1</topWindExposure>
+      <wildOrder>2</wildOrder>
+      <purpose>Beauty</purpose>
+      <allowAutoCut>false</allowAutoCut>
+    </plant>
+	<!--<comps>
+	      <li Class="CompProperties_ScannerMineralsDeep">
+        <scanSpeedStat>ResearchSpeed</scanSpeedStat>
+        <scanFindMtbDays>3</scanFindMtbDays>
+        <scanFindGuaranteedDays>6</scanFindGuaranteedDays>
+        <soundWorking>ScannerGroundPenetrating_Ambience</soundWorking>
+      </li>
+	</comps> -->
+  </ThingDef>
 
 </Defs>
