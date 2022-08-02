@@ -95,6 +95,18 @@
 	<minRefireDays>30</minRefireDays>
   </IncidentDef>
 
+  <IncidentDef>
+    <defName>SCR_Incident_SCP848_ItemSpawn</defName>
+    <label>SCP-848 found something</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_SCP848_SpawnThing</workerClass>
+    <baseChance>20</baseChance>	
+	<minRefireDays>15</minRefireDays>
+  </IncidentDef>
+
 <!-- Storyteller Specific Events -->
 
 <IncidentDef>
