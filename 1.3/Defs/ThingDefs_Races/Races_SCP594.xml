@@ -34,10 +34,11 @@
 	  <li Class="CompProperties_Milkable">
         <milkDef>Milk</milkDef>
         <milkIntervalDays>1</milkIntervalDays>
-        <milkAmount>13</milkAmount>
+        <milkAmount>12</milkAmount>
       </li>
     </comps>
     <race>
+	<thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithHooves</body>
       <baseBodySize>0.8</baseBodySize>

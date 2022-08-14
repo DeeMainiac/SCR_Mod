@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="AnimalThingBase">
+    <defName>SCR_SCP160R</defName>
+    <label>SCP-160</label>
+    <description>SCP-160 is a living quadcopter drone that hunts small animals.</description>
+  	<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+
+	<classRating>
+		<li>SCR_CEuclid</li>
+		<li>SCR_DDark</li>
+		<li>SCR_RNotice</li>
+	</classRating>
+	<containmentTier>1</containmentTier>
+	<isTranqable>false</isTranqable>
+	<hatesRoofs>true</hatesRoofs>
+	</li>
+	</modExtensions>
+	
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <MarketValue>600</MarketValue>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>40</ComfyTemperatureMax>
+	  <FilthRate>0</FilthRate>
+	  <MeatAmount>0</MeatAmount>
+	  <LeatherAmount>0</LeatherAmount>
+    </statBases>
+			<tradeTags>
+			<li>AnimalRare</li>
+			</tradeTags>
+    <race>
+	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
+      <body>Bird</body>
+	  <bloodDef>Filth_Ash</bloodDef>
+      <predator>true</predator>
+      <baseBodySize>.9</baseBodySize>
+      <maxPreyBodySize>.8</maxPreyBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>1.6</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+	  <useMeatFrom>Cat</useMeatFrom>
+      <leatherDef>Leather_Light</leatherDef>
+      <wildness>.8</wildness>
+      <trainability>None</trainability>
+      <nameOnTameChance>1</nameOnTameChance>
+	  <manhunterOnTameFailChance>.5</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+	  	  			<wildBiomes>
+				<AridShrubland>.1</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>.1</TemperateForest>
+				<TemperateSwamp>.1</TemperateSwamp>
+				<TropicalRainforest>.1</TropicalRainforest>
+				<TropicalSwamp>.1</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>.2</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+	  <gestationPeriodDays>12</gestationPeriodDays>
+      <lifeExpectancy>15</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.1</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>.15</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+      <defName>SCR_SCP160R</defName>
+    <label>SCP-160</label>
+    <race>SCR_SCP160R</race>
+    <combatPower>200</combatPower>
+    <ecoSystemWeight>1</ecoSystemWeight>
+	<canArriveManhunter>true</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <label>SCP-160 pup</label>
+        <labelPlural>SCP-160 puppies</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP160/SCR_SCP160</texPath>
+          <drawSize>.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP160/SCR_SCP160</texPath>
+          <drawSize>.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP160/SCR_SCP160</texPath>
+          <drawSize>.2</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP160/SCR_SCP160</texPath>
+          <drawSize>.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP160/SCR_SCP160</texPath>
+          <drawSize>.3</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP160/SCR_SCP160</texPath>
+          <drawSize>.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+
+
+
+
+
+
+</Defs>
