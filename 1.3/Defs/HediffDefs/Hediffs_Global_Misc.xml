@@ -91,4 +91,90 @@
     </stages>
   </HediffDef>
   
+  <HediffDef ParentName="DiseaseBase">
+    <defName>SCR_SCP666Half_FoodPoisoning</defName>
+    <label>SCP-666 1/2-J</label>
+    <description>Awful gastrointestinal illness caused by SCP-666 1/2-J. The patient will vomit and feel very sick for some time.</description>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <initialSeverity>1</initialSeverity>
+	<makesSickThought>true</makesSickThought>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-.9</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>recovering</label>
+        <vomitMtbDays>0.2</vomitMtbDays>
+        <painOffset>0.5</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.3</postFactor>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.75</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <postFactor>0.7</postFactor>
+          </li>
+          <li>
+            <capacity>Eating</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>major</label>
+        <minSeverity>0.4</minSeverity>
+        <vomitMtbDays>0.25</vomitMtbDays>
+        <painOffset>0.5</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.7</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <postFactor>0.7</postFactor>
+          </li>
+          <li>
+            <capacity>Eating</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+        </capMods>
+      </li>
+	  <li>
+        <label>initial</label>
+        <minSeverity>0.85</minSeverity>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.95</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
 </Defs>

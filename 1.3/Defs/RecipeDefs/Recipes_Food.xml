@@ -40,6 +40,52 @@
       </recipeUsers>
 </RecipeDef>
 
-
+   <RecipeDef>
+	<defName>SCR_Make666HalfJ</defName>
+	<label>cook SCP-666 1/2-J</label>
+	<description>Makes a slightly salty mushroom-stuffed crab dish that gives very nasty food poisoning.</description>
+	<jobString>Making a mistake.</jobString>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+	<workAmount>1000</workAmount>
+    <soundWorking>Recipe_CookMeal</soundWorking>          
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+	    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>Meat_Human</li>
+        <li>Meat_Megaspider</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+	    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+      <disallowedCategories>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+	<products>
+	  <SCR_SCP666HalfJ>1</SCR_SCP666HalfJ>
+	</products>
+	<workSkill>Cooking</workSkill>
+		<recipeUsers>
+         <li>ElectricStove</li>
+	    <li>FueledStove</li>
+		<li>Campfire</li>
+      </recipeUsers>
+</RecipeDef>
 
 </Defs>
