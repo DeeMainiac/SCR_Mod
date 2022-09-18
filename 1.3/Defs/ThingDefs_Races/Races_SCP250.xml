@@ -47,13 +47,13 @@
       <baseHungerRate>0.325</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
-      <wildness>.98</wildness>
+      <wildness>.97</wildness>
       <trainability>Advanced</trainability>
 	  <useMeatFrom>Cat</useMeatFrom>
 	  <leatherDef>Leather_Light</leatherDef>
 
-	  <manhunterOnTameFailChance>.7</manhunterOnTameFailChance>
-	  <manhunterOnDamageChance>1</manhunterOnDamageChance>
+	  <manhunterOnTameFailChance>.65</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>.9</manhunterOnDamageChance>
 	  			<wildBiomes>
 				<AridShrubland>.1</AridShrubland>
 				<BorealForest>0</BorealForest>
@@ -132,7 +132,7 @@
     <combatPower>400</combatPower>
     		<wildGroupSize>
 			<min>1</min>
-			<max>1</max>
+			<max>2</max>
 		</wildGroupSize>
     <lifeStages>
       <li>
