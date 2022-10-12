@@ -23,6 +23,9 @@
       <ComfyTemperatureMax>45</ComfyTemperatureMax>
 	  <FilthRate>0</FilthRate>
     </statBases>
+			<butcherProducts>
+			<Steel>30</Steel>
+		</butcherProducts>
     <uiIconScale>1.1</uiIconScale>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>

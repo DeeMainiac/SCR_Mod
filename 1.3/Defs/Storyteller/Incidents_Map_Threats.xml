@@ -17,6 +17,20 @@
   </IncidentDef>
 
   <IncidentDef>
+    <defName>SCR_Incident_SCP2845_Hunt</defName>
+    <label>SCP-2845 and minions</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_SCP2845</workerClass>
+    <baseChance>1</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>ManhunterPack</tale>
+	<minRefireDays>35</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
     <defName>SCR_Incident_SCP939_Hunt</defName>
     <label>SCP-3199 pack</label>
     <targetTags>
@@ -146,6 +160,20 @@
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP131</workerClass>
     <baseChance>.5</baseChance>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>SCR_Incident_SCP2845_Hunt_Storyteller</defName>
+    <label>SCP-2845 and minions</label>
+	<category>SCR_SCPThreat</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>SecureContainRimworld.IncidentWorker_SCP2845</workerClass>
+    <baseChance>1</baseChance>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>ManhunterPack</tale>
+	<minRefireDays>20</minRefireDays>
   </IncidentDef>
 
 </Defs>

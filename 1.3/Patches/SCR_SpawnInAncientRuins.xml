@@ -54,7 +54,7 @@
         </li> -->
 	
 	      <li>
-          <weight>1.2</weight>
+          <weight>1.5</weight>
           <thingSetMaker Class="ThingSetMaker_StackCount">
             <fixedParams>
               <filter>

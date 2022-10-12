@@ -7,7 +7,7 @@
     <description>A hive-like structure created by something infested by SCP-610. It causes the nearby area to be covered in a fleshy substance, as well as spawn more SCP-610 instances.</description>
     <thingClass>Hive</thingClass>
     <graphicData>
-      <texPath>Things/Building/Natural/Hive</texPath>
+      <texPath>Things/Buildings/SCR_SCP610Hive</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <color>(170,43,0)</color>
       <drawSize>1.6</drawSize>

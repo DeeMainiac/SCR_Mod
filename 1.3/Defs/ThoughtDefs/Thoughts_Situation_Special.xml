@@ -138,6 +138,18 @@
     </stages>
   </ThoughtDef> 
 
+    <ThoughtDef>
+    <defName>SCR_TransmuteTime</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_SCP2845</workerClass>
+    <stages>
+      <li>
+        <label>SCP-2845 Transmutation Aura</label>
+        <description>I feel like I'm falling apart at the seams.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
   <ThoughtDef>
     <defName>SCR_CarryingCeramicSeahorse</defName>
    <workerClass>SecureContainRimworld.ThoughtWorker_SmolSeahorse</workerClass>

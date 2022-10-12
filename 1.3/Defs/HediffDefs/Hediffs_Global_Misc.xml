@@ -185,7 +185,7 @@
     <description>This pawn is under the effect of SCP-2845's transmutation aura, fatally transforming them into an SCP-2845-1 instance.
 \nNaturally recovers over time as the body filters it out.</description>
 	<initialSeverity>.15</initialSeverity>
-	<lethalSeverity>1</lethalSeverity>
+	<lethalSeverity>.84</lethalSeverity>
 	<makesSickThought>true</makesSickThought>
 
     <comps>

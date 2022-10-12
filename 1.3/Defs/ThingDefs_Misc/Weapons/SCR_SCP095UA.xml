@@ -40,7 +40,8 @@
 	<thingSetMakerTags>
       <li>RewardStandardLowFreq</li>
     </thingSetMakerTags>
-	    <verbs>
+	        <smeltable>false</smeltable>
+		<verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>

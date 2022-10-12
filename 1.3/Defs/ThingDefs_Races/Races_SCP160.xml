@@ -31,6 +31,9 @@
 			<tradeTags>
 			<li>AnimalRare</li>
 			</tradeTags>
+		<butcherProducts>
+			<Steel>10</Steel>
+		</butcherProducts>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>Bird</body>
