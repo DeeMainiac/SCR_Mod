@@ -43,9 +43,8 @@
 				<useLabel>Use</useLabel>
 				<useDuration>60</useDuration>
 			</li>      
-			<li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_DestroySelf</compClass>
-      </li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+
 			<li Class="CompProperties_UseEffect">
 				<compClass>SecureContainRimworld.CompUseEffect_UseSCP1577</compClass>
 			</li>

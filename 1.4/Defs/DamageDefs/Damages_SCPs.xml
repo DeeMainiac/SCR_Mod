@@ -79,7 +79,7 @@
 			<li>
 				<hediff>SCR_SCP610Infection</hediff>
 				<severityPerDamageDealt>0.004</severityPerDamageDealt>
-				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
 			</li>
 		</additionalHediffs>
 		<defaultDamage>8</defaultDamage>
@@ -101,7 +101,7 @@
 			<li>
 				<hediff>SCR_SCP610Infection</hediff>
 				<severityPerDamageDealt>0.004</severityPerDamageDealt>
-				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
 			</li>
 		</additionalHediffs>
 		<defaultDamage>5</defaultDamage>
