@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<!-- SCP-3033 -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>SCR_SCP30331R</defName>
+    <label>SCP-3033-1</label>
+    <labelNoun>an SCP-3033-1</labelNoun>
+    <description>An installed SCP-3033-1 "Mike" unit implant.</description>
+	    <modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+	<li>SCR_CEuclid</li>
+	<li>SCR_DKeneq</li>
+	<li>SCR_RNotice</li>
+	</classRating>	
+		<containmentTier>1</containmentTier>
+		<isTranqable>false</isTranqable>
+	</li>
+	</modExtensions>
+    <descriptionHyperlinks><ThingDef>SCR_SCP30331R</ThingDef></descriptionHyperlinks>
+          <stages>
+         <li>
+            <painFactor>0</painFactor>
+            <restFallFactor>0.1</restFallFactor>
+            <hungerRateFactor>0.1</hungerRateFactor>
+			<disabledWorkTags>
+			<li>Caring</li>
+			<li>Animals</li>
+			<li>Intellectual</li>
+			<li>ManualSkilled</li>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			</disabledWorkTags>
+            <capMods>
+               <li>
+			<capacity>Manipulation</capacity>
+			<setMax>.75</setMax>
+               </li>
+			<li>
+			<capacity>Talking</capacity>
+			<setMax>0</setMax>
+               </li>
+            </capMods>
+         </li>
+      </stages>
+    <spawnThingOnRemoved>SCR_SCP30331R</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartProstheticBase">
+    <defName>SCR_SCP30331R</defName>
+    <label>SCP-3033-1</label>
+    <description>SCP-3033-1 is a brain implant by the Chaos Insurgency to completely control a pawn via another pawn with an SCP-3033-2 "Controller" implant. This implant also gives an immunity to pain and reduces fine motor control, preventing numerous tasks from being done. It is completely inert when not installed.</description>
+	<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+	<li>SCR_CEuclid</li>
+	<li>SCR_DKeneq</li>
+	<li>SCR_RNotice</li>
+	</classRating>	
+		<containmentTier>1</containmentTier>
+	<isTranqable>false</isTranqable>
+	</li>
+	</modExtensions>
+	<descriptionHyperlinks>
+	<RecipeDef>SCR_InstallSCP30331R</RecipeDef>
+	<ThingDef>SCR_SCP30332R</ThingDef>
+	</descriptionHyperlinks>
+	
+    <techHediffsTags>
+      <li>Spacer</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>SCR_RemoveSCP30331R</defName>
+    <label>remove SCP-3033-1</label>
+    <description>Remove the SCP-3033-1 implant.</description>
+	 <skillRequirements>
+      <Medicine>15</Medicine>
+    </skillRequirements>
+    <descriptionHyperlinks>
+      <ThingDef>SCR_SCP30331R</ThingDef>
+      <HediffDef>SCR_SCP30331R</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing the SCP-3033-1 implant.</jobString>
+    <removesHediff>SCR_SCP30331R</removesHediff>
+  </RecipeDef>
+
+<!-- idk if I want you to be able to install them lol, but this is needed for raiders to spawn with it-->
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>SCR_InstallSCP30331R</defName>
+    <label>install SCP-3033-1</label>
+    <description>Install an SCP-3033-1 "Mike" unit implant</description>
+    <descriptionHyperlinks>
+      <ThingDef>SCR_SCP30331R</ThingDef>
+      <HediffDef>SCR_SCP30331R</HediffDef>
+    </descriptionHyperlinks>
+	    <skillRequirements>
+      <Medicine>15</Medicine>
+    </skillRequirements>
+    <jobString>Installing an SCP-3033-1 implant.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SCR_SCP30331R</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_SCP30331R</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SCR_SCP30331R</addsHediff>
+  </RecipeDef>
+ 
+ <!--                                    SCP-3033-2                 -->
+ 
+   <HediffDef ParentName="ImplantHediffBase">
+    <defName>SCR_SCP30332R</defName>
+    <label>SCP-3033-2</label>
+    <labelNoun>an SCP-3033-2</labelNoun>
+    <description>An installed SCP-3033-2 "Controller" unit implant.</description>
+	    <modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+	<li>SCR_CEuclid</li>
+	<li>SCR_DKeneq</li>
+	<li>SCR_RNotice</li>
+	</classRating>	
+		<containmentTier>1</containmentTier>
+		<isTranqable>false</isTranqable>
+	</li>
+	</modExtensions>
+    <descriptionHyperlinks><ThingDef>SCR_SCP30332R</ThingDef></descriptionHyperlinks>
+          <stages>
+         <li>
+            <painFactor>0</painFactor>
+         </li>
+      </stages>
+    <spawnThingOnRemoved>SCR_SCP30332R</spawnThingOnRemoved>
+  </HediffDef>
+ 
+   <ThingDef ParentName="BodyPartProstheticBase">
+    <defName>SCR_SCP30332R</defName>
+    <label>SCP-3033-2</label>
+    <description>SCP-3033-2 is a brain implant by the Chaos Insurgency to completely control pawns with an SCP-3033-1 "Mike" unit implant. This implant also gives an immunity to pain. It is completely inert when not installed.</description>
+	<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+	<li>SCR_CEuclid</li>
+	<li>SCR_DKeneq</li>
+	<li>SCR_RNotice</li>
+	</classRating>	
+		<containmentTier>1</containmentTier>
+	<isTranqable>false</isTranqable>
+	</li>
+	</modExtensions>
+	<descriptionHyperlinks>
+	<RecipeDef>SCR_InstallSCP30332R</RecipeDef>
+	<ThingDef>SCR_SCP30331R</ThingDef>
+	</descriptionHyperlinks>
+    <techHediffsTags>
+      <li>Spacer</li>
+    </techHediffsTags>
+  </ThingDef>
+ 
+ <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>SCR_RemoveSCP30332R</defName>
+    <label>remove SCP-3033-2</label>
+    <description>Remove the SCP-3033-2 implant.</description>
+	 <skillRequirements>
+      <Medicine>15</Medicine>
+    </skillRequirements>
+    <descriptionHyperlinks>
+      <ThingDef>SCR_SCP30332R</ThingDef>
+      <HediffDef>SCR_SCP30332R</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing the SCP-3033-2 implant.</jobString>
+    <removesHediff>SCR_SCP30332R</removesHediff>
+  </RecipeDef>
+ 
+ <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>SCR_InstallSCP30332R</defName>
+    <label>install SCP-3033-2</label>
+    <description>Install an SCP-3033-2 "controller" unit implant</description>
+    <descriptionHyperlinks>
+      <ThingDef>SCR_SCP30332R</ThingDef>
+      <HediffDef>SCR_SCP30332R</HediffDef>
+    </descriptionHyperlinks>
+	    <skillRequirements>
+      <Medicine>15</Medicine>
+    </skillRequirements>
+    <jobString>Installing an SCP-3033-2 implant.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SCR_SCP30332R</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_SCP30332R</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SCR_SCP30332R</addsHediff>
+  </RecipeDef>
+ 
+</Defs>

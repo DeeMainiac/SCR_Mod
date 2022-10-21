@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<ThingDef ParentName="ApparelMakeableBase">
+	<defName>SCR_ClassDJumpsuit</defName>
+	<label>D-class Jumpsuit</label>
+		<description>Orange jumpsuit reserved for D-class personnel. Offers little in the way of protection and supresses the wearer psychologically.</description>
+    <graphicData>
+      <texPath>Things/Item/Apparel/SCR_ClassDJumpsuit/SCR_ClassDJumpsuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<techLevel>Industrial</techLevel>
+	<costList>
+      <Cloth>80</Cloth>
+    </costList>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.4</Mass>
+      <StuffEffectMultiplierArmor>0.21</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.35</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <apparel>
+      <slaveApparel>true</slaveApparel>
+      <bodyPartGroups>
+        <li>Neck</li>
+		<li>Shoulders</li>
+		<li>Torso</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Apparel/SCR_ClassDJumpsuit/SCR_ClassDJumpsuit</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+	  <defaultOutfitTags>
+        <li>Slave</li>
+      </defaultOutfitTags>
+    </apparel>
+	<recipeMaker>
+	      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>
+
+	

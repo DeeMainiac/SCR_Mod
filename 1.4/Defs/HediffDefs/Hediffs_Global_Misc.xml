@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>SCR_TranqHediff</defName>
+    <label>tranquilizer</label>
+    <description>Sleep drugs in the body delivered by a tranquilizer dart or a stun baton. Renders creatures unconscious after a time.
+\nNaturally recovers over time as the body filters it out.</description>
+    <lethalSeverity>1</lethalSeverity>
+	<initialSeverity>.15</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>45000~100000</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0.15</minSeverity>
+        <label>little</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.30</minSeverity>
+        <label>moderate</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.45</minSeverity>
+        <label>severe</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.4</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.60</minSeverity>
+        <label>extreme</label>
+        <lifeThreatening>true</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.4</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>SCR_SCP939BreathHediff</defName>
+    <label>SCP-939 breath</label>
+    <description>An amnesia-inducing substance exhaled from SCP-939.
+\nNaturally recovers over time as the body filters it out.</description>
+	<initialSeverity>.15</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>45000~100000</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+      </li>
+    </comps>
+   <stages>
+      <li>
+        <minSeverity>0.15</minSeverity>
+        <label>moderate</label>
+      </li>
+      <li>
+        <minSeverity>0.30</minSeverity>
+        <label>severe</label>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>SCR_SCP666Half_FoodPoisoning</defName>
+    <label>SCP-666 1/2-J</label>
+    <description>Awful gastrointestinal illness caused by SCP-666 1/2-J. The patient will vomit and feel very sick for some time.</description>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <initialSeverity>1</initialSeverity>
+	<makesSickThought>true</makesSickThought>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-.9</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>recovering</label>
+        <vomitMtbDays>0.2</vomitMtbDays>
+        <painOffset>0.5</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.3</postFactor>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.75</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <postFactor>0.7</postFactor>
+          </li>
+          <li>
+            <capacity>Eating</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>major</label>
+        <minSeverity>0.4</minSeverity>
+        <vomitMtbDays>0.25</vomitMtbDays>
+        <painOffset>0.5</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.7</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <postFactor>0.7</postFactor>
+          </li>
+          <li>
+            <capacity>Eating</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+        </capMods>
+      </li>
+	  <li>
+        <label>initial</label>
+        <minSeverity>0.85</minSeverity>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.95</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.9</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+   <!-- SCP-2845 -->
+
+ <HediffDef ParentName="DiseaseBase">
+    <defName>SCR_SCP2845TransmuteHediff</defName>
+    <label>SCP-2845 Transmutation Aura</label>
+    <description>This pawn is under the effect of SCP-2845's transmutation aura, fatally transforming them into an SCP-2845-1 instance.
+\nNaturally recovers over time as the body filters it out.</description>
+	<initialSeverity>.15</initialSeverity>
+	<lethalSeverity>.84</lethalSeverity>
+	<makesSickThought>true</makesSickThought>
+
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>45000~100000</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+    </comps>
+   <stages>
+      <li>
+        <minSeverity>0.15</minSeverity>
+        <label>initial</label>
+      </li>
+      <li>
+        <minSeverity>0.30</minSeverity>
+        <label>moderate</label>
+	    <lifeThreatening>true</lifeThreatening>
+		<capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+	  <li>
+	  <minSeverity>0.50</minSeverity>
+	  <label>severe</label>
+	  <lifeThreatening>true</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.4</offset>
+          </li>
+        </capMods>
+	  </li>
+    </stages>
+  </HediffDef>
+  
+  
+  
+</Defs>

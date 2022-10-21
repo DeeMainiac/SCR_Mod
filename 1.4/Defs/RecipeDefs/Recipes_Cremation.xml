@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>SCR_CremateSCP3199Egg</defName>
+    <label>cremate neutralized SCP-3199 egg</label>
+    <description>Cremate a neutralized SCP-3199 egg to get rid of it completely.</description>
+    <jobString>Cremating.</jobString>
+    <workAmount>360</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+	<recipeUsers>
+	<li>ElectricCrematorium</li>
+	<li>ElectricSmelter</li>
+	</recipeUsers>
+	 <products>
+      <Plasteel>2</Plasteel>
+    </products>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>SCPObjects</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_SCP3199EggRuined</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>SCR_MakeSCP578Stone</defName>
+    <label>create SCP-578-1</label>
+    <description>Combine a corpse with SCP-578 to make bits of SCP-578-1.</description>
+    <jobString>making SCP-578-1.</jobString>
+    <workAmount>180</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+	<recipeUsers>
+	<li>CraftingSpot</li>
+	<li>DrugLab</li>
+	</recipeUsers>
+    <autoStripCorpses>true</autoStripCorpses>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>SCR_SCP578R</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Corpses</li>
+      </categories>
+      <disallowedCategories>
+        <li>CorpsesMechanoid</li>
+		<li>CorpsesAnimal</li>
+      </disallowedCategories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Corpse_Human</li>
+      </thingDefs>
+      <specialFiltersToAllow>
+       <!-- <li>AllowCorpsesColonist</li> -->
+        <li MayRequire="Ludeon.RimWorld.Ideology">AllowCorpsesSlave</li>
+        <li>AllowCorpsesStranger</li>
+      </specialFiltersToAllow>
+    </defaultIngredientFilter>
+	<products>
+      <SCR_SCP578_1R>50</SCR_SCP578_1R>
+    </products>
+  </RecipeDef>
+
+</Defs>

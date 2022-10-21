@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<FactionDef ParentName="FactionBase">
+    <defName>SCR_GOC</defName>
+    <label>Global Occult Coalition</label>
+    <description>A large collection of anomalous/occult organizations. They seek to keep humanlikes safe and unaware of anomalous/paranormal entities by destroying them. They have particularly shaky relationships with powerful groups that hold and use anomalous entities.</description>
+   <!-- <pawnSingular>insurgent</pawnSingular>
+    <pawnsPlural>insurgents</pawnsPlural> -->
+	<listOrderPriority>11</listOrderPriority>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Global Occult Coalition</fixedName>
+	<leaderTitle>High Command</leaderTitle>
+	<leaderTitleFemale>High Command</leaderTitleFemale>
+    <factionIconPath>World/WorldObjects/Expanding/GlobalOccultCoalition</factionIconPath>
+    <colorSpectrum>
+      <li>(1, 1, 1)</li>
+    </colorSpectrum>
+	<canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <humanlikeFaction>true</humanlikeFaction>
+	<leaderForceGenerateNewPawn>True</leaderForceGenerateNewPawn>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>true</canUseAvoidGrid>
+    <techLevel>Spacer</techLevel>
+	<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+							<!-- Ideology dlc stuff -->
+	<allowedCultures><li>Astropolitan</li></allowedCultures>
+	<requiredMemes>
+	   <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+	   <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+	   <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+	</requiredMemes>
+	<disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+	</disallowedMemes>
+	<disallowedPrecepts>
+	</disallowedPrecepts>
+	
+	<geneticVariance>0.8</geneticVariance>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+	
+	<pawnGroupMakers>
+	      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>0</commonality>
+        <options>
+          <Drifter>10</Drifter>
+          <Thrasher>3</Thrasher>
+          <Scavenger>10</Scavenger>
+          <Pirate>10</Pirate>
+          <Grenadier_EMP>0.25</Grenadier_EMP>
+          <Grenadier_Smoke>0.25</Grenadier_Smoke>
+          <Grenadier_Destructive>2</Grenadier_Destructive>
+          <Mercenary_Gunner>10</Mercenary_Gunner>
+          <Mercenary_Heavy>6</Mercenary_Heavy>
+          <Mercenary_Slasher>3</Mercenary_Slasher>
+          <Mercenary_Sniper>7</Mercenary_Sniper>
+          <Mercenary_Elite>10</Mercenary_Elite>
+		  <PirateBoss>10</PirateBoss>
+        </options>
+      </li>
+	
+	      <li>
+        <!-- Base defense, mainly ranged with melee mix-ins -->
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Thrasher>3</Thrasher>
+          <Pirate>10</Pirate>
+          <Grenadier_Destructive>2</Grenadier_Destructive>
+          <Mercenary_Slasher>3</Mercenary_Slasher>
+          <Mercenary_Sniper>10</Mercenary_Sniper>
+          <Mercenary_Gunner>10</Mercenary_Gunner>
+          <Mercenary_Elite>10</Mercenary_Elite>
+          <PirateBoss>10</PirateBoss>
+		  <SCR_SCP30331_Mike>12</SCR_SCP30331_Mike>
+		  <SCR_SCP30332_Controller>1</SCR_SCP30332_Controller>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader>1</Town_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <Villager>3</Villager>
+          <Town_Guard>10</Town_Guard>
+          <Grenadier_Destructive>1.5</Grenadier_Destructive>
+          <Mercenary_Slasher>7</Mercenary_Slasher>
+          <Mercenary_Gunner>10</Mercenary_Gunner>
+          <Mercenary_Elite>10</Mercenary_Elite>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Villager>20</Villager>
+          <Town_Guard>10</Town_Guard>
+          <Town_Councilman>10</Town_Councilman>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Villager>10</Villager>
+          <Town_Guard>10</Town_Guard>
+          <Grenadier_Destructive>1.5</Grenadier_Destructive>
+          <Mercenary_Slasher>7</Mercenary_Slasher>
+          <Mercenary_Gunner>10</Mercenary_Gunner>
+          <Mercenary_Elite>10</Mercenary_Elite>
+          <Town_Councilman>10</Town_Councilman>
+        </options>
+      </li>
+	</pawnGroupMakers>
+	
+    <naturalEnemy>false</naturalEnemy>
+     <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+        <commonality>0.5</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>0.30</commonality>
+      </li>
+	        <li>
+        <categories>
+          <li>Pirate</li>
+        </categories>
+        <commonality>0.2</commonality>
+      </li>
+    </backstoryFilters>
+     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>50</configurationListOrderPriority>
+  </FactionDef>
+
+
+
+</Defs>

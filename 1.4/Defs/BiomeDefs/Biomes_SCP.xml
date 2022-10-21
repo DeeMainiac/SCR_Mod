@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BiomeDef>
+    <defName>SCR_SCP610Biome</defName>
+    <label>SCP-610 Plaguelands</label>
+    <description>A region that SCP-610 has taken over. The majority of surfaces are covered in a fleshy substance, and most life is infested with SCP-610. Don't let them touch you.\n\nWarning: Difficult starting location due to sparse resources, wildlife hostility, and SCP-610's fatal disease.</description>
+    	    <modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+		<li>SCR_CKeter</li>
+		<li>SCR_DEkhi</li>
+		<li>SCR_RDanger</li>
+	</classRating>
+	
+	<containmentTier>0</containmentTier>
+	
+	</li>
+	</modExtensions>
+	<workerClass>SecureContainRimworld.SCR_BiomeWorker_SCP610</workerClass>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <animalDensity>0.5</animalDensity>
+    <plantDensity>0.5</plantDensity>
+    <settlementSelectionWeight>0.001</settlementSelectionWeight>
+    <movementDifficulty>2.5</movementDifficulty>
+	<canAutoChoose>false</canAutoChoose>
+    <texture>World/Biomes/SCR_BiomeSCP610</texture>
+    <forageability>0.5</forageability>
+    <foragedFood>RawAgave</foragedFood>
+    <wildPlantRegrowDays>23</wildPlantRegrowDays>
+    <soundsAmbient>
+      <li>Ambient_NightInsects_Standard</li>
+    </soundsAmbient>
+    <diseaseMtbDays>65</diseaseMtbDays>
+    <diseases>
+     <li>
+        <diseaseInc>SCR_Disease_SCP1797R</diseaseInc>
+        <commonality>120</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_Plague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_GutWorms</diseaseInc>
+        <commonality>60</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_MuscleParasites</diseaseInc>
+        <commonality>60</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_FibrousMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      
+      <li>
+        <diseaseInc>Disease_SensoryMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalFlu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalPlague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+    </diseases>
+    <terrainsByFertility>
+      <li>
+        <terrain>SCR_SCP610_FleshyGravel</terrain>
+        <min>-999</min>
+        <max>0.46</max>
+      </li>
+      <li>
+        <terrain>SCR_SCP610_FleshySoil</terrain>
+        <min>0.46</min>
+        <max>0.99</max>
+      </li>
+      <li>
+        <terrain>SoilRich</terrain>
+        <min>0.99</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <baseWeatherCommonalities>
+      <Clear>15</Clear>
+      <Fog>1</Fog>
+      <Rain>3</Rain>
+      <DryThunderstorm>.25</DryThunderstorm>
+      <RainyThunderstorm>2</RainyThunderstorm>
+      <FoggyRain>1</FoggyRain>
+      <SnowGentle>4</SnowGentle>
+      <SnowHard>2</SnowHard>
+    </baseWeatherCommonalities>
+    <wildPlants>
+      <SCR_SCP610_Grass>3.0</SCR_SCP610_Grass>	  
+	<!--  <Plant_Brambles>0.5</Plant_Brambles> -->
+	 <Plant_Dandelion>0.6</Plant_Dandelion>
+	 <Plant_HealrootWild>0.05</Plant_HealrootWild>
+	 <Plant_Agave>.09</Plant_Agave>
+	 <Plant_TreeDrago>0.25</Plant_TreeDrago>
+	 <Plant_TreeOak>0.15</Plant_TreeOak>
+	 <Plant_Rafflesia>0.05</Plant_Rafflesia>
+	 
+    </wildPlants>
+    <wildAnimals>
+	<SCR_SCP610A>1.0</SCR_SCP610A>
+	<SCR_SCP610B>1.0</SCR_SCP610B>
+      <Rat>1.0</Rat>
+      <Hare>1.0</Hare>
+      <Boomrat>0.5</Boomrat>
+      <Boomalope>0.6</Boomalope>
+    </wildAnimals>
+    <allowedPackAnimals>
+      <li>Muffalo</li>
+      <li>Dromedary</li>
+      <li>Elephant</li>
+      <li>Alpaca</li>
+    </allowedPackAnimals>
+  </BiomeDef>
+
+
+
+
+
+
+
+
+</Defs>

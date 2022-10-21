@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>SCR_SCP2845R</defName>
+    <label>SCP-2845</label>
+    <description>SCP-2845 is a pastel green deer with the head of a man and a strange ring of ice and hydrogen floating behind it. It is capable of transmuting and reconstructing the materials around itself, often converting living subjects into SCP-2845-1.</description>
+    	<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+		<li>SCR_CKeter</li>
+		<li>SCR_DKeneq</li>
+		<li>SCR_RDanger</li>
+	</classRating>
+	
+	<containmentTier>2</containmentTier>
+	<willManhuntAfterBreach>true</willManhuntAfterBreach>
+	
+	</li>
+	</modExtensions>
+	<statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <MarketValue>3000</MarketValue>
+      <ComfyTemperatureMin>-90</ComfyTemperatureMin>
+      <FilthRate>20</FilthRate>
+	  <ArmorRating_Sharp>.4</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>.2</ArmorRating_Blunt>
+	  <ArmorRating_Heat>.2</ArmorRating_Heat>
+    </statBases>
+    <uiIconScale>1.6</uiIconScale>
+    <comps>
+	<li Class="CompProperties_GiveHediffSeverity">
+        <hediff>SCR_SCP2845TransmuteHediff</hediff>
+        <range>10</range>
+        <severityPerSecond>0.01</severityPerSecond>
+        <drugExposure>false</drugExposure>
+        <allowMechs>false</allowMechs>
+      </li>
+    </comps>
+    <race>
+	<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
+      <body>QuadrupedAnimalWithHooves</body>
+      <herdAnimal>false</herdAnimal>
+      <baseBodySize>2.5</baseBodySize>
+      <baseHungerRate>0.00000001</baseHungerRate>
+      <baseHealthScale>2.5</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Plain</leatherDef>
+	  <useMeatFrom>Deer</useMeatFrom>
+      <wildness>1</wildness>
+      <gestationPeriodDays>6.66</gestationPeriodDays>
+      <lifeExpectancy>100</lifeExpectancy>
+	  <trainability>None</trainability>
+	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>10</manhunterOnDamageChance>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Elk_Wounded</soundWounded>
+          <soundDeath>Pawn_Elk_Death</soundDeath>
+          <soundCall>Pawn_Elk_Call</soundCall>
+          <soundAngry>Pawn_Elk_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tools>
+      <li>
+        <label>left hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+      <li>
+        <label>horns</label>
+        <capacities>
+          <li>Blunt</li>
+		  <li>Stab</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SCR_SCP2845R</defName>
+    <label>SCP-2845</label>
+    <race>SCR_SCP2845R</race>
+    <combatPower>1100</combatPower>
+    <ecoSystemWeight>1.1</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP2845/SCR_SCP2845</texPath>
+          <drawSize>3.1</drawSize>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.5)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Elk/Dessicated_ElkMale</texPath>
+          <drawSize>3.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<!-- SCP-2845-1 -->
+
+<ThingDef ParentName="AnimalThingBase">
+    <defName>SCR_SCP28451R</defName>
+    <label>SCP-2845-1</label>
+    <description>SCP-2845-1 is a living pillar made of rubber. It was created from a hapless pawn by SCP-2845.</description>
+    	<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+		<li>SCR_CEuclid</li>
+		<li>SCR_DKeneq</li>
+		<li>SCR_RNotice</li>
+	</classRating>
+	
+	<containmentTier>2</containmentTier>
+	<willManhuntAfterBreach>true</willManhuntAfterBreach>
+	
+	</li>
+	</modExtensions>
+	<statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <MarketValue>1000</MarketValue>
+      <ComfyTemperatureMin>-90</ComfyTemperatureMin>
+      <FilthRate>20</FilthRate>
+	  <MeatAmount>0</MeatAmount>
+	<LeatherAmount>0</LeatherAmount>
+		  <ArmorRating_Sharp>.69</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>.69</ArmorRating_Blunt>
+	  <ArmorRating_Heat>-.2</ArmorRating_Heat>
+    </statBases>
+	<butcherProducts>
+			<Steel>15</Steel>
+	</butcherProducts>
+    <uiIconScale>1.6</uiIconScale>
+    <race>
+	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
+      <body>SCR_PillarBod</body>
+      <herdAnimal>false</herdAnimal>
+      <baseBodySize>1.5</baseBodySize>
+      <baseHungerRate>0.00000001</baseHungerRate>
+      <baseHealthScale>2</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Plain</leatherDef>
+	  <useMeatFrom>Cat</useMeatFrom>
+      <wildness>1</wildness>
+      <gestationPeriodDays>6.66</gestationPeriodDays>
+      <lifeExpectancy>100</lifeExpectancy>
+	  <trainability>None</trainability>
+	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>10</manhunterOnDamageChance>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Elk_Wounded</soundWounded>
+          <soundDeath>Pawn_Elk_Death</soundDeath>
+          <soundCall>Pawn_Elk_Call</soundCall>
+          <soundAngry>Pawn_Elk_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tools>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SCR_SCP28451R</defName>
+    <label>SCP-2845-1</label>
+    <race>SCR_SCP28451R</race>
+    <combatPower>200</combatPower>
+    <ecoSystemWeight>1.1</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Building/BuildingStyles/Morbid/MorbidColumn</texPath>
+          <drawSize>1.5</drawSize>
+		  <color>(189, 206, 59)</color>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.5)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Building/BuildingStyles/Morbid/MorbidColumn</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

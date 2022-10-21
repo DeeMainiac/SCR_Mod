@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MealFineBase">
+    <defName>SCR_ThunderMuttonMeal</defName>
+    <label>thunder mutton meal</label>
+    <description>An electrifying, tasty dish assembled with care from SCP-594.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Pemmican</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MealFineBase">
+    <defName>SCR_SCP666HalfJ</defName>
+    <label>SCP-666 1/2-J</label>
+    <description>SCP-666 1/2-J is a tasty, if not slightly salty mushroom-stuffed crab that induces several K-class scenarios in one's guts.</description>
+    		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DKeneq</li>
+					<li>SCR_RWarning</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+    <graphicData>
+      <texPath>Things/Item/Meal/NutrientPaste</texPath>
+      <graphicClass>Graphic_MealVariants</graphicClass>
+    </graphicData>
+		<ingestible>
+		<outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SCR_SCP666Half_FoodPoisoning</hediffDef>
+        </li>
+      </outcomeDoers>
+	  </ingestible>
+	<comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

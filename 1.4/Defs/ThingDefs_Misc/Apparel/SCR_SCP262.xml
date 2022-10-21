@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="SCR_ApparelNoColorBase">
+		<defName>SCR_SCP262R</defName>
+		<label>SCP-262</label>
+		<description>SCP-262 is a European military greatcoat that grants the wearer additional arms.</description>
+	<modExtensions>
+		<li Class="SecureContainRimworld.CProceduresExtension">
+
+	<classRating>
+		<li>SCR_CEuclid</li>
+		<li>SCR_DVlam</li>
+		<li>SCR_RNotice</li>
+	</classRating>	
+	
+	</li>
+	</modExtensions>
+		<graphicData>
+			<texPath>Things/Item/Apparel/SCR_SCP262/SCR_SCP262</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+		<thingCategories>
+			<li>SCPApparel</li>
+		</thingCategories>
+		<statBases>
+		<MarketValue>3000</MarketValue>
+			<Mass>4.0</Mass>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>2.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>+0.5</MoveSpeed>
+			<WorkSpeedGlobal>+0.75</WorkSpeedGlobal>
+			<MeleeHitChance>0.3</MeleeHitChance>
+			<MeleeDodgeChance>+.1</MeleeDodgeChance>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
+		</equippedStatOffsets>
+		<generateCommonality>1</generateCommonality>
+		    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Item/Apparel/SCR_SCP262/SCR_SCP262</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+
+
+</Defs>
+
+	

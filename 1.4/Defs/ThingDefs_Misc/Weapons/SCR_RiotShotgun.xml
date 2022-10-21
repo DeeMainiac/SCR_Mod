@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>SCR_Bullet_RiotShotgun</defName>
+		<label>bean bag round</label>
+		<thingClass>SecureContainRimworld.SCR_Projectile_TranqRifle</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<stoppingPower>3.5</stoppingPower>
+			<speed>60</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/Stone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>SCR_Gun_RiotShotgun</defName>
+		<label>riot shotgun</label>
+		<description>A specially crafted shotgun that fires non-lethal bean bag rounds for knocking out most SCPs.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SCR_RiotShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>3.4</Mass>
+			<AccuracyTouch>0.88</AccuracyTouch>
+			<AccuracyShort>0.87</AccuracyShort>
+			<AccuracyMedium>0.77</AccuracyMedium>
+			<AccuracyLong>0.64</AccuracyLong>
+			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<MedicineIndustrial>1</MedicineIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>SCR_TranqGuns</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SCR_Bullet_RiotShotgun</defaultProjectile>
+				<warmupTime>.9</warmupTime>
+				<range>16</range>
+				<soundCast>Shot_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>

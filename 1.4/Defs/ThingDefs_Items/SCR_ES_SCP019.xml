@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>SCR_ES_SCP019R</defName>
+		<label>SCP-ES-019</label>
+		<description>SCP-ES-019 is a small red and black MP3 player with headphones. It emits strange audio that can cause mental breaks in listeners.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Item/Artifacts/SCR_ES_SCP019</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.6</drawSize>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>false</useHitPoints>
+		<techLevel>Ultra</techLevel>
+		<thingCategories>
+			<li>SCPObjects</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+			<li>ExoticMisc</li>
+		</tradeTags>
+
+		<statBases>
+			<Mass>0.01</Mass>
+			<MarketValue>1000</MarketValue>
+			<Beauty>1</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Listen to broadcast</useLabel>
+				<useDuration>360</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>SecureContainRimworld.CompUseEffect_UseSCPES019</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

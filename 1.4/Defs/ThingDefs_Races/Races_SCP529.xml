@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>SCR_SCP529R</defName>
+    <label>SCP-529</label>
+    <description>SCP-529 is a grey tabby cat without the rear half of their body.</description>
+	<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+
+	<classRating>
+		<li>SCR_CSafe</li>
+		<li>SCR_DDark</li>
+		<li>SCR_RNotice</li>
+	</classRating>
+	
+	<containmentTier>0</containmentTier>
+	
+	</li>
+	</modExtensions>
+	
+    <statBases>
+      <MoveSpeed>4.4</MoveSpeed>
+      <MarketValue>100</MarketValue>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <FilthRate>.2</FilthRate>
+    </statBases>
+    <race>
+      <body>SCR_BipedalQuad</body>
+      <predator>true</predator>
+      <baseBodySize>0.30</baseBodySize>
+      <maxPreyBodySize>0.25</maxPreyBodySize>
+      <baseHungerRate>0.15</baseHungerRate>
+      <baseHealthScale>0.42</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <leatherDef>Leather_Light</leatherDef>
+	  <useMeatFrom>Cat</useMeatFrom>
+
+      <wildness>0</wildness>
+      <petness>1</petness>
+      <trainability>None</trainability>
+      <nuzzleMtbHours>10</nuzzleMtbHours>
+      <gestationPeriodDays>10</gestationPeriodDays>
+      <nameOnTameChance>5</nameOnTameChance>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(3, 0.7)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>13</lifeExpectancy>
+	  	  		<wildBiomes>
+				<AridShrubland>0</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>0</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.15</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Cat_Injured</soundWounded>
+          <soundDeath>Pawn_Cat_Death</soundDeath>
+          <soundCall>Pawn_Cat_Call</soundCall>
+          <soundAngry>Pawn_Cat_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+      <li>AnimalPet</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+      <defName>SCR_SCP529R</defName>
+    <label>SCP-529</label>
+    <race>SCR_SCP529R</race>
+    <combatPower>35</combatPower>
+    <ecoSystemWeight>0.3</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP529/SCR_SCP529</texPath>
+          <drawSize>0.6</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP529/SCR_Dessicated_SCP529</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP529/SCR_SCP529</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP529/SCR_Dessicated_SCP529</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP529/SCR_SCP529</texPath>
+          <drawSize>1.1</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP529/SCR_Dessicated_SCP529</texPath>
+          <drawSize>1.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  </Defs>

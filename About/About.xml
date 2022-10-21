@@ -11,20 +11,20 @@
 </supportedVersions>
 <modDependencies>
 <li>
-		<packageId>unlimitedhugs.hugslib</packageId>
-		<displayName>HugsLib</displayName>
-		<downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib/releases/latest</downloadUrl>
-		<steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+		<packageId>brrainz.harmony</packageId>
+		<displayName>Harmony</displayName>
+		<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
 </li>
 </modDependencies>
 <loadAfter>
+		<li>brrainz.harmony</li>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Ideology</li>
-		<li>unlimitedhugs.hugslib</li>
 </loadAfter>
 
-<description>Adds stuff from the SCP Foundation project. Requires HugsLib.
+<description>Adds stuff from the SCP Foundation project. Requires Harmony.
 Includes a storyteller, a biome, creatures, weapons, apparel, objects, factions, buildings, research projects, furniture, and containment procedures.</description>
 
 </ModMetaData>

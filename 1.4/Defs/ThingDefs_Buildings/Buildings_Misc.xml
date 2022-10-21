@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>SCR_MakeshiftContainmentTank</defName>
+		<label>makeshift containment tank</label>
+		<description>A tank designed to keep an SCP in a state of psuedo-suspended animation as long as it has power.</description>
+		<thingClass>SecureContainRimworld.Building_SCRContainmentPod</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/SCR_ContainPodClosed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1, 2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<researchPrerequisites>
+			<li>SCR_ContainCrate</li>
+		</researchPrerequisites>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>68</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>3200</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,2)</size>
+		<designationCategory>Misc</designationCategory>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(1,0,0)</interactionCellOffset>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<costList>
+			<Steel>250</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.66</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+			</li>
+			<li Class="CompProperties_EmptyStateGraphic">
+				<graphicData>
+					<texPath>Things/Buildings/SCR_ContainPod</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(1, 2)</drawSize>
+				</graphicData>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_ContentsCasket</li>
+		</inspectorTabs>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+	
+</Defs>
