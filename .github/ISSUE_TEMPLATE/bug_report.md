@@ -23,8 +23,8 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Mod Version:**
-List the version and where you downloaded the mod from (i.e., Steam Workshop, etc.)
+**Mod Version & RimWorld Version:**
+List the version and where you downloaded the mod from (i.e., Steam Workshop, etc.). Also indicate what version of RimWorld you are playing with (1.3, 1.4)
  -  [e.g. 22]
 
 **Modlist**
