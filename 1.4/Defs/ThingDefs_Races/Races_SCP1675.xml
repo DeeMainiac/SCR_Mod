@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="BaseMechanoid">
-
+<ThingDef ParentName="BasePawn">
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <defName>SCR_SCP1675R</defName>
     <label>SCP-1675</label>
     <description>SCP-1675 is an autonomous robot that wanders aimlessly until a goose appears. It spouts anti-goose propaganda in French.</description>
@@ -22,12 +22,19 @@
       <ComfyTemperatureMin>-35</ComfyTemperatureMin>
       <ComfyTemperatureMax>45</ComfyTemperatureMax>
 	  <FilthRate>0</FilthRate>
+	  <PsychicSensitivity>0.5</PsychicSensitivity>
+      <ToxicResistance>1</ToxicResistance>
+	  <Flammability>0</Flammability>
+	  <MeatAmount>0</MeatAmount>
+	  <ArmorRating_Heat>2.00</ArmorRating_Heat>
     </statBases>
 			<butcherProducts>
 			<Steel>30</Steel>
 		</butcherProducts>
     <uiIconScale>1.1</uiIconScale>
     <race>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>Scyther</body>
       <baseHealthScale>0.72</baseHealthScale>
@@ -35,20 +42,22 @@
       <wildness>0</wildness>
       <roamMtbDays>2</roamMtbDays>
       <trainability>None</trainability>
-      <lifeExpectancy>100</lifeExpectancy>
+      <lifeExpectancy>200</lifeExpectancy>
+	  <bloodDef>Filth_MachineBits</bloodDef>
+
 	  	  		<wildBiomes>
-				<AridShrubland>.2</AridShrubland>
-				<BorealForest>.2</BorealForest>
-				<ColdBog>.2</ColdBog>
-				<TemperateForest>.2</TemperateForest>
-				<TemperateSwamp>.2</TemperateSwamp>
-				<TropicalRainforest>.2</TropicalRainforest>
-				<TropicalSwamp>.2</TropicalSwamp>
-				<IceSheet>.2</IceSheet>
-				<SeaIce>.2</SeaIce>
-				<Tundra>.2</Tundra>
-				<Desert>.2</Desert>
-				<ExtremeDesert>.2</ExtremeDesert>
+				<AridShrubland>.1</AridShrubland>
+				<BorealForest>.1</BorealForest>
+				<ColdBog>.1</ColdBog>
+				<TemperateForest>.1</TemperateForest>
+				<TemperateSwamp>.1</TemperateSwamp>
+				<TropicalRainforest>.1</TropicalRainforest>
+				<TropicalSwamp>.1</TropicalSwamp>
+				<IceSheet>.1</IceSheet>
+				<SeaIce>.1</SeaIce>
+				<Tundra>.1</Tundra>
+				<Desert>.1</Desert>
+				<ExtremeDesert>.1</ExtremeDesert>
 			</wildBiomes>
       <lifeStageAges>
         <li>
@@ -110,7 +119,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
+          <texPath>Things/Pawn/Mechanoid/LifterAncient</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>1</drawSize>
         </bodyGraphicData>
