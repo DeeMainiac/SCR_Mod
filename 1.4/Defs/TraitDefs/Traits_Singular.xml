@@ -21,11 +21,12 @@
     <degreeDatas>
       <li>
         <label>SCP-011</label>
-        <description>{PAWN_nameDef} is a sentient granite statue. {PAWN_pronoun} is quite durable and skilled with guns.</description>
+        <description>{PAWN_nameDef} has granite-like skin. {PAWN_pronoun} is quite durable and skilled with guns.</description>
         <marketValueFactorOffset>0.4</marketValueFactorOffset>
 		<hungerRateFactor>0.5</hungerRateFactor>
 		<statFactors>
           <IncomingDamageFactor>0.5</IncomingDamageFactor>
+		  <StaggerDurationFactor>0.5</StaggerDurationFactor>
         </statFactors>
 		<statOffsets>
           <RestRateMultiplier>0.5</RestRateMultiplier>
