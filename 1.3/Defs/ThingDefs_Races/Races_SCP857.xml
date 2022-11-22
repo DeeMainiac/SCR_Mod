@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef Name="SCR_SCP857Base" ParentName="AnimalThingBase" Abstract="True">
+
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RCaution</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+<race>
+	<body>SCR_Round</body>
+	<baseBodySize>.15</baseBodySize>
+	<baseHealthScale>0.4</baseHealthScale>
+	<leatherDef>Leather_Patch</leatherDef>
+	<useMeatFrom>Cat</useMeatFrom>
+	<lifeExpectancy>20</lifeExpectancy>
+	
+	      <lifeStageAges>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.11</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2222</minAge>
+          <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+          <soundDeath>Pawn_Rodent_Death</soundDeath>
+          <soundCall>Pawn_Rodent_Call</soundCall>
+          <soundAngry>Pawn_Rodent_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			
+			<wildBiomes>
+				<AridShrubland>0</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>.05</TemperateForest>
+				<TemperateSwamp>.2</TemperateSwamp>
+				<TropicalRainforest>.2</TropicalRainforest>
+				<TropicalSwamp>.2</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+</race>
+
+</ThingDef>
+
+<!-- A, unintelligent head -->
+
+<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857A</defName>
+		<label>SCP-857-A</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-A is a human head with hexapodal limbs that make it move like a crab.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<MarketValue>250</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>5</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<race>
+			<predator>false</predator>
+			<needsRest>true</needsRest>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.4</baseHealthScale>
+			<foodType>Corpse, OmnivoreAnimal, OvivoreAnimal</foodType>
+			<wildness>.5</wildness>
+			<trainability>None</trainability>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCR_SCP857A</defName>
+		<label>SCP-857-A</label>
+		<race>SCR_SCP857A</race>
+		<combatPower>10</combatPower>
+		<alternateGraphicChance>.9</alternateGraphicChance>
+	<alternateGraphics>
+      <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath></li>
+      <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Pointy</texPath></li>
+	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Wide</texPath></li>
+	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Normal</texPath></li>
+	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Pointy</texPath></li>
+	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Wide</texPath></li>
+    </alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
+					<drawSize>1.3</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+<!-- B, human vein acts like worm -->
+
+<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857B</defName>
+		<label>SCP-857-B</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-B is a human vein that moves like a worm.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RCaution</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<MarketValue>250</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<butcherProducts>
+			<Steel>0</Steel>
+		</butcherProducts>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<predator>false</predator>
+			<needsRest>true</needsRest>
+			<baseBodySize>.1</baseBodySize>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.4</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<wildness>.5</wildness>
+			<trainability>None</trainability>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCR_SCP857B</defName>
+		<label>SCP-857-B</label>
+		<race>SCR_SCP857B</race>
+		<combatPower>10</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+<!-- C, snail human brain -->
+
+<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857C</defName>
+		<label>SCP-857-C</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-C is a human brain that moves like a snail.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<MarketValue>250</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>5</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<predator>true</predator>
+			<needsRest>true</needsRest>
+			<baseBodySize>.2</baseBodySize>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.4</baseHealthScale>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<wildness>.5</wildness>
+			<trainability>None</trainability>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCR_SCP857C</defName>
+		<label>SCP-857-C</label>
+		<race>SCR_SCP857C</race>
+		<combatPower>10</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+<!-- D, lower intestines, fish (add as thing later for vanilla fishing expanded?) -->
+
+<!-- E, spine moves like a centipede -->
+
+<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857E</defName>
+		<label>SCP-857-E</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-E is a human spinal cord that moves like a centipede.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<MarketValue>250</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<predator>true</predator>
+			<needsRest>true</needsRest>
+			<baseBodySize>.3</baseBodySize>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.4</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<wildness>.5</wildness>
+			<trainability>None</trainability>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>.2</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>1</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCR_SCP857E</defName>
+		<label>SCP-857-E</label>
+		<race>SCR_SCP857E</race>
+		<combatPower>25</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
+					<drawSize>0.65</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
+					<drawSize>0.65</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
+					<drawSize>0.85</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
+					<drawSize>0.85</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+<!-- F, human heart leech -->
+
+<!-- G, human skin flying squirrel -->
+
+<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857G</defName>
+		<label>SCP-857-G</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-g is a piece of human flesh with bone growths that allow it to glide.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<MarketValue>250</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>5</MeatAmount>
+			<LeatherAmount>5</LeatherAmount>
+		</statBases>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<needsRest>true</needsRest>
+			<baseBodySize>.2</baseBodySize>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.3</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<wildness>.5</wildness>
+			<trainability>None</trainability>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>.2</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCR_SCP857G</defName>
+		<label>SCP-857-G</label>
+		<race>SCR_SCP857G</race>
+		<combatPower>10</combatPower>
+		<wildGroupSize>4~10</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
+					<drawSize>0.9</drawSize>
+					<color>(153,117,88)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
+					<drawSize>1</drawSize>
+					<color>(153,117,88)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+<!-- H, human ribcage spider -->
+
+<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857H</defName>
+		<label>SCP-857-H</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-H is a human ribcage that moves like a spider.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<MarketValue>250</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<predator>true</predator>
+			<needsRest>true</needsRest>
+			<baseBodySize>.5</baseBodySize>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.5</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<wildness>.5</wildness>
+			<trainability>None</trainability>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Stab</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCR_SCP857H</defName>
+		<label>SCP-857-H</label>
+		<race>SCR_SCP857H</race>
+		<combatPower>25</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+<!-- I, human head with arms, tribal -->
+
+<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857I</defName>
+		<label>SCP-857-I</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-I is a semi intelligent human head with more pronounced arms. They have been known to live in small groups.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<MarketValue>350</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>5</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<race>
+			<predator>false</predator>
+			<needsRest>true</needsRest>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.4</baseHealthScale>
+			<baseBodySize>.5</baseBodySize>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<wildness>.3</wildness>
+			<trainability>Advanced</trainability>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SCR_SCP857I</defName>
+		<label>SCP-857-I</label>
+		<race>SCR_SCP857I</race>
+		<combatPower>15</combatPower>
+		<alternateGraphicChance>.9</alternateGraphicChance>
+	<alternateGraphics>
+      <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath></li>
+      <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Pointy</texPath></li>
+	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Wide</texPath></li>
+	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Normal</texPath></li>
+	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Pointy</texPath></li>
+	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Wide</texPath></li>
+    </alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
+					<color>(255,215,201)</color>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
+					<color>(255,215,201)</color>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
+					<color>(255,215,201)</color>
+					<drawSize>1.3</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
+					<color>(255,215,201)</color>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>
