@@ -29,7 +29,7 @@
       <ThingDef>SCR_SCP30331R</ThingDef>
       <HediffDef>SCR_SCP30331R</HediffDef>
     </descriptionHyperlinks>
-	    <skillRequirements>
+	<skillRequirements>
       <Medicine>15</Medicine>
     </skillRequirements>
     <jobString>Installing an SCP-3033-1 implant.</jobString>

@@ -51,7 +51,7 @@
     <spawnThingOnRemoved>SCR_SCP30331R</spawnThingOnRemoved>
   </HediffDef>
 
-<!-- this is when its lying on the ground -->
+<!-- object on ground -->
 
   <ThingDef ParentName="BodyPartProstheticBase">
     <defName>SCR_SCP30331R</defName>
@@ -77,7 +77,6 @@
       <li>Spacer</li>
     </techHediffsTags>
   </ThingDef>
-
  
  <!--                                    SCP-3033-2                 -->
  
