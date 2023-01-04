@@ -3,20 +3,6 @@
 
 <!-- Note to self: don't forget to add a ToolCapacity && Maneuvers as well -->
 
-<!--	<DamageDef>
-		<defName>SCR_AcidDamage</defName>
-		<label>acid spittle</label>
-		<workerClass>DamageWorker_AddInjury</workerClass>
-		<hasForcefulImpact>false</hasForcefulImpact>
-		<externalViolence>true</externalViolence>
-		<deathMessage>{0} has been melted to death.</deathMessage>
-		<hediff>Burn</hediff>
-		<armorCategory>Heat</armorCategory>
-		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-		<soundExplosion>Explosion_Flame</soundExplosion>
-		<combatLogRules>Damage_Flame</combatLogRules>
-	</DamageDef>
--->
  <DamageDef Parent="Flame">
    <defName>SCR_Flame</defName>
     <workerClass>SecureContainRimworld.DamageWorker_SCR_Flame</workerClass>

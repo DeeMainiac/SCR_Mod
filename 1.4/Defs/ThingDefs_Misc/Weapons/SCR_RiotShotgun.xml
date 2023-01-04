@@ -24,6 +24,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Shotgun</soundInteract>
+		<weaponTags>
+			<li>SCR_SCP</li>
+		</weaponTags>
 		<weaponClasses>
 			<li>ShortShots</li>
 		</weaponClasses>
