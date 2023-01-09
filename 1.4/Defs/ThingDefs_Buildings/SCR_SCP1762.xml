@@ -40,6 +40,7 @@
 			<MaxHitPoints>500</MaxHitPoints>
 			<Flammability>0</Flammability>
 			<Mass>20</Mass>
+			<Beauty>2</Beauty>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<size>(1,1)</size>
