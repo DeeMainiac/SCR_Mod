@@ -110,7 +110,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
+          <texPath>Things/Pawn/Mechanoid/SCR_SCP1675</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>1</drawSize>
         </bodyGraphicData>
