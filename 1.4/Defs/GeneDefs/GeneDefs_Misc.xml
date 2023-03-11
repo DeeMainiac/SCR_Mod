@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef>
+  <GeneDef MayRequire="Ludeon.RimWorld.Biotech">
     <defName>SCR_SCP011Gene</defName>
     <label>SCP-011</label>
     <labelShortAdj>SCP-011</labelShortAdj>

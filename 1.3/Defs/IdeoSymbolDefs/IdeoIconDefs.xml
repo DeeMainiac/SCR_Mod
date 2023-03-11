@@ -5,7 +5,7 @@
 		<defName>Ideoligion_SCR_GOIAndersonRobotics</defName>
 		<iconPath>UI/Icons/AndersonRobotics</iconPath>
 		<memes>
-			<li>Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
 		</memes>
 	</IdeoIconDef>
 	
@@ -13,7 +13,7 @@
 		<defName>Ideoligion_SCR_GOIChicagoSpirit</defName>
 		<iconPath>UI/Icons/ChicagoSpirit</iconPath>
 		<memes>
-			<li>Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		</memes>
 	</IdeoIconDef>
 
@@ -21,7 +21,7 @@
 		<defName>Ideoligion_SCR_GOIChurchBrokeGod</defName>
 		<iconPath>UI/Icons/ChurchBrokenGod</iconPath>
 		<memes>
-			<li>Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
 		</memes>
 	</IdeoIconDef>
 	
@@ -29,7 +29,7 @@
 		<defName>Ideoligion_SCR_GOIChurchSecondHytoth</defName>
 		<iconPath>UI/Icons/ChurchSecondHytoth</iconPath>
 		<memes>
-			<li>PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
 		</memes>
 	</IdeoIconDef>
 	
@@ -52,7 +52,7 @@
 		<defName>Ideoligion_SCR_GOIOfficeReclamationIslamic</defName>
 		<iconPath>UI/Icons/OfficeReclamationIslamic</iconPath>
 		<memes>
-			<li>Structure_OriginIslamic</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
 		</memes>
 	</IdeoIconDef>
 
@@ -65,7 +65,7 @@
 		<defName>Ideoligion_SCR_GOISarkicCults</defName>
 		<iconPath>UI/Icons/SarkicCults</iconPath>
 		<memes>
-			<li>Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
 		</memes> 
 	</IdeoIconDef>
 
@@ -83,7 +83,7 @@
 		<defName>Ideoligion_SCR_GOITouHei</defName>
 		<iconPath>UI/Icons/TouHeiHeavyIndustries</iconPath>
 		<memes>
-			<li>Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
 		</memes>
 	</IdeoIconDef>
 

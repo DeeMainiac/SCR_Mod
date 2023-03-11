@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- SCP-3199 -->  
+
+    <ThoughtDef>
+    <defName>SCR_Ate3199MeatRaw</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <nullifyingTraits>
+      <li>Cannibal</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>ate SCP-3199 meat</label>
+        <description>I ate what tasted like human, raw, with a hint of liver, chicken, and clam. This is a nightmare.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>SCR_Ate3199MeatRawCannibal</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <requiredTraits>
+      <li>Cannibal</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>ate SCP-3199 meat</label>
+        <description>I ate what tasted like human, raw, with a hint of liver, chicken, and clam. Interesting, but I prefer the real thing.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<ThoughtDef>
+    <defName>SCR_Ate3199MeatAsIngredient</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <nullifyingTraits>
+      <li>Cannibal</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>cooked cannibalism</label>
+        <description>I ate a meal that tasted like human meat with a hint of liver, chicken, and clam. This is horrible.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SCR_Ate3199MeatAsIngredientCannibal</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <requiredTraits>
+      <li>Cannibal</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>cooked cannibalism</label>
+        <description>I ate a meal that tasted like human meat with a hint of liver, chicken, and clam. Interesting, but I prefer the real thing.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

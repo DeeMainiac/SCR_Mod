@@ -221,7 +221,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Building/BuildingStyles/Morbid/MorbidColumn</texPath>
+          <texPath>Things/Building/Furniture/Column</texPath>
           <drawSize>1.5</drawSize>
 		  <color>(189, 206, 59)</color>
           <shadowData>
@@ -230,7 +230,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Building/BuildingStyles/Morbid/MorbidColumn</texPath>
+          <texPath>Things/Building/Furniture/Column</texPath>
           <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>

@@ -45,17 +45,18 @@
       <predator>true</predator>
 	  <needsRest>false</needsRest>
       <baseBodySize>2</baseBodySize>
-      <baseHungerRate>0.3</baseHungerRate>
+      <baseHungerRate>0.4</baseHungerRate>
       <baseHealthScale>1.8</baseHealthScale>
       <foodType>CarnivoreAnimalStrict</foodType>
       <leatherDef>Leather_Patch</leatherDef>
+	  <specificMeatDef>SCR_SCP3199Meat</specificMeatDef>
       <wildness>0.9</wildness>
       <trainability>None</trainability>
       <gestationPeriodDays>10</gestationPeriodDays>
       <nameOnTameChance>1</nameOnTameChance>
       <lifeExpectancy>30</lifeExpectancy>
 	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
-	  <manhunterOnDamageChance>1</manhunterOnDamageChance>
+	  <manhunterOnDamageChance>2</manhunterOnDamageChance>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>

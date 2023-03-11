@@ -67,6 +67,39 @@
     <allowedArchonexusCount>0</allowedArchonexusCount>
   </ThingDef>
 
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>SCR_SCP3199Meat</defName>
+    <label>SCP-3199 meat</label>
+    <description>Meat from SCP-3199. A mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the humanlike-taste.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
+	        <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>.7</MarketValue> <!-- Can be used like meat in recipes -->
+      <Mass>0.045</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.025</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawBad</preferability>
+	  <tasteThought>SCR_Ate3199MeatRaw</tasteThought>
+      <foodType>Meat</foodType>
+    </ingestible>
+    <thingCategories>
+      <li>SCPMeat</li>
+    </thingCategories>
+    <allowedArchonexusCount>0</allowedArchonexusCount>
+  </ThingDef>
 
 
 </Defs>

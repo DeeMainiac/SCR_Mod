@@ -34,7 +34,7 @@
 
         </value>
     </Operation>
-	
+
 	<Operation Class="PatchOperationAdd">
 	<xpath>/Defs/ThingSetMakerDef[defName="MapGen_AncientComplex_SecurityCrate"]/root/options</xpath>
 	<value>
