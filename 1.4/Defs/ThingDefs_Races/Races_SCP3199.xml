@@ -106,23 +106,8 @@
       </li>
     </tools>
   </ThingDef>
-  <!--
-  <ThingDef ParentName="BaseBullet">
-		<defName>SCR_AcidSpray</defName>
-		<label>acid spray</label>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<flyOverhead>false</flyOverhead>
-			<damageDef>SCR_AcidDamage</damageDef>
-			<damageAmountBase>15</damageAmountBase>
-			<armorPenetrationBase>0.35</armorPenetrationBase>
-			<speed>30</speed>
-		</projectile>
-	</ThingDef>
-  -->
+  
+  
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>SCR_SCP3199R</defName>
     <label>SCP-3199</label>

@@ -2,8 +2,8 @@
 <Defs> 
   <ThingDef ParentName="SculptureBase">
     <defName>SCR_SculptureSCP173R</defName>
-    <label>SCP-173</label>
-    <description>SCP-173 is a sculpture that moves quickly and breaks the necks of the pawns who are not looking at it, unless it is watched.</description>
+    <label>SCP-173 Sculpture</label>
+    <description>A non-living sculpture of SCP-173. \nSCP-173 is a fast sculpture that, unless it's being watched, will kill pawns who are not looking at it.</description>
     <castEdgeShadows>true</castEdgeShadows>
 		<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
