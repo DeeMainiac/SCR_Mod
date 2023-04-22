@@ -75,7 +75,7 @@
     <stages>
       <li>
         <label>Sick with SCP-1797</label>
-        <description>I'm growing tumors! They're kind of shaped like cats...</description>
+        <description>I'm growing tumors! They're shaped like cats...</description>
         <baseMoodEffect>-8</baseMoodEffect>
       </li>
     </stages>
@@ -159,6 +159,19 @@
         <label>carrying SCP-732-J</label>
         <description>It's so cute and charismatic!</description>
         <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+    <ThoughtDef>
+    <defName>SCR_AteSCP2022</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_SCP2022</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>SCP-2022</label>
+        <description>I feel like the sun is gently caressing me.</description>
+        <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
