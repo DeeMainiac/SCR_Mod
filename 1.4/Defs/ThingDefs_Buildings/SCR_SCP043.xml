@@ -35,6 +35,7 @@
     </thingCategories>
 		<tradeTags>
 			<li>Artifacts</li>
+			<li>SCP</li>
 		</tradeTags>
     <altitudeLayer>Building</altitudeLayer>
     <rotatable>false</rotatable>

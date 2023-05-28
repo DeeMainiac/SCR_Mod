@@ -109,6 +109,7 @@
       <li>AnimalInsect</li>
 	  <li>AnimalCommon</li>
 	  <li>AnimalPet</li>
+	  <li>SCP</li>
     </tradeTags>
   </ThingDef>
   

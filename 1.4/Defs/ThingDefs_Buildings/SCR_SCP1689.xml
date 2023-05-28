@@ -47,9 +47,6 @@
       <Mass>35</Mass>
       <WorkToBuild>8000</WorkToBuild>
     </statBases>
-    <thingSetMakerTags>
-      <li>RewardStandardCore</li> <!-- Yeah this isnt good -->
-    </thingSetMakerTags>
     <tickerType>Normal</tickerType>
     <fillPercent>1.0</fillPercent>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -61,6 +58,7 @@
     <tradeability>Sellable</tradeability>
     <tradeTags>
       <li>Artifacts</li>
+	  <li>SCP</li>
     </tradeTags>
   </ThingDef>
 

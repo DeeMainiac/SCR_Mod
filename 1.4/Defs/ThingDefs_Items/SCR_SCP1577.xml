@@ -32,6 +32,7 @@
 		<tradeTags>
 			<li>Artifact</li>
 			<li>ExoticMisc</li>
+			<li>SCP</li>
 		</tradeTags>
 		<statBases>
 			<Mass>2</Mass>

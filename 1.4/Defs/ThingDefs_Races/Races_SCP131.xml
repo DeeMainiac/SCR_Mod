@@ -28,6 +28,7 @@
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>AnimalPet</li>
+			<li>SCP</li>
 		</tradeTags>
 		<race>
 			<body>SCR_Round</body>

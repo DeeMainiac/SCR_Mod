@@ -23,13 +23,16 @@
 	</graphicData>
     <stackLimit>50</stackLimit>
     <statBases>
-      <MarketValue>1300</MarketValue>
+      <MarketValue>1500</MarketValue>
     </statBases>
     <thingCategories>
       <li>Items</li>
 	  <li>SCPObjects</li>
     </thingCategories>
     <tradeability>Sellable</tradeability>
+	<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
     <comps>
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>

@@ -139,6 +139,9 @@
 				<hatcherPawn>SCR_SCP5893R</hatcherPawn>
 			</li>
 		</comps>
+			<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
 	</ThingDef>
 	
 		<ThingDef ParentName="EggFertBase">
@@ -161,6 +164,9 @@
 				<hatcherPawn>SCR_SCP111R</hatcherPawn>
 			</li>
 		</comps>
+			<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
 	</ThingDef>
 	
 			<ThingDef ParentName="EggFertBase">

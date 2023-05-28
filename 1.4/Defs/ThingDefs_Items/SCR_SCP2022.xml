@@ -31,6 +31,9 @@
 	  <li>SCPObjects</li>
     </thingCategories>
     <tradeability>Sellable</tradeability>
+	<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
 	<ingestible>
 	<foodType>Processed</foodType>
 	<preferability>NeverForNutrition</preferability>

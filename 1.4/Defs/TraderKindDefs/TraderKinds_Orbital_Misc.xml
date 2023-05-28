@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<TraderKindDef>
+    <defName>SCR_Orbital_MCD</defName>
+    <label>Marshall, Carter and Dark Co.</label>
+    <orbital>true</orbital>
+	<requestable>false</requestable>
+	<!--<commonality>.8</commonality>-->
+    <stockGenerators>
+      
+      <!-- Resources -->
+     <!-- <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>6000~8000</countRange>
+      </li> -->
+      
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>SCR_SCP578R</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  
+      <li Class="StockGenerator_Category">
+        <categoryDef>SCP</categoryDef>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <totalPriceRange>200~1500</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>SCP</categoryDef>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <totalPriceRange>100~2000</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>SCP</categoryDef>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>2~4</countRange>
+      </li>
+      
+      <!-- Drugs -->
+      <!-- none -->
+      
+      <!-- Techprints -->
+      <!-- none -->
+      
+      <!-- Weapons -->
+      <!-- none -->
+      
+      <!-- Apparel -->
+      <!-- none -->
+
+      <!-- Implants -->
+      <!-- none -->
+      
+      <!-- Buildings -->
+      <!-- none -->
+      
+      <!-- Exotic -->
+      <!-- none -->
+      
+      <!-- Slaves -->
+      <!-- none -->
+      
+      <!-- Animals -->
+      <!-- none -->
+      
+      <!-- Buying -->
+     <!-- <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>SCP</tag></li>
+      --> 
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

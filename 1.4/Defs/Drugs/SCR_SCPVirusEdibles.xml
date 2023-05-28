@@ -21,6 +21,7 @@
     </thingCategories>
     <tradeTags>
       <li>Drugs</li>
+	  <li>SCP</li>
     </tradeTags>
     <alwaysHaulable>true</alwaysHaulable>
     <pathCost>14</pathCost>

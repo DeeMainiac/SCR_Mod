@@ -38,6 +38,9 @@
 	    <thingCategories>
       <li>SCPObjects</li>
     </thingCategories>
+		<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
         <costStuffCount>50</costStuffCount>
   </ThingDef>
 </Defs>

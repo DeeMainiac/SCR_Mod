@@ -36,6 +36,9 @@
 	  <li>SCPObjects</li>
     </thingCategories>
     <allowedArchonexusCount>100</allowedArchonexusCount>
+		<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
