@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BuildingBase">
+    <defName>SCR_SCP1689R</defName>
+    <label>SCP-1689</label>
+    <description>SCP-1689 is a sack of potatoes that will spawn a potato every two hours.</description>
+			<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+    <graphicData>
+      <texPath>Things/Item/Artifacts/SCR_SCP1689</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.65, 0.25, 0.6)</volume>
+        <offset>(0, 0, -0.15)</offset>
+      </shadowData>
+    </graphicData>
+    <thingCategories>
+      <li>SCPObjects</li>
+    </thingCategories>
+    <building>
+      <destroySound>BuildingDestroyed_Soft_Small</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>RawPotatoes</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange><min>6000</min><max>6000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+      <Mass>35</Mass>
+      <WorkToBuild>8000</WorkToBuild>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li> <!-- Yeah this isnt good -->
+    </thingSetMakerTags>
+    <tickerType>Normal</tickerType>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>Sellable</tradeability>
+    <tradeTags>
+      <li>Artifacts</li>
+    </tradeTags>
+  </ThingDef>
+
+
+</Defs>
