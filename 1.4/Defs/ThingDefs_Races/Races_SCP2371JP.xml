@@ -4,7 +4,7 @@
 <ThingDef ParentName="AnimalThingBase">
     <defName>SCR_SCP2371JP</defName>
     <label>SCP-2371-JP</label>
-    <description>SCP-2371-JP is a plant that transforms into a cow-like creature. Their meat tastes too much like beef, repulsing vegetarians.</description>
+    <description>SCP-2371-JP is a plant that transforms into a cow-like creature. Its vegan-friendly "meat" tastes exactly like beef.</description>
     	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 
@@ -25,11 +25,14 @@
       <FilthRate>14</FilthRate>
     </statBases>
     <comps>
+		<!--
+		Cannot be milked, according to the canonical article.
       <li Class="CompProperties_Milkable">
         <milkDef>Milk</milkDef>
         <milkIntervalDays>2</milkIntervalDays>
         <milkAmount>10</milkAmount>
       </li>
+		-->
 	   <li Class="CompProperties_EggLayer">
         <eggUnfertilizedDef>SCR_SCP2371JPSeed</eggUnfertilizedDef>
         <eggFertilizedDef>SCR_SCP2371JPSeed</eggFertilizedDef>
@@ -45,12 +48,14 @@
       <baseHungerRate>0.535</baseHungerRate>
       <baseHealthScale>1.5</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
-      <leatherDef>Leather_Plain</leatherDef>
+      <leatherDef>Hay</leatherDef>
       <wildness>0</wildness>
       <roamMtbDays>2</roamMtbDays>
       <trainability>None</trainability>
       <meatLabel>SCP-2371-JP beef</meatLabel>
+	  <specificMeatDef>TSP_SCR_WEF_KlausCompost</specificMeatDef>
       <lifeExpectancy>22</lifeExpectancy>
+	  <!-- Life Stage Ages can't share an age -->
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -58,11 +63,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0</minAge>
+          <minAge>0.0001</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0</minAge>
+          <minAge>0.0002</minAge>
           <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
           <soundDeath>Pawn_Muffalo_Death</soundDeath>
           <soundCall>Pawn_Muffalo_Call</soundCall>
@@ -124,13 +129,13 @@
     <defName>SCR_SCP2371JP</defName>
     <label>SCP-2371-JP</label>
     <race>SCR_SCP2371JP</race>
-    <combatPower>75</combatPower>
-    <ecoSystemWeight>1.1</ecoSystemWeight>
+    <combatPower>10</combatPower>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <wildGroupSize>3~7</wildGroupSize>
     <lifeStages>
       <li>
-        <label>calf</label>
-        <labelPlural>calves</labelPlural>
+        <label>seed</label>
+        <labelPlural>seedling</labelPlural>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Cow/Bull</texPath>
           <drawSize>1.3</drawSize>

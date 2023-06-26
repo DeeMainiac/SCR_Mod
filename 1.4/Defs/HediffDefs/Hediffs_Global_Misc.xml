@@ -23,7 +23,7 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.1</offset>
+            <setMax>0.8</setMax>
           </li>
         </capMods>
       </li>
@@ -33,7 +33,7 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.2</offset>
+            <setMax>0.5</setMax>
           </li>
         </capMods>
       </li>
@@ -43,19 +43,15 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.4</offset>
+            <setMax>0.3</setMax>
           </li>
         </capMods>
       </li>
       <li>
         <minSeverity>0.60</minSeverity>
         <label>extreme</label>
-        <lifeThreatening>true</lifeThreatening>
+        <lifeThreatening>false</lifeThreatening>
         <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.4</offset>
-          </li>
           <li>
             <capacity>Consciousness</capacity>
             <setMax>0.1</setMax>
@@ -100,13 +96,13 @@
 	<makesSickThought>true</makesSickThought>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-.9</severityPerDay>
+        <severityPerDay>-0.9</severityPerDay>
       </li>
     </comps>
     <stages>
       <li>
         <label>recovering</label>
-        <vomitMtbDays>0.2</vomitMtbDays>
+        <vomitMtbDays>0.8</vomitMtbDays>
         <painOffset>0.5</painOffset>
         <capMods>
           <li>
@@ -134,7 +130,7 @@
       <li>
         <label>major</label>
         <minSeverity>0.4</minSeverity>
-        <vomitMtbDays>0.25</vomitMtbDays>
+        <vomitMtbDays>0.1</vomitMtbDays>
         <painOffset>0.5</painOffset>
         <capMods>
           <li>

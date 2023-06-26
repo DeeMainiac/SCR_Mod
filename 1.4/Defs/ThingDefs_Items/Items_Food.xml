@@ -18,8 +18,8 @@
 
   <ThingDef ParentName="MealFineBase">
     <defName>SCR_SCP666HalfJ</defName>
-    <label>SCP-666 1/2-J</label>
-    <description>SCP-666 1/2-J is a tasty, if not slightly salty mushroom-stuffed crab that induces several K-class scenarios in one's guts.</description>
+    <label>SCP-666-1/2-J</label>
+    <description>SCP-666-1/2-J is a tasty, slightly salty, mushroom-stuffed, crab dish that induces several K-class scenarios in one's guts.</description>
     		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>

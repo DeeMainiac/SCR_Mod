@@ -11,7 +11,7 @@
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-      <MarketValue>.9</MarketValue> <!-- Can be used like meat in recipes -->
+      <MarketValue>0.9</MarketValue> <!-- Can be used like meat in recipes -->
       <Mass>0.045</Mass>
       <MaxHitPoints>60</MaxHitPoints>
       <Flammability>0.2</Flammability>
@@ -20,7 +20,7 @@
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>14</daysToRotStart>
+        <daysToRotStart>21</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
@@ -77,7 +77,7 @@
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-      <MarketValue>.7</MarketValue> <!-- Can be used like meat in recipes -->
+      <MarketValue>0.7</MarketValue> <!-- Can be used like meat in recipes -->
       <Mass>0.045</Mass>
       <MaxHitPoints>60</MaxHitPoints>
       <Flammability>0.2</Flammability>
@@ -93,7 +93,7 @@
     <ingestible>
       <preferability>RawBad</preferability>
 	  <tasteThought>SCR_Ate3199MeatRaw</tasteThought>
-      <foodType>Meat</foodType>
+      <foodType>CarnivoreAnimalStrict, Meat, Corpse</foodType>
     </ingestible>
     <thingCategories>
       <li>SCPMeat</li>
@@ -101,5 +101,42 @@
     <allowedArchonexusCount>0</allowedArchonexusCount>
   </ThingDef>
 
-
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>TSP_SCR_WEF_KlausCompost</defName>
+		<label>SCP-2371-JP beef</label>
+		<description>The "meat" of a SCP-2371-JP instance. Like its source, it resembles soybeans in texture, consistency, and touch; its taste is totally indistinguishable from beef. \n \n Herbivorous animals can and will eat it, as it can be digested by them, and likewise, carnivores are incapable of digesting it alone. SCP-2371-JP "beef" is more nutritious than many foods and takes a long time to rot.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Human</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(195,237,195)</color>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>0.65</MarketValue>
+			<Mass>0.009</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.1</Flammability>
+			<Nutrition>0.065</Nutrition>
+			<FoodPoisonChance>0.01</FoodPoisonChance>
+			<DeteriorationRate>0.01</DeteriorationRate>
+		</statBases>
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<foodType>VegetableOrFruit, Plant, VegetarianAnimal, VegetarianRoughAnimal, AnimalProduct, Seed, Kibble</foodType>
+			<optimalityOffsetHumanlikes>0</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>20</optimalityOffsetFeedingAnimals>
+			<tasteThought Inherit="False"></tasteThought>
+			<specialThoughtDirect Inherit="False"></specialThoughtDirect>
+			<specialThoughtAsIngredient Inherit="False"></specialThoughtAsIngredient>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>25</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories Inherit="False">
+			<li>PlantFoodRaw</li>
+		</thingCategories>
+	</ThingDef>
 </Defs>

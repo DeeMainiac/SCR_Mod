@@ -4,7 +4,7 @@
   <ThingDef ParentName="SCR_SCP_Base">
     <defName>SCR_SCP3199R</defName>
     <label>SCP-3199</label>
-    <description>SCP-3199 is a bipedal humanoid that will attack its prey with claws and an acid-spray. Its eggs are difficult to get rid of, and each instance carries an egg with it shortly after birth. Killing an SCP-3199 instance will not kill the egg inside it. Eggs will only stop hatching in cold temperatures, at which then you can dispose of them.</description>
+    <description>SCP-3199 is a bipedal humanoid that will attack its prey with claws and an acid-spray. Its eggs are difficult to get rid of, and each instance carries an egg with it shortly after birth. Killing a SCP-3199 instance will not kill the egg inside it. Eggs will only stop hatching in cold temperatures, at which then you can dispose of them.</description>
 	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 
@@ -24,7 +24,7 @@
       <MoveSpeed>6.9</MoveSpeed>
       <MarketValue>300</MarketValue>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>300</ComfyTemperatureMax>
+	  <ComfyTemperatureMax>1000</ComfyTemperatureMax> <!-- Under no circumstances should heat kill it, per its canonical article. -->
 	<FilthRate>18</FilthRate>
     </statBases>
 	    <comps>
@@ -36,6 +36,7 @@
         <eggCountRange>1</eggCountRange>
 		<eggLayFemaleOnly>false</eggLayFemaleOnly>
       </li>
+	  <li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li> <!-- It refutes humanity by its SHEER SPEED. This Comp causes it to be unable to be slowed down, regardless of the terrain. -->
     </comps>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
@@ -47,11 +48,12 @@
       <baseBodySize>2</baseBodySize>
       <baseHungerRate>0.4</baseHungerRate>
       <baseHealthScale>1.8</baseHealthScale>
-      <foodType>CarnivoreAnimalStrict</foodType>
+      <foodType>CarnivoreAnimalStrict, Meat, Kibble</foodType>
       <leatherDef>Leather_Patch</leatherDef>
 	  <specificMeatDef>SCR_SCP3199Meat</specificMeatDef>
+	  <bloodDef>Filth_Fuel</bloodDef> <!-- It canonically becomes more powerful under extreme heat and it causes its eggs to hatch faster. This is intended to represent that. -->
       <wildness>0.9</wildness>
-      <trainability>None</trainability>
+      <trainability>Advanced</trainability> <!-- If it REFUTES HUMANITY, then it's pretty dang smart! -->
       <gestationPeriodDays>10</gestationPeriodDays>
       <nameOnTameChance>1</nameOnTameChance>
       <lifeExpectancy>30</lifeExpectancy>
@@ -77,13 +79,30 @@
     </race>
     <tools>
 	<li>
-        <label>claws</label>
+        <label>talons</label>
         <capacities>
           <li>Scratch</li>
         </capacities>
         <power>10</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+	  <li>
+        <label>claws</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -103,6 +122,14 @@
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>2</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
       </li>
     </tools>
   </ThingDef>

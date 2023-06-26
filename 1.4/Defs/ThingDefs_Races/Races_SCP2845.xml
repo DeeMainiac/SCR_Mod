@@ -75,7 +75,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>13</power>
+        <power>23</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
       </li>
@@ -85,7 +85,7 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>13</power>
+        <power>23</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
       </li>
@@ -93,7 +93,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>13</power>
+        <power>23</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <chanceFactor>0.5</chanceFactor>
@@ -104,7 +104,7 @@
           <li>Blunt</li>
 		  <li>Stab</li>
         </capacities>
-        <power>17</power>
+        <power>27</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -173,17 +173,17 @@
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>SCR_PillarBod</body>
-      <herdAnimal>false</herdAnimal>
+      <herdAnimal>true</herdAnimal>
       <baseBodySize>1.5</baseBodySize>
       <baseHungerRate>0.00000001</baseHungerRate>
       <baseHealthScale>2</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Plain</leatherDef>
 	  <useMeatFrom>Cat</useMeatFrom>
-      <wildness>1</wildness>
+      <wildness>0</wildness>
       <gestationPeriodDays>6.66</gestationPeriodDays>
       <lifeExpectancy>100</lifeExpectancy>
-	  <trainability>None</trainability>
+	  <trainability>Advanced</trainability>
 	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>10</manhunterOnDamageChance>
       <lifeStageAges>
@@ -216,8 +216,8 @@
     <defName>SCR_SCP28451R</defName>
     <label>SCP-2845-1</label>
     <race>SCR_SCP28451R</race>
-    <combatPower>200</combatPower>
-    <ecoSystemWeight>1.1</ecoSystemWeight>
+    <combatPower>30</combatPower>
+    <ecoSystemWeight>2</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>

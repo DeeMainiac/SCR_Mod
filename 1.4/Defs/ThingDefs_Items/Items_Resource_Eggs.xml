@@ -9,30 +9,31 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
 			<tasteThought>AteRawFood</tasteThought>
-						<!-- to prevent pawns from being able to eat it lol -->
-			<foodType>Tree</foodType>
+			<!-- to prevent pawns from being able to eat it lol -->
+			<foodType>OvivoreAnimal, AnimalProduct, Tree</foodType>
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
 			<Mass>0.15</Mass>
-			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+			<FoodPoisonChance>1</FoodPoisonChance>
+			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
-			<MarketValue>0</MarketValue>
+			<MarketValue>0.0001</MarketValue> <!-- Causes errors in which it is spawned ten thousand times with Traders if the Trader demands a cost instead of a Tag. -->
 			<Nutrition>-5</Nutrition>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<thingCategories>
 			<li>EggsFertilized</li>
 		</thingCategories>
-		<allowedArchonexusCount>10</allowedArchonexusCount>
+		<allowedArchonexusCount>1000</allowedArchonexusCount>
 	</ThingDef>
 	
 	<ThingDef ParentName="SCR_EggBase">
 		<defName>SCR_SCP3199Egg</defName>
 		<label>SCP-3199 egg (fert.)</label>
-		<description>A strong, egg-like object regurgitated by an SCP-3199 instance. Completely inedible. With enough time, it should hatch into an SCP-3199 instance. It's hatch time can be paused by a high-tier containment crate. It can only be destroyed by exposure to VERY cold temperatures (-60C or -76F)</description>
+		<description>A strong, egg-like object regurgitated by an SCP-3199 instance. With enough time, it should hatch into an SCP-3199 instance. Its hatch time can be paused by a high-tier containment crate. It can only be destroyed by exposure to VERY cold temperatures (-60C or -76F)</description> <!-- The canonical page does not say that it's inedible. -->
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -54,16 +55,28 @@
 		</thingCategories>
 		<useHitPoints>false</useHitPoints>
 		<stackLimit>1</stackLimit>
+		<statBases>
+			<!-- <MaxHitPoints>10000</MaxHitPoints> -->
+			<Mass>0.33</Mass>
+			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Nutrition>0.09</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>OvivoreAnimal, AnimalProduct, Corpse</foodType>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>
 		<comps>
 			<li Class="SecureContainRimworld.CompProperties_SCRHatcher">
-				<hatcherDaystoHatch>2</hatcherDaystoHatch>
+				<hatcherDaystoHatch>1.8</hatcherDaystoHatch>
 				<hatcherPawn>SCR_SCP3199R</hatcherPawn>
 			</li>	
-		<li Class="CompProperties_TemperatureRuinable">
-        <minSafeTemperature>-60</minSafeTemperature>
-        <maxSafeTemperature>3000</maxSafeTemperature>
-        <progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
-      </li>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>-60</minSafeTemperature>
+				<maxSafeTemperature>3000</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
 		</comps>
 	</ThingDef>
 	
@@ -97,7 +110,7 @@
 		</statBases>
 	</ThingDef>
 	
-		<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="EggFertBase">
 		<defName>SCR_SCP2371JPSeed</defName>
 		<label>SCP-2371-JP seedling</label>
 		<description>A SCP-2371-JP seedling. It should grow into an instance of SCP-2371-JP.</description>
@@ -107,16 +120,26 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-			<DeteriorationRate>.5</DeteriorationRate>
+			<DeteriorationRate>0.5</DeteriorationRate>
 			<Flammability>0</Flammability>
 			<MarketValue>7.0</MarketValue>
+			<Nutrition>0.1</Nutrition>
+			<FoodPoisonChance>0</FoodPoisonChance>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
 		</statBases>
+		<ingestible>
+			<foodType>VegetarianRoughAnimal, VegetarianAnimal, Seed, Plant, Tree</foodType>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>15</hatcherDaystoHatch>
 				<hatcherPawn>SCR_SCP2371JP</hatcherPawn>
 			</li>
 		</comps>
+		<thingCategories Inherit="False">
+			<li>PlantFoodRaw</li>
+		</thingCategories>
 	</ThingDef>
 	
 	<ThingDef ParentName="EggFertBase">
@@ -169,7 +192,7 @@
 	</tradeTags>
 	</ThingDef>
 	
-			<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="EggFertBase">
 		<defName>SCR_SCP2584Egg</defName>
 		<label>SCP-2584 egg (fert.)</label>
 		<description>A fertilized SCP-2584 egg. If all goes well, it should hatch into an instance of SCP-2584.</description>

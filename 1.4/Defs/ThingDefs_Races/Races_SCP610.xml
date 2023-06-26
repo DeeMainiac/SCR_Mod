@@ -20,11 +20,12 @@
 	</modExtensions>
 	<statBases>
       <MoveSpeed>5.0</MoveSpeed>
-      <MarketValue>450</MarketValue>
+      <MarketValue>4</MarketValue>
       <ComfyTemperatureMin>-30</ComfyTemperatureMin>
-      <FilthRate>8</FilthRate>
+      <FilthRate>80</FilthRate>
 	  <ArmorRating_Sharp>.35</ArmorRating_Sharp>
 	  <ArmorRating_Blunt>.35</ArmorRating_Blunt>
+	  <Flammability>7</Flammability> <!-- This is how the Foundation canonically dispatches them. -->
     </statBases>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
@@ -36,21 +37,21 @@
       <baseHungerRate>0.5</baseHungerRate>
       <baseHealthScale>1</baseHealthScale>
       <maxPreyBodySize>1.1</maxPreyBodySize>
-      <foodType>CarnivoreAnimalStrict</foodType>
+      <foodType>CarnivoreAnimalStrict, Corpse, Fungus, Kibble</foodType>
       <leatherDef>Leather_Patch</leatherDef>
       <gestationPeriodDays>10</gestationPeriodDays>
       <nameOnTameChance>0</nameOnTameChance>
       <trainability>None</trainability>
       <wildness>10</wildness>
-      <manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>2.0</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>2.0</manhunterOnDamageChance>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
-          <li>(1, 1)</li>
-          <li>(2, 1.7)</li>
-          <li>(2.5, 0.7)</li>
-          <li>(3, 0)</li>
+          <li>(1, 0)</li>
+          <li>(2, 0)</li>
+          <li>(2.5, 0)</li>
+          <li>(3, 1)</li>
         </points>
       </litterSizeCurve>
       <lifeExpectancy>15</lifeExpectancy>
@@ -205,6 +206,7 @@
       <FilthRate>8</FilthRate>
 	  <ArmorRating_Sharp>.55</ArmorRating_Sharp>
 	  <ArmorRating_Blunt>.55</ArmorRating_Blunt>
+	  <Flammability>7</Flammability> <!-- This is how they are canonically dispatched by the Foundation! -->
     </statBases>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
@@ -216,21 +218,21 @@
       <baseHungerRate>0.5</baseHungerRate>
       <baseHealthScale>1.2</baseHealthScale>
       <maxPreyBodySize>2</maxPreyBodySize>
-      <foodType>CarnivoreAnimalStrict</foodType>
+      <foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Corpse, Fungus, Kibble</foodType>
       <leatherDef>Leather_Patch</leatherDef>
       <gestationPeriodDays>10</gestationPeriodDays>
       <nameOnTameChance>0</nameOnTameChance>
       <trainability>None</trainability>
       <wildness>10</wildness>
-      <manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>2.0</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>2.0</manhunterOnDamageChance>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
-          <li>(1, 1)</li>
-          <li>(2, 1.7)</li>
-          <li>(2.5, 0.7)</li>
-          <li>(3, 0)</li>
+          <li>(1, 0)</li>
+          <li>(2, 0)</li>
+          <li>(2.5, 0)</li>
+          <li>(3, 1)</li>
         </points>
       </litterSizeCurve>
       <lifeExpectancy>40</lifeExpectancy>

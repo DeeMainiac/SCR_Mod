@@ -3,7 +3,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCR_SCP475R</defName>
 		<label>SCP-475</label>
-		<description>SCP-475 is a small pope carved from a bar of soap. It cleans the user and increases their ideoligious fervor towards their current ideoligion (requires Ideology).</description>
+		<description>SCP-475 is a small bar of soap carved in the shape of the Pope of Catholic Christianity. It cleans the user and increases their ideoligious fervor towards their current ideoligion (requires Ideology).</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -17,7 +17,7 @@
 		<graphicData>
 			<texPath>Things/Item/Artifacts/SCR_SCP475</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>.55</drawSize>
+			<drawSize>0.55</drawSize>
 			<onGroundRandomRotateAngle>30</onGroundRandomRotateAngle>
 		</graphicData>
 		<thingClass>ThingWithComps</thingClass>

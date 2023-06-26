@@ -27,16 +27,17 @@
 	  <deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
       <herdAnimal>true</herdAnimal>
       <body>SCR_Snail</body>
-      <baseBodySize>.1</baseBodySize>
+      <baseBodySize>0.1</baseBodySize>
       <baseHealthScale>1.75</baseHealthScale>
       <baseHungerRate>0.08</baseHungerRate>
+	  <specificMeatDef MayRequire="biomesteam.biomescore">BMT_GastropodMeat</specificMeatDef>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Patch</leatherDef>
       <gestationPeriodDays>8.5</gestationPeriodDays>
       <wildness>0.5</wildness>
       <roamMtbDays>2</roamMtbDays>
       <petness>0.6</petness>
-      <trainability>None</trainability>
+      <trainability>Intermediate</trainability>
       <lifeExpectancy>10</lifeExpectancy>
 	  	  		<wildBiomes>
 				<AridShrubland>.1</AridShrubland>

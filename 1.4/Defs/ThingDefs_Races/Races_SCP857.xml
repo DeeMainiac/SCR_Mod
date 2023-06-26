@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
-
-<ThingDef Name="SCR_SCP857Base" ParentName="AnimalThingBase" Abstract="True">
-
+	<ThingDef Name="SCR_SCP857Base" ParentName="SCR_SCP_Base" Abstract="True">
+		<statBases>
+			<MeatAmount>25</MeatAmount>
+			<LeatherAmount>12</LeatherAmount>
+		</statBases>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -15,51 +18,50 @@
 		</modExtensions>
 		<tradeTags>
 			<li>AnimalUncommon</li>
-			<li>SCP</li>
+			<!-- <li>SCP</li> -->
 		</tradeTags>
-<race>
-	<body>SCR_Round</body>
-	<baseBodySize>.15</baseBodySize>
-	<baseHealthScale>0.4</baseHealthScale>
-	<leatherDef>Leather_Patch</leatherDef>
-	<useMeatFrom>Cat</useMeatFrom>
-	<lifeExpectancy>20</lifeExpectancy>
-	
-	      <lifeStageAges>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.11</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>0.2222</minAge>
-          <soundWounded>Pawn_Rodent_Wounded</soundWounded>
-          <soundDeath>Pawn_Rodent_Death</soundDeath>
-          <soundCall>Pawn_Rodent_Call</soundCall>
-          <soundAngry>Pawn_Rodent_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-			
-			<wildBiomes>
-				<AridShrubland>0</AridShrubland>
-				<BorealForest>0</BorealForest>
-				<ColdBog>0</ColdBog>
-				<TemperateForest>.05</TemperateForest>
-				<TemperateSwamp>.2</TemperateSwamp>
-				<TropicalRainforest>.2</TropicalRainforest>
-				<TropicalSwamp>.2</TropicalSwamp>
-				<IceSheet>0</IceSheet>
-				<SeaIce>0</SeaIce>
-				<Tundra>0</Tundra>
-				<Desert>0</Desert>
-				<ExtremeDesert>0</ExtremeDesert>
-			</wildBiomes>
-</race>
-
-</ThingDef>
+	<race>
+		<body>SCR_Round</body>
+		<baseBodySize>0.15</baseBodySize>
+		<baseHealthScale>0.4</baseHealthScale>
+		<leatherDef>Leather_Human</leatherDef>
+		<useMeatFrom>Human</useMeatFrom>
+		<lifeExpectancy>20</lifeExpectancy>
+		<foodType>Corpse, OmnivoreAnimal, OvivoreAnimal, Meal, Fluid, Kibble</foodType>
+			  <lifeStageAges>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>0.2222</minAge>
+			  <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+			  <soundDeath>Pawn_Rodent_Death</soundDeath>
+			  <soundCall>Pawn_Rodent_Call</soundCall>
+			  <soundAngry>Pawn_Rodent_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+				<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+				<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+				<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+				
+				<wildBiomes>
+					<AridShrubland>0</AridShrubland>
+					<BorealForest>0</BorealForest>
+					<ColdBog>0</ColdBog>
+					<TemperateForest>.05</TemperateForest>
+					<TemperateSwamp>.2</TemperateSwamp>
+					<TropicalRainforest>.2</TropicalRainforest>
+					<TropicalSwamp>.2</TropicalSwamp>
+					<IceSheet>0</IceSheet>
+					<SeaIce>0</SeaIce>
+					<Tundra>0</Tundra>
+					<Desert>0</Desert>
+					<ExtremeDesert>0</ExtremeDesert>
+				</wildBiomes>
+		</race>
+	</ThingDef>
 
 <!-- A, unintelligent head -->
 

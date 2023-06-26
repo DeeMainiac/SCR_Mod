@@ -52,4 +52,35 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<RecipeDef>
+		<defName>TSP_SCR_Administer_SCP113R</defName>
+		<label>swap genders with SCR-113</label>
+		<description>Administer a SCP-113 instance. This will turn the targeted Pawn into the opposite sex!</description>
+		<workerClass>Recipe_AdministerUsableItem</workerClass>
+		<jobString>Transforming {1}.</jobString>
+		<targetsBodyPart>false</targetsBodyPart>
+		<anesthetize>false</anesthetize>
+		<workAmount>60</workAmount>
+		<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SCR_SCP113R</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SCR_SCP113R</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SCR_SCP113R>1</SCR_SCP113R> <!-- Reusable -->
+		</products>
+	</RecipeDef>
 </Defs>
