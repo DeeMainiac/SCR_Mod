@@ -4,7 +4,7 @@
 <ThingDef ParentName="AnimalThingBase">
     <defName>SCR_SCP2371JP</defName>
     <label>SCP-2371-JP</label>
-    <description>SCP-2371-JP is a plant that transforms into a cow-like creature. Its vegan-friendly "meat" tastes exactly like beef.</description>
+    <description>SCP-2371-JP is a soybean plant that transforms into a cow-like creature. Its vegan-friendly "meat" tastes exactly like beef.</description>
     	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 
