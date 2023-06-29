@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingDef ParentName="OrganicProductBase">
@@ -31,7 +31,7 @@
     <thingCategories>
       <li>SCPMeat</li>
     </thingCategories>
-    <allowedArchonexusCount>0</allowedArchonexusCount>
+    <allowedArchonexusCount>10</allowedArchonexusCount>
   </ThingDef>
 
   <ThingDef ParentName="OrganicProductBase">
@@ -70,7 +70,7 @@
   <ThingDef ParentName="OrganicProductBase">
     <defName>SCR_SCP3199Meat</defName>
     <label>SCP-3199 meat</label>
-    <description>Meat from SCP-3199. A mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the humanlike-taste.</description>
+    <description>Meat from SCP-3199. A mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the human taste.</description>
     <graphicData>
       <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
 	        <graphicClass>Graphic_StackCount</graphicClass>
@@ -82,29 +82,32 @@
       <MaxHitPoints>60</MaxHitPoints>
       <Flammability>0.2</Flammability>
       <Nutrition>0.025</Nutrition>
-      <FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
+      <FoodPoisonChanceFixedHuman>0.5</FoodPoisonChanceFixedHuman>
     </statBases>
+	<stackLimit>500</stackLimit>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>14</daysToRotStart>
+        <daysToRotStart>25</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
     <ingestible>
-      <preferability>RawBad</preferability>
-	  <tasteThought>SCR_Ate3199MeatRaw</tasteThought>
-      <foodType>CarnivoreAnimalStrict, Meat, Corpse</foodType>
+		<preferability>RawBad</preferability>
+		<foodType>CarnivoreAnimalStrict, Meat, Corpse</foodType>
+		<tasteThought Inherit="False"></tasteThought>
+		<specialThoughtDirect Inherit="False">SCR_Ate3199MeatRaw</specialThoughtDirect>
+		<specialThoughtAsIngredient Inherit="False"></specialThoughtAsIngredient>
     </ingestible>
     <thingCategories>
       <li>SCPMeat</li>
     </thingCategories>
-    <allowedArchonexusCount>0</allowedArchonexusCount>
+    <allowedArchonexusCount>10000</allowedArchonexusCount>
   </ThingDef>
 
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>TSP_SCR_WEF_KlausCompost</defName>
-		<label>SCP-2371-JP beef</label>
-		<description>The "meat" of a SCP-2371-JP instance. Like its source, it resembles soybeans in texture, consistency, and touch; its taste is totally indistinguishable from beef. \n \n Herbivorous animals can and will eat it, as it can be digested by them, and likewise, carnivores are incapable of digesting it alone. SCP-2371-JP "beef" is more nutritious than many foods and takes a long time to rot.</description>
+		<label>SCP-2371-JP "beef"</label>
+		<description>The "meat" of a SCP-2371-JP instance. Like its source, it resembles soybeans in texture, consistency, and touch; its taste is totally indistinguishable from beef. \n \n Herbivorous animals can and will eat it, as it can be digested by them, and likewise, carnivores are incapable of digesting it alone. SCP-2371-JP "beef" is more nutritious than many foods and takes a very, very long time to rot.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Human</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -117,12 +120,14 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.1</Flammability>
 			<Nutrition>0.065</Nutrition>
-			<FoodPoisonChance>0.01</FoodPoisonChance>
+			<FoodPoisonChance>0</FoodPoisonChance>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
 			<DeteriorationRate>0.01</DeteriorationRate>
 		</statBases>
+		<stackLimit>300</stackLimit>
 		<ingestible>
 			<preferability>RawBad</preferability>
-			<foodType>VegetableOrFruit, Plant, VegetarianAnimal, VegetarianRoughAnimal, AnimalProduct, Seed, Kibble</foodType>
+			<foodType Inherit="False">VegetableOrFruit, Plant, VegetarianAnimal, VegetarianRoughAnimal, AnimalProduct, Seed, Tree, Kibble</foodType>
 			<optimalityOffsetHumanlikes>0</optimalityOffsetHumanlikes>
 			<optimalityOffsetFeedingAnimals>20</optimalityOffsetFeedingAnimals>
 			<tasteThought Inherit="False"></tasteThought>
@@ -131,12 +136,13 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>25</daysToRotStart>
+				<daysToRotStart>45</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
 		<thingCategories Inherit="False">
 			<li>PlantFoodRaw</li>
 		</thingCategories>
+		<allowedArchonexusCount>5000</allowedArchonexusCount>
 	</ThingDef>
 </Defs>
