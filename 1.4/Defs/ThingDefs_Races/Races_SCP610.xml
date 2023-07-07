@@ -39,6 +39,7 @@
       <maxPreyBodySize>1.1</maxPreyBodySize>
       <foodType>CarnivoreAnimalStrict, Corpse, Fungus, Kibble</foodType>
       <leatherDef>Leather_Patch</leatherDef>
+	  <useMeatFrom>Human</useMeatFrom> <!-- Temporary, I have some plans for this -->
       <gestationPeriodDays>10</gestationPeriodDays>
       <nameOnTameChance>0</nameOnTameChance>
       <trainability>None</trainability>
@@ -220,6 +221,7 @@
       <maxPreyBodySize>2</maxPreyBodySize>
       <foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Corpse, Fungus, Kibble</foodType>
       <leatherDef>Leather_Patch</leatherDef>
+	  <useMeatFrom>Human</useMeatFrom> <!-- Temporary, I have some plans for this -->
       <gestationPeriodDays>10</gestationPeriodDays>
       <nameOnTameChance>0</nameOnTameChance>
       <trainability>None</trainability>

@@ -4,7 +4,7 @@
 	<ThingDef Name="SCR_SCP857Base" ParentName="SCR_SCP_Base" Abstract="True">
 		<statBases>
 			<MeatAmount>25</MeatAmount>
-			<LeatherAmount>12</LeatherAmount>
+			<LeatherAmount>20</LeatherAmount>
 		</statBases>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
@@ -18,28 +18,41 @@
 		</modExtensions>
 		<tradeTags>
 			<li>AnimalUncommon</li>
-			<!-- <li>SCP</li> -->
+			<li>AnimalSCP</li>
 		</tradeTags>
 	<race>
 		<body>SCR_Round</body>
 		<baseBodySize>0.15</baseBodySize>
-		<baseHealthScale>0.4</baseHealthScale>
-		<leatherDef>Leather_Human</leatherDef>
+		<baseHealthScale>0.8</baseHealthScale>
+		<wildness>0</wildness>
+		<petness>0.5</petness>
+		<trainability>None</trainability>
+		<nuzzleMtbHours>4</nuzzleMtbHours>
+		<useLeatherFrom>Human</useLeatherFrom>
 		<useMeatFrom>Human</useMeatFrom>
+		<nameCategory>HumanStandard</nameCategory>
 		<lifeExpectancy>20</lifeExpectancy>
-		<foodType>Corpse, OmnivoreAnimal, OvivoreAnimal, Meal, Fluid, Kibble</foodType>
-			  <lifeStageAges>
+		<foodType>Corpse, OmnivoreHuman, OvivoreAnimal, Meal, Fluid, Kibble</foodType>
+		  <lifeStageAges>
 			<li>
-			  <def>AnimalJuvenile</def>
+			  <def>HumanlikeBaby</def>
 			  <minAge>0</minAge>
 			</li>
 			<li>
-			  <def>AnimalAdult</def>
-			  <minAge>0.2222</minAge>
-			  <soundWounded>Pawn_Rodent_Wounded</soundWounded>
-			  <soundDeath>Pawn_Rodent_Death</soundDeath>
-			  <soundCall>Pawn_Rodent_Call</soundCall>
-			  <soundAngry>Pawn_Rodent_Angry</soundAngry>
+			  <def>HumanlikeChild</def>
+			  <minAge>0.3</minAge>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+			  <def>HumanlikePreTeenager</def>
+			  <minAge>0.9</minAge>
+			</li>
+			<li>
+			  <def>HumanlikeTeenager</def>
+			  <minAge>0.13</minAge>
+			</li>
+			<li>
+			  <def>HumanlikeAdult</def>
+			  <minAge>0.18</minAge>
 			</li>
 		  </lifeStageAges>
 				<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -63,41 +76,59 @@
 		</race>
 	</ThingDef>
 
-<!-- A, unintelligent head -->
+	<!-- A, unintelligent head -->
 
-<ThingDef ParentName="SCR_SCP857Base">
+	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857A</defName>
 		<label>SCP-857-A</label>
-		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-A is a human head with hexapodal limbs that make it move like a crab.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-A is a human head with hexapodal limbs that make it move like a crab.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
-			<MarketValue>250</MarketValue>
+			<MarketValue>40</MarketValue>
 			<FilthRate>1</FilthRate>
-			<MeatAmount>5</MeatAmount>
-			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>20</MeatAmount>
+			<LeatherAmount>7</LeatherAmount>
+			<BoneAmount MayRequire="sihv.rombones" Inherit="False">9</BoneAmount> <!-- Seven bones in the neck (for the purposes of this Mod, it's what connects the skull to the legs, plus the skull and jawbone. The teeth are not counted. -->
 		</statBases>
 		<race>
+			<body>TSP_SCR_857A</body>
 			<predator>false</predator>
 			<needsRest>true</needsRest>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
-			<foodType>Corpse, OmnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>.5</wildness>
-			<trainability>None</trainability>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<foodType>OmnivoreHuman, Corpse, Kibble</foodType>
+			<wildness>0</wildness>
+			<trainability>Intermediate</trainability>
+			<gestationPeriodDays>8</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 		</race>
 		<tools>
+			<!-- Exact same statistics as a human's head attacks -->
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>1</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
 			<li>
 				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>1</power>
+				<power>5</power>
 				<cooldownTime>2</cooldownTime>
-				<chanceFactor>0.2</chanceFactor>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.9</chanceFactor>
 			</li>
 		</tools>
 	</ThingDef>
@@ -140,12 +171,12 @@
 		</lifeStages>
 	</PawnKindDef>
 
-<!-- B, human vein acts like worm -->
+	<!-- B, human vein acts like worm -->
 
-<ThingDef ParentName="SCR_SCP857Base">
+	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857B</defName>
 		<label>SCP-857-B</label>
-		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-B is a human vein that moves like a worm.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-B comprises the full length of the inferior and superior vena cava veins, which carry blood from the top and bottom of the human body back to the heart. It is herbivorous and moves like a worm.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -157,27 +188,29 @@
 			</li>
 		</modExtensions>
 		<statBases>
-			<MoveSpeed>4</MoveSpeed>
-			<MarketValue>250</MarketValue>
+			<MoveSpeed>2.8</MoveSpeed>
+			<MarketValue>40</MarketValue>
 			<FilthRate>1</FilthRate>
-			<MeatAmount>0</MeatAmount>
-			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>20</MeatAmount>
+			<LeatherAmount>1</LeatherAmount>
 		</statBases>
 		<butcherProducts>
 			<Steel>0</Steel>
 		</butcherProducts>
 		<race>
+			<body>TSP_SCR_857B</body>
 			<herdAnimal>false</herdAnimal>
 			<predator>false</predator>
 			<needsRest>true</needsRest>
-			<baseBodySize>.1</baseBodySize>
+			<baseBodySize>1</baseBodySize> <!-- Full length of a human because of the veins it comprises -->
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>.5</wildness>
+			<foodType>VegetarianRoughAnimal, Kibble</foodType>
+			<wildness>0</wildness>
 			<trainability>None</trainability>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<gestationPeriodDays>5</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
+			<roamMtbDays>2</roamMtbDays>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 		</race>
@@ -223,15 +256,15 @@
 		</lifeStages>
 	</PawnKindDef>
 
-<!-- C, snail human brain -->
+	<!-- C, snail human brain -->
 
-<ThingDef ParentName="SCR_SCP857Base">
+	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857C</defName>
 		<label>SCP-857-C</label>
-		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-C is a human brain that moves like a snail.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-C is a human brain that moves like a snail.</description>
 		<statBases>
-			<MoveSpeed>3</MoveSpeed>
-			<MarketValue>250</MarketValue>
+			<MoveSpeed>1.7</MoveSpeed>
+			<MarketValue>25</MarketValue>
 			<FilthRate>1</FilthRate>
 			<MeatAmount>5</MeatAmount>
 			<LeatherAmount>0</LeatherAmount>
@@ -243,8 +276,9 @@
 			<baseBodySize>.2</baseBodySize>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
-			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>.5</wildness>
+			<foodType>OmnivoreAnimal, OvivoreAnimal, Kibble</foodType>
+			<wildness>0</wildness>
+			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -253,13 +287,13 @@
 		</race>
 		<tools>
 			<li>
-				<label>head</label>
+				<label>brain</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
 				<power>1</power>
-				<cooldownTime>2</cooldownTime>
-				<chanceFactor>0.2</chanceFactor>
+				<cooldownTime>4</cooldownTime>
+				<chanceFactor>1</chanceFactor>
 			</li>
 		</tools>
 	</ThingDef>
@@ -294,45 +328,46 @@
 	</PawnKindDef>
 
 
-<!-- D, lower intestines, fish (add as thing later for vanilla fishing expanded?) -->
+	<!-- D, lower intestines, fish (add as thing later for vanilla fishing expanded?) -->
 
-<!-- E, spine moves like a centipede -->
+	<!-- E, spine moves like a centipede -->
 
-<ThingDef ParentName="SCR_SCP857Base">
+	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857E</defName>
 		<label>SCP-857-E</label>
-		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-E is a human spinal cord that moves like a centipede.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-E is a human spine encasing a human spinal cord. It moves like a centipede.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
-			<MarketValue>250</MarketValue>
+			<MarketValue>40</MarketValue>
 			<FilthRate>1</FilthRate>
-			<MeatAmount>0</MeatAmount>
+			<MeatAmount>1</MeatAmount>
 			<LeatherAmount>0</LeatherAmount>
+			<BoneAmount MayRequire="sihv.rombones" Inherit="False">33</BoneAmount> <!-- There are thirty-three bones in the spine, which encase the spinal cord. -->
 		</statBases>
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<needsRest>true</needsRest>
-			<baseBodySize>.3</baseBodySize>
+			<baseBodySize>0.65</baseBodySize>
 			<baseHungerRate>0.2</baseHungerRate>
-			<baseHealthScale>0.4</baseHealthScale>
-			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>.5</wildness>
+			<baseHealthScale>1</baseHealthScale> <!-- Solid bone protects the delicate nerve. -->
+			<foodType>CarnivoreAnimal, Meat, Fluid, OvivoreAnimal, Kibble</foodType>
+			<wildness>0</wildness>
 			<trainability>None</trainability>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<gestationPeriodDays>5</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>.2</manhunterOnDamageChance>
+			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
 		</race>
 		<tools>
 			<li>
-				<label>head</label>
+				<label>vertebrate</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
 				<power>3</power>
-				<cooldownTime>1</cooldownTime>
-				<chanceFactor>0.2</chanceFactor>
+				<cooldownTime>0.3</cooldownTime>
+				<chanceFactor>1</chanceFactor>
 			</li>
 		</tools>
 	</ThingDef>
@@ -366,36 +401,40 @@
 		</lifeStages>
 	</PawnKindDef>
 
-<!-- F, human heart leech -->
+	<!-- F, human heart leech -->
 
-<!-- G, human skin flying squirrel -->
+	<!-- G, human skin flying squirrel -->
 
-<ThingDef ParentName="SCR_SCP857Base">
+	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857G</defName>
 		<label>SCP-857-G</label>
-		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-g is a piece of human flesh with bone growths that allow it to glide.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-g is a piece of human flesh with bone growths that allow it to glide. Its large amount of skin makes it valuable for its... "fascinating" leather.</description>
 		<statBases>
-			<MoveSpeed>3</MoveSpeed>
-			<MarketValue>250</MarketValue>
+			<MoveSpeed>5</MoveSpeed>
+			<MarketValue>40</MarketValue>
 			<FilthRate>1</FilthRate>
-			<MeatAmount>5</MeatAmount>
-			<LeatherAmount>5</LeatherAmount>
+			<MeatAmount>1</MeatAmount>
+			<LeatherAmount>50</LeatherAmount> <!-- Not as much as it looks, divided by body size -->
+			<BoneAmount MayRequire="sihv.rombones" Inherit="False">2</BoneAmount> <!-- Two canonical bone growths stretch the skin for flight. -->
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
 			<needsRest>true</needsRest>
-			<baseBodySize>.2</baseBodySize>
+			<baseBodySize>0.2</baseBodySize>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.3</baseHealthScale>
-			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>.5</wildness>
+			<foodType>CarnivoreAnimal, OvivoreAnimal, Kibble</foodType>
+			<wildness>0.1</wildness>
 			<trainability>None</trainability>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<gestationPeriodDays>54</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>.2</manhunterOnDamageChance>
 		</race>
+		<butcherProducts>
+			<Leather_Human>25</Leather_Human>
+		</butcherProducts>
 		<tools>
 			<li>
 				<label>head</label>
@@ -407,6 +446,9 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<comps>
+			 <li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li> <!-- It flies! -->
+		</comps>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -441,9 +483,9 @@
 		</lifeStages>
 	</PawnKindDef>
 
-<!-- H, human ribcage spider -->
+	<!-- H, human ribcage spider -->
 
-<ThingDef ParentName="SCR_SCP857Base">
+	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857H</defName>
 		<label>SCP-857-H</label>
 		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-H is a human ribcage that moves like a spider.</description>
@@ -453,16 +495,18 @@
 			<FilthRate>1</FilthRate>
 			<MeatAmount>0</MeatAmount>
 			<LeatherAmount>0</LeatherAmount>
+			<BoneAmount MayRequire="sihv.rombones" Inherit="False">24</BoneAmount> <!-- A man has twenty-four ribs. -->
 		</statBases>
 		<race>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<needsRest>true</needsRest>
-			<baseBodySize>.5</baseBodySize>
+			<baseBodySize>0.4</baseBodySize>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.5</baseHealthScale>
-			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>.5</wildness>
+			<foodType>CarnivoreAnimal, OvivoreAnimal, Fluid, Kibble</foodType>
+			<wildness>0.1</wildness>
+			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -471,14 +515,13 @@
 		</race>
 		<tools>
 			<li>
-				<label>head</label>
+				<label>rib</label>
 				<capacities>
-					<li>Blunt</li>
 					<li>Stab</li>
 				</capacities>
 				<power>5</power>
 				<cooldownTime>2</cooldownTime>
-				<chanceFactor>0.2</chanceFactor>
+				<chanceFactor>1</chanceFactor>
 			</li>
 		</tools>
 	</ThingDef>
@@ -512,12 +555,12 @@
 		</lifeStages>
 	</PawnKindDef>
 
-<!-- I, human head with arms, tribal -->
+	<!-- I, human head with arms, tribal -->
 
-<ThingDef ParentName="SCR_SCP857Base">
+	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857I</defName>
 		<label>SCP-857-I</label>
-		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-I is a semi intelligent human head with more pronounced arms. They have been known to live in small groups.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human. \n\nSCP-857-I is a large, semi-intelligent human head with more pronounced arms, hands, and thumbs. They have been known to live in small groups.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>350</MarketValue>
@@ -530,11 +573,11 @@
 			<needsRest>true</needsRest>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
-			<baseBodySize>.5</baseBodySize>
-			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>.3</wildness>
+			<baseBodySize>0.5</baseBodySize>
+			<foodType>OmnivoreHuman, OvivoreAnimal, Kibble</foodType>
+			<wildness>0.3</wildness>
 			<trainability>Advanced</trainability>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<gestationPeriodDays>13</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>

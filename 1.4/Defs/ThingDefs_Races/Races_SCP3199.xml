@@ -40,7 +40,7 @@
     </comps>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
-	<deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_SCP3199_SpawnEgg</deathActionWorkerClass>
+	  <deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_SCP3199_SpawnEgg</deathActionWorkerClass>
       <body>SCR_Neck</body>
 	  <herdAnimal>true</herdAnimal>
       <predator>true</predator>
@@ -90,24 +90,26 @@
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>18</amount>
+              <amount>12</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
       </li>
 	  <li>
-        <label>claws</label>
+		<!-- My autism's kicking in and I am having trouble describing this: basically, imagine the SCP-3199 instance rearing it's long neck back like a baseball bat and then slamming forward, using its skull to crash into you and cause serious damage. -->
+        <label>neck slam</label> 
         <capacities>
-          <li>Scratch</li>
+          <li>Blunt</li>
         </capacities>
-        <power>10</power>
-        <cooldownTime>1.5</cooldownTime>
-        <linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
+        <power>20</power>
+        <cooldownTime>1</cooldownTime>
+        <linkedBodyPartsGroup>Neck</linkedBodyPartsGroup> <!-- Body Part Group assigned to its neck -->
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>18</amount>
+              <amount>28</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
@@ -118,7 +120,7 @@
           <li>Blunt</li>
         </capacities>
         <power>10</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>2.1</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
@@ -126,7 +128,27 @@
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>2</amount>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+		<!-- Canonically has a poisonous bite. Why was this left out? -->
+        <label>acidic bite</label>
+        <capacities>
+          <li>ToxicBite</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.66</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.5</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>

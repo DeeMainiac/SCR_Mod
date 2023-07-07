@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!-- SCP-857-A (HEAD WITH SIX LEGS) -->
+	<BodyDef>
+		<defName>TSP_SCR_857A</defName>
+		<label>skull with six legs</label>
+		<corePart>
+			<def>Neck</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<coverage>0.036</coverage>
+			<groups>
+				<li>Torso</li>
+				<li>Neck</li>
+			</groups>
+			<parts>
+				<li>
+					<def>Leg</def>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>Legs</li>
+						<li>Feet</li>
+					</groups>
+				</li>
+				<li>
+					<def>Leg</def>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>Legs</li>
+						<li>Feet</li>
+					</groups>
+				</li>
+				<li>
+					<def>Leg</def>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>Legs</li>
+						<li>Feet</li>
+					</groups>
+				</li>
+				<li>
+					<def>Leg</def>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>Legs</li>
+						<li>Feet</li>
+					</groups>
+				</li>
+				<li>
+					<def>Leg</def>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>Legs</li>
+						<li>Feet</li>
+					</groups>
+				</li>
+				<li>
+					<def>Leg</def>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>Legs</li>
+						<li>Feet</li>
+					</groups>
+				</li>
+				<li>
+					<def>Head</def>
+					<coverage>0.50</coverage>
+					<height>Top</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>UpperHead</li>
+						<li>FullHead</li>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Skull</def>
+							<coverage>0.18</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>UpperHead</li>
+								<li>Eyes</li>
+								<li>FullHead</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Brain</def>
+									<coverage>0.8</coverage>
+									<groups>
+										<li>UpperHead</li>
+										<li>Eyes</li>
+										<li>FullHead</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+						<li>
+							<def>Eye</def>
+							<customLabel>left eye</customLabel>
+							<coverage>0.07</coverage>
+							<groups>
+								<li>FullHead</li>
+								<li>Eyes</li>
+							</groups>
+							<!-- <woundAnchorTag>LeftEye</woundAnchorTag> -->
+						</li>
+						<li>
+							<def>Eye</def>
+							<customLabel>right eye</customLabel>
+							<coverage>0.07</coverage>
+							<groups>
+								<li>FullHead</li>
+								<li>Eyes</li>
+							</groups>
+							<!-- <woundAnchorTag>RightEye</woundAnchorTag> -->
+						</li>
+						<li>
+							<def>Ear</def>
+							<customLabel>left ear</customLabel>
+							<coverage>0.07</coverage>
+							<groups>
+								<li>UpperHead</li>
+								<li>FullHead</li>
+							</groups>
+						</li>
+						<li>
+							<def>Ear</def>
+							<customLabel>right ear</customLabel>
+							<coverage>0.07</coverage>
+							<groups>
+								<li>UpperHead</li>
+								<li>FullHead</li>
+							</groups>
+						</li>
+						<li>
+							<def>Nose</def>
+							<coverage>0.10</coverage>
+							<groups>
+								<li>FullHead</li>
+							</groups>
+						</li>
+						<li>
+							<def>Jaw</def>
+							<coverage>0.15</coverage>
+							<groups>
+								<li>Teeth</li>
+								<li>FullHead</li>
+								<li>Mouth</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Tongue</def>
+									<coverage>0</coverage>
+									<depth>Inside</depth>
+									<groups>
+										<li>FullHead</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	
+	<!-- SCP-587-B (CIRCULATORY SYSTEM) -->
+	<!-- We're going to have to get creative with this. -->
+	<BodyDef>
+		<defName>TSP_SCR_857B</defName>
+		<label>little circulatory system</label>
+		<corePart>
+			<!-- It's actually a string of arteries and veins, so you can't hit an actual, centralized "heart", but this is the most accurate way to describe the "core". RL worms have multiple hearts. -->
+			<def>Heart</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<coverage>0.05</coverage>
+			<parts>
+				<li>
+					<def>Leg</def> <!-- The main vein -->
+					<label>inferior vena cava</label> <!-- The largest vein in the human body, from heart to feet -->
+					<coverage>0.661</coverage>
+				</li>
+				<li>
+					<def>Leg</def> <!-- The main vein -->
+					<label>superior vena cava</label> <!-- The other half of the above, from heart to top of the head and back -->
+					<coverage>0.339</coverage>
+					<parts>
+						<li>
+							<def>Brain</def> <!-- RL worms don't have true, centralized brains, so we will assume the same here -->
+							<label>nerve cord</label>
+							<coverage>0.08</coverage>
+						</li>
+					</parts>
+				</li>
+			</parts>
+			<!-- Worms don't have lungs or any other organs like higher animals do -->
+		</corePart>
+	</BodyDef>
+</Defs>
