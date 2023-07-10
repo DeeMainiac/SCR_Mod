@@ -187,21 +187,25 @@
 			<def>Heart</def>
 			<height>Middle</height>
 			<depth>Outside</depth>
-			<coverage>0.05</coverage>
+			<coverage>0</coverage>
 			<parts>
 				<li>
 					<def>Leg</def> <!-- The main vein -->
-					<label>inferior vena cava</label> <!-- The largest vein in the human body, from heart to feet -->
+					<customLabel>inferior vena cava</customLabel> <!-- The largest vein in the human body, from heart to feet -->
+					<height>Bottom</height>
 					<coverage>0.661</coverage>
 				</li>
 				<li>
 					<def>Leg</def> <!-- The main vein -->
-					<label>superior vena cava</label> <!-- The other half of the above, from heart to top of the head and back -->
+					<customLabel>superior vena cava</customLabel> <!-- The other half of the above, from heart to top of the head and back -->
+					<depth>Outside</depth>
+					<height>Top</height>
 					<coverage>0.339</coverage>
 					<parts>
 						<li>
 							<def>Brain</def> <!-- RL worms don't have true, centralized brains, so we will assume the same here -->
-							<label>nerve cord</label>
+							<customLabel>nerve cord</customLabel>
+							<depth>Inside</depth>
 							<coverage>0.08</coverage>
 						</li>
 					</parts>
