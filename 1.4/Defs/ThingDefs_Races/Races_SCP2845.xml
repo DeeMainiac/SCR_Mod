@@ -54,7 +54,7 @@
 	  <trainability>None</trainability>
 	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>10</manhunterOnDamageChance>
-      <lifeStageAges>
+      <lifeStageAges Inherit="False">
         <li>
           <def>AnimalAdult</def>
           <minAge>0</minAge>
@@ -186,7 +186,7 @@
 	  <trainability>Advanced</trainability>
 	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>10</manhunterOnDamageChance>
-      <lifeStageAges>
+      <lifeStageAges Inherit="False">
         <li>
           <def>AnimalAdult</def>
           <minAge>0</minAge>

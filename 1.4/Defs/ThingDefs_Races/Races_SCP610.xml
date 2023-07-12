@@ -56,7 +56,7 @@
         </points>
       </litterSizeCurve>
       <lifeExpectancy>15</lifeExpectancy>
-      <lifeStageAges>
+      <lifeStageAges Inherit="False">
         <li>
           <def>AnimalBaby</def>
           <minAge>0</minAge>
@@ -238,7 +238,7 @@
         </points>
       </litterSizeCurve>
       <lifeExpectancy>40</lifeExpectancy>
-      <lifeStageAges>
+      <lifeStageAges Inherit="False">
         <li>
           <def>AnimalBaby</def>
           <minAge>0</minAge>

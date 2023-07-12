@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
 	<ThingDef Name="SCR_SCP857Base" ParentName="SCR_SCP_Base" Abstract="True">
@@ -33,7 +33,7 @@
 		<nameCategory>HumanStandard</nameCategory>
 		<lifeExpectancy>20</lifeExpectancy>
 		<foodType>Corpse, OmnivoreHuman, OvivoreAnimal, Meal, Fluid, Kibble</foodType>
-		  <lifeStageAges>
+		  <lifeStageAges Inherit="False">
 			<li>
 			  <def>HumanlikeBaby</def>
 			  <minAge>0</minAge>

@@ -50,7 +50,7 @@
 			<nuzzleMtbHours>8</nuzzleMtbHours>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
-			<lifeStageAges>
+			<lifeStageAges Inherit="False">
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>

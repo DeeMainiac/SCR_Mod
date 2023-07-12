@@ -59,7 +59,7 @@
       <lifeExpectancy>30</lifeExpectancy>
 	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 	  <manhunterOnDamageChance>2</manhunterOnDamageChance>
-      <lifeStageAges>
+      <lifeStageAges Inherit="False">
         <li>
           <def>AnimalBaby</def>
           <minAge>0</minAge>

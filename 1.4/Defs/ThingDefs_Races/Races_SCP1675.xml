@@ -59,7 +59,7 @@
 				<Desert>.1</Desert>
 				<ExtremeDesert>.1</ExtremeDesert>
 			</wildBiomes>
-      <lifeStageAges>
+      <lifeStageAges Inherit="False">
         <li>
           <def>MechanoidFullyFormed</def>
           <minAge>0</minAge>

@@ -74,7 +74,7 @@
 			</wildBiomes>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>25</lifeExpectancy>
-			<lifeStageAges>
+			<lifeStageAges Inherit="False">
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
