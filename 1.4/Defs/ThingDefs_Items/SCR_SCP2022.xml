@@ -67,7 +67,7 @@
       </li>
 	    <li Class="CompProperties_Drug">
         <chemical>Ambrosia</chemical>
-        <addictiveness>0.010</addictiveness>
+        <addictiveness>0.1</addictiveness>
         <minToleranceToAddict>0.15</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
         <needLevelOffset>0.9</needLevelOffset>

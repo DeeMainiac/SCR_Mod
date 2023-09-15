@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 <ThingDef ParentName="AnimalThingBase">
     <defName>SCR_SCP2584R</defName>
     <label>SCP-2584</label>
-    <description>SCP-2584 is a snake-like creature without a head or tail, joining the two ends of it's body together. It has no need for food and undergoes binary fission once in awhile.</description>
+    <description>SCP-2584 is a snake-like creature without a head or tail, joining the two ends of its body together. It has no need for food and undergoes binary fission once in awhile.</description>
     		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -40,7 +40,7 @@
 	  <eggUnfertilizedDef>SCR_SCP2584Egg</eggUnfertilizedDef>
         <eggFertilizedDef>SCR_SCP2584Egg</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>45</eggLayIntervalDays>
+        <eggLayIntervalDays>10</eggLayIntervalDays>
         <eggCountRange>1</eggCountRange>
 		<eggLayFemaleOnly>false</eggLayFemaleOnly>
 
@@ -50,9 +50,9 @@
       <body>Snake</body>
 	<predator>false</predator>
       <baseBodySize>0.25</baseBodySize>
-	<baseHungerRate>0.00000001</baseHungerRate>
+	<baseHungerRate>0</baseHungerRate>
       <baseHealthScale>0.5</baseHealthScale>
-      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <foodType>None</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
       <useMeatFrom>Cobra</useMeatFrom>
       <wildness>0</wildness>

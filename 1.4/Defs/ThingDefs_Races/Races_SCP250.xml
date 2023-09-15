@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingDef ParentName="SCR_SCP_Base">
@@ -15,21 +15,22 @@
 	</classRating>
 	<containmentTier>1</containmentTier>
 	<isTranqable>false</isTranqable>
-	<hatesRoofs>true</hatesRoofs>
 	</li>
 	</modExtensions>
   <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
       <statBases>
       <MoveSpeed>7.2</MoveSpeed>
-      <MarketValue>2800</MarketValue>
+      <MarketValue>800</MarketValue>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
-      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-80</ComfyTemperatureMin>
 	  <FilthRate>2</FilthRate>
 	  <MeatAmount>0</MeatAmount>
 	  <LeatherAmount>0</LeatherAmount>
 	  <ArmorRating_Sharp>.4</ArmorRating_Sharp>
 	  <ArmorRating_Blunt>.2</ArmorRating_Blunt>
-	  <ToxicSensitivity>0</ToxicSensitivity>
+	  <ToxicResistance>0</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.Rimworld.Biotech">1</ToxicEnvironmentResistance>
+	  <BoneAmount MayRequire="sihv.rombones">75</BoneAmount> <!-- Multiplied by the Body Size -->
     </statBases>
 	    <receivesSignals>true</receivesSignals>
 	    <comps>
@@ -46,10 +47,10 @@
       <baseBodySize>5</baseBodySize>
       <baseHungerRate>0.325</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
-      <foodType>CarnivoreAnimal</foodType>
+      <foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Corpse, Fluid, Processed, Meal, VegetableOrFruit, Kibble</foodType>
       <wildness>.97</wildness>
       <trainability>Advanced</trainability>
-	  <useMeatFrom>Cat</useMeatFrom>
+	  <useMeatFrom>Iguana</useMeatFrom>
 	  <leatherDef>Leather_Light</leatherDef>
 
 	  <manhunterOnTameFailChance>.65</manhunterOnTameFailChance>

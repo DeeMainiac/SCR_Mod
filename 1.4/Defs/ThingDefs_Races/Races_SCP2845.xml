@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingDef ParentName="AnimalThingBase">
@@ -21,7 +21,7 @@
 	<statBases>
       <MoveSpeed>5</MoveSpeed>
       <MarketValue>3000</MarketValue>
-      <ComfyTemperatureMin>-90</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-900</ComfyTemperatureMin>
       <FilthRate>20</FilthRate>
 	  <ArmorRating_Sharp>.4</ArmorRating_Sharp>
 	  <ArmorRating_Blunt>.2</ArmorRating_Blunt>
@@ -43,7 +43,7 @@
       <body>QuadrupedAnimalWithHooves</body>
       <herdAnimal>false</herdAnimal>
       <baseBodySize>2.5</baseBodySize>
-      <baseHungerRate>0.00000001</baseHungerRate>
+      <baseHungerRate>0.1</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Plain</leatherDef>
@@ -110,6 +110,9 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
+	<tradeTags>
+		<li>AnimalInsectSpace</li> <!-- Save Our Ship Mod compatibility, it does not need to breathe -->
+	</tradeTags>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">
@@ -117,7 +120,7 @@
     <label>SCP-2845</label>
     <race>SCR_SCP2845R</race>
     <combatPower>1100</combatPower>
-    <ecoSystemWeight>1.1</ecoSystemWeight>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -150,15 +153,15 @@
 		<li>SCR_RNotice</li>
 	</classRating>
 	
-	<containmentTier>2</containmentTier>
-	<willManhuntAfterBreach>true</willManhuntAfterBreach>
+	<containmentTier>0</containmentTier>
+	<willManhuntAfterBreach>false</willManhuntAfterBreach>
 	
 	</li>
 	</modExtensions>
 	<statBases>
       <MoveSpeed>5</MoveSpeed>
-      <MarketValue>1000</MarketValue>
-      <ComfyTemperatureMin>-90</ComfyTemperatureMin>
+      <MarketValue>100</MarketValue>
+      <ComfyTemperatureMin>-900</ComfyTemperatureMin>
       <FilthRate>20</FilthRate>
 	  <MeatAmount>0</MeatAmount>
 	<LeatherAmount>0</LeatherAmount>
@@ -175,13 +178,13 @@
       <body>SCR_PillarBod</body>
       <herdAnimal>true</herdAnimal>
       <baseBodySize>1.5</baseBodySize>
-      <baseHungerRate>0.00000001</baseHungerRate>
+      <baseHungerRate>0.009</baseHungerRate>
       <baseHealthScale>2</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Plain</leatherDef>
-	  <useMeatFrom>Cat</useMeatFrom>
+	  <useMeatFrom>Deer</useMeatFrom>
       <wildness>0</wildness>
-      <gestationPeriodDays>6.66</gestationPeriodDays>
+      <gestationPeriodDays>6.65</gestationPeriodDays>
       <lifeExpectancy>100</lifeExpectancy>
 	  <trainability>Advanced</trainability>
 	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
@@ -216,8 +219,8 @@
     <defName>SCR_SCP28451R</defName>
     <label>SCP-2845-1</label>
     <race>SCR_SCP28451R</race>
-    <combatPower>30</combatPower>
-    <ecoSystemWeight>2</ecoSystemWeight>
+    <combatPower>10</combatPower>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>

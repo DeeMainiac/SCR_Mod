@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<ThingDef ParentName="SCR_SCP_Base">
 		<defName>SCR_SCP19051R</defName>
 		<label>SCP-1905-1</label>
-		<description>SCP-1905-1 is a fiberglass and plaster dinosaur (usually a Triceratops or a Tyrannosaurus Rex) summoned by SCP-1905.</description>
+		<description>SCP-1905-1 is a Plasteel dinosaur (usually a Triceratops or a Tyrannosaurus Rex) summoned by SCP-1905.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -12,54 +12,52 @@
 					<li>SCR_DKeneq</li>
 					<li>SCR_RNotice</li>
 				</classRating>
-				<containmentTier>0</containmentTier>
+				<containmentTier>2</containmentTier>
+				<hatesRoofs>false</hatesRoofs>
 			</li>
 		</modExtensions>
 		<statBases>
 			<MoveSpeed>7</MoveSpeed>
-			<MarketValue>500</MarketValue>
-			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<MarketValue>3500</MarketValue>
+			<ComfyTemperatureMin>-1000</ComfyTemperatureMin>
 			<ComfyTemperatureMax>1000</ComfyTemperatureMax>
 			<FilthRate>0</FilthRate>
-			<MeatAmount>0</MeatAmount>
-			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>30</MeatAmount>
+			<LeatherAmount>10</LeatherAmount>
 		</statBases>
+		<!--
 		<butcherProducts>
-			<Plasteel>1</Plasteel>
+			<Plasteel>51</Plasteel>
 		</butcherProducts>
+		-->
 		<race>
-			<deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_DestroyBody</deathActionWorkerClass>
+			<!-- <deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_DestroyBody</deathActionWorkerClass> -->
 			<body>QuadrupedAnimalWithPaws</body>
 			<bloodDef>Filth_FireFoam</bloodDef>
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<needsRest>false</needsRest>
 			<baseBodySize>2.15</baseBodySize>
-			<baseHealthScale>2.5</baseHealthScale>
-			<baseHungerRate>0</baseHungerRate>
-			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
-			<leatherDef>Leather_Patch</leatherDef>
-			<useMeatFrom>Cat</useMeatFrom>
+			<baseHealthScale>1.05</baseHealthScale>
+			<baseHungerRate>1</baseHungerRate>
+			<foodType>CarnivoreAnimalStrict, CarnivoreAnimal, OvivoreAnimal, Meat, Fluid, Meal, Processed, Liquor, Corpse, Kibble</foodType>
+			<leatherDef>Plasteel</leatherDef>
+			<specificMeatDef>Plasteel</specificMeatDef>
 			<wildness>1</wildness>
 			<petness>0</petness>
 			<trainability>None</trainability>
 			<lifeExpectancy>30</lifeExpectancy>
 			<manhunterOnTameFailChance>100</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>100</manhunterOnDamageChance>
-			<lifeStageAges Inherit="False">
+			  <lifeStageAges Inherit="False">
 				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
+				  <def>MechanoidFullyFormed</def>
+				  <minAge>0</minAge>
+				  <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+				  <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+				  <soundCall>Pawn_Mech_Centipede_Call</soundCall>
 				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>.5</minAge>
-					<soundWounded>Pawn_Bear_Injured</soundWounded>
-					<soundDeath>Pawn_Bear_Death</soundDeath>
-					<soundCall>Pawn_Bear_Call</soundCall>
-					<soundAngry>Pawn_Bear_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
+			  </lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -140,25 +138,6 @@
 		<combatPower>200</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
-			<li>
-
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_2</texPath>
-					<drawSize>1.5</drawSize>
-				</bodyGraphicData>
-				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_1</texPath>
-					<drawSize>1.5</drawSize>
-				</femaleGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-					<drawSize>1.5</drawSize>
-				</dessicatedBodyGraphicData>
-				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-					<drawSize>1.5</drawSize>
-				</femaleDessicatedBodyGraphicData>
-			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_2</texPath>

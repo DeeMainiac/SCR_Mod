@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingDef ParentName="SCR_SCP_Base">
     <defName>SCR_SCP3199R</defName>
     <label>SCP-3199</label>
-    <description>SCP-3199 is a bipedal humanoid that will attack its prey with claws and an acid-spray. Its eggs are difficult to get rid of, and each instance carries an egg with it shortly after birth. Killing a SCP-3199 instance will not kill the egg inside it. Eggs will only stop hatching in cold temperatures, at which then you can dispose of them.</description>
+    <description>SCP-3199 is a bipedal humanoid that will attack its prey with claws and a venomous acid bite. Its eggs are difficult to get rid of, and each instance carries an egg with it shortly after birth. Killing a SCP-3199 instance will not kill the egg inside it. Eggs will only stop hatching in cold temperatures, of which then can be disposed.</description>
 	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 
@@ -23,7 +23,7 @@
 	<statBases>
       <MoveSpeed>6.9</MoveSpeed>
       <MarketValue>300</MarketValue>
-      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMin>1</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>1000</ComfyTemperatureMax> <!-- Under no circumstances should heat kill it, per its canonical article. -->
 	<FilthRate>18</FilthRate>
     </statBases>
@@ -134,7 +134,7 @@
         </surpriseAttack>
       </li>
       <li>
-		<!-- Canonically has a poisonous bite. Why was this left out? -->
+		<!-- It canonically has a venomous bite. Why was this left out? -->
         <label>acidic bite</label>
         <capacities>
           <li>ToxicBite</li>

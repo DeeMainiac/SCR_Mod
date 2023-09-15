@@ -18,7 +18,7 @@
     </comps>
     <stages>
       <li>
-        <minSeverity>0.15</minSeverity>
+        <minSeverity>0.05</minSeverity>
         <label>little</label>
         <capMods>
           <li>
@@ -28,7 +28,7 @@
         </capMods>
       </li>
       <li>
-        <minSeverity>0.30</minSeverity>
+        <minSeverity>0.15</minSeverity>
         <label>moderate</label>
         <capMods>
           <li>
@@ -38,7 +38,7 @@
         </capMods>
       </li>
       <li>
-        <minSeverity>0.45</minSeverity>
+        <minSeverity>0.3</minSeverity>
         <label>severe</label>
         <capMods>
           <li>
@@ -48,7 +48,7 @@
         </capMods>
       </li>
       <li>
-        <minSeverity>0.60</minSeverity>
+        <minSeverity>0.40</minSeverity>
         <label>extreme</label>
         <lifeThreatening>false</lifeThreatening>
         <capMods>
@@ -69,7 +69,7 @@
 	<initialSeverity>.15</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>45000~100000</disappearsAfterTicks>
+        <disappearsAfterTicks>45000~60000</disappearsAfterTicks>
       </li>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.75</severityPerDay>
@@ -123,7 +123,7 @@
           </li>
           <li>
             <capacity>Eating</capacity>
-            <postFactor>0.5</postFactor>
+            <postFactor>0.2</postFactor>
           </li>
         </capMods>
       </li>
@@ -151,7 +151,7 @@
           </li>
           <li>
             <capacity>Eating</capacity>
-            <postFactor>0.5</postFactor>
+            <postFactor>0.05</postFactor>
           </li>
         </capMods>
       </li>
@@ -159,6 +159,7 @@
         <label>initial</label>
         <minSeverity>0.85</minSeverity>
         <painOffset>0.1</painOffset>
+		<vomitMtbDays>0.03</vomitMtbDays>
         <capMods>
           <li>
             <capacity>Moving</capacity>
@@ -167,6 +168,10 @@
           <li>
             <capacity>Manipulation</capacity>
             <postFactor>0.9</postFactor>
+          </li>
+          <li>
+            <capacity>Eating</capacity>
+            <postFactor>0</postFactor>
           </li>
         </capMods>
       </li>
@@ -180,8 +185,8 @@
     <label>SCP-2845 Transmutation Aura</label>
     <description>This pawn is under the effect of SCP-2845's transmutation aura, fatally transforming them into an SCP-2845-1 instance.
 \nNaturally recovers over time as the body filters it out.</description>
-	<initialSeverity>.15</initialSeverity>
-	<lethalSeverity>.84</lethalSeverity>
+	<initialSeverity>0.15</initialSeverity>
+	<lethalSeverity>0.84</lethalSeverity>
 	<makesSickThought>true</makesSickThought>
 
     <comps>

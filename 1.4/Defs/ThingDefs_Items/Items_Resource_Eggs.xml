@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
 	<ThingDef Abstract="True" Name="SCR_EggBase" ParentName="OrganicProductBase">
 		<graphicData>
@@ -16,8 +17,8 @@
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
 			<Mass>0.15</Mass>
-			<FoodPoisonChance>1</FoodPoisonChance>
-			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
+			<FoodPoisonChance>0.5</FoodPoisonChance>
+			<FoodPoisonChanceFixedHuman>0.5</FoodPoisonChanceFixedHuman>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
 			<MarketValue>0.0001</MarketValue> <!-- Causes errors in which it is spawned ten thousand times with Traders if the Trader demands a cost instead of a Tag. -->
@@ -28,12 +29,15 @@
 			<li>EggsFertilized</li>
 		</thingCategories>
 		<allowedArchonexusCount>1000</allowedArchonexusCount>
+		<tradeTags>
+			<li>EggSCP</li>
+		</tradeTags>
 	</ThingDef>
 	
 	<ThingDef ParentName="SCR_EggBase">
 		<defName>SCR_SCP3199Egg</defName>
 		<label>SCP-3199 egg (fert.)</label>
-		<description>A strong, egg-like object regurgitated by an SCP-3199 instance. With enough time, it should hatch into an SCP-3199 instance. Its hatch time can be paused by a high-tier containment crate. It can only be destroyed by exposure to VERY cold temperatures (-60C or -76F)</description> <!-- The canonical page does not say that it's inedible. -->
+		<description>A strong, egg-like object regurgitated by an SCP-3199 instance. With enough time, it should hatch into an SCP-3199 instance. Its hatch time can be paused by a high-tier containment crate. It can only be destroyed by exposure to VERY cold temperatures (-60C or -76F).</description> <!-- The canonical page does not say that it's inedible. -->
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -58,14 +62,25 @@
 		<statBases>
 			<!-- <MaxHitPoints>10000</MaxHitPoints> -->
 			<Mass>0.33</Mass>
+			<FoodPoisonChance>1</FoodPoisonChance>
 			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
-			<Nutrition>0.09</Nutrition>
+			<Nutrition>0.19</Nutrition>
 		</statBases>
 		<ingestible>
 			<foodType>OvivoreAnimal, AnimalProduct, Corpse</foodType>
 			<preferability>NeverForNutrition</preferability>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>ToxicBuildup</hediffDef>
+					<severity>0.04</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>FoodPoisoning</hediffDef>
+					<severity>0.1</severity>
+				</li>
+			</outcomeDoers>
 		</ingestible>
 		<comps>
 			<li Class="SecureContainRimworld.CompProperties_SCRHatcher">
@@ -75,7 +90,7 @@
 			<li Class="CompProperties_TemperatureRuinable">
 				<minSafeTemperature>-60</minSafeTemperature>
 				<maxSafeTemperature>3000</maxSafeTemperature>
-				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+				<progressPerDegreePerTick>0.03</progressPerDegreePerTick>
 			</li>
 		</comps>
 	</ThingDef>
@@ -83,7 +98,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCR_SCP3199EggRuined</defName>
 		<label>neutralized SCP-3199 egg</label>
-		<description>An SCP-3199 egg that has been neutralized. Can be cremated to make a few bits of plasteel.</description>
+		<description>An SCP-3199 egg that has been neutralized. It can be cremated to make a few bits of plasteel.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval/EggOval_A</texPath>
 			<drawSize>1.5</drawSize>
@@ -100,7 +115,7 @@
 			<li>SCPObjects</li>
 		</thingCategories>
 		<tradeTags>
-			<li>Artifact</li>
+			<!-- <li>Artifact</li> -->
 			<li>ExoticMisc</li>
 		</tradeTags>
 		<statBases>
@@ -128,18 +143,22 @@
 			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
 		</statBases>
 		<ingestible>
-			<foodType>VegetarianRoughAnimal, VegetarianAnimal, Seed, Plant, Tree</foodType>
+			<foodType>VegetableOrFruit, VegetarianRoughAnimal, VegetarianAnimal, Seed, Plant, Tree</foodType>
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherDaystoHatch>9</hatcherDaystoHatch>
 				<hatcherPawn>SCR_SCP2371JP</hatcherPawn>
 			</li>
 		</comps>
 		<thingCategories Inherit="False">
 			<li>PlantFoodRaw</li>
 		</thingCategories>
+		<tradeTags>
+			<li>SCP</li>
+			<li>EggSCP</li>
+		</tradeTags>
 	</ThingDef>
 	
 	<ThingDef ParentName="EggFertBase">
@@ -163,8 +182,9 @@
 			</li>
 		</comps>
 			<tradeTags>
-	<li>SCP</li>
-	</tradeTags>
+				<li>SCP</li>
+				<li>EggSCP</li>
+			</tradeTags>
 	</ThingDef>
 	
 		<ThingDef ParentName="EggFertBase">
@@ -188,8 +208,9 @@
 			</li>
 		</comps>
 			<tradeTags>
-	<li>SCP</li>
-	</tradeTags>
+				<li>SCP</li>
+				<li>EggSCP</li>
+			</tradeTags>
 	</ThingDef>
 	
 	<ThingDef ParentName="EggFertBase">
@@ -208,7 +229,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>.0001</hatcherDaystoHatch>
+				<hatcherDaystoHatch>0.0001</hatcherDaystoHatch>
 				<hatcherPawn>SCR_SCP2584R</hatcherPawn>
 			</li>
 		</comps>

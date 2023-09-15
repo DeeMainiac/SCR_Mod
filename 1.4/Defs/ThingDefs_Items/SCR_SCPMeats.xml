@@ -6,8 +6,8 @@
     <label>SCP-1797-A meat</label>
     <description>Meat from SCP-1797-A. Can be used to create a pill used to infect pawns with SCP-1797.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
-	        <graphicClass>Graphic_StackCount</graphicClass>
+		<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
@@ -44,7 +44,7 @@
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-      <MarketValue>.9</MarketValue> <!-- Can be used like meat in recipes -->
+      <MarketValue>0.9</MarketValue> <!-- Can be used like meat in recipes -->
       <Mass>0.045</Mass>
       <MaxHitPoints>60</MaxHitPoints>
       <Flammability>0.2</Flammability>
@@ -70,7 +70,7 @@
   <ThingDef ParentName="OrganicProductBase">
     <defName>SCR_SCP3199Meat</defName>
     <label>SCP-3199 meat</label>
-    <description>Meat from SCP-3199. A mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the human taste.</description>
+    <description>Meat from a SCP-3199 instance. A mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the human taste.</description>
     <graphicData>
       <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
 	        <graphicClass>Graphic_StackCount</graphicClass>
@@ -82,7 +82,8 @@
       <MaxHitPoints>60</MaxHitPoints>
       <Flammability>0.2</Flammability>
       <Nutrition>0.025</Nutrition>
-      <FoodPoisonChanceFixedHuman>0.5</FoodPoisonChanceFixedHuman>
+	  <FoodPoisonChance>0.5</FoodPoisonChance>
+      <FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
     </statBases>
 	<stackLimit>500</stackLimit>
     <comps>
@@ -93,10 +94,20 @@
     </comps>
     <ingestible>
 		<preferability>RawBad</preferability>
-		<foodType>CarnivoreAnimalStrict, Meat, Corpse</foodType>
+		<foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Corpse</foodType>
 		<tasteThought Inherit="False"></tasteThought>
 		<specialThoughtDirect Inherit="False">SCR_Ate3199MeatRaw</specialThoughtDirect>
 		<specialThoughtAsIngredient Inherit="False"></specialThoughtAsIngredient>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.03</severity>
+			</li>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>FoodPoisoning</hediffDef>
+				<severity>0.3</severity>
+			</li>
+		</outcomeDoers>
     </ingestible>
     <thingCategories>
       <li>SCPMeat</li>

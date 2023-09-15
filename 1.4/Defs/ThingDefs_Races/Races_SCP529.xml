@@ -32,10 +32,9 @@
       <maxPreyBodySize>0.25</maxPreyBodySize>
       <baseHungerRate>0.15</baseHungerRate>
       <baseHealthScale>0.42</baseHealthScale>
-      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <foodType>CarnivoreAnimal, Meat, Corpse, OvivoreAnimal, Fluid, Processed, Meal, Kibble</foodType>
       <leatherDef>Leather_Light</leatherDef>
 	  <useMeatFrom>Cat</useMeatFrom>
-
       <wildness>0</wildness>
       <petness>1</petness>
       <trainability>None</trainability>
@@ -163,9 +162,9 @@
       <defName>SCR_SCP529R</defName>
     <label>SCP-529</label>
     <race>SCR_SCP529R</race>
-    <combatPower>35</combatPower>
-    <ecoSystemWeight>0.3</ecoSystemWeight>
-	<canArriveManhunter>false</canArriveManhunter>
+    <combatPower>15</combatPower>
+    <ecoSystemWeight>0</ecoSystemWeight>
+	<canArriveManhunter>true</canArriveManhunter>
     <lifeStages>
       <li>
         <bodyGraphicData>

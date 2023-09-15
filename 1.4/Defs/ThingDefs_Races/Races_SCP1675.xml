@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 <ThingDef ParentName="BasePawn">
-    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <defName>SCR_SCP1675R</defName>
     <label>SCP-1675</label>
-    <description>SCP-1675 is an autonomous robot that wanders aimlessly until a goose appears. It spouts anti-goose propaganda in French.</description>
+    <description>SCP-1675 is an autonomous robot that wanders aimlessly until it detects a goose. Upon seeing a goose, it immediately attempts to slaughter it while insulting geese in French.</description>
     		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -13,7 +12,7 @@
 					<li>SCR_DDark</li>
 					<li>SCR_RNotice</li>
 				</classRating>
-				<containmentTier>0</containmentTier>
+				<containmentTier>1</containmentTier>
 			</li>
 		</modExtensions>
 	<statBases>
@@ -44,6 +43,8 @@
       <trainability>None</trainability>
       <lifeExpectancy>200</lifeExpectancy>
 	  <bloodDef>Filth_MachineBits</bloodDef>
+			<leatherDef>Steel</leatherDef>
+			<specificMeatDef>ChunkSlagSteel</specificMeatDef>
 
 	  	  		<wildBiomes>
 				<AridShrubland>.1</AridShrubland>
@@ -69,9 +70,10 @@
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeHitBuilding>BulletImpact_Metal</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
     </race>
+	<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <tradeTags>
 	  <li>AnimalExotic</li>
 	  <li>SCP</li>
@@ -82,7 +84,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>15</power>
+        <power>10</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -92,7 +94,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>15</power>
+        <power>10</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -102,7 +104,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>15</power>
+        <power>5</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -115,8 +117,8 @@
     <defName>SCR_SCP1675R</defName>
     <label>SCP-1675</label>
     <race>SCR_SCP1675R</race>
-    <combatPower>5</combatPower>
-    <ecoSystemWeight>1</ecoSystemWeight>
+    <combatPower>25</combatPower>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>

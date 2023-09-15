@@ -273,6 +273,13 @@
 					</groups>
 					<parts>
 						<li>
+							<def>Finger</def>
+							<customLabel>cervical</customLabel>
+							<coverage>0</coverage>
+							<height>Top</height>
+							<depth>Outside</depth>
+						</li>
+						<li>
 							<def>Brain</def>
 							<customLabel>spinal cord</customLabel>
 							<coverage>0.4</coverage>
@@ -314,6 +321,18 @@
 								<li>Feet</li>
 								<li>LeftHand</li>
 							</groups>
+							<parts>
+								<li>
+									<def>Finger</def>
+									<customLabel>left wing tip</customLabel>
+									<coverage>0.02</coverage>
+									<height>Middle</height>
+									<depth>Inside</depth>
+									<groups>
+										<li>LeftHand</li>
+									</groups>
+								</li>
+							</parts>
 						</li>
 						<li>
 							<def>HeadClaw</def>
@@ -326,6 +345,18 @@
 								<li>Feet</li>
 								<li>RightHand</li>
 							</groups>
+							<parts>
+								<li>
+									<def>Finger</def>
+									<customLabel>left wing tip</customLabel>
+									<coverage>0.02</coverage>
+									<height>Middle</height>
+									<depth>Inside</depth>
+									<groups>
+										<li>RightHand</li>
+									</groups>
+								</li>
+							</parts>
 						</li>
 					</parts>
 				</li>
@@ -345,6 +376,16 @@
 				<li>Neck</li>
 			</groups>
 			<parts>
+				<li>
+					<def>Finger</def>
+					<customLabel>cervical</customLabel>
+					<coverage>0</coverage>
+					<height>Top</height>
+					<depth>Outside</depth>
+					<groups>
+						<li>Teeth</li>
+					</groups>
+				</li>
 				<li>
 					<def>Brain</def>
 					<customLabel>spinal cord</customLabel>

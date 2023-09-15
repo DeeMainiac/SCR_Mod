@@ -35,28 +35,12 @@
 		<nameCategory>HumanStandard</nameCategory>
 		<lifeExpectancy>20</lifeExpectancy>
 		<foodType>Corpse, OmnivoreHuman, OvivoreAnimal, Meal, Fluid, Kibble</foodType>
-		  <lifeStageAges Inherit="False">
+		<lifeStageAges>
 			<li>
-			  <def>HumanlikeBaby</def>
-			  <minAge>0</minAge>
+				<def>MechanoidFullyFormed</def>
+				<minAge>0</minAge>
 			</li>
-			<li>
-			  <def>HumanlikeChild</def>
-			  <minAge>0.3</minAge>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">
-			  <def>HumanlikePreTeenager</def>
-			  <minAge>0.9</minAge>
-			</li>
-			<li>
-			  <def>HumanlikeTeenager</def>
-			  <minAge>0.13</minAge>
-			</li>
-			<li>
-			  <def>HumanlikeAdult</def>
-			  <minAge>0.18</minAge>
-			</li>
-		  </lifeStageAges>
+		</lifeStageAges>
 				<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 				<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 				<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -153,46 +137,6 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
-					<drawSize>1</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
-					<drawSize>1.3</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
-					<drawSize>1.3</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
-					<drawSize>1.3</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
-					<drawSize>1.3</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
-					<drawSize>1.3</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
-					<drawSize>1.3</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
 					<drawSize>1.3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -270,46 +214,6 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
-					<drawSize>0.7</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
-					<drawSize>0.7</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
-					<drawSize>0.9</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
-					<drawSize>0.9</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
-					<drawSize>0.9</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
-					<drawSize>0.9</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
-					<drawSize>0.9</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
-					<drawSize>0.9</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
 					<drawSize>0.9</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -371,46 +275,6 @@
 		<race>SCR_SCP857C</race>
 		<combatPower>10</combatPower>
 		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
-					<drawSize>0.6</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
-					<drawSize>0.6</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
-					<drawSize>0.8</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
-					<drawSize>0.8</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
-					<drawSize>0.8</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
-					<drawSize>0.8</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
-					<drawSize>0.8</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
-					<drawSize>0.8</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
@@ -478,46 +342,6 @@
 		<race>SCR_SCP857E</race>
 		<combatPower>25</combatPower>
 		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
-					<drawSize>0.65</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
-					<drawSize>0.65</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
-					<drawSize>0.85</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
-					<drawSize>0.85</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
-					<drawSize>0.85</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
-					<drawSize>0.85</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
-					<drawSize>0.85</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
-					<drawSize>0.85</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
@@ -618,50 +442,6 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
-					<drawSize>0.9</drawSize>
-					<color>(153,117,88)</color>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
-					<drawSize>0.9</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
-					<drawSize>1</drawSize>
-					<color>(153,117,88)</color>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
-					<drawSize>1</drawSize>
-					<color>(153,117,88)</color>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
-					<drawSize>1</drawSize>
-					<color>(153,117,88)</color>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
 					<drawSize>1</drawSize>
 					<color>(153,117,88)</color>
 				</bodyGraphicData>
@@ -754,46 +534,6 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
-					<drawSize>0.8</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
-					<drawSize>0.8</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
-					<drawSize>1</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
-					<drawSize>1</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
-					<drawSize>1</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -831,28 +571,6 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
-			<lifeStageAges Inherit="False">
-				<li>
-					<def>HumanlikeBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>HumanlikeChild</def>
-					<minAge>0.3</minAge>
-				</li>
-				<li MayRequire="Ludeon.RimWorld.Biotech">
-					<def>HumanlikePreTeenager</def>
-					<minAge>0.9</minAge>
-				</li>
-				<li>
-					<def>HumanlikeTeenager</def>
-					<minAge>0.13</minAge>
-				</li>
-				<li>
-					<def>HumanlikeAdult</def>
-					<minAge>0.18</minAge>
-				</li>
-			</lifeStageAges>
 		</race>
 		<tools>
 			<!-- Exact same statistics as a human's head attacks -->
@@ -898,54 +616,6 @@
 	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Wide</texPath></li>
     </alternateGraphics>
 		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
-					<color>(255,215,201)</color>
-					<drawSize>1</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
-					<color>(255,215,201)</color>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
-					<color>(255,215,201)</color>
-					<drawSize>1.3</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
-					<color>(255,215,201)</color>
-					<drawSize>1.3</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
-					<color>(255,215,201)</color>
-					<drawSize>1.3</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
-					<color>(255,215,201)</color>
-					<drawSize>1.3</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
-					<color>(255,215,201)</color>
-					<drawSize>1.3</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
-					<color>(255,215,201)</color>
-					<drawSize>1.3</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>

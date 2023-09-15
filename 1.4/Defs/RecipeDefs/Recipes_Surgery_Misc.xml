@@ -21,7 +21,7 @@
  
 <!-- idk if I want you to be able to install them lol, but this is needed for raiders to spawn with it-->
 
-  <RecipeDef ParentName="SurgeryInstallImplantBase">
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
     <defName>SCR_InstallSCP30331R</defName>
     <label>install SCP-3033-1</label>
     <description>Install an SCP-3033-1 "Mike" unit implant</description>
@@ -30,7 +30,7 @@
       <HediffDef>SCR_SCP30331R</HediffDef>
     </descriptionHyperlinks>
 	<skillRequirements>
-      <Medicine>15</Medicine>
+      <Medicine>3</Medicine>
     </skillRequirements>
     <jobString>Installing an SCP-3033-1 implant.</jobString>
     <ingredients>
@@ -71,7 +71,7 @@
     <removesHediff>SCR_SCP30332R</removesHediff>
   </RecipeDef>
  
- <RecipeDef ParentName="SurgeryInstallImplantBase">
+ <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
     <defName>SCR_InstallSCP30332R</defName>
     <label>install SCP-3033-2</label>
     <description>Install an SCP-3033-2 "controller" unit implant</description>
@@ -80,7 +80,7 @@
       <HediffDef>SCR_SCP30332R</HediffDef>
     </descriptionHyperlinks>
 	    <skillRequirements>
-      <Medicine>15</Medicine>
+      <Medicine>3</Medicine>
     </skillRequirements>
     <jobString>Installing an SCP-3033-2 implant.</jobString>
     <ingredients>

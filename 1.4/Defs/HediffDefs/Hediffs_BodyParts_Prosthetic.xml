@@ -53,7 +53,7 @@
 
 <!-- object on ground -->
 
-  <ThingDef ParentName="BodyPartProstheticBase">
+  <ThingDef ParentName="BodyPartBase">
     <defName>SCR_SCP30331R</defName>
     <label>SCP-3033-1</label>
     <description>SCP-3033-1 is a brain implant by the Chaos Insurgency to completely control a pawn via another pawn with an SCP-3033-2 "Controller" implant. This implant also gives an immunity to pain and reduces fine motor control, preventing numerous tasks from being done. It is completely inert when not installed.</description>
@@ -105,7 +105,7 @@
     <spawnThingOnRemoved>SCR_SCP30332R</spawnThingOnRemoved>
   </HediffDef>
  
-   <ThingDef ParentName="BodyPartProstheticBase">
+   <ThingDef ParentName="BodyPartBase">
     <defName>SCR_SCP30332R</defName>
     <label>SCP-3033-2</label>
     <description>SCP-3033-2 is a brain implant by the Chaos Insurgency to completely control pawns with an SCP-3033-1 "Mike" unit implant. This implant also gives an immunity to pain. It is completely inert when not installed.</description>

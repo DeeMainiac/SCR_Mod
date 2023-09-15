@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingDef ParentName="AnimalThingBase">
@@ -35,7 +35,7 @@
       <maxPreyBodySize>2.5</maxPreyBodySize>
       <baseHungerRate>0.25</baseHungerRate>
       <baseHealthScale>1.6</baseHealthScale>
-      <foodType>CarnivoreAnimalStrict</foodType>
+      <foodType>CarnivoreAnimalStrict, Corpse, Kibble</foodType>
       <leatherDef>Leather_Light</leatherDef>
       <wildness>.9</wildness>
       <petness>1</petness>

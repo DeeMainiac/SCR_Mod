@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 <ThingDef ParentName="AnimalThingBase">
@@ -6,17 +6,17 @@
     <label>SCP-2371-JP</label>
     <description>SCP-2371-JP is a soybean plant that transforms into a cow-like creature. Its vegan-friendly "meat" tastes exactly like beef.</description>
     	<modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
+			<li Class="SecureContainRimworld.CProceduresExtension">
 
-	<classRating>
-		<li>SCR_CSafe</li>
-		<li>SCR_DDark</li>
-		<li>SCR_RNotice</li>
-	</classRating>
+			<classRating>
+				<li>SCR_CSafe</li>
+				<li>SCR_DDark</li>
+				<li>SCR_RNotice</li>
+			</classRating>
 
-	<containmentTier>0</containmentTier>
-	
-	</li>
+			<containmentTier>0</containmentTier>
+			
+			</li>
 	</modExtensions>
 	<statBases>
       <MoveSpeed>3.2</MoveSpeed>
@@ -38,7 +38,7 @@
         <eggFertilizedDef>SCR_SCP2371JPSeed</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>6.66</eggLayIntervalDays>
-        <eggCountRange>1</eggCountRange>
+        <eggCountRange>1~2</eggCountRange>
       </li>
     </comps>
     <race>
@@ -47,7 +47,7 @@
       <baseBodySize>2.4</baseBodySize>
       <baseHungerRate>0.535</baseHungerRate>
       <baseHealthScale>1.5</baseHealthScale>
-      <foodType>VegetarianRoughAnimal</foodType>
+      <foodType>VegetarianRoughAnimal, Kibble</foodType>
       <leatherDef>Hay</leatherDef>
       <wildness>0</wildness>
       <roamMtbDays>2</roamMtbDays>
