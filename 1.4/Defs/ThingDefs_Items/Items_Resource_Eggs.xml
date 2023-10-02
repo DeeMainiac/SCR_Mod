@@ -32,6 +32,13 @@
 		<tradeTags>
 			<li>EggSCP</li>
 		</tradeTags>
+		<comps>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>-7</minSafeTemperature>
+				<maxSafeTemperature>51</maxSafeTemperature>
+				<progressPerDegreePerTick>0.0001</progressPerDegreePerTick>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="SCR_EggBase">
@@ -82,7 +89,7 @@
 				</li>
 			</outcomeDoers>
 		</ingestible>
-		<comps>
+		<comps Inherit="False">
 			<li Class="SecureContainRimworld.CompProperties_SCRHatcher">
 				<hatcherDaystoHatch>1.8</hatcherDaystoHatch>
 				<hatcherPawn>SCR_SCP3199R</hatcherPawn>
@@ -123,6 +130,7 @@
 			<MarketValue>6</MarketValue>
 			<Beauty>-6</Beauty>
 		</statBases>
+		<comps></comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="EggFertBase">
@@ -146,10 +154,15 @@
 			<foodType>VegetableOrFruit, VegetarianRoughAnimal, VegetarianAnimal, Seed, Plant, Tree</foodType>
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
-		<comps>
+		<comps Inherit="False">
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>9</hatcherDaystoHatch>
 				<hatcherPawn>SCR_SCP2371JP</hatcherPawn>
+			</li>
+			<li Class="CompProperties_TemperatureRuinable">
+				<minSafeTemperature>-12</minSafeTemperature>
+				<maxSafeTemperature>75</maxSafeTemperature>
+				<progressPerDegreePerTick>0.0001</progressPerDegreePerTick>
 			</li>
 		</comps>
 		<thingCategories Inherit="False">
