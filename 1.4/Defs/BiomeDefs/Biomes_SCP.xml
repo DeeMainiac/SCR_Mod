@@ -147,8 +147,6 @@
 		<BMT_GlowSnail MayRequire="biomesteam.biomescaverns">1</BMT_GlowSnail>
 		<BMT_GiantSlug MayRequire="biomesteam.biomescaverns">0.5</BMT_GiantSlug>
 		<BMT_GiantSnail MayRequire="biomesteam.biomescaverns">0.85</BMT_GiantSnail>
-		<BMT_GlowSlug MayRequire="biomesteam.biomescaverns">0.89</BMT_GlowSlug>
-		<BMT_GlowSnail MayRequire="biomesteam.biomescaverns">1</BMT_GlowSnail>
 		<BMT_AcidSlug MayRequire="biomesteam.biomescaverns">0.1</BMT_AcidSlug>
 		<BMT_CactusCrab MayRequire="biomesteam.biomescaverns">0.1</BMT_CactusCrab>
 		<BMT_Jellypot MayRequire="biomesteam.biomescaverns">0.003</BMT_Jellypot>
@@ -159,7 +157,7 @@
 		<BMT_FungalWeevil MayRequire="biomesteam.biomescaverns">0.7</BMT_FungalWeevil>
 		<Onibi MayRequire="x3v21.jmc">0.01</Onibi> <!-- Will-o-wisp -->
 		<BMT_Trilobite MayRequire="biomesteam.biomesprehistoric,BiomesTeam.BiomesIslands">0.8</BMT_Trilobite>
-		<MycoidCattle MayRequire="epicfloor.mycoidcattle">0.008</MycoidCattle>
+		<MycoidCattle MayRequire="epicfloor.mycoidcattle">0.03</MycoidCattle>
 		<Bat MayRequire="zal.witchinghour">0.05</Bat>
     </wildAnimals>
     <allowedPackAnimals>
