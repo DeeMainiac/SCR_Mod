@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="AB_MushroomWoodLog"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/BiomeDef[defName="SCR_SCP610Biome"]/baseWeatherCommonalities</xpath>
+			<value>
+				<baseWeatherCommonalities>
+					<AB_RedFog>21</AB_RedFog>
+					<DryThunderstorm>0.25</DryThunderstorm>
+					<RainyThunderstorm>1</RainyThunderstorm>
+					<FoggyRain>3</FoggyRain>
+					<SnowGentle>1</SnowGentle>
+					<SnowHard>4</SnowHard>
+					<RG_Blizzard MayRequire="regrowth.botr.core">5</RG_Blizzard> <!-- As it is found in northern Russia -->
+					<RG_FoggySandstorm MayRequire="regrowth.botr.core">5</RG_FoggySandstorm>
+					<RG_SandStormHard MayRequire="regrowth.botr.core">3</RG_SandStormHard>
+					<PoisonForestSpores MayRequire="mlie.advancedbiomes">10</PoisonForestSpores>
+				</baseWeatherCommonalities>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="AB_MushroomWoodLog"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/BiomeDef[defName="SCR_SCP610Biome"]/soundsAmbient</xpath>
+			<value>
+				<soundsAmbient>
+					<li>AB_AmbientAlien</li>
+					<li>Ambient_Wind_Desolate</li>
+					<li MayRequire="regrowth.botr.core">RG_Ambient_Sandstorm</li>
+				</soundsAmbient>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="AB_MushroomWoodLog"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/BiomeDef[defName="SCR_SCP610Biome"]/diseases</xpath>
+			<value>
+				<diseases>
+					<li>
+						<diseaseInc>AB_Disease_SporesAllergy</diseaseInc>
+						<commonality>80</commonality>
+					</li>
+					<li>
+						<diseaseInc>AB_Disease_AnimalSporesAllergy</diseaseInc>
+						<commonality>80</commonality>
+					</li>
+					<li>
+						<diseaseInc>SCR_Disease_SCP1797R</diseaseInc>
+						<commonality>20</commonality>
+					</li>
+				</diseases>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>
