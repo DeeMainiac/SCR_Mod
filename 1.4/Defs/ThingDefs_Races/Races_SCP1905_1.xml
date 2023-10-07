@@ -31,7 +31,6 @@
 		</butcherProducts>
 		-->
 		<race>
-			<!-- <deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_DestroyBody</deathActionWorkerClass> -->
 			<body>QuadrupedAnimalWithPaws</body>
 			<bloodDef>Filth_FireFoam</bloodDef>
 			<herdAnimal>false</herdAnimal>
@@ -129,7 +128,7 @@
 			</li>
 		</tools>
 	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
 		<defName>SCR_SCP19051R</defName>
 		<label>SCP-1905-1</label>
 		<labelMale>SCP-1905-2</labelMale>
@@ -148,11 +147,11 @@
 					<drawSize>2.4</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_1</texPath>
 					<drawSize>2.4</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_2</texPath>
 					<drawSize>2.4</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>

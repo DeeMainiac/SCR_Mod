@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="BasePawn">
+<ThingDef ParentName="SCR_SCP_Base">
     <defName>SCR_SCP1675R</defName>
     <label>SCP-1675</label>
     <description>SCP-1675 is an autonomous robot that wanders aimlessly until it detects a goose. Upon seeing a goose, it immediately attempts to slaughter it while insulting geese in French.</description>
@@ -112,7 +112,8 @@
     </tools>
 	
   </ThingDef>
-  <PawnKindDef Name="SCR_SCP1675R">
+  
+  <PawnKindDef Name="SCR_SCP1675R" ParentName="TSP_SCP_Creature_PawnkindDef">
     <defaultFactionType></defaultFactionType>
     <defName>SCR_SCP1675R</defName>
     <label>SCP-1675</label>

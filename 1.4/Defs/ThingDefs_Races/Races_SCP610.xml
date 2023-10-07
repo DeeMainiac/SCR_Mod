@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="AnimalThingBase">
+<ThingDef ParentName="SCR_SCP_Base">
     <defName>SCR_SCP610A</defName>
     <label>SCP-610-A</label>
     <description>SCP-610-A is a bipedal or quadrupedal creature completely infested with SCP-610. It has a number of extra limbs or organs, sharp teeth, and claws perfect for tearing into and infecting prey.</description>
@@ -137,7 +137,7 @@
 		</ingredient>
   </ThingDef>
   
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP610A</defName>
     <label>SCP-610-A</label>
     <race>SCR_SCP610A</race>
@@ -328,7 +328,7 @@
 		</ingredient>
   </ThingDef>
   
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP610B</defName>
     <label>SCP-610-B</label>
     <race>SCR_SCP610B</race>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="AnimalThingBase">
+<ThingDef ParentName="SCR_SCP_Base">
     <defName>SCR_SCP2371JP</defName>
     <label>SCP-2371-JP</label>
     <description>SCP-2371-JP is a soybean plant that transforms into a cow-like creature. Its vegan-friendly "meat" tastes exactly like beef.</description>
@@ -25,14 +25,7 @@
       <FilthRate>14</FilthRate>
     </statBases>
     <comps>
-		<!--
-		Cannot be milked, according to the canonical article.
-      <li Class="CompProperties_Milkable">
-        <milkDef>Milk</milkDef>
-        <milkIntervalDays>2</milkIntervalDays>
-        <milkAmount>10</milkAmount>
-      </li>
-		-->
+		<!-- Cannot be milked, according to the canonical article. -->
 	   <li Class="CompProperties_EggLayer">
         <eggUnfertilizedDef>SCR_SCP2371JPSeed</eggUnfertilizedDef>
         <eggFertilizedDef>SCR_SCP2371JPSeed</eggFertilizedDef>
@@ -78,7 +71,7 @@
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
- <tradeTags>
+	<tradeTags>
       <li>AnimalFarm</li>
     </tradeTags>
     <tools>
@@ -125,7 +118,7 @@
     </tools>
   </ThingDef>
 
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP2371JP</defName>
     <label>SCP-2371-JP</label>
     <race>SCR_SCP2371JP</race>

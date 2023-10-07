@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="SCR_SCP_Base">
     <defName>SCR_SCP2845R</defName>
     <label>SCP-2845</label>
-    <description>SCP-2845 is a pastel green deer with the head of a man and a strange ring of ice and hydrogen floating behind it. It is capable of transmuting and reconstructing the materials around itself, often converting living subjects into SCP-2845-1.</description>
+    <description>SCP-2845 is a pastel green deer with the head of a man and a strange ring of ice and hydrogen floating behind it. It is capable of transmuting and reconstructing the materials around itself; staying around it for too long will transform any living being into an instance of SCP-2845-1.</description>
     	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 	<classRating>
@@ -21,11 +21,11 @@
 	<statBases>
       <MoveSpeed>5</MoveSpeed>
       <MarketValue>3000</MarketValue>
-      <ComfyTemperatureMin>-900</ComfyTemperatureMin>
+      <ComfyTemperatureMin>-999</ComfyTemperatureMin>
       <FilthRate>20</FilthRate>
-	  <ArmorRating_Sharp>.4</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>.2</ArmorRating_Blunt>
-	  <ArmorRating_Heat>.2</ArmorRating_Heat>
+	  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+	  <ArmorRating_Heat>-0.2</ArmorRating_Heat>
     </statBases>
     <uiIconScale>1.6</uiIconScale>
     <comps>
@@ -38,14 +38,14 @@
       </li>
     </comps>
     <race>
-	<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+	  <deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>QuadrupedAnimalWithHooves</body>
       <herdAnimal>false</herdAnimal>
       <baseBodySize>2.5</baseBodySize>
       <baseHungerRate>0.1</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
-      <foodType>VegetarianRoughAnimal</foodType>
+      <foodType>VegetarianRoughAnimal, Corpse, Kibble</foodType>
       <leatherDef>Leather_Plain</leatherDef>
 	  <useMeatFrom>Deer</useMeatFrom>
       <wildness>1</wildness>
@@ -115,7 +115,7 @@
 	</tradeTags>
   </ThingDef>
   
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP2845R</defName>
     <label>SCP-2845</label>
     <race>SCR_SCP2845R</race>
@@ -141,10 +141,10 @@
 
 <!-- SCP-2845-1 -->
 
-<ThingDef ParentName="AnimalThingBase">
+<ThingDef ParentName="SCR_SCP_Base">
     <defName>SCR_SCP28451R</defName>
     <label>SCP-2845-1</label>
-    <description>SCP-2845-1 is a living pillar made of rubber. It was created from a hapless pawn by SCP-2845.</description>
+    <description>SCP-2845-1 is a living pillar made of rubber. It was created from a hapless Pawn by SCP-2845.</description>
     	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 	<classRating>
@@ -159,15 +159,15 @@
 	</li>
 	</modExtensions>
 	<statBases>
-      <MoveSpeed>5</MoveSpeed>
-      <MarketValue>100</MarketValue>
-      <ComfyTemperatureMin>-900</ComfyTemperatureMin>
-      <FilthRate>20</FilthRate>
-	  <MeatAmount>0</MeatAmount>
-	<LeatherAmount>0</LeatherAmount>
-		  <ArmorRating_Sharp>.69</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>.69</ArmorRating_Blunt>
-	  <ArmorRating_Heat>-.2</ArmorRating_Heat>
+		<MoveSpeed>5</MoveSpeed>
+		<MarketValue>100</MarketValue>
+		<ComfyTemperatureMin>-999</ComfyTemperatureMin>
+		<FilthRate>0</FilthRate>
+		<MeatAmount>0</MeatAmount>
+		<LeatherAmount>0</LeatherAmount>
+		<ArmorRating_Sharp>0.69</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.69</ArmorRating_Blunt>
+		<ArmorRating_Heat>-0.2</ArmorRating_Heat>
     </statBases>
 	<butcherProducts>
 			<Steel>15</Steel>
@@ -178,14 +178,14 @@
       <body>SCR_PillarBod</body>
       <herdAnimal>true</herdAnimal>
       <baseBodySize>1.5</baseBodySize>
-      <baseHungerRate>0.009</baseHungerRate>
+      <baseHungerRate>0.09</baseHungerRate>
       <baseHealthScale>2</baseHealthScale>
-      <foodType>VegetarianRoughAnimal</foodType>
+      <foodType>VegetarianRoughAnimal, Kibble</foodType>
       <leatherDef>Leather_Plain</leatherDef>
 	  <useMeatFrom>Deer</useMeatFrom>
       <wildness>0</wildness>
       <gestationPeriodDays>6.65</gestationPeriodDays>
-      <lifeExpectancy>100</lifeExpectancy>
+      <lifeExpectancy>60</lifeExpectancy>
 	  <trainability>Advanced</trainability>
 	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>10</manhunterOnDamageChance>
@@ -215,7 +215,7 @@
     </tools>
   </ThingDef>
   
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP28451R</defName>
     <label>SCP-2845-1</label>
     <race>SCR_SCP28451R</race>

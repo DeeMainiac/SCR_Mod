@@ -67,7 +67,7 @@
       <lifeExpectancy>12</lifeExpectancy>
       <wildness>0</wildness>
       <trainability>Advanced</trainability>
-       <nuzzleMtbHours>12</nuzzleMtbHours>
+       <nuzzleMtbHours>3</nuzzleMtbHours>
 	   	  	  	<wildBiomes>
 				<AridShrubland>0</AridShrubland>
 				<BorealForest>0</BorealForest>

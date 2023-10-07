@@ -4,7 +4,7 @@
   <ThingDef ParentName="SCR_SCP_Base">
     <defName>SCR_SCP3199R</defName>
     <label>SCP-3199</label>
-    <description>SCP-3199 is a bipedal humanoid that will attack its prey with claws and a venomous acid bite. Its eggs are difficult to get rid of, and each instance carries an egg with it shortly after birth. Killing a SCP-3199 instance will not kill the egg inside it. Eggs will only stop hatching in cold temperatures, of which then can be disposed.</description>
+    <description>SCP-3199 is a bipedal abomination that will attack its prey with claws and a venomous acid bite. Its eggs are difficult to get rid of, and each instance carries an egg with it shortly after birth. Killing a SCP-3199 instance will not kill the egg inside it. Eggs will only stop hatching in cold temperatures, of which then can be disposed.</description>
 	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 
@@ -143,7 +143,7 @@
         <cooldownTime>2.66</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.5</chanceFactor>
+        <chanceFactor>0.8</chanceFactor>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -162,7 +162,6 @@
     <label>SCP-3199</label>
     <race>SCR_SCP3199R</race>
     <combatPower>200</combatPower>
-
     <lifeStages>
       <li>
         <bodyGraphicData>
