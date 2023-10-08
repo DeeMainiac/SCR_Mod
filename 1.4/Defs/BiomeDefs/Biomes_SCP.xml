@@ -156,7 +156,6 @@
 		<BMT_FungalMantis MayRequire="biomesteam.biomescaverns">0.38</BMT_FungalMantis>
 		<BMT_FungalWeevil MayRequire="biomesteam.biomescaverns">0.7</BMT_FungalWeevil>
 		<Onibi MayRequire="x3v21.jmc">0.01</Onibi> <!-- Will-o-wisp -->
-		<BMT_Trilobite MayRequire="biomesteam.biomesprehistoric,BiomesTeam.BiomesIslands">0.8</BMT_Trilobite>
 		<MycoidCattle MayRequire="epicfloor.mycoidcattle">0.03</MycoidCattle>
 		<Bat MayRequire="zal.witchinghour">0.05</Bat>
     </wildAnimals>
