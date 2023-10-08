@@ -43,9 +43,8 @@
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-				
-			<wildBiomes>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>				
+			<wildBiomes Inherit="False">
 				<!-- RimWorld.Core -->
 				<!-- VANILLA RENDITION -->
 
@@ -221,7 +220,7 @@
 				
 				<BMT_EarthenDepths MayRequire="BiomesTeam.BiomesCaverns">0</BMT_EarthenDepths>
 				
-				<BMT_FungalForest MayRequire="BiomesTeam.BiomesCaverns">0.03</BMT_FungalForest>
+				<BMT_FungalForest MayRequire="BiomesTeam.BiomesCaverns">0.045</BMT_FungalForest>
 				
 
 
@@ -262,7 +261,7 @@
 				<!-- deemainiac.securecontainrimworld -->
 				<!-- SCP FOUNDATION -->
 
-				<SCR_SCP610Biome MayRequire="deemainiac.securecontainrimworld">0</SCR_SCP610Biome>
+				<!-- <SCR_SCP610Biome MayRequire="deemainiac.securecontainrimworld">0</SCR_SCP610Biome> -->
 
 
 				<!-- _________________ -->
@@ -355,14 +354,14 @@
 		<race>SCR_SCP857A</race>
 		<combatPower>10</combatPower>
 		<alternateGraphicChance>.9</alternateGraphicChance>
-	<alternateGraphics>
-      <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath></li>
-      <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Pointy</texPath></li>
-	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Wide</texPath></li>
-	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Normal</texPath></li>
-	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Pointy</texPath></li>
-	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Wide</texPath></li>
-    </alternateGraphics>
+		<alternateGraphics>
+		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath></li>
+		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Pointy</texPath></li>
+		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Wide</texPath></li>
+		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Normal</texPath></li>
+		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Pointy</texPath></li>
+		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Wide</texPath></li>
+		</alternateGraphics>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

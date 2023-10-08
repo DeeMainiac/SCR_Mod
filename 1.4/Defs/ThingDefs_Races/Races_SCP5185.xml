@@ -7,7 +7,6 @@
     <description>SCP-5185 is a docile spider with the intelligence and personality of a dog. Usually eager to be a pet of sapient beings, it can rarely be seen recruited into a "pack" of more sinister Insectoids.</description>
 	<modExtensions>
 		<li Class="SecureContainRimworld.CProceduresExtension">
-
 		<classRating>
 			<li>SCR_CSafe</li>
 			<li>SCR_DDark</li>
@@ -112,13 +111,13 @@
     </tradeTags>
   </ThingDef>
   
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP5185R</defName>
     <label>SCP-5185</label>
     <race>SCR_SCP5185R</race>
     <combatPower>70</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
-    <ecoSystemWeight>0.15</ecoSystemWeight>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
