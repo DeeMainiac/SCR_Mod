@@ -9,10 +9,11 @@
     <edgeType>FadeRough</edgeType>
     <renderPrecedence>321</renderPrecedence>
     <pathCost>10</pathCost>
+	<extraDeteriorationFactor>13</extraDeteriorationFactor>
     <statBases>
-      <Beauty>-3</Beauty>
-      <BeautyOutdoors>-1</BeautyOutdoors>
-      <Cleanliness>-1</Cleanliness>
+      <Beauty>-10</Beauty>
+      <BeautyOutdoors>-10</BeautyOutdoors>
+      <Cleanliness>-5</Cleanliness>
     </statBases>
     <scatterType>Rocky</scatterType>
     <affordances>
@@ -24,24 +25,25 @@
 	  <li>Bridgeable</li>
     </affordances>
     <generatedFilth>Filth_Dirt</generatedFilth>
-    <fertility>0.4</fertility>
-    <takeFootprints>True</takeFootprints>
+    <fertility>0.6</fertility>
+    <takeFootprints>false</takeFootprints>
     <tools>
       <li>
-        <label>gravel</label>
+        <label>SCP-610 corruption</label>
         <capacities>
           <li>KickMaterialInEyes</li>
         </capacities>
-        <hediff>GravelInEyes</hediff>
-        <cooldownTime>1.5</cooldownTime>
+        <hediff>ToxicBuildup</hediff>
+        <cooldownTime>2</cooldownTime>
       </li>
     </tools>
     <tags>
       <li>Soil</li>
+	  <li>Sandy</li>
     </tags>
   </TerrainDef>
   
-    <TerrainDef ParentName="NaturalTerrainBase">
+  <TerrainDef ParentName="NaturalTerrainBase">
     <defName>SCR_SCP610_FleshySoil</defName>
     <label>flesh-touched soil</label>
     <texturePath>Terrain/Surfaces/SCR_SCP610_2</texturePath>
@@ -64,20 +66,86 @@
     </affordances>
     <generatedFilth>Filth_Dirt</generatedFilth>
     <fertility>1</fertility>
-    <takeFootprints>True</takeFootprints>
+    <takeFootprints>false</takeFootprints>
     <tools>
       <li>
-        <label>dirt</label>
+        <label>SCP-610 corruption</label>
         <capacities>
           <li>KickMaterialInEyes</li>
         </capacities>
-        <hediff>DirtInEyes</hediff>
-        <cooldownTime>1.5</cooldownTime>
+        <hediff>ToxicBuildup</hediff>
+        <cooldownTime>2</cooldownTime>
       </li>
     </tools>
     <tags>
       <li>Soil</li>
+	  <li>Sandy</li>
     </tags>
   </TerrainDef>
-  
-  </Defs>
+
+
+	<TerrainDef ParentName="WaterShallowBase">
+		<defName>TSP_AA_GU_610_EvilWater_Shallow</defName>
+		<label>corrupted water</label>
+		<edgeType>FadeRough</edgeType>
+		<extraDeteriorationFactor>30</extraDeteriorationFactor>
+		<color>(255, 87, 80, 0.66)</color>
+		<pollutionCloudColor>(90, 87, 80, 0.66)</pollutionCloudColor>
+		<texturePath>Terrain/Surfaces/MarshPolluted</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/MarshPolluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/MarshPollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>394</renderPrecedence>
+		<driesTo>SCR_SCP610_FleshySoil</driesTo>
+		<affordances>
+			<li>Bridgeable</li>
+		</affordances>
+		<tags>
+		  <li>Water</li>
+		  <li>Waste</li>
+		</tags>
+		<tools Inherit="False">
+		  <li>
+			<label>SCP-610 corruption</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>ToxicBuildup</hediff>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>
+
+	<TerrainDef ParentName="WaterDeepBase">
+		<defName>TSP_AA_GU_610_EvilWater_Deep</defName>
+		<label>corrupted water</label>
+		<edgeType>FadeRough</edgeType>
+		<texturePath>Terrain/Surfaces/MarshPolluted</texturePath>
+		<color>(200, 87, 80, 0.66)</color>
+		<pollutionCloudColor>(90, 87, 80, 0.66)</pollutionCloudColor>
+		<pollutedTexturePath>Terrain/Surfaces/MarshPolluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/MarshPollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<renderPrecedence>395</renderPrecedence>
+		<driesTo>SCR_SCP610_FleshyGravel</driesTo>
+		<affordances>
+			<li>Bridgeable</li>
+		</affordances>
+		<tags>
+		  <li>Water</li>
+		  <li>Waste</li>
+		</tags>
+		<tools Inherit="False">
+		  <li>
+			<label>SCP-610 corruption</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>ToxicBuildup</hediff>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		</tools>
+	</TerrainDef>  
+</Defs>

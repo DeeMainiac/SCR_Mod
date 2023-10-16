@@ -286,7 +286,7 @@
 				<!-- mlie.rfpermafrost -->
 				<!-- PERMAFROST ZONE -->
 
-				<Permafrost MayRequire="mlie.rfpermafrost">0</Permafrost>
+				<!-- <Permafrost MayRequire="mlie.rfpermafrost">0</Permafrost> -->
 			</wildBiomes>
 		</race>
 	</ThingDef>
