@@ -1,21 +1,19 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <BiomeDef>
     <defName>SCR_SCP610Biome</defName>
     <label>SCP-610 Plague Lands</label>
-    <description>A region that SCP-610 has taken over. The majority of surfaces are covered in a fleshy substance, and most life is infested with SCP-610. Don't let them touch you.\n\n\nWarning: Difficult starting location due to sparse resources, wildlife hostility, and SCP-610's fatal disease.</description>
-    	    <modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
-	<classRating>
-		<li>SCR_CKeter</li>
-		<li>SCR_DEkhi</li>
-		<li>SCR_RDanger</li>
-	</classRating>
-	
-	<containmentTier>0</containmentTier>
-	
-	</li>
+    <description>A region that SCP-610 has taken over. The majority of surfaces are covered in a fleshy substance; aggressive, territorial beings infested with SCP-610 patrol around sickly hives. Don't let them touch you!\n\n\nWarning: This is an extremely difficult Biome! While plant and animal life are plentiful, vicious SCP-610 instances intermingle among them, and will attack anyone and anything that approaches, instantly infecting anyone they attack with SCP-610. Their only weakness is fire! SCP-610 is not curable by medicine or amputation and is guaranteed to be contracted in a SCP-610 attack!</description>
+	<modExtensions>
+		<li Class="SecureContainRimworld.CProceduresExtension">
+			<classRating>
+				<li>SCR_CKeter</li>
+				<li>SCR_DEkhi</li>
+				<li>SCR_RDanger</li>
+			</classRating>
+			<containmentTier>0</containmentTier>
+		</li>
 	</modExtensions>
 	<workerClass>SecureContainRimworld.SCR_BiomeWorker_SCP610</workerClass>
     <allowFarmingCamps>false</allowFarmingCamps>
@@ -39,23 +37,23 @@
     <diseases>
      <li>
         <diseaseInc>SCR_Disease_SCP1797R</diseaseInc>
-        <commonality>40</commonality> <!-- As this has no cure, it's unfair to throw it too commonly -->
+        <commonality>40</commonality> <!-- As this has no cure, it's unfair to throw it too commonly, and besides, the creatures always givt it to you -->
       </li>
       <li>
         <diseaseInc>Disease_Plague</diseaseInc>
-        <commonality>100</commonality>
+        <commonality>125</commonality>
       </li>
       <li>
         <diseaseInc>Disease_GutWorms</diseaseInc>
-        <commonality>100</commonality>
+        <commonality>125</commonality>
       </li>
 	  <li>
         <diseaseInc>Disease_AnimalFlu</diseaseInc>
-        <commonality>100</commonality>
+        <commonality>90</commonality>
       </li>
       <li>
         <diseaseInc>Disease_AnimalPlague</diseaseInc>
-        <commonality>100</commonality>
+        <commonality>90</commonality>
       </li>
     </diseases>
     <terrainsByFertility>
@@ -89,7 +87,7 @@
 	  <PoisonForestSpores MayRequire="mlie.advancedbiomes">15</PoisonForestSpores>
     </baseWeatherCommonalities>
     <wildPlants>
-		<SCR_SCP610_Grass>4</SCR_SCP610_Grass>
+		<SCR_SCP610_Grass>5</SCR_SCP610_Grass>
 		<Plant_Brambles>0.5</Plant_Brambles>
 		<Plant_Dandelion>0.6</Plant_Dandelion>
 		<Plant_Agave>0.09</Plant_Agave>
@@ -127,7 +125,7 @@
 		<RN_PlantClover MayRequire="rimnature.velcroboy333">0.01</RN_PlantClover>
 		<MorrowRim_AshGrass MayRequire="sirmashedpotato.morrowrim">0.1</MorrowRim_AshGrass>
 		<MorrowRim_SmallMushrooms MayRequire="sirmashedpotato.morrowrim">2</MorrowRim_SmallMushrooms>
-		<BMT_ExplodingAngel MayRequire="biomesteam.biomesprehistoric">0.1</BMT_ExplodingAngel>
+		<BMT_ExplodingAngel MayRequire="biomesteam.biomesprehistoric">0.21</BMT_ExplodingAngel>
 		<TreeDead MayRequire="mlie.advancedbiomes">1</TreeDead>
 		<PoisonPlantDandelion MayRequire="mlie.advancedbiomes">0.01</PoisonPlantDandelion>
 		<PoisonRafflesia MayRequire="mlie.advancedbiomes">0.5</PoisonRafflesia>
@@ -148,7 +146,7 @@
 		<BMT_GiantSlug MayRequire="biomesteam.biomescaverns">0.5</BMT_GiantSlug>
 		<BMT_GiantSnail MayRequire="biomesteam.biomescaverns">0.85</BMT_GiantSnail>
 		<BMT_AcidSlug MayRequire="biomesteam.biomescaverns">0.1</BMT_AcidSlug>
-		<BMT_CactusCrab MayRequire="biomesteam.biomescaverns">0.1</BMT_CactusCrab>
+		<BMT_CactusCrab MayRequire="biomesteam.biomescaverns">0.21</BMT_CactusCrab>
 		<BMT_Jellypot MayRequire="biomesteam.biomescaverns">0.003</BMT_Jellypot>
 		<BMT_Pillbug MayRequire="biomesteam.biomescaverns">0.92</BMT_Pillbug>
 		<BMT_TruffleMole MayRequire="biomesteam.biomescaverns">0.005</BMT_TruffleMole>
@@ -158,7 +156,12 @@
 		<Onibi MayRequire="x3v21.jmc">0.01</Onibi> <!-- Will-o-wisp -->
 		<MycoidCattle MayRequire="epicfloor.mycoidcattle">0.3</MycoidCattle>
 		<Bat MayRequire="zal.witchinghour">0.05</Bat>
+		<AA_FungalHusk MayRequire="sarg.alphaanimals">1</AA_FungalHusk>
     </wildAnimals>
+    <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+		<SCR_SCP610A>4</SCR_SCP610A>
+		<SCR_SCP610B>3.5</SCR_SCP610B>
+    </pollutionWildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
       <li>Dromedary</li>
