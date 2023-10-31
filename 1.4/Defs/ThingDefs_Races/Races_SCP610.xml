@@ -4,7 +4,7 @@
 <ThingDef ParentName="SCR_SCP_Base">
     <defName>SCR_SCP610A</defName>
     <label>SCP-610-A</label>
-    <description>SCP-610-A is a bipedal or quadrupedal creature completely infested with SCP-610. It has a number of extra limbs or organs, sharp teeth, and claws perfect for tearing into and infecting prey.</description>
+    <description>SCP-610-A is a creature completely infested with SCP-610. It has a number of extra limbs or organs, sharp teeth, and claws perfect for tearing into and infecting prey. Its only weakness is fire.</description>
     <modExtensions>
 		<li Class="SecureContainRimworld.CProceduresExtension">
 		<classRating>
@@ -25,6 +25,7 @@
       <FilthRate>80</FilthRate>
 	  <ArmorRating_Sharp>.35</ArmorRating_Sharp>
 	  <ArmorRating_Blunt>.35</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0</ArmorRating_Heat>
 	  <Flammability>7</Flammability> <!-- This is how the Foundation canonically dispatches them. -->
     </statBases>
     <race>
@@ -142,7 +143,7 @@
     <label>SCP-610-A</label>
     <race>SCR_SCP610A</race>
     <combatPower>100</combatPower>
-    <ecoSystemWeight>1</ecoSystemWeight>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
 		<!--
       <li>
@@ -197,7 +198,7 @@
 <ThingDef ParentName="AnimalThingBase">
     <defName>SCR_SCP610B</defName>
     <label>SCP-610-B</label>
-    <description>SCP-610-B is a tall, vaguely human-like creature completely infested with SCP-610. It has a number of extra limbs or organs, sharp teeth, and claws perfect for tearing into and infecting prey. It is stronger than the other variants.</description>
+    <description>SCP-610-B is a tall, vaguely human-like creature completely infested with SCP-610. It has a number of extra limbs or organs, sharp teeth, and claws perfect for tearing into and infecting prey. It is stronger than the other variants. Its only weakness is fire.</description>
     <modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 	<classRating>
@@ -216,8 +217,9 @@
       <MarketValue>650</MarketValue>
       <ComfyTemperatureMin>-30</ComfyTemperatureMin>
       <FilthRate>8</FilthRate>
-	  <ArmorRating_Sharp>.55</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>.55</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0</ArmorRating_Heat>
 	  <Flammability>7</Flammability> <!-- This is how they are canonically dispatched by the Foundation! -->
     </statBases>
     <race>
@@ -333,7 +335,7 @@
     <label>SCP-610-B</label>
     <race>SCR_SCP610B</race>
     <combatPower>250</combatPower>
-    <ecoSystemWeight>1.5</ecoSystemWeight>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
 		<!--
       <li>

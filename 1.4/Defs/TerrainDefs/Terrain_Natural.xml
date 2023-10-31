@@ -9,6 +9,7 @@
     <renderPrecedence>321</renderPrecedence>
     <pathCost>10</pathCost>
 	<extraDeteriorationFactor>13</extraDeteriorationFactor>
+	<traversedThought>TSP_SteppingOnTheSick_610</traversedThought>
     <statBases>
       <Beauty>-10</Beauty>
       <BeautyOutdoors>-10</BeautyOutdoors>
@@ -50,6 +51,8 @@
     <edgeType>FadeRough</edgeType>
     <renderPrecedence>331</renderPrecedence>
     <pathCost>3</pathCost>
+	<extraDeteriorationFactor>7</extraDeteriorationFactor>
+	<traversedThought>TSP_SteppingOnTheSick_610</traversedThought>
     <statBases>
       <Beauty>-10</Beauty>
       <BeautyOutdoors>-10</BeautyOutdoors>
@@ -89,16 +92,19 @@
 		<defName>TSP_AA_GU_610_EvilWater_Shallow</defName>
 		<label>corrupted water</label>
 		<edgeType>FadeRough</edgeType>
-		<extraDeteriorationFactor>30</extraDeteriorationFactor>
+		<extraDeteriorationFactor>50</extraDeteriorationFactor>
 		<color>(255, 87, 80, 0.66)</color>
-		<pollutionCloudColor>(90, 87, 80, 0.66)</pollutionCloudColor>
-		<texturePath>Terrain/Surfaces/MarshPolluted</texturePath>
+		<pollutionCloudColor>(255, 87, 80, 0.66)</pollutionCloudColor>
+		<texturePath>Terrain/Surfaces/Mud</texturePath>
 		<pollutedTexturePath>Terrain/Surfaces/MarshPolluted</pollutedTexturePath>
-		<pollutionOverlayTexturePath>Terrain/Surfaces/MarshPollutionOverlay</pollutionOverlayTexturePath>
-		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSoil</pollutionOverlayTexturePath>
+	    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
+		<!-- <pollutionOverlayTexturePath>Terrain/Surfaces/MarshPollutionOverlay</pollutionOverlayTexturePath> -->
+		<!-- <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType> -->
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>SCR_SCP610_FleshySoil</driesTo>
+		<traversedThought>TSP_SteppingOnTheSick_610</traversedThought>
 		<affordances>
 			<li>Bridgeable</li>
 		</affordances>
@@ -108,7 +114,7 @@
 		</tags>
 		<tools Inherit="False">
 		  <li>
-			<label>SCP-610 corruption</label>
+			<label>plagued toxins</label>
 			<capacities>
 			  <li>KickMaterialInEyes</li>
 			</capacities>
@@ -120,17 +126,20 @@
 
 	<TerrainDef ParentName="WaterDeepBase">
 		<defName>TSP_AA_GU_610_EvilWater_Deep</defName>
-		<label>corrupted water</label>
+		<label>deep corrupted water</label>
 		<edgeType>FadeRough</edgeType>
-		<texturePath>Terrain/Surfaces/MarshPolluted</texturePath>
+		<texturePath>Terrain/Surfaces/Mud</texturePath>
 		<color>(200, 87, 80, 0.66)</color>
 		<pollutionCloudColor>(90, 87, 80, 0.66)</pollutionCloudColor>
 		<pollutedTexturePath>Terrain/Surfaces/MarshPolluted</pollutedTexturePath>
-		<pollutionOverlayTexturePath>Terrain/Surfaces/MarshPollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSoil</pollutionOverlayTexturePath>
 		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
+		<!-- <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType> -->
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<renderPrecedence>395</renderPrecedence>
 		<driesTo>SCR_SCP610_FleshyGravel</driesTo>
+		<extraDeteriorationFactor>100</extraDeteriorationFactor>
+		<traversedThought>TSP_SteppingOnTheSick_610</traversedThought>
 		<affordances>
 			<li>Bridgeable</li>
 		</affordances>
@@ -140,7 +149,7 @@
 		</tags>
 		<tools Inherit="False">
 		  <li>
-			<label>SCP-610 corruption</label>
+			<label>plagued toxins</label>
 			<capacities>
 			  <li>KickMaterialInEyes</li>
 			</capacities>

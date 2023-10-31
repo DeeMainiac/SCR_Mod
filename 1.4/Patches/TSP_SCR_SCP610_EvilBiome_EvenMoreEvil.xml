@@ -10,15 +10,16 @@
 			<xpath>/Defs/BiomeDef[defName="SCR_SCP610Biome"]/baseWeatherCommonalities</xpath>
 			<value>
 				<baseWeatherCommonalities>
+					<Clear>0.01</Clear>
 					<AB_RedFog>21</AB_RedFog>
-					<DryThunderstorm>0.25</DryThunderstorm>
+					<DryThunderstorm>0.15</DryThunderstorm>
 					<RainyThunderstorm>1</RainyThunderstorm>
 					<FoggyRain>3</FoggyRain>
 					<SnowGentle>1</SnowGentle>
 					<SnowHard>7</SnowHard>
 					<RG_Blizzard MayRequire="regrowth.botr.core">7</RG_Blizzard> <!-- As it is found in northern Russia -->
 					<RG_FoggySandstorm MayRequire="regrowth.botr.core">5</RG_FoggySandstorm>
-					<RG_SandStormHard MayRequire="regrowth.botr.core">3</RG_SandStormHard>
+					<RG_SandStormHard MayRequire="regrowth.botr.core">5</RG_SandStormHard>
 					<PoisonForestSpores MayRequire="mlie.advancedbiomes">10</PoisonForestSpores>
 				</baseWeatherCommonalities>
 			</value>
@@ -48,24 +49,22 @@
 	<!-- Does this exist? -->
 	<xpath>/Defs/ThingDef[defName="AB_MushroomWoodLog"]</xpath>
 		<!-- If it does, do this replacement. -->
-		<match Class="PatchOperationReplace">
+		<match Class="PatchOperationAdd">
 			<success>Always</success>
 			<xpath>/Defs/BiomeDef[defName="SCR_SCP610Biome"]/diseases</xpath>
 			<value>
-				<diseases Inherit="False">
-					<li>
-						<diseaseInc>AB_Disease_SporesAllergy</diseaseInc>
-						<commonality>80</commonality>
-					</li>
-					<li>
-						<diseaseInc>AB_Disease_AnimalSporesAllergy</diseaseInc>
-						<commonality>80</commonality>
-					</li>
-					<li>
-						<diseaseInc>SCR_Disease_SCP1797R</diseaseInc>
-						<commonality>20</commonality>
-					</li>
-				</diseases>
+				<li>
+					<diseaseInc>AB_Disease_SporesAllergy</diseaseInc>
+					<commonality>80</commonality>
+				</li>
+				<li>
+					<diseaseInc>AB_Disease_AnimalSporesAllergy</diseaseInc>
+					<commonality>80</commonality>
+				</li>
+				<li>
+					<diseaseInc>SCR_Disease_SCP1797R</diseaseInc>
+					<commonality>20</commonality>
+				</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
