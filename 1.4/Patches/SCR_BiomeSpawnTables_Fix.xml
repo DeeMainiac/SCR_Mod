@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<!-- Spawns SCPs in Alpha Biome (mod) biomes. If you don't have the mod, this doesn't do anything. -->
+<!-- Spawns SCP's in Alpha Biome (mod) biomes. If you don't have the mod, this doesn't do anything. -->
 <Patch>
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857A</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857A</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857B</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857B</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857C</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857C</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857D</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857D</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857DE</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857E</xpath>
 		</match>
@@ -39,14 +39,14 @@
 
 	<!--
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857DF</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857F</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857DG</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857G</xpath>
 		</match>
@@ -54,133 +54,133 @@
 	-->
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857DH</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857H</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857I</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857I</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP111R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP111R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP131R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP131R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP160R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP160R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP250R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP250R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP529R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP529R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP594R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP594R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP939R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP939R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP1675R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP1675R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP1797A</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP1797A</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP19051R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP19051R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP2371JP</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP2371JP</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP2584R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP2584R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP2845R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP2845R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP28451R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP28451R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP3199R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP3199R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP5185R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP5185R</xpath>
 		</match>
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP5893R</xpath>
+		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP5893R</xpath>
 		</match>
