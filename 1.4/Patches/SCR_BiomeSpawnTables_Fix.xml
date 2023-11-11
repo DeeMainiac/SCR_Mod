@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <!-- Spawns SCP's in Alpha Biome (mod) biomes. If you don't have the mod, this doesn't do anything. -->
 <Patch>
@@ -6,6 +6,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857A</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -13,6 +14,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857B</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -20,6 +22,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857C</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -27,6 +30,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857D</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -34,6 +38,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857E</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 
@@ -42,6 +47,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857F</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -57,6 +63,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857H</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -64,6 +71,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP857I</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -71,6 +79,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP111R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -78,6 +87,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP131R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -85,6 +95,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP160R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -92,6 +103,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP250R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -99,6 +111,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP529R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -106,6 +119,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP594R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -113,6 +127,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP939R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -120,6 +135,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP1675R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -127,6 +143,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP1797A</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -134,6 +151,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP19051R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -141,6 +159,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP2371JP</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -148,6 +167,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP2584R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -155,6 +175,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP2845R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -162,6 +183,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP28451R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -169,6 +191,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP3199R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -176,6 +199,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP5185R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 	
@@ -183,6 +207,7 @@
 		<xpath>/Defs/BiomeDef/wildAnimals</xpath>
 		<match Class="PatchOperationRemove">
 			<xpath>/Defs/BiomeDef/wildAnimals/SCR_SCP5893R</xpath>
+			<success>Always</success>
 		</match>
 	</Operation>
 </Patch>
