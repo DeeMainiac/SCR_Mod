@@ -48,6 +48,11 @@
       <wildness>10</wildness>
       <manhunterOnTameFailChance>2.0</manhunterOnTameFailChance>
       <manhunterOnDamageChance>2.0</manhunterOnDamageChance>
+	  <canBePredatorPrey>false</canBePredatorPrey>
+		<hediffGiverSets Inherit="False">
+			<li>OrganicStandard</li>
+			<li>TSP_ST_SCP_610_Immunity_Processing</li>
+		</hediffGiverSets>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -185,17 +190,15 @@
     <label>SCP-610-B</label>
     <description>SCP-610-B is a tall creature completely infested with SCP-610. It has a number of extra limbs and  organs, sharp teeth, and claws perfect for tearing into and infecting prey. It is stronger than the other variants. Its only weakness is fire.</description>
     <modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
-	<classRating>
-		<li>SCR_CKeter</li>
-		<li>SCR_DKeneq</li>
-		<li>SCR_RNotice</li>
-	</classRating>
-	
-	<containmentTier>2</containmentTier>
-	<willManhuntAfterBreach>true</willManhuntAfterBreach>
-	
-	</li>
+		<li Class="SecureContainRimworld.CProceduresExtension">
+			<classRating>
+				<li>SCR_CKeter</li>
+				<li>SCR_DKeneq</li>
+				<li>SCR_RNotice</li>
+			</classRating>
+			<containmentTier>2</containmentTier>
+			<willManhuntAfterBreach>true</willManhuntAfterBreach>
+		</li>
 	</modExtensions>
 	<statBases>
       <MoveSpeed>3.0</MoveSpeed>
@@ -227,6 +230,11 @@
       <wildness>10</wildness>
       <manhunterOnTameFailChance>2.0</manhunterOnTameFailChance>
       <manhunterOnDamageChance>2.0</manhunterOnDamageChance>
+	  <canBePredatorPrey>false</canBePredatorPrey>
+		<hediffGiverSets Inherit="False">
+			<li>OrganicStandard</li>
+			<li>TSP_ST_SCP_610_Immunity_Processing</li>
+		</hediffGiverSets>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>

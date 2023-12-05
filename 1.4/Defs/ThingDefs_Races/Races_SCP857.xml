@@ -2,7 +2,7 @@
 
 <Defs>
 	<ThingDef Name="SCR_SCP857Base" ParentName="SCR_SCP_Base" Abstract="True">
-		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particularly in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered.</description>
 		<statBases>
 			<MeatAmount>25</MeatAmount>
 			<LeatherAmount>20</LeatherAmount>
@@ -43,7 +43,11 @@
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>				
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
 			<wildBiomes Inherit="False">
 				<!-- RimWorld.Core -->
 				<!-- VANILLA RENDITION -->
@@ -289,6 +293,11 @@
 				<!-- <Permafrost MayRequire="mlie.rfpermafrost">0</Permafrost> -->
 			</wildBiomes>
 		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li>HumanMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
 	</ThingDef>
 
 	<!-- A, unintelligent head -->
@@ -296,7 +305,7 @@
 	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857A</defName>
 		<label>SCP-857-A</label>
-		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-A is a human head with hexapodal limbs that make it move like a crab.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-A is a human head with six limbs that make it move like a crab.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>40</MarketValue>
@@ -346,6 +355,9 @@
 				<chanceFactor>0.9</chanceFactor>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>AnimalPet</li>
+		</tradeTags>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
@@ -353,7 +365,7 @@
 		<label>SCP-857-A</label>
 		<race>SCR_SCP857A</race>
 		<combatPower>10</combatPower>
-		<alternateGraphicChance>.9</alternateGraphicChance>
+		<alternateGraphicChance>0.89</alternateGraphicChance>
 		<alternateGraphics>
 		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath></li>
 		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Pointy</texPath></li>
@@ -397,7 +409,7 @@
 			<MarketValue>40</MarketValue>
 			<FilthRate>1</FilthRate>
 			<MeatAmount>20</MeatAmount>
-			<LeatherAmount>1</LeatherAmount>
+			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<butcherProducts>
 			<Steel>0</Steel>
@@ -432,6 +444,9 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>AnimalPet</li>
+		</tradeTags>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
@@ -496,6 +511,9 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>AnimalPet</li>
+		</tradeTags>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
@@ -659,6 +677,9 @@
 		<comps>
 			 <li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li> <!-- It flies! -->
 		</comps>
+		<tradeTags>
+			<li>AnimalFighter</li>
+		</tradeTags>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
@@ -752,6 +773,9 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
+		<tradeTags>
+			<li>AnimalFighter</li>
+		</tradeTags>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
@@ -827,7 +851,10 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.9</chanceFactor>
 			</li>
-		</tools>		
+		</tools>
+		<tradeTags>
+			<li>AnimalPet</li>
+		</tradeTags>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
@@ -835,7 +862,7 @@
 		<label>SCP-857-I</label>
 		<race>SCR_SCP857I</race>
 		<combatPower>15</combatPower>
-		<alternateGraphicChance>.9</alternateGraphicChance>
+		<alternateGraphicChance>0.89</alternateGraphicChance>
 	<alternateGraphics>
       <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath></li>
       <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Pointy</texPath></li>
