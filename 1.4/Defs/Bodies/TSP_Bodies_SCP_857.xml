@@ -173,6 +173,13 @@
 						</li>
 					</parts>
 				</li>
+				<li>
+					<def>TSP_SCR_857_Enchantment</def>
+					<depth>Inside</depth>
+					<height>Middle</height>
+					<coverage>0</coverage>
+					<!-- <groups></groups> -->
+				</li>
 			</parts>
 		</corePart>
 	</BodyDef>
@@ -216,6 +223,13 @@
 						</li>
 					</parts>
 				</li>
+				<li>
+					<def>TSP_SCR_857_Enchantment</def>
+					<depth>Inside</depth>
+					<height>Middle</height>
+					<coverage>0</coverage>
+					<!-- <groups></groups> -->
+				</li>
 			</parts>
 			<!-- Worms don't have lungs or any other organs like higher animals do -->
 		</corePart>
@@ -249,6 +263,13 @@
 							</groups>
 						</li>
 					</parts>
+				</li>
+				<li>
+					<def>TSP_SCR_857_Enchantment</def>
+					<depth>Inside</depth>
+					<height>Middle</height>
+					<coverage>0</coverage>
+					<!-- <groups></groups> -->
 				</li>
 			</parts>
 		</corePart>
@@ -287,6 +308,13 @@
 							<depth>Inside</depth>
 						</li>
 					</parts>
+				</li>
+				<li>
+					<def>TSP_SCR_857_Enchantment</def>
+					<depth>Inside</depth>
+					<height>Middle</height>
+					<coverage>0</coverage>
+					<!-- <groups></groups> -->
 				</li>
 			</parts>
 		</corePart>
@@ -359,6 +387,13 @@
 							</parts>
 						</li>
 					</parts>
+				</li>
+				<li>
+					<def>TSP_SCR_857_Enchantment</def>
+					<depth>Inside</depth>
+					<height>Middle</height>
+					<coverage>0</coverage>
+					<!-- <groups></groups> -->
 				</li>
 			</parts>
 		</corePart>
@@ -435,6 +470,13 @@
 							</groups>
 						</li>
 					</parts>
+				</li>
+				<li>
+					<def>TSP_SCR_857_Enchantment</def>
+					<depth>Inside</depth>
+					<height>Middle</height>
+					<coverage>0</coverage>
+					<!-- <groups></groups> -->
 				</li>
 			</parts>
 		</corePart>
