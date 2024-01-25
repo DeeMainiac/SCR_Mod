@@ -18,44 +18,40 @@
     </comps>
     <stages>
       <li>
-        <minSeverity>0.15</minSeverity>
+        <minSeverity>0.05</minSeverity>
         <label>little</label>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.1</offset>
+            <setMax>0.8</setMax>
           </li>
         </capMods>
       </li>
       <li>
-        <minSeverity>0.30</minSeverity>
+        <minSeverity>0.15</minSeverity>
         <label>moderate</label>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.2</offset>
+            <setMax>0.5</setMax>
           </li>
         </capMods>
       </li>
       <li>
-        <minSeverity>0.45</minSeverity>
+        <minSeverity>0.3</minSeverity>
         <label>severe</label>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.4</offset>
+            <setMax>0.3</setMax>
           </li>
         </capMods>
       </li>
       <li>
-        <minSeverity>0.60</minSeverity>
+        <minSeverity>0.40</minSeverity>
         <label>extreme</label>
-        <lifeThreatening>true</lifeThreatening>
+        <lifeThreatening>false</lifeThreatening>
         <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.4</offset>
-          </li>
           <li>
             <capacity>Consciousness</capacity>
             <setMax>0.1</setMax>
@@ -73,7 +69,7 @@
 	<initialSeverity>.15</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>45000~100000</disappearsAfterTicks>
+        <disappearsAfterTicks>45000~60000</disappearsAfterTicks>
       </li>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.75</severityPerDay>
@@ -100,13 +96,13 @@
 	<makesSickThought>true</makesSickThought>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-.9</severityPerDay>
+        <severityPerDay>-0.9</severityPerDay>
       </li>
     </comps>
     <stages>
       <li>
         <label>recovering</label>
-        <vomitMtbDays>0.2</vomitMtbDays>
+        <vomitMtbDays>0.8</vomitMtbDays>
         <painOffset>0.5</painOffset>
         <capMods>
           <li>
@@ -127,14 +123,14 @@
           </li>
           <li>
             <capacity>Eating</capacity>
-            <postFactor>0.5</postFactor>
+            <postFactor>0.2</postFactor>
           </li>
         </capMods>
       </li>
       <li>
         <label>major</label>
         <minSeverity>0.4</minSeverity>
-        <vomitMtbDays>0.25</vomitMtbDays>
+        <vomitMtbDays>0.1</vomitMtbDays>
         <painOffset>0.5</painOffset>
         <capMods>
           <li>
@@ -155,7 +151,7 @@
           </li>
           <li>
             <capacity>Eating</capacity>
-            <postFactor>0.5</postFactor>
+            <postFactor>0.05</postFactor>
           </li>
         </capMods>
       </li>
@@ -163,6 +159,7 @@
         <label>initial</label>
         <minSeverity>0.85</minSeverity>
         <painOffset>0.1</painOffset>
+		<vomitMtbDays>0.03</vomitMtbDays>
         <capMods>
           <li>
             <capacity>Moving</capacity>
@@ -171,6 +168,10 @@
           <li>
             <capacity>Manipulation</capacity>
             <postFactor>0.9</postFactor>
+          </li>
+          <li>
+            <capacity>Eating</capacity>
+            <postFactor>0</postFactor>
           </li>
         </capMods>
       </li>
@@ -184,8 +185,8 @@
     <label>SCP-2845 Transmutation Aura</label>
     <description>This pawn is under the effect of SCP-2845's transmutation aura, fatally transforming them into an SCP-2845-1 instance.
 \nNaturally recovers over time as the body filters it out.</description>
-	<initialSeverity>.15</initialSeverity>
-	<lethalSeverity>.84</lethalSeverity>
+	<initialSeverity>0.15</initialSeverity>
+	<lethalSeverity>0.84</lethalSeverity>
 	<makesSickThought>true</makesSickThought>
 
     <comps>

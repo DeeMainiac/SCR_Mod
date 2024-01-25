@@ -14,12 +14,19 @@
         <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
       </li>
     </comps>
+	<tradeTags>
+		<li>SCP</li>
+	</tradeTags>
   </ThingDef>
 
-  <ThingDef ParentName="MealFineBase">
+  <ThingDef ParentName="MealBase">
     <defName>SCR_SCP666HalfJ</defName>
-    <label>SCP-666 1/2-J</label>
-    <description>SCP-666 1/2-J is a tasty, if not slightly salty mushroom-stuffed crab that induces several K-class scenarios in one's guts.</description>
+    <label>SCP-666-1/2-J</label>
+    <description>SCP-666-1/2-J is a delicious, slightly salty, mushroom-stuffed, crab dish that induces several K-class scenarios in one's guts. Owing to its anomalous properties, it needs neither mushrooms or crab to be cooked, and can be made out of most meat. Those who know how to make it recommended that it be fed to one's enemy as a punishment.</description>
+	<statBases>
+		<Nutrition>1</Nutrition>
+		<MarketValue>0.02</MarketValue>
+	</statBases>
     		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -35,15 +42,31 @@
       <graphicClass>Graphic_MealVariants</graphicClass>
     </graphicData>
 		<ingestible>
-		<outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>SCR_SCP666Half_FoodPoisoning</hediffDef>
-        </li>
-      </outcomeDoers>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Meal, Processed, Liquor, Fluid, Kibble</foodType>
+			<drugCategory>Any</drugCategory>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<chairSearchRadius>1</chairSearchRadius>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<tableDesired>false</tableDesired>
+			<ingestCommandString>Force-feeding {0}</ingestCommandString>
+			<ingestReportString>Force-feeding {0}.</ingestReportString>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SCR_SCP666Half_FoodPoisoning</hediffDef>
+					<severity>0.05</severity>
+				</li>
+			</outcomeDoers>
 	  </ingestible>
+	  <orderedTakeGroup>Drug</orderedTakeGroup>
 	<comps>
       <li Class="CompProperties_Ingredients">
         <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+	  <!-- FEED IT TO YOUR ENEMIES!! -->
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
       </li>
     </comps>
   </ThingDef>

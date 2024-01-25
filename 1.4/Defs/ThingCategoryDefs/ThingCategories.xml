@@ -29,7 +29,7 @@
 <ThingCategoryDef>
 <defName>SCPMeat</defName>
 <label>SCP Meats</label>
-<parent>FoodRaw</parent>
+<parent>MeatRaw</parent>
 </ThingCategoryDef>
 
 <ThingCategoryDef>

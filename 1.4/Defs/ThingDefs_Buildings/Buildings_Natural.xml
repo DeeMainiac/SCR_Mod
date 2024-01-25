@@ -22,11 +22,11 @@
     </statBases>
     <pathCost>42</pathCost>
     <receivesSignals>true</receivesSignals>
-    <blockWind>true</blockWind>
+    <blockWind>false</blockWind>
     <tickerType>Normal</tickerType>
     <passability>PassThroughOnly</passability>
     <killedLeavings>
-      <InsectJelly>30</InsectJelly>
+      <RawFungus>300</RawFungus>
     </killedLeavings>
     <comps>
       <li Class="CompProperties_CanBeDormant">
@@ -41,22 +41,24 @@
         </spawnablePawnKinds>
         <lordJob>LordJob_DefendAndExpandHive</lordJob>
         <spawnSound>Hive_Spawn</spawnSound>
-        <initialPawnsPoints>200</initialPawnsPoints>
-        <maxSpawnedPawnsPoints>1500</maxSpawnedPawnsPoints>
+        <initialPawnsPoints>100</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>3000</maxSpawnedPawnsPoints>
       </li>
       <li Class="CompProperties_SelfhealHitpoints">
         <ticksPerHeal>3000</ticksPerHeal> <!-- 60k ticks = 1 day, 20 hp per day -->
       </li>
       <li Class="CompProperties_SpawnerHives" />
+	  <!--
       <li Class="CompProperties_HeatPusher">
-        <heatPerSecond>6</heatPerSecond>
+        <heatPerSecond>1</heatPerSecond>
         <heatPushMaxTemperature>38</heatPushMaxTemperature>
       </li>
+	  -->
       <li Class="CompProperties_SpawnerFilth">
-        <filthDef>Filth_Slime</filthDef>
-        <spawnCountOnSpawn>10</spawnCountOnSpawn>
-        <spawnMtbHours>4</spawnMtbHours>
-        <spawnRadius>5</spawnRadius>
+        <filthDef>Filth_FireFoam</filthDef>
+        <spawnCountOnSpawn>15</spawnCountOnSpawn>
+        <spawnMtbHours>1</spawnMtbHours>
+        <spawnRadius>3.5</spawnRadius>
       </li>
     </comps>
   </ThingDef>

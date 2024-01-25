@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>SCR_SCP5893R</defName>
@@ -50,9 +50,10 @@
 			<baseBodySize>1.2</baseBodySize>
 			<baseHungerRate>0.325</baseHungerRate>
 			<baseHealthScale>1.9</baseHealthScale>
-			<foodType>CarnivoreAnimal, VegetarianRoughAnimal, OvivoreAnimal</foodType>
+			<foodType>CarnivoreAnimal, VegetarianRoughAnimal, OvivoreAnimal, Kibble</foodType>
 			<wildness>.8</wildness>
-	      <roamMtbDays>2</roamMtbDays>
+			<roamMtbDays>2</roamMtbDays>
+			<specificMeatDef MayRequire="biomesteam.biomescore">BMT_GastropodMeat</specificMeatDef>
 			<trainability>Advanced</trainability>
 			<leatherDef>Leather_Light</leatherDef>
 			<manhunterOnTameFailChance>.7</manhunterOnTameFailChance>
@@ -73,7 +74,7 @@
 			</wildBiomes>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>25</lifeExpectancy>
-			<lifeStageAges>
+			<lifeStageAges Inherit="False">
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>

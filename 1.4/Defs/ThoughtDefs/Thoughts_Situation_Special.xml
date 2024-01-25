@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-
   <ThoughtDef>
     <defName>SCR_EquippedLivingWeapon</defName>
    <workerClass>SecureContainRimworld.ThoughtWorker_LivingWeaponEquipped</workerClass>
@@ -9,8 +8,8 @@
     <stages>
       <li>
         <label>living weapon equipped</label>
-        <description>My weapon is alive.</description>
-        <baseMoodEffect>-5</baseMoodEffect>
+        <description>It's strange to think that this device, made to be used to harm and kill, is alive... just like me...</description>
+        <baseMoodEffect>-1</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -21,11 +20,12 @@
     <validWhileDespawned>true</validWhileDespawned>
     <requiredTraits>
       <li>Psychopath</li>
+	  <li>Bloodlust</li>
     </requiredTraits>
     <stages>
       <li>
         <label>living weapon equipped</label>
-        <description>My weapon is alive.</description>
+        <description>My weapon is alive. I too feel alive. Let's kill together.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -75,7 +75,7 @@
     <stages>
       <li>
         <label>Sick with SCP-1797</label>
-        <description>I'm growing tumors! They're shaped like cats...</description>
+        <description>I'm growing tumors! Wait... are they falling off and then... meowing?</description>
         <baseMoodEffect>-8</baseMoodEffect>
       </li>
     </stages>
@@ -104,7 +104,7 @@
     <stages>
       <li>
         <label>used SCP-ES-019</label>
-        <description>That was a very worrying broadcast I listened to.</description>
+        <description>That was a very worrying broadcast that I listened to.</description>
         <baseMoodEffect>-20</baseMoodEffect>
       </li>
     </stages>
@@ -132,7 +132,7 @@
     <stages>
       <li>
         <label>was inside SCP-1695</label>
-        <description>I was turned into Meaty the Meatworm.</description>
+        <description>I was installed into a Meaty the Meatworm instance. I can still here the wriggling and squirming inside there.</description>
         <baseMoodEffect>-35</baseMoodEffect>
       </li>
     </stages>
@@ -144,8 +144,8 @@
     <stages>
       <li>
         <label>SCP-2845 Transmutation Aura</label>
-        <description>I feel like I'm falling apart at the seams.</description>
-        <baseMoodEffect>-10</baseMoodEffect>
+        <description>SATURN SATURN SATURN SATURN SATURN SATURN SATURN SATURN</description>
+        <baseMoodEffect>-30</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -175,4 +175,23 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+	<ThoughtDef>
+		<defName>TSP_SteppingOnTheSick_610</defName>
+		<durationDays>0.25</durationDays>
+		<stackLimit>1</stackLimit>
+		<validWhileDespawned>false</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<nullifyingPrecepts>
+			<li MayRequire="vanillaexpanded.vmemese">VME_Illness_Exalted</li>
+			<li MayRequire="vanillaexpanded.vmemese">VME_Illness_Preferred</li>
+		</nullifyingPrecepts>
+		<stages>
+			<li>
+				<label>stepping on SCP-610 corruption</label>
+				<description>The corruption of the Flesh That Hates is everywhere. Just hearing the all-consuming demon fungus squish and throb under my weight makes me feel malaise.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

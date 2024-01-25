@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VPE_Bileceps"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/VanillaPlantsExpandedMushrooms.MushroomGrowZoneTerrainsDef/allowedTerrains</xpath>
+			<value>
+				<li>SCR_SCP610_FleshyGravel</li>
+				<li>SCR_SCP610_FleshySoil</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

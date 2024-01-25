@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingDef ParentName="OrganicProductBase">
     <defName>SCR_SCP1797Meat</defName>
     <label>SCP-1797-A meat</label>
-    <description>Meat from SCP-1797-A. Can be used to create a pill used to infect pawns with SCP-1797.</description>
+    <description>Meat from a SCP-1797-A instance. Can be used to create a pill used to infect pawns with SCP-1797.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
-	        <graphicClass>Graphic_StackCount</graphicClass>
+		<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-      <MarketValue>.9</MarketValue> <!-- Can be used like meat in recipes -->
+      <MarketValue>0.9</MarketValue> <!-- Can be used like meat in recipes -->
       <Mass>0.045</Mass>
       <MaxHitPoints>60</MaxHitPoints>
       <Flammability>0.2</Flammability>
@@ -20,37 +20,38 @@
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>14</daysToRotStart>
+        <daysToRotStart>21</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
     <ingestible>
       <preferability>RawBad</preferability>
-      <foodType>Meat</foodType>
+      <foodType>Meat, CarnivoreAnimalStrict</foodType>
     </ingestible>
     <thingCategories>
       <li>SCPMeat</li>
     </thingCategories>
-    <allowedArchonexusCount>0</allowedArchonexusCount>
+    <allowedArchonexusCount>1000</allowedArchonexusCount>
   </ThingDef>
 
   <ThingDef ParentName="OrganicProductBase">
     <defName>SCR_SCP594Meat</defName>
     <label>raw thunder mutton</label>
-    <description>Meat from SCP-594. Can be used to make an electrifyingly good meal.</description>
+    <description>Meat from SCP-594. Can be used to make an electrifying, delicious meal.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
-	        <graphicClass>Graphic_StackCount</graphicClass>
+		<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-      <MarketValue>.9</MarketValue> <!-- Can be used like meat in recipes -->
+      <MarketValue>0.9</MarketValue> <!-- Can be used like meat in recipes -->
       <Mass>0.045</Mass>
       <MaxHitPoints>60</MaxHitPoints>
       <Flammability>0.2</Flammability>
       <Nutrition>0.05</Nutrition>
       <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
     </statBases>
+	<stackLimit>1000</stackLimit>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>14</daysToRotStart>
@@ -59,47 +60,101 @@
     </comps>
     <ingestible>
       <preferability>RawBad</preferability>
-      <foodType>Meat</foodType>
+      <foodType>Meat, CarnivoreAnimalStrict</foodType>
     </ingestible>
     <thingCategories>
       <li>SCPMeat</li>
     </thingCategories>
-    <allowedArchonexusCount>0</allowedArchonexusCount>
+    <allowedArchonexusCount>1000</allowedArchonexusCount>
   </ThingDef>
 
   <ThingDef ParentName="OrganicProductBase">
     <defName>SCR_SCP3199Meat</defName>
     <label>SCP-3199 meat</label>
-    <description>Meat from SCP-3199. A mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the humanlike-taste.</description>
+    <description>Meat from a SCP-3199 instance. A mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the human taste.</description>
     <graphicData>
       <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
 	        <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-      <MarketValue>.7</MarketValue> <!-- Can be used like meat in recipes -->
+      <MarketValue>0.5</MarketValue> <!-- Can be used like meat in recipes -->
       <Mass>0.045</Mass>
       <MaxHitPoints>60</MaxHitPoints>
-      <Flammability>0.2</Flammability>
+      <Flammability>2</Flammability>
       <Nutrition>0.025</Nutrition>
-      <FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
+	  <FoodPoisonChance>0.5</FoodPoisonChance>
+      <FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
     </statBases>
+	<stackLimit>1000</stackLimit>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>14</daysToRotStart>
+        <daysToRotStart>45</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
     <ingestible>
-      <preferability>RawBad</preferability>
-	  <tasteThought>SCR_Ate3199MeatRaw</tasteThought>
-      <foodType>Meat</foodType>
+		<preferability>RawBad</preferability>
+		<foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Corpse</foodType>
+		<tasteThought Inherit="False"></tasteThought>
+		<specialThoughtDirect Inherit="False">SCR_Ate3199MeatRaw</specialThoughtDirect>
+		<specialThoughtAsIngredient Inherit="False"></specialThoughtAsIngredient>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>ToxicBuildup</hediffDef>
+				<severity>0.03</severity>
+			</li>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>FoodPoisoning</hediffDef>
+				<severity>0.3</severity>
+			</li>
+		</outcomeDoers>
     </ingestible>
     <thingCategories>
       <li>SCPMeat</li>
     </thingCategories>
-    <allowedArchonexusCount>0</allowedArchonexusCount>
+    <allowedArchonexusCount>10000</allowedArchonexusCount>
   </ThingDef>
 
-
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>TSP_SCR_WEF_KlausCompost</defName>
+		<label>SCP-2371-JP "beef"</label>
+		<description>The "meat" of a SCP-2371-JP instance. Like its source, it resembles soybeans in texture, consistency, and touch; its taste is totally indistinguishable from beef. \n \n Herbivorous animals can and will eat it, as it can be digested by them, and likewise, carnivores are incapable of digesting it alone. SCP-2371-JP "beef" is more nutritious than many foods and takes a very, very long time to rot.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Human</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(195,237,195)</color>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>0.65</MarketValue>
+			<Mass>0.009</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.1</Flammability>
+			<Nutrition>0.07</Nutrition>
+			<FoodPoisonChance>0</FoodPoisonChance>
+			<FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+			<DeteriorationRate>0.01</DeteriorationRate>
+		</statBases>
+		<stackLimit>1000</stackLimit>
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<foodType Inherit="False">VegetableOrFruit, Plant, VegetarianAnimal, VegetarianRoughAnimal, Seed, Tree, Kibble</foodType>
+			<optimalityOffsetHumanlikes>0</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>20</optimalityOffsetFeedingAnimals>
+			<tasteThought Inherit="False"></tasteThought>
+			<specialThoughtDirect Inherit="False"></specialThoughtDirect>
+			<specialThoughtAsIngredient Inherit="False"></specialThoughtAsIngredient>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>45</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories Inherit="False">
+			<li>PlantFoodRaw</li>
+		</thingCategories>
+		<allowedArchonexusCount>5000</allowedArchonexusCount>
+	</ThingDef>
 </Defs>

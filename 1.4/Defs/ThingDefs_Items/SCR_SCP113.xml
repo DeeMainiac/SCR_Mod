@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCR_SCP113R</defName>
@@ -17,7 +18,7 @@
 		<graphicData>
 			<texPath>Things/Item/Artifacts/SCR_SCP113</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>.5</drawSize>
+			<drawSize>0.5</drawSize>
 		</graphicData>
 		<thingClass>ThingWithComps</thingClass>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -38,8 +39,8 @@
 		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.001</Mass>
-			<MarketValue>1000</MarketValue>
-			<Beauty>6</Beauty>
+			<MarketValue>2000</MarketValue>
+			<Beauty>16</Beauty>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Usable">
@@ -52,4 +53,38 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<RecipeDef>
+		<defName>TSP_SCR_Administer_SCP113R</defName>
+		<label>swap genders with SCR-113</label>
+		<description>Administer a SCP-113 instance. This will turn the targeted Pawn into the opposite sex!</description>
+		<workerClass>Recipe_AdministerUsableItem</workerClass>
+		<jobString>Transforming {0}!</jobString>
+		<targetsBodyPart>false</targetsBodyPart>
+		<anesthetize>false</anesthetize>
+		<workAmount>60</workAmount>
+		<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+		<isViolation>true</isViolation>
+		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SCR_SCP113R</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SCR_SCP113R</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<!--
+		<products>
+			<SCR_SCP113R>1</SCR_SCP113R>
+		</products>
+		-->
+	</RecipeDef>
 </Defs>

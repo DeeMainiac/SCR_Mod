@@ -98,7 +98,7 @@
         <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
       </li>
     </comps>
-    <allowedArchonexusCount>5</allowedArchonexusCount>
+    <allowedArchonexusCount>500</allowedArchonexusCount>
   </ThingDef>
 
   <RecipeDef>

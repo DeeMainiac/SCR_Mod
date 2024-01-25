@@ -1,28 +1,26 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 <ThingDef ParentName="BaseInsect">
     <defName>SCR_SCP5185R</defName>
     <label>SCP-5185</label>
-    <description>SCP-5185 is a doglike spider.</description>
+    <description>SCP-5185 is a docile spider with the intelligence and personality of a dog. Usually eager to be a pet of sapient beings, it can rarely be seen recruited into a "pack" of more sinister Insectoids.</description>
 	<modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
-
-	<classRating>
-		<li>SCR_CSafe</li>
-		<li>SCR_DDark</li>
-		<li>SCR_RNotice</li>
-
-
-	</classRating>	
-	</li>
+		<li Class="SecureContainRimworld.CProceduresExtension">
+		<classRating>
+			<li>SCR_CSafe</li>
+			<li>SCR_DDark</li>
+			<li>SCR_RNotice</li>
+		</classRating>
+		<containmentTier>0</containmentTier>
+		</li>
 	</modExtensions>
     <statBases>
       <MoveSpeed>3.75</MoveSpeed>
       <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
-      <MarketValue>450</MarketValue>
+      <MarketValue>250</MarketValue>
       <LeatherAmount>0</LeatherAmount>
     </statBases>
     <uiIconScale>2</uiIconScale>
@@ -53,7 +51,7 @@
       <baseBodySize>0.75</baseBodySize>
       <baseHungerRate>0.4</baseHungerRate>
       <baseHealthScale>1.0</baseHealthScale>
-	  <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+	  <foodType>OmnivoreAnimal, OvivoreAnimal, VegetarianAnimal, Fluid, Kibble</foodType>
       <useMeatFrom>Megaspider</useMeatFrom>
 	  <gestationPeriodDays>10</gestationPeriodDays>
 	  <litterSizeCurve>
@@ -68,7 +66,7 @@
       <lifeExpectancy>12</lifeExpectancy>
       <wildness>0</wildness>
       <trainability>Advanced</trainability>
-       <nuzzleMtbHours>12</nuzzleMtbHours>
+       <nuzzleMtbHours>3</nuzzleMtbHours>
 	   	  	  	<wildBiomes>
 				<AridShrubland>0</AridShrubland>
 				<BorealForest>0</BorealForest>
@@ -83,7 +81,7 @@
 				<Desert>0</Desert>
 				<ExtremeDesert>0</ExtremeDesert>
 			</wildBiomes>
-      <lifeStageAges>
+      <lifeStageAges Inherit="False">
         <li>
           <def>AnimalBaby</def>
           <minAge>0</minAge>
@@ -113,13 +111,13 @@
     </tradeTags>
   </ThingDef>
   
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP5185R</defName>
     <label>SCP-5185</label>
     <race>SCR_SCP5185R</race>
     <combatPower>70</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
-    <ecoSystemWeight>0.15</ecoSystemWeight>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>

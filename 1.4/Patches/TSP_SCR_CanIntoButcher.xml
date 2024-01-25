@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!-- Ensures SCP instances can be cooked and eaten like normal if you have the Cthulhu Mod. -->
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingCategoryDef[defName="ROM_CosmicHorrorCorpses"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingCategoryDef[defName="ROM_CosmicHorrorCorpses"]/parent</xpath>
+			<value>
+				<parent>CorpsesAnimal</parent>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

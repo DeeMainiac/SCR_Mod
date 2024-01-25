@@ -62,7 +62,7 @@
       </li>
       <li>
         <minSeverity>0.833</minSeverity>
-        <label>extreme</label>
+        <label>cat-tastrophe</label>
         <lifeThreatening>true</lifeThreatening>
         <vomitMtbDays>0.75</vomitMtbDays>
         <painOffset>0.05</painOffset>
@@ -96,7 +96,7 @@
     <tendable>true</tendable>
     <comps>
       <li Class="HediffCompProperties_TendDuration">
-        <baseTendDurationHours>12</baseTendDurationHours>
+        <baseTendDurationHours>4</baseTendDurationHours>
       </li>
       <!--<li Class="HediffCompProperties_Immunizable">
         <severityPerDayNotImmune>0.84</severityPerDayNotImmune>
@@ -152,5 +152,24 @@
     </stages>
   </HediffDef>
  
- 
-  </Defs>
+
+	<HediffDef>
+		<defName>TSP_SCR_610_CannotInfectSelf</defName>
+		<label>SCP-610 Is Immune to Itself</label>
+		<description>YO DAWG, I heard you DON'T like SCP-610 infections, so I prevented SCP-610 from infecting SCP-610 so you can avoid the Flesh That Hates hating the Flesh That Hates. \n \n In non-meme speak, this grants a SCP-610 instance immunity to its own attacks. SCP-610-A, SCP-610-B, and other such derivatives represent an organic being completely compromised and possessed by the Flesh That Hates. It cannot contract the SCP-610 infection a second time!</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255, 0, 0)</defaultLabelColor>
+		<isBad>true</isBad>
+		<!-- <scenarioCanAdd>false</scenarioCanAdd> -->
+		<stages>
+			<li>
+				<label>Immune to Yourself</label>
+				<becomeVisible>false</becomeVisible>
+				<makeImmuneTo>
+					<li>SCR_SCP610Infection</li>
+					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_Corprus</li>
+				</makeImmuneTo>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

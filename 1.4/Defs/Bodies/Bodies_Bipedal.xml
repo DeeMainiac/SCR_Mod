@@ -8,7 +8,7 @@
 -->
 <Defs>
 
-<!-- Essentially QuadrupedAnimalWithPawsAndTail, but without the tail and back leggys. Just	SCP-529-->
+<!-- Essentially QuadrupedAnimalWithPawsAndTail, but without the tail and back legs. Just	SCP-529-->
 <BodyDef>    
 	<defName>SCR_BipedalQuad</defName>
     <label>quadruped animal</label>
@@ -332,7 +332,7 @@
     </corePart>
   </BodyDef>
    
-   <!-- Essentially Bird, but without birdy parts and beak. stretchy necky. SCP-3199-->
+   <!-- Essentially Bird, but without birdy parts and beak. Stretchy necky. SCP-3199-->
   <BodyDef>
     <defName>SCR_Neck</defName>
     <label>biped animal</label>
@@ -394,12 +394,16 @@
 		  <customLabel>neck cartilage</customLabel>
           <coverage>0.2</coverage>
           <height>Top</height>
+		  <groups>
+			<li>Neck</li>
+		  </groups>
           <parts>
             <li>
               <def>Head</def>
               <coverage>0.75</coverage>
               <groups>
                 <li>HeadAttackTool</li>
+				<li>Hands</li>
               </groups>
               <parts>
                 <li>
@@ -720,8 +724,7 @@
 			<parts>						
                     <li>
                       <def>Brain</def>
-				<coverage>0.79</coverage>
-
+					  <coverage>0.079</coverage>
                       <depth>Inside</depth>
                     </li>
 				<li>

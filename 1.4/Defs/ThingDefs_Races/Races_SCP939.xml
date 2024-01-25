@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="SCR_SCP_Base">
     <defName>SCR_SCP939R</defName>
     <label>SCP-939</label>
     <description>SCP-939 is a quadrupedal creature that imitates the humanlike voices of those they kill. They also emit a potent memory-altering gas.</description>
@@ -24,9 +24,10 @@
       <MarketValue>100</MarketValue>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
+	  <MeatAmount>90</MeatAmount>
 	  <FilthRate>8</FilthRate>
     </statBases>
-			<tradeTags Inherit="False" />
+			<tradeTags Inherit="False"></tradeTags>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>QuadrupedAnimalWithPawsAndTail</body>
@@ -35,7 +36,7 @@
       <maxPreyBodySize>2.5</maxPreyBodySize>
       <baseHungerRate>0.25</baseHungerRate>
       <baseHealthScale>1.6</baseHealthScale>
-      <foodType>CarnivoreAnimalStrict</foodType>
+      <foodType>CarnivoreAnimalStrict, Corpse, Kibble</foodType>
       <leatherDef>Leather_Light</leatherDef>
       <wildness>.9</wildness>
       <petness>1</petness>
@@ -54,7 +55,7 @@
         </points>
       </litterSizeCurve>
       <lifeExpectancy>20</lifeExpectancy>
-      <lifeStageAges>
+      <lifeStageAges Inherit="False">
         <li>
           <def>AnimalBaby</def>
           <minAge>0</minAge>
@@ -151,12 +152,11 @@
 	</comps>
   </ThingDef>
   
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
       <defName>SCR_SCP939R</defName>
     <label>SCP-939</label>
     <race>SCR_SCP939R</race>
     <combatPower>200</combatPower>
-    <ecoSystemWeight>0.5</ecoSystemWeight>
 	<canArriveManhunter>true</canArriveManhunter>
     <lifeStages>
       <li>
