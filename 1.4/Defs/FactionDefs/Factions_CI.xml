@@ -9,10 +9,13 @@
 		<pawnsPlural>insurgents</pawnsPlural>
 		<listOrderPriority>10</listOrderPriority>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<fixedName>Chaos Insurgency</fixedName>
 		<leaderTitle>Delta Commander</leaderTitle>
 		<leaderTitleFemale>Delta Commander</leaderTitleFemale>
 		<factionIconPath>World/WorldObjects/Expanding/ChaosInsurgency</factionIconPath>
+		<settlementGenerationWeight>0.35</settlementGenerationWeight>
 		<colorSpectrum>
 		  <li>(255, 1, 1)</li>
 		</colorSpectrum>
@@ -270,7 +273,7 @@
 			<li>(100000,10000)</li>
 		  </points>
 		</maxPawnCostPerTotalPointsCurve>
-		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<settlementTexturePath>World/WorldObjects/Expanding/ChaosInsurgency</settlementTexturePath>
 		<allowedArrivalTemperatureRange>-999~999</allowedArrivalTemperatureRange>
 		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>50</configurationListOrderPriority>

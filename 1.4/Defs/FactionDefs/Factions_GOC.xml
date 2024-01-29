@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
 	<FactionDef ParentName="FactionBase">
 		<defName>SCR_GOC</defName>
 		<label>Global Occult Coalition</label>
 		<description>A large collection of anomalous and occult organizations. They seek to keep humanlikes safe and unaware of anomalous and paranormal entities by destroying them. They have particularly shaky relationships with powerful groups that hold and use anomalous entities.</description>
-	   <!-- <pawnSingular>insurgent</pawnSingular>
-		<pawnsPlural>insurgents</pawnsPlural> -->
+	    <pawnSingular>peacekeeper</pawnSingular>
+		<pawnsPlural>peacekeepers</pawnsPlural>
 		<listOrderPriority>11</listOrderPriority>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<fixedName>Global Occult Coalition</fixedName>
 		<leaderTitle>High Command</leaderTitle>
 		<leaderTitleFemale>High Command</leaderTitleFemale>
 		<factionIconPath>World/WorldObjects/Expanding/GlobalOccultCoalition</factionIconPath>
+		<settlementGenerationWeight>0.85</settlementGenerationWeight>
 		<colorSpectrum>
 		  <li>(182, 208, 226)</li> <!-- Powder blue -->
 		</colorSpectrum>
@@ -159,11 +163,11 @@
 			<li>(100000,10000)</li>
 		  </points>
 		</maxPawnCostPerTotalPointsCurve>
-		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<settlementTexturePath>World/WorldObjects/Expanding/GlobalOccultCoalition</settlementTexturePath>
 		<allowedArrivalTemperatureRange>-999~999</allowedArrivalTemperatureRange>
 		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>50</configurationListOrderPriority>
-	  </FactionDef>
+	</FactionDef>
 	  
 	<ThingSetMakerDef>
 		<defName>TSP_SCR_SCP_Factions_Want_SCP_Items</defName>
