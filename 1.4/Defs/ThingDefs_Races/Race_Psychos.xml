@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
+	<!--
+		CRACKAJACK, THREE LEGGED WOLF, AND TURTLESHROOM PROUDLY PRESENT
+		SCP-1788!!
+		ADAPTED FROM THE CJ PSYCHO MOD!!
+		
+		https://www.steamcommunity.com/sharedfiles/filedetails/?id=2781059334
+	-->
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>CJ_Psycho</defName>
 		<label>SCP-1788-1</label>
@@ -226,7 +233,7 @@
 			<LeatherAmount>150</LeatherAmount>
 			<RoyalFavorValue>2</RoyalFavorValue>  <!-- LOL... If it would please your highness; one greasy, jail-inked murderer scum.... on the house! -->
 			<PsychicSensitivity>0.27</PsychicSensitivity>  <!--I ain't gonna meditate!!!!-->
-			<MentalBreakThreshold>0.7</MentalBreakThreshold>   <!--And I ain't no wuss either!!!!-->
+			<MentalBreakThreshold>0.7</MentalBreakThreshold>
 			<CarryingCapacity>200</CarryingCapacity>
 			<ArrestSuccessChance>1.5</ArrestSuccessChance>
 			<IncomingDamageFactor>0.7</IncomingDamageFactor>
@@ -236,8 +243,9 @@
 			<MeleeDodgeChance>0.5</MeleeDodgeChance>
 			<PainShockThreshold>2</PainShockThreshold> <!--And I ain't no wuss either!!!!-->
 			<HuntingStealth>2.3</HuntingStealth> <!-- As they canonically live in plain sight -->
-			<SocialImpact>0.5</SocialImpact>
+			<SocialImpact>1.5</SocialImpact> <!-- They canonically tricked SCP interrogators into revealing secrets about themselves to the instances -->
 			<MiningSpeed>1.2</MiningSpeed>
+			<PawnBeauty>-1</PawnBeauty> <!-- Appear to be morbidly obese -->
 		</statBases>
 		<tools>
 		  <li>

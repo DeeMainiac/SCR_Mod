@@ -12,7 +12,7 @@
 		<!-- <scenarioCanAdd>false</scenarioCanAdd> -->
 		<stages>
 			<li>
-				<label>redundant body</label>
+				<label>redundant body parts</label>
 				<becomeVisible>false</becomeVisible>
 				<capMods>
 					<li>
@@ -41,7 +41,7 @@
 					</li>
 					<li>
 						<capacity>Sight</capacity>
-						<setMax>0.15</setMax>
+						<offset>0.2</offset>
 					</li>
 					<li>
 						<capacity>Breathing</capacity>
