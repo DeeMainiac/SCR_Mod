@@ -24,6 +24,9 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Biotech</li>
 </loadAfter>
+<incompatibleWith>
+	<li>Crackajack.CJPsychos</li>
+</incompatibleWith>
 
 <description>Adds stuff from the SCP Foundation project. Requires Harmony.
 Includes a storyteller, a biome, creatures, weapons, apparel, objects, factions, buildings, research projects, furniture, and containment procedures.</description>

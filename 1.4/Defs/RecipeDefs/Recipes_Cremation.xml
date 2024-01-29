@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
+<Defs>
   <RecipeDef>
     <defName>SCR_CremateSCP3199Egg</defName>
     <label>cremate neutralized SCP-3199 egg</label>
@@ -11,18 +11,19 @@
     <effectWorking>Cremate</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>
 	<recipeUsers>
-	<li>ElectricCrematorium</li>
-	<li>ElectricSmelter</li>
+		<li>ElectricCrematorium</li>
+		<li MayRequire="TSP.Isengriff.Storytime">BlastFurnaceHeater</li>
 	</recipeUsers>
 	 <products>
-      <Plasteel>2</Plasteel>
+      <Plasteel>20</Plasteel>
+	  <Steel>10</Steel>
     </products>
     <ingredients>
       <li>
         <filter>
-          <categories>
-            <li>SCPObjects</li>
-          </categories>
+          <thingDefs>
+			<li>SCR_SCP3199EggRuined</li>
+		  </thingDefs>
         </filter>
         <count>1</count>
       </li>
@@ -44,10 +45,11 @@
     <effectWorking>Cremate</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>
 	<recipeUsers>
-	<li>CraftingSpot</li>
-	<li>DrugLab</li>
+		<li>CraftingSpot</li>
+		<li>ElectricCrematorium</li>
+		<li MayRequire="TSP.Isengriff.Storytime">BlastFurnaceHeater</li>
 	</recipeUsers>
-    <autoStripCorpses>true</autoStripCorpses>
+    <autoStripCorpses>false</autoStripCorpses>
     <ingredients>
       <li>
         <filter>

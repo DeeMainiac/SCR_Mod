@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Note to three-legged_wolf, from three-legged_wolf; how about custom backstory_category, to avoid senseless backstories like kitten-tamer canibals? 
+	It'll take alot of effort, but would be very cool...
+	Give it some thought.
+	sincerely yours, 
+	TLW-->
+	
+  <PawnKindDef Name="CJ_PsychoPirateBase" Abstract="True">
+	<label>SCP-1788-1 instance</label>
+	<labelPlural>SCP-1788-1 instances</labelPlural>
+    <race>CJ_Psycho</race>
+    <defaultFactionType>AncientsHostile</defaultFactionType>
+    <chemicalAddictionChance>0.5</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.005</backstoryCryptosleepCommonality>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Pirate</li>
+		  <li>Sadist</li>
+		  <li>Raider</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <invNutrition>2.55</invNutrition>
+    <biocodeWeaponChance>0.1</biocodeWeaponChance>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>7~20</range>
+      </li>
+	  <li>
+	  <skill>Melee</skill>
+        <range>7~20</range>
+      </li>
+    </skills>
+	<initialWillRange>102~103</initialWillRange>
+  </PawnKindDef>
+
+  <!-- Povery tier - drifter -->
+  
+  <PawnKindDef ParentName="CJ_PsychoPirateBase">
+    <defName>CJ_PsychoDrifter</defName>
+    <label>SCP-1788-1 drifter</label>
+    <combatPower>45</combatPower>
+    <invNutrition>0</invNutrition>
+    <gearHealthRange>0.2~0.6</gearHealthRange>
+    <itemQuality>Poor</itemQuality>
+    <apparelMoney>90~280</apparelMoney>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <weaponMoney>60~200</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+      <li>NeolithicMeleeBasic</li>
+	  <li>NeolithicMeleeDecent</li>
+	  <li>NeolithicRangedBasic</li>
+	  <li>NeolithicRangedDecent</li>
+	  <li>BowMen</li>
+	  <li>Slinger</li>
+	  <li>Lance</li>
+    </weaponTags>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+	  <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.19</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineHerbal</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <initialResistanceRange>7~12</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- Low tier - scavenger, thrasher -->
+
+  <PawnKindDef ParentName="CJ_PsychoPirateBase" Name="CJ_PsychoPirateScavTierBase" Abstract="True">
+    <combatPower>50</combatPower>
+    <initialWillRange>1~3</initialWillRange>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <itemQuality>Poor</itemQuality>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+    <gearHealthRange>0.4~1.1</gearHealthRange>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.04</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="CJ_PsychoPirateScavTierBase">
+    <defName>CJ_PsychoScavenger</defName>
+    <label>SCP-1788-1 scavenger</label>
+    <apparelMoney>300~500</apparelMoney>
+    <weaponMoney>200~300</weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <initialResistanceRange>17~26</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CJ_PsychoPirateScavTierBase">
+    <defName>CJ_PsychoThrasher</defName>
+    <label>scp-1788-1 thrasher</label>
+    <race>CJ_Psycho</race>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>300~800</apparelMoney>
+    <apparelTags>
+		<li>IndustrialBasic</li>
+		<li>Outlander</li>
+    </apparelTags>
+    <weaponMoney>100~160</weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeBasic</li>
+      <li>MedievalMeleeBasic</li>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <initialResistanceRange>14~23</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- Mid tier - pirate -->
+
+  <PawnKindDef ParentName="CJ_PsychoPirateBase">
+    <defName>CJ_PsychoPirate</defName>
+    <label>SCP-1788-1 raider</label>
+    <race>CJ_Psycho</race>
+    <combatPower>65</combatPower>
+    <maxGenerationAge>65</maxGenerationAge>
+    <gearHealthRange>0.7~2.3</gearHealthRange>
+    <apparelMoney>400~1000</apparelMoney>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <weaponMoney>250~345</weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <techHediffsChance>0.24</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <biocodeWeaponChance>0.2</biocodeWeaponChance>
+    <initialResistanceRange>7~12</initialResistanceRange>
+  </PawnKindDef>
+</Defs>

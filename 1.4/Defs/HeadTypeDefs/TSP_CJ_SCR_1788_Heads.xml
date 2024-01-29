@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CJ_Female_Average_Pointy</defName>
+		<graphicPath>Things/Psycho/Heads/Female_Average_Pointy</graphicPath>
+		<gender>Female</gender>
+	</HeadTypeDef>
+	
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CJ_Female_Narrow_Wide</defName>
+		<graphicPath>Things/Psycho/Heads/Female_Narrow_Wide</graphicPath>
+		<gender>Female</gender>
+	</HeadTypeDef>
+	
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CJ_Male_Average_Pointy</defName>
+		<graphicPath>Things/Psycho/Heads/Male_Average_Pointy</graphicPath>
+		<gender>Male</gender>
+	</HeadTypeDef>
+	
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CJ_Male_Narrow_Wide</defName>
+		<graphicPath>Things/Psycho/Heads/Male_Narrow_Wide</graphicPath>
+		<gender>Male</gender>
+	</HeadTypeDef>
+	
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CJ_Male_Average_Schizo</defName>
+		<graphicPath>Things/Psycho/Heads/PicsArt_11-07-03.15.02</graphicPath>
+		<gender>Male</gender>
+	</HeadTypeDef>
+	
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CJ_Female_Average_Schizo</defName>
+		<graphicPath>Things/Psycho/Heads/PicsArt_11-07-03.15.02</graphicPath>
+		<gender>Female</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>CJ_Average_Schizo</defName>
+		<graphicPath>Things/Psycho/Heads/PicsArt_11-07-03.15.02</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+</Defs>

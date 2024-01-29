@@ -37,8 +37,15 @@
     <diseases>
      <li>
         <diseaseInc>SCR_Disease_SCP1797R</diseaseInc>
-        <commonality>40</commonality> <!-- As this has no cure, it's unfair to throw it too commonly, and besides, the creatures always givt it to you -->
+        <commonality>40</commonality>
+	 </li>
+	 <!--
+	 <li>
+		<diseaseInc>SCR_SCP610Infection</diseaseInc>
+		<commonality>0.01</commonality>
+		As this has no cure, it's unfair to throw it commonly, and besides, the creatures always givt it to you
       </li>
+	  -->
       <li>
         <diseaseInc>Disease_Plague</diseaseInc>
         <commonality>200</commonality>
@@ -125,7 +132,7 @@
 		<RN_PlantClover MayRequire="rimnature.velcroboy333">0.01</RN_PlantClover>
 		<MorrowRim_AshGrass MayRequire="sirmashedpotato.morrowrim">0.1</MorrowRim_AshGrass>
 		<MorrowRim_SmallMushrooms MayRequire="sirmashedpotato.morrowrim">2</MorrowRim_SmallMushrooms>
-		<BMT_ExplodingAngel MayRequire="biomesteam.biomesprehistoric">0.001</BMT_ExplodingAngel>
+		<BMT_ExplodingAngel MayRequire="biomesteam.biomesprehistoric">0.0001</BMT_ExplodingAngel>
 		<TreeDead MayRequire="mlie.advancedbiomes">1</TreeDead>
 		<PoisonPlantDandelion MayRequire="mlie.advancedbiomes">0.01</PoisonPlantDandelion>
 		<PoisonRafflesia MayRequire="mlie.advancedbiomes">0.5</PoisonRafflesia>

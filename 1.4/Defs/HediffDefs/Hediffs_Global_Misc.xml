@@ -43,12 +43,12 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <setMax>0.3</setMax>
+            <setMax>0.4</setMax>
           </li>
         </capMods>
       </li>
       <li>
-        <minSeverity>0.40</minSeverity>
+        <minSeverity>0.66</minSeverity>
         <label>extreme</label>
         <lifeThreatening>false</lifeThreatening>
         <capMods>
@@ -69,7 +69,7 @@
 	<initialSeverity>.15</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>45000~60000</disappearsAfterTicks>
+        <disappearsAfterTicks>10000~25000</disappearsAfterTicks>
       </li>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.75</severityPerDay>
@@ -183,12 +183,10 @@
  <HediffDef ParentName="DiseaseBase">
     <defName>SCR_SCP2845TransmuteHediff</defName>
     <label>SCP-2845 Transmutation Aura</label>
-    <description>This pawn is under the effect of SCP-2845's transmutation aura, fatally transforming them into an SCP-2845-1 instance.
-\nNaturally recovers over time as the body filters it out.</description>
+    <description>This pawn is under the effect of SCP-2845's transmutation aura. If he does not leave the hazardous zone around SCP-2845, he will fatally transform into a SCP-2845-1 instance! \n Naturally recovers over time as the body filters it out.</description>
 	<initialSeverity>0.15</initialSeverity>
 	<lethalSeverity>0.84</lethalSeverity>
 	<makesSickThought>true</makesSickThought>
-
     <comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>45000~100000</disappearsAfterTicks>
@@ -199,34 +197,37 @@
     </comps>
    <stages>
       <li>
-        <minSeverity>0.15</minSeverity>
-        <label>initial</label>
+			<minSeverity>0.15</minSeverity>
+			<label>initial</label>
+			<capMods>
+			  <li>
+				<capacity>Consciousness</capacity>
+				<setMax>0.9</setMax>
+			  </li>
+			</capMods>
       </li>
       <li>
-        <minSeverity>0.30</minSeverity>
-        <label>moderate</label>
-	    <lifeThreatening>true</lifeThreatening>
-		<capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.2</offset>
-          </li>
-        </capMods>
+			<minSeverity>0.30</minSeverity>
+			<label>moderate</label>
+			<lifeThreatening>true</lifeThreatening>
+			<capMods>
+			  <li>
+				<capacity>Consciousness</capacity>
+				<setMax>0.8</setMax>
+			  </li>
+			</capMods>
       </li>
 	  <li>
-	  <minSeverity>0.50</minSeverity>
-	  <label>severe</label>
-	  <lifeThreatening>true</lifeThreatening>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.4</offset>
-          </li>
-        </capMods>
+		  <minSeverity>0.50</minSeverity>
+		  <label>oh deer</label>
+		  <lifeThreatening>true</lifeThreatening>
+			<capMods>
+			  <li>
+				<capacity>Consciousness</capacity>
+				<setMax>0.5</setMax>
+			  </li>
+			</capMods>
 	  </li>
     </stages>
   </HediffDef>
-  
-  
-  
 </Defs>

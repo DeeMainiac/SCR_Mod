@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<HediffGiverSetDef>
+		<defName>TSP_CJ_SCR_1788_Flavor_Processing</defName>
+		<!-- Code derived entirely, and courtesy of, the Oni Mod by Lucky, Mori Ginto, and Tarojun -->
+		<hediffGivers>
+			<li Class="HediffGiver_Birthday">
+				<hediff>TSP_CJ_SCR_1788_Bonus</hediff>
+				<ageFractionChanceCurve>
+					<points>
+						<li>(0, 1)</li> <!-- Always -->
+						<li>(1, 1)</li>
+					</points>
+				</ageFractionChanceCurve>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+</Defs>

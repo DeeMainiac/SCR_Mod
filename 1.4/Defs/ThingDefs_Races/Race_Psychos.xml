@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>CJ_Psycho</defName>
+		<label>SCP-1788-1</label>
+		<description>SCP-1788 was a ritual performed on prepubescent humans to turn them into instances of SCP-1788 once they started puberty. Developed by the psychics of the Shattered Empire and used as a means of recruiting the worst of prepubescent children to serve as super soldiers in exchange for sparing their deaths, it manifests when said child sociopath starts puberty. The result of the ritual, upon pubescence, is a SCP-1788-1 instance. While that ritual has been lost for millinea, the SCP-1788-1 instances remain and can still breed. After many generations, some have generally evolved into being a part of civilization... albeit as what are essentially cruel super soldiers. SCP-1788-1 instances satiate their innate blood lust by joining Factions and killing that Faction's enemies, or by serving as mercenaries that kill for hire. A SCP-1788-1 instance that can't find an outlet for its violence will kill its own "allies" instead. \n \n Living by the motto "Grow Up or Die", these creatures resemble obese humans and are extremely aggressive and known for their cruelty. At the point of their discovery, SCP-1788-1 instances would intentionally avoid each other outside of the annual mating cycle, and would try and kill each other when they encountered another instance. That has long passed, and as man spread out into the galaxy, the SCP-1788 instances, like all other SCP's in the catalog, eventually became too prevelant to be hidden.  \n \n What separates SCP-1788-1 instances from normal men, besides their cruelty, is their power. SCP-1788-1 instances have redundant organs in their respitory, circulatory, nervous, and digestive systems, plus dual spines and brains, with all but the brain nestled next to each other. (These organs are differentiated in medical science as "master" and "slave" organs.) \n Furthermore, SCP-1788-1 instances have denser bones and their muscle fibers are organized in efficient structures resembling carbon nano-tube latticework. This improves the strength and effiency of both, and causes them to be harder to harm. Unlike all other slave organs, an instance's slave brain is enclosed in its own slave ribcage beneath its secondary heart, giving it extra protection in a fight should the SCP-1788-1 instance lose its master brain. \n \n \n Centuries after their discovery, it has now been proven how the ritual was created, dating to the late twenty-sixth century AD, but not how the ritual was performed.</description>
+		<descriptionHyperlinks>
+			<HediffDef>TSP_CJ_SCR_1788_History</HediffDef>
+		</descriptionHyperlinks>
+		<alienRace>
+		  <generalSettings>
+			<maleGenderProbability>0.5</maleGenderProbability>
+			<humanRecipeImport>true</humanRecipeImport>
+			<allowHumanBios>true</allowHumanBios>
+			<immuneToAge>true</immuneToAge>
+			<forcedRaceTraitEntries>
+					<li>
+						<defName>DrugDesire</defName>
+						<degree>2</degree>
+						<chance>20</chance>
+					</li>
+					<li>
+						<defName>Bloodlust</defName>
+						<chance>999</chance>
+					</li>
+					<li>
+						<defName>Psychopath</defName>
+						<chance>999</chance>
+					</li>
+					<li>
+						<defName>Cannibal</defName>
+						<chance>1</chance>
+					</li>
+					<li>
+						<defName>Abrasive</defName>
+						<chance>30</chance>
+					</li>
+					<li>
+						<defName>Masochist</defName>
+						<chance>10</chance>
+					</li>
+					<li>
+						<defName>Pyromaniac</defName>
+						<chance>5</chance>
+					</li>
+			</forcedRaceTraitEntries>
+			<disallowedTraits>
+				<li>
+					<defName>Kind</defName>
+				</li>
+				<li>
+					<defName>Wimp</defName>
+				</li>
+			</disallowedTraits>
+			
+			<alienPartGenerator>		  
+				<headTypes Inherit="False">
+					<li>CJ_Female_Average_Pointy</li>
+					<li>CJ_Female_Narrow_Wide</li>
+					<li>CJ_Male_Average_Pointy</li>
+					<li>CJ_Male_Narrow_Wide</li>
+					<li>CJ_Male_Average_Schizo</li>
+					<li>CJ_Female_Average_Schizo</li>
+					<li>CJ_Average_Schizo</li>
+				</headTypes>
+				
+				<!--
+				<useGenderedHeads>true</useGenderedHeads>
+				<useGenderedBodies>false</useGenderedBodies>
+				-->
+			  
+				<bodyTypes>
+					<li>Fat</li>
+				</bodyTypes>
+			  
+				<customDrawSize>(1.2,1.2)</customDrawSize>
+				<customHeadDrawSize>(1.1,1.1)</customHeadDrawSize>
+				<customPortraitDrawSize>(1.1,1.1)</customPortraitDrawSize>
+				<customPortraitHeadDrawSize>(1,1)</customPortraitHeadDrawSize>
+				<headOffset>(0,0)</headOffset>
+				<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>2</weight>
+										<only>RGBA(1, 0.705, 0.490, 1)</only>
+									</li>
+									<li>
+										<weight>2</weight>
+										<only>RGBA(0.900, 0.655, 0.520, 1)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.385, 0.205, 0.105, 1)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.420, 0.220, 0.125, 1)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.540, 0.320, 0.200, 1)</only>
+									</li>									
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.880, 0.745, 0.625, 1)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<!-- I think these are same as vanilla hair colors... -->
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.2, 0.2, 0.2)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.31, 0.28, 0.26)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.25, 0.2, 0.15)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.3, 0.2, 0.1)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.3529412, 0.227450982, 0.1254902)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.5176471, 0.3254902, 0.184313729)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.75686276, 0.572549045, 0.333333343)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.929411769, 0.7921569, 0.6117647)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>			  
+			</generalSettings>
+		  
+			<graphicPaths>
+				<body>Things/Psycho/Bodies/</body>
+				<head>Things/Psycho/Heads/</head>
+			</graphicPaths>
+			
+		  <thoughtSettings>
+			<!--Probably more...-->
+			<cannotReceiveThoughts>
+				<li>AteCorpse</li>
+				<li>AteHumanlikeMeatAsIngredient</li>
+				<li>AteHumanlikeMeatDirect</li>
+				<li>ButcheredHumanlikeCorpse</li>
+				<li>ColonistLost</li>
+				<li>ColonistBanished</li>			
+				<li>ColonistBanishedToDie</li>
+				<li>DeadMansApparel</li>			
+				<li>ExecutedPrisoner</li>		
+				<li>HumanLeatherApparelSad</li>
+				<li>Incestuous</li>
+				<li>KnowButcheredHumanlikeCorpse</li>
+				<li>KnowColonistOrganHarvested</li>
+				<li>KnowGuestOrganHarvested</li>	
+				<li>KnowPrisonerDiedInnocent</li>
+				<li>KnowPrisonerSold</li>			
+				<li>Naked</li>
+				<li>ObservedLayingCorpse</li>
+				<li>ObservedLayingRottingCorpse</li>
+				<li>PrisonerBanishedToDie</li>
+				<li>SoldPrisoner</li>
+				<li>WitnessedDeathNonAlly</li>
+				<li>WitnessedDeathAlly</li>
+				<li MayRequire="morishep.tarojun.onioftherim">AteOniStew</li>
+				<li MayRequire="morishep.tarojun.onioftherim">AteDemonBreathBerriesAsIngredient</li>
+				<li MayRequire="VanillaExpanded.VMemesE">VME_AteInsectMeat_Sacrilegious</li>
+				<li MayRequire="VanillaExpanded.VMemesE">VME_AteInsectMeatAsIngredient_Sacrilegious</li>
+			</cannotReceiveThoughts>
+		  </thoughtSettings>
+		  <raceRestriction>
+				<blackGeneTags>
+					<li>BodyType</li>
+					<li>AG_Heads</li>
+					<li>Heads</li>
+					<li>Head</li>
+					<li>Fur</li>
+					<li>AG_Bodies</li>
+					<li>Bodies</li>
+					<li>Body</li>
+				</blackGeneTags>
+		  </raceRestriction>
+		  <relationSettings>
+			<relationChanceModifierLover>0.01</relationChanceModifierLover>
+			<relationChanceModifierExLover>0.1</relationChanceModifierExLover>
+			<relationChanceModifierFiance>0</relationChanceModifierFiance>
+			<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			<relationChanceModifierExSpouse>0.1</relationChanceModifierExSpouse>
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierChild>0</relationChanceModifierChild>
+			<relationChanceModifierSibling>0</relationChanceModifierSibling>
+		  </relationSettings>
+		</alienRace>
+		<statBases>
+			<Mass Inherit="False">300</Mass> <!-- As they canonically average three hundred kilograms (661.387 pounds) -->
+			<MarketValue>2250</MarketValue> <!--Dunno...How much would you pay for a monster?-->
+			<MoveSpeed>6.5</MoveSpeed>
+			<Flammability>0.5</Flammability>
+			<ComfyTemperatureMin>8</ComfyTemperatureMin> <!-- Default 16, but he ain't no default boi-->
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<MeatAmount>150</MeatAmount>
+			<LeatherAmount>150</LeatherAmount>
+			<RoyalFavorValue>2</RoyalFavorValue>  <!-- LOL... If it would please your highness; one greasy, jail-inked murderer scum.... on the house! -->
+			<PsychicSensitivity>0.27</PsychicSensitivity>  <!--I ain't gonna meditate!!!!-->
+			<MentalBreakThreshold>0.7</MentalBreakThreshold>   <!--And I ain't no wuss either!!!!-->
+			<CarryingCapacity>200</CarryingCapacity>
+			<ArrestSuccessChance>1.5</ArrestSuccessChance>
+			<IncomingDamageFactor>0.7</IncomingDamageFactor>
+			<AimingDelayFactor>0.25</AimingDelayFactor>
+			<ShootingAccuracyPawn>6</ShootingAccuracyPawn>
+			<MeleeHitChance>2</MeleeHitChance>
+			<MeleeDodgeChance>0.5</MeleeDodgeChance>
+			<PainShockThreshold>2</PainShockThreshold> <!--And I ain't no wuss either!!!!-->
+			<HuntingStealth>2.3</HuntingStealth> <!-- As they canonically live in plain sight -->
+			<SocialImpact>0.5</SocialImpact>
+			<MiningSpeed>1.2</MiningSpeed>
+		</statBases>
+		<tools>
+		  <li>
+			<label>left master fist</label>
+			<capacities>
+			  <li>Demolish</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>1.82</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+			<chanceFactor>1</chanceFactor>
+		  </li>
+		  <li>
+			<label>left slave fist</label>
+			<capacities>
+			  <li>Demolish</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>3</cooldownTime>
+			<linkedBodyPartsGroup>TSP_CJ_SCR_1788_LesserArms_Left</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>4</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+			<chanceFactor>0.75</chanceFactor>
+		  </li>
+		  <li>
+			<label>right master fist</label>
+			<capacities>
+			  <li>Demolish</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>1.82</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+			<chanceFactor>1</chanceFactor>
+		  </li>
+		  <li>
+			<label>right slave fist</label>
+			<capacities>
+			  <li>Demolish</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>3</cooldownTime>
+			<linkedBodyPartsGroup>TSP_CJ_SCR_1788_LesserArms_Right</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>4</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+			<chanceFactor>0.75</chanceFactor>
+		  </li>
+		  <li>
+			<label>teeth</label>
+			<capacities>
+			  <li>Bite</li>
+			</capacities>
+			<power>20</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.15</chanceFactor>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Demolish</li>
+			</capacities>
+			<power>17</power>
+			<cooldownTime>2.5</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.45</chanceFactor>
+		  </li>
+		</tools>
+		<race>
+		  <thinkTreeMain>Humanlike</thinkTreeMain>
+		  <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		  <intelligence>Humanlike</intelligence>
+		  <makesFootprints>true</makesFootprints>
+		  <lifeExpectancy>250</lifeExpectancy>
+		  <useMeatFrom>Human</useMeatFrom>
+		  <leatherDef>Leather_Human</leatherDef>
+		  <nameCategory>HumanStandard</nameCategory>
+		  <body>TSP_CJ_SCR_1788</body>
+		  <baseBodySize>1.15</baseBodySize>
+		  <baseHealthScale>2.25</baseHealthScale>
+		  <foodType>Meat, CarnivoreAnimal, OmnivoreHuman, Fluid, Liquor, Seed, Kibble</foodType>
+		  <gestationPeriodDays>59</gestationPeriodDays> <!-- As they mate once a year -->
+		  <meatMarketValue>0.8</meatMarketValue>
+		  <manhunterOnDamageChance>2</manhunterOnDamageChance>
+		  <manhunterOnTameFailChance>2</manhunterOnTameFailChance>
+		  <litterSizeCurve>
+			<points>
+				<li>(0, 0)</li>
+				<li>(0.5, 0)</li>
+				<li>(1, 0.1)</li>
+				<li>(1.01, 0.02)</li>
+				<li>(3.5, 1)</li>
+				<li>(5, 0.2)</li>
+			</points>
+		  </litterSizeCurve>
+		  <lifeStageAges>
+			<li>
+			  <def>HumanlikeBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>HumanlikeChild</def>
+			  <minAge>1</minAge>
+			</li>
+			<li>
+			  <def>HumanlikeTeenager</def>
+			  <minAge>10</minAge>
+			</li>
+			<li>
+			  <def>HumanlikeAdult</def>
+			  <minAge>14</minAge> <!-- As they instantly turn unto their adult form when puberty starts -->
+			</li>
+		  </lifeStageAges>
+			  <lifeStageWorkSettings MayRequire="Ludeon.Rimworld.Biotech">
+				<Firefighter>2</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>14</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.Rimworld.Biotech">14</Childcare>
+				<BasicWorker>3</BasicWorker>
+				<Warden>0</Warden>
+				<Handling>7</Handling>
+				<Cooking>6</Cooking>
+				<Hunting>0</Hunting>
+				<Construction>5</Construction>
+				<Growing>5</Growing>
+				<Mining>0</Mining>
+				<PlantCutting>2</PlantCutting>
+				<Smithing>7</Smithing>
+				<Tailoring>7</Tailoring>
+				<Art>14</Art>
+				<Crafting>7</Crafting>
+				<Hauling>0</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>6</Research>
+			  </lifeStageWorkSettings>
+		  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		  <specialShadowData>
+			<volume>(0.3, 0.8, 0.4)</volume>
+			<offset>(0,0,0.3)</offset>
+		  </specialShadowData>
+		  <ageGenerationCurve>
+			<points>
+				<li>(0,0)</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">(0.001,0)</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">(8,0)</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">(12.5,0)</li>
+				<li>(14,0)</li>
+				<li>(14.1,10)</li>
+				<li>(16,100)</li>
+				<li>(18,133)</li>
+				<li>(21,110)</li>
+				<li>(50,10)</li>
+				<li>(60,1)</li>
+				<li>(70,1)</li>
+				<li>(80,0.1)</li>
+				<li>(90,0.1)</li>
+				<li>(100,0.01)</li>
+				<li>(200,0.01)</li>
+				<li>(300,0)</li>
+			</points>
+		  </ageGenerationCurve>
+		  <hediffGiverSets>
+			<li>OrganicStandard</li>
+			<li>Human</li>
+			<li>TSP_CJ_SCR_1788_Flavor_Processing</li>
+		  </hediffGiverSets>
+		</race>
+		<recipes>
+		  <li>ExciseCarcinoma</li>
+		  <li>AdministerMechSerumHealer</li>
+		  <li>RemoveBodyPart</li>
+		  <li>Euthanize</li>
+		  <li>Anesthetize</li>
+		  <li>CureScaria</li>
+		  <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+		  <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+		</recipes>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>TSP_CJ_SCR_1788_Bonus</hediffname>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CKeter</li>
+					<li>SCR_DKeneq</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>2</containmentTier>
+				<willManhuntAfterBreach>true</willManhuntAfterBreach>
+			</li>
+		</modExtensions>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

@@ -3,7 +3,6 @@
 <Defs>
   <HediffGiverSetDef>
 	<defName>TSP_ST_SCP_610_Immunity_Processing</defName>
-	
 	<!-- Code derived entirely, and courtesy of, the Oni Mod by Lucky, Mori Ginto, and Tarojun -->
 	<!-- https://www.0steamcommunity.com/sharedfiles/filedetails/?id=2891432261 -->
 	<hediffGivers>
