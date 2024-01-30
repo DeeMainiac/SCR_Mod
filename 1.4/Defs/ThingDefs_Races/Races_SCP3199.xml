@@ -38,6 +38,11 @@
       </li>
 	  <li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li> <!-- It refutes humanity by its SHEER SPEED. This Comp causes it to be unable to be slowed down, regardless of the terrain. -->
     </comps>
+		  	<tradeTags>
+			<li>AnimalRare</li>
+			<li>AnimalFighter</li>
+			<li>SCP</li>
+			</tradeTags>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
 	  <deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_SCP3199_SpawnEgg</deathActionWorkerClass>

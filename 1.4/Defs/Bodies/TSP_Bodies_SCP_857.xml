@@ -77,7 +77,7 @@
 				</li>
 				<li>
 					<def>Head</def>
-					<coverage>0.50</coverage>
+					<coverage>0.20</coverage>
 					<height>Top</height>
 					<depth>Outside</depth>
 					<groups>
@@ -88,7 +88,7 @@
 					<parts>
 						<li>
 							<def>Skull</def>
-							<coverage>0.18</coverage>
+							<coverage>0.09</coverage>
 							<depth>Inside</depth>
 							<groups>
 								<li>UpperHead</li>
@@ -98,7 +98,7 @@
 							<parts>
 								<li>
 									<def>Brain</def>
-									<coverage>0.8</coverage>
+									<coverage>0.01</coverage>
 									<groups>
 										<li>UpperHead</li>
 										<li>Eyes</li>
@@ -110,7 +110,7 @@
 						<li>
 							<def>Eye</def>
 							<customLabel>left eye</customLabel>
-							<coverage>0.07</coverage>
+							<coverage>0.01</coverage>
 							<groups>
 								<li>FullHead</li>
 								<li>Eyes</li>
@@ -120,7 +120,7 @@
 						<li>
 							<def>Eye</def>
 							<customLabel>right eye</customLabel>
-							<coverage>0.07</coverage>
+							<coverage>0.01</coverage>
 							<groups>
 								<li>FullHead</li>
 								<li>Eyes</li>
@@ -130,7 +130,7 @@
 						<li>
 							<def>Ear</def>
 							<customLabel>left ear</customLabel>
-							<coverage>0.07</coverage>
+							<coverage>0.01</coverage>
 							<groups>
 								<li>UpperHead</li>
 								<li>FullHead</li>
@@ -139,7 +139,7 @@
 						<li>
 							<def>Ear</def>
 							<customLabel>right ear</customLabel>
-							<coverage>0.07</coverage>
+							<coverage>0.01</coverage>
 							<groups>
 								<li>UpperHead</li>
 								<li>FullHead</li>
@@ -147,14 +147,14 @@
 						</li>
 						<li>
 							<def>Nose</def>
-							<coverage>0.10</coverage>
+							<coverage>0.01</coverage>
 							<groups>
 								<li>FullHead</li>
 							</groups>
 						</li>
 						<li>
 							<def>Jaw</def>
-							<coverage>0.15</coverage>
+							<coverage>0.05</coverage>
 							<groups>
 								<li>Teeth</li>
 								<li>FullHead</li>
@@ -200,7 +200,7 @@
 					<def>Leg</def> <!-- The main vein -->
 					<customLabel>inferior vena cava</customLabel> <!-- The largest vein in the human body, from heart to feet -->
 					<height>Bottom</height>
-					<coverage>0.661</coverage>
+					<coverage>0.657</coverage>
 					<groups>
 						<li>Torso</li>
 					</groups>
@@ -210,7 +210,7 @@
 					<customLabel>superior vena cava</customLabel> <!-- The other half of the above, from heart to top of the head and back -->
 					<depth>Outside</depth>
 					<height>Top</height>
-					<coverage>0.339</coverage>
+					<coverage>0.335</coverage>
 					<groups>
 						<li>Torso</li>
 					</groups>
@@ -248,7 +248,7 @@
 					<def>Brain</def>
 					<depth>Outside</depth>
 					<height>Middle</height>
-					<coverage>0.66</coverage>
+					<coverage>.5</coverage>
 					<groups>
 						<li>FullHead</li>
 					</groups>
@@ -257,7 +257,7 @@
 							<def>Foot</def>
 							<customLabel>ventral foot</customLabel> <!-- This is how RL snails move -->
 							<depth>Inside</depth>
-							<coverage>1</coverage>
+							<coverage>.5</coverage>
 							<groups>
 								<li>Feet</li>
 							</groups>
@@ -288,7 +288,7 @@
 					<def>Spine</def>
 					<depth>Outside</depth>
 					<height>Middle</height>
-					<coverage>1</coverage>
+					<coverage>0.9</coverage>
 					<groups>
 						<li>Neck</li>
 					</groups>
@@ -303,7 +303,7 @@
 						<li>
 							<def>Brain</def>
 							<customLabel>spinal cord</customLabel>
-							<coverage>0.4</coverage>
+							<coverage>0.1</coverage>
 							<height>Bottom</height>
 							<depth>Inside</depth>
 						</li>
@@ -333,7 +333,7 @@
 					<def>Body</def>
 					<depth>Outside</depth>
 					<height>Middle</height>
-					<coverage>1</coverage>
+					<coverage>0.4</coverage>
 					<groups>
 						<li>Torso</li>
 					</groups>
@@ -341,7 +341,7 @@
 						<li>
 							<def>HeadClaw</def>
 							<customLabel>left wing protrusion</customLabel>
-							<coverage>0.3</coverage>
+							<coverage>0.2</coverage>
 							<height>Bottom</height>
 							<depth>Inside</depth>
 							<groups>
@@ -353,7 +353,7 @@
 								<li>
 									<def>Finger</def>
 									<customLabel>left wing tip</customLabel>
-									<coverage>0.02</coverage>
+									<coverage>0.1</coverage>
 									<height>Middle</height>
 									<depth>Inside</depth>
 									<groups>
@@ -365,7 +365,7 @@
 						<li>
 							<def>HeadClaw</def>
 							<customLabel>right wing protrusion</customLabel>
-							<coverage>0.3</coverage>
+							<coverage>0.2</coverage>
 							<height>Bottom</height>
 							<depth>Inside</depth>
 							<groups>
@@ -377,7 +377,7 @@
 								<li>
 									<def>Finger</def>
 									<customLabel>left wing tip</customLabel>
-									<coverage>0.02</coverage>
+									<coverage>0.1</coverage>
 									<height>Middle</height>
 									<depth>Inside</depth>
 									<groups>
@@ -424,7 +424,7 @@
 				<li>
 					<def>Brain</def>
 					<customLabel>spinal cord</customLabel>
-					<coverage>0.01</coverage>
+					<coverage>0.05</coverage>
 					<height>Bottom</height>
 					<depth>Inside</depth>
 					<groups>
@@ -433,7 +433,7 @@
 				</li>
 				<li>
 					<def>Sternum</def>
-					<coverage>0.1</coverage>
+					<coverage>0.05</coverage>
 					<height>Bottom</height>
 					<depth>Inside</depth>
 					<groups>
@@ -444,7 +444,7 @@
 					<def>Ribcage</def>
 					<depth>Outside</depth>
 					<height>Top</height>
-					<coverage>1</coverage>
+					<coverage>0.1</coverage>
 					<groups>
 						<li>HeadClaw</li>
 					</groups>
@@ -455,7 +455,7 @@
 							<def>Ribcage</def>
 							<customLabel>vertebrosternal ribs</customLabel> <!-- First seven pairs of ribs -->
 							<depth>Inside</depth>
-							<coverage>0.75</coverage>
+							<coverage>0.4</coverage>
 							<groups>
 								<li>TuskAttackTool</li>
 							</groups>
@@ -464,7 +464,7 @@
 							<def>Ribcage</def>
 							<customLabel>vertebrochondral ribs</customLabel> <!-- Rib pairs eight through ten, with the final two pairs not present because they are not connected to the sternum or spine, making them unable to manifest in a moving ribcage  -->
 							<depth>Inside</depth>
-							<coverage>0.21</coverage>
+							<coverage>0.4</coverage>
 							<groups>
 								<li>TuskAttackTool</li>
 							</groups>

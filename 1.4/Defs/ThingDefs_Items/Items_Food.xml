@@ -22,7 +22,7 @@
   <ThingDef ParentName="MealBase">
     <defName>SCR_SCP666HalfJ</defName>
     <label>SCP-666-1/2-J</label>
-    <description>SCP-666-1/2-J is a delicious, slightly salty, mushroom-stuffed, crab dish that induces several K-class scenarios in one's guts. Owing to its anomalous properties, it needs neither mushrooms or crab to be cooked, and can be made out of most meat. Those who know how to make it recommended that it be fed to one's enemy as a punishment.</description>
+    <description>SCP-666-1/2-J is a salty, mushroom-stuffed crab dish that induces several K-class scenarios in one's guts. Owing to its anomalous properties, it needs neither mushrooms or crab to be cooked, and can be made out of most meat. Those who know how to make it recommended that it shouldn't even be fed to one's enemy.</description>
 	<statBases>
 		<Nutrition>1</Nutrition>
 		<MarketValue>0.02</MarketValue>

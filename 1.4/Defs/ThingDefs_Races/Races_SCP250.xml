@@ -20,7 +20,7 @@
   <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
       <statBases>
       <MoveSpeed>7.2</MoveSpeed>
-      <MarketValue>800</MarketValue>
+      <MarketValue>1000</MarketValue>
 	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
       <ComfyTemperatureMin>-80</ComfyTemperatureMin>
 	  <FilthRate>2</FilthRate>
@@ -47,7 +47,7 @@
       <baseBodySize>5</baseBodySize>
       <baseHungerRate>0.325</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
-      <foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Corpse, Fluid, Processed, Meal, VegetableOrFruit, Kibble</foodType>
+      <foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Corpse, Fluid, Processed, Meal, Kibble</foodType>
       <wildness>.97</wildness>
       <trainability>Advanced</trainability>
 	  <useMeatFrom>Iguana</useMeatFrom>

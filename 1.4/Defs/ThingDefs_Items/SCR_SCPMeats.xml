@@ -37,7 +37,7 @@
   <ThingDef ParentName="OrganicProductBase">
     <defName>SCR_SCP594Meat</defName>
     <label>raw thunder mutton</label>
-    <description>Meat from SCP-594. Can be used to make an electrifying, delicious meal.</description>
+    <description>Meat from SCP-594. Can be used to make an electrifyingly delicious meal.</description>
     <graphicData>
 		<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
@@ -89,7 +89,7 @@
 	<stackLimit>1000</stackLimit>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>45</daysToRotStart>
+        <daysToRotStart>25</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
