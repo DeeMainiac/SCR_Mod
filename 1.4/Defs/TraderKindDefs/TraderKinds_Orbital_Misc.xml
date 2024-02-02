@@ -3,9 +3,9 @@
 
 <TraderKindDef>
     <defName>SCR_Orbital_MCD</defName>
-    <label>Marshall, Carter and Dark Co.</label>
+    <label>Marshall, Carter and Dark Co. Shell Company</label>
     <orbital>true</orbital>
-	<requestable>false</requestable>
+	<requestable>true</requestable>
 	<!--<commonality>.8</commonality>-->
     <stockGenerators>
       

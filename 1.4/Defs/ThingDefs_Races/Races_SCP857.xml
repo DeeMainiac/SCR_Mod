@@ -2,7 +2,7 @@
 
 <Defs>
 	<ThingDef Name="SCR_SCP857Base" ParentName="SCR_SCP_Base" Abstract="True">
-		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particularly in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particularly in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered.</description>
 		<statBases>
 			<MeatAmount>25</MeatAmount>
 			<LeatherAmount>20</LeatherAmount>
@@ -19,7 +19,7 @@
 		</modExtensions>
 		<tradeTags>
 			<li>AnimalUncommon</li>
-			<li>AnimalSCP</li>
+			<li>SCP</li>
 		</tradeTags>
 		<race>
 			<body>SCR_Round</body>
@@ -305,7 +305,7 @@
 	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857A</defName>
 		<label>SCP-857-A</label>
-		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-A is a human head with six limbs that make it move like a crab.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-A is a human head with six limbs that make it move like a crab.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>40</MarketValue>
@@ -393,7 +393,7 @@
 	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857B</defName>
 		<label>SCP-857-B</label>
-		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-B comprises the full length of the inferior and superior vena cava veins, which carry blood from the top and bottom of the human body back to the heart. It is herbivorous and moves like a worm.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-B comprises the full length of the inferior and superior vena cava veins, which carry blood from the top and bottom of the human body back to the heart. It is herbivorous and moves like a worm.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -473,7 +473,7 @@
 	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857C</defName>
 		<label>SCP-857-C</label>
-		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-C is a human brain that moves like a snail.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-C is a human brain that moves like a snail.</description>
 		<statBases>
 			<MoveSpeed>1.3</MoveSpeed>
 			<MarketValue>25</MarketValue>
@@ -708,7 +708,7 @@
 	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857H</defName>
 		<label>SCP-857-H</label>
-		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-H is a human ribcage, excluding the floating ribs that are not connected to the sternum or spine. It moves like a spider. \n SCP-857-H instances are predatory, preying on other SCP-857 instances, small animals, and stealing eggs from nests.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-H is a human ribcage, excluding the floating ribs that are not connected to the sternum or spine. It moves like a spider. \n SCP-857-H instances are predatory, preying on other SCP-857 instances, small animals, and stealing eggs from nests.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>250</MarketValue>
@@ -802,7 +802,7 @@
 	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857I</defName>
 		<label>SCP-857-I</label>
-		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-I is a large, semi-intelligent human head with more pronounced arms, hands, and thumbs. They have been known to live in small groups.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-I is a large, semi-intelligent human head with more pronounced arms, hands, and thumbs. They have been known to live in small groups.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>350</MarketValue>

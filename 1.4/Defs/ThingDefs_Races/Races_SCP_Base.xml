@@ -9,7 +9,7 @@
 				<HSAU_DecaySensitivity MayRequire="baskerville.hellsingarmsultimate">0.5</HSAU_DecaySensitivity>
 		</statBases>
 		<tradeTags>
-			<li>SCP_Creature</li>
+			<li>SCP</li>
 		</tradeTags>
 		<race>
 			<fleshType MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_StrangeFlesh</fleshType>

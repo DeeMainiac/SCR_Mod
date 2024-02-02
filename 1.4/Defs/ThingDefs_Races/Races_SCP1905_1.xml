@@ -30,6 +30,7 @@
 			<Plasteel>51</Plasteel>
 		</butcherProducts>
 		-->
+		<tradeTags Inherit="False"></tradeTags>
 		<race>
 			<body>QuadrupedAnimalWithPaws</body>
 			<bloodDef>Filth_FireFoam</bloodDef>
