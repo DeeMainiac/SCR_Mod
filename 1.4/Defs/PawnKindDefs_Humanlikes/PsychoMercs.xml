@@ -18,7 +18,8 @@
     <chemicalAddictionChance>0.33</chemicalAddictionChance>
     <invNutrition>6</invNutrition>
     <itemQuality>Poor</itemQuality>
-    <backstoryCryptosleepCommonality>0.0015</backstoryCryptosleepCommonality>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
     <backstoryFiltersOverride>
       <li>
         <categories>
@@ -372,7 +373,7 @@
 	<!-- Ancient Soldier--> 
   
 	<PawnKindDef Abstract="True" Name="CJ_PsychoAncientSoldier" ParentName="CJ_PsychoMercenaryEliteTierBase">
-		<label>mothballed SCP-1788-1</label>
+		<label>mothballed SCP-1788-1 instance</label>
 		<labelPlural>SCP-1788-1 instances</labelPlural>
 		<combatPower>180</combatPower>
 		<initialResistanceRange>25~44</initialResistanceRange>
@@ -380,6 +381,7 @@
 		<backstoryCryptosleepCommonality>0.8</backstoryCryptosleepCommonality>
 		<chemicalAddictionChance>1</chemicalAddictionChance>
 		<apparelMoney>2000~3800</apparelMoney>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelTags>
 		  <li>IndustrialBasic</li>
 		  <li>IndustrialAdvanced</li>
@@ -423,6 +425,7 @@
 		<backstoryCryptosleepCommonality>0.85</backstoryCryptosleepCommonality>
 		<chemicalAddictionChance>1</chemicalAddictionChance>
 		<apparelMoney>2000~3800</apparelMoney>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelTags>
 		  <li>IndustrialBasic</li>
 		  <li>IndustrialAdvanced</li>

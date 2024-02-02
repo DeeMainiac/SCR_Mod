@@ -246,6 +246,10 @@
 			<SocialImpact>1.5</SocialImpact> <!-- They canonically tricked SCP interrogators into revealing secrets about themselves to the instances -->
 			<MiningSpeed>1.2</MiningSpeed>
 			<PawnBeauty>-1</PawnBeauty> <!-- Appear to be morbidly obese -->
+			<HSAU_GhoulismSusceptibility MayRequire="baskerville.hellsingarmsultimate">0.01</HSAU_GhoulismSusceptibility>
+			<HSAU_SanctusSensitivity MayRequire="baskerville.hellsingarmsultimate" Inherit="False">0.1</HSAU_SanctusSensitivity>
+			<HSAU_SoulRendSensitivity MayRequire="baskerville.hellsingarmsultimate" Inherit="False">0</HSAU_SoulRendSensitivity> <!-- YOU THINK THESE THINGS HAVE SOULS?! -->
+			<HSAU_DecaySensitivity MayRequire="baskerville.hellsingarmsultimate">0.5</HSAU_DecaySensitivity>
 		</statBases>
 		<tools>
 		  <li>
@@ -359,6 +363,8 @@
 		  <meatMarketValue>0.8</meatMarketValue>
 		  <manhunterOnDamageChance>2</manhunterOnDamageChance>
 		  <manhunterOnTameFailChance>2</manhunterOnTameFailChance>
+		  <fleshType MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_StrangeFlesh</fleshType>
+		  <bloodDef MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_Filth_BloodCosmicHorror</bloodDef>
 		  <litterSizeCurve>
 			<points>
 				<li>(0, 0)</li>
@@ -459,7 +465,7 @@
 				<hediffname>TSP_CJ_SCR_1788_Bonus</hediffname>
 			</li>
 		</comps>
-		<modExtensions>
+		<modExtensions Inherit="False">
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
 					<li>SCR_CKeter</li>
@@ -468,6 +474,12 @@
 				</classRating>
 				<containmentTier>2</containmentTier>
 				<willManhuntAfterBreach>true</willManhuntAfterBreach>
+			</li>
+			<li Class="MorrowRim.ExtendedRaceProperties" MayRequire="sirmashedpotato.morrowrim">
+                <ashResistant MayRequire="sirmashedpotato.morrowrim">Resistant</ashResistant>
+            </li>
+			<li Class="NocturnalAnimals.ExtendedRaceProperties" MayRequire="mlie.xndnocturnalanimals">
+				<bodyClock MayRequire="mlie.xndnocturnalanimals">Nocturnal</bodyClock>
 			</li>
 		</modExtensions>
 	</AlienRace.ThingDef_AlienRace>

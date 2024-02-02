@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
+<Defs>
   <HediffDef ParentName="InfectionBase">
     <defName>SCR_SCP1797R</defName>
     <label>SCP-1797</label>
@@ -15,7 +15,7 @@
       </li>
       <li Class="HediffCompProperties_Immunizable">
         <severityPerDayNotImmune>0.2488</severityPerDayNotImmune>
-        <immunityPerDaySick>0.2388</immunityPerDaySick>
+        <immunityPerDaySick>0.24</immunityPerDaySick>
         <severityPerDayImmune>-0.4947</severityPerDayImmune>
         <immunityPerDayNotSick>-0.06</immunityPerDayNotSick>
       </li>
@@ -26,6 +26,7 @@
     <stages>
       <li>
         <label>minor</label>
+		<painOffset>0.1</painOffset>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
@@ -42,9 +43,9 @@
         </capMods>
       </li>
       <li>
-        <minSeverity>0.666</minSeverity>
+        <minSeverity>0.65</minSeverity>
         <label>major</label>
-        <vomitMtbDays>1.5</vomitMtbDays>
+		<painOffset>0.1</painOffset>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
@@ -64,8 +65,8 @@
         <minSeverity>0.833</minSeverity>
         <label>cat-tastrophe</label>
         <lifeThreatening>true</lifeThreatening>
-        <vomitMtbDays>0.75</vomitMtbDays>
-        <painOffset>0.05</painOffset>
+        <vomitMtbDays>4.75</vomitMtbDays>
+        <painOffset>0.25</painOffset>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
@@ -98,6 +99,7 @@
       <li Class="HediffCompProperties_TendDuration">
         <baseTendDurationHours>4</baseTendDurationHours>
       </li>
+	  <!-- Maybe it should be curable? -->
       <!--<li Class="HediffCompProperties_Immunizable">
         <severityPerDayNotImmune>0.84</severityPerDayNotImmune>
         <immunityPerDaySick>0.6441</immunityPerDaySick>

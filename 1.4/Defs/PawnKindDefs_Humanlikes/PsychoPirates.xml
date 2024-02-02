@@ -11,9 +11,10 @@
 	<label>SCP-1788-1 instance</label>
 	<labelPlural>SCP-1788-1 instances</labelPlural>
     <race>CJ_Psycho</race>
-    <defaultFactionType>AncientsHostile</defaultFactionType>
+    <!-- <defaultFactionType>AncientsHostile</defaultFactionType> -->
     <chemicalAddictionChance>0.5</chemicalAddictionChance>
-    <backstoryCryptosleepCommonality>0.005</backstoryCryptosleepCommonality>
+    <backstoryCryptosleepCommonality>0.0225</backstoryCryptosleepCommonality>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <backstoryFiltersOverride>
       <li>
         <categories>
