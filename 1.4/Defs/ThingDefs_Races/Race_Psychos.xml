@@ -78,7 +78,7 @@
 				-->
 			  
 				<bodyTypes>
-					<li>Fat</li>
+					<li>Fat</li> <!-- All instances canonically look obese -->
 				</bodyTypes>
 			  
 				<customDrawSize>(1.2,1.2)</customDrawSize>
@@ -161,6 +161,15 @@
 					</colorChannels>
 				</alienPartGenerator>			  
 			</generalSettings>
+			
+			<styleSettings>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
 		  
 			<graphicPaths>
 				<body>Things/Psycho/Bodies/</body>
@@ -200,7 +209,7 @@
 			</cannotReceiveThoughts>
 		  </thoughtSettings>
 		  <raceRestriction>
-				<blackGeneTags>
+				<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
 					<li>BodyType</li>
 					<li>AG_Heads</li>
 					<li>Heads</li>
@@ -209,7 +218,14 @@
 					<li>AG_Bodies</li>
 					<li>Bodies</li>
 					<li>Body</li>
+					<li>BeardStyle</li>
+					<li>Furskin</li>
 				</blackGeneTags>
+				<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>BodyType</li>
+				</blackEndoCategories>
 		  </raceRestriction>
 		  <relationSettings>
 			<relationChanceModifierLover>0.01</relationChanceModifierLover>

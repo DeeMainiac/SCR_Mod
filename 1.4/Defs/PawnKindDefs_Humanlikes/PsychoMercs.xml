@@ -17,7 +17,7 @@
     <defaultFactionType>AncientsHostile</defaultFactionType>
     <chemicalAddictionChance>0.33</chemicalAddictionChance>
     <invNutrition>6</invNutrition>
-    <itemQuality>Poor</itemQuality>
+    <itemQuality>Normal</itemQuality>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
     <backstoryFiltersOverride>
