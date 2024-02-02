@@ -27,9 +27,7 @@
 	  <MeatAmount>90</MeatAmount>
 	  <FilthRate>8</FilthRate>
     </statBases>
-			<tradeTags Inherit="False">
-			<li>SCP</li>
-			</tradeTags>
+			<tradeTags Inherit="False"></tradeTags>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>QuadrupedAnimalWithPawsAndTail</body>

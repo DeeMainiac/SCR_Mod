@@ -26,7 +26,7 @@
 		<hungerRateFactor>0.5</hungerRateFactor>
 		<statFactors>
           <IncomingDamageFactor>0.5</IncomingDamageFactor>
-		  <!--<StaggerDurationFactor>0.5</StaggerDurationFactor> -->
+		  <StaggerDurationFactor>0.5</StaggerDurationFactor>
         </statFactors>
 		<statOffsets>
           <RestRateMultiplier>0.5</RestRateMultiplier>

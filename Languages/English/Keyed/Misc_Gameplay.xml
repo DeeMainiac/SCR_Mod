@@ -44,8 +44,6 @@
 
 <!-- Mod Menu Stuff-->
 
-<!-- This stuff hasn't been implemented in any fashion yet -->
-
 <SCP610ToggleTitle>SCP-610 Biome Spawn</SCP610ToggleTitle>
 <SCP610ToggleDesc>Stops SCP-610 biome from generating on world map. Requires a new save.</SCP610ToggleDesc>
 
@@ -97,6 +95,7 @@
 
 <SCR_CApollyon>Apollyon</SCR_CApollyon>
 <SCR_CApollyonDesc>This SCP is not containable by any means.</SCR_CApollyonDesc>
+
 
 <!-- Disruption -->
 

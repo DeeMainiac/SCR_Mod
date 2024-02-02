@@ -69,7 +69,7 @@
 									<li>SCR_SCP1905R</li>
 									<li>SCR_SCP572R</li>
 									<li>SCR_SCP127R</li>
-									<li>SCR_SCP3118R</li>
+									<li>SCR_SCP3118R</li> <!-- misnamed, is supposed to be 3118 -->
 									<li>SCR_SCP262R</li>
 									<li>SCR_SCP095UA</li>
 

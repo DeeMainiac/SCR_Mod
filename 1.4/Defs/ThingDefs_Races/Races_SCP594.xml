@@ -14,7 +14,7 @@
 				</classRating>
 				<containmentTier>1</containmentTier>
 				<willManhuntAfterBreach>false</willManhuntAfterBreach>
-				<hatesRoofs>true</hatesRoofs>
+				<hatesRoofs>false</hatesRoofs>
 			</li>
 	</modExtensions>
 	<statBases>
