@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
-<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="BaseGun">
 		<defName>SCR_SCP095UA</defName>
 		<label>SCP-095-UA</label>
 		<description>SCP-095-UA is an incendiary rocket launcher with an extremely, unnaturally, accurate projectile. It has strange, likely sarkic symbols and blood on the inside of the barrel.</description>
@@ -32,27 +33,29 @@
 		<statBases>
 			<Mass>5</Mass>
 			<MarketValue>3000</MarketValue>
-      <AccuracyTouch>.4</AccuracyTouch>
-      <AccuracyShort>2</AccuracyShort>
-      <AccuracyMedium>2</AccuracyMedium>
-      <AccuracyLong>2</AccuracyLong>
-      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+			  <AccuracyTouch>1</AccuracyTouch>
+			  <AccuracyShort>2</AccuracyShort>
+			  <AccuracyMedium>2</AccuracyMedium>
+			  <AccuracyLong>2</AccuracyLong>
+			  <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
 		</statBases>
-	<thingSetMakerTags>
-      <li>RewardStandardLowFreq</li>
-    </thingSetMakerTags>
+			<thingSetMakerTags>
+			  <li>RewardStandardLowFreq</li>
+			</thingSetMakerTags>
 	        <smeltable>false</smeltable>
 		<verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_IncendiaryLauncher</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
-		<forcedMissRadius>1.9</forcedMissRadius>
+        <defaultProjectile>TSP_SCR_Bullet_IncendiaryLauncher</defaultProjectile>
+        <warmupTime>3</warmupTime>
+		<forcedMissRadius>0.001</forcedMissRadius>
         <range>100.9</range>
         <soundCast>Shot_IncendiaryLauncher</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>20</muzzleFlashScale>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+		<requireLineOfSight>false</requireLineOfSight>
 		<targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
@@ -82,5 +85,26 @@
     </weaponTags>
 	</ThingDef>
 
-
+  <ThingDef ParentName="BaseBullet">
+    <defName>TSP_SCR_Bullet_IncendiaryLauncher</defName>
+    <label>anomalous incendiary bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(254,189,58)</color>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>80</speed>
+      <damageDef>Flame</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionRadius>1.5</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <!-- <arcHeightFactor>0.2</arcHeightFactor> -->
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+  </ThingDef>
 </Defs>

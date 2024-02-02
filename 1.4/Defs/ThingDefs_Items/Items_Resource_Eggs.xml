@@ -26,7 +26,7 @@
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<thingCategories>
-			<li>EggsFertilized</li>
+			<li>TSP_SCPEggs</li>
 		</thingCategories>
 		<allowedArchonexusCount>1000</allowedArchonexusCount>
 		<tradeTags>
@@ -100,12 +100,16 @@
 				<progressPerDegreePerTick>0.03</progressPerDegreePerTick>
 			</li>
 		</comps>
+		<thingCategories>
+			<!-- Inherits from the Base -->
+			<li>SCPObjects</li>
+		</thingCategories>
 	</ThingDef>
 	
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCR_SCP3199EggRuined</defName>
 		<label>neutralized SCP-3199 egg</label>
-		<description>An SCP-3199 egg that has been neutralized. It can be cremated to make a few bits of plasteel.</description>
+		<description>A SCP-3199 egg that has been neutralized. It can be cremated to make a few bits of plasteel.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval/EggOval_A</texPath>
 			<drawSize>1.5</drawSize>
@@ -136,7 +140,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>SCR_SCP2371JPSeed</defName>
 		<label>SCP-2371-JP seedling</label>
-		<description>A SCP-2371-JP seedling. It should grow into an instance of SCP-2371-JP.</description>
+		<description>A SCP-2371-JP seedling. If all goes well, it will germinate and form an instance of SCP-2371-JP.</description>
 		<graphicData>
 			<texPath>Things/Plant/CornPlant_Immature</texPath>
 			<color>(195,237,195)</color>
