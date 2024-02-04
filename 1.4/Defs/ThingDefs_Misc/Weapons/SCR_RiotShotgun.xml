@@ -5,7 +5,7 @@
 		<label>bean bag round</label>
 		<thingClass>SecureContainRimworld.SCR_Projectile_TranqRifle</thingClass>
 		<projectile>
-			<damageDef>Bullet</damageDef>
+			<damageDef>Stun</damageDef>
 			<damageAmountBase>2</damageAmountBase>
 			<stoppingPower>3.5</stoppingPower>
 			<speed>60</speed>

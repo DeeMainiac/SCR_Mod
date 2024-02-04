@@ -381,7 +381,6 @@
 		<backstoryCryptosleepCommonality>0.8</backstoryCryptosleepCommonality>
 		<chemicalAddictionChance>1</chemicalAddictionChance>
 		<apparelMoney>2000~3800</apparelMoney>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelTags>
 		  <li>IndustrialBasic</li>
 		  <li>IndustrialAdvanced</li>
@@ -425,7 +424,6 @@
 		<backstoryCryptosleepCommonality>0.85</backstoryCryptosleepCommonality>
 		<chemicalAddictionChance>1</chemicalAddictionChance>
 		<apparelMoney>2000~3800</apparelMoney>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelTags>
 		  <li>IndustrialBasic</li>
 		  <li>IndustrialAdvanced</li>

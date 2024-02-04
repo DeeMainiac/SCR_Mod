@@ -183,7 +183,7 @@
  <HediffDef ParentName="DiseaseBase">
     <defName>SCR_SCP2845TransmuteHediff</defName>
     <label>SCP-2845 Transmutation Aura</label>
-    <description>This pawn is under the effect of SCP-2845's transmutation aura. If he does not leave the hazardous zone around SCP-2845, he will fatally transform into a SCP-2845-1 instance! \n Naturally recovers over time as the body filters it out.</description>
+    <description>This Pawn is under the effect of SCP-2845's transmutation aura. If he does not leave the hazardous zone around SCP-2845, he will fatally transform into a SCP-2845-1 instance! \n Naturally recovers over time as the body filters it out.</description>
 	<initialSeverity>0.15</initialSeverity>
 	<lethalSeverity>0.84</lethalSeverity>
 	<makesSickThought>true</makesSickThought>
@@ -224,6 +224,10 @@
 			<capMods>
 			  <li>
 				<capacity>Consciousness</capacity>
+				<setMax>0.5</setMax>
+			  </li>
+			  <li>
+				<capacity>Moving</capacity>
 				<setMax>0.5</setMax>
 			  </li>
 			</capMods>

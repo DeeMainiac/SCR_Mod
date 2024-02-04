@@ -348,10 +348,10 @@
 			<MoveSpeed>6.5</MoveSpeed>
 			<Flammability>0.5</Flammability>
 			<ComfyTemperatureMin>8</ComfyTemperatureMin> <!-- Default 16, but he ain't no default boi-->
-			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<ComfyTemperatureMax>66</ComfyTemperatureMax>
 			<MeatAmount>150</MeatAmount>
 			<LeatherAmount>150</LeatherAmount>
-			<RoyalFavorValue>2</RoyalFavorValue>  <!-- LOL... If it would please your highness; one greasy, jail-inked murderer scum.... on the house! -->
+			<RoyalFavorValue>2</RoyalFavorValue>  <!-- LOL... If it would please your highness, one greasy, jail-inked murderer scum.... on the house! -->
 			<PsychicSensitivity>0.27</PsychicSensitivity>  <!--I ain't gonna meditate!!!!-->
 			<MentalBreakThreshold>0.7</MentalBreakThreshold>
 			<CarryingCapacity>200</CarryingCapacity>
@@ -370,6 +370,8 @@
 			<HSAU_SanctusSensitivity MayRequire="baskerville.hellsingarmsultimate" Inherit="False">0.1</HSAU_SanctusSensitivity>
 			<HSAU_SoulRendSensitivity MayRequire="baskerville.hellsingarmsultimate" Inherit="False">0</HSAU_SoulRendSensitivity> <!-- YOU THINK THESE THINGS HAVE SOULS?! -->
 			<HSAU_DecaySensitivity MayRequire="baskerville.hellsingarmsultimate">0.5</HSAU_DecaySensitivity>
+			<MeleeDoorDamageFactor MayRequire="ludeon.rimworld.biotech">5</MeleeDoorDamageFactor>
+			<StaggerDurationFactor MayRequire="ludeon.rimworld.biotech">0.5</StaggerDurationFactor>
 		</statBases>
 		<tools>
 		  <li>
@@ -463,7 +465,7 @@
 			<cooldownTime>2.5</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-			<chanceFactor>0.45</chanceFactor>
+			<chanceFactor>0.5</chanceFactor>
 		  </li>
 		</tools>
 		<race>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-
   <IncidentDef>
     <defName>SCR_Incident_SCP3199_Hunt</defName>
     <label>SCP-3199 flock</label>
@@ -21,6 +20,8 @@
     <label>SCP-2845 and minions</label>
     <targetTags>
       <li>Map_PlayerHome</li>
+      <li>Map_Misc</li>
+      <li>Map_RaidBeacon</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP2845</workerClass>
     <baseChance>1</baseChance>
@@ -50,6 +51,9 @@
     <category>Misc</category>
     <targetTags>
       <li>Map_PlayerHome</li>
+      <li>Map_TempIncident</li>
+      <li>Map_Misc</li>
+      <li>Map_RaidBeacon</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP131</workerClass>
     <baseChance>0.5</baseChance>
@@ -74,6 +78,9 @@
     <label>Chaos Insurgency Raid</label>
     <targetTags>
       <li>Map_PlayerHome</li>
+      <li>Map_TempIncident</li>
+      <li>Map_Misc</li>
+      <li>Map_RaidBeacon</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_CI_SCP3033</workerClass>
     <baseChance>5.0</baseChance>
@@ -81,28 +88,30 @@
     <pointsScaleable>true</pointsScaleable>
     <tale>Raid</tale>
   </IncidentDef>
--->
+	-->
 
   <IncidentDef>
     <defName>SCR_Incident_SCP610Form</defName>
     <label>SCP-610 formation</label>
     <targetTags>
       <li>Map_PlayerHome</li>
+      <li>Map_RaidBeacon</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP610_Local</workerClass>
     <baseChance>3</baseChance>
     <category>ThreatBig</category>
-    <pointsScaleable>true</pointsScaleable>
+    <pointsScaleable>false</pointsScaleable>
     <tale>ManhunterPack</tale>
 	<minRefireDays>20</minRefireDays>
   </IncidentDef>
 
   <IncidentDef>
     <defName>SCR_Incident_SCP848_Growth</defName>
-    <label>cluster of SCP-848s found</label>
+    <label>cluster of SCP-848's found</label>
     <category>Misc</category>
     <targetTags>
       <li>Map_PlayerHome</li>
+      <li>Map_Misc</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP848</workerClass>
     <baseChance>.5</baseChance>	
@@ -115,10 +124,13 @@
     <category>Misc</category>
     <targetTags>
       <li>Map_PlayerHome</li>
+      <li>Map_TempIncident</li>
+      <li>Map_Misc</li>
+      <li>Map_RaidBeacon</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP848_SpawnThing</workerClass>
     <baseChance>20</baseChance>	
-	<minRefireDays>15</minRefireDays>
+	<minRefireDays>6</minRefireDays>
   </IncidentDef>
 
 <!-- Storyteller Specific Events -->
@@ -128,6 +140,9 @@
     <label>SCP-3199 flock</label>
     <targetTags>
       <li>Map_PlayerHome</li>
+      <li>Map_TempIncident</li>
+      <li>Map_Misc</li>
+      <li>Map_RaidBeacon</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP3199</workerClass>
     <baseChance>3</baseChance>
@@ -142,6 +157,9 @@
     <label>SCP-3199 pack</label>
     <targetTags>
       <li>Map_PlayerHome</li>
+      <li>Map_TempIncident</li>
+      <li>Map_Misc</li>
+      <li>Map_RaidBeacon</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP939</workerClass>
     <baseChance>3</baseChance>
@@ -157,6 +175,9 @@
     <category>SCR_SCPThreat</category>
     <targetTags>
       <li>Map_PlayerHome</li>
+      <li>Map_TempIncident</li>
+      <li>Map_Misc</li>
+      <li>Map_RaidBeacon</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP131</workerClass>
     <baseChance>.5</baseChance>
@@ -168,6 +189,9 @@
 	<category>SCR_SCPThreat</category>
     <targetTags>
       <li>Map_PlayerHome</li>
+      <li>Map_TempIncident</li>
+      <li>Map_Misc</li>
+      <li>Map_RaidBeacon</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP2845</workerClass>
     <baseChance>1</baseChance>

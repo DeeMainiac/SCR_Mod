@@ -60,7 +60,7 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>CR_TranqGuns</li>
+				<li>SCR_TranqGuns</li>
 			</researchPrerequisites>
 			  <skillRequirements>
 				<Crafting>7</Crafting>

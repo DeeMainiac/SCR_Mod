@@ -61,9 +61,6 @@
 			<color>(219, 219, 206)</color>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<thingCategories>
-			<li>SCPObjects</li>
-		</thingCategories>
 		<useHitPoints>false</useHitPoints>
 		<stackLimit>1</stackLimit>
 		<statBases>
@@ -100,8 +97,8 @@
 				<progressPerDegreePerTick>0.03</progressPerDegreePerTick>
 			</li>
 		</comps>
-		<thingCategories>
-			<!-- Inherits from the Base -->
+		<thingCategories Inherit="False">
+			<li>TSP_SCPEggs</li>
 			<li>SCPObjects</li>
 		</thingCategories>
 	</ThingDef>
@@ -109,7 +106,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCR_SCP3199EggRuined</defName>
 		<label>neutralized SCP-3199 egg</label>
-		<description>A SCP-3199 egg that has been neutralized. It can be cremated to make a few bits of plasteel.</description>
+		<description>A SCP-3199 egg that has been neutralized. It can be cremated to make a few bits of Plasteel.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval/EggOval_A</texPath>
 			<drawSize>1.5</drawSize>
@@ -122,12 +119,13 @@
 		<tradeNeverStack>true</tradeNeverStack>
 		<useHitPoints>false</useHitPoints>
 		<techLevel>Ultra</techLevel>
-		<thingCategories>
+		<thingCategories Inherit="False">
 			<li>SCPObjects</li>
 		</thingCategories>
 		<tradeTags>
 			<!-- <li>Artifact</li> -->
 			<li>ExoticMisc</li>
+			<li>SCP</li>
 		</tradeTags>
 		<statBases>
 			<Mass>0.001</Mass>
@@ -164,7 +162,7 @@
 				<hatcherPawn>SCR_SCP2371JP</hatcherPawn>
 			</li>
 			<li Class="CompProperties_TemperatureRuinable">
-				<minSafeTemperature>-12</minSafeTemperature>
+				<minSafeTemperature>-24</minSafeTemperature>
 				<maxSafeTemperature>75</maxSafeTemperature>
 				<progressPerDegreePerTick>0.0001</progressPerDegreePerTick>
 			</li>
@@ -173,7 +171,6 @@
 			<li>PlantFoodRaw</li>
 		</thingCategories>
 		<tradeTags>
-			<li>SCP</li>
 			<li>EggSCP</li>
 		</tradeTags>
 	</ThingDef>
@@ -233,7 +230,7 @@
 	<ThingDef ParentName="SCR_EggBase">
 		<defName>SCR_SCP2584Egg</defName>
 		<label>SCP-2584 egg (fert.)</label>
-		<description>A fertilized SCP-2584 egg. If all goes well, it should hatch into an instance of SCP-2584.</description>
+		<description>A fertilized SCP-2584 egg. If all goes well, it should hatch into an instance of SCP-2584. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
 			<color>(245,245,245)</color>
@@ -255,7 +252,7 @@
 	<ThingDef ParentName="SCR_EggBase">
 		<defName>TSP_SCR_SCP745Egg</defName>
 		<label>SCP-745 egg (fert.)</label>
-		<description>A fertilized SCP-745 egg. If all goes well, it should hatch into an instance of SCP-745. The glowing headlight of the embryo can be seen through the shell!</description>
+		<description>A fertilized SCP-745 egg. If all goes well, it should hatch into an instance of SCP-745. It can be eaten raw, but it's much better cooked. The glowing headlight of the embryo can be seen through the shell!</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
 			<color>(245,245,245)</color>

@@ -4,13 +4,12 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>SCR_GOC</defName>
 		<label>Global Occult Coalition</label>
-		<description>A large collection of anomalous and occult organizations. They seek to keep humanlikes safe and unaware of anomalous and paranormal entities by destroying them. They have particularly shaky relationships with powerful groups that hold and use anomalous entities.</description>
+		<description>A large collection of anomalous and occult organizations. They seek to keep humanlikes safe from anomalous and paranormal entities by destroying them. They have particularly shaky relationships with powerful groups that hold and use anomalous entities.</description>
 	    <pawnSingular>peacekeeper</pawnSingular>
 		<pawnsPlural>peacekeepers</pawnsPlural>
 		<listOrderPriority>11</listOrderPriority>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<maxCountAtGameStart>1</maxCountAtGameStart>
-		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<fixedName>Global Occult Coalition</fixedName>
 		<leaderTitle>High Command</leaderTitle>
 		<leaderTitleFemale>High Command</leaderTitleFemale>
@@ -33,10 +32,10 @@
 		</allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
-		   <!-- <li MayRequire="vanillaexpanded.vmemese">VME_Structure_Authoritarianism</li> -->
-		   <li MayRequire="sarg.alphamemes">AM_Iconoclast</li>
-		   <!-- <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li> -->
-		   <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<!-- <li MayRequire="vanillaexpanded.vmemese">VME_Structure_Authoritarianism</li> -->
+			<li MayRequire="sarg.alphamemes">AM_Iconoclast</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li> -->
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
 		</requiredMemes>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>

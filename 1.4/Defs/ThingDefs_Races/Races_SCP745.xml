@@ -108,7 +108,24 @@
 				</capacities>
 				<power>10</power>
 				<cooldownTime>1.5</cooldownTime>
-				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>18</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			  </li>
+			<li>
+				<label>claws</label>
+				<capacities>
+				  <li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
 				<surpriseAttack>
 				  <extraMeleeDamages>
 					<li>
@@ -126,6 +143,17 @@
 				<power>8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			  </li>
+			  <li>
+				<label>bite</label>
+				<capacities>
+				  <li>Bite</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>1</chanceFactor>
 			  </li>

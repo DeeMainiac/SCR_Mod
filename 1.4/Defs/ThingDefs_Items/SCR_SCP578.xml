@@ -89,8 +89,10 @@
     <smeltable>false</smeltable>
     <stuffProps>
       <categories>
-        <li>Stony</li>
+		<li>Stony</li>
 		<li MayRequire="kikohi.jewelry">Gemstones</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
       </categories>
       <commonality>0.01</commonality>
       <color>(115, 7, 7)</color>

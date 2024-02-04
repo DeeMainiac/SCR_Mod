@@ -10,7 +10,6 @@
 		<listOrderPriority>10</listOrderPriority>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<maxCountAtGameStart>1</maxCountAtGameStart>
-		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<fixedName>Chaos Insurgency</fixedName>
 		<leaderTitle>Delta Commander</leaderTitle>
 		<leaderTitleFemale>Delta Commander</leaderTitleFemale>

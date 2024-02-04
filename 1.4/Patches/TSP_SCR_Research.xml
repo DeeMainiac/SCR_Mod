@@ -216,13 +216,13 @@
 			</value>
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
-		<match Class="PatchOperationAdd">
+		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="TranqTurret"]</xpath>
 			<value>
 				<tab>SCR_SCP</tab>
 			</value>
-		</match>
+		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
@@ -302,7 +302,7 @@
 			</value>
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
-		<match Class="PatchOperationAdd">
+		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="TranqTurret"]</xpath>
 			<value>
@@ -312,7 +312,7 @@
 					<li>SCR_TranqGuns</li>
 				</prerequisites>
 			</value>
-		</match>
+		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
@@ -330,7 +330,7 @@
 			</value>
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
-		<match Class="PatchOperationAdd">
+		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="TranqTurret"]</xpath>
 			<value>
@@ -339,7 +339,7 @@
 					<li>SCR_TranqGuns</li>
 				</prerequisites>
 			</value>
-		</match>
+		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
@@ -366,13 +366,13 @@
 			</value>
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
-		<match Class="PatchOperationAdd">
+		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]</xpath>
 			<value>
 				<tab>SCR_SCP</tab>
 			</value>
-		</match>
+		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	

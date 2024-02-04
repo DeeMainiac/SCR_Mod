@@ -111,6 +111,7 @@
         <cooldownTime>1</cooldownTime>
         <linkedBodyPartsGroup>Neck</linkedBodyPartsGroup> <!-- Body Part Group assigned to its neck -->
 		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>1</chanceFactor>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
@@ -144,12 +145,13 @@
         <label>acidic bite</label>
         <capacities>
           <li>ToxicBite</li>
+		  <li MayRequire="ludeon.rimworld.biotech">AcidBurn</li>
         </capacities>
         <power>14</power>
         <cooldownTime>2.66</cooldownTime>
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.8</chanceFactor>
+        <chanceFactor>0.92</chanceFactor>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>

@@ -730,9 +730,8 @@
 			<baseBodySize>0.4</baseBodySize>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>0.5</baseHealthScale>
-			<foodType>CarnivoreAnimal, OvivoreAnimal, Fluid, Kibble</foodType>
+			<foodType>CarnivoreAnimal, Meat, OvivoreAnimal, Fluid, Kibble</foodType>
 			<wildness>0.1</wildness>
-			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
