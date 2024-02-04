@@ -724,40 +724,15 @@
 			<parts>						
                     <li>
                       <def>Brain</def>
-					  <coverage>0.079</coverage>
+					  <coverage>0.0079</coverage>
                       <depth>Inside</depth>
                     </li>
 				<li>
-					<def>Leg</def>
-					<customLabel>left locomotion organ</customLabel>
-					<coverage>0.1</coverage>
+					<def>Foot</def>
+					<customLabel>locomotion organ</customLabel>
+					<coverage>0.02</coverage>
 					<height>Bottom</height>
-					<parts>
-						<li>
-							<def>Foot</def>
-							<customLabel>left locomotion organ</customLabel>
-							<coverage>0.5</coverage>
-							<groups>
-								<li>Feet</li>
-							</groups>
-						</li>
-					</parts>
-				</li>
-				<li>
-					<def>Leg</def>
-					<customLabel>right locomotion organ</customLabel>
-					<coverage>0.1</coverage>
-					<height>Bottom</height>
-					<parts>
-						<li>
-							<def>Foot</def>
-							<customLabel>right locomotion organ</customLabel>
-							<coverage>0.5</coverage>
-							<groups>
-								<li>Feet</li>
-							</groups>
-						</li>
-					</parts>
+					<depth>Inside</depth>
 				</li>
 			</parts>
 		</corePart>

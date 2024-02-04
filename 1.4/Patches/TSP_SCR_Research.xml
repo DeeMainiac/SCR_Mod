@@ -1,61 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Patch>
+	<!--
 	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
+	DO THE GENTILES KNOW?
 		<xpath>/Defs/ResearchProjectDef[defName="VWE_NonLethal"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
+		If they do, SHUT IT DOWN.
 		<match Class="PatchOperationRemove">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="SCR_TranqGuns"]</xpath>
+			<xpath>/Defs/ResearchProjectDef[defName="SCR_TranqGuns"]</xpath>
 		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+		If the first XPATH does not exist, the original code stands. All according to plan.
 	</Operation>
+	-->
 
+	<!--
 	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
+	Does this exist?
 		<xpath>/Defs/ResearchProjectDef[defName="VWE_NonLethal"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<success>Always</success>
-			<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="SCR_TranqGuns"]</xpath>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ResearchProjectDef[defName="VWE_NonLethal"]</xpath>
-		<!-- If it does, do this replacement. -->
+		If it does, do this replacement.
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="SCR_Gun_TranqRifle"]/recipeMaker/researchPrerequisites</xpath>
 			<value>
 				<researchPrerequisites>
 					<li>VWE_NonLethal</li>
-					<li>Electricity</li>
 				</researchPrerequisites>
 			</value>
 		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
+		If the first XPATH does not exist, the original code stands.
 	</Operation>
+	-->
 	
+	<!--
 	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
+	Does this exist?
 		<xpath>/Defs/ResearchProjectDef[defName="VWE_NonLethal"]</xpath>
-		<!-- If it does, do this replacement. -->
+		If it does, do this replacement.
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="SCR_Gun_RiotShotgun"]/recipeMaker/researchPrerequisites</xpath>
 			<value>
 				<researchPrerequisites>
 					<li>VWE_NonLethal</li>
-					<li>Electricity</li>
 				</researchPrerequisites>
 			</value>
 		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
+		If the first XPATH does not exist, the original code stands.
 	</Operation>
+	-->
 
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
@@ -77,7 +70,7 @@
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
 			<success>Always</success>
-			<xpath>/Defs/ThingDef[defName="ProjectHeron_BlastDoors"]</xpath>
+			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_BlastDoors"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
 	</Operation>
@@ -149,7 +142,7 @@
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VWE_NonLethal"]/researchViewX</xpath>
 			<value>
-				<researchViewX>1</researchViewX>
+				<researchViewX>2</researchViewX>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -233,10 +226,11 @@
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
+	<!--
 	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
+	Does this exist?
 		<xpath>/Defs/ThingDef[defName="TranqTurretGun"]</xpath>
-		<!-- If it does, do this replacement. -->
+		If it does, do this replacement.
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="TranqTurretGun"]/researchPrerequisites</xpath>
@@ -246,8 +240,9 @@
 				</researchPrerequisites>
 			</value>
 		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
+		If the first XPATH does not exist, the original code stands.
 	</Operation>
+	-->
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
@@ -271,7 +266,7 @@
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]/researchViewY</xpath>
 			<value>
-				<researchViewY>6</researchViewY>
+				<researchViewY>4</researchViewY>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -286,6 +281,124 @@
 			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]/tab</xpath>
 			<value>
 				<tab>SCR_SCP</tab>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="TranqTurret"]/prerequisites</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="TranqTurret"]/prerequisites</xpath>
+			<value>
+				<prerequisites>
+					<!-- <li MayRequire="vanillaexpanded.vwenl">VWE_NonLethal</li> -->
+					<li>GunTurrets</li>
+					<li>SCR_TranqGuns</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="TranqTurret"]</xpath>
+			<value>
+				<prerequisites>
+					<!-- <li MayRequire="vanillaexpanded.vwenl">VWE_NonLethal</li> -->
+					<li>GunTurrets</li>
+					<li>SCR_TranqGuns</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="VWE_NonLethal"]/prerequisites</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="VWE_NonLethal"]/prerequisites</xpath>
+			<value>
+				<prerequisites>
+					<li>SCR_TranqGuns</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="TranqTurret"]</xpath>
+			<value>
+				<prerequisites>
+					<li>GunTurrets</li>
+					<li>SCR_TranqGuns</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ResearchProjectDef[defName="VWE_NonLethal"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="TranqTurret"]/prerequisites/li[text()="SCR_TranqGuns"]</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]/tab</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]/tab</xpath>
+			<value>
+				<tab>SCR_SCP</tab>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]</xpath>
+			<value>
+				<tab>SCR_SCP</tab>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]/researchViewX</xpath>
+			<value>
+				<researchViewX>0</researchViewX>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]/researchViewY</xpath>
+			<value>
+				<researchViewY>2</researchViewY>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->

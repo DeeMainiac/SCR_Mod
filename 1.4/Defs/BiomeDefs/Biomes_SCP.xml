@@ -10,9 +10,9 @@
 			<classRating>
 				<li>SCR_CKeter</li>
 				<li>SCR_DEkhi</li>
-				<li>SCR_RDanger</li>
+				<li>SCR_RCritical</li>
 			</classRating>
-			<containmentTier>0</containmentTier>
+			<containmentTier>3</containmentTier>
 		</li>
 	</modExtensions>
 	<workerClass>SecureContainRimworld.SCR_BiomeWorker_SCP610</workerClass>
@@ -25,7 +25,7 @@
     <texture>World/Biomes/SCR_BiomeSCP610</texture>
     <forageability>0.25</forageability>
     <foragedFood>RawFungus</foragedFood>
-    <wildPlantRegrowDays>1.05</wildPlantRegrowDays>
+    <wildPlantRegrowDays>0.1</wildPlantRegrowDays>
 	<allowRoads>false</allowRoads>
 	<allowRivers>true</allowRivers>
     <soundsAmbient>
@@ -33,19 +33,13 @@
 		<li>Ambient_Wind_Desolate</li>
 		<li MayRequire="regrowth.botr.core">RG_Ambient_Sandstorm</li>
     </soundsAmbient>
-    <diseaseMtbDays>165</diseaseMtbDays>
+    <diseaseMtbDays>115</diseaseMtbDays>
     <diseases>
-     <li>
-        <diseaseInc>SCR_Disease_SCP1797R</diseaseInc>
-        <commonality>40</commonality>
-	 </li>
-	 <!--
 	 <li>
 		<diseaseInc>SCR_SCP610Infection</diseaseInc>
 		<commonality>0.01</commonality>
-		As this has no cure, it's unfair to throw it commonly, and besides, the creatures always givt it to you
+		<!-- As this has no cure, it's unfair to throw it commonly, and besides, the creatures always givE it to you -->
       </li>
-	  -->
       <li>
         <diseaseInc>Disease_Plague</diseaseInc>
         <commonality>200</commonality>

@@ -1,44 +1,46 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-
-  <ThingDef ParentName="ResourceBase">
-    <defName>SCR_SCP578R</defName>
-    <label>SCP-578</label>
-    <description>SCP-578 is a liquid that, when it comes in contact with human blood, solidifies into a beautiful gemstone known as SCP-578-1.</description>
-    		<modExtensions>
-			<li Class="SecureContainRimworld.CProceduresExtension">
-				<classRating>
-					<li>SCR_CSafe</li>
-					<li>SCR_DDark</li>
-					<li>SCR_RNotice</li>
-				</classRating>
-				<containmentTier>0</containmentTier>
-			</li>
-		</modExtensions>
-	<tickerType>Normal</tickerType>
-    <graphicData>
-      <texPath>Things/Item/SCR_SCP578</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.6</drawSize>
-    </graphicData>
-    <stackLimit>100</stackLimit>
-    <healthAffectsPrice>false</healthAffectsPrice>
-    <statBases>
-      <MaxHitPoints>50</MaxHitPoints>
-      <MarketValue>2.3</MarketValue>
-      <Mass>0.05</Mass>
-      <Flammability>.3</Flammability>
-      <DeteriorationRate>1.0</DeteriorationRate>
-    </statBases>
-    <thingCategories>
-      <li>Manufactured</li>
-	  <li>SCPObjects</li>
-    </thingCategories>
-    <allowedArchonexusCount>100</allowedArchonexusCount>
+	<ThingDef ParentName="ResourceBase">
+		<defName>SCR_SCP578R</defName>
+		<label>SCP-578</label>
+		<description>SCP-578 is a liquid that, when it comes in contact with human blood, solidifies into a beautiful gemstone known as SCP-578-1.</description>
+				<modExtensions>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+					<classRating>
+						<li>SCR_CSafe</li>
+						<li>SCR_DDark</li>
+						<li>SCR_RNotice</li>
+					</classRating>
+					<containmentTier>0</containmentTier>
+				</li>
+			</modExtensions>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+		  <texPath>Things/Item/SCR_SCP578</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>0.6</drawSize>
+		</graphicData>
+		<stackLimit>100</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <MarketValue>2.3</MarketValue>
+		  <Mass>0.05</Mass>
+		  <Flammability>.3</Flammability>
+		  <DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+		  <li>Manufactured</li>
+		  <li>SCPObjects</li>
+		</thingCategories>
+		<deepCommonality>0.5</deepCommonality>
+		<deepCountPerPortion>15</deepCountPerPortion>
+		<deepLumpSizeRange>1~4</deepLumpSizeRange>
+		<allowedArchonexusCount>10000</allowedArchonexusCount>
 		<tradeTags>
-	<li>SCP</li>
-	</tradeTags>
+			<li>SCP</li>
+		</tradeTags>
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
@@ -78,14 +80,17 @@
       <li>ResourcesRaw</li>
 	  <li>SCPObjects</li>
     </thingCategories>
- <!--   <deepCommonality>0.5</deepCommonality>
+	<!--
+	<deepCommonality>0.5</deepCommonality>
     <deepCountPerPortion>15</deepCountPerPortion>
-    <deepLumpSizeRange>1~4</deepLumpSizeRange> -->
+    <deepLumpSizeRange>1~4</deepLumpSizeRange>
+	-->
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>false</smeltable>
     <stuffProps>
       <categories>
         <li>Stony</li>
+		<li MayRequire="kikohi.jewelry">Gemstones</li>
       </categories>
       <commonality>0.01</commonality>
       <color>(115, 7, 7)</color>
@@ -97,15 +102,15 @@
         <Beauty>10</Beauty>
       </statOffsets>
       <statFactors>
-        <MaxHitPoints>0.5</MaxHitPoints>
+        <MaxHitPoints>1</MaxHitPoints>
         <WorkToMake>1.4</WorkToMake>
-        <WorkToBuild>5.0</WorkToBuild>
+        <WorkToBuild>1.4</WorkToBuild>
         <Beauty>2.5</Beauty>
         <Flammability>0</Flammability>
         <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
 

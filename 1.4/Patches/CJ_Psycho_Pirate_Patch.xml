@@ -74,7 +74,7 @@
         <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[6]/options</xpath>
         <!-- Normal fights, drifters only (very rare) -->
         <value>
-          <CJ_PsychoDrifter>1</CJ_PsychoDrifter>
+          <CJ_PsychoDrifter>2</CJ_PsychoDrifter>
         </value>
       </li>
       <!-- ============================ Pirate Base li/7 ========================== -->

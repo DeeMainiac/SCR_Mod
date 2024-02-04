@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="SCR_SCP_Base">
+<ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP1797A</defName>
     <label>SCP-1797-A</label>
     <description>SCP-1797-A is a cat that was formerly a tumor that cleaved off of a pawn infected with SCP-1797. It cannot reproduce on its own.</description>

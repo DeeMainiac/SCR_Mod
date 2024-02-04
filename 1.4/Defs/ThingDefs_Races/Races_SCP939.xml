@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="SCR_SCP_Base">
+  <ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP939R</defName>
     <label>SCP-939</label>
-    <description>SCP-939 is a quadrupedal creature that imitates the humanlike voices of those they kill. They also emit a potent memory-altering gas.</description>
+    <description>SCP-939 is a quadrupedal creature that imitates the voices and sounds of those they kill. They also emit a potent memory-altering gas.</description>
 	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 	<classRating>
@@ -23,24 +23,27 @@
       <MoveSpeed>4.4</MoveSpeed>
       <MarketValue>100</MarketValue>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
-      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+      <ComfyTemperatureMax>80</ComfyTemperatureMax>
 	  <MeatAmount>90</MeatAmount>
 	  <FilthRate>8</FilthRate>
     </statBases>
-			<tradeTags Inherit="False"></tradeTags>
+			<tradeTags>
+				<li>AnimalFighter</li>
+				<li>AnimalExotic</li>
+			</tradeTags>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <predator>true</predator>
       <baseBodySize>2.2</baseBodySize>
-      <maxPreyBodySize>2.5</maxPreyBodySize>
-      <baseHungerRate>0.25</baseHungerRate>
+      <maxPreyBodySize>3.5</maxPreyBodySize>
+      <baseHungerRate>0.495</baseHungerRate>
       <baseHealthScale>1.6</baseHealthScale>
       <foodType>CarnivoreAnimalStrict, Corpse, Kibble</foodType>
-      <leatherDef>Leather_Light</leatherDef>
-      <wildness>.9</wildness>
+      <leatherDef>Leather_Lizard</leatherDef>
+      <wildness>0.9</wildness>
       <petness>1</petness>
-      <trainability>Intermediate</trainability>
+      <trainability>Advanced</trainability>
       <nameOnTameChance>1</nameOnTameChance>
 	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
       <manhunterOnDamageChance>5</manhunterOnDamageChance>
@@ -48,9 +51,9 @@
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
-          <li>(1, 1)</li>
+          <li>(1, 0)</li>
           <li>(2, 1.7)</li>
-          <li>(3, 0.7)</li>
+          <li>(3, 2.7)</li>
           <li>(3.5, 0)</li>
         </points>
       </litterSizeCurve>

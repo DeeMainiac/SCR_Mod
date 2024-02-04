@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="SCR_SCP_Base">
+<ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP610A</defName>
     <label>SCP-610-A</label>
     <description>SCP-610-A is a creature completely infested with SCP-610. It has a number of extra limbs or organs, sharp teeth, and claws perfect for tearing into and infecting prey. Its only weakness is fire.</description>
@@ -10,7 +10,7 @@
 		<classRating>
 			<li>SCR_CKeter</li>
 			<li>SCR_DKeneq</li>
-			<li>SCR_RNotice</li>
+			<li>SCR_RCritical</li>
 		</classRating>
 		
 		<containmentTier>2</containmentTier>
@@ -38,7 +38,7 @@
       <baseBodySize>1</baseBodySize>
       <baseHungerRate>0.5</baseHungerRate>
       <baseHealthScale>1</baseHealthScale>
-      <maxPreyBodySize>1.1</maxPreyBodySize>
+      <maxPreyBodySize>3</maxPreyBodySize>
       <foodType>CarnivoreAnimalStrict, Corpse, Fungus, Kibble</foodType>
       <leatherDef>Leather_Patch</leatherDef>
 	  <useMeatFrom>Human</useMeatFrom> <!-- Temporary, I have some plans for this -->
@@ -64,23 +64,13 @@
       </litterSizeCurve>
       <lifeExpectancy>5</lifeExpectancy>
       <lifeStageAges Inherit="False">
-		<!--
         <li>
-          <def>AnimalBaby</def>
+          <def>MechanoidFullyFormed</def>
           <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.2</minAge>
-        </li>
-		-->
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>0.5</minAge>
           <soundWounded>Pawn_Warg_Wounded</soundWounded>
           <soundDeath>Pawn_Warg_Death</soundDeath>
           <soundCall>Pawn_Melee_HumanBite_Hit</soundCall>
-          <soundAngry>Pawn_Warg_Angry</soundAngry>
+          <soundAngry>Pawn_Warg_Wounded</soundAngry>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -121,6 +111,7 @@
         <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
       </li>
     </tools>
+		<tradeTags Inherit="False"></tradeTags>
 		<ingredient>
 			<mergeCompatibilityTags>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
@@ -194,7 +185,7 @@
 			<classRating>
 				<li>SCR_CKeter</li>
 				<li>SCR_DKeneq</li>
-				<li>SCR_RNotice</li>
+				<li>SCR_RCritical</li>
 			</classRating>
 			<containmentTier>2</containmentTier>
 			<willManhuntAfterBreach>true</willManhuntAfterBreach>
@@ -220,7 +211,7 @@
       <baseBodySize>2</baseBodySize>
       <baseHungerRate>0.5</baseHungerRate>
       <baseHealthScale>1.2</baseHealthScale>
-      <maxPreyBodySize>2</maxPreyBodySize>
+      <maxPreyBodySize>5</maxPreyBodySize>
       <foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Corpse, Fungus, Kibble</foodType>
       <leatherDef>Leather_Patch</leatherDef>
 	  <useMeatFrom>Human</useMeatFrom> <!-- Temporary, I have some plans for this -->
@@ -246,23 +237,13 @@
       </litterSizeCurve>
       <lifeExpectancy>40</lifeExpectancy>
       <lifeStageAges Inherit="False">
-		<!--
         <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.2</minAge>
-        </li>
-		-->
-        <li>
-          <def>AnimalAdult</def>
+          <def>MechanoidFullyFormed</def>
           <minAge>0</minAge>
           <soundWounded>Pawn_Warg_Wounded</soundWounded>
           <soundDeath>Pawn_Warg_Death</soundDeath>
           <soundCall>Pawn_Melee_HumanBite_Hit</soundCall>
-          <soundAngry>Pawn_Warg_Angry</soundAngry>
+          <soundAngry>Pawn_Warg_Wounded</soundAngry>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -317,6 +298,7 @@
         <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
       </li>
     </tools>
+		<tradeTags Inherit="False"></tradeTags>
 		<ingredient>
 			<mergeCompatibilityTags>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<ThingDef Name="SCR_SCP857Base" ParentName="SCR_SCP_Base" Abstract="True">
+	<ThingDef Name="SCR_SCP857Base" ParentName="SCR_SCP_Creature_Base" Abstract="True">
 		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particularly in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered.</description>
 		<statBases>
 			<MeatAmount>25</MeatAmount>
@@ -12,14 +12,16 @@
 				<classRating>
 					<li>SCR_CSafe</li>
 					<li>SCR_DDark</li>
-					<li>SCR_RCaution</li>
+					<li>SCR_RNotice</li>
 				</classRating>
 				<containmentTier>0</containmentTier>
 			</li>
 		</modExtensions>
 		<tradeTags>
 			<li>AnimalUncommon</li>
-			<li>AnimalSCP</li>
+			<li>AnimalPet</li>
+			<li>AnimalSCP857</li>
+			<li>AnimalExotic</li>
 		</tradeTags>
 		<race>
 			<body>SCR_Round</body>
@@ -325,6 +327,7 @@
 			<trainability>Intermediate</trainability>
 			<gestationPeriodDays>8</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
+			<roamMtbDays>5</roamMtbDays>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 		</race>
@@ -567,6 +570,7 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+			<roamMtbDays>2</roamMtbDays>
 		</race>
 		<tools>
 			<li>
@@ -615,7 +619,7 @@
 			<MarketValue>40</MarketValue>
 			<FilthRate>1</FilthRate>
 			<MeatAmount>1</MeatAmount>
-			<LeatherAmount>50</LeatherAmount> <!-- Not as much as it looks, divided by body size -->
+			<LeatherAmount>65</LeatherAmount> <!-- Not as much as it looks, divided by body size -->
 			<BoneAmount MayRequire="sihv.rombones" Inherit="False">2</BoneAmount> <!-- Two canonical bone growths stretch the skin for flight. -->
 		</statBases>
 		<race>
@@ -633,6 +637,7 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+			<roamMtbDays>1</roamMtbDays>
 		</race>
 		<butcherProducts>
 			<Leather_Human>25</Leather_Human>
@@ -733,6 +738,7 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<roamMtbDays>1.5</roamMtbDays>
 		</race>
 		<tools>
 			<li>
@@ -802,7 +808,7 @@
 	<ThingDef ParentName="SCR_SCP857Base">
 		<defName>SCR_SCP857I</defName>
 		<label>SCP-857-I</label>
-		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-I is a large, semi-intelligent human head with more pronounced arms, hands, and thumbs. They have been known to live in small groups.</description>
+		<description>SCP-857 is a creature that looks like a living body part of a base line human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-I is a large, semi-intelligent human head with more pronounced arms, hands, and thumbs. Unlike other SCP-857 instances, these can be trained in a manner similar to dogs and other high mammals. They have been known to live in small groups.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>350</MarketValue>
@@ -821,9 +827,9 @@
 			<wildness>0.3</wildness>
 			<trainability>Advanced</trainability>
 			<gestationPeriodDays>13</gestationPeriodDays>
-			<nameOnTameChance>1</nameOnTameChance>
-			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<nameOnTameChance>3</nameOnTameChance>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
 		</race>
 		<tools>
 			<!-- Exact same statistics as a human's head attacks -->

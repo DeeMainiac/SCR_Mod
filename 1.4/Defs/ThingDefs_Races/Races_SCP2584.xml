@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="SCR_SCP_Base">
+<ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP2584R</defName>
     <label>SCP-2584</label>
     <description>SCP-2584 is a snake-like creature without a head or tail, joining the two ends of its body together. It has no need for food and undergoes binary fission once in awhile.</description>
@@ -49,9 +49,9 @@
       <body>Snake</body>
 	<predator>false</predator>
       <baseBodySize>0.25</baseBodySize>
-	<baseHungerRate>0</baseHungerRate>
+	<baseHungerRate>0.33</baseHungerRate>
       <baseHealthScale>0.5</baseHealthScale>
-      <foodType>None</foodType>
+      <foodType>Meat, CarnivoreAnimal, CarnivoreAnimalStrict, Meal, Processed, Corpse, Fluid, OvivoreAnimal, Liquor, Seed, Kibble</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
       <useMeatFrom>Cobra</useMeatFrom>
       <wildness>0</wildness>
@@ -67,11 +67,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0</minAge>
+          <minAge>0.01</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0</minAge>
+          <minAge>0.04</minAge>
           <soundWounded>Pawn_Cobra_Wounded</soundWounded>
           <soundDeath>Pawn_Cobra_Death</soundDeath>
           <soundCall>Pawn_Cobra_Call</soundCall>
@@ -81,7 +81,7 @@
       <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-	  			<wildBiomes>
+	  		<wildBiomes>
 				<AridShrubland>.2</AridShrubland>
 				<BorealForest>0</BorealForest>
 				<ColdBog>0</ColdBog>
@@ -99,8 +99,9 @@
     </race>
     <tradeTags>
       <li>AnimalUncommon</li>
+	  <li>AnimalFarm</li>
 		<li>AnimalPet</li>
-		<li>SCP</li>
+		<li>AnimalExotic</li>
     </tradeTags>
   </ThingDef>
 

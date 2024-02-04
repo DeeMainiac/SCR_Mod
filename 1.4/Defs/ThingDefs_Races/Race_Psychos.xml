@@ -11,33 +11,33 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>CJ_Psycho</defName>
 		<label>SCP-1788-1</label>
-		<description>SCP-1788 was a ritual performed on prepubescent humans to turn them into instances of SCP-1788 once they started puberty. Developed by the psychics of the Shattered Empire and used as a means of recruiting the worst of prepubescent children to serve as super soldiers in exchange for sparing their deaths, it manifests when said child sociopath starts puberty. The result of the ritual, upon pubescence, is a SCP-1788-1 instance. While that ritual has been lost for millinea, the SCP-1788-1 instances remain and can still breed. After many generations, some have generally evolved into being a part of civilization... albeit as what are essentially cruel super soldiers. SCP-1788-1 instances satiate their innate blood lust by joining Factions and killing that Faction's enemies, or by serving as mercenaries that kill for hire. A SCP-1788-1 instance that can't find an outlet for its violence will kill its own "allies" instead. \n \n Living by the motto "Grow Up or Die", these creatures resemble obese humans and are extremely aggressive and known for their cruelty. At the point of their discovery, SCP-1788-1 instances would intentionally avoid each other outside of the annual mating cycle, and would try and kill each other when they encountered another instance. That has long passed, and as man spread out into the galaxy, the SCP-1788 instances, like all other SCP's in the catalog, eventually became too prevelant to be hidden.  \n \n What separates SCP-1788-1 instances from normal men, besides their cruelty, is their power. SCP-1788-1 instances have redundant organs in their respitory, circulatory, nervous, and digestive systems, plus dual spines and brains, with all but the brain nestled next to each other. (These organs are differentiated in medical science as "master" and "slave" organs.) \n Furthermore, SCP-1788-1 instances have denser bones and their muscle fibers are organized in efficient structures resembling carbon nano-tube latticework. This improves the strength and effiency of both, and causes them to be harder to harm. Unlike all other slave organs, an instance's slave brain is enclosed in its own slave ribcage beneath its secondary heart, giving it extra protection in a fight should the SCP-1788-1 instance lose its master brain. \n \n \n Centuries after their discovery, it has now been proven how the ritual was created, dating to the late twenty-sixth century AD, but not how the ritual was performed.</description>
+		<description>SCP-1788 was a ritual performed on prepubescent humans to turn them into instances of SCP-1788 once they started puberty. Developed by the psychics of the Shattered Empire and used as a means of recruiting the worst of prepubescent children to serve as super soldiers in exchange for sparing their lives, it manifests when said child sociopath starts puberty. The result of the ritual, upon pubescence, is a SCP-1788-1 instance. While that ritual has been lost for millinea, the SCP-1788-1 instances remain and can still breed. After many generations, some have generally evolved into being a part of civilization... albeit as what are essentially cruel super soldiers. SCP-1788-1 instances satiate their innate blood lust by joining Factions and killing that Faction's enemies- regardless of who they are -or by serving as mercenaries that kill for hire. A SCP-1788-1 instance that can't find an outlet for its violence will kill its own "allies" instead. \n \n Living by the motto "Grow Up or Die", these creatures resemble obese humans and are extremely aggressive and known for their cruelty. At the point of their discovery, SCP-1788-1 instances would intentionally avoid each other outside of the annual mating cycle, and would always try and kill each other when they encountered another instance. (The Empire stopped this side effect through liberal usages of sedatives, Kill Switches, and other aggressive means.) However, that has long passed and they have evolved out of that trend, and as man spread out into the galaxy, the SCP-1788 instances, like all other SCP's in the catalog, eventually became too prevelant to be hidden.  \n \n What separates SCP-1788-1 instances from normal men, besides their cruelty, is their power. SCP-1788-1 instances have redundant organs in their respitory, circulatory, nervous, and digestive systems, plus dual spines and brains, with all but the additional brain nestled next to each other. (These organs are differentiated in medical science as "master" and "slave" organs.) \n Furthermore, SCP-1788-1 instances have denser bones and their muscle fibers are organized in efficient structures resembling carbon nano-tube latticework. This improves the strength and effiency of both, and causes them to be harder to harm. Unlike all other slave organs, an instance's slave brain is enclosed in its own slave ribcage beneath its secondary heart, giving it extra protection in a fight should the SCP-1788-1 instance lose its master brain. \n \n \n Centuries after their discovery, it has now been proven how the ritual was created, dating to the late twenty-sixth century AD, but not how the ritual was performed.</description>
 		<descriptionHyperlinks>
 			<HediffDef>TSP_CJ_SCR_1788_History</HediffDef>
 		</descriptionHyperlinks>
 		<alienRace>
 		  <generalSettings>
-			<maleGenderProbability>0.5</maleGenderProbability>
+			<maleGenderProbability>0.6</maleGenderProbability>
 			<humanRecipeImport>true</humanRecipeImport>
 			<allowHumanBios>true</allowHumanBios>
 			<immuneToAge>true</immuneToAge>
 			<forcedRaceTraitEntries>
+					<li>
+						<defName>Psychopath</defName>
+						<chance>999</chance>
+					</li>
+					<li MayRequire="test.mostlytraits">
+						<defName MayRequire="test.mostlytraits">mostlytrait_bloodthirsty</defName>
+						<chance MayRequire="test.mostlytraits">999</chance>
+					</li>
 					<li>
 						<defName>DrugDesire</defName>
 						<degree>2</degree>
 						<chance>20</chance>
 					</li>
 					<li>
-						<defName>Bloodlust</defName>
-						<chance>999</chance>
-					</li>
-					<li>
-						<defName>Psychopath</defName>
-						<chance>999</chance>
-					</li>
-					<li>
 						<defName>Cannibal</defName>
-						<chance>1</chance>
+						<chance>0.33</chance>
 					</li>
 					<li>
 						<defName>Abrasive</defName>
@@ -51,6 +51,28 @@
 						<defName>Pyromaniac</defName>
 						<chance>5</chance>
 					</li>
+					<!--
+					<li MayRequire="ladycookie.vteexpansion">
+						<defName MayRequire="ladycookie.vteexpansion">LCK_Soldier</defName>
+						<chance MayRequire="ladycookie.vteexpansion">75</chance>
+					</li>
+					-->
+					<li MayRequire="vanillaexpanded.vanillatraitsexpanded">
+						<defName MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Vengeful</defName>
+						<chance MayRequire="vanillaexpanded.vanillatraitsexpanded">45</chance>
+					</li>
+					<li MayRequire="nilchei.personalitytrait">
+						<defName MayRequire="nilchei.personalitytrait">Vehement</defName>
+						<chance MayRequire="nilchei.personalitytrait">99</chance>
+					</li>
+					<li MayRequire="test.mostlytraits">
+						<defName MayRequire="test.mostlytraits">mostlytraits_gangster</defName>
+						<chance MayRequire="test.mostlytraits">5</chance>
+					</li>
+					<li>
+						<defName>Bloodlust</defName>
+						<chance>999</chance>
+					</li>
 			</forcedRaceTraitEntries>
 			<disallowedTraits>
 				<li>
@@ -58,6 +80,75 @@
 				</li>
 				<li>
 					<defName>Wimp</defName>
+				</li>
+				<li>
+					<defName>Nerves</defName>
+				</li>
+				<li MayRequire="vanillaexpanded.vanillatraitsexpanded">
+					<defName MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Coward</defName>
+				</li>
+				<li MayRequire="vanillaexpanded.vanillatraitsexpanded">
+					<defName MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Clumsy</defName>
+				</li>
+				<li MayRequire="vanillaexpanded.vanillatraitsexpanded">
+					<defName MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Submissive</defName>
+				</li>
+				<li MayRequire="vanillaexpanded.vanillatraitsexpanded">
+					<defName MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Academian</defName>
+				</li>
+				<li MayRequire="vanillaexpanded.vanillatraitsexpanded">
+					<defName MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Dunce</defName>
+				</li>
+				<li MayRequire="vanillaexpanded.vanillatraitsexpanded">
+					<defName MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Squeamish</defName>
+				</li>
+				<li MayRequire="vanillaexpanded.vanillatraitsexpanded">
+					<defName MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Anxious</defName>
+				</li>
+				<li MayRequire="vanillaexpanded.vanillatraitsexpanded">
+					<defName MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Prude</defName>
+				</li>
+				<li MayRequire="vanillaexpanded.vanillatraitsexpanded">
+					<defName MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Prodigy</defName>
+				</li>
+				<li MayRequire="vanillaexpanded.vanillatraitsexpanded">
+					<defName MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_ThinSkinned</defName>
+				</li>
+				<li MayRequire="ladycookie.vteexpansion">
+					<defName MayRequire="ladycookie.vteexpansion">VTE_Tycoon</defName>
+				</li>
+				<li MayRequire="doomsday343.traitsplus">
+					<defName MayRequire="doomsday343.traitsplus">NotTough</defName>
+				</li>
+				<li MayRequire="doomsday343.traitsplus">
+					<defName MayRequire="doomsday343.traitsplus">hunger</defName>
+				</li>
+				<li MayRequire="doomsday343.traitsplus">
+					<defName MayRequire="doomsday343.traitsplus">figter</defName> <!-- Sadly, you can't exclude just one Degree of a Staged Trait -->
+				</li>
+				<li MayRequire="nilchei.personalitytrait">
+					<defName MayRequire="nilchei.personalitytrait">Tsundere</defName>
+				</li>
+				<li MayRequire="test.mostlytraits">
+					<defName MayRequire="test.mostlytraits">MassOffset</defName>
+				</li>
+				<li MayRequire="test.mostlytraits">
+					<defName MayRequire="test.mostlytraits">weird_neutral05</defName>
+				</li>
+				<li MayRequire="test.mostlytraits">
+					<defName MayRequire="test.mostlytraits">table_enjoyer</defName>
+				</li>
+				<li MayRequire="test.mostlytraits">
+					<defName MayRequire="test.mostlytraits">mostlytraits_combat_medic</defName>
+				</li>
+				<li MayRequire="test.mostlytraits">
+					<defName MayRequire="test.mostlytraits">mostlytraits_surgeon</defName>
+				</li>
+				<li MayRequire="test.mostlytraits">
+					<defName MayRequire="test.mostlytraits">mostlytraits_shaky</defName>
+				</li>
+				<li MayRequire="test.mostlytraits">
+					<defName MayRequire="test.mostlytraits">mostlytraits_empathetic</defName>
 				</li>
 			</disallowedTraits>
 			
@@ -189,7 +280,6 @@
 				<li>DeadMansApparel</li>			
 				<li>ExecutedPrisoner</li>		
 				<li>HumanLeatherApparelSad</li>
-				<li>Incestuous</li>
 				<li>KnowButcheredHumanlikeCorpse</li>
 				<li>KnowColonistOrganHarvested</li>
 				<li>KnowGuestOrganHarvested</li>	
@@ -202,6 +292,20 @@
 				<li>SoldPrisoner</li>
 				<li>WitnessedDeathNonAlly</li>
 				<li>WitnessedDeathAlly</li>
+				<li>SharedBed</li>
+				<li>ColonistLeftUnburied</li>
+				<li>Affair</li>
+				<li>Disfigured</li>
+				<li>Ugly</li>
+				<li>CreepyBreathing</li>
+				<li>Man</li>
+				<li>Woman</li>
+				<li>BodyPuristDisgust</li>
+				<li>KilledColonist</li>
+				<li>KilledColonyAnimal</li>
+				<li>NotBondedAnimalMaster</li>
+				<li>Pain</li>
+				<li>NeedRoomSize</li>
 				<li MayRequire="morishep.tarojun.onioftherim">AteOniStew</li>
 				<li MayRequire="morishep.tarojun.onioftherim">AteDemonBreathBerriesAsIngredient</li>
 				<li MayRequire="VanillaExpanded.VMemesE">VME_AteInsectMeat_Sacrilegious</li>
@@ -446,17 +550,19 @@
 				<li MayRequire="Ludeon.Rimworld.Biotech">(8,0)</li>
 				<li MayRequire="Ludeon.Rimworld.Biotech">(12.5,0)</li>
 				<li>(14,0)</li>
-				<li>(14.1,10)</li>
-				<li>(16,100)</li>
-				<li>(18,133)</li>
-				<li>(21,110)</li>
+				<li>(14.1,0)</li>
+				<li>(16,0)</li>
+				<li>(18,3)</li>
+				<li>(21,210)</li>
+				<li>(25,210)</li>
+				<li>(30,190)</li>
 				<li>(50,10)</li>
-				<li>(60,1)</li>
-				<li>(70,1)</li>
+				<li>(60,0.1)</li>
+				<li>(70,0.1)</li>
 				<li>(80,0.1)</li>
 				<li>(90,0.1)</li>
 				<li>(100,0.01)</li>
-				<li>(200,0.01)</li>
+				<li>(200,0.001)</li>
 				<li>(300,0)</li>
 			</points>
 		  </ageGenerationCurve>
@@ -476,8 +582,9 @@
 		  <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
 		  <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
 		</recipes>
+		<tradeTags Inherit="False"></tradeTags>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 				<hediffname>TSP_CJ_SCR_1788_Bonus</hediffname>
 			</li>
 		</comps>
@@ -485,7 +592,7 @@
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
 					<li>SCR_CKeter</li>
-					<li>SCR_DKeneq</li>
+					<li>SCR_DEkhi</li>
 					<li>SCR_RNotice</li>
 				</classRating>
 				<containmentTier>2</containmentTier>

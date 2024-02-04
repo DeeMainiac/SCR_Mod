@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<ThingDef ParentName="SCR_SCP_Base">
+	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP2371JP</defName>
 		<label>SCP-2371-JP</label>
 		<description>SCP-2371-JP is a soybean plant that transforms into a cow-like creature upon germination. Its vegan-friendly "meat" tastes exactly like beef.</description>
@@ -43,7 +43,7 @@
 		  <foodType>VegetarianRoughAnimal, Kibble</foodType>
 		  <leatherDef>Hay</leatherDef>
 		  <wildness>0</wildness>
-		  <roamMtbDays>2</roamMtbDays>
+		  <roamMtbDays>1</roamMtbDays>
 		  <trainability>None</trainability>
 		  <meatLabel>SCP-2371-JP "beef"</meatLabel>
 		  <specificMeatDef>TSP_SCR_WEF_KlausCompost</specificMeatDef>
@@ -56,11 +56,11 @@
 			</li>
 			<li>
 			  <def>AnimalJuvenile</def>
-			  <minAge>0.0001</minAge>
+			  <minAge>0.001</minAge>
 			</li>
 			<li>
 			  <def>AnimalAdult</def>
-			  <minAge>0.0002</minAge>
+			  <minAge>0.002</minAge>
 			  <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
 			  <soundDeath>Pawn_Muffalo_Death</soundDeath>
 			  <soundCall>Pawn_Muffalo_Call</soundCall>
@@ -73,7 +73,7 @@
 		</race>
 		<tradeTags>
 		  <li>AnimalFarm</li>
-		  <li>SCP</li>
+		  <li>AnimalExotic</li>
 		</tradeTags>
 		<tools>
 		  <li>

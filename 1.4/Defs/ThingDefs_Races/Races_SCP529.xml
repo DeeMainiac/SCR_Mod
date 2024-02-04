@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="SCR_SCP_Base">
+  <ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP529R</defName>
     <label>SCP-529</label>
-    <description>SCP-529 is a grey tabby cat without the rear half of their body.</description>
+    <description>SCP-529 is a grey tabby cat without the rear half of its body.</description>
 	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 
@@ -37,7 +37,7 @@
 	  <useMeatFrom>Cat</useMeatFrom>
       <wildness>0</wildness>
       <petness>1</petness>
-      <trainability>None</trainability>
+      <trainability>Intermediate</trainability>
       <nuzzleMtbHours>4</nuzzleMtbHours>
       <gestationPeriodDays>10</gestationPeriodDays>
       <nameOnTameChance>5</nameOnTameChance>
@@ -90,7 +90,6 @@
     <tradeTags>
       <li>AnimalCommon</li>
       <li>AnimalPet</li>
-	  <li>SCP</li>
     </tradeTags>
     <tools>
       <li>

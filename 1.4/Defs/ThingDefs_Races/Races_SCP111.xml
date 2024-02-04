@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<ThingDef ParentName="SCR_SCP_Base">
+	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP111R</defName>
 		<label>SCP-111</label>
 		<description>SCP-111 is one of six different colorful snail-like creatures that occasionally exhale fire as a defense mechanism.</description>
@@ -79,7 +79,6 @@
 		  <li>AnimalCommon</li>
 		  <li>AnimalFarm</li>
 		  <li>AnimalExotic</li>
-		  <li>SCP</li>
 		</tradeTags>
 		<tools>
 		  <li>
@@ -102,8 +101,8 @@
 			<eggCountRange>1~2</eggCountRange>
 		  </li>
 		</comps>
-		
 	  </ThingDef>
+	  
 	  <PawnKindDef Name="SCR_SCP111R" ParentName="TSP_SCP_Creature_PawnkindDef">
 		<defName>SCR_SCP111R</defName>
 		<label>SCP-111</label>

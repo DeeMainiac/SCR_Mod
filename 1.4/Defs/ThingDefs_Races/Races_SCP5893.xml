@@ -29,17 +29,17 @@
 		</statBases>
 		<comps>
 		<li Class="CompProperties_HeatPusher">
-        <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>20</heatPerSecond>
-        <heatPushMinTemperature>-1000</heatPushMinTemperature>
-		<heatPushMaxTemperature>38</heatPushMaxTemperature>
+			<compClass>CompHeatPusherPowered</compClass>
+			<heatPerSecond>20</heatPerSecond>
+			<heatPushMinTemperature>-1000</heatPushMinTemperature>
+			<heatPushMaxTemperature>38</heatPushMaxTemperature>
       </li>
       <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>SCR_SCP5893Egg</eggFertilizedDef>
-        <eggFertilizationCountMax>4</eggFertilizationCountMax>
-        <eggLayIntervalDays>20</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>1~4</eggCountRange>
+			<eggFertilizedDef>SCR_SCP5893Egg</eggFertilizedDef>
+			<eggFertilizationCountMax>4</eggFertilizationCountMax>
+			<eggLayIntervalDays>20</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>1~4</eggCountRange>
       </li>
     </comps>
 		<race>
@@ -50,13 +50,12 @@
 			<baseBodySize>1.2</baseBodySize>
 			<baseHungerRate>0.325</baseHungerRate>
 			<baseHealthScale>1.9</baseHealthScale>
-			<foodType>CarnivoreAnimal, VegetarianRoughAnimal, OvivoreAnimal, Kibble</foodType>
-			<wildness>.8</wildness>
+			<foodType>Meat, CarnivoreAnimal, VegetableOrFruit, VegetarianRoughAnimal, OvivoreAnimal, Fluid, Meal, Processed, Kibble</foodType>
+			<wildness>0.8</wildness>
 			<roamMtbDays>2</roamMtbDays>
-			<specificMeatDef MayRequire="biomesteam.biomescore">BMT_GastropodMeat</specificMeatDef>
 			<trainability>Advanced</trainability>
-			<leatherDef>Leather_Light</leatherDef>
-			<manhunterOnTameFailChance>.7</manhunterOnTameFailChance>
+			<leatherDef>Leather_Lizard</leatherDef>
+			<manhunterOnTameFailChance>0.7</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<wildBiomes>
 				<AridShrubland>.2</AridShrubland>
@@ -103,7 +102,7 @@
 		<tradeTags>
 			<li>AnimalRare</li>
 			<li>AnimalFighter</li>
-			<li>SCP</li>
+			<li>AnimalExotic</li>
 		</tradeTags>
 		<tools>
 			<li>
@@ -130,13 +129,13 @@
 		
 
 	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
 		<defName>SCR_SCP5893R</defName>
 		<label>SCP-5893</label>
 		<race>SCR_SCP5893R</race>
 		<combatPower>100</combatPower>
 		<wildGroupSize>4~8</wildGroupSize>
-		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<canArriveManhunter>true</canArriveManhunter>
 		<lifeStages>
 			<li>

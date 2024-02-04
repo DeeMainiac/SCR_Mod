@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseGun">
 		<defName>SCR_SCP095UA</defName>
 		<label>SCP-095-UA</label>
-		<description>SCP-095-UA is an incendiary rocket launcher with an extremely, unnaturally, accurate projectile. It has strange, likely sarkic symbols and blood on the inside of the barrel.</description>
+		<description>SCP-095-UA is an incendiary rocket launcher with an extremely, unnaturally, accurate projectile. It cannot miss. It has strange, likely Sarkic symbols and blood on the inside of the barrel.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -31,36 +31,41 @@
 			<li>SCP</li>
 		</tradeTags>
 		<statBases>
-			<Mass>5</Mass>
-			<MarketValue>3000</MarketValue>
-			  <AccuracyTouch>1</AccuracyTouch>
-			  <AccuracyShort>2</AccuracyShort>
-			  <AccuracyMedium>2</AccuracyMedium>
-			  <AccuracyLong>2</AccuracyLong>
-			  <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+			<Mass>10</Mass>
+			<MarketValue>5000</MarketValue>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>2</AccuracyShort>
+			<AccuracyMedium>2</AccuracyMedium>
+			<AccuracyLong>2</AccuracyLong>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
 		</statBases>
+		<equippedStatOffsets> 
+			<ShootingAccuracyPawn>200</ShootingAccuracyPawn>
+		</equippedStatOffsets>
 			<thingSetMakerTags>
 			  <li>RewardStandardLowFreq</li>
 			</thingSetMakerTags>
 	        <smeltable>false</smeltable>
 		<verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>TSP_SCR_Bullet_IncendiaryLauncher</defaultProjectile>
-        <warmupTime>3</warmupTime>
-		<forcedMissRadius>0.001</forcedMissRadius>
-        <range>100.9</range>
-        <soundCast>Shot_IncendiaryLauncher</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>20</muzzleFlashScale>
-        <stopBurstWithoutLos>false</stopBurstWithoutLos>
-		<requireLineOfSight>false</requireLineOfSight>
-		<targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-      </li>
-    </verbs>
+			  <li>
+					<verbClass>Verb_Shoot</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>TSP_SCR_Bullet_IncendiaryLauncher</defaultProjectile>
+					<warmupTime>3.4</warmupTime>
+					<forcedMissRadius>0.001</forcedMissRadius>
+					<range>100.9</range>
+					<soundCast>Shot_IncendiaryLauncher</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>20</muzzleFlashScale>
+					<stopBurstWithoutLos>false</stopBurstWithoutLos>
+					<requireLineOfSight>false</requireLineOfSight>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+						<canTargetBuildings>true</canTargetBuildings>
+						<neverTargetIncapacitated>true</neverTargetIncapacitated>
+					</targetParams>
+			  </li>
+		</verbs>
 	    <tools>
       <li>
         <label>stock</label>
@@ -68,7 +73,7 @@
           <li>Blunt</li>
         </capacities>
         <power>9</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>1</cooldownTime>
       </li>
       <li>
         <label>barrel</label>
@@ -77,7 +82,7 @@
           <li>Poke</li>
         </capacities>
         <power>9</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>1</cooldownTime>
       </li>
     </tools>
 	    <weaponTags Inherit="False">

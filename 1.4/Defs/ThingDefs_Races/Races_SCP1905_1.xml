@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SCR_SCP_Base">
+	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP19051R</defName>
 		<label>SCP-1905-1</label>
-		<description>SCP-1905-1 is a Plasteel dinosaur (usually a Triceratops or a Tyrannosaurus Rex) summoned by SCP-1905.</description>
+		<description>SCP-1905-1 is a Plasteel dinosaur summoned by SCP-1905.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -13,7 +13,7 @@
 					<li>SCR_RNotice</li>
 				</classRating>
 				<containmentTier>2</containmentTier>
-				<hatesRoofs>false</hatesRoofs>
+				<hatesRoofs>true</hatesRoofs>
 			</li>
 		</modExtensions>
 		<statBases>
@@ -22,8 +22,8 @@
 			<ComfyTemperatureMin>-1000</ComfyTemperatureMin>
 			<ComfyTemperatureMax>1000</ComfyTemperatureMax>
 			<FilthRate>0</FilthRate>
-			<MeatAmount>30</MeatAmount>
-			<LeatherAmount>10</LeatherAmount>
+			<MeatAmount>15</MeatAmount> <!-- Doubled by Body Size, thirty and ten Plasteel pieces -->
+			<LeatherAmount>5</LeatherAmount>
 		</statBases>
 		<!--
 		<butcherProducts>
@@ -45,16 +45,18 @@
 			<wildness>1</wildness>
 			<petness>0</petness>
 			<trainability>None</trainability>
-			<lifeExpectancy>30</lifeExpectancy>
+			<lifeExpectancy>1</lifeExpectancy>
 			<manhunterOnTameFailChance>100</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>100</manhunterOnDamageChance>
 			  <lifeStageAges Inherit="False">
 				<li>
 				  <def>MechanoidFullyFormed</def>
 				  <minAge>0</minAge>
+				  <!--
 				  <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
 				  <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
 				  <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				  -->
 				</li>
 			  </lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
