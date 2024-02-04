@@ -98,9 +98,9 @@
       <li>Map_RaidBeacon</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP610_Local</workerClass>
-    <baseChance>3</baseChance>
+    <baseChance>1.3</baseChance>
     <category>ThreatBig</category>
-    <pointsScaleable>false</pointsScaleable>
+    <pointsScaleable>true</pointsScaleable>
     <tale>ManhunterPack</tale>
 	<minRefireDays>20</minRefireDays>
   </IncidentDef>
@@ -114,8 +114,8 @@
       <li>Map_Misc</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP848</workerClass>
-    <baseChance>.5</baseChance>	
-	<minRefireDays>30</minRefireDays>
+    <baseChance>1</baseChance>	
+	<minRefireDays>3</minRefireDays>
   </IncidentDef>
 
   <IncidentDef>
@@ -180,7 +180,7 @@
       <li>Map_RaidBeacon</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP131</workerClass>
-    <baseChance>.5</baseChance>
+    <baseChance>0.5</baseChance>
   </IncidentDef>
 
   <IncidentDef>

@@ -5,6 +5,7 @@
 		<defName>SCR_CIBase</defName>
 		<race>Human</race>
 		<label>insurgent</label>
+		<labelPlural>insurgents</labelPlural>
 		<defaultFactionType>SCR_CI</defaultFactionType>
 		<chemicalAddictionChance>0</chemicalAddictionChance>
 		<invNutrition>2</invNutrition>
@@ -22,19 +23,35 @@
 			<li>IndustrialAdvanced</li>
 			<li>IndustrialMilitaryBasic</li>
 		</apparelTags>
-		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<!--
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>Sadist</li>
+			  <li>Raider</li>
+			  <li>Scientist</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		-->
+		<apparelAllowHeadgearChance>0.634</apparelAllowHeadgearChance>
 		<techHediffsChance>0.35</techHediffsChance>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="SCR_CIBase">
 		<defName>SCR_SCP30331_Mike</defName>
 		<defaultFactionType>SCR_CI</defaultFactionType>
-		<combatPower>20</combatPower>
+		<label>Mike slave</label>
+		<labelPlural>Mike slaves</labelPlural>
+		<combatPower>10</combatPower>
 		<apparelMoney>400~700</apparelMoney>
 		<weaponMoney>500~700</weaponMoney>
 		<weaponTags>
 		 <li>MedievalMeleeDecent</li>
 		 <li>MedievalMeleeAdvanced</li>
+		 <li>SpearMen</li>
+		 <li>Spear</li>
+		 <li>Lance</li>
 		</weaponTags>
 		<techHediffsMoney>700~1200</techHediffsMoney>
 		<techHediffsChance>100</techHediffsChance>
@@ -62,7 +79,8 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<initialResistanceRange>19~29</initialResistanceRange>
+		<initialResistanceRange>1~2</initialResistanceRange>
+		<initialWillRange>0.01~1.5</initialWillRange>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="SCR_CIBase">
@@ -102,5 +120,6 @@
 		  </subOptionsChooseOne>
 		</inventoryOptions>
 		<initialResistanceRange>19~29</initialResistanceRange>
+		<initialWillRange>11~13</initialWillRange>
 	</PawnKindDef>
 </Defs>

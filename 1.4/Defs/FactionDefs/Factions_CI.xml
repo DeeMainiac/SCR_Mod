@@ -255,13 +255,25 @@
 			<categories>
 			  <li>Sadist</li>
 			</categories>
-			<commonality>0.25</commonality>
+			<commonality>0.55</commonality>
 		  </li>
-				<li>
+		  <li>
 			<categories>
 			  <li>Pirate</li>
 			</categories>
 			<commonality>0.25</commonality>
+		  </li>
+		  <li>
+			<categories>
+			  <li>Scientist</li>
+			</categories>
+			<commonality>0.25</commonality>
+		  </li>
+		  <li>
+			<categories>
+			  <li>Sadist</li>
+			</categories>
+			<commonality>0.55</commonality>
 		  </li>
 		</backstoryFilters>
 		 <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>

@@ -28,15 +28,15 @@
 	<FilthRate>18</FilthRate>
     </statBases>
 	    <comps>
-      <li Class="CompProperties_EggLayer">
-        <eggUnfertilizedDef>SCR_SCP3199Egg</eggUnfertilizedDef>
-        <eggFertilizedDef>SCR_SCP3199Egg</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>1.5</eggLayIntervalDays>
-        <eggCountRange>1</eggCountRange>
-		<eggLayFemaleOnly>false</eggLayFemaleOnly>
-      </li>
-	  <li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li> <!-- It refutes humanity by its SHEER SPEED. This Comp causes it to be unable to be slowed down, regardless of the terrain. -->
+			  <li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>SCR_SCP3199Egg</eggUnfertilizedDef>
+				<eggFertilizedDef>SCR_SCP3199Egg</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>1.5</eggLayIntervalDays>
+				<eggCountRange>1</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
+			  </li>
+			  <li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li> <!-- It refutes humanity by its SHEER SPEED. This Comp causes it to be unable to be slowed down, regardless of the terrain. -->
     </comps>
 		<tradeTags>
 			<li>AnimalRare</li>
@@ -54,6 +54,7 @@
       <baseBodySize>2</baseBodySize>
       <baseHungerRate>0.4</baseHungerRate>
       <baseHealthScale>1.8</baseHealthScale>
+	  <maxPreyBodySize>5</maxPreyBodySize>
       <foodType>CarnivoreAnimalStrict, Meat, Kibble</foodType>
       <leatherDef>Leather_Patch</leatherDef>
 	  <specificMeatDef>SCR_SCP3199Meat</specificMeatDef>
@@ -69,6 +70,10 @@
         <li>
           <def>AnimalBaby</def>
           <minAge>0</minAge>
+          <soundWounded>Pawn_Wildboar_Wounded</soundWounded>
+          <soundDeath>Pawn_Wildboar_Death</soundDeath>
+          <soundCall>Pawn_Wildboar_Wounded</soundCall>
+          <soundAngry>Pawn_Wildboar_Angry</soundAngry>
         </li>
         <li>
           <def>AnimalAdult</def>
@@ -145,7 +150,8 @@
         <label>acidic bite</label>
         <capacities>
           <li>ToxicBite</li>
-		  <li MayRequire="ludeon.rimworld.biotech">AcidBurn</li>
+		  <li>TSP_SCR_SCP3199_Acid</li>
+		  <!-- <li MayRequire="ludeon.rimworld.biotech">AcidBurn</li> -->
         </capacities>
         <power>14</power>
         <cooldownTime>2.66</cooldownTime>

@@ -25,6 +25,7 @@
 		<gender>Male</gender>
 	</HeadTypeDef>
 	
+	<!--
 	<HeadTypeDef ParentName="AverageBase">
 		<defName>CJ_Male_Average_Schizo</defName>
 		<graphicPath>Things/Psycho/Heads/PicsArt_11-07-03.15.02</graphicPath>
@@ -36,6 +37,7 @@
 		<graphicPath>Things/Psycho/Heads/PicsArt_11-07-03.15.02</graphicPath>
 		<gender>Female</gender>
 	</HeadTypeDef>
+	-->
 
 	<HeadTypeDef ParentName="AverageBase">
 		<defName>CJ_Average_Schizo</defName>

@@ -5,14 +5,39 @@
 		<defName>TSP_CJ_SCR_1788_Flavor_Processing</defName>
 		<!-- Code derived entirely, and courtesy of, the Oni Mod by Lucky, Mori Ginto, and Tarojun -->
 		<hediffGivers>
+			<!--
 			<li Class="HediffGiver_Birthday">
 				<hediff>TSP_CJ_SCR_1788_Bonus</hediff>
 				<ageFractionChanceCurve>
 					<points>
-						<li>(0, 1)</li> <!-- Always -->
+						<li>(0, 1)</li>
 						<li>(1, 1)</li>
 					</points>
 				</ageFractionChanceCurve>
+			</li>
+			-->
+		
+			<!-- Special -->
+			<li Class="HediffGiver_RandomAgeCurved">
+				<hediff>TSP_CJ_SCR_1788_Bonus</hediff>
+				<!--
+				<partsToAffect>
+					<li>Torso</li>
+				</partsToAffect>
+				-->
+				<allowOnLodgers>true</allowOnLodgers>
+				<allowOnQuestRewardPawns>true</allowOnQuestRewardPawns>
+				<allowOnQuestReservedPawns>true</allowOnQuestReservedPawns>
+				<allowOnBeggars>true</allowOnBeggars>
+				<minPlayerPopulation>0</minPlayerPopulation>
+				<ageFractionMtbDaysCurve>
+					<points>
+						<li>(0, 0.0001)</li>
+						<li>(0.5, 0.0001)</li>
+						<li>(1, 0.0001)</li>
+						<li>(2, 0.0001)</li>
+					</points>
+				</ageFractionMtbDaysCurve>
 			</li>
 		</hediffGivers>
 	</HediffGiverSetDef>

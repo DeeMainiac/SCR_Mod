@@ -23,7 +23,11 @@
 				<bodyClock MayRequire="mlie.xndnocturnalanimals">Nocturnal</bodyClock>
 			</li>
 		</modExtensions>
-		<comps></comps>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Draftable" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<makeNonFleeingToo MayRequire="oskarpotocki.vanillafactionsexpanded.core">true</makeNonFleeingToo>
+			</li>
+		</comps>
   </ThingDef>
   
 	<PawnKindDef Name="TSP_SCP_Creature_PawnkindDef" ParentName="AnimalKindBase" Abstract="True">

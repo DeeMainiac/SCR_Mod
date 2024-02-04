@@ -11,10 +11,11 @@
 	<label>SCP-1788-1 instance</label>
 	<labelPlural>SCP-1788-1 instances</labelPlural>
     <race>CJ_Psycho</race>
-    <!-- <defaultFactionType>AncientsHostile</defaultFactionType> -->
+    <defaultFactionType>AncientsHostile</defaultFactionType>
     <chemicalAddictionChance>0.5</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.0225</backstoryCryptosleepCommonality>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<!--
     <backstoryFiltersOverride>
       <li>
         <categories>
@@ -24,6 +25,7 @@
         </categories>
       </li>
     </backstoryFiltersOverride>
+	-->
     <invNutrition>2.55</invNutrition>
     <biocodeWeaponChance>0.1</biocodeWeaponChance>
 	<skills>
@@ -45,15 +47,15 @@
     <defName>CJ_PsychoDrifter</defName>
     <label>SCP-1788-1 drifter</label>
     <combatPower>45</combatPower>
-    <invNutrition>0</invNutrition>
+    <invNutrition>1</invNutrition>
     <gearHealthRange>0.2~0.6</gearHealthRange>
     <itemQuality>Poor</itemQuality>
-    <apparelMoney>90~280</apparelMoney>
+    <apparelMoney>250~320</apparelMoney>
     <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
     <apparelTags>
       <li>IndustrialBasic</li>
     </apparelTags>
-    <weaponMoney>60~200</weaponMoney>
+    <weaponMoney>80~200</weaponMoney>
     <weaponTags>
       <li>MedievalMeleeBasic</li>
       <li>NeolithicMeleeBasic</li>

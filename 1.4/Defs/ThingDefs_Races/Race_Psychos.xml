@@ -158,8 +158,10 @@
 					<li>CJ_Female_Narrow_Wide</li>
 					<li>CJ_Male_Average_Pointy</li>
 					<li>CJ_Male_Narrow_Wide</li>
+					<!--
 					<li>CJ_Male_Average_Schizo</li>
 					<li>CJ_Female_Average_Schizo</li>
+					-->
 					<li>CJ_Average_Schizo</li>
 				</headTypes>
 				
