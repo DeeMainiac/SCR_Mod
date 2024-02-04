@@ -33,16 +33,16 @@
 		<li>Ambient_Wind_Desolate</li>
 		<li MayRequire="regrowth.botr.core">RG_Ambient_Sandstorm</li>
     </soundsAmbient>
-    <diseaseMtbDays>115</diseaseMtbDays>
+    <diseaseMtbDays>33</diseaseMtbDays>
     <diseases>
 	 <li>
-		<diseaseInc>SCR_SCP610Infection</diseaseInc>
-		<commonality>0.01</commonality>
+		<diseaseInc>SCR_Disease_SCP610</diseaseInc>
+		<commonality>0.001</commonality>
 		<!-- As this has no cure, it's unfair to throw it commonly, and besides, the creatures always givE it to you -->
       </li>
       <li>
         <diseaseInc>Disease_Plague</diseaseInc>
-        <commonality>200</commonality>
+        <commonality>100</commonality>
       </li>
       <li>
         <diseaseInc>Disease_GutWorms</diseaseInc>
@@ -50,11 +50,15 @@
       </li>
 	  <li>
         <diseaseInc>Disease_AnimalFlu</diseaseInc>
-        <commonality>200</commonality>
+        <commonality>150</commonality>
       </li>
       <li>
         <diseaseInc>Disease_AnimalPlague</diseaseInc>
-        <commonality>200</commonality>
+        <commonality>150</commonality>
+      </li>
+      <li>
+        <diseaseInc>SCR_Incident_SCP610Form</diseaseInc>
+        <commonality>300</commonality>
       </li>
     </diseases>
     <terrainsByFertility>
@@ -126,7 +130,7 @@
 		<RN_PlantClover MayRequire="rimnature.velcroboy333">0.01</RN_PlantClover>
 		<MorrowRim_AshGrass MayRequire="sirmashedpotato.morrowrim">0.1</MorrowRim_AshGrass>
 		<MorrowRim_SmallMushrooms MayRequire="sirmashedpotato.morrowrim">2</MorrowRim_SmallMushrooms>
-		<BMT_ExplodingAngel MayRequire="biomesteam.biomesprehistoric">0.0001</BMT_ExplodingAngel>
+		<BMT_ExplodingAngel MayRequire="biomesteam.biomescaverns">0.00001</BMT_ExplodingAngel>
 		<TreeDead MayRequire="mlie.advancedbiomes">1</TreeDead>
 		<PoisonPlantDandelion MayRequire="mlie.advancedbiomes">0.01</PoisonPlantDandelion>
 		<PoisonRafflesia MayRequire="mlie.advancedbiomes">0.5</PoisonRafflesia>
