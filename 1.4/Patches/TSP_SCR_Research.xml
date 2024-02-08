@@ -274,7 +274,7 @@
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]/researchViewX</xpath>
 			<value>
-				<researchViewX>2</researchViewX>
+				<researchViewX>1</researchViewX>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
