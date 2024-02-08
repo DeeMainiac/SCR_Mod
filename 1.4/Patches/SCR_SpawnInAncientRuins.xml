@@ -33,6 +33,7 @@
 			  <li>SCR_SCP1762R</li>
 			  <li>SCR_SCP762R</li>
 			  <li>SCR_SCP043R</li>
+			  <li>TSP_SCR_SCP091R</li>
 
         </value>
     </Operation>
@@ -87,6 +88,7 @@
 									<li>SCR_SCP1762R</li>
 									<li>SCR_SCP762R</li>
 									<li>SCR_SCP043R</li>
+									<li>TSP_SCR_SCP091R</li>
 								</thingDefs>
 							</filter>
 							<countRange>1</countRange>

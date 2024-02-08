@@ -246,13 +246,35 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]/tab</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]/tab</xpath>
+			<value>
+				<tab>SCR_SCP</tab>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]</xpath>
+			<value>
+				<tab>SCR_SCP</tab>
+			</value>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
 		<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]/researchViewX</xpath>
 			<value>
-				<researchViewX>1</researchViewX>
+				<researchViewX>2</researchViewX>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -295,7 +317,7 @@
 			<xpath>/Defs/ResearchProjectDef[defName="TranqTurret"]/prerequisites</xpath>
 			<value>
 				<prerequisites>
-					<!-- <li MayRequire="vanillaexpanded.vwenl">VWE_NonLethal</li> -->
+					<li MayRequire="vanillaexpanded.vwenl">VWE_NonLethal</li>
 					<li>GunTurrets</li>
 					<li>SCR_TranqGuns</li>
 				</prerequisites>
@@ -307,7 +329,7 @@
 			<xpath>/Defs/ResearchProjectDef[defName="TranqTurret"]</xpath>
 			<value>
 				<prerequisites>
-					<!-- <li MayRequire="vanillaexpanded.vwenl">VWE_NonLethal</li> -->
+					<li MayRequire="vanillaexpanded.vwenl">VWE_NonLethal</li>
 					<li>GunTurrets</li>
 					<li>SCR_TranqGuns</li>
 				</prerequisites>
@@ -332,10 +354,9 @@
 		<!-- If it DOES NOT, add this instead. -->
 		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
-			<xpath>/Defs/ResearchProjectDef[defName="TranqTurret"]</xpath>
+			<xpath>/Defs/ResearchProjectDef[defName="VWE_NonLethal"]</xpath>
 			<value>
 				<prerequisites>
-					<li>GunTurrets</li>
 					<li>SCR_TranqGuns</li>
 				</prerequisites>
 			</value>
@@ -401,6 +422,58 @@
 				<researchViewY>2</researchViewY>
 			</value>
 		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]/prerequisites</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]/prerequisites</xpath>
+			<value>
+				<prerequisites>
+					<li MayRequire="jecrell.doorsexpanded">ProjectHeron_PrisonDoors</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_RemoteDoors"]</xpath>
+			<value>
+				<prerequisites>
+					<li MayRequire="jecrell.doorsexpanded">ProjectHeron_PrisonDoors</li>
+				</prerequisites>
+			</value>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]/prerequisites</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]/prerequisites</xpath>
+			<value>
+				<prerequisites>
+					<li>ComplexFurniture</li>
+				</prerequisites>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="ProjectHeron_PrisonDoors"]</xpath>
+			<value>
+				<prerequisites>
+					<li>ComplexFurniture</li>
+				</prerequisites>
+			</value>
+		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 </Patch>

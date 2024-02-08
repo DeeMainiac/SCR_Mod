@@ -125,7 +125,7 @@
 		<label>SCP-610-A</label>
 		<race>SCR_SCP610A</race>
 		<combatPower>300</combatPower>
-		<ecoSystemWeight>0.001</ecoSystemWeight>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<lifeStages>
 			<!--
 		  <li>
@@ -177,7 +177,7 @@
 
 	<!-- monstrosity -->
 
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP610B</defName>
 		<label>SCP-610-B</label>
 		<description>SCP-610-B is a tall creature completely infested with SCP-610. It has a number of extra limbs and  organs, sharp teeth, and claws perfect for tearing into and infecting prey. It is stronger than the other variants. Its only weakness is fire.</description>
@@ -312,7 +312,7 @@
 		<label>SCP-610-B</label>
 		<race>SCR_SCP610B</race>
 		<combatPower>500</combatPower>
-		<ecoSystemWeight>0.01</ecoSystemWeight>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<lifeStages>
 			<!--
 		  <li>

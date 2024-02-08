@@ -68,6 +68,7 @@
     <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>SCR_WallTier1</li>
+	  <li MayRequire="jecrell.doorsexpanded">ProjectHeron_RemoteDoors</li>
     </prerequisites>
     <researchViewX>3</researchViewX>
     <researchViewY>3</researchViewY>

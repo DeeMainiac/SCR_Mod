@@ -5,7 +5,7 @@
     <defName>SCR_SCP1797A</defName>
     <label>SCP-1797-A</label>
     <description>SCP-1797-A is a cat that was formerly a tumor that cleaved off of a pawn infected with SCP-1797. It cannot reproduce on its own.</description>
-    		<modExtensions>
+    	<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
 					<li>SCR_CEuclid</li>
