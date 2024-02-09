@@ -3,7 +3,7 @@
 <Defs>
 	<ThingCategoryDef>
 		<defName>SCP</defName>
-		<label>SCPs</label>
+		<label>SCP's</label>
 		<parent>Root</parent>
 	</ThingCategoryDef>
 
