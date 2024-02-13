@@ -52,7 +52,7 @@
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>TSP_SCR_Bullet_IncendiaryLauncher</defaultProjectile>
 					<warmupTime>3.4</warmupTime>
-					<forcedMissRadius>0.001</forcedMissRadius>
+					<!-- <forcedMissRadius>0</forcedMissRadius> -->
 					<range>100.9</range>
 					<soundCast>Shot_IncendiaryLauncher</soundCast>
 					<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -101,7 +101,7 @@
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <speed>80</speed>
+      <speed>180</speed>
       <damageDef>Flame</damageDef>
       <!-- Use default damage from explosion def -->
       <explosionRadius>1.5</explosionRadius>

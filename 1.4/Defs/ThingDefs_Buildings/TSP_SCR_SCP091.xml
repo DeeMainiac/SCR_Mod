@@ -59,7 +59,7 @@
 				<classRating>
 					<li>SCR_CSafe</li>
 					<li>SCR_DDark</li>
-					<li>SCR_RCaution</li>
+					<li>SCR_RWarning</li>
 				</classRating>
 				<containmentTier>0</containmentTier>
 			</li>
