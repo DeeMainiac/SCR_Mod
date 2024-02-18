@@ -46,4 +46,4 @@ Programming + the rest of the art (not icons) by DeeMainiac
 
 Send a bug report ('issue') right here on GitHub via the issues tab
 
-@me on the RimWorld discord (DeeMainiac#2893) preferably in #mod-general 
+@me on discord (DeeMainiac#2893)
