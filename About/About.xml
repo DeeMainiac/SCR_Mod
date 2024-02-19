@@ -42,7 +42,7 @@
 	<incompatibleWith>
 		<li>Crackajack.CJPsychos</li>
 	</incompatibleWith>
-	<!-- =================================================================== -->
-	<description>Adds stuff from the SCP Foundation project. Requires Harmony.
-	Includes a storyteller, a biome, creatures, weapons, apparel, objects, factions, buildings, research projects, furniture, and containment procedures.</description>
+	<description>Adds stuff from the SCP Foundation project. Requires Harmony and Humanoid Alien Races.
+    
+	Includes a Storyteller, a Biome, creatures, a Pawn Race, Weapons, Apparel, objects, Factions, Buildings, Research Projects, furniture, and containment procedures!</description>
 </ModMetaData>
