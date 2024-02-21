@@ -476,4 +476,75 @@
 		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="DU_BlastDoor"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="DU_BlastDoor"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>SCR_BlastDoors</li>
+					<li>Autodoors</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="PrisonDoor"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="PrisonDoor"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+					<li MayRequire="jecrell.doorsexpanded">ProjectHeron_PrisonDoors</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="PrisonDoor"]</xpath>
+			<value>
+				<researchPrerequisites>
+					<li MayRequire="jecrell.doorsexpanded">ProjectHeron_PrisonDoors</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="AutoPrisonDoor"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="AutoPrisonDoor"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+					<li MayRequire="jecrell.doorsexpanded">ProjectHeron_PrisonDoors</li>
+					<li>Autodoors</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<!-- If it DOES NOT, add this instead. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="AutoPrisonDoor"]</xpath>
+			<value>
+				<researchPrerequisites>
+					<li MayRequire="jecrell.doorsexpanded">ProjectHeron_PrisonDoors</li>
+					<li>Autodoors</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
 </Patch>

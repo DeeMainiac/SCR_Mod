@@ -24,6 +24,10 @@
 	  <li>Heavy</li>
       <li>GrowSoil</li>
       <li>Diggable</li>
+	  <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PackableAshBlighted</li>
+	  <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_GrowSulphur</li>
+	  <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_GrowAsh</li>
+	  <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_AshCastle</li>
     </affordances>
     <generatedFilth>Filth_Dirt</generatedFilth>
     <fertility>0.8</fertility>
@@ -35,7 +39,7 @@
           <li>KickMaterialInEyes</li>
         </capacities>
         <hediff>ToxicBuildup</hediff>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>5</cooldownTime>
       </li>
     </tools>
     <tags>
@@ -67,6 +71,15 @@
 	  <li>Heavy</li>
       <li>GrowSoil</li>
       <li>Diggable</li>
+      <li>Light</li>
+      <li>Medium</li>
+	  <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+	  <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PackableAshBlighted</li>
+	  <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_GrowSulphur</li>
+	  <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_GrowAsh</li>
+	  <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_AshCastle</li>
     </affordances>
     <generatedFilth>Filth_Dirt</generatedFilth>
     <fertility>1</fertility>
@@ -78,7 +91,7 @@
           <li>KickMaterialInEyes</li>
         </capacities>
         <hediff>ToxicBuildup</hediff>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>4.5</cooldownTime>
       </li>
     </tools>
     <tags>
@@ -105,6 +118,12 @@
 		<renderPrecedence>394</renderPrecedence>
 		<driesTo>SCR_SCP610_FleshySoil</driesTo>
 		<traversedThought>TSP_SteppingOnTheSick_610</traversedThought>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<BeautyOutdoors>-1</BeautyOutdoors>
+			<Cleanliness>-5</Cleanliness>
+			<Flammability>0</Flammability>
+		</statBases>
 		<affordances>
 			<li>Bridgeable</li>
 		</affordances>
@@ -140,6 +159,12 @@
 		<driesTo>SCR_SCP610_FleshyGravel</driesTo>
 		<extraDeteriorationFactor>100</extraDeteriorationFactor>
 		<traversedThought>TSP_SteppingOnTheSick_610</traversedThought>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<BeautyOutdoors>-1</BeautyOutdoors>
+			<Cleanliness>-5</Cleanliness>
+			<Flammability>0</Flammability>
+		</statBases>
 		<affordances>
 			<li>Bridgeable</li>
 		</affordances>

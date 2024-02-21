@@ -64,7 +64,7 @@
       <li>
         <minSeverity>0.833</minSeverity>
         <label>cat-tastrophe</label>
-        <lifeThreatening>true</lifeThreatening>
+        <lifeThreatening>false</lifeThreatening>
         <vomitMtbDays>4.75</vomitMtbDays>
         <painOffset>0.25</painOffset>
         <capMods>

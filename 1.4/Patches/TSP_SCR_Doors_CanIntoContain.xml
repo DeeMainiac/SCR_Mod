@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="DU_BlastDoor"]</xpath>
+		<!-- If it does, append this code as a Mod Extension. -->
+		<match Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="DU_BlastDoor"]</xpath>
+			<value>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+					<containmentTier>2</containmentTier>
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="PH_MAG_DoorDouble"]</xpath>
+		<!-- If it does, append this code as a Mod Extension. -->
+		<match Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="PH_MAG_DoorDouble"]</xpath>
+			<value>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+					<containmentTier>3</containmentTier> <!-- Archotech means Archotech -->
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="PH_MAG_DoorTriple"]</xpath>
+		<!-- If it does, append this code as a Mod Extension. -->
+		<match Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="PH_MAG_DoorTriple"]</xpath>
+			<value>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+					<containmentTier>3</containmentTier> <!-- Archotech means Archotech -->
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="MAG_ArchotechDoor"]</xpath>
+		<!-- If it does, append this code as a Mod Extension. -->
+		<match Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="MAG_ArchotechDoor"]</xpath>
+			<value>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+					<containmentTier>3</containmentTier> <!-- Archotech means Archotech -->
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="MAG_ArchotechDoor"]</xpath>
+		<!-- If it does, append this code as a Mod Extension. -->
+		<match Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="MAG_ArchotechDoor"]</xpath>
+			<value>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+					<containmentTier>3</containmentTier> <!-- Archotech means Archotech -->
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="SZ_BanMen"]</xpath> <!-- Oriental dungeon door -->
+		<!-- If it does, append this code as a Mod Extension. -->
+		<match Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="SZ_BanMen"]</xpath>
+			<value>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+					<containmentTier>2</containmentTier>
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="ADH_C_Door"]</xpath>
+		<!-- If it does, append this code as a Mod Extension. -->
+		<match Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="ADH_C_Door"]</xpath>
+			<value>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+					<containmentTier>2</containmentTier>
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="PrisonDoor"]</xpath>
+		<!-- If it does, append this code as a Mod Extension. -->
+		<match Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="PrisonDoor"]</xpath>
+			<value>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+					<containmentTier>2</containmentTier>
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="PH_DoorJail"]</xpath>
+		<!-- If it does, append this code as a Mod Extension. -->
+		<match Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="PH_DoorJail"]</xpath>
+			<value>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+					<containmentTier>2</containmentTier>
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="AutoPrisonDoor"]</xpath>
+		<!-- If it does, append this code as a Mod Extension. -->
+		<match Class="PatchOperationAddModExtension">
+			<xpath>Defs/ThingDef[defName="AutoPrisonDoor"]</xpath>
+			<value>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+					<containmentTier>2</containmentTier>
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>
