@@ -71,10 +71,10 @@
   <ThingDef ParentName="OrganicProductBase">
     <defName>SCR_SCP3199Meat</defName>
     <label>SCP-3199 meat</label>
-    <description>Meat from a SCP-3199 instance. A mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the human taste.</description>
+    <description>Meat from a SCP-3199 instance. It is an anomalous mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the nasty taste.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
-	        <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Human</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
