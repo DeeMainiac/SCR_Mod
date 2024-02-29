@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
+<Defs>
   <ThingDef ParentName="OrganicProductBase">
     <defName>SCR_SCP1797Meat</defName>
     <label>SCP-1797-A meat</label>
@@ -75,10 +75,11 @@
     <graphicData>
       <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Human</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(212,183,162)</color>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-      <MarketValue>0.5</MarketValue> <!-- Can be used like meat in recipes -->
+      <MarketValue>0.35</MarketValue> <!-- Can be used like meat in recipes -->
       <Mass>0.045</Mass>
       <MaxHitPoints>60</MaxHitPoints>
       <Flammability>2</Flammability>

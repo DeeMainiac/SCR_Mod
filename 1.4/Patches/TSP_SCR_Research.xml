@@ -508,7 +508,7 @@
 			</value>
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
-		<match Class="PatchOperationAdd">
+		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="PrisonDoor"]</xpath>
 			<value>
@@ -516,13 +516,13 @@
 					<li MayRequire="jecrell.doorsexpanded">ProjectHeron_PrisonDoors</li>
 				</researchPrerequisites>
 			</value>
-		</match>
+		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="AutoPrisonDoor"]</xpath>
+		<xpath>/Defs/ThingDef[defName="AutoPrisonDoor"]/researchPrerequisites</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
@@ -535,7 +535,7 @@
 			</value>
 		</match>
 		<!-- If it DOES NOT, add this instead. -->
-		<match Class="PatchOperationAdd">
+		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="AutoPrisonDoor"]</xpath>
 			<value>
@@ -544,7 +544,7 @@
 					<li>Autodoors</li>
 				</researchPrerequisites>
 			</value>
-		</match>
+		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 </Patch>

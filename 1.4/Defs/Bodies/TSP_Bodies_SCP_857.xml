@@ -224,7 +224,7 @@
 					</parts>
 				</li>
 				<li>
-					<def>TSP_SCR_857_Enchantment</def>
+					<def>TSP_SCR_857_Enchantment_HasHeart</def>
 					<depth>Inside</depth>
 					<height>Middle</height>
 					<coverage>0</coverage>
@@ -265,7 +265,7 @@
 					</parts>
 				</li>
 				<li>
-					<def>TSP_SCR_857_Enchantment</def>
+					<def>TSP_SCR_857_Enchantment_HasFeet</def>
 					<depth>Inside</depth>
 					<height>Middle</height>
 					<coverage>0</coverage>
