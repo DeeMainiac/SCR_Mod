@@ -60,7 +60,7 @@
 				</li> -->
 
 				<li>
-					<weight>1.5</weight>
+					<weight>1.33</weight>
 					<thingSetMaker Class="ThingSetMaker_StackCount">
 						<fixedParams>
 							<filter>
@@ -104,7 +104,7 @@
 									<li>SCR_SCP578R</li>
 								</thingDefs>
 							</filter>
-							<countRange>15~30</countRange>
+							<countRange>140~275</countRange>
 						</fixedParams>
 					</thingSetMaker>
 				</li>
