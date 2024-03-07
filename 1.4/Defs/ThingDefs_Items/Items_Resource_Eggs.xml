@@ -10,7 +10,7 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
 			<tasteThought>AteRawFood</tasteThought>
-			<!-- to prevent pawns from being able to eat it lol -->
+			<!-- to prevent pawns from being able to eat it LOL -->
 			<foodType>OvivoreAnimal, AnimalProduct, Tree</foodType>
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>

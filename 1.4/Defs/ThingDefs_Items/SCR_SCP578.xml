@@ -21,7 +21,7 @@
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <drawSize>0.6</drawSize>
 		</graphicData>
-		<stackLimit>100</stackLimit>
+		<stackLimit>750</stackLimit>
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<statBases>
 		  <MaxHitPoints>50</MaxHitPoints>

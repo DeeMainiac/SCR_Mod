@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Patch>
   <Operation Class="PatchOperationSequence">
     <success>Always</success>
@@ -74,7 +75,7 @@
         <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[6]/options</xpath>
         <!-- Normal fights, drifters only (very rare) -->
         <value>
-          <CJ_PsychoDrifter>2</CJ_PsychoDrifter>
+          <CJ_PsychoDrifter>3.23</CJ_PsychoDrifter>
         </value>
       </li>
       <!-- ============================ Pirate Base li/7 ========================== -->
