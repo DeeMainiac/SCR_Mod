@@ -27,7 +27,7 @@
         <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[2]/options</xpath>
         <!-- Normal fights, melee-only -->
         <value>
-          <CJ_PsychoMercenary_Slasher>1</CJ_PsychoMercenary_Slasher>
+          <CJ_PsychoMercenary_Slasher>1.2</CJ_PsychoMercenary_Slasher>
         </value>
       </li>
       <!-- ============================ Pirate Base li/3 ========================== -->
@@ -55,7 +55,7 @@
           <CJ_PsychoGrenadier_EMP>0.05</CJ_PsychoGrenadier_EMP>
           <CJ_PsychoGrenadier_Smoke>0.05</CJ_PsychoGrenadier_Smoke>
           <CJ_PsychoGrenadier_Destructive>1</CJ_PsychoGrenadier_Destructive>
-          <CJ_PsychoMercenary_Gunner>0.1</CJ_PsychoMercenary_Gunner>
+          <CJ_PsychoMercenary_Gunner>1</CJ_PsychoMercenary_Gunner>
           <CJ_PsychoMercenary_Heavy>1</CJ_PsychoMercenary_Heavy>
           <CJ_PsychoMercenary_Elite>0.1</CJ_PsychoMercenary_Elite>
           <CJ_Psycho_PirateBoss>0.1</CJ_Psycho_PirateBoss>
@@ -66,7 +66,7 @@
         <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[5]/options</xpath>
         <!-- Normal fights, snipers only -->
         <value>
-          <CJ_PsychoMercenary_Sniper>2</CJ_PsychoMercenary_Sniper>
+          <CJ_PsychoMercenary_Sniper>3</CJ_PsychoMercenary_Sniper>
         </value>
       </li>
       <!-- ============================ Pirate Base li/6 ========================== -->
@@ -75,7 +75,7 @@
         <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[6]/options</xpath>
         <!-- Normal fights, drifters only (very rare) -->
         <value>
-          <CJ_PsychoDrifter>3.23</CJ_PsychoDrifter>
+          <CJ_PsychoDrifter>4</CJ_PsychoDrifter>
         </value>
       </li>
       <!-- ============================ Pirate Base li/7 ========================== -->
@@ -83,8 +83,8 @@
         <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[7]/options</xpath>
         <!-- Base defense, mainly ranged with melee mix-ins -->
         <value>
-			<CJ_PsychoDrifter>0.41</CJ_PsychoDrifter>
-			<CJ_PsychoPirate>0.41</CJ_PsychoPirate>
+			<CJ_PsychoDrifter>0.841</CJ_PsychoDrifter>
+			<CJ_PsychoPirate>0.8</CJ_PsychoPirate>
 			<CJ_PsychoGrenadier_Destructive>0.2</CJ_PsychoGrenadier_Destructive>
 			<CJ_PsychoMercenary_Slasher>0.4</CJ_PsychoMercenary_Slasher>
 			<CJ_PsychoMercenary_Sniper>1</CJ_PsychoMercenary_Sniper>
