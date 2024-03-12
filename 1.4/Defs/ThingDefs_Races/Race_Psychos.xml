@@ -26,14 +26,14 @@
 						<defName>Psychopath</defName>
 						<chance>999</chance>
 					</li>
-					<li MayRequire="test.mostlytraits">
-						<defName MayRequire="test.mostlytraits">mostlytrait_bloodthirsty</defName>
-						<chance MayRequire="test.mostlytraits">999</chance>
+					<li>
+						<defName>Bloodlust</defName>
+						<chance>999</chance>
 					</li>
 					<li>
 						<defName>DrugDesire</defName>
 						<degree>2</degree>
-						<chance>20</chance>
+						<chance>0.2</chance>
 					</li>
 					<li>
 						<defName>Cannibal</defName>
@@ -41,37 +41,39 @@
 					</li>
 					<li>
 						<defName>Abrasive</defName>
-						<chance>30</chance>
+						<chance>0.3</chance>
 					</li>
 					<li>
 						<defName>Masochist</defName>
-						<chance>10</chance>
+						<chance>0.1</chance>
 					</li>
 					<li>
 						<defName>Pyromaniac</defName>
-						<chance>5</chance>
+						<chance>0.05</chance>
 					</li>
-					<!--
+					<li MayRequire="test.mostlytraits">
+						<defName MayRequire="test.mostlytraits">mostlytrait_bloodthirsty</defName>
+						<chance MayRequire="test.mostlytraits">999</chance>
+					</li>
 					<li MayRequire="ladycookie.vteexpansion">
 						<defName MayRequire="ladycookie.vteexpansion">LCK_Soldier</defName>
-						<chance MayRequire="ladycookie.vteexpansion">75</chance>
+						<chance MayRequire="ladycookie.vteexpansion">0.075</chance>
 					</li>
-					-->
 					<li MayRequire="vanillaexpanded.vanillatraitsexpanded">
 						<defName MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Vengeful</defName>
-						<chance MayRequire="vanillaexpanded.vanillatraitsexpanded">45</chance>
+						<chance MayRequire="vanillaexpanded.vanillatraitsexpanded">0.45</chance>
 					</li>
 					<li MayRequire="nilchei.personalitytrait">
 						<defName MayRequire="nilchei.personalitytrait">Vehement</defName>
-						<chance MayRequire="nilchei.personalitytrait">99</chance>
+						<chance MayRequire="nilchei.personalitytrait">0.79</chance>
 					</li>
 					<li MayRequire="test.mostlytraits">
 						<defName MayRequire="test.mostlytraits">mostlytraits_gangster</defName>
-						<chance MayRequire="test.mostlytraits">5</chance>
+						<chance MayRequire="test.mostlytraits">0.5</chance>
 					</li>
-					<li>
-						<defName>Bloodlust</defName>
-						<chance>999</chance>
+					<li MayRequire="redmattis.betterprerequisites">
+						<defName MayRequire="redmattis.betterprerequisites">BS_Giant</defName>
+						<chance MayRequire="redmattis.betterprerequisites">999</chance>
 					</li>
 			</forcedRaceTraitEntries>
 			<disallowedTraits>
@@ -126,9 +128,11 @@
 				<li MayRequire="doomsday343.traitsplus">
 					<defName MayRequire="doomsday343.traitsplus">figter</defName> <!-- Sadly, you can't exclude just one Degree of a Staged Trait -->
 				</li>
+				<!--
 				<li MayRequire="nilchei.personalitytrait">
 					<defName MayRequire="nilchei.personalitytrait">Tsundere</defName>
 				</li>
+				-->
 				<li MayRequire="test.mostlytraits">
 					<defName MayRequire="test.mostlytraits">MassOffset</defName>
 				</li>
@@ -170,14 +174,14 @@
 				<useGenderedBodies>false</useGenderedBodies>
 				-->
 			  
-				<bodyTypes>
+				<bodyTypes Inherit="False">
 					<li>Fat</li> <!-- All instances canonically look obese -->
 				</bodyTypes>
 			  
 				<customDrawSize>(1.2,1.2)</customDrawSize>
-				<customHeadDrawSize>(1.1,1.1)</customHeadDrawSize>
-				<customPortraitDrawSize>(1.1,1.1)</customPortraitDrawSize>
-				<customPortraitHeadDrawSize>(1,1)</customPortraitHeadDrawSize>
+				<customHeadDrawSize>(1.35,1.41)</customHeadDrawSize>
+				<customPortraitDrawSize>(1.1,1.14)</customPortraitDrawSize>
+				<customPortraitHeadDrawSize>(1.1,1.1)</customPortraitHeadDrawSize>
 				<headOffset>(0,0)</headOffset>
 				<colorChannels>
 						<li>
@@ -316,21 +320,22 @@
 		  </thoughtSettings>
 		  <raceRestriction>
 				<blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
-					<li>BodyType</li>
+					<!-- <li>BodyType</li> -->
 					<li>AG_Heads</li>
 					<li>Heads</li>
 					<li>Head</li>
-					<li>Fur</li>
+					<li>Jaw</li>
+					<!-- <li>Fur</li> -->
 					<li>AG_Bodies</li>
 					<li>Bodies</li>
 					<li>Body</li>
 					<li>BeardStyle</li>
-					<li>Furskin</li>
+					<!-- <li>Furskin</li> -->
 				</blackGeneTags>
 				<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
 					<li>Jaw</li>
 					<li>Head</li>
-					<li>BodyType</li>
+					<!-- <li>BodyType</li> -->
 				</blackEndoCategories>
 		  </raceRestriction>
 		  <relationSettings>
@@ -339,7 +344,7 @@
 			<relationChanceModifierFiance>0</relationChanceModifierFiance>
 			<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
 			<relationChanceModifierExSpouse>0.1</relationChanceModifierExSpouse>
-			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierParent>0.58</relationChanceModifierParent>
 			<relationChanceModifierChild>0</relationChanceModifierChild>
 			<relationChanceModifierSibling>0</relationChanceModifierSibling>
 		  </relationSettings>
@@ -353,7 +358,7 @@
 			<ComfyTemperatureMax>66</ComfyTemperatureMax>
 			<MeatAmount>150</MeatAmount>
 			<LeatherAmount>150</LeatherAmount>
-			<RoyalFavorValue>2</RoyalFavorValue>  <!-- LOL... If it would please your highness, one greasy, jail-inked murderer scum.... on the house! -->
+			<RoyalFavorValue>1</RoyalFavorValue>  <!-- LOL... If it would please your highness, one greasy, jail-inked murderer scum.... on the house! -->
 			<PsychicSensitivity>0.27</PsychicSensitivity>  <!--I ain't gonna meditate!!!!-->
 			<MentalBreakThreshold>0.7</MentalBreakThreshold>
 			<CarryingCapacity>200</CarryingCapacity>
@@ -368,6 +373,7 @@
 			<SocialImpact>1.5</SocialImpact> <!-- They canonically tricked SCP interrogators into revealing secrets about themselves to the instances -->
 			<MiningSpeed>1.2</MiningSpeed>
 			<PawnBeauty>-1</PawnBeauty> <!-- Appear to be morbidly obese -->
+			<SM_Cosmetic_BodySizeOffset MayRequire="redmattis.betterprerequisites">0.2</SM_Cosmetic_BodySizeOffset>
 			<HSAU_GhoulismSusceptibility MayRequire="baskerville.hellsingarmsultimate">0.01</HSAU_GhoulismSusceptibility>
 			<HSAU_SanctusSensitivity MayRequire="baskerville.hellsingarmsultimate" Inherit="False">0.1</HSAU_SanctusSensitivity>
 			<HSAU_SoulRendSensitivity MayRequire="baskerville.hellsingarmsultimate" Inherit="False">0</HSAU_SoulRendSensitivity> <!-- YOU THINK THESE THINGS HAVE SOULS?! -->
@@ -506,39 +512,39 @@
 			</li>
 			<li>
 			  <def>HumanlikeChild</def>
-			  <minAge>1</minAge>
+			  <minAge>0.1</minAge>
 			</li>
 			<li>
 			  <def>HumanlikeTeenager</def>
-			  <minAge>10</minAge>
+			  <minAge>5</minAge>
 			</li>
 			<li>
 			  <def>HumanlikeAdult</def>
-			  <minAge>14</minAge> <!-- As they instantly turn unto their adult form when puberty starts -->
+			  <minAge>13</minAge> <!-- As they instantly turn unto their adult form when puberty starts -->
 			</li>
 		  </lifeStageAges>
 			  <lifeStageWorkSettings MayRequire="Ludeon.Rimworld.Biotech">
 				<Firefighter>2</Firefighter>
 				<Patient>0</Patient>
-				<Doctor>14</Doctor>
+				<Doctor>13</Doctor>
 				<PatientBedRest>0</PatientBedRest>
-				<Childcare MayRequire="Ludeon.Rimworld.Biotech">14</Childcare>
+				<Childcare MayRequire="Ludeon.Rimworld.Biotech">13</Childcare>
 				<BasicWorker>3</BasicWorker>
 				<Warden>0</Warden>
 				<Handling>7</Handling>
-				<Cooking>6</Cooking>
+				<Cooking>5</Cooking>
 				<Hunting>0</Hunting>
 				<Construction>5</Construction>
 				<Growing>5</Growing>
 				<Mining>0</Mining>
-				<PlantCutting>2</PlantCutting>
+				<PlantCutting>1</PlantCutting>
 				<Smithing>7</Smithing>
 				<Tailoring>7</Tailoring>
-				<Art>14</Art>
+				<Art>13</Art>
 				<Crafting>7</Crafting>
 				<Hauling>0</Hauling>
 				<Cleaning>3</Cleaning>
-				<Research>6</Research>
+				<Research>13</Research>
 			  </lifeStageWorkSettings>
 		  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 		  <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
@@ -553,10 +559,10 @@
 				<li MayRequire="Ludeon.Rimworld.Biotech">(0.001,0)</li>
 				<li MayRequire="Ludeon.Rimworld.Biotech">(8,0)</li>
 				<li MayRequire="Ludeon.Rimworld.Biotech">(12.5,0)</li>
-				<li>(14,0)</li>
-				<li>(14.1,0)</li>
-				<li>(16,0)</li>
-				<li>(18,3)</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">(14,0)</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">(14.1,0)</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">(16,0)</li>
+				<li>(18,130)</li>
 				<li>(21,210)</li>
 				<li>(25,210)</li>
 				<li>(30,190)</li>
