@@ -33,6 +33,7 @@
 			  <li>SCR_SCP1762R</li>
 			  <li>SCR_SCP762R</li>
 			  <li>SCR_SCP043R</li>
+			  <li>TSP_SCR_SCP091R</li>
 
         </value>
     </Operation>
@@ -59,7 +60,7 @@
 				</li> -->
 
 				<li>
-					<weight>1.5</weight>
+					<weight>1.33</weight>
 					<thingSetMaker Class="ThingSetMaker_StackCount">
 						<fixedParams>
 							<filter>
@@ -69,7 +70,7 @@
 									<li>SCR_SCP1905R</li>
 									<li>SCR_SCP572R</li>
 									<li>SCR_SCP127R</li>
-									<li>SCR_SCP3118R</li>
+									<li>SCR_SCP3118R</li> <!-- misnamed, is supposed to be 3118 -->
 									<li>SCR_SCP262R</li>
 									<li>SCR_SCP095UA</li>
 
@@ -87,6 +88,7 @@
 									<li>SCR_SCP1762R</li>
 									<li>SCR_SCP762R</li>
 									<li>SCR_SCP043R</li>
+									<li>TSP_SCR_SCP091R</li>
 								</thingDefs>
 							</filter>
 							<countRange>1</countRange>
@@ -102,7 +104,7 @@
 									<li>SCR_SCP578R</li>
 								</thingDefs>
 							</filter>
-							<countRange>15~30</countRange>
+							<countRange>140~275</countRange>
 						</fixedParams>
 					</thingSetMaker>
 				</li>

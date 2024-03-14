@@ -1,189 +1,292 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
+	<FactionDef ParentName="FactionBase">
+		<defName>SCR_CI</defName>
+		<label>Chaos Insurgency</label>
+		<description>A terrorist group of former SCP Foundation personnel who have defected and stolen several SCPs from them. They use anomalies to build a utopian future for their members alone, where they are the master of everything. They employ SCP's whenever advantageous and steal others to achieve their goals. They often test on lone, unsuspecting, innocent colonies and tribes much like the SCP-Foundation does on convicted D-Class prisoners. While they do maintain a visible base or two, they largely operate in roaming groups. The Chaos Insurgency notably made a pact with a large number of SCP-1788-1 instances, promising them an unlimited amount of satiation for their blood lust in exchange for being the "muscle" that captures victims for experimentation.</description>
+		<pawnSingular>insurgent</pawnSingular>
+		<pawnsPlural>insurgents</pawnsPlural>
+		<listOrderPriority>10</listOrderPriority>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<fixedName>Chaos Insurgency</fixedName>
+		<leaderTitle>Delta Commander</leaderTitle>
+		<leaderTitleFemale>Delta Commander</leaderTitleFemale>
+		<factionIconPath>World/WorldObjects/Expanding/ChaosInsurgency</factionIconPath>
+		<settlementGenerationWeight>0.35</settlementGenerationWeight>
+		<colorSpectrum>
+		  <li>(255, 1, 1)</li>
+		</colorSpectrum>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<humanlikeFaction>true</humanlikeFaction>
+		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<autoFlee>true</autoFlee>
+		<canUseAvoidGrid>true</canUseAvoidGrid>
+		<techLevel>Spacer</techLevel>
+		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+		<!-- Ideology dlc stuff -->
+		<allowedCultures>
+			<li>Astropolitan</li>
+		</allowedCultures>
+		<requiredMemes>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+				<!-- <li MayRequire="vanillaexpanded.vmemese">VME_Structure_Authoritarianism</li> -->
+				<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology,erdelf.humanoidalienraces">HAR_Xenophobia</li>
+		</requiredMemes>
+		<disallowedMemes>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
 
-<FactionDef ParentName="FactionBase">
-    <defName>SCR_CI</defName>
-    <label>Chaos Insurgency</label>
-    <description>A terrorist group of former SCP-Foundation personnel who have defected and stolen several SCPs from them. They use anomalies to build a utopian future, where humanity is the master of everything. They employ SCPs whenever advantageous and steal others to achieve their goals. They often test on lone, unsuspecting colonies and tribes much like the SCP-Foundation does on D-Class. While they do maintain a visible base or two, they still operate in roaming groups.</description>
-    <pawnSingular>insurgent</pawnSingular>
-    <pawnsPlural>insurgents</pawnsPlural>
-	<listOrderPriority>10</listOrderPriority>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <fixedName>Chaos Insurgency</fixedName>
-	<leaderTitle>Delta Commander</leaderTitle>
-	<leaderTitleFemale>Delta Commander</leaderTitleFemale>
-    <factionIconPath>World/WorldObjects/Expanding/ChaosInsurgency</factionIconPath>
-    <colorSpectrum>
-      <li>(255, 1, 1)</li>
-    </colorSpectrum>
-	<canSiege>true</canSiege>
-    <canStageAttacks>true</canStageAttacks>
-    <humanlikeFaction>true</humanlikeFaction>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-    <autoFlee>true</autoFlee>
-    <canUseAvoidGrid>true</canUseAvoidGrid>
-    <techLevel>Spacer</techLevel>
-	<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
-	<!-- Ideology dlc stuff -->
-	<allowedCultures>
-		<li>Astropolitan</li>
-	</allowedCultures>
-	<requiredMemes>
-			<li MayRequire="vanillaexpanded.vmemese">VME_Structure_Authoritarianism</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology,erdelf.humanoidalienraces">HAR_Xenophobia</li>
-	</requiredMemes>
-	<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+				<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
+				<li MayRequire="llunak.MorePrecepts">Pacifism</li>
+				<li MayRequire="Qux.factionhippie">PeaceLove</li>
+				<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
+				<li MayRequire="VanillaExpanded.VMemesE">VME_Vegan</li>
+				<li MayRequire="Zezz.Altrumeme">Altruism</li>
+				<li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology,erdelf.humanoidalienraces">HAR_Xenophilia</li>
+				<li MayRequire="Sarg.AlphaMemes">AM_Structure_Atheist</li>
+				<li MayRequire="Sarg.AlphaMemes">AM_Structure_SteampunkRevival</li> <!-- Broken God -->
+				<li MayRequire="VanillaExpanded.VMemesE">VME_Proselytism</li>
+				<li MayRequire="SZ.TW.New.GuoHun,Ludeon.RimWorld.Ideology">SZ_Structure_CultureQiYuan</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+				<li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
 
-			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
-			<li MayRequire="llunak.MorePrecepts">Pacifism</li>
-			<li MayRequire="Qux.factionhippie">PeaceLove</li>
-			<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
-			<li MayRequire="VanillaExpanded.VMemesE">VME_Vegan</li>
-			<li MayRequire="Zezz.Altrumeme">Altruism</li>
-			<li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology,erdelf.humanoidalienraces">HAR_Xenophilia</li>
-	</disallowedMemes>
-	<disallowedPrecepts>
-			<li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+				<!-- The following Precepts are only forbidden if you have the Mod -->
+				<li MayRequire="martinbaste.Ideo.XenoPrecept,Ludeon.RimWorld.Ideology">XenoDiversity_Horrible</li>
+				<li MayRequire="martinbaste.Ideo.XenoPrecept,Ludeon.RimWorld.Ideology">XenoDiversity_Disapproved</li>
+				<li MayRequire="martinbaste.Ideo.XenoPrecept,Ludeon.RimWorld.Ideology">XenoDiversity_Standard</li>
+				<li MayRequire="martinbaste.Ideo.XenoPrecept,Ludeon.RimWorld.Ideology">XenoDiversity_Approved</li>
+				<!-- For some reason, the game eliminates the entire Precept category when generating if this exists in the code -->
+				<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Abhorrent</li>
+				<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Horrible</li>
+				<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Disapproved</li>
+				<!-- For some reason, the game eliminates the entire Precept category when generating if this exists in the code -->
+				<!-- <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Acceptable</li> -->
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
 
-			<!-- The following Precepts are only forbidden if you have the Mod -->
-			<li MayRequire="martinbaste.Ideo.XenoPrecept,Ludeon.RimWorld.Ideology">XenoDiversity_Horrible</li>
-			<li MayRequire="martinbaste.Ideo.XenoPrecept,Ludeon.RimWorld.Ideology">XenoDiversity_Disapproved</li>
-			<li MayRequire="martinbaste.Ideo.XenoPrecept,Ludeon.RimWorld.Ideology">XenoDiversity_Standard</li>
-			<li MayRequire="martinbaste.Ideo.XenoPrecept,Ludeon.RimWorld.Ideology">XenoDiversity_Approved</li>
-			<!-- For some reason, the game eliminates the entire Precept category when generating if this exists in the code -->
-			<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Abhorrent</li>
-			<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Horrible</li>
-			<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Disapproved</li>
-			<!-- For some reason, the game eliminates the entire Precept category when generating if this exists in the code -->
-			<!-- <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Acceptable</li> -->
-	</disallowedPrecepts>
-	<pawnGroupMakers>
-	      <li>
-        <!-- Normal fights, ranged with melee mix-ins -->
-        <kindDef>Combat</kindDef>
-        <commonality>50</commonality>
-        <options>
-          <Pirate>10</Pirate>
-          <Grenadier_EMP>10</Grenadier_EMP>
-          <Grenadier_Destructive>2</Grenadier_Destructive>
-          <Mercenary_Gunner>20</Mercenary_Gunner>
-          <Mercenary_Heavy>6</Mercenary_Heavy>
-          <Mercenary_Slasher>3</Mercenary_Slasher>
-          <Mercenary_Sniper>10</Mercenary_Sniper>
-          <Mercenary_Elite>10</Mercenary_Elite>
-		  <PirateBoss>10</PirateBoss>
-		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
-        </options>
-      </li>
-	
-	 <!-- SCP-3033-1 raids, melee-only -->
-	 <li>
-        <kindDef>Combat</kindDef>
-        <commonality>100</commonality>
-        <options>
-          <SCR_SCP30331_Mike>200</SCR_SCP30331_Mike>
-		  <SCR_SCP30332_Controller>60</SCR_SCP30332_Controller>
-		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">15</VFEP_Footsoldier>
-        </options>
-      </li>
-	  
-	 <li MayRequire="OskarPotocki.VFE.Pirates">
-        <kindDef MayRequire="OskarPotocki.VFE.Pirates">Combat</kindDef>
-        <commonality MayRequire="OskarPotocki.VFE.Pirates">10</commonality>
-        <options MayRequire="OskarPotocki.VFE.Pirates">
-		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">999</VFEP_Footsoldier>
-        </options>
-      </li>
-	
-	      <li>
-        <!-- Base defense, mainly ranged with melee mix-ins -->
-        <kindDef>Settlement</kindDef>
-        <options>
-          <Pirate>10</Pirate>
-          <Grenadier_Destructive>2</Grenadier_Destructive>
-          <Mercenary_Slasher>3</Mercenary_Slasher>
-          <Mercenary_Sniper>10</Mercenary_Sniper>
-          <Mercenary_Gunner>10</Mercenary_Gunner>
-          <Mercenary_Elite>10</Mercenary_Elite>
-          <PirateBoss>10</PirateBoss>
-		  <SCR_SCP30331_Mike>24</SCR_SCP30331_Mike>
-		  <SCR_SCP30332_Controller>1</SCR_SCP30332_Controller>
-		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
-        </options>
-      </li>
-	    <li>
-        <kindDef>Trader</kindDef>
-        <traders>
-          <Town_Trader>1</Town_Trader>
-        </traders>
-        <carriers>
-          <Muffalo>6</Muffalo>
-          <Dromedary>5</Dromedary>
-          <Alpaca>2</Alpaca>
-          <Elephant>1000</Elephant>
-        </carriers>
-        <guards>
-		  <SCR_SCP30331_Mike>24</SCR_SCP30331_Mike>
-		  <SCR_SCP30332_Controller>1</SCR_SCP30332_Controller>
-		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
-		  <Mercenary_Elite>10</Mercenary_Elite>
-        </guards>
-      </li>
-	  <li>
-        <kindDef>Peaceful</kindDef>
-        <options>
-          <Mercenary_Elite>10</Mercenary_Elite>
-          <PirateBoss>10</PirateBoss>
-		  <SCR_SCP30331_Mike>24</SCR_SCP30331_Mike>
-		  <SCR_SCP30332_Controller>1</SCR_SCP30332_Controller>
-		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
-        </options>
-      </li>
-	</pawnGroupMakers>
-    <naturalEnemy>true</naturalEnemy>
-     <backstoryFilters>
-      <li>
-        <categories>
-          <li>Raider</li>
-        </categories>
-        <commonality>0.5</commonality>
-      </li>
-      <li>
-        <categories>
-          <li>Offworld</li>
-        </categories>
-        <commonality>0.25</commonality>
-      </li>
-	        <li>
-        <categories>
-          <li>Pirate</li>
-        </categories>
-        <commonality>0.25</commonality>
-      </li>
-    </backstoryFilters>
-     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
-    <maxPawnCostPerTotalPointsCurve>
-      <points>
-        <li>(400,200)</li>
-        <li>(900,300)</li>
-        <li>(100000,10000)</li>
-      </points>
-    </maxPawnCostPerTotalPointsCurve>
-    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-    <allowedArrivalTemperatureRange>-100~100</allowedArrivalTemperatureRange>
-    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
-    <configurationListOrderPriority>50</configurationListOrderPriority>
-  </FactionDef>
-  
-  </Defs>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+				<li MayRequire="Ludeon.Rimworld.Ideology">Execution_HorribleIfInnocent</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Essential</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Important</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Worthwhile</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Disapproved</li>
+		</disallowedPrecepts>
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_Slaver</li>
+			<li MayRequire="TSP.Isengriff.Storytime">TSP_ST_MMT_Caravan_LivingVehicle</li>
+			<li MayRequire="TSP.Isengriff.Storytime">WW_Caravan_Outlander_Drugdealer</li>
+			<li MayRequire="zhrocks11.letstrade">Caravan_Outlander_Drugs</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+			<li MayRequire="TSP.Isengriff.Storytime">WW_Visitor_Outlander_Drugdealer</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li> <!-- Place holder -->
+		</baseTraderKinds>
+		<raidLootMaker>TSP_SCR_SCP_Factions_Want_SCP_Items</raidLootMaker>
+		<pawnGroupMakers>
+			  <li>
+					<!-- Normal fights, ranged with melee mix-ins -->
+					<kindDef>Combat</kindDef>
+					<commonality>50</commonality>
+					<options>
+					  <CJ_PsychoGrenadier_Destructive>0.5</CJ_PsychoGrenadier_Destructive>
+					  <CJ_PsychoMercenary_Slasher>1</CJ_PsychoMercenary_Slasher>
+					  <CJ_PsychoMercenary_Gunner>5</CJ_PsychoMercenary_Gunner>
+					  <CJ_PsychoMercenary_Elite>5</CJ_PsychoMercenary_Elite>
+					  <CJ_PsychoMercenary_Sniper>5</CJ_PsychoMercenary_Sniper>
+					  <Grenadier_EMP>10</Grenadier_EMP>
+					  <Grenadier_Destructive>2</Grenadier_Destructive>
+					  <Mercenary_Gunner>20</Mercenary_Gunner>
+					  <Mercenary_Heavy>6</Mercenary_Heavy>
+					  <Mercenary_Slasher>3</Mercenary_Slasher>
+					  <Mercenary_Sniper>10</Mercenary_Sniper>
+					  <Mercenary_Elite>10</Mercenary_Elite>
+					  <PirateBoss>10</PirateBoss>
+					  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
+					</options>
+				</li>
+		
+			 <!-- SCP-3033-1 raids, melee-only -->
+			 <li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+				  <SCR_SCP30331_Mike>200</SCR_SCP30331_Mike>
+				  <SCR_SCP30332_Controller>60</SCR_SCP30332_Controller>
+				  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
+				  <CJ_PsychoMercenary_Slasher>1</CJ_PsychoMercenary_Slasher>
+				</options>
+			  </li>
+			  
+			  <li>
+				<!-- SCP-1788-1 attacks! -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+				  <CJ_PsychoScavenger>1</CJ_PsychoScavenger>
+				  <CJ_PsychoPirate>1</CJ_PsychoPirate>
+				  <CJ_PsychoGrenadier_EMP>0.025</CJ_PsychoGrenadier_EMP>
+				  <CJ_PsychoGrenadier_Smoke>0.015</CJ_PsychoGrenadier_Smoke>
+				  <CJ_PsychoGrenadier_Destructive>0.2</CJ_PsychoGrenadier_Destructive>
+				  <CJ_PsychoMercenary_Gunner>5</CJ_PsychoMercenary_Gunner>
+				  <CJ_PsychoMercenary_Heavy>1</CJ_PsychoMercenary_Heavy>
+				  <CJ_PsychoMercenary_Slasher>1</CJ_PsychoMercenary_Slasher>
+				  <CJ_PsychoMercenary_Sniper>1</CJ_PsychoMercenary_Sniper>
+				  <CJ_PsychoMercenary_Elite>1</CJ_PsychoMercenary_Elite>
+				  <CJ_Psycho_PirateBoss>0.4</CJ_Psycho_PirateBoss>
+				</options>
+			  </li>
+			  
+			 <li MayRequire="OskarPotocki.VFE.Pirates">
+				<kindDef MayRequire="OskarPotocki.VFE.Pirates">Combat</kindDef>
+				<commonality MayRequire="OskarPotocki.VFE.Pirates">10</commonality>
+				<options MayRequire="OskarPotocki.VFE.Pirates">
+				  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">999</VFEP_Footsoldier>
+				  <CJ_PsychoMercenary_Elite MayRequire="OskarPotocki.VFE.Pirates">75</CJ_PsychoMercenary_Elite>
+				</options>
+			  </li>
+			
+				  <li>
+				<!-- Base defense, mainly ranged with melee mix-ins -->
+				<kindDef>Settlement</kindDef>
+				<options>
+				  <Grenadier_Destructive>2</Grenadier_Destructive>
+				  <Mercenary_Slasher>3</Mercenary_Slasher>
+				  <Mercenary_Sniper>10</Mercenary_Sniper>
+				  <Mercenary_Gunner>10</Mercenary_Gunner>
+				  <Mercenary_Elite>10</Mercenary_Elite>
+				  <PirateBoss>10</PirateBoss>
+				  <SCR_SCP30331_Mike>24</SCR_SCP30331_Mike>
+				  <SCR_SCP30332_Controller>1</SCR_SCP30332_Controller>
+				  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
+				  <CJ_PsychoScavenger>1</CJ_PsychoScavenger>
+				  <CJ_PsychoPirate>1</CJ_PsychoPirate>
+				  <CJ_PsychoGrenadier_EMP>0.05</CJ_PsychoGrenadier_EMP>
+				  <CJ_PsychoGrenadier_Smoke>0.05</CJ_PsychoGrenadier_Smoke>
+				  <CJ_PsychoGrenadier_Destructive>0.2</CJ_PsychoGrenadier_Destructive>
+				  <CJ_PsychoMercenary_Gunner>4.5</CJ_PsychoMercenary_Gunner>
+				  <CJ_PsychoMercenary_Heavy>3</CJ_PsychoMercenary_Heavy>
+				  <CJ_PsychoMercenary_Slasher>1</CJ_PsychoMercenary_Slasher>
+				  <CJ_PsychoMercenary_Sniper>3</CJ_PsychoMercenary_Sniper>
+				  <CJ_PsychoMercenary_Elite>4</CJ_PsychoMercenary_Elite>
+				  <CJ_Psycho_PirateBoss>0.001</CJ_Psycho_PirateBoss>
+				</options>
+			  </li>
+				<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+				  <Town_Trader>1</Town_Trader>
+				</traders>
+				<carriers>
+				  <Muffalo>6</Muffalo>
+				  <Dromedary>5</Dromedary>
+				  <Alpaca>2</Alpaca>
+				  <Elephant>1000</Elephant>
+				</carriers>
+				<guards>
+				  <SCR_SCP30331_Mike>35</SCR_SCP30331_Mike>
+				  <SCR_SCP30332_Controller>1</SCR_SCP30332_Controller>
+				  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
+				  <Mercenary_Elite>10</Mercenary_Elite>
+				  <CJ_PsychoScavenger>1</CJ_PsychoScavenger>
+				  <CJ_PsychoPirate>1</CJ_PsychoPirate>
+				  <CJ_PsychoGrenadier_EMP>0.05</CJ_PsychoGrenadier_EMP>
+				  <CJ_PsychoGrenadier_Smoke>0.05</CJ_PsychoGrenadier_Smoke>
+				  <CJ_PsychoGrenadier_Destructive>0.2</CJ_PsychoGrenadier_Destructive>
+				  <CJ_PsychoMercenary_Gunner>15</CJ_PsychoMercenary_Gunner>
+				  <CJ_PsychoMercenary_Heavy>3</CJ_PsychoMercenary_Heavy>
+				  <CJ_PsychoMercenary_Slasher>1</CJ_PsychoMercenary_Slasher>
+				  <CJ_PsychoMercenary_Sniper>3</CJ_PsychoMercenary_Sniper>
+				  <CJ_PsychoMercenary_Elite>4</CJ_PsychoMercenary_Elite>
+				  <CJ_Psycho_PirateBoss>0.001</CJ_Psycho_PirateBoss>
+				</guards>
+			  </li>
+			  <li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+				  <Mercenary_Elite>10</Mercenary_Elite>
+				  <PirateBoss>10</PirateBoss>
+				  <SCR_SCP30332_Controller>10</SCR_SCP30332_Controller>
+				  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
+				  <CJ_PsychoScavenger>1</CJ_PsychoScavenger>
+				  <CJ_PsychoPirate>1</CJ_PsychoPirate>
+				  <CJ_PsychoGrenadier_EMP>0.5</CJ_PsychoGrenadier_EMP>
+				  <CJ_PsychoGrenadier_Smoke>0.5</CJ_PsychoGrenadier_Smoke>
+				  <CJ_PsychoGrenadier_Destructive>0.82</CJ_PsychoGrenadier_Destructive>
+				  <CJ_PsychoMercenary_Gunner>7</CJ_PsychoMercenary_Gunner>
+				  <CJ_PsychoMercenary_Heavy>5</CJ_PsychoMercenary_Heavy>
+				  <CJ_PsychoMercenary_Slasher>1</CJ_PsychoMercenary_Slasher>
+				  <CJ_PsychoMercenary_Sniper>5</CJ_PsychoMercenary_Sniper>
+				  <CJ_PsychoMercenary_Elite>1</CJ_PsychoMercenary_Elite>
+				  <CJ_Psycho_PirateBoss>0.5</CJ_Psycho_PirateBoss>
+				</options>
+			  </li>
+		</pawnGroupMakers>
+		<permanentEnemy>true</permanentEnemy>
+		 <backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Raider</li>
+			</categories>
+			<commonality>0.5</commonality>
+		  </li>
+		  <li>
+			<categories>
+			  <li>Sadist</li>
+			</categories>
+			<commonality>0.55</commonality>
+		  </li>
+		  <li>
+			<categories>
+			  <li>Pirate</li>
+			</categories>
+			<commonality>0.25</commonality>
+		  </li>
+		  <li>
+			<categories>
+			  <li>Scientist</li>
+			</categories>
+			<commonality>0.25</commonality>
+		  </li>
+		  <li>
+			<categories>
+			  <li>Sadist</li>
+			</categories>
+			<commonality>0.55</commonality>
+		  </li>
+		</backstoryFilters>
+		 <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<maxPawnCostPerTotalPointsCurve>
+		  <points>
+			<li>(400,200)</li>
+			<li>(900,300)</li>
+			<li>(100000,10000)</li>
+		  </points>
+		</maxPawnCostPerTotalPointsCurve>
+		<settlementTexturePath>World/WorldObjects/Expanding/ChaosInsurgency</settlementTexturePath>
+		<allowedArrivalTemperatureRange>-999~999</allowedArrivalTemperatureRange>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>50</configurationListOrderPriority>
+	</FactionDef>
+</Defs>

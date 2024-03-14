@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Code derived entirely, and courtesy of, the Oni Mod -->
+	<!-- https://www.steamcommunity.com/sharedfiles/filedetails/?id=1632244750 -->
+	<HediffDef>
+		<defName>TSP_CJ_SCR_1788_Bonus</defName>
+		<label>SCP-1788-1 Power</label>
+		<description>SCP-1788-1 instances are remarkably stronger than any man.</description>
+		<initialSeverity>1</initialSeverity>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.4, 1, 0.4)</defaultLabelColor>
+		<isBad>false</isBad>
+		<!-- <scenarioCanAdd>false</scenarioCanAdd> -->
+		<stages>
+			<li>
+				<label>redundant body parts</label>
+				<becomeVisible>false</becomeVisible>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.12</offset> <!-- The second brain isn't as advanced as the first -->
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>1.1</setMax>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>1</offset> <!-- Four arms -->
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>1</offset> <!-- Four arms -->
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<setMax>0.65</setMax> <!-- Slow eaters, extremely taxing body demands -->
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>1</offset> <!-- Four lungs -->
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>1</offset> <!-- Four kidneys -->
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>1</offset> <!-- Two hearts -->
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.1</offset> <!-- Duplicate digestive system -->
+					</li>
+				</capMods>
+				<statOffsets>
+					<CarryingCapacity>20</CarryingCapacity>
+				</statOffsets>
+				<makeImmuneTo>
+					<li>Animal_Plague</li>
+					<li>SCR_SCP610Infection</li>
+					<li MayRequire="SirMashedPotato.MorrowRim">MorrowRim_Corprus</li>
+				</makeImmuneTo>
+			</li>
+		</stages>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>TSP_CJ_SCR_1788_History</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>SCP-1788-1 backstory</label>
+		<description>RECOVERED FILE: THE ADULTS (RECOVERED 4978 AD) \n ORIGINAL STAR LOG DATE: APRIMAY 15, 2666 AD \n  :Data C0r§upt-ion: \n \n		//____ Recompiling... attempt 1--- \n \n	My friend, you need to delete this transmission immediately after reading. You know I am eternally grateful, but with this information, my debt is paid. Do not contact me via this channel again. As you very well know, Rimworlds are already full of, lets say, "interesting individu :Data C0r§upt-ion:  \n -pire started showing an  :Data C0r§upt-ion: -lactic Rim, things have started getting worse- look at this classified file for example. \n \n \n TRANSMISSION START- enable transcript: \n	"...re...remnants of galaxy wide conflicts, convicted juveniles particularly known to be hateful and violent, tried as adults, would be sent through a strange ritual to alter their bodies. They would then engage in rigorous training, mental conditioning, physical augmentation and genetic manipulation, to become ultimate weapons. Given the nature of the crimes and what it takes to be tried as an adult, this was the better alternative to a death sentence. Created by many Empire-sanctioned or illegal hidden training facilities, every enhanced soldier or mercenary program that was successful has some things in common: the initial ritual applied to the prepubescent sociopaths, their subsequent transformation at puberty, and the resulting enhanced strength and reflexes that cause better blood clotting and wound healing, that also enhance the lifespan of its recipients by roughly 150%. Since these procedures are very costly, most factions, organizations and governments want their warriors to endure entire fleet campaigns, making them a viable investment. Soldiers like this are cold experts of violence with a short temper, they are used on worlds where resulting civilian casualties or damaged infrastructure were deemed irrelevant." \n \n -TRANSMISSION END.\n \n \n You can guess the kind of difficulty it takes to make these creatures obey. That's the problem. What they DON'T tell you is that some of these soldiers manage to free themselves from conditioning, Kill Switches and other means of control. Be it that their ships crashed and the mental container hardware melted down, or other similar incidents, or simply a well-timed rebellion (as these creatures are known to be brilliant and easily manipulate others). This means there are unregulated and very experienced killing machines loose on some Rim Worlds close enough to any meaningful conflict... and that means yours. On the bright side, they can, in theory, be persuaded to join the ranks of a rich enough colony, which promises opportunity for carnage. \n Approach them with extreme caution, however. Make sure they are well fed, happy and have access to strong enough drugs and distractions, or they might create their own "fun". Fun to them is basically drinking, causing mayhem, looking intimidating, and taking what they want. \n \n They ARE enjoying their newfound freedom, and attempts to discipline them have lead to entire cities burning in nuclear fire. \n \n A busy, war-addicted, psychopathic, ex-convict super soldier is a happy war-addicted, psychopathic, ex-convict, supersoldier, so you should probably make some enemies, because they WILL need a target. Do keep in mind, though, that their death sentence is still valid, and if I may say... deserved. \n \n \n Good luck old friend, we´ll not see each other for a while now. \n Sincelerely, CJ</description>
+		<descriptionHyperlinks>
+			<ThingDef>CJ_Psycho</ThingDef>
+		</descriptionHyperlinks>
+		<makesSickThought>false</makesSickThought>
+		<tendable>false</tendable>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.255</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Now you know</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.99</minSeverity>
+				<label>Keep your rifle by your side</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>2</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+	</HediffDef>
+</Defs>

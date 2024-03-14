@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="SCR_SCP_Base">
+<ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP160R</defName>
     <label>SCP-160</label>
-    <description>SCP-160 is a living quadcopter drone that hunts small animals.</description>
+    <description>SCP-160 is a living quad-copter drone that hunts small animals.</description>
   	<modExtensions>
 		<li Class="SecureContainRimworld.CProceduresExtension">
 
@@ -14,13 +14,13 @@
 			<li>SCR_RNotice</li>
 		</classRating>
 		<containmentTier>1</containmentTier>
-		<isTranqable>false</isTranqable>
+		<isTranqable>true</isTranqable>
 		<hatesRoofs>true</hatesRoofs>
 		</li>
 	</modExtensions>
 	
     <statBases>
-      <MoveSpeed>5</MoveSpeed>
+      <MoveSpeed>25</MoveSpeed>
       <MarketValue>600</MarketValue>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>40</ComfyTemperatureMax>
@@ -28,10 +28,10 @@
 	  <MeatAmount>0</MeatAmount>
 	  <LeatherAmount>0</LeatherAmount>
     </statBases>
-			<tradeTags>
+		<tradeTags>
 			<li>AnimalRare</li>
-			<li>SCP</li>
-			</tradeTags>
+			<li>AnimalExotic</li>
+		</tradeTags>
 		<butcherProducts>
 			<Steel>10</Steel>
 		</butcherProducts>
@@ -43,15 +43,16 @@
 		<baseBodySize>0.3</baseBodySize>
 		<maxPreyBodySize>0.8</maxPreyBodySize>
 		<baseHungerRate>0.25</baseHungerRate>
-		<baseHealthScale>1.6</baseHealthScale>
+		<baseHealthScale>2.5</baseHealthScale>
 		<foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Corpse, Meal, Processed, Kibble</foodType>
 		<leatherDef>Steel</leatherDef>
 		<specificMeatDef>ChunkSlagSteel</specificMeatDef>
 		<wildness>0</wildness>
-		<trainability>None</trainability>
+		<trainability>Intermediate</trainability>
 		<nameOnTameChance>1</nameOnTameChance>
 		<manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
 		<manhunterOnDamageChance>1</manhunterOnDamageChance>
+		<roamMtbDays>1</roamMtbDays>
 	  	  			<wildBiomes>
 				<AridShrubland>.1</AridShrubland>
 				<BorealForest>0</BorealForest>

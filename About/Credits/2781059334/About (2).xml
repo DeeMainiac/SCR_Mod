@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>CJ Psychos</name>
+  <packageId>Crackajack.CJPsychos</packageId>
+  <author>Crackajack</author>
+  <url></url>
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+      <downloadUrl>https://github.com/erdelf/AlienRaces/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>erdelf.HumanoidAlienRaces</li>
+  </loadAfter>
+  <description>
+  [h1]Ready to ruin your day.[/h1]
+  
+  [i]Have you ever fought in a very important and terrible war for 200 years,
+  woke up from cryptosleep after setting out for the next system to conquer,
+  just to find out you slept through the end and have been forgotten?[/i]
+  [b]No? Well, then its no miracle these people feel misunderstood.[/b]
+  
+  As everybody paying rough attention to galactic history knows, there have been countless of wars across countless of systems, some of them still raging today. 
+  As a byproduct of this, some valued soldiers have been kept around for long times.
+  their livespans artificially elongated, healed and resurrected many times to do the one job at which they excel: Killing.
+  While modern war shrinks speak of their "war addiction syndrome", the regular soldiers often refer to them as "psychos", especially after witnessing one at work.
+  While varying individually, patients are reported to vent their anger by fighting, lighting fires, consuming any kind of drugs and general antisocial behavior.
+  Above all else though, they enjoy violence. To be good at your job, you have to like it, they say.
+  
+  [u]Psychos will show up in raids, and with allies.[/u]
+  They are very effective on the battlefield, and love drugs. Seriously, they´re dangerous and messed in the head.
+  
+  [b]Not crazy op, but beware.[/b]
+  
+  
+  Will look like garbage, you need to deactivate texture compression, use HD pawn rendering, or the texture compression setting from VE Framework
+  
+  XML: Three Legged Wolf, "Art": CrackaJack 
+  
+</description>
+</ModMetaData>
+

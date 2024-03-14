@@ -74,7 +74,7 @@
   <ThingDef ParentName="SCR_Wall">
     <defName>SCR_StrengthenedWall</defName>
     <label>steel strengthened wall</label>
-    <description>An impassable wall strengthened with steel. Capable of holding up a roof and keeping in SCPs.</description>
+    <description>An impassable wall strengthened with steel. Capable of holding up a roof and keeping in SCP's.</description>
 	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 	<containmentTier>1</containmentTier>
@@ -95,18 +95,18 @@
       </relatedBuildCommands>
     </building>
 	
-	    <damageMultipliers>
+	    <damageMultipliers Inherit="False">
       <li>
         <damageDef>Bomb</damageDef>
-        <multiplier>2</multiplier>
+        <multiplier>1.9</multiplier>
       </li>
 	  <li>
 	  <damageDef>Mining</damageDef>
-	  <multiplier>.5</multiplier>
+	  <multiplier>0.4</multiplier>
 	  </li>
       <li>
         <damageDef>Thump</damageDef>
-        <multiplier>2</multiplier>
+        <multiplier>1.9</multiplier>
       </li>
     </damageMultipliers>
 	
@@ -115,7 +115,7 @@
   <ThingDef ParentName="SCR_Wall">
     <defName>SCR_ReinforcedWall</defName>
     <label>plasteel reinforced wall</label>
-    <description>An impassable wall strengthened with plasteel. Capable of holding up a roof and keeping in SCPs.</description>
+    <description>An impassable wall strengthened with plasteel. Capable of holding up a roof and keeping in SCP's.</description>
 	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 	<containmentTier>2</containmentTier>
@@ -143,15 +143,15 @@
 	    <damageMultipliers>
       <li>
         <damageDef>Bomb</damageDef>
-        <multiplier>1.8</multiplier>
+        <multiplier>1.4</multiplier>
       </li>
 	  <li>
 	  <damageDef>Mining</damageDef>
-	  <multiplier>.5</multiplier>
+	  <multiplier>0.15</multiplier>
 	  </li>
       <li>
         <damageDef>Thump</damageDef>
-        <multiplier>1.8</multiplier>
+        <multiplier>1.68</multiplier>
       </li>
     </damageMultipliers>
 	
@@ -162,7 +162,7 @@
 <ThingDef ParentName="DoorBase">
     <defName>SCR_Autodoor</defName>
     <label>security door</label>
-    <description>Divides rooms. Powered operation allows people to move through the door without slowing down, as well as keeping SCPs from passing through.</description>
+    <description>Divides rooms. Powered operation allows people to move through the door without slowing down, as well as keeping SCP's from passing through.</description>
     <modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 	<containmentTier>1</containmentTier>
@@ -275,12 +275,12 @@
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <Mass>8</Mass>
-      <WorkToBuild>500</WorkToBuild>
-      <Flammability>1.0</Flammability>
+      <WorkToBuild>1</WorkToBuild>
+      <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
     <costList>
-      <Steel>2</Steel>
+      <Steel>1</Steel>
     </costList>
 	  <!--<disallowedThingDefs>
           <li>Gold</li>
