@@ -19,7 +19,9 @@
     <invNutrition>6</invNutrition>
     <itemQuality>Normal</itemQuality>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-    <backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
+    <backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
+	<combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+	<combatEnhancingDrugsCount>4~5</combatEnhancingDrugsCount>
     <backstoryFiltersOverride>
       <li>
         <categories>

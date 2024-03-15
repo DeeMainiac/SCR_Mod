@@ -11,7 +11,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>CJ_Psycho</defName>
 		<label>SCP-1788-1</label>
-		<description>SCP-1788 was a ritual performed on prepubescent humans to turn them into instances of SCP-1788 once they started puberty. Developed by the psychics of the Shattered Empire and used as a means of recruiting the worst of prepubescent children to serve as super soldiers in exchange for sparing their lives, it manifests when said child sociopath starts puberty. The result of the ritual, upon pubescence, is a SCP-1788-1 instance. While that ritual has been lost for millinea, the SCP-1788-1 instances remain and can still breed. After many generations, some have generally evolved into being a part of civilization... albeit as what are essentially cruel super soldiers. SCP-1788-1 instances satiate their innate blood lust by joining Factions and killing that Faction's enemies- regardless of who they are -or by serving as mercenaries that kill for hire. A SCP-1788-1 instance that can't find an outlet for its violence will kill its own "allies" instead. \n \n Living by the motto "Grow Up or Die", these creatures resemble obese humans and are extremely aggressive and known for their cruelty. At the point of their discovery, SCP-1788-1 instances would intentionally avoid each other outside of the annual mating cycle, and would always try and kill each other when they encountered another instance. (The Empire stopped this side effect through liberal usages of sedatives, Kill Switches, and other aggressive means.) However, that has long passed and they have evolved out of that trend, and as man spread out into the galaxy, the SCP-1788 instances, like all other SCP's in the catalog, eventually became too prevelant to be hidden.  \n \n What separates SCP-1788-1 instances from normal men, besides their cruelty, is their power. SCP-1788-1 instances have redundant organs in their respitory, circulatory, nervous, and digestive systems, plus dual spines and brains, with all but the additional brain nestled next to each other. (These organs are differentiated in medical science as "master" and "slave" organs.) \n Furthermore, SCP-1788-1 instances have denser bones and their muscle fibers are organized in efficient structures resembling carbon nano-tube latticework. This improves the strength and effiency of both, and causes them to be harder to harm. Unlike all other slave organs, an instance's slave brain is enclosed in its own slave ribcage beneath its secondary heart, giving it extra protection in a fight should the SCP-1788-1 instance lose its master brain. \n \n \n Centuries after their discovery, it has now been proven how the ritual was created, dating to the late twenty-sixth century AD, but not how the ritual was performed.</description>
+		<description>SCP-1788 was a ritual performed on prepubescent humans to turn them into instances of SCP-1788 once they started puberty. Developed by the psychics of the Shattered Empire and used as a means of recruiting the worst of prepubescent children to serve as super soldiers in exchange for sparing their lives, it manifests when said child sociopath starts puberty. The result of the ritual, upon pubescence, is a SCP-1788-1 instance. While that ritual has been lost for millinea, the SCP-1788-1 instances remain and can still breed. After many generations, some have generally evolved into being a part of civilization... albeit as what are essentially cruel super soldiers. \n \n SCP-1788-1 instances satiate their innate blood lust by joining Factions and killing that Faction's enemies- regardless of who they are -or by serving as mercenaries that kill for hire. A SCP-1788-1 instance that can't find an outlet for its violence will, as a last resort, kill its own "allies" instead. \n \n Living by the motto "Grow Up or Die", these creatures resemble obese humans and are extremely aggressive and known for their cruelty. At the point of their discovery, SCP-1788-1 instances would intentionally avoid each other outside of the annual mating cycle, and would always try and kill each other when they encountered another instance. (The Empire stopped this side effect through liberal usages of sedatives, Kill Switches, and other aggressive means.) However, that has long passed and they have evolved out of that trend, and as man spread out into the galaxy, the SCP-1788 instances, like all other SCP's in the catalog, eventually became too prevelant to be hidden.  \n \n What separates SCP-1788-1 instances from normal men, besides their cruelty, is their power. SCP-1788-1 instances have redundant organs in their respitory, circulatory, nervous, and digestive systems, plus dual spines and brains, with all but the additional brain nestled next to each other. (These organs are differentiated in medical science as "master" and "slave" organs.) \n \n Furthermore, SCP-1788-1 instances have denser bones and their muscle fibers are organized in efficient structures resembling carbon nano-tube latticework. This improves the strength and effiency of both, and causes them to be harder to harm. Unlike all other slave organs, an instance's slave brain is enclosed in its own slave ribcage beneath its secondary heart, giving it extra protection in a fight should the SCP-1788-1 instance lose its master brain. \n \n \n Centuries after their discovery, it has now been proven how the ritual was created, dating to the late twenty-sixth century AD, but not how the ritual was performed.</description>
 		<descriptionHyperlinks>
 			<HediffDef>TSP_CJ_SCR_1788_History</HediffDef>
 		</descriptionHyperlinks>
@@ -37,11 +37,11 @@
 					</li>
 					<li>
 						<defName>Cannibal</defName>
-						<chance>0.33</chance>
+						<chance>0.2</chance>
 					</li>
 					<li>
 						<defName>Abrasive</defName>
-						<chance>0.3</chance>
+						<chance>0.5</chance>
 					</li>
 					<li>
 						<defName>Masochist</defName>
@@ -390,6 +390,7 @@
 			<power>16</power>
 			<cooldownTime>1.82</cooldownTime>
 			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			<surpriseAttack>
 			  <extraMeleeDamages>
 				<li>
@@ -405,9 +406,10 @@
 			<capacities>
 			  <li>Demolish</li>
 			</capacities>
-			<power>8</power>
-			<cooldownTime>3</cooldownTime>
+			<power>4</power>
+			<cooldownTime>0.5</cooldownTime>
 			<linkedBodyPartsGroup>TSP_CJ_SCR_1788_LesserArms_Left</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			<surpriseAttack>
 			  <extraMeleeDamages>
 				<li>
@@ -426,6 +428,7 @@
 			<power>16</power>
 			<cooldownTime>1.82</cooldownTime>
 			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			<surpriseAttack>
 			  <extraMeleeDamages>
 				<li>
@@ -441,9 +444,10 @@
 			<capacities>
 			  <li>Demolish</li>
 			</capacities>
-			<power>8</power>
-			<cooldownTime>3</cooldownTime>
+			<power>4</power>
+			<cooldownTime>0.5</cooldownTime>
 			<linkedBodyPartsGroup>TSP_CJ_SCR_1788_LesserArms_Right</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			<surpriseAttack>
 			  <extraMeleeDamages>
 				<li>
@@ -462,6 +466,7 @@
 			<power>20</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			<chanceFactor>0.15</chanceFactor>
 		  </li>
 		  <li>

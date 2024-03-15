@@ -153,14 +153,14 @@
 			<label>acidic bite</label>
 			<capacities>
 			  <li>ToxicBite</li>
-			  <li>TSP_SCR_SCP3199_Acid</li>
+			  <li MayRequire="ludeon.rimworld.biotech">TSP_SCR_SCP3199_Acid</li>
 			  <!-- <li MayRequire="ludeon.rimworld.biotech">AcidBurn</li> -->
 			</capacities>
 			<power>14</power>
 			<cooldownTime>2.66</cooldownTime>
 			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-			<chanceFactor>0.92</chanceFactor>
+			<chanceFactor>1.1</chanceFactor>
 			<surpriseAttack>
 			  <extraMeleeDamages>
 				<li>
