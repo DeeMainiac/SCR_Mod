@@ -28,18 +28,21 @@
     <wildPlantRegrowDays>0.1</wildPlantRegrowDays>
 	<allowRoads>false</allowRoads>
 	<allowRivers>true</allowRivers>
+	<extremeBiome>true</extremeBiome>
     <soundsAmbient>
-		<li>Ambient_NightInsects_Jungle</li>
+		<!-- <li>Ambient_NightInsects_Jungle</li> -->
 		<li>Ambient_Wind_Desolate</li>
 		<li MayRequire="regrowth.botr.core">RG_Ambient_Sandstorm</li>
     </soundsAmbient>
     <diseaseMtbDays>33</diseaseMtbDays>
     <diseases>
+	<!--
 	 <li>
 		<diseaseInc>SCR_Disease_SCP610</diseaseInc>
 		<commonality>0.001</commonality>
-		<!-- As this has no cure, it's unfair to throw it commonly, and besides, the creatures always givE it to you -->
+		As this has no cure, it's unfair to throw it commonly, and besides, the creatures always give it to you
       </li>
+	  -->
       <li>
         <diseaseInc>Disease_Plague</diseaseInc>
         <commonality>100</commonality>
