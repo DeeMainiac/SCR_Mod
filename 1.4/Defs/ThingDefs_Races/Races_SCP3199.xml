@@ -6,18 +6,15 @@
 		<label>SCP-3199</label>
 		<description>SCP-3199 is a bipedal abomination that will attack its prey with claws and a venomous acid bite. Its eggs are difficult to get rid of, and each instance carries an egg with it shortly after birth. Killing a SCP-3199 instance will not kill the egg inside it. Eggs will only stop hatching in cold temperatures, in which they then can be disposed.</description>
 		<modExtensions>
-		<li Class="SecureContainRimworld.CProceduresExtension">
-
-		<classRating>
-			<li>SCR_CKeter</li>
-			<li>SCR_DKeneq</li>
-			<li>SCR_RNotice</li>
-		</classRating>
-
-		<containmentTier>2</containmentTier>
-		<willManhuntAfterBreach>true</willManhuntAfterBreach>
-		
-		</li>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CKeter</li>
+					<li>SCR_DKeneq</li>
+					<li>SCR_RDanger</li>
+				</classRating>
+				<containmentTier>2</containmentTier>
+				<willManhuntAfterBreach>true</willManhuntAfterBreach>
+			</li>
 		</modExtensions>
 		
 		<statBases>
@@ -52,7 +49,7 @@
 		  <body>SCR_Neck</body>
 		  <herdAnimal>true</herdAnimal>
 		  <predator>true</predator>
-		  <needsRest>false</needsRest>
+		  <needsRest>false</needsRest> <!-- No Foundation reports show them sleeping, though they do lay dormant sometimes -->
 		  <baseBodySize>2</baseBodySize>
 		  <baseHungerRate>0.4</baseHungerRate>
 		  <baseHealthScale>1.8</baseHealthScale>
@@ -160,7 +157,7 @@
 			<cooldownTime>2.66</cooldownTime>
 			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-			<chanceFactor>1.1</chanceFactor>
+			<chanceFactor>1.5</chanceFactor>
 			<surpriseAttack>
 			  <extraMeleeDamages>
 				<li>
