@@ -28,7 +28,7 @@
 	<LetterSCP848_SpawnItem>One or more SCP-848-1s caught something in their webs.</LetterSCP848_SpawnItem>
 
 	<LetterLabelSCP2845Attack>SCP-2845 Invasion</LetterLabelSCP2845Attack>
-	<LetterSCP2845Attack>An SCP-2845 and its SCP-2845-1 minions have appeared.\n\nContain or kill them.\n\nThey will probably leave the area in a few days.</LetterSCP2845Attack>
+	<LetterSCP2845Attack>An SCP-2845 and its SCP-2845-1 minions have appeared.\n\nContain or kill the leading SCP-2845 instance!\n\nThey will probably leave the area in a few days.</LetterSCP2845Attack>
 
 	<!-- SCP-specific messages -->
 
