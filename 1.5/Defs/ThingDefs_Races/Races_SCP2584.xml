@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="SCR_SCP_Base">
+    <defName>SCR_SCP2584R</defName>
+    <label>SCP-2584</label>
+    <description>SCP-2584 is a snake-like creature without a head or tail, joining the two ends of its body together. It has no need for food and undergoes binary fission once in awhile.</description>
+    		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+	<statBases>
+      <MoveSpeed>3.5</MoveSpeed>
+      <MarketValue>150</MarketValue>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+    </statBases>
+    <uiIconScale>1.1</uiIconScale>
+    <tools>
+      <li>
+        <label>body</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+		<eggUnfertilizedDef>SCR_SCP2584Egg</eggUnfertilizedDef>
+        <eggFertilizedDef>SCR_SCP2584Egg</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggProgressUnfertilizedMax>1</eggProgressUnfertilizedMax>
+        <eggLayIntervalDays>10</eggLayIntervalDays>
+        <eggCountRange>1</eggCountRange>
+		<eggLayFemaleOnly>false</eggLayFemaleOnly>
+      </li>
+    </comps>
+    <race>
+      <body>Snake</body>
+	<predator>false</predator>
+      <baseBodySize>0.25</baseBodySize>
+	<baseHungerRate>0</baseHungerRate>
+      <baseHealthScale>0.5</baseHealthScale>
+      <foodType>None</foodType>
+      <leatherDef>Leather_Lizard</leatherDef>
+      <useMeatFrom>Cobra</useMeatFrom>
+      <wildness>0</wildness>
+      <petness>0.5</petness>
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0</manhunterOnDamageChance>
+      <nameOnTameChance>1</nameOnTameChance>
+      <lifeExpectancy>20</lifeExpectancy>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Cobra_Wounded</soundWounded>
+          <soundDeath>Pawn_Cobra_Death</soundDeath>
+          <soundCall>Pawn_Cobra_Call</soundCall>
+          <soundAngry>Pawn_Cobra_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  			<wildBiomes>
+				<AridShrubland>.2</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>.1</TemperateForest>
+				<TemperateSwamp>.1</TemperateSwamp>
+				<TropicalRainforest>.1</TropicalRainforest>
+				<TropicalSwamp>.1</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>.2</Desert>
+				<ExtremeDesert>.4</ExtremeDesert>
+			</wildBiomes>
+	  
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+		<li>AnimalPet</li>
+		<li>SCP</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+    <defName>SCR_SCP2584R</defName>
+    <label>SCP-2584</label>
+    <race>SCR_SCP2584R</race>
+    <combatPower>15</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP2584/SCR_SCP2584</texPath>
+          <drawSize>.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP2584/SCR_SCP2584</texPath>
+          <drawSize>.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP2584/SCR_SCP2584</texPath>
+          <drawSize>.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+
+</Defs>

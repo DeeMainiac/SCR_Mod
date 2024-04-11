@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- 
+
+  <IssueDef>
+    <defName>SCR_Containment</defName>
+    <label>SCP Containment</label>
+    <iconPath>UI/Memes/Transhumanist</iconPath>
+	<allowMultiplePrecepts>true</allowMultiplePrecepts>
+  </IssueDef>
+
+Dishonorable 
+
+ <PreceptDef>
+    <defName>SCR_Containment_Dishonor</defName>
+    <issue>SCR_Containment</issue>
+    <label>dishonorable</label>
+    <description>SCPs weren’t made to be kept locked in closets, boxes, or in cages! We may use them as we please!</description>
+    <impact>High</impact>
+    <displayOrderInIssue>91</displayOrderInIssue>
+    <displayOrderInImpact>291</displayOrderInImpact>
+		<requiredMemes>
+      <li>TM_Transcendent</li>
+    </requiredMemes>
+    <comps>
+	  <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>TM_KilledMage</eventDef>
+        <thought>TM_KilledMage_Abhorrent_Social</thought>
+      </li>
+	  <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>TM_KilledMage</eventDef>
+        <thought>TM_KilledMage_Abhorrent_Mood</thought>
+        <description>I killed a mage</description>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>TM_KilledMage</eventDef>
+        <thought>TM_KilledMage_Know_Abhorrent_Mood</thought>
+		<description>We killed a mage</description>
+      </li>
+	  <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>TM_UsedMagic</eventDef>
+        <thought>TM_MagicUse_Abhorrent_Social</thought>
+      </li>
+	  <li Class="PreceptComp_SituationalThought">
+        <thought>TM_MagicUse_Know_Abhorrent_Mood</thought>
+		<description>used magic</description>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>TM_MagesInColony_Abhorrent_Mood</thought>
+        <description>mage in colony</description>
+      </li>
+	  <li Class="PreceptComp_SituationalThought">
+        <thought>TM_MagesInColonySlave_Abhorrent_Mood</thought>
+        <description>mage in colony</description>
+      </li>
+	  <li Class="PreceptComp_SituationalThought">
+        <thought>TM_IsMage_Abhorrent_Social</thought>
+      </li>
+    </comps> 
+  </PreceptDef>
+
+ -->
+
+</Defs>

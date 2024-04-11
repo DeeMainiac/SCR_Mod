@@ -139,7 +139,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/SCR_SCP160/SCR_SCP160</texPath>
-          <drawSize>0.3</drawSize>
+          <drawSize>0.9</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>
             <offset>(0,0,-0.15)</offset>

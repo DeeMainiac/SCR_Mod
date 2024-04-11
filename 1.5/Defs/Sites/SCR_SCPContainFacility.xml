@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <SitePartDef>
+    <defName>SCR_AbandonedContainmentFacility</defName>
+    <label>abandoned containment facility</label>
+    <description>An abandoned SCP Containment Facility. SCPs of some kind likely lurk inside.</description>
+    <workerClass>SitePartWorker_AncientComplex</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/SCR</expandingIconTexture>
+    <approachOrderString>Investigate {0}</approachOrderString>
+    <approachingReportString>Investigate {0}</approachingReportString>
+    <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <minMapSize>(200, 1, 200)</minMapSize>
+	    <tags>
+      <li>SCR_ContainmentFacility</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>SCR_AbandonedContainmentFacility</defName>
+    <linkWithSite>SCR_AbandonedContainmentFacility</linkWithSite>
+    <order>310</order>
+    <genStep Class="GenStep_AncientComplex" />
+  </GenStepDef>
+
+
+
+</Defs>

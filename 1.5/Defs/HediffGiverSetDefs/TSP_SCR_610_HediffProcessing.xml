@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <HediffGiverSetDef>
+	<defName>TSP_ST_SCP_610_Immunity_Processing</defName>
+	
+	<!-- Code derived entirely, and courtesy of, the Oni Mod by Lucky, Mori Ginto, and Tarojun -->
+	<!-- https://www.0steamcommunity.com/sharedfiles/filedetails/?id=2891432261 -->
+	<hediffGivers>
+		<li Class="HediffGiver_Birthday">
+			<hediff>TSP_SCR_610_CannotInfectSelf</hediff>
+			<ageFractionChanceCurve>
+				<points>
+					<li>(0, 1)</li> <!-- Always -->
+					<li>(1, 1)</li>
+				</points>
+			</ageFractionChanceCurve>
+		</li>
+	</hediffGivers>
+  </HediffGiverSetDef>
+</Defs>

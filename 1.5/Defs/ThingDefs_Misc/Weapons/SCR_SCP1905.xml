@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>SCR_Bullet_SCP1905R</defName>
+		<label> .577 Tyrannosaur round</label>
+		<thingClass>SecureContainRimworld.SCR_Projectile_DinoHunter</thingClass>
+		<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>SCR_SCP1905R</defName>
+		<label>SCP-1905</label>
+		<description>SCP-1905 is an elephant gun dubbed the "Dino Hunter Model 6" that causes fiberglass dinosaurs to apparate and attack, should a humanlike pawn be near it.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DKeneq</li>
+					<li>SCR_RWarning</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SCR_SCP1905</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+		<weaponTags>
+			<li>SCR_SCP</li>
+		</weaponTags>
+		<weaponClasses>
+		<li>LongShots</li>
+		<li>RangedHeavy</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>ExoticMisc</li>
+			<li>SCP</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<MarketValue>500</MarketValue>
+		<Mass>4</Mass>
+		<AccuracyTouch>0.50</AccuracyTouch>
+		<AccuracyShort>0.70</AccuracyShort>
+		<AccuracyMedium>0.86</AccuracyMedium>
+		<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>SCPWeapons</li>
+		</thingCategories>
+		<relicChance>2</relicChance>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SCR_Bullet_SCP1905R</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>42</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+
+
+
+
+
+
+
+
+</Defs>

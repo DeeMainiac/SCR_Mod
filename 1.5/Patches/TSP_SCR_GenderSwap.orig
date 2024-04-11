@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!-- Guaranteeing that the HUMANRECIPEIMPORT feature found in the Humanoid Alien Races Mod inherits these Recipes -->
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Human"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Human"]/recipes</xpath>
+			<value>
+				<li>TSP_SCR_Administer_SCP113R</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<!-- Since this Mod does not require the Humanoid Alien Races Mod, this Patch should be needed. -->
+	<!-- Guaranteeing that the HUMANRECIPEIMPORT feature found in the Humanoid Alien Races Mod inherits these Recipes -->
+	<Operation Class="PatchOperationConditional">
+	 <!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Human"]</xpath>
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="Human"]/recipes</xpath>
+			<value>
+				<li>TSP_SCR_Administer_SCP113R</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<!-- It even works on animals! Wow! -->
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="SCR_SCP113R"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+			<value>
+				<li>TSP_SCR_Administer_SCP113R</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

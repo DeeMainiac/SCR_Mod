@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <ThoughtDef>
+    <defName>SCR_EquippedLivingWeapon</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_LivingWeaponEquipped</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>living weapon equipped</label>
+        <description>It's strange to think that this device, made to be used to harm and kill, is alive... just like me...</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SCR_EquippedLivingWeaponPsycho</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_LivingWeaponEquippedPsycho</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Psychopath</li>
+	  <li>Bloodlust</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>living weapon equipped</label>
+        <description>My weapon is alive. I too feel alive. Let's kill together.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SCR_EquippedKatana</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_EquippedKatana</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>SCP-572 equipped</label>
+        <description>This katana's balance is perfect! It's cutting power is immense... I will take their heads, and with it, their power. I am invincible!</description>
+        <baseMoodEffect>50</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SCR_MikeUnit</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_SCP3033Mike</workerClass>
+    <validWhileDespawned>false</validWhileDespawned>
+    <stages>
+      <li>
+        <label>SCP-3033-1 implant</label>
+        <description>My body is not my own, and is being used as a weapon.</description>
+        <baseMoodEffect>50</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+    <ThoughtDef>
+    <defName>SCR_MikeUnitIdle</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_SCP3033MikeIdle</workerClass>
+    <stages>
+      <li>
+        <label>SCP-3033-1 implant</label>
+        <description>Get this thing out of my head before I can't control myself again!</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+   <ThoughtDef>
+    <defName>SCR_Infected_SCP1797</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_KittenFlu</workerClass>
+    <stages>
+      <li>
+        <label>Sick with SCP-1797</label>
+        <description>I'm growing tumors! Wait... are they falling off and then... meowing?</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef> 
+
+   <ThoughtDef>
+    <defName>SCR_Infected_SCP939</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_SCP939</workerClass>
+    <stages>
+      <li>
+        <label>SCP-939 nearby</label>
+        <description>I'm starting to forget what I was supposed to be doing...</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef> 
+
+  <ThoughtDef>
+    <defName>SCR_SCPES019_BadThought</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
+    <durationDays>5</durationDays>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>used SCP-ES-019</label>
+        <description>That was a very worrying broadcast that I listened to.</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+   <ThoughtDef>
+    <defName>SCR_SCP113_BadThought</defName>
+	<showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
+	<durationDays>15</durationDays>
+    <stages>
+      <li>
+        <label>used SCP-113</label>
+        <description>My body has been forcibly changed...</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef> 
+
+   <ThoughtDef>
+    <defName>SCR_SCP1695_BadThought</defName>
+	<showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
+	<durationDays>15</durationDays>
+    <stages>
+      <li>
+        <label>was inside SCP-1695</label>
+        <description>I was installed into a Meaty the Meatworm instance. I can still here the wriggling and squirming inside there.</description>
+        <baseMoodEffect>-35</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef> 
+
+    <ThoughtDef>
+    <defName>SCR_TransmuteTime</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_SCP2845</workerClass>
+    <stages>
+      <li>
+        <label>SCP-2845 Transmutation Aura</label>
+        <description>SATURN SATURN SATURN SATURN SATURN SATURN SATURN SATURN</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SCR_CarryingCeramicSeahorse</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_SmolSeahorse</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>carrying SCP-732-J</label>
+        <description>It's so cute and charismatic!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+    <ThoughtDef>
+    <defName>SCR_AteSCP2022</defName>
+   <workerClass>SecureContainRimworld.ThoughtWorker_SCP2022</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>SCP-2022</label>
+        <description>I feel like the sun is gently caressing me.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+	<ThoughtDef>
+		<defName>TSP_SteppingOnTheSick_610</defName>
+		<durationDays>0.25</durationDays>
+		<stackLimit>1</stackLimit>
+		<validWhileDespawned>false</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<nullifyingPrecepts>
+			<li MayRequire="vanillaexpanded.vmemese">VME_Illness_Exalted</li>
+			<li MayRequire="vanillaexpanded.vmemese">VME_Illness_Preferred</li>
+		</nullifyingPrecepts>
+		<stages>
+			<li>
+				<label>stepping on SCP-610 corruption</label>
+				<description>The corruption of the Flesh That Hates is everywhere. Just hearing the all-consuming demon fungus squish and throb under my weight makes me feel malaise.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

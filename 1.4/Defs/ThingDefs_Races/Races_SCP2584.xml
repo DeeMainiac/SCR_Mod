@@ -40,6 +40,7 @@
 		<eggUnfertilizedDef>SCR_SCP2584Egg</eggUnfertilizedDef>
         <eggFertilizedDef>SCR_SCP2584Egg</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggProgressUnfertilizedMax>1</eggProgressUnfertilizedMax>
         <eggLayIntervalDays>10</eggLayIntervalDays>
         <eggCountRange>1</eggCountRange>
 		<eggLayFemaleOnly>false</eggLayFemaleOnly>
