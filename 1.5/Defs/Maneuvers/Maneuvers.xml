@@ -57,4 +57,18 @@
     <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
   </ManeuverDef>
   
-  </Defs>
+	<ManeuverDef MayRequire="ludeon.rimworld.biotech">
+		<defName>TSP_SCR_AcidBite</defName>
+		<requiredCapacity>TSP_SCR_SCP3199_Acid</requiredCapacity>
+		<verb MayRequire="ludeon.rimworld.biotech">
+			<verbClass MayRequire="ludeon.rimworld.biotech">Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef MayRequire="ludeon.rimworld.biotech">AcidBurn</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+  
+</Defs>

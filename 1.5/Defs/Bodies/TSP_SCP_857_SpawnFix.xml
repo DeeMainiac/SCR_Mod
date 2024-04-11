@@ -32,4 +32,58 @@
 			<li>BloodFiltrationSource</li>
 		</tags>
 	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>TSP_SCR_857_Enchantment_HasFeet</defName>
+		<label>anomalous enchantment</label>
+		<hitPoints>51</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<conceptual>true</conceptual>
+		<socketed>true</socketed>
+		<alive>true</alive>
+		<skinCovered>true</skinCovered>
+		<solid>false</solid>
+		<beautyRelated>false</beautyRelated>
+		<bleedRate>5</bleedRate>
+		<canScarify>false</canScarify>
+		<destroyableByDamage>false</destroyableByDamage>
+		<pawnGeneratorCanAmputate>false</pawnGeneratorCanAmputate>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<delicate>true</delicate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+			<li>ManipulationLimbDigit</li>
+			<li>ManipulationLimbSegment</li>
+			<li>BreathingSource</li>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>TSP_SCR_857_Enchantment_HasHeart</defName>
+		<label>anomalous enchantment</label>
+		<hitPoints>51</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<conceptual>true</conceptual>
+		<socketed>true</socketed>
+		<alive>true</alive>
+		<skinCovered>true</skinCovered>
+		<solid>false</solid>
+		<beautyRelated>false</beautyRelated>
+		<bleedRate>5</bleedRate>
+		<canScarify>false</canScarify>
+		<destroyableByDamage>false</destroyableByDamage>
+		<pawnGeneratorCanAmputate>false</pawnGeneratorCanAmputate>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<delicate>true</delicate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+			<li>ManipulationLimbDigit</li>
+			<li>ManipulationLimbSegment</li>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
 </Defs>

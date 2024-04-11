@@ -176,7 +176,7 @@
         
         <!-- Eat random things out of curiosity -->
         <li Class="ThinkNode_ChancePerHour_Constant">
-          <mtbDays>60</mtbDays>
+          <mtbDays>2</mtbDays>
           <subNodes>
             <li Class="ThinkNode_Tagger">
               <tagToGive>SatisfyingNeeds</tagToGive>

@@ -1,133 +1,172 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
-<ThingDef ParentName="SCR_SCP_Base">
+<Defs>
+	<ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP745R</defName>
     <label>SCP-745</label>
-    <description>SCP-745 is a bipedal creature with a large, light emitting organ on its head used to disorient prey. Hunting in pairs, it uses its light organ to mimic vehicle headlights, enticing prey to deliberately crash their vehicles in an attempt to avoid a head-on collision. These ones have evolved to eat in captivity.</description>
+    <description>SCP-745 is a bipedal creature with a large, light emitting organ on its head, which is used to disorient prey. Hunting in pairs, it uses its light organ to mimic vehicle headlights, enticing prey to swerve and then crash their vehicles in an attempt to avoid a head-on collision. On planets at the edge of the Galactic Rim, where roads are scarce and automobiles basically non-existent, they instead use their lights to blind their prey when they stalk the wilderness.</description>
 		<modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CEuclid</li>
+					<li>SCR_DVlam</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>2</containmentTier>
+				<willManhuntAfterBreach>true</willManhuntAfterBreach>
+			</li>
+		</modExtensions>
 
-	<classRating>
-		<li>SCR_CEuclid</li>
-		<li>SCR_DVlam</li>
-		<li>SCR_RNotice</li>
-	</classRating>
-
-	<containmentTier>2</containmentTier>
-	<willManhuntAfterBreach>true</willManhuntAfterBreach>
-	
-	</li>
-	</modExtensions>
-	
 	<statBases>
-      <MoveSpeed>16.9</MoveSpeed>
-      <MarketValue>500</MarketValue>
-      <ComfyTemperatureMin>0</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>300</ComfyTemperatureMax>
-	<FilthRate>15</FilthRate>
+		<MoveSpeed>16.9</MoveSpeed>
+		<MarketValue>500</MarketValue>
+		<ComfyTemperatureMin>7</ComfyTemperatureMin> <!-- As they are desert animals -->
+		<ComfyTemperatureMax>85</ComfyTemperatureMax>
+		<FilthRate>15</FilthRate>
     </statBases>
-	 <!--	<comps> doesn't work at the moment, causes the glow to stay in one place
-	      <li Class="CompProperties_Glower">
-        <glowRadius>4</glowRadius>
-		<overlightRadius>4.0</overlightRadius>
-        <glowColor>(255,255,255,0)</glowColor>
-      </li>
-	</comps> -->
+	<comps>
+		<!--
+			This doesn't work at the moment, causes the glow to stay in one place
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<overlightRadius>4.0</overlightRadius>
+				<glowColor>(255,255,255,0)</glowColor>
+			</li>
+		-->
+		<li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>TSP_SCR_SCP745Egg</eggFertilizedDef>
+			<eggFertilizationCountMax>1</eggFertilizationCountMax>
+			<eggLayIntervalDays>6.6</eggLayIntervalDays>
+			<eggCountRange>2~2</eggCountRange>
+		</li>
+	</comps>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
-      <body>Bird</body>
+      <body>QuadrupedAnimalWithClawsTailAndJowl</body> <!-- Same as Iguana, will give custom Body later to reflect its canonical bipedal nature and obvious headlight -->
 	  <herdAnimal>true</herdAnimal>
       <predator>true</predator>
 	  <needsRest>false</needsRest>
       <baseBodySize>1.3</baseBodySize>
       <baseHungerRate>0.4</baseHungerRate>
       <baseHealthScale>1.8</baseHealthScale>
-      <foodType>CarnivoreAnimalStrict</foodType>
-      <leatherDef>Leather_Patch</leatherDef>
+      <foodType>Meat, CarnivoreAnimalStrict, CarnivoreAnimal, Corpse, Kibble</foodType>
+      <leatherDef>Leather_Lizard</leatherDef>
 	  <useMeatFrom>Iguana</useMeatFrom>
       <wildness>0.9</wildness>
-      <trainability>None</trainability>
+      <trainability>Advanced</trainability>
       <gestationPeriodDays>10</gestationPeriodDays>
       <nameOnTameChance>1</nameOnTameChance>
       <lifeExpectancy>16</lifeExpectancy>
-	  <manhunterOnTameFailChance>.5</manhunterOnTameFailChance>
-	  <manhunterOnDamageChance>1</manhunterOnDamageChance>
-	  			<wildBiomes>
-				<AridShrubland>.1</AridShrubland>
-				<BorealForest>0</BorealForest>
-				<ColdBog>0</ColdBog>
-				<TemperateForest>.05</TemperateForest>
-				<TemperateSwamp>0</TemperateSwamp>
-				<TropicalRainforest>0</TropicalRainforest>
-				<TropicalSwamp>0</TropicalSwamp>
-				<IceSheet>0</IceSheet>
-				<SeaIce>0</SeaIce>
-				<Tundra>0</Tundra>
-				<Desert>.1</Desert>
-				<ExtremeDesert>.05</ExtremeDesert>
-			</wildBiomes>
+	  <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>2</manhunterOnDamageChance>
+	  <wildBiomes>
+		<AridShrubland>0.41</AridShrubland>
+		<BorealForest>0</BorealForest>
+		<ColdBog>0</ColdBog>
+		<TemperateForest>0.01</TemperateForest>
+		<TemperateSwamp>0.01</TemperateSwamp>
+		<TropicalRainforest>0.001</TropicalRainforest>
+		<TropicalSwamp>0.01</TropicalSwamp>
+		<IceSheet>0</IceSheet>
+		<SeaIce>0</SeaIce>
+		<Tundra>0</Tundra>
+		<Desert>0.575</Desert>
+		<ExtremeDesert>0.365</ExtremeDesert>
+	  </wildBiomes>
       <lifeStageAges Inherit="False">
         <li>
           <def>AnimalBaby</def>
           <minAge>0</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Pawn_Iguana_Angry</soundAngry>
         </li>
         <li>
           <def>AnimalAdult</def>
           <minAge>0.2</minAge>
-          <soundWounded>Pawn_Wildboar_Wounded</soundWounded>
-          <soundDeath>Pawn_Wildboar_Death</soundDeath>
-          <soundCall>Pawn_Wildboar_Wounded</soundCall>
-          <soundAngry>Pawn_Wildboar_Angry</soundAngry>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Pawn_Iguana_Angry</soundAngry>
         </li>
       </lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-    </race>
+		</race>
 			<tradeTags>
-			<li>AnimalRare</li>
-			<li>SCP</li>
-		</tradeTags>
-    <tools>
-	<li>
-        <label>claws</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>10</power>
-        <cooldownTime>1.5</cooldownTime>
-        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>18</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>8</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-    </tools>
-  </ThingDef>
+				<li>AnimalRare</li>
+				<li>AnimalFighter</li>
+				<li>AnimalExotic</li>
+			</tradeTags>
+		<tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+				  <li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>18</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			  </li>
+			<li>
+				<label>claws</label>
+				<capacities>
+				  <li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>18</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			  </li>
+			  <li>
+				<label>head</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			  </li>
+			  <li>
+				<label>bite</label>
+				<capacities>
+				  <li>Bite</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>1</chanceFactor>
+			  </li>
+		</tools>
+	</ThingDef>
   
   
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP745R</defName>
     <label>SCP-745</label>
     <race>SCR_SCP745R</race>
-    <combatPower>150</combatPower>
-
+    <combatPower>140</combatPower>
+	<wildGroupSize>2~2</wildGroupSize>
     <lifeStages>
       <li>
         <bodyGraphicData>

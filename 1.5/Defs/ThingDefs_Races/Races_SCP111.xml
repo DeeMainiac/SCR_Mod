@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<ThingDef ParentName="SCR_SCP_Base">
+	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP111R</defName>
 		<label>SCP-111</label>
 		<description>SCP-111 is one of six different colorful snail-like creatures that occasionally exhale fire as a defense mechanism.</description>
@@ -24,10 +24,7 @@
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
 		<race>
-		
-		<deathAction>
-		<workerClass>DeathActionWorker_SmallExplosion</workerClass>
-		</deathAction>
+		  <deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
 		  <herdAnimal>true</herdAnimal>
 		  <body>SCR_Snail</body>
 		  <baseBodySize>0.1</baseBodySize>
@@ -74,15 +71,14 @@
 			  <soundAngry>Pawn_DogSmall_Angry</soundAngry>
 			</li>
 		  </lifeStageAges>
-		  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-		  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
 		  <li>AnimalCommon</li>
 		  <li>AnimalFarm</li>
 		  <li>AnimalExotic</li>
-		  <li>SCP</li>
 		</tradeTags>
 		<tools>
 		  <li>
@@ -105,8 +101,8 @@
 			<eggCountRange>1~2</eggCountRange>
 		  </li>
 		</comps>
-		
 	  </ThingDef>
+	  
 	  <PawnKindDef Name="SCR_SCP111R" ParentName="TSP_SCP_Creature_PawnkindDef">
 		<defName>SCR_SCP111R</defName>
 		<label>SCP-111</label>

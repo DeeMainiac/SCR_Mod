@@ -73,6 +73,7 @@
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
+		<defaultArmorPenetration>0</defaultArmorPenetration>
 	</DamageDef>
 
   <DamageDef Parent="Scratch">
@@ -80,23 +81,24 @@
     <label>scratch</label>
     <workerClass>DamageWorker_Scratch</workerClass>
     <externalViolence>true</externalViolence>
-    <deathMessage>{0} has been torn to death.</deathMessage>
+    <deathMessage>{0} has been infected by SCP-610.</deathMessage>
     <hediff>Scratch</hediff>
     <hediffSolid>Crack</hediffSolid>
 		<additionalHediffs>
 			<li>
 				<hediff>SCR_SCP610Infection</hediff>
 				<severityPerDamageDealt>0.004</severityPerDamageDealt>
-				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<!-- <victimSeverityScaling>ToxicResistance</victimSeverityScaling> -->
 			</li>
 		</additionalHediffs>
 		<defaultDamage>5</defaultDamage>
-			<isRanged>false</isRanged>
-    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-    <impactSoundType>Slice</impactSoundType>
-    <armorCategory>Sharp</armorCategory>
-    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
-    <scratchSplitPercentage>0.67</scratchSplitPercentage>
+		<isRanged>false</isRanged>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<scratchSplitPercentage>0.67</scratchSplitPercentage>
+		<defaultArmorPenetration>0</defaultArmorPenetration>
   </DamageDef>
 
 </Defs>

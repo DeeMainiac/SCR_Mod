@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
-  
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>SCR_SCP610Hive</defName>
     <label>SCP-610 hive</label>
@@ -10,12 +10,12 @@
       <texPath>Things/Buildings/SCR_SCP610Hive</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <color>(170,43,0)</color>
-      <drawSize>1.6</drawSize>
+      <drawSize>2</drawSize>
     </graphicData>
     <uiIconScale>0.65</uiIconScale>
     <altitudeLayer>Building</altitudeLayer>
     <rotatable>false</rotatable>
-    <fillPercent>0.5</fillPercent>
+    <fillPercent>1</fillPercent>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>2.0</Flammability>
@@ -41,8 +41,8 @@
         </spawnablePawnKinds>
         <lordJob>LordJob_DefendAndExpandHive</lordJob>
         <spawnSound>Hive_Spawn</spawnSound>
-        <initialPawnsPoints>100</initialPawnsPoints>
-        <maxSpawnedPawnsPoints>3000</maxSpawnedPawnsPoints>
+        <initialPawnsPoints>200</initialPawnsPoints>
+        <maxSpawnedPawnsPoints>8000</maxSpawnedPawnsPoints>
       </li>
       <li Class="CompProperties_SelfhealHitpoints">
         <ticksPerHeal>3000</ticksPerHeal> <!-- 60k ticks = 1 day, 20 hp per day -->
@@ -58,7 +58,7 @@
         <filthDef>Filth_FireFoam</filthDef>
         <spawnCountOnSpawn>15</spawnCountOnSpawn>
         <spawnMtbHours>1</spawnMtbHours>
-        <spawnRadius>3.5</spawnRadius>
+        <spawnRadius>5</spawnRadius>
       </li>
     </comps>
   </ThingDef>
