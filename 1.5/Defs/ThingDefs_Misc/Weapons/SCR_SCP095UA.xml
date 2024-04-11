@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="BaseGun">
+		<defName>SCR_SCP095UA</defName>
+		<label>SCP-095-UA</label>
+		<description>SCP-095-UA is an incendiary rocket launcher with an extremely, unnaturally, accurate projectile. It has strange, likely sarkic symbols and blood on the inside of the barrel.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DKeneq</li>
+					<li>SCR_RWarning</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SCR_SCP095UA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<techLevel>Ultra</techLevel>
+		<thingCategories>
+			<li>SCPObjects</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+			<li>ExoticMisc</li>
+			<li>SCP</li>
+		</tradeTags>
+		<statBases>
+			<Mass>5</Mass>
+			<MarketValue>3000</MarketValue>
+      <AccuracyTouch>.4</AccuracyTouch>
+      <AccuracyShort>2</AccuracyShort>
+      <AccuracyMedium>2</AccuracyMedium>
+      <AccuracyLong>2</AccuracyLong>
+      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+		</statBases>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	        <smeltable>false</smeltable>
+		<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_IncendiaryLauncher</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+		<forcedMissRadius>1.9</forcedMissRadius>
+        <range>100.9</range>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+	    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	    <weaponTags Inherit="False">
+      <li>SCPWeapon</li>
+    </weaponTags>
+	</ThingDef>
+
+
+</Defs>

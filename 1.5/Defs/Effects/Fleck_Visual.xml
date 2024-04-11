@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>SCR_FleckSCP1762R</defName>
+    <graphicData>
+      <texPath>Things/Mote/SCR_SCP1762_2</texPath>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.5</fadeInTime>
+    <solidTime>2</solidTime>
+    <fadeOutTime>0.5</fadeOutTime>
+    <growthRate>0.05</growthRate>
+  </FleckDef>
+  
+   <FleckDef ParentName="FleckBase_Thrown">
+    <defName>SCR_Fleck2SCP1762R</defName>
+    <graphicData>
+      <texPath>Things/Mote/SCR_SCP1762_3</texPath>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.5</fadeInTime>
+    <solidTime>2</solidTime>
+    <fadeOutTime>0.5</fadeOutTime>
+    <growthRate>0.05</growthRate>
+  </FleckDef>
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>SCR_MoteSCP1762R</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <mote>
+      <solidTime>600</solidTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/SCR_SCP1762_2</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  </Defs>

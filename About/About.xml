@@ -8,6 +8,7 @@
 	<supportedVersions>
 		<li>1.3</li>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<modDependenciesByVersion>
 		<v1.3>
@@ -31,6 +32,19 @@
 				<steamWorkshopUrl>https://www.steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
 			</li>
 		</v1.4>
+		<v1.5>
+			<li>
+				<packageId>brrainz.harmony</packageId>
+				<displayName>Harmony</displayName>
+				<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
+			</li>
+			<li>
+				<packageId>erdelf.HumanoidAlienRaces</packageId>
+				<displayName>Humanoid Alien Races</displayName>
+				<steamWorkshopUrl>https://www.steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+			</li>
+		</v1.5>
 	</modDependenciesByVersion>
 	<loadAfter>
 		<li>brrainz.harmony</li>
@@ -41,8 +55,10 @@
 	</loadAfter>
 	<incompatibleWith>
 		<li>Crackajack.CJPsychos</li>
+		<!-- <li>scp.onlyclothes</li> -->
+		<li>ods.scp.mod</li>
 	</incompatibleWith>
 	<!-- =================================================================== -->
-	<description>Adds stuff from the SCP Foundation project. Requires Harmony and Humanoid Alien Races.
+	<description>Adds stuff from the SCP Foundation project. Requires Harmony and Humanoid Alien Races. Not compatible with other SCP mods.
 	Includes a storyteller, a biome, creatures, a pawn race, weapons, apparel, objects, factions, buildings, research projects, furniture, and containment procedures.</description>
 </ModMetaData>

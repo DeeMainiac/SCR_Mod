@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!-- Third eyelid, protects frog in-game -->
+	<BodyPartDef>
+		<defName>TSP_SCR_857_Enchantment</defName>
+		<label>anomalous enchantment</label>
+		<hitPoints>51</hitPoints>
+		<frostbiteVulnerability>0</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<conceptual>true</conceptual>
+		<socketed>true</socketed>
+		<alive>true</alive>
+		<skinCovered>true</skinCovered>
+		<solid>false</solid>
+		<beautyRelated>false</beautyRelated>
+		<bleedRate>5</bleedRate>
+		<canScarify>false</canScarify>
+		<destroyableByDamage>false</destroyableByDamage>
+		<pawnGeneratorCanAmputate>false</pawnGeneratorCanAmputate>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<delicate>true</delicate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+			<li>ManipulationLimbDigit</li>
+			<li>ManipulationLimbSegment</li>
+			<li>MovingLimbCore</li>
+			<li>MovingLimbDigit</li>
+			<li>MovingLimbSegment</li>
+			<li>BreathingSource</li>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+		</tags>
+	</BodyPartDef>
+</Defs>

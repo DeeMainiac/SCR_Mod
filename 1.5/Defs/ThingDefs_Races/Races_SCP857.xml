@@ -1,0 +1,890 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingDef Name="SCR_SCP857Base" ParentName="SCR_SCP_Base" Abstract="True">
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particularly in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered.</description>
+		<statBases>
+			<MeatAmount>25</MeatAmount>
+			<LeatherAmount>20</LeatherAmount>
+		</statBases>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RCaution</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>SCP</li>
+		</tradeTags>
+		<race>
+			<body>SCR_Round</body>
+			<baseBodySize>0.15</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<wildness>0</wildness>
+			<petness>0.5</petness>
+			<maxPreyBodySize>0.15</maxPreyBodySize>
+			<trainability>None</trainability>
+			<nuzzleMtbHours>4</nuzzleMtbHours>
+			<useLeatherFrom>Human</useLeatherFrom>
+			<useMeatFrom>Human</useMeatFrom>
+			<nameCategory>HumanStandard</nameCategory>
+			<lifeExpectancy>20</lifeExpectancy>
+			<foodType>Corpse, OmnivoreHuman, OvivoreAnimal, Meal, Fluid, Kibble</foodType>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+			<wildBiomes Inherit="False">
+				<!-- RimWorld.Core -->
+				<!-- VANILLA RENDITION -->
+
+				<BorealForest>0</BorealForest>
+
+				<Tundra>0</Tundra>
+
+				<ColdBog>0</ColdBog>
+
+				<IceSheet>0</IceSheet>
+
+				<SeaIce>0</SeaIce>
+
+				<TemperateForest>0</TemperateForest>
+
+				<TemperateSwamp>0.003</TemperateSwamp>
+
+				<TropicalRainforest>0.02</TropicalRainforest>
+
+				<TropicalSwamp>0.01</TropicalSwamp>
+
+				<AridShrubland>0.001</AridShrubland>
+
+				<Desert>0.001</Desert>
+
+				<ExtremeDesert>0.001</ExtremeDesert>
+
+
+
+
+
+				<!-- ___________________ -->			
+				<!-- Mod Biomes -->
+				<!-- ___________________ -->
+
+				<!-- sarg.alphabiomes -->
+				<!-- ALPHA BIOMES -->
+
+				<AB_FeraliskInfestedJungle MayRequire="sarg.alphabiomes">0.035</AB_FeraliskInfestedJungle>
+
+				<AB_GallatrossGraveyard MayRequire="sarg.alphabiomes">0.005</AB_GallatrossGraveyard>
+
+				<AB_GelatinousSuperorganism MayRequire="sarg.alphabiomes">0.001</AB_GelatinousSuperorganism>
+
+				<AB_MechanoidIntrusion MayRequire="sarg.alphabiomes">0</AB_MechanoidIntrusion>
+
+				<AB_MycoticJungle MayRequire="sarg.alphabiomes">0.02</AB_MycoticJungle>
+
+				<AB_OcularForest MayRequire="sarg.alphabiomes">0.1</AB_OcularForest>
+
+				<AB_PropaneLakes MayRequire="sarg.alphabiomes">0</AB_PropaneLakes>
+
+				<AB_PyroclasticConflagration MayRequire="sarg.alphabiomes">0.001</AB_PyroclasticConflagration>
+
+				<AB_RockyCrags MayRequire="sarg.alphabiomes">0.001</AB_RockyCrags>
+
+				<AB_TarPits MayRequire="sarg.alphabiomes">0.001</AB_TarPits>
+
+				<AB_MiasmicMangrove MayRequire="sarg.alphabiomes">0.04</AB_MiasmicMangrove>
+
+				<AB_IdyllicMeadows MayRequire="sarg.alphabiomes">0</AB_IdyllicMeadows>
+
+
+
+				<!-- ___________________ -->
+
+				<!-- BiomesTeam.Oasis -->
+				<!-- CHROMATIC OASIS -->
+
+				<BMT_ChromaticOasis MayRequire="BiomesTeam.Oasis">0.005</BMT_ChromaticOasis>
+
+
+
+				<!-- ___________________ -->
+
+				<!-- Mlie.AdvancedBiomes -->
+				<!-- ADVANCED BIOMES -->
+
+				<PoisonForest MayRequire="Mlie.AdvancedBiomes">0</PoisonForest>
+
+				<Savanna MayRequire="Mlie.AdvancedBiomes">0.001</Savanna>
+
+				<Volcano MayRequire="Mlie.AdvancedBiomes">0.001</Volcano>
+
+				<Wasteland MayRequire="Mlie.AdvancedBiomes">0.2</Wasteland>
+
+				<Wetland MayRequire="Mlie.AdvancedBiomes">0.001</Wetland>
+
+
+				<!-- ___________________ -->
+
+				<!-- zylle.MoreVanillaBiomes -->
+				<!-- More Vanilla Biomes -->
+
+				<ZBiome_AlpineMeadow MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_AlpineMeadow>
+
+				<ZBiome_CloudForest MayRequire="zylle.MoreVanillaBiomes">0.001</ZBiome_CloudForest>
+
+				<ZBiome_CoastalDunes MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_CoastalDunes>
+
+				<ZBiome_DesertOasis MayRequire="zylle.MoreVanillaBiomes">0.008</ZBiome_DesertOasis>
+
+				<ZBiome_Grasslands MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_Grasslands>
+
+				<ZBiome_Iceberg_NoBeach MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_Iceberg_NoBeach>
+
+				<ZBiome_Marsh MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_Marsh>
+
+				<ZBiome_Sandbar_NoBeach MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_Sandbar_NoBeach>
+				
+				<ZBiome_GlacialShield MayRequire="zylle.MoreVanillaBiomes">0</ZBiome_GlacialShield>
+				
+				<ZBiome_Badlands MayRequire="zylle.MoreVanillaBiomes">0.001</ZBiome_Badlands>
+
+
+				<!-- ___________________ -->
+
+				<!-- Mlie.NaturesPrettySweet -->
+				<!-- NATURE IS PRETTY SWEET -->
+
+				<TKKN_VolcanicFlow MayRequire="Mlie.NaturesPrettySweet">0.001</TKKN_VolcanicFlow>
+
+				<TKKN_RedwoodForest MayRequire="Mlie.NaturesPrettySweet">0</TKKN_RedwoodForest>
+
+				<TKKN_Grasslands MayRequire="Mlie.NaturesPrettySweet">0</TKKN_Grasslands> <!-- PRAIRIE -->
+
+				<TKKN_Savanna MayRequire="Mlie.NaturesPrettySweet">0</TKKN_Savanna>
+
+				<TKKN_Desert MayRequire="Mlie.NaturesPrettySweet">0.006</TKKN_Desert> <!-- SALT FIELDS -->
+
+				<TKKN_Oasis MayRequire="Mlie.NaturesPrettySweet">0.01</TKKN_Oasis>			
+
+
+				<!-- ___________________ -->
+
+				<!-- Heis.Edo.Themed.Expansion -->
+				<!-- HISTORICALLY ACCURATE WEEABOO MOD -->
+
+				<HSBambooForest MayRequire="Heis.Edo.Themed.Expansion">0</HSBambooForest>
+
+
+				<!-- _________________ -->
+
+				<!-- BiomesTeam.BiomesIslands -->
+				<!-- BIOMES ISLANDS -->
+
+				<BiomesIslands_Atoll MayRequire="BiomesTeam.BiomesIslands">0.03</BiomesIslands_Atoll>
+
+				<BiomesIslands_BorealIsland MayRequire="BiomesTeam.BiomesIslands">0</BiomesIslands_BorealIsland>
+
+				<BiomesIslands_DesertIsland MayRequire="BiomesTeam.BiomesIslands">0</BiomesIslands_DesertIsland>
+
+				<BiomesIslands_DesertArchipelago MayRequire="BiomesTeam.BiomesIslands">0</BiomesIslands_DesertArchipelago>
+
+				<BiomesIslands_TemperateIsland MayRequire="BiomesTeam.BiomesIslands">0</BiomesIslands_TemperateIsland>
+
+				<BiomesIslands_TemperateArchipelago MayRequire="BiomesTeam.BiomesIslands">0</BiomesIslands_TemperateArchipelago>
+
+				<BiomesIslands_TropicalIsland MayRequire="BiomesTeam.BiomesIslands">0.04</BiomesIslands_TropicalIsland>
+
+				<BiomesIslands_TropicalArchipelago MayRequire="BiomesTeam.BiomesIslands">0.04</BiomesIslands_TropicalArchipelago>
+
+				<BiomesIslands_TundraIsland MayRequire="BiomesTeam.BiomesIslands">0</BiomesIslands_TundraIsland>
+				
+				
+				
+				<!-- _________________ -->
+
+				<!-- BiomesTeam.BiomesCaverns -->
+				<!-- BIOMES CAVERNS -->
+				
+				<BMT_CrystalCaverns MayRequire="BiomesTeam.BiomesCaverns">0</BMT_CrystalCaverns>
+				
+				<BMT_EarthenDepths MayRequire="BiomesTeam.BiomesCaverns">0</BMT_EarthenDepths>
+				
+				<BMT_FungalForest MayRequire="BiomesTeam.BiomesCaverns">0.045</BMT_FungalForest>
+				
+
+
+				<!-- ___________________ -->
+
+				<!-- reel.FrozenForest -->
+				<!-- WINTER TAIGA -->
+
+				<WinterTaiga MayRequire="reel.FrozenForest">0</WinterTaiga>
+
+
+				<!-- __________________ -->
+
+				<!-- SirMashedPotato.MorrowRim -->
+				<!-- "MORROWIND" MOD -->
+
+				<MorrowRim_Ashlands MayRequire="SirMashedPotato.MorrowRim">0</MorrowRim_Ashlands>
+
+				<MorrowRim_BlightedAshlands MayRequire="SirMashedPotato.MorrowRim">0</MorrowRim_BlightedAshlands>
+
+				<MorrowRim_AshSwamp MayRequire="SirMashedPotato.MorrowRim.ashswamp">0.008</MorrowRim_AshSwamp>
+
+				<MorrowRim_VolcanicAshlands MayRequire="SirMashedPotato.MorrowRim.volcanicashlands">0</MorrowRim_VolcanicAshlands>
+
+
+				<!-- ___________________ -->
+
+				<!-- pphhyy.gulden -->
+				<!-- FOREST OF GOLD -->
+
+				<TemperateGuldenForest MayRequire="pphhyy.gulden">0</TemperateGuldenForest>
+
+				<LotRE_MallornForest MayRequire="lordoftherims.elves">0</LotRE_MallornForest>
+
+
+				<!-- ___________________ -->
+
+				<!-- deemainiac.securecontainrimworld -->
+				<!-- SCP FOUNDATION -->
+
+				<!-- <SCR_SCP610Biome MayRequire="deemainiac.securecontainrimworld">0</SCR_SCP610Biome> -->
+
+
+				<!-- _________________ -->
+
+				<!-- regrowth.botr.volcanicicesheet -->
+				<!-- VOLCANIC ICE SHEET -->
+
+				<RG-VIS_VulcanicIceSheet MayRequire="regrowth.botr.volcanicicesheet">0</RG-VIS_VulcanicIceSheet>
+				
+				
+				<!-- _________________ -->
+				
+				<!-- ironscruff.primordialgeysers -->
+				<!-- PRIMORDIAL GEYSERS -->
+				
+
+				<IronScruff_PrimordialGeysers MayRequire="ironscruff.primordialgeysers">0</IronScruff_PrimordialGeysers>
+
+
+				<!-- _________________ -->
+				
+				<!-- mlie.rfpermafrost -->
+				<!-- PERMAFROST ZONE -->
+
+				<!-- <Permafrost MayRequire="mlie.rfpermafrost">0</Permafrost> -->
+			</wildBiomes>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li>HumanMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</ThingDef>
+
+	<!-- A, unintelligent head -->
+
+	<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857A</defName>
+		<label>SCP-857-A</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-A is a human head with six limbs that make it move like a crab.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<MarketValue>40</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>20</MeatAmount>
+			<LeatherAmount>7</LeatherAmount>
+			<BoneAmount MayRequire="sihv.rombones" Inherit="False">9</BoneAmount> <!-- Seven bones in the neck (for the purposes of this Mod, it's what connects the skull to the legs, plus the skull and jawbone. The teeth are not counted. -->
+		</statBases>
+		<race>
+			<body>TSP_SCR_857A</body>
+			<predator>false</predator>
+			<needsRest>true</needsRest>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.4</baseHealthScale>
+			<foodType>OmnivoreHuman, Corpse, Kibble</foodType>
+			<wildness>0</wildness>
+			<trainability>Intermediate</trainability>
+			<gestationPeriodDays>8</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<!-- Exact same statistics as a human's head attacks -->
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>1</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.9</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalPet</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+		<defName>SCR_SCP857A</defName>
+		<label>SCP-857-A</label>
+		<race>SCR_SCP857A</race>
+		<combatPower>10</combatPower>
+		<alternateGraphicChance>0.89</alternateGraphicChance>
+		<alternateGraphics>
+		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath></li>
+		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Pointy</texPath></li>
+		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Wide</texPath></li>
+		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Normal</texPath></li>
+		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Pointy</texPath></li>
+		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Wide</texPath></li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
+					<drawSize>1.3</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- B, human vein acts like worm -->
+
+	<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857B</defName>
+		<label>SCP-857-B</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-B comprises the full length of the inferior and superior vena cava veins, which carry blood from the top and bottom of the human body back to the heart. It is herbivorous and moves like a worm.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RCaution</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MoveSpeed>2.8</MoveSpeed>
+			<MarketValue>40</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>20</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<butcherProducts>
+			<Steel>0</Steel>
+		</butcherProducts>
+		<race>
+			<body>TSP_SCR_857B</body>
+			<herdAnimal>false</herdAnimal>
+			<predator>false</predator>
+			<needsRest>true</needsRest>
+			<baseBodySize>1</baseBodySize> <!-- Full length of a human because of the veins it comprises -->
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.4</baseHealthScale>
+			<foodType>VegetarianRoughAnimal, Kibble</foodType>
+			<wildness>0</wildness>
+			<trainability>None</trainability>
+			<gestationPeriodDays>5</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<roamMtbDays>2</roamMtbDays>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<li>
+				<label>vena cava</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+				<linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalPet</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+		<defName>SCR_SCP857B</defName>
+		<label>SCP-857-B</label>
+		<race>SCR_SCP857B</race>
+		<combatPower>10</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
+					<drawSize>0.9</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857B</texPath>
+					<drawSize>0.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- C, snail human brain -->
+
+	<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857C</defName>
+		<label>SCP-857-C</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-C is a human brain that moves like a snail.</description>
+		<statBases>
+			<MoveSpeed>1.3</MoveSpeed>
+			<MarketValue>25</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>39</MeatAmount> <!-- Brains brains, I love them, I need them, my stomach jumps for joy when I eat them -->
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<race>
+			<body>TSP_SCR_857C</body>
+			<herdAnimal>false</herdAnimal>
+			<predator>true</predator>
+			<needsRest>true</needsRest>
+			<baseBodySize>0.2</baseBodySize> <!-- They're so delectable, especially the small ones -->
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.9</baseHealthScale>
+			<foodType>OmnivoreHuman, OvivoreAnimal, Kibble</foodType>
+			<wildness>0</wildness>
+			<roamMtbDays>1.8</roamMtbDays>
+			<trainability>None</trainability>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<li>
+				<label>brain</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>4</cooldownTime>
+				<chanceFactor>1</chanceFactor>
+				<linkedBodyPartsGroup>FullHead</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalPet</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+		<defName>SCR_SCP857C</defName>
+		<label>SCP-857-C</label>
+		<race>SCR_SCP857C</race>
+		<combatPower>10</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857C</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+	<!-- D, lower intestines, fish (add as thing later for vanilla fishing expanded?) -->
+
+	<!-- E, spine moves like a centipede -->
+
+	<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857E</defName>
+		<label>SCP-857-E</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-E is a human spine encasing a human spinal cord. It moves like a centipede. \n SCP-857-E instances are predatory, eating other SCP-857 instances, small animals, and stealing eggs from nests.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<MarketValue>40</MarketValue>
+			<FilthRate>0</FilthRate>
+			<MeatAmount>1</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+			<BoneAmount MayRequire="sihv.rombones" Inherit="False">33</BoneAmount> <!-- There are thirty-three bones in the spine, which encase the spinal cord. -->
+		</statBases>
+		<race>
+			<body>TSP_SCR_857E</body>
+			<herdAnimal>false</herdAnimal>
+			<predator>true</predator>
+			<needsRest>true</needsRest>
+			<baseBodySize>0.7</baseBodySize>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>2</baseHealthScale> <!-- Solid bone protects the delicate nerve. -->
+			<foodType>CarnivoreAnimal, Meat, Fluid, OvivoreAnimal, Kibble</foodType>
+			<wildness>0</wildness>
+			<trainability>None</trainability>
+			<gestationPeriodDays>5</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<li>
+				<label>vertebrate</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>0.3</cooldownTime>
+				<chanceFactor>1</chanceFactor>
+				<linkedBodyPartsGroup>Neck</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+		<defName>SCR_SCP857E</defName>
+		<label>SCP-857-E</label>
+		<race>SCR_SCP857E</race>
+		<combatPower>25</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
+					<drawSize>0.85</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/SCR_SCP857/SCR_SCP857E</texPath>
+					<drawSize>0.85</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- F, human heart leech -->
+
+	<!-- G, human skin flying squirrel -->
+
+	<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857G</defName>
+		<label>SCP-857-G</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-g is a piece of human flesh with bone growths that allow it to glide. Its large amount of skin makes it valuable for its... "fascinating" leather. \n SCP-857-G instances are predatory, preying on other SCP-857 instances, small animals, and stealing eggs from nests.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<MarketValue>40</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>1</MeatAmount>
+			<LeatherAmount>50</LeatherAmount> <!-- Not as much as it looks, divided by body size -->
+			<BoneAmount MayRequire="sihv.rombones" Inherit="False">2</BoneAmount> <!-- Two canonical bone growths stretch the skin for flight. -->
+		</statBases>
+		<race>
+			<body>TSP_SCR_857G</body>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<needsRest>true</needsRest>
+			<baseBodySize>0.2</baseBodySize>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.3</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal, Fluid, Kibble</foodType>
+			<wildness>0</wildness>
+			<trainability>None</trainability>
+			<gestationPeriodDays>3</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+		</race>
+		<butcherProducts>
+			<Leather_Human>25</Leather_Human>
+		</butcherProducts>
+		<tools>
+			<li>
+				<label>torso</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+				<linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>left protrusion</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>right protrusion</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<comps>
+			 <li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li> <!-- It flies! -->
+		</comps>
+		<tradeTags>
+			<li>AnimalFighter</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+		<defName>SCR_SCP857G</defName>
+		<label>SCP-857-G</label>
+		<race>SCR_SCP857G</race>
+		<combatPower>10</combatPower>
+		<wildGroupSize>4~10</wildGroupSize>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
+					<drawSize>1</drawSize>
+					<color>(153,117,88)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Item/Resource/Devilstrand/Devilstrand_a</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- H, human ribcage spider -->
+
+	<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857H</defName>
+		<label>SCP-857-H</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-H is a human ribcage, excluding the floating ribs that are not connected to the sternum or spine. It moves like a spider. \n SCP-857-H instances are predatory, preying on other SCP-857 instances, small animals, and stealing eggs from nests.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<MarketValue>250</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+			<BoneAmount MayRequire="sihv.rombones" Inherit="False">20</BoneAmount> <!-- A man has twenty-four ribs. However, the two final "floating rib" pairs are not connected to either the sternum or spine, so they are not present here. -->
+		</statBases>
+		<race>
+			<body>TSP_SCR_857H</body>
+			<herdAnimal>false</herdAnimal>
+			<predator>true</predator>
+			<needsRest>true</needsRest>
+			<baseBodySize>0.4</baseBodySize>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.5</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal, Fluid, Kibble</foodType>
+			<wildness>0.1</wildness>
+			<roamMtbDays>2</roamMtbDays>
+			<trainability>None</trainability>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<li>
+				<label>vertebrosternal rib</label>
+				<capacities>
+					<li>Stab</li>
+					<li>Poke</li>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>1</chanceFactor>
+				<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>vertebrochondral rib</label>
+				<capacities>
+					<li>Stab</li>
+					<li>Poke</li>
+					<li>Scratch</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>1</chanceFactor>
+				<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>ribcage body slam</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.1</chanceFactor>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalFighter</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+		<defName>SCR_SCP857H</defName>
+		<label>SCP-857-H</label>
+		<race>SCR_SCP857H</race>
+		<combatPower>25</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- I, human head with arms, tribal -->
+
+	<ThingDef ParentName="SCR_SCP857Base">
+		<defName>SCR_SCP857I</defName>
+		<label>SCP-857-I</label>
+		<description>SCP-857 is a creature that looks like a living body part of a baseline human, secretly native to tropical jungles and swamps on Old Earth. Throughout the galaxy, but particular in the more lawless settlements of the Rim, they are farmed by cannibals for "ethically sourced" meat and leather, which is indistinguishable from a man once butchered. \n\nSCP-857-I is a large, semi-intelligent human head with more pronounced arms, hands, and thumbs. They have been known to live in small groups.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<MarketValue>350</MarketValue>
+			<FilthRate>1</FilthRate>
+			<MeatAmount>5</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<race>
+			<body>TSP_SCR_857A</body> <!-- Might give him arms, thumbs, and hands (etc.) in his own body later -->
+			<predator>false</predator>
+			<needsRest>true</needsRest>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>0.4</baseHealthScale>
+			<baseBodySize>0.5</baseBodySize>
+			<foodType>OmnivoreHuman, OvivoreAnimal, Kibble</foodType>
+			<wildness>0.3</wildness>
+			<trainability>Advanced</trainability>
+			<gestationPeriodDays>13</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+		</race>
+		<tools>
+			<!-- Exact same statistics as a human's head attacks -->
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>1</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.9</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalPet</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+		<defName>SCR_SCP857I</defName>
+		<label>SCP-857-I</label>
+		<race>SCR_SCP857I</race>
+		<combatPower>15</combatPower>
+		<alternateGraphicChance>0.89</alternateGraphicChance>
+	<alternateGraphics>
+      <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath></li>
+      <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Pointy</texPath></li>
+	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Wide</texPath></li>
+	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Normal</texPath></li>
+	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Pointy</texPath></li>
+	  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Narrow_Wide</texPath></li>
+    </alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath>
+					<color>(255,215,201)</color>
+					<drawSize>1.3</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Heads/None_Average_Skull</texPath>
+					<color>(255,215,201)</color>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- This enables the following SCPs to spawn in ancient danger loot (and I believe the ancient danger sealed crate loot (ideology) as well) -->
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingSetMakerDef[defName="MapGen_AncientTempleContents"]/root/options/li[2]/thingSetMaker/fixedParams/filter/thingDefs</xpath>		
+        <value>
+		<!-- Weapons/Apparel -->
+		
+		<li>SCR_SCP1905R</li>
+		<li>SCR_SCP572R</li>
+		<li>SCR_SCP127R</li>
+		<li>SCR_SCP3118R</li> <!-- misnamed, is supposed to be 3118 -->
+		<li>SCR_SCP262R</li>
+		<li>SCR_SCP095UA</li>
+
+		<!-- Artifacts/Objects -->
+		
+              <li>SCR_SCP475R</li>
+              <li>SCR_SCP113R</li>
+			  <li>SCR_ES_SCP019R</li>
+			  <li>SCR_SCP732J</li>
+			  <li>SCR_SCP1577R</li>
+			  <li>SCR_SCP578R</li>
+			  <li>SCR_SCP500R</li>
+			  <li>SCR_SCP2022R</li>
+			  <li>SCR_SCP1689R</li>
+			  
+		<!-- Buildings -->
+		
+			  <li>SCR_SCP1695R</li>
+			  <li>SCR_SCP2228R</li>
+			  <li>SCR_SCP1762R</li>
+			  <li>SCR_SCP762R</li>
+			  <li>SCR_SCP043R</li>
+
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Apparel_Robe"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingSetMakerDef[defName="MapGen_AncientComplex_SecurityCrate"]/root/options</xpath>
+			<value>
+				<!-- <li>
+				<weight>1</weight>
+				<thingSetMaker Class="ThingSetMaker_StackCount">
+				<fixedParams>
+				<filter>
+				<thingDefs>
+				<li>Gold</li>
+				</thingDefs>
+				</filter>
+				<countRange>15~30</countRange>
+				</fixedParams>
+				</thingSetMaker>
+				</li> -->
+
+				<li>
+					<weight>1.5</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<!-- Weapons/Apparel -->
+
+									<li>SCR_SCP1905R</li>
+									<li>SCR_SCP572R</li>
+									<li>SCR_SCP127R</li>
+									<li>SCR_SCP3118R</li>
+									<li>SCR_SCP262R</li>
+									<li>SCR_SCP095UA</li>
+
+									<!-- Artifacts/Objects -->
+
+									<li>SCR_SCP475R</li>
+									<li>SCR_SCP113R</li>
+									<li>SCR_ES_SCP019R</li>
+									<li>SCR_SCP732J</li>
+									<li>SCR_SCP1577R</li>
+
+									<!-- Buildings -->
+									<li>SCR_SCP1695R</li>
+									<li>SCR_SCP2228R</li>
+									<li>SCR_SCP1762R</li>
+									<li>SCR_SCP762R</li>
+									<li>SCR_SCP043R</li>
+								</thingDefs>
+							</filter>
+							<countRange>1</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>1.1</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>SCR_SCP578R</li>
+								</thingDefs>
+							</filter>
+							<countRange>15~30</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+				<li>
+					<weight>0.98</weight>
+					<thingSetMaker Class="ThingSetMaker_StackCount">
+						<fixedParams>
+							<filter>
+								<thingDefs>
+									<li>SCR_SCP500R</li>
+								</thingDefs>
+							</filter>
+							<countRange>2~3</countRange>
+						</fixedParams>
+					</thingSetMaker>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

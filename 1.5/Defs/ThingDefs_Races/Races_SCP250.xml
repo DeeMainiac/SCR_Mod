@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="SCR_SCP_Base">
+    <defName>SCR_SCP250R</defName>
+    <label>SCP-250</label>
+  <description>SCP-250 is a living skeletal Allosaurus.</description>
+  	<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+
+	<classRating>
+		<li>SCR_CEuclid</li>
+		<li>SCR_DVlam</li>
+		<li>SCR_RNotice</li>
+	</classRating>
+	<containmentTier>1</containmentTier>
+	<isTranqable>false</isTranqable>
+	</li>
+	</modExtensions>
+  <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+      <statBases>
+      <MoveSpeed>7.2</MoveSpeed>
+      <MarketValue>1000</MarketValue>
+	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
+      <ComfyTemperatureMin>-80</ComfyTemperatureMin>
+	  <FilthRate>2</FilthRate>
+	  <MeatAmount>0</MeatAmount>
+	  <LeatherAmount>0</LeatherAmount>
+	  <ArmorRating_Sharp>.4</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>.2</ArmorRating_Blunt>
+	  <ToxicResistance>0</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.Rimworld.Biotech">1</ToxicEnvironmentResistance>
+	  <BoneAmount MayRequire="sihv.rombones">75</BoneAmount> <!-- Multiplied by the Body Size -->
+    </statBases>
+	    <receivesSignals>true</receivesSignals>
+	    <comps>
+      <li Class="CompProperties_CanBeDormant" />
+      <li Class="CompProperties_WakeUpDormant">
+        <wakeUpOnDamage>true</wakeUpOnDamage>
+      </li>
+    </comps>
+  <race>
+      <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
+      <body>SCR_BipedalBoney</body>
+	  <bloodDef>Filth_Ash</bloodDef>
+      <predator>true</predator>
+      <baseBodySize>5</baseBodySize>
+      <baseHungerRate>0.325</baseHungerRate>
+      <baseHealthScale>2.5</baseHealthScale>
+      <foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Corpse, Fluid, Processed, Meal, Kibble</foodType>
+      <wildness>.97</wildness>
+      <trainability>Advanced</trainability>
+	  <useMeatFrom>Iguana</useMeatFrom>
+	  <leatherDef>Leather_Light</leatherDef>
+
+	  <manhunterOnTameFailChance>.65</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>.9</manhunterOnDamageChance>
+	  			<wildBiomes>
+				<AridShrubland>.1</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>.04</TemperateForest>
+				<TemperateSwamp>.04</TemperateSwamp>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>.2</Desert>
+				<ExtremeDesert>.1</ExtremeDesert>
+			</wildBiomes>
+      <gestationPeriodDays>20</gestationPeriodDays>
+      <lifeExpectancy>20</lifeExpectancy>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.5</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.75</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>		
+	<tradeTags>
+			<li>AnimalRare</li>
+			<li>AnimalFighter</li>
+			<li>SCP</li>
+		</tradeTags>
+      <tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+				<li>Cut</li>
+				<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.4</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+					<li>Cut</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+		</tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+      <defName>SCR_SCP250R</defName>
+    <label>SCP-250</label>
+    <race>SCR_SCP250R</race>
+    <combatPower>400</combatPower>
+    		<wildGroupSize>
+			<min>1</min>
+			<max>2</max>
+		</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP250/SCR_SCP250</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP250/SCR_SCP250</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP250/SCR_SCP250</texPath>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP250/SCR_SCP250</texPath>
+          <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP250/SCR_SCP250</texPath>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(1, 0.8, 0.5)</volume>
+            <offset>(0,0,-0.5)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP250/SCR_SCP250</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

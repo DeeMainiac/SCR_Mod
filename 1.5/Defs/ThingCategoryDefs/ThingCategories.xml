@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<ThingCategoryDef>
+<defName>SCP</defName>
+<label>SCPs</label>
+<parent>Root</parent>
+</ThingCategoryDef>
+
+<ThingCategoryDef>
+<defName>SCPWeapons</defName>
+<label>Weapon SCPs</label>
+<parent>SCP</parent>
+</ThingCategoryDef>
+
+<ThingCategoryDef>
+<defName>SCPApparel</defName>
+<label>Apparel SCPs</label>
+<parent>SCP</parent>
+</ThingCategoryDef>
+
+<ThingCategoryDef>
+<defName>SCPObjects</defName>
+<label>Object SCPs</label>
+<parent>SCP</parent>
+</ThingCategoryDef>
+
+<ThingCategoryDef>
+<defName>SCPMeat</defName>
+<label>SCP Meats</label>
+<parent>MeatRaw</parent>
+</ThingCategoryDef>
+
+<ThingCategoryDef>
+<defName>containment</defName>
+<label>SCP Containment</label>
+<parent>Buildings</parent>
+</ThingCategoryDef>
+
+
+      <ThingCategoryDef>
+        <defName>SCR_BodyPartsCI</defName>
+        <label>Chaos Insurgency</label>
+        <parent>SCPObjects</parent>
+      </ThingCategoryDef>
+</Defs>

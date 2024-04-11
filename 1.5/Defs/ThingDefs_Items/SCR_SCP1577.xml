@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="ResourceBase">
+		<defName>SCR_SCP1577R</defName>
+		<label>SCP-1577</label>
+		<description>SCP-1577 is an old-world flare gun that summons handy survival gear depending on how much you need them. Consumed on use.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RWarning</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SCR_SCP1577</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.8</drawSize>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>false</useHitPoints>
+		<techLevel>Ultra</techLevel>
+		<thingCategories>
+			<li>SCPObjects</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+			<li>ExoticMisc</li>
+			<li>SCP</li>
+		</tradeTags>
+		<statBases>
+			<Mass>2</Mass>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseArtifact</useJob>
+				<useLabel>Use</useLabel>
+				<useDuration>60</useDuration>
+			</li>      
+			<li Class="CompProperties_UseEffectDestroySelf" />
+
+			<li Class="CompProperties_UseEffect">
+				<compClass>SecureContainRimworld.CompUseEffect_UseSCP1577</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>

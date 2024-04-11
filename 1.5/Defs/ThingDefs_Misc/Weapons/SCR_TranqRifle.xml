@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>SCR_Bullet_TranqRifle</defName>
+    <label>tranquilizer dart</label>
+	<thingClass>SecureContainRimworld.SCR_Projectile_TranqRifle</thingClass>
+    <projectile>
+	  <damageDef>Bullet</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+      <stoppingPower>3.5</stoppingPower>
+      <speed>90</speed>
+    </projectile>
+    <graphicData>
+      <texPath>Things/Projectile/TranqDart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>SCR_Gun_TranqRifle</defName>
+    <label>tranquilizer rifle</label>
+    <description>A specially crafted rifle that tranquilizes most biological SCPs.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/SCR_TranqRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<weaponTags>
+			<li>SCR_SCP</li>
+		</weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.88</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+	  <MedicineIndustrial>1</MedicineIndustrial>
+    </costList>
+    <recipeMaker>
+	<researchPrerequisite>SCR_TranqGuns</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>SCR_Bullet_TranqRifle</defaultProjectile>
+        <warmupTime>1.7</warmupTime>
+        <range>36.9</range>
+		<soundCast>Interact_BeatFire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>2</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

@@ -43,6 +43,8 @@
     <researchViewY>2.0</researchViewY>
   </ResearchProjectDef>
 
+<!-- containment buildings -->
+
   <ResearchProjectDef>
     <defName>SCR_WallTier1</defName>
     <label>steel reinforced walls</label>

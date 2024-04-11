@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIAndersonRobotics</defName>
+		<iconPath>UI/Icons/AndersonRobotics</iconPath>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		</memes>
+	</IdeoIconDef>
+	
+		<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIChicagoSpirit</defName>
+		<iconPath>UI/Icons/ChicagoSpirit</iconPath>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIChurchBrokeGod</defName>
+		<iconPath>UI/Icons/ChurchBrokenGod</iconPath>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIChurchSecondHytoth</defName>
+		<iconPath>UI/Icons/ChurchSecondHytoth</iconPath>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+		</memes>
+	</IdeoIconDef>
+	
+		<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIFactory</defName>
+		<iconPath>UI/Icons/Factory</iconPath>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIFifthChurch</defName>
+		<iconPath>UI/Icons/FifthChurch</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIMannaCharitable</defName>
+		<iconPath>UI/Icons/MannaCharitable</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIOfficeReclamationIslamic</defName>
+		<iconPath>UI/Icons/OfficeReclamationIslamic</iconPath>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
+		</memes>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIOneiroi</defName>
+		<iconPath>UI/Icons/OneiroiCollective</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOISarkicCults</defName>
+		<iconPath>UI/Icons/SarkicCults</iconPath>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+		</memes> 
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOISerpentsHand</defName>
+		<iconPath>UI/Icons/SerpentsHand</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOISharkPunch</defName>
+		<iconPath>UI/Icons/SPC</iconPath>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOITouHei</defName>
+		<iconPath>UI/Icons/TouHeiHeavyIndustries</iconPath>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		</memes>
+	</IdeoIconDef>
+
+	<IdeoIconDef>
+		<defName>Ideoligion_SCR_GOIWondertainment</defName>
+		<iconPath>UI/Icons/Wondertainment</iconPath>
+	</IdeoIconDef>
+
+
+
+
+
+</Defs>
