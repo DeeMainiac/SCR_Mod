@@ -128,4 +128,12 @@
 
 	<SCR_RCritical>Critical</SCR_RCritical>
 	<SCR_RCriticalDesc>Near instant or extremely severe effects are felt from this SCP. Nearby pawns cannot recover from these effects.</SCR_RCriticalDesc>
+	
+	
+	<!-- Mod support -->
+	
+	<TSP_SCR_SCP6394>SCP-6394</TSP_SCR_SCP6394>
+	<TSP_SCR_SCP6394R>SCP-6394</TSP_SCR_SCP6394R>
+	<RB_Bee_TSP_SCR_SCP6394R_Queen_Tag>SCP-6394-1 (Queen)</RB_Bee_TSP_SCR_SCP6394R_Queen_Tag>
+	<RB_Bee_TSP_SCR_SCP6394R_Drone_Tag>SCP-6394-2 (Drone)</RB_Bee_TSP_SCR_SCP6394R_Drone_Tag>
 </LanguageData>
