@@ -43,6 +43,7 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 			
+			<li MayRequire="Ludeon.RimWorld.Ideology,erdelf.humanoidalienraces">HAR_Xenophobia</li>
 			<li MayRequire="llunak.MorePrecepts">Pacifism</li>
 			<li MayRequire="Qux.factionhippie">PeaceLove</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>

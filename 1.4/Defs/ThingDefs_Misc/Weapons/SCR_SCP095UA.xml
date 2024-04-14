@@ -46,8 +46,8 @@
 			  <li>RewardStandardLowFreq</li>
 			</thingSetMakerTags>
 	        <smeltable>false</smeltable>
-		<verbs>
-			  <li>
+			<verbs Inherit="False">
+			  <li Inherit="False">
 					<verbClass>Verb_Shoot</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>TSP_SCR_Bullet_IncendiaryLauncher</defaultProjectile>
@@ -58,11 +58,11 @@
 					<soundCastTail>GunTail_Heavy</soundCastTail>
 					<muzzleFlashScale>20</muzzleFlashScale>
 					<stopBurstWithoutLos>false</stopBurstWithoutLos>
-					<requireLineOfSight>false</requireLineOfSight>
+					<requireLineOfSight>true</requireLineOfSight>
 					<targetParams>
 						<canTargetLocations>true</canTargetLocations>
 						<canTargetBuildings>true</canTargetBuildings>
-						<neverTargetIncapacitated>true</neverTargetIncapacitated>
+						<neverTargetIncapacitated>false</neverTargetIncapacitated>
 					</targetParams>
 			  </li>
 		</verbs>
@@ -101,7 +101,7 @@
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <speed>180</speed>
+      <speed>200</speed>
       <damageDef>Flame</damageDef>
       <!-- Use default damage from explosion def -->
       <explosionRadius>1.5</explosionRadius>

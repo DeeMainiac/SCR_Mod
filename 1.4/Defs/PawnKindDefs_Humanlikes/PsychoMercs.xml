@@ -2,7 +2,7 @@
 
 <Defs>
 	<!--
-		Note to three-legged_wolf, from three-legged_wolf; how about custom backstory_category, to avoid senseless backstories like kitten-tamer canibals? 
+		Note to three-legged_wolf, from three-legged_wolf; how about custom backstory_category, to avoid senseless backstories like kitten-tamer cannibals? 
 		It'll take alot of effort, but would be very cool...
 		Give it some thought.
 		
@@ -10,33 +10,31 @@
 		-TLW
 	-->
 	
-  <PawnKindDef Name="CJ_PsychoMercenaryBase" Abstract="True">
-	<label>SCP-1788-1 instance</label>
-	<labelPlural>SCP-1788-1 instances</labelPlural>
-    <race>CJ_Psycho</race>
-    <defaultFactionType>AncientsHostile</defaultFactionType>
-    <chemicalAddictionChance>0.33</chemicalAddictionChance>
-    <invNutrition>6</invNutrition>
-    <itemQuality>Normal</itemQuality>
-	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-    <backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
-	<combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
-	<combatEnhancingDrugsCount>4~5</combatEnhancingDrugsCount>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <!-- <li>Pirate</li> -->
-		  <li>Sadist</li>
-		  <li>Raider</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
-    <maxGenerationAge>200</maxGenerationAge>
-    <combatEnhancingDrugsChance>0.75</combatEnhancingDrugsChance>
-    <combatEnhancingDrugsCount>1~6</combatEnhancingDrugsCount>
-    <biocodeWeaponChance>0.5</biocodeWeaponChance>
-	<initialWillRange>102~104</initialWillRange>
-  </PawnKindDef>
+	<PawnKindDef Name="CJ_PsychoMercenaryBase" Abstract="True">
+		<label>SCP-1788-1 instance</label>
+		<labelPlural>SCP-1788-1 instances</labelPlural>
+		<race>CJ_Psycho</race>
+		<defaultFactionType>AncientsHostile</defaultFactionType>
+		<chemicalAddictionChance>0.33</chemicalAddictionChance>
+		<invNutrition>6</invNutrition>
+		<itemQuality>Normal</itemQuality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<backstoryCryptosleepCommonality>0.14</backstoryCryptosleepCommonality>
+		<combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~6</combatEnhancingDrugsCount>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<!-- <li>Pirate</li> -->
+					<li>Sadist</li>
+					<li>Raider</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<maxGenerationAge>200</maxGenerationAge>
+		<biocodeWeaponChance>0.85</biocodeWeaponChance>
+		<initialWillRange>102~104</initialWillRange>
+	</PawnKindDef>
 
   <!--  Low merc tier - grenadiers -->
   
