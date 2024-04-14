@@ -90,7 +90,7 @@
 <HediffDef ParentName="InfectionBase">
     <defName>SCR_SCP610Infection</defName>
     <label>SCP-610 infection</label>
-    <labelNoun>an SCP-610 infection</labelNoun>
+    <labelNoun>a SCP-610 infection</labelNoun>
     <description>SCP-610 infection. A fatal infection inflicted by a creature infested with SCP-610. Even with treatment, this illness can cause large growths of scar tissue and boils. After death, the body will reanimate after some time.</description>
     <makesSickThought>true</makesSickThought>
     <lethalSeverity>1</lethalSeverity>
@@ -100,12 +100,14 @@
         <baseTendDurationHours>4</baseTendDurationHours>
       </li>
 	  <!-- Maybe it should be curable? -->
-      <!--<li Class="HediffCompProperties_Immunizable">
+      <!--
+	  <li Class="HediffCompProperties_Immunizable">
         <severityPerDayNotImmune>0.84</severityPerDayNotImmune>
         <immunityPerDaySick>0.6441</immunityPerDaySick>
         <severityPerDayImmune>-2</severityPerDayImmune>
         <immunityPerDayNotSick>-1</immunityPerDayNotSick>
-      </li> -->
+      </li>
+	  -->
       <li Class="HediffCompProperties_Discoverable">
         <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
 		<letterType>NegativeEvent</letterType>
@@ -115,18 +117,18 @@
       <li>
         <label>minor</label>
 		<painOffset>0.08</painOffset>
-		<lifeThreatening>false</lifeThreatening>
+		<lifeThreatening>true</lifeThreatening>
       </li> 
       <li>
         <minSeverity>0.33</minSeverity>
         <label>major</label>
-		<lifeThreatening>false</lifeThreatening>
+		<lifeThreatening>true</lifeThreatening>
         <painOffset>0.18</painOffset>
       </li>
       <li>
         <minSeverity>0.78</minSeverity>
         <label>severe</label>
-        <lifeThreatening>false</lifeThreatening>
+        <lifeThreatening>true</lifeThreatening>
         <painOffset>0.4</painOffset>
         <capMods>
 			<li>
@@ -142,8 +144,8 @@
       <li>
         <minSeverity>0.87</minSeverity>
         <label>extreme</label>
-        <lifeThreatening>false</lifeThreatening>
-        <painOffset>0.85</painOffset>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>1</painOffset>
         <capMods>
 			<li>
 				<capacity>Consciousness</capacity>
@@ -161,8 +163,8 @@
 		</li>
       <li>
         <minSeverity>0.945</minSeverity>
-        <label>cat-tastrophe</label>
-        <lifeThreatening>false</lifeThreatening>
+        <label>terminal</label>
+        <lifeThreatening>true</lifeThreatening>
         <painOffset>0.9</painOffset>
         <capMods>
 			<li>

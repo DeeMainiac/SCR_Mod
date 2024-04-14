@@ -37,7 +37,8 @@
   <ThingDef ParentName="PlantBaseNonEdible">
     <defName>SCR_SCP848R</defName>
     <label>SCP-848-2</label>
-	<thingClass MayRequire="mlie.expandableplants">ExpandablePlants.Plant</thingClass>
+	<thingClass>Plant</thingClass>
+	<!-- <thingClass MayRequire="mlie.expandableplants">ExpandablePlants.Plant</thingClass> -->
     <description>SCP-848-2 is the web of SCP-848, an anomalous golden silk orb weaver. Occasionally, SCP-848-2 will catch other SCPs or creatures, even if they're not from the area.</description>
 	<modExtensions>
 		<li Class="SecureContainRimworld.CProceduresExtension">
@@ -47,7 +48,6 @@
 				<li>SCR_RNotice</li>
 			</classRating>
 			<containmentTier>0</containmentTier>
-	
 		</li>
 	</modExtensions>
 	<statBases>

@@ -55,7 +55,7 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>SCR_SCP666Half_FoodPoisoning</hediffDef>
-					<severity>0.05</severity>
+					<severity>2</severity>
 				</li>
 			</outcomeDoers>
 	  </ingestible>
