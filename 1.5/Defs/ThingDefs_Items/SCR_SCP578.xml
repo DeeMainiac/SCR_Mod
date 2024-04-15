@@ -5,7 +5,7 @@
 		<defName>SCR_SCP578R</defName>
 		<label>SCP-578</label>
 		<description>SCP-578 is a liquid that, when it comes in contact with human blood, solidifies into a beautiful gemstone known as SCP-578-1.</description>
-				<modExtensions>
+			<modExtensions>
 				<li Class="SecureContainRimworld.CProceduresExtension">
 					<classRating>
 						<li>SCR_CSafe</li>
@@ -17,7 +17,7 @@
 			</modExtensions>
 		<tickerType>Normal</tickerType>
 		<graphicData>
-		  <texPath>Things/Item/SCR_SCP578</texPath>
+		  <texPath>Things/Item/Materials/SCR_SCP578</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <drawSize>0.6</drawSize>
 		</graphicData>
@@ -34,8 +34,9 @@
 		  <li>Manufactured</li>
 		  <li>SCPObjects</li>
 		</thingCategories>
-		<deepCommonality>0.5</deepCommonality>
-		<deepCountPerPortion>15</deepCountPerPortion>
+		<techLevel>Neolithic</techLevel>
+		<deepCommonality>0.4</deepCommonality>
+		<deepCountPerPortion>8</deepCountPerPortion>
 		<deepLumpSizeRange>1~4</deepLumpSizeRange>
 		<allowedArchonexusCount>10000</allowedArchonexusCount>
 		<tradeTags>
@@ -46,7 +47,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>SCR_SCP578_1R</defName>
     <label>SCP-578-1</label>
-    <description>SCP-578-1 is a red opal-like stone made from human blood and SCP-578. Beautiful and inert, it is perfect for decoration.</description>
+    <description>SCP-578-1 is a red opal-like stone made from blood and SCP-578. Beautiful and inert, it is perfect for decoration.</description>
     		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -80,16 +81,13 @@
       <li>ResourcesRaw</li>
 	  <li>SCPObjects</li>
     </thingCategories>
-	<!--
-	<deepCommonality>0.5</deepCommonality>
-    <deepCountPerPortion>15</deepCountPerPortion>
-    <deepLumpSizeRange>1~4</deepLumpSizeRange>
-	-->
+	<techLevel>Neolithic</techLevel>
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>false</smeltable>
     <stuffProps>
       <categories>
 		<li>Stony</li>
+		<li>Metallic</li>
 		<li MayRequire="kikohi.jewelry">Gemstones</li>
 		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
@@ -107,13 +105,13 @@
         <MaxHitPoints>1</MaxHitPoints>
         <WorkToMake>1.4</WorkToMake>
         <WorkToBuild>1.4</WorkToBuild>
-        <Beauty>2.5</Beauty>
+        <Beauty>4</Beauty>
         <Flammability>0</Flammability>
-        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier>
+        <MeleeWeapon_CooldownMultiplier>0.93</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <allowedArchonexusCount>80</allowedArchonexusCount>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <allowedArchonexusCount>800</allowedArchonexusCount>
   </ThingDef>
 
 </Defs>

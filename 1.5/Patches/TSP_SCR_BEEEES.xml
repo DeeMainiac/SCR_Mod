@@ -233,104 +233,6 @@
 			<value>
 				<ThingDef ParentName="RB_BeesWaxBase">
 					<defName>TSP_SCR_SCP6394_ArtWax</defName>
-					<label>SCP-6394-4 (beeswax)</label>
-					<description>SCP-6394-4 is the designation given to the anomalous beeswax produced by SCP-6394 instances. Its purpose is for beauty and artistic endeavors; it is its creators' pacifism that is the reason this beeswax is ridiculously brittle and unsuitable for any form of weaponry whatsoever. However, it is versatile and capable of being used in and for any conceivable artistic endeavor imaginable. Its anomalous properties allow for it to be used to produce art and structures in a vastly faster rate. However, due to SCP-6394-4's abundance in the art community, items made with it are not worth very much at the market. \n \n Remember: to extract SCP-6394-4 instances, the Basic Containment Crate Research Project must first be undertaken!</description>
-					<descriptionHyperlinks>
-						<ResearchProjectDef>SCR_ContainCrate</ResearchProjectDef>
-						<ThingDef>RB_Bee_TSP_SCR_SCP6394R_Queen</ThingDef>
-						<ThingDef>RB_Bee_TSP_SCR_SCP6394R_Drone</ThingDef>
-						<ThingDef>TSP_SCR_SCP6394_Honeycomb</ThingDef>
-						<RecipeDef>TSP_SCR_SCP6394_3_Processing</RecipeDef>
-						<!-- <ThingDef>TSP_SCR_SCP6394_ArtWax</ThingDef> -->
-						<ThingDef MayRequire="tsp.zal.patchhoney2">TSP_LaymanHoneyMachine</ThingDef>
-					</descriptionHyperlinks>
-					<graphicData>
-						<texPath>Things/Item/Artifacts/SCR_SCP6394/TSP_SCP6394_Wax3</texPath>
-						<graphicClass>Graphic_Single</graphicClass>
-					</graphicData>
-					<statBases>
-						<MarketValue>13</MarketValue>
-						<Mass>0.001</Mass>
-						<MaxHitPoints>10</MaxHitPoints>
-						<DeteriorationRate>9</DeteriorationRate>
-						<Beauty>7</Beauty>
-						<SharpDamageMultiplier Inherit="False">0.18</SharpDamageMultiplier>
-						<BluntDamageMultiplier Inherit="False">0.15</BluntDamageMultiplier>
-						<StuffPower_Insulation_Cold Inherit="False">14</StuffPower_Insulation_Cold>
-						<StuffPower_Insulation_Heat Inherit="False">14</StuffPower_Insulation_Heat>
-					</statBases>
-					<stackLimit>1000</stackLimit>
-					<stuffProps>
-						<color>(187,177,157)</color>
-						<commonality>0.33</commonality>
-						<stuffAdjective>SCP-6394-4</stuffAdjective>
-						<categories>
-							<li>Fabric</li>
-							<li>Leathery</li>
-							<li>Woody</li>
-							<li>Stony</li>
-							<li>Metallic</li>
-
-							<!-- Mod support -->
-							<li MayRequire="TaosChagic.Igloo">Snowy</li>
-							<li MayRequire="Dubwise.Rimefeller">Plastic</li>
-							<li MayRequire="Dubwise.Rimefeller">Composite</li>
-							<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-							<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
-							<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-							<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
-							<li MayRequire="sarg.rimbees">RB_Waxy</li>
-							<li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
-							<li MayRequire="wyr3d.chitin">WYD_Chitin</li>
-							<li MayRequire="wyr3d.chitin">WYD_Padding</li>
-							<li MayRequire="kikohi.jewelry">Gemstones</li>
-						</categories>
-						<statOffsets>
-							<Beauty>7</Beauty>
-						</statOffsets>
-						<statFactors>
-							<MarketValue>0.34</MarketValue>
-							<MaxHitPoints>0.1</MaxHitPoints>
-							<Beauty>4</Beauty>
-							<WorkToMake>0.1</WorkToMake>
-							<WorkToBuild>0.2</WorkToBuild>
-							<DoorOpenSpeed>5</DoorOpenSpeed>
-						</statFactors>
-					</stuffProps>
-					<thingSetMakerTags>
-						<li>RewardStandardMidFreq</li>
-					</thingSetMakerTags>
-					<minRewardCount>250</minRewardCount>
-					<thingCategories Inherit="False">
-						<li>SCPObjects</li>
-						<li>RB_BeeswaxCategory</li>
-					</thingCategories>
-					<modExtensions>
-						<li Class="SecureContainRimworld.CProceduresExtension" Inherit="False">
-							<classRating>
-								<li>SCR_CEuclid</li>
-								<li>SCR_DDark</li>
-								<li>SCR_RNotice</li>
-							</classRating>
-							<containmentTier>0</containmentTier>
-						</li>
-					</modExtensions>
-				</ThingDef>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="RB_Beeswax"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>/Defs</xpath>
-			<value>
-				<ThingDef ParentName="RB_BeesWaxBase">
-					<defName>TSP_SCR_SCP6394_ArtWax</defName>
 					<label>SCP-6394-4</label>
 					<description>SCP-6394-4 is the designation given to the anomalous beeswax produced by SCP-6394 instances. Its purpose is for beauty and artistic endeavors; it is its creators' pacifism that is the reason this beeswax is ridiculously brittle and unsuitable for any form of weaponry whatsoever. However, it is versatile and capable of being used in and for any conceivable artistic endeavor imaginable. Its anomalous properties allow for it to be used to produce art and structures in a vastly faster rate. However, due to SCP-6394-4's abundance in the art community, items made with it are not worth very much at the market. \n \n Remember: to extract SCP-6394-4 instances, the Basic Containment Crate Research Project must first be undertaken!</description>
 					<descriptionHyperlinks>
@@ -343,7 +245,7 @@
 						<ThingDef MayRequire="tsp.zal.patchhoney2">TSP_LaymanHoneyMachine</ThingDef>
 					</descriptionHyperlinks>
 					<graphicData>
-						<texPath>Things/Item/Artifacts/SCR_SCP6394/TSP_SCP6394_Wax3</texPath>
+						<texPath>Things/Item/Materials/TSP_SCP6394_Wax3</texPath>
 						<graphicClass>Graphic_Single</graphicClass>
 					</graphicData>
 					<statBases>
@@ -354,10 +256,10 @@
 						<Beauty>7</Beauty>
 						<SharpDamageMultiplier Inherit="False">0.18</SharpDamageMultiplier>
 						<BluntDamageMultiplier Inherit="False">0.15</BluntDamageMultiplier>
-						<StuffPower_Insulation_Cold Inherit="False">14</StuffPower_Insulation_Cold>
-						<StuffPower_Insulation_Heat Inherit="False">14</StuffPower_Insulation_Heat>
+						<StuffPower_Insulation_Cold Inherit="False">24</StuffPower_Insulation_Cold>
+						<StuffPower_Insulation_Heat Inherit="False">24</StuffPower_Insulation_Heat>
 					</statBases>
-					<stackLimit>1000</stackLimit>
+					<stackLimit>2000</stackLimit>
 					<stuffProps>
 						<color>(187,177,157)</color>
 						<commonality>0.33</commonality>
@@ -398,7 +300,7 @@
 					<thingSetMakerTags>
 						<li>RewardStandardMidFreq</li>
 					</thingSetMakerTags>
-					<minRewardCount>250</minRewardCount>
+					<minRewardCount>300</minRewardCount>
 					<thingCategories Inherit="False">
 						<li>SCPObjects</li>
 						<li>RB_BeeswaxCategory</li>
