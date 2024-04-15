@@ -124,7 +124,7 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <postFactor>0.3</postFactor>
+            <setMax>0.3</setMax>
           </li>
           <li>
             <capacity>Moving</capacity>
@@ -168,7 +168,7 @@
           </li>
           <li>
             <capacity>Eating</capacity>
-            <postFactor>0.05</postFactor>
+            <postFactor>0.01</postFactor>
           </li>
         </capMods>
       </li>
@@ -187,8 +187,12 @@
             <postFactor>0.9</postFactor>
           </li>
           <li>
+            <capacity>BloodFiltration</capacity>
+            <postFactor>0.7</postFactor>
+          </li>
+          <li>
             <capacity>Eating</capacity>
-            <postFactor>0</postFactor>
+            <setMax>0.01</setMax>
           </li>
         </capMods>
       </li>
