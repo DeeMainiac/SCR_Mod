@@ -58,17 +58,19 @@
 					<severity>2</severity>
 				</li>
 			</outcomeDoers>
+			<optimalityOffsetHumanlikes>-99</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-9</optimalityOffsetFeedingAnimals>
 	  </ingestible>
 	  <orderedTakeGroup>Drug</orderedTakeGroup>
-	<comps>
-      <li Class="CompProperties_Ingredients">
-        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
-      </li>
-	  <!-- FEED IT TO YOUR ENEMIES!! -->
-      <li Class="CompProperties_Drug">
-        <listOrder>1000</listOrder>
-      </li>
-    </comps>
+		<comps Inherit="False">
+		  <li Class="CompProperties_Ingredients">
+			<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+		  </li>
+		  <!-- FEED IT TO YOUR ENEMIES!! -->
+		  <li Class="CompProperties_Drug">
+			<listOrder>1000</listOrder>
+		  </li>
+		</comps>
   </ThingDef>
 
 </Defs>
