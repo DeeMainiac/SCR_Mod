@@ -29,7 +29,7 @@
 		<statBases>
 		  <MaxHitPoints>600</MaxHitPoints>
 		  <WorkToBuild>135</WorkToBuild>
-		  <Flammability>0.1</Flammability>
+		  <Flammability>0</Flammability>
 		</statBases>
 		<!-- <costStuffCount>5</costStuffCount> -->
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
@@ -60,7 +60,7 @@
 		-->
 		
 		<researchPrerequisites Inherit="False">
-		<li>SCR_WallTier1</li>
+			<li>SCR_WallTier1</li>
 		</researchPrerequisites>
 		
 		<building>
@@ -78,19 +78,29 @@
 		<label>steel strengthened wall</label>
 		<description>An impassable wall strengthened with steel. Capable of holding up a roof and keeping in SCP's.</description>
 		<modExtensions>
-		<li Class="SecureContainRimworld.CProceduresExtension">
-		<containmentTier>1</containmentTier>
-		</li>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<containmentTier>1</containmentTier>
+			</li>
 		</modExtensions>
 		<costList Inherit="False">
 		  <Steel>2</Steel>
 		</costList>
 		<costStuffCount>5</costStuffCount>
 		<stuffCategories>
-		  <li>Stony</li>
-		  <li>Metallic</li>
-		  <li>Stony</li>
-		  <li>Wooden</li>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Woody</li>
+
+			<!-- Mod support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+			<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			<li MayRequire="sarg.rimbees">RB_Waxy</li>
+			<li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
+			<li MayRequire="wyr3d.chitin">WYD_Chitin</li>
 		</stuffCategories>
 
 		<building>
@@ -135,8 +145,20 @@
 		</costList>
 		<costStuffCount>5</costStuffCount>
 		<stuffCategories>
-		  <li>Stony</li>
-		  <li>Metallic</li>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Woody</li>
+
+			<!-- Mod support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+			<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			<li MayRequire="sarg.rimbees">RB_Waxy</li>
+			<li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
+			<li MayRequire="wyr3d.chitin">WYD_Chitin</li>
 		</stuffCategories>
 		<researchPrerequisites Inherit="False">
 			<li>SCR_WallTier2</li>
@@ -188,11 +210,23 @@
 		  </damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
-		<costList>
-		  <Steel>30</Steel>
-		  <ComponentIndustrial>3</ComponentIndustrial>
-		</costList>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>55</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Woody</li>
+
+			<!-- Mod support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+			<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			<li MayRequire="sarg.rimbees">RB_Waxy</li>
+			<li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
+			<li MayRequire="wyr3d.chitin">WYD_Chitin</li>
+		</stuffCategories>
 		<comps>
 		  <li Class="CompProperties_Power">
 			<compClass>CompPowerTrader</compClass>
@@ -213,11 +247,9 @@
 		<label>blast door</label>
 		<description>Strong blast door that keeps SCPs inside, even when power is cut off. Powered operation allows people to move through the door without slowing down.</description>
 		<modExtensions>
-		<li Class="SecureContainRimworld.CProceduresExtension">
-
-		<containmentTier>2</containmentTier>
-		
-		</li>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<containmentTier>2</containmentTier>
+			</li>
 		</modExtensions>
 		<statBases>
 		  <MaxHitPoints>2000</MaxHitPoints>
@@ -233,11 +265,20 @@
 		  </damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
-			<costList>
-		  <Steel>120</Steel>
-		  <ComponentIndustrial>8</ComponentIndustrial>
+		<costList>
+		  <ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
-		<costStuffCount>25</costStuffCount>  
+		<costStuffCount>125</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+
+			<!-- Mod support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		</stuffCategories>
 		<researchPrerequisites>
 			<li>SCR_BlastDoors</li>
 		</researchPrerequisites>
@@ -286,15 +327,23 @@
 		  <Flammability>0</Flammability>
 		  <Beauty>0</Beauty>
 		</statBases>
-		<costList>
-		  <Steel>1</Steel>
-		</costList>
-		  <!--<disallowedThingDefs>
-			  <li>Gold</li>
-			  <li>Silver</li>
-			  <li>Jade</li>
-		  </disallowedThingDefs> -->
-		<costStuffCount>5</costStuffCount>
+		<costStuffCount>4</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Woody</li>
+
+			<!-- Mod support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+			<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			<li MayRequire="sarg.rimbees">RB_Waxy</li>
+			<li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
+			<li MayRequire="wyr3d.chitin">WYD_Chitin</li>
+		</stuffCategories>
 		<rotatable>false</rotatable>
 		<fertility>0</fertility>
 		<building>

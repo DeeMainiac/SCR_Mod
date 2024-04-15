@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
+<Defs>
   <HediffDef ParentName="DiseaseBase">
     <defName>SCR_TranqHediff</defName>
     <label>tranquilizer</label>
     <description>Sleep drugs in the body delivered by a tranquilizer dart or a stun baton. Renders creatures unconscious after a time.
 \nNaturally recovers over time as the body filters it out.</description>
-    <lethalSeverity>1</lethalSeverity>
-	<initialSeverity>.15</initialSeverity>
+    <!-- <lethalSeverity>-1</lethalSeverity> -->
+	<initialSeverity>0.15</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>45000~100000</disappearsAfterTicks>
       </li>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.75</severityPerDay>
+		<showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
     <stages>
@@ -25,6 +26,10 @@
             <capacity>Consciousness</capacity>
             <setMax>0.8</setMax>
           </li>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.85</setMax>
+          </li>
         </capMods>
       </li>
       <li>
@@ -35,6 +40,10 @@
             <capacity>Consciousness</capacity>
             <setMax>0.5</setMax>
           </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.75</postFactor>
+          </li>
         </capMods>
       </li>
       <li>
@@ -44,6 +53,10 @@
           <li>
             <capacity>Consciousness</capacity>
             <setMax>0.4</setMax>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>0.75</postFactor>
           </li>
         </capMods>
       </li>
@@ -73,6 +86,7 @@
       </li>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.75</severityPerDay>
+		<showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
    <stages>
@@ -93,21 +107,24 @@
     <description>Awful gastrointestinal illness caused by SCP-666 1/2-J. The patient will vomit and feel very sick for some time.</description>
     <scenarioCanAdd>true</scenarioCanAdd>
     <initialSeverity>1</initialSeverity>
+	<maxSeverity>1</maxSeverity>
 	<makesSickThought>true</makesSickThought>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.9</severityPerDay>
+        <severityPerDay>-0.79</severityPerDay>
+		<showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
     <stages>
       <li>
         <label>recovering</label>
+		<minSeverity>0</minSeverity>
         <vomitMtbDays>0.8</vomitMtbDays>
         <painOffset>0.5</painOffset>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <postFactor>0.3</postFactor>
+            <setMax>0.3</setMax>
           </li>
           <li>
             <capacity>Moving</capacity>
@@ -151,7 +168,7 @@
           </li>
           <li>
             <capacity>Eating</capacity>
-            <postFactor>0.05</postFactor>
+            <postFactor>0.01</postFactor>
           </li>
         </capMods>
       </li>
@@ -170,8 +187,12 @@
             <postFactor>0.9</postFactor>
           </li>
           <li>
+            <capacity>BloodFiltration</capacity>
+            <postFactor>0.7</postFactor>
+          </li>
+          <li>
             <capacity>Eating</capacity>
-            <postFactor>0</postFactor>
+            <setMax>0.01</setMax>
           </li>
         </capMods>
       </li>
@@ -183,7 +204,7 @@
  <HediffDef ParentName="DiseaseBase">
     <defName>SCR_SCP2845TransmuteHediff</defName>
     <label>SCP-2845 Transmutation Aura</label>
-    <description>This Pawn is under the effect of SCP-2845's transmutation aura. If he does not leave the hazardous zone around SCP-2845, he will fatally transform into a SCP-2845-1 instance! \n Naturally recovers over time as the body filters it out.</description>
+    <description>This Pawn is under the effect of SCP-2845's transmutation aura. If he does not leave the hazardous zone around SCP-2845, he will fatally transform into a SCP-2845-1 instance! \n It naturally recovers over time as the body filters it out.</description>
 	<initialSeverity>0.15</initialSeverity>
 	<lethalSeverity>0.84</lethalSeverity>
 	<makesSickThought>true</makesSickThought>
@@ -193,6 +214,7 @@
       </li>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1</severityPerDay>
+		<showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
    <stages>

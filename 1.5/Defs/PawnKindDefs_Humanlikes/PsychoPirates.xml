@@ -7,39 +7,41 @@
 	sincerely yours, 
 	TLW-->
 	
-  <PawnKindDef Name="CJ_PsychoPirateBase" Abstract="True">
-	<label>SCP-1788-1 instance</label>
-	<labelPlural>SCP-1788-1 instances</labelPlural>
-    <race>CJ_Psycho</race>
-    <defaultFactionType>AncientsHostile</defaultFactionType>
-    <chemicalAddictionChance>0.5</chemicalAddictionChance>
-    <backstoryCryptosleepCommonality>0.0225</backstoryCryptosleepCommonality>
-	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-	<!--
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>Pirate</li>
-		  <li>Sadist</li>
-		  <li>Raider</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
-	-->
-    <invNutrition>2.55</invNutrition>
-    <biocodeWeaponChance>0.1</biocodeWeaponChance>
-	<skills>
-      <li>
-        <skill>Shooting</skill>
-        <range>7~20</range>
-      </li>
-	  <li>
-	  <skill>Melee</skill>
-        <range>7~20</range>
-      </li>
-    </skills>
-	<initialWillRange>102~103</initialWillRange>
-  </PawnKindDef>
+	<PawnKindDef Name="CJ_PsychoPirateBase" Abstract="True">
+		<label>SCP-1788-1 instance</label>
+		<labelPlural>SCP-1788-1 instances</labelPlural>
+		<race>CJ_Psycho</race>
+		<defaultFactionType>AncientsHostile</defaultFactionType>
+		<chemicalAddictionChance>0.5</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~6</combatEnhancingDrugsCount>
+		<!--
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Pirate</li>
+					<li>Sadist</li>
+					<li>Raider</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		-->
+		<invNutrition>2.55</invNutrition>
+		<biocodeWeaponChance>0.1</biocodeWeaponChance>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>7~20</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>7~20</range>
+			</li>
+		</skills>
+		<initialWillRange>102~103</initialWillRange>
+	</PawnKindDef>
 
   <!-- Povery tier - drifter -->
   
