@@ -360,7 +360,7 @@
 		</tradeTags>
 	</ThingDef>
 	
-	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCR_SCP857A</defName>
 		<label>SCP-857-A</label>
 		<race>SCR_SCP857A</race>
@@ -449,7 +449,7 @@
 		</tradeTags>
 	</ThingDef>
 	
-	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCR_SCP857B</defName>
 		<label>SCP-857-B</label>
 		<race>SCR_SCP857B</race>
@@ -516,7 +516,7 @@
 		</tradeTags>
 	</ThingDef>
 	
-	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCR_SCP857C</defName>
 		<label>SCP-857-C</label>
 		<race>SCR_SCP857C</race>
@@ -583,7 +583,7 @@
 		</tools>
 	</ThingDef>
 	
-	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCR_SCP857E</defName>
 		<label>SCP-857-E</label>
 		<race>SCR_SCP857E</race>
@@ -682,7 +682,7 @@
 		</tradeTags>
 	</ThingDef>
 	
-	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCR_SCP857G</defName>
 		<label>SCP-857-G</label>
 		<race>SCR_SCP857G</race>
@@ -778,7 +778,7 @@
 		</tradeTags>
 	</ThingDef>
 	
-	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCR_SCP857H</defName>
 		<label>SCP-857-H</label>
 		<race>SCR_SCP857H</race>
@@ -857,7 +857,7 @@
 		</tradeTags>
 	</ThingDef>
 	
-	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCR_SCP857I</defName>
 		<label>SCP-857-I</label>
 		<race>SCR_SCP857I</race>

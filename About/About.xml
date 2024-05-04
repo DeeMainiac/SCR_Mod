@@ -52,6 +52,7 @@
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>Crackajack.CJPsychos</li>

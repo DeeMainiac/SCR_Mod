@@ -98,7 +98,7 @@
 	</comps>
   </ThingDef>
   
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef ParentName="AnimalKindBase">
       <defName>SCR_SCP160R</defName>
     <label>SCP-160</label>
     <race>SCR_SCP160R</race>

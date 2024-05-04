@@ -247,5 +247,31 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+	<!--
+	<ThingDef ParentName="EggFertBase">
+		<defName>SCR_SCP1948Egg</defName>
+		<label>SCP-1948 egg (fert.)</label>
+		<description>A fertilized SCP-1948 egg. If all goes well, it should hatch into an instance of SCP-1948. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DeteriorationRate>.5</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<MarketValue>10.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>12</hatcherDaystoHatch>
+				<hatcherPawn>SCR_SCP1948R</hatcherPawn>
+			</li>
+		</comps>
+			<tradeTags>
+				<li>SCP</li>
+				<li>EggSCP</li>
+			</tradeTags>
+	</ThingDef>
+	-->
 </Defs>

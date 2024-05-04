@@ -54,6 +54,7 @@
 	<BeautyOutdoors>3</BeautyOutdoors>
       <MaxHitPoints>1000</MaxHitPoints>
       <Nutrition>0.01</Nutrition>
+	        <Mass>0.05</Mass>
     </statBases>
     <graphicData>
       <texPath>Things/Plant/SCR_SCP848/SCR_SCP848</texPath>
@@ -62,6 +63,7 @@
         <volume>(0.1, 0.1, 0.1)</volume>
       </shadowData>
     </graphicData>
+	<minifiedDef>MinifiedTree</minifiedDef>
     <selectable>true</selectable>
     <neverMultiSelect>false</neverMultiSelect>
     <pathCost>69</pathCost>

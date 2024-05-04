@@ -155,15 +155,15 @@
 
 	<HediffDef>
 		<defName>TSP_SCR_610_CannotInfectSelf</defName>
-		<label>SCP-610 Is Immune to Itself</label>
-		<description>YO DAWG, I heard you DON'T like SCP-610 infections, so I prevented SCP-610 from infecting SCP-610 so you can avoid the Flesh That Hates hating the Flesh That Hates. \n \n In non-meme speak, this grants a SCP-610 instance immunity to its own attacks. SCP-610-A, SCP-610-B, and other such derivatives represent an organic being completely compromised and possessed by the Flesh That Hates. It cannot contract the SCP-610 infection a second time!</description>
+		<label>SCP-610 immunity</label>
+		<description>Grants a SCP-610 instance immunity to its own attacks. SCP-610-A, SCP-610-B, and other such derivatives represent an organic being completely compromised and possessed by the Flesh That Hates. It cannot contract the SCP-610 infection a second time.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(255, 0, 0)</defaultLabelColor>
 		<isBad>true</isBad>
 		<!-- <scenarioCanAdd>false</scenarioCanAdd> -->
 		<stages>
 			<li>
-				<label>Immune to Yourself</label>
+				<label>immune to self</label>
 				<becomeVisible>false</becomeVisible>
 				<makeImmuneTo>
 					<li>SCR_SCP610Infection</li>

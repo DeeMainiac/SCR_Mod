@@ -27,7 +27,4 @@
 		</comps>
   </ThingDef>
   
-	<PawnKindDef Name="TSP_SCP_Creature_PawnkindDef" ParentName="AnimalKindBase" Abstract="True">
-		<ecoSystemWeight>0</ecoSystemWeight>
-	</PawnKindDef>  
 </Defs>

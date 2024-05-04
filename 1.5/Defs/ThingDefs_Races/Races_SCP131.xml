@@ -3,7 +3,7 @@
 	<ThingDef ParentName="SCR_SCP_Base">
 		<defName>SCR_SCP131R</defName>
 		<label>SCP-131</label>
-		<description>SCP-131 is an extremely fast, round, and teardrop-shaped wheeled creature that wanders colonies, affectionately looking for colonists to bond with.</description>
+		<description>SCP-131 is an extremely fast, round, and teardrop-shaped wheeled creature that wanders around colonies, affectionately looking for colonists to bond with.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -36,9 +36,9 @@
 			<predator>false</predator>
 			<needsRest>false</needsRest>
 			<baseBodySize>.15</baseBodySize>
-			<baseHungerRate>0</baseHungerRate>
+			<baseHungerRate>.001</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
-			<foodType>None</foodType>
+			<foodType>Corpse, OmnivoreHuman, OvivoreAnimal, Meal, Fluid, Kibble</foodType>
 			<leatherDef>Steel</leatherDef>
 			<specificMeatDef>ChunkSlagSteel</specificMeatDef>
 			<wildness>0</wildness>
@@ -50,15 +50,19 @@
 			<nuzzleMtbHours>6</nuzzleMtbHours>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
-		  <lifeStageAges Inherit="False">
-			<li>
-				<def>MechanoidFullyFormed</def>
-				<minAge>0</minAge>
-				<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
-				<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
-				<soundCall>Pawn_Mech_Scyther_Call</soundCall>
-			</li>
-		  </lifeStageAges>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.01</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
@@ -75,11 +79,10 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li>
 		</comps>
 	</ThingDef>
 	
-	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCR_SCP131R</defName>
 		<label>SCP-131</label>
 		<race>SCR_SCP131R</race>
@@ -105,7 +108,7 @@
 					<drawSize>0.5</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
-			<!--
+			
 			<li>
 				<labelMale>SCP-131-B</labelMale>
 				<labelFemale>SCP-131-A</labelFemale>
@@ -126,7 +129,6 @@
 					<drawSize>0.7</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
-			-->
 		</lifeStages>
 	</PawnKindDef>
 </Defs>

@@ -146,7 +146,7 @@
     </tools>
   </ThingDef>
 
-  <PawnKindDef Name="SCP_Sheep" ParentName="Sheep">
+  <PawnKindDef ParentName="AnimalKindBase">
     <defName>SCR_SCP594R</defName>
     <label>SCP-594</label>
     <labelPlural>SCP-594 instances</labelPlural>

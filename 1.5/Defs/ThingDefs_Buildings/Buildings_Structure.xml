@@ -27,7 +27,7 @@
     </graphicData>
     <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
     <statBases>
-      <MaxHitPoints>600</MaxHitPoints>
+      <MaxHitPoints>650</MaxHitPoints>
       <WorkToBuild>135</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
@@ -65,9 +65,13 @@
       <isInert>true</isInert>
       <isPlaceOverableWall>true</isPlaceOverableWall>
       <ai_chillDestination>false</ai_chillDestination>
+	  <supportsWallAttachments>true</supportsWallAttachments>
       <blueprintGraphicData>
         <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
+	  <relatedBuildCommands>        
+	  <li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+	  </relatedBuildCommands>
     </building>
   </ThingDef>
 
@@ -81,7 +85,7 @@
 	</li>
 	</modExtensions>
     <costList>
-      <Steel>2</Steel>
+      <Steel>3</Steel>
     </costList>
     <costStuffCount>5</costStuffCount>
     <stuffCategories>
@@ -98,15 +102,15 @@
 	    <damageMultipliers>
       <li>
         <damageDef>Bomb</damageDef>
-        <multiplier>2</multiplier>
+        <multiplier>1.9</multiplier>
       </li>
 	  <li>
 	  <damageDef>Mining</damageDef>
-	  <multiplier>.5</multiplier>
+	  <multiplier>.4</multiplier>
 	  </li>
       <li>
         <damageDef>Thump</damageDef>
-        <multiplier>2</multiplier>
+        <multiplier>1.9</multiplier>
       </li>
     </damageMultipliers>
 	
@@ -123,7 +127,7 @@
 	</modExtensions>
     <costList>
 	<Steel>1</Steel>
-    <Plasteel>1</Plasteel>
+    <Plasteel>2</Plasteel>
     <!--  <ComponentIndustrial>6</ComponentIndustrial> -->
     </costList>
     <costStuffCount>5</costStuffCount>
@@ -143,19 +147,25 @@
 	    <damageMultipliers>
       <li>
         <damageDef>Bomb</damageDef>
-        <multiplier>1.8</multiplier>
+        <multiplier>1.7</multiplier>
       </li>
 	  <li>
 	  <damageDef>Mining</damageDef>
-	  <multiplier>.5</multiplier>
+	  <multiplier>.4</multiplier>
 	  </li>
       <li>
         <damageDef>Thump</damageDef>
-        <multiplier>1.8</multiplier>
+        <multiplier>1.7</multiplier>
       </li>
     </damageMultipliers>
 	
   </ThingDef>
+  
+  
+  
+
+ 
+  
   
 																<!-- Doors -->
 
@@ -249,7 +259,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>SCR_ContainRoomMarker</defName>
     <label>containment room marker</label>
-    <description>An electronic sign designating a containment room. It must be placed in an area enclosed by fences, barricades, walls, and doors. It will alert you to containment breaches in this area.</description>
+    <description>An electronic sign designating a containment room. It must be placed in an area enclosed by fences, barricades, walls, and doors. It will alert you to containment breaches in this area.\n\nEven if you don't have one of these, SCPs can still breach containment.</description>
     <thingClass>Building</thingClass>
     <tickerType>Long</tickerType>
     <designationCategory>Misc</designationCategory>

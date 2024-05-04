@@ -158,7 +158,7 @@
     </tools>
   </ThingDef>
   
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef ParentName="AnimalKindBase">
       <defName>SCR_SCP529R</defName>
     <label>SCP-529</label>
     <race>SCR_SCP529R</race>

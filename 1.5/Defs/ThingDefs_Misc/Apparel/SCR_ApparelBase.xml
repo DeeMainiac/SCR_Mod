@@ -65,12 +65,9 @@
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
       </recipeUsers>
+	  <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+	  <researchPrerequisite>SCR_InsigniaHelmets</researchPrerequisite>
     </recipeMaker>
-	<researchPrerequisites Inherit="False">
-	<li>SCR_InsigniaHelmets</li>
-	</researchPrerequisites>
-
-
 </ThingDef>
 
 </Defs>

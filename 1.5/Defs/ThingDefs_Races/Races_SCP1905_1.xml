@@ -22,7 +22,7 @@
 			<ComfyTemperatureMin>-1000</ComfyTemperatureMin>
 			<ComfyTemperatureMax>1000</ComfyTemperatureMax>
 			<FilthRate>0</FilthRate>
-			<MeatAmount>30</MeatAmount>
+			<MeatAmount>10</MeatAmount>
 			<LeatherAmount>10</LeatherAmount>
 		</statBases>
 		<!--
@@ -40,7 +40,7 @@
 			<baseBodySize>2.15</baseBodySize>
 			<baseHealthScale>1.05</baseHealthScale>
 			<baseHungerRate>1</baseHungerRate>
-			<foodType>CarnivoreAnimalStrict, CarnivoreAnimal, OvivoreAnimal, Meat, Fluid, Meal, Processed, Liquor, Corpse, Kibble</foodType>
+			<foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Meal, Corpse</foodType>
 			<leatherDef>Plasteel</leatherDef>
 			<specificMeatDef>Plasteel</specificMeatDef>
 			<wildness>1</wildness>
@@ -129,7 +129,7 @@
 			</li>
 		</tools>
 	</ThingDef>
-	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCR_SCP19051R</defName>
 		<label>SCP-1905-1</label>
 		<labelMale>SCP-1905-2</labelMale>
@@ -141,7 +141,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_2</texPath>
-					<drawSize>2.4</drawSize>
+					<drawSize>3.8</drawSize>
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_1</texPath>
@@ -153,7 +153,7 @@
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/SCR_SCP1905/SCR_SCP1905_2</texPath>
-					<drawSize>2.4</drawSize>
+					<drawSize>3.8</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

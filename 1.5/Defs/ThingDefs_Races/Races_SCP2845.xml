@@ -117,7 +117,7 @@
 	</tradeTags>
   </ThingDef>
   
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef ParentName="AnimalKindBase">
     <defName>SCR_SCP2845R</defName>
     <label>SCP-2845</label>
     <race>SCR_SCP2845R</race>
@@ -151,7 +151,7 @@
 	<li Class="SecureContainRimworld.CProceduresExtension">
 	<classRating>
 		<li>SCR_CEuclid</li>
-		<li>SCR_DKeneq</li>
+		<li>SCR_DVlam</li>
 		<li>SCR_RNotice</li>
 	</classRating>
 	
@@ -190,7 +190,7 @@
       <lifeExpectancy>60</lifeExpectancy>
 	  <trainability>Advanced</trainability>
 	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>10</manhunterOnDamageChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <lifeStageAges Inherit="False">
         <li>
           <def>AnimalAdult</def>
@@ -217,12 +217,12 @@
     </tools>
   </ThingDef>
   
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef ParentName="AnimalKindBase">
     <defName>SCR_SCP28451R</defName>
     <label>SCP-2845-1</label>
     <race>SCR_SCP28451R</race>
-    <combatPower>10</combatPower>
-    <ecoSystemWeight>0</ecoSystemWeight>
+    <combatPower>75</combatPower> <!-- Higher combat power equals less spawned, they spawn excessively tbh -->
+    <ecoSystemWeight>.5</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>

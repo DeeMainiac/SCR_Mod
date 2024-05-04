@@ -158,7 +158,7 @@
 	</comps> -->
   </ThingDef>
   
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef ParentName="AnimalKindBase">
     <defName>SCR_SCP1797A</defName>
     <label>SCP-1797-A</label>
     <race>SCR_SCP1797A</race>

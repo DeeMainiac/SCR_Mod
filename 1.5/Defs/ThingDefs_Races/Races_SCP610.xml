@@ -128,7 +128,7 @@
 		</ingredient>
   </ThingDef>
   
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef ParentName="AnimalKindBase">
     <defName>SCR_SCP610A</defName>
     <label>SCP-610-A</label>
     <race>SCR_SCP610A</race>
@@ -324,7 +324,7 @@
 		</ingredient>
   </ThingDef>
   
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef ParentName="AnimalKindBase">
     <defName>SCR_SCP610B</defName>
     <label>SCP-610-B</label>
     <race>SCR_SCP610B</race>

@@ -119,7 +119,7 @@
     </tools>
   </ThingDef>
 
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef ParentName="AnimalKindBase">
     <defName>SCR_SCP2371JP</defName>
     <label>SCP-2371-JP</label>
     <race>SCR_SCP2371JP</race>

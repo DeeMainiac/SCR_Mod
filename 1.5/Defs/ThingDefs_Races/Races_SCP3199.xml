@@ -24,7 +24,7 @@
       <MoveSpeed>6.9</MoveSpeed>
       <MarketValue>300</MarketValue>
       <ComfyTemperatureMin>1</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>1000</ComfyTemperatureMax> <!-- Under no circumstances should heat kill it, per its canonical article. -->
+	  <ComfyTemperatureMax>9999</ComfyTemperatureMax> <!-- Under no circumstances should heat kill it, per its canonical article. -->
 	<FilthRate>18</FilthRate>
     </statBases>
 	    <comps>
@@ -58,9 +58,9 @@
       <foodType>CarnivoreAnimalStrict, Meat, Kibble</foodType>
       <leatherDef>Leather_Patch</leatherDef>
 	  <specificMeatDef>SCR_SCP3199Meat</specificMeatDef>
-	  <bloodDef>Filth_Fuel</bloodDef> <!-- It canonically becomes more powerful under extreme heat and it causes its eggs to hatch faster. This is intended to represent that. -->
+	  <bloodDef>Filth_Fuel</bloodDef>
       <wildness>0.9</wildness>
-      <trainability>Advanced</trainability> <!-- If it REFUTES HUMANITY, then it's pretty dang smart! -->
+      <trainability>Intermediate</trainability>
       <gestationPeriodDays>10</gestationPeriodDays>
       <nameOnTameChance>1</nameOnTameChance>
       <lifeExpectancy>30</lifeExpectancy>
@@ -103,7 +103,6 @@
         </surpriseAttack>
       </li>
 	  <li>
-		<!-- My autism's kicking in and I am having trouble describing this: basically, imagine the SCP-3199 instance rearing it's long neck back like a baseball bat and then slamming forward, using its skull to crash into you and cause serious damage. -->
         <label>neck slam</label> 
         <capacities>
           <li>Blunt</li>
@@ -141,7 +140,6 @@
         </surpriseAttack>
       </li>
       <li>
-		<!-- It canonically has a venomous bite. Why was this left out? -->
         <label>acidic bite</label>
         <capacities>
           <li>ToxicBite</li>
@@ -164,7 +162,7 @@
   </ThingDef>
   
   
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef ParentName="AnimalKindBase">
     <defName>SCR_SCP3199R</defName>
     <label>SCP-3199</label>
     <race>SCR_SCP3199R</race>

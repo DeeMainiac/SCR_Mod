@@ -37,7 +37,7 @@
       <baseBodySize>2.2</baseBodySize>
       <maxPreyBodySize>2.5</maxPreyBodySize>
       <baseHungerRate>0.25</baseHungerRate>
-      <baseHealthScale>1.6</baseHealthScale>
+      <baseHealthScale>1.8</baseHealthScale>
       <foodType>CarnivoreAnimalStrict, Corpse, Kibble</foodType>
       <leatherDef>Leather_Light</leatherDef>
       <wildness>.9</wildness>
@@ -154,7 +154,7 @@
 	</comps>
   </ThingDef>
   
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef ParentName="AnimalKindBase">
       <defName>SCR_SCP939R</defName>
     <label>SCP-939</label>
     <race>SCR_SCP939R</race>

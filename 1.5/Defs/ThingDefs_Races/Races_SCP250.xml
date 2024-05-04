@@ -127,7 +127,7 @@
 		</tools>
   </ThingDef>
   
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef ParentName="AnimalKindBase">
       <defName>SCR_SCP250R</defName>
     <label>SCP-250</label>
     <race>SCR_SCP250R</race>

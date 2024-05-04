@@ -113,7 +113,7 @@
 	
   </ThingDef>
   
-  <PawnKindDef Name="SCR_SCP1675R" ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef Name="SCR_SCP1675R" ParentName="AnimalKindBase">
     <defaultFactionType></defaultFactionType>
     <defName>SCR_SCP1675R</defName>
     <label>SCP-1675</label>

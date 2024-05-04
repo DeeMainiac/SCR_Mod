@@ -27,13 +27,13 @@
 	  <ComfyTemperatureMax>300</ComfyTemperatureMax>
 	<FilthRate>15</FilthRate>
     </statBases>
-	 <!--	<comps> doesn't work at the moment, causes the glow to stay in one place
+	<!-- <comps>  doesn't work at the moment, causes the glow to stay in one place 
 	      <li Class="CompProperties_Glower">
         <glowRadius>4</glowRadius>
 		<overlightRadius>4.0</overlightRadius>
         <glowColor>(255,255,255,0)</glowColor>
       </li>
-	</comps> -->
+	</comps>-->
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>Bird</body>
@@ -126,7 +126,7 @@
     <defName>SCR_SCP745R</defName>
     <label>SCP-745</label>
     <race>SCR_SCP745R</race>
-    <combatPower>150</combatPower>
+    <combatPower>190</combatPower>
 
     <lifeStages>
       <li>
@@ -137,7 +137,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/SCR_SCP745/SCR_Dessicated_SCP745</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>.9</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -151,7 +151,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/SCR_SCP745/SCR_Dessicated_SCP745</texPath>
-          <drawSize>1.8</drawSize>
+          <drawSize>1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

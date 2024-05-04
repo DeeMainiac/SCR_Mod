@@ -105,11 +105,12 @@
     </tradeTags>
   </ThingDef>
 
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+  <PawnKindDef ParentName="AnimalKindBase">
     <defName>SCR_SCP2584R</defName>
     <label>SCP-2584</label>
     <race>SCR_SCP2584R</race>
     <combatPower>15</combatPower>
+	<ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
