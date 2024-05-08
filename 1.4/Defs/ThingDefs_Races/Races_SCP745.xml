@@ -158,6 +158,13 @@
 				<chanceFactor>1</chanceFactor>
 			  </li>
 		</tools>
+		<comps>
+			<li Class="GlowingGhoul.CompProperties_GlowingGhoul">
+				<!-- <overlightRadius>1</overlightRadius> -->
+				<glowRadius>9</glowRadius>
+				<glowColor>(255,255,255)</glowColor>
+			</li>
+		</comps>
 	</ThingDef>
   
   
