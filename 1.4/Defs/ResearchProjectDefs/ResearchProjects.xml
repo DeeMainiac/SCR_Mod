@@ -58,6 +58,8 @@
     <researchViewY>3</researchViewY>
 	<prerequisites>
 		<li MayRequire="jecrell.doorsexpanded">ProjectHeron_PrisonDoors</li>
+		<li>Machining</li>
+		<li MayRequire="Mlie.AncientRimCore">AR_Project_Metal_II</li> <!-- Steel forging -->
 	</prerequisites>
   </ResearchProjectDef>
   
