@@ -224,7 +224,7 @@
 					</parts>
 				</li>
 				<li>
-					<def>TSP_SCR_857_Enchantment</def>
+					<def>TSP_SCR_857_Enchantment_HasHeart</def>
 					<depth>Inside</depth>
 					<height>Middle</height>
 					<coverage>0</coverage>
@@ -248,7 +248,7 @@
 					<def>Brain</def>
 					<depth>Outside</depth>
 					<height>Middle</height>
-					<coverage>.5</coverage>
+					<coverage>0.5</coverage>
 					<groups>
 						<li>FullHead</li>
 					</groups>
@@ -257,7 +257,7 @@
 							<def>Foot</def>
 							<customLabel>ventral foot</customLabel> <!-- This is how RL snails move -->
 							<depth>Inside</depth>
-							<coverage>.5</coverage>
+							<coverage>0.1</coverage>
 							<groups>
 								<li>Feet</li>
 							</groups>
@@ -265,7 +265,7 @@
 					</parts>
 				</li>
 				<li>
-					<def>TSP_SCR_857_Enchantment</def>
+					<def>TSP_SCR_857_Enchantment_HasFeet</def>
 					<depth>Inside</depth>
 					<height>Middle</height>
 					<coverage>0</coverage>

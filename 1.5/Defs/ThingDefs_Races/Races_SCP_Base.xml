@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-  <ThingDef ParentName="AnimalThingBase" Name="SCR_SCP_Base" Abstract="True">
+  <ThingDef ParentName="AnimalThingBase" Name="SCR_SCP_Creature_Base" Abstract="True">
 		<statBases>
 				<HSAU_GhoulismSusceptibility MayRequire="baskerville.hellsingarmsultimate">-2</HSAU_GhoulismSusceptibility>
 				<HSAU_SanctusSensitivity MayRequire="baskerville.hellsingarmsultimate" Inherit="False">0.1</HSAU_SanctusSensitivity>
 				<HSAU_SoulRendSensitivity MayRequire="baskerville.hellsingarmsultimate" Inherit="False">0</HSAU_SoulRendSensitivity> <!-- YOU THINK THESE THINGS HAVE SOULS?! -->
 				<HSAU_DecaySensitivity MayRequire="baskerville.hellsingarmsultimate">0.5</HSAU_DecaySensitivity>
 		</statBases>
-		<tradeTags>
-			<li>SCP</li>
+		<tradeTags Inherit="False">
+			<li>SCP_Creature</li>
 		</tradeTags>
 		<race>
 			<fleshType MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_StrangeFlesh</fleshType>
@@ -24,6 +24,9 @@
 			</li>
 		</modExtensions>
 		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Draftable" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<makeNonFleeingToo MayRequire="oskarpotocki.vanillafactionsexpanded.core">true</makeNonFleeingToo>
+			</li>
 		</comps>
   </ThingDef>
   

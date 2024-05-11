@@ -1,58 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<ThingDef ParentName="BuildingBase">
-<defName>SCR_SCP2228R</defName>
-    <label>SCP-2228</label>
-    <description>SCP-2228 is a board game-like playset imitating SCP Foundation containment procedures. Small items placed inside will gain anomalous properties, and will lose them upon leaving.</description>
-		<modExtensions>
-			<li Class="SecureContainRimworld.CProceduresExtension">
-				<classRating>
-					<li>SCR_CSafe</li>
-					<li>SCR_DDark</li>
-					<li>SCR_RNotice</li>
-				</classRating>
-				<containmentTier>0</containmentTier>
-			</li>
-		</modExtensions>
-	<graphicData>
-      <texPath>Things/Buildings/SCR_SCP2228</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shadowData>
-        <volume>(0.65, 0.25, 0.6)</volume>
-        <offset>(0, 0, -0.15)</offset>
-      </shadowData>
-      <damageData>
-        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-	    <minifiedDef>MinifiedThing</minifiedDef>
-	    <thingCategories>
-      <li>SCPObjects</li>
-    </thingCategories>
-		<tradeTags>
-			<li>Artifacts</li>
-			<li>SCP</li>
-		</tradeTags>
-    <altitudeLayer>Building</altitudeLayer>
-    <rotatable>false</rotatable>
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <fillPercent>0.40</fillPercent>
-    <building>
-      <joyKind>Gaming_Cerebral</joyKind>
-    </building>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Mass>5</Mass>
-      <Flammability>1.0</Flammability>
-      <Beauty>4</Beauty>
-      <JoyGainFactor>1.2</JoyGainFactor>
-    </statBases>
-    <pathCost>30</pathCost>
-    <passability>PassThroughOnly</passability>
-</ThingDef>
-
+	<ThingDef ParentName="BuildingBase">
+		<defName>SCR_SCP2228R</defName>
+		<label>SCP-2228</label>
+		<description>SCP-2228 is a board game-like play set imitating SCP Foundation containment procedures. Small items placed inside will gain anomalous properties, and will lose them upon leaving.</description>
+			<modExtensions>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+					<classRating>
+						<li>SCR_CSafe</li>
+						<li>SCR_DDark</li>
+						<li>SCR_RNotice</li>
+					</classRating>
+					<containmentTier>0</containmentTier>
+				</li>
+			</modExtensions>
+		<graphicData>
+		  <texPath>Things/Buildings/SCR_SCP2228</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shadowData>
+			<volume>(0.65, 0.25, 0.6)</volume>
+			<offset>(0, 0, -0.15)</offset>
+		  </shadowData>
+		  <damageData>
+			<rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+		  </damageData>
+		</graphicData>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+		  <li>SCPObjects</li>
+		</thingCategories>
+			<tradeTags>
+				<li>Artifacts</li>
+				<li>SCP</li>
+			</tradeTags>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.40</fillPercent>
+		<building>
+		  <joyKind>SCR_JoyfulSCP</joyKind>
+		</building>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Mass>5</Mass>
+		  <Flammability>1.0</Flammability>
+		  <Beauty>4</Beauty>
+		  <JoyGainFactor>1.2</JoyGainFactor>
+		</statBases>
+		<pathCost>30</pathCost>
+		<passability>PassThroughOnly</passability>
+	</ThingDef>
 </Defs>

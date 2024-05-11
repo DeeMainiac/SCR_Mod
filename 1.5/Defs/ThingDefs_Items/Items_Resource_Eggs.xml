@@ -10,7 +10,7 @@
 			<ingestEffect>EatMeat</ingestEffect>
 			<ingestSound>RawMeat_Eat</ingestSound>
 			<tasteThought>AteRawFood</tasteThought>
-			<!-- to prevent pawns from being able to eat it lol -->
+			<!-- to prevent pawns from being able to eat it LOL -->
 			<foodType>OvivoreAnimal, AnimalProduct, Tree</foodType>
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>
@@ -26,7 +26,7 @@
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<thingCategories>
-			<li>EggsFertilized</li>
+			<li>TSP_SCPEggs</li>
 		</thingCategories>
 		<allowedArchonexusCount>1000</allowedArchonexusCount>
 		<tradeTags>
@@ -49,7 +49,7 @@
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
 					<li>SCR_CKeter</li>
-					<li>SCR_DKeneq</li>
+					<li>SCR_DVlam</li>
 					<li>SCR_RNotice</li>
 				</classRating>
 				<containmentTier>2</containmentTier>
@@ -61,9 +61,6 @@
 			<color>(219, 219, 206)</color>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<thingCategories>
-			<li>SCPObjects</li>
-		</thingCategories>
 		<useHitPoints>false</useHitPoints>
 		<stackLimit>1</stackLimit>
 		<statBases>
@@ -78,7 +75,7 @@
 		<ingestible>
 			<foodType>OvivoreAnimal, AnimalProduct, Corpse</foodType>
 			<preferability>NeverForNutrition</preferability>
-			<outcomeDoers>
+			<outcomeDoers Inherit="False">
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>ToxicBuildup</hediffDef>
 					<severity>0.04</severity>
@@ -93,19 +90,24 @@
 			<li Class="SecureContainRimworld.CompProperties_SCRHatcher">
 				<hatcherDaystoHatch>1.8</hatcherDaystoHatch>
 				<hatcherPawn>SCR_SCP3199R</hatcherPawn>
-			</li>	
+			</li>
 			<li Class="CompProperties_TemperatureRuinable">
 				<minSafeTemperature>-60</minSafeTemperature>
 				<maxSafeTemperature>3000</maxSafeTemperature>
 				<progressPerDegreePerTick>0.03</progressPerDegreePerTick>
 			</li>
+			<li Class="CompProperties_Forbiddable"></li>
 		</comps>
+		<thingCategories Inherit="False">
+			<li>TSP_SCPEggs</li>
+			<li>SCPObjects</li>
+		</thingCategories>
 	</ThingDef>
 	
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCR_SCP3199EggRuined</defName>
 		<label>neutralized SCP-3199 egg</label>
-		<description>An SCP-3199 egg that has been neutralized. It can be cremated to make a few bits of plasteel.</description>
+		<description>A SCP-3199 egg that has been neutralized. It can be cremated to make a few bits of Plasteel.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval/EggOval_A</texPath>
 			<drawSize>1.5</drawSize>
@@ -118,12 +120,13 @@
 		<tradeNeverStack>true</tradeNeverStack>
 		<useHitPoints>false</useHitPoints>
 		<techLevel>Ultra</techLevel>
-		<thingCategories>
+		<thingCategories Inherit="False">
 			<li>SCPObjects</li>
 		</thingCategories>
 		<tradeTags>
 			<!-- <li>Artifact</li> -->
 			<li>ExoticMisc</li>
+			<li>SCP</li>
 		</tradeTags>
 		<statBases>
 			<Mass>0.001</Mass>
@@ -131,12 +134,22 @@
 			<Beauty>-6</Beauty>
 		</statBases>
 		<comps></comps>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="SCR_EggBase">
 		<defName>SCR_SCP2371JPSeed</defName>
 		<label>SCP-2371-JP seedling</label>
-		<description>A SCP-2371-JP seedling. It should grow into an instance of SCP-2371-JP.</description>
+		<description>A SCP-2371-JP seedling. If all goes well, it will germinate and form an instance of SCP-2371-JP.</description>
 		<graphicData>
 			<texPath>Things/Plant/CornPlant_Immature</texPath>
 			<color>(195,237,195)</color>
@@ -144,7 +157,7 @@
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<DeteriorationRate>0.5</DeteriorationRate>
-			<Flammability>0</Flammability>
+			<Flammability>2</Flammability>
 			<MarketValue>7.0</MarketValue>
 			<Nutrition>0.1</Nutrition>
 			<FoodPoisonChance>0</FoodPoisonChance>
@@ -160,7 +173,7 @@
 				<hatcherPawn>SCR_SCP2371JP</hatcherPawn>
 			</li>
 			<li Class="CompProperties_TemperatureRuinable">
-				<minSafeTemperature>-12</minSafeTemperature>
+				<minSafeTemperature>-24</minSafeTemperature>
 				<maxSafeTemperature>75</maxSafeTemperature>
 				<progressPerDegreePerTick>0.0001</progressPerDegreePerTick>
 			</li>
@@ -169,12 +182,11 @@
 			<li>PlantFoodRaw</li>
 		</thingCategories>
 		<tradeTags>
-			<li>SCP</li>
 			<li>EggSCP</li>
 		</tradeTags>
 	</ThingDef>
 	
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="SCR_EggBase">
 		<defName>SCR_SCP5893Egg</defName>
 		<label>SCP-5893 egg (fert.)</label>
 		<description>A fertilized SCP-5893 egg. If all goes well, it should hatch into an instance of SCP-5893. It can be eaten raw, but it's much better cooked.</description>
@@ -200,7 +212,7 @@
 			</tradeTags>
 	</ThingDef>
 	
-		<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="SCR_EggBase">
 		<defName>SCR_SCP111Egg</defName>
 		<label>SCP-111 egg (fert.)</label>
 		<description>A fertilized SCP-111 egg. If all goes well, it should hatch into an instance of SCP-111. There isn't any way to tell what kind will hatch from this egg. It can be eaten raw, but it's much better cooked.</description>
@@ -226,10 +238,10 @@
 			</tradeTags>
 	</ThingDef>
 	
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef ParentName="SCR_EggBase">
 		<defName>SCR_SCP2584Egg</defName>
 		<label>SCP-2584 egg (fert.)</label>
-		<description>A fertilized SCP-2584 egg. If all goes well, it should hatch into an instance of SCP-2584.</description>
+		<description>A fertilized SCP-2584 egg. If all goes well, it should hatch into an instance of SCP-2584. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
 			<color>(245,245,245)</color>
@@ -247,5 +259,31 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
+	<ThingDef ParentName="SCR_EggBase">
+		<defName>TSP_SCR_SCP745Egg</defName>
+		<label>SCP-745 egg (fert.)</label>
+		<description>A fertilized SCP-745 egg. If all goes well, it should hatch into an instance of SCP-745. It can be eaten raw, but it's much better cooked. The glowing headlight of the embryo can be seen through the shell!</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>0.0001</hatcherDaystoHatch>
+				<hatcherPawn>SCR_SCP745R</hatcherPawn>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2.1</glowRadius>
+				<overlightRadius>2.1</overlightRadius>
+				<glowColor>(255,255,255,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>	
 </Defs>

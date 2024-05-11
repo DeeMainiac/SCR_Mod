@@ -714,53 +714,32 @@
 
 <!-- solid body with brain as internals. SCP-2845-1 -->
 
-<BodyDef>
-    <defName>SCR_PillarBod</defName>
-    <label>Pillar</label>
-    <corePart>
-			<def>Body</def>
-			<height>Middle</height>
-			<depth>Outside</depth>
-			<parts>						
-                    <li>
-                      <def>Brain</def>
-					  <coverage>0.079</coverage>
-                      <depth>Inside</depth>
-                    </li>
-				<li>
-					<def>Leg</def>
-					<customLabel>left locomotion organ</customLabel>
-					<coverage>0.1</coverage>
-					<height>Bottom</height>
-					<parts>
-						<li>
-							<def>Foot</def>
-							<customLabel>left locomotion organ</customLabel>
-							<coverage>0.5</coverage>
-							<groups>
-								<li>Feet</li>
-							</groups>
-						</li>
-					</parts>
-				</li>
-				<li>
-					<def>Leg</def>
-					<customLabel>right locomotion organ</customLabel>
-					<coverage>0.1</coverage>
-					<height>Bottom</height>
-					<parts>
-						<li>
-							<def>Foot</def>
-							<customLabel>right locomotion organ</customLabel>
-							<coverage>0.5</coverage>
-							<groups>
-								<li>Feet</li>
-							</groups>
-						</li>
-					</parts>
-				</li>
-			</parts>
-		</corePart>
-  </BodyDef>
+	<BodyDef>
+		<defName>SCR_PillarBod</defName>
+		<label>Pillar</label>
+		<corePart>
+				<def>MechanicalThorax</def>
+				<customLabel>pillar</customLabel>
+				<height>Middle</height>
+				<depth>Outside</depth>
+				<parts>						
+					<li>
+					  <def>Brain</def>
+					  <coverage>0.0079</coverage>
+					  <depth>Inside</depth>
+					</li>
+					<li>
+						<def>Foot</def>
+						<customLabel>locomotion organ</customLabel>
+						<coverage>0.02</coverage>
+						<height>Bottom</height>
+						<depth>Inside</depth>
+						<groups>
+							<li>Feet</li>
+						</groups>
+					</li>
+				</parts>
+			</corePart>
+	  </BodyDef>
 
 </Defs>

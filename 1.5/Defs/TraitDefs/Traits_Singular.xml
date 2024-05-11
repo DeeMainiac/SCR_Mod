@@ -15,7 +15,7 @@
 	
 	<containmentTier>0</containmentTier>	
 	</li>
-	</modExtensions> 
+	</modExtensions>
 	
     <commonality>0.15</commonality>
     <degreeDatas>
@@ -26,13 +26,16 @@
 		<hungerRateFactor>0.5</hungerRateFactor>
 		<statFactors>
           <IncomingDamageFactor>0.5</IncomingDamageFactor>
-		  <!--<StaggerDurationFactor>0.5</StaggerDurationFactor> -->
+		  <StaggerDurationFactor MayRequire="ludeon.rimworld.biotech">0.25</StaggerDurationFactor>
         </statFactors>
 		<statOffsets>
           <RestRateMultiplier>0.5</RestRateMultiplier>
         </statOffsets>
-        <skillGains>
-          <Shooting>4</Shooting>
+		<skillGains>
+          <li>
+            <key>Shooting</key>
+            <value>4</value>
+          </li>
         </skillGains>
       </li>
     </degreeDatas>

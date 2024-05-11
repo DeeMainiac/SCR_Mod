@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 
+<Defs>
   <JobDef>
     <defName>SCR_PlaySCP2228R</defName>
     <driverClass>JobDriver_SitFacingBuilding</driverClass>
-    <reportString>playing with the foundation playset.</reportString>
+    <reportString>playing with the SCP-2228.</reportString>
     <joyDuration>5000</joyDuration>
     <joyMaxParticipants>3</joyMaxParticipants>
     <joyXpPerTick>0.002</joyXpPerTick>
-    <joyKind>Gaming_Cerebral</joyKind>
+    <joyKind>SCR_JoyfulSCP</joyKind>
     <taleOnCompletion>PlayedGame</taleOnCompletion>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
