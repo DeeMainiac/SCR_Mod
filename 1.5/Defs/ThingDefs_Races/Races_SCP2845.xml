@@ -23,9 +23,9 @@
       <MarketValue>3000</MarketValue>
       <ComfyTemperatureMin>-999</ComfyTemperatureMin>
       <FilthRate>20</FilthRate>
-	  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-	  <ArmorRating_Heat>-0.2</ArmorRating_Heat>
+	  <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+	  <ArmorRating_Heat>-0.1</ArmorRating_Heat>
     </statBases>
     <uiIconScale>1.6</uiIconScale>
     <comps>
@@ -36,6 +36,39 @@
         <drugExposure>false</drugExposure>
         <allowMechs>false</allowMechs>
       </li>
+
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
+        <getsColdContainmentBonus>false</getsColdContainmentBonus>
+      </li>
+	  
+	  <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.4, 0, .4)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.4, 0, .5)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.3, 0, -.6)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.2, 0, -.7)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+     <!-- <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <anomalyKnowledge>1.5</anomalyKnowledge>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li> -->
     </comps>
     <race>
 	<deathAction>
@@ -51,6 +84,7 @@
       <leatherDef>Leather_Plain</leatherDef>
 	  <useMeatFrom>Deer</useMeatFrom>
       <wildness>1</wildness>
+	  <isImmuneToInfections>true</isImmuneToInfections>
       <gestationPeriodDays>6.66</gestationPeriodDays>
       <lifeExpectancy>100</lifeExpectancy>
 	  <trainability>None</trainability>

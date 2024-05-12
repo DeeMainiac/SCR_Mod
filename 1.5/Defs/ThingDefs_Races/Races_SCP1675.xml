@@ -125,7 +125,7 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Mechanoid/SCR_SCP1675</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>1</drawSize>
+			<drawSize>1.3</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>

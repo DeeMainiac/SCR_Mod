@@ -27,13 +27,41 @@
 	  <ComfyTemperatureMax>300</ComfyTemperatureMax>
 	<FilthRate>15</FilthRate>
     </statBases>
-	<!-- <comps>  doesn't work at the moment, causes the glow to stay in one place 
+
+	<comps>
+		<!-- doesn't work at the moment, causes the glow to stay in one place 
 	      <li Class="CompProperties_Glower">
         <glowRadius>4</glowRadius>
 		<overlightRadius>4.0</overlightRadius>
         <glowColor>(255,255,255,0)</glowColor>
+      </li>-->
+	
+	  <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
+        <getsColdContainmentBonus>false</getsColdContainmentBonus>
       </li>
-	</comps>-->
+	  
+	  <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.3, 0, .4)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.3, 0, .4)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.3, 0, -.6)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.2, 0, -.7)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+	</comps>
     <race>
 	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <body>Bird</body>
@@ -65,7 +93,7 @@
 				<SeaIce>0</SeaIce>
 				<Tundra>0</Tundra>
 				<Desert>.1</Desert>
-				<ExtremeDesert>.05</ExtremeDesert>
+				<ExtremeDesert>.1</ExtremeDesert>
 			</wildBiomes>
       <lifeStageAges Inherit="False">
         <li>
