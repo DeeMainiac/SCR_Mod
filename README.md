@@ -16,7 +16,7 @@ Some anomalous weapons and apparel add all sorts of effects. From a pistol that 
 
 Adds events and factions so your storyteller keeps you on your toes. From [SCP-3199](https://scp-wiki.wikidot.com/scp-3199) attacks to Chaos Insurgency [SCP-3033](https://scp-wiki.wikidot.com/scp-3033) raids, you'll see the weaponized forms of SCPs you'll be tempted to use too.
 
-Adds non-anomalous gear and apparel to help capture SCPs, keep those D-Class in their place, and raid other factions for their SCPs.
+Adds non-anomalous gear and apparel to help capture SCPs, keep those D-Class in their place, and raid other factions for their SCPs. 
 
 Also adds special 'containment procedures' for almost all anomalous SCPs that can appear. From simple powered shelves that keep an object from degrading to specialized walls and security doodads to lock up the nastiest the Rim has to offer. Don't forget: If it has a will of it's own, it will probably try to escape! Though not all SCPs have to be contained... after all, [SCP-5185](https://scp-wiki.wikidot.com/scp-5185)s are good boys with a little training.
 
@@ -28,7 +28,7 @@ While knowing the SCP's entry can help in some cases, it isn't essential to play
 
 # DLC Support
 
-Got one or all of the DLCs? There are some SCPs that get more of their canon features if you have them. Got Anomaly? Scroll down in the Entity Codex and check out all the SCPs! They'll reveal themselves when you see them for the first time. 
+Got one or all of the DLCs? There are some SCPs and factions that get more of their canon features if you have them. Got Anomaly? Scroll down in the Entity Codex and check out all the SCPs! They'll reveal themselves when you see them for the first time. 
 
 # Current SCPs
 
