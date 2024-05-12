@@ -26,6 +26,7 @@
       <ComfyTemperatureMin>1</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>9999</ComfyTemperatureMax> <!-- Under no circumstances should heat kill it, per its canonical article. -->
 	<FilthRate>18</FilthRate>
+	<MinimumContainmentStrength>50</MinimumContainmentStrength><!-- Anomaly containment platform related -->
     </statBases>
 	    <comps>
       <li Class="CompProperties_EggLayer">
