@@ -17,7 +17,7 @@
 		</modExtensions>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Buildings/SCR_SCP1762/SCR_SCP1762</texPath>
+			<texPath>Things/Buildings/SCR_SCP1762</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 			<drawRotated>false</drawRotated>

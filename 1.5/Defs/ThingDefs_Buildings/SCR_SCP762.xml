@@ -18,7 +18,7 @@
 		<thingClass>Building_CryptosleepCasket</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Buildings/SCR_SCP762/SCR_SCP762</texPath>
+			<texPath>Things/Buildings/SCR_SCP762</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2, 2)</drawSize>
 			<drawRotated>false</drawRotated>

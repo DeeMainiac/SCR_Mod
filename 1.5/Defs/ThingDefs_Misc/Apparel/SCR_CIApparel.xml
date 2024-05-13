@@ -38,7 +38,7 @@
       <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
     </equippedStatOffsets>
     <recipeMaker>
-      <researchPrerequisite>SCR_CIGear</researchPrerequisite>
+      <researchPrerequisite>Machining</researchPrerequisite>
       <unfinishedThingDef>UnfinishedMask</unfinishedThingDef>
       <recipeUsers Inherit="False">
         <li>TableMachining</li>
@@ -69,6 +69,9 @@
         <li>3</li>
       </forceEyesVisibleForRotations>
     </apparel>
+	<researchPrerequisites Inherit="False">
+	<li>SCR_CIGear</li>
+	</researchPrerequisites>
   </ThingDef>
 
 <ThingDef ParentName="SCR_ApparelNoColorBase">
@@ -81,8 +84,7 @@
     </graphicData>
 	<techLevel>Industrial</techLevel>
 	<costList>
-      <Cloth>40</Cloth>
-      <Steel>75</Steel>
+      <Cloth>80</Cloth>
     </costList>
     <thingCategories>
       <li>Apparel</li>
@@ -115,13 +117,15 @@
       </defaultOutfitTags>
     </apparel>
 	<recipeMaker>
-	      <researchPrerequisite>SCR_CIGear</researchPrerequisite>
-		  <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+	      <researchPrerequisite>ComplexClothing</researchPrerequisite>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
       </recipeUsers>
     </recipeMaker>
+	<researchPrerequisites Inherit="False">
+	<li>SCR_CIGear</li>
+	</researchPrerequisites>
   </ThingDef>
 
 <ThingDef ParentName="SCR_ApparelNoColorBase">
@@ -133,9 +137,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	<techLevel>Spacer</techLevel>
-	<!--<costList>
-      <Cloth>80</Cloth> not allowed to craft at this time, just out in the wild tbh
-    </costList> -->
+	<costList>
+      <Cloth>80</Cloth>
+    </costList>
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
@@ -173,6 +177,10 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
     </apparel>
+
   </ThingDef>
+
+
+
 
 </Defs>

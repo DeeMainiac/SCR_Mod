@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <Defs>
+
+
   <ThingDef Name="SCR_ApparelNoColorBase" Abstract="True">
     <thingClass>Apparel</thingClass>
     <category>Item</category>
@@ -29,42 +30,4 @@
     </comps>
   </ThingDef>
 
-	<ThingDef Name="SCR_InsigniaHelmetBase" ParentName="SCR_ApparelNoColorBase" Abstract="True">
-		<techLevel>Industrial</techLevel>
-		<costList>
-		  <Cloth>80</Cloth>
-		</costList>
-		<thingCategories>
-		  <li>Apparel</li>
-		</thingCategories>
-		<statBases>
-		  <MaxHitPoints>120</MaxHitPoints>
-		  <WorkToMake>4000</WorkToMake>
-		  <Mass>1.2</Mass>
-		  <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
-		  <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-		  <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-		  <EquipDelay>1.5</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-		</equippedStatOffsets>
-		<apparel>
-		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
-		  <bodyPartGroups>
-			<li>UpperHead</li>
-		  </bodyPartGroups>
-		  <layers>
-			<li>Overhead</li>
-		  </layers>
-		  <useDeflectMetalEffect>true</useDeflectMetalEffect>
-		</apparel>
-		<recipeMaker>
-		  <recipeUsers>
-			<li>ElectricTailoringBench</li>
-			<li>HandTailoringBench</li>
-		  </recipeUsers>
-		  <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-		  <researchPrerequisite>SCR_InsigniaHelmets</researchPrerequisite>
-		</recipeMaker>
-	</ThingDef>
 </Defs>

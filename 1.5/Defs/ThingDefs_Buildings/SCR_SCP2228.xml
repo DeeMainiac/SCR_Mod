@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <Defs>
 	<ThingDef ParentName="BuildingBase">
 		<defName>SCR_SCP2228R</defName>
 		<label>SCP-2228</label>
-		<description>SCP-2228 is a board game-like playset imitating SCP Foundation containment procedures. Small items placed inside will gain anomalous properties, and will lose them upon leaving.</description>
+		<description>SCP-2228 is a board game-like play set imitating SCP Foundation containment procedures. Small items placed inside will gain anomalous properties, and will lose them upon leaving.</description>
 			<modExtensions>
 				<li Class="SecureContainRimworld.CProceduresExtension">
 					<classRating>
@@ -16,7 +15,7 @@
 				</li>
 			</modExtensions>
 		<graphicData>
-		  <texPath>Things/Buildings/SCR_SCP2228/SCR_SCP2228</texPath>
+		  <texPath>Things/Buildings/SCR_SCP2228</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shadowData>
 			<volume>(0.65, 0.25, 0.6)</volume>

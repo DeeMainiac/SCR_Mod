@@ -25,7 +25,6 @@
 		  <Flammability>0.25</Flammability>
 		  <SM_AcidDmgMult MayRequire="redmattis.betterprerequisites">0</SM_AcidDmgMult>
 		<FilthRate>18</FilthRate>
-		<MinimumContainmentStrength>50</MinimumContainmentStrength><!-- Anomaly containment platform related -->
 		</statBases>
 			<comps>
 				  <li Class="CompProperties_EggLayer">
@@ -37,31 +36,6 @@
 					<eggLayFemaleOnly>false</eggLayFemaleOnly>
 				  </li>
 				  <li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li> <!-- It refutes humanity by its SHEER SPEED. This Comp causes it to be unable to be slowed down, regardless of the terrain. -->
-				  <li Class="CompProperties_HoldingPlatformTarget">
-					<baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
-					<getsColdContainmentBonus>true</getsColdContainmentBonus>
-				  </li>
-				  
-				  <li Class="CompProperties_AttachPoints">
-					<points>
-					  <li>
-						<offset>(-.35, 0, .1)</offset>
-						<type>PlatformRestraint0</type>
-					  </li>
-					  <li>
-						<offset>(.26, 0, .3)</offset>
-						<type>PlatformRestraint1</type>
-					  </li>
-					  <li>
-						<offset>(.3, 0, -.6)</offset>
-						<type>PlatformRestraint2</type>
-					  </li>
-					  <li>
-						<offset>(-.2, 0, -.7)</offset>
-						<type>PlatformRestraint3</type>
-					  </li>
-					</points>
-				  </li>
 		</comps>
 			<tradeTags>
 				<li>AnimalRare</li>

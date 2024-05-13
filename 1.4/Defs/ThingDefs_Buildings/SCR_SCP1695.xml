@@ -18,7 +18,7 @@
 		<thingClass>SecureContainRimworld.Building_SCP1695</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Buildings/SCR_SCP1695/SCR_SCP1695Closed</texPath>
+			<texPath>Things/Buildings/SCR_SCP1695Closed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.5,4)</drawSize>
 			<drawRotated>false</drawRotated>

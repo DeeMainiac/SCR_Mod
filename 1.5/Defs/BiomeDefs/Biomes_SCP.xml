@@ -4,7 +4,7 @@
   <BiomeDef>
     <defName>SCR_SCP610Biome</defName>
     <label>SCP-610 Plague Lands</label>
-    <description>A region that SCP-610 has taken over. The majority of surfaces are covered in an alien and fleshy substance. Aggressive, territorial beings infested with SCP-610 patrol around sickly hives. Don't let them touch you!\n\n	WARNING: This is an extremely difficult Biome! While plant and animal life are abundant, predatory SCP-610 instances intermingle among them, instantly infecting anything they attack with SCP-610. These instances dominate the entire landscape! \n	Their only weakness is fire, but watch out! Everything in the Biome is flammable; one wrong spark could send a conflagration across the Map! Moreover, SCP-610 is not curable by anything except amputation and is guaranteed to be contracted in a SCP-610 attack.</description>
+    <description>A region that SCP-610 has taken over. The majority of surfaces are covered in an alien and fleshy substance. Aggressive, territorial beings infested with SCP-610 patrol around sickly hives. Don't let them touch you!\n\n	WARNING: This is an extremely difficult Biome! While plant and animal life are abundant, predatory SCP-610 instances intermingle among them, instantly infecting anything they attack with SCP-610. These instances dominate the entire landscape! \n	Their only weakness is fire, but watch out! Everything in the Biome is flammable; one wrong spark could send a conflagration across the Map! Moreover, SCP-610 is not curable by medicine or amputation and is guaranteed to be contracted in a SCP-610 attack.</description>
 	<modExtensions>
 		<li Class="SecureContainRimworld.CProceduresExtension">
 			<classRating>

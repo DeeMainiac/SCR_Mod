@@ -10,15 +10,15 @@ Here's some links:
 
 # Features
 
-Adds a whole bunch of familiar and forgotten SCPs to wander your RimWorld. Traders, ancient ruins, or even other factions are home to SCPs. Some are traded across the Rim as pets, while others are out in the wilderness, waiting to be captured or tamed.
+Adds several species of SCPs to wander the Rim; either neutral or outright hostile to your colonists lives. Some are traded across the Rim as pets, others are found out in the wilderness.
 
-Some anomalous weapons and apparel add all sorts of effects. From a pistol that turns headshots into meals to a katana that makes a pawn crazy with power, you'll be surprised what you'll find in the hands of raiders, for sale, or given as quest rewards.
+Adds anomalous weapons and apparel that add all sorts of effects. From a pistol that turns headshots into meals to a katana that makes a pawn crazy with power, you'll be surprised what you'll find in the hands of raiders or deep in ancient ruins.
 
 Adds events and factions so your storyteller keeps you on your toes. From [SCP-3199](https://scp-wiki.wikidot.com/scp-3199) attacks to Chaos Insurgency [SCP-3033](https://scp-wiki.wikidot.com/scp-3033) raids, you'll see the weaponized forms of SCPs you'll be tempted to use too.
 
-Adds non-anomalous gear and apparel to help capture SCPs, keep those D-Class in their place, and raid other factions for their SCPs. 
+Adds non-anomalous gear and apparel to help capture SCPs and keep those D-Class in their place.
 
-Also adds special 'containment procedures' for almost all anomalous SCPs that can appear. From simple powered shelves that keep an object from degrading to specialized walls and security doodads to lock up the nastiest the Rim has to offer. Don't forget: If it has a will of it's own, it will probably try to escape! Though not all SCPs have to be contained... after all, [SCP-5185](https://scp-wiki.wikidot.com/scp-5185)s are good boys with a little training.
+Also adds special 'containment procedures' for almost all anomalous entities that can appear. From simple powered shelves that keep an object from degrading to specialized walls and security doodads to lock up the nastiest the Rim has to offer. Don't forget: If it has a will of it's own, it will probably try to escape! Though not all SCPs have to be contained... after all, [SCP-5185](https://scp-wiki.wikidot.com/scp-5185)s are good boys with a little training.
 
 Pay attention to an object's classifications to ensure the safety of your colonists. Or don't. There are three classifications: Containment class, Disruption class, and Risk class. They help indicate what effects the SCP has at a glance, and each one is listed in an object's information menu. A Safe, Dark, Notice-classed SCP doesn't mean it isn't dangerous.
 
@@ -26,17 +26,15 @@ Some of the classifications may have been adjusted thanks to the Rim being quite
 
 While knowing the SCP's entry can help in some cases, it isn't essential to play this mod.
 
-# DLC Support
-
-Got one or all of the DLCs? There are some SCPs and factions that get more of their canon features if you have them. Got Anomaly? Scroll down in the Entity Codex and check out all the SCPs! They'll reveal themselves when you see them for the first time. 
-
 # Current SCPs
+
 
 Check this [wiki page](https://github.com/DeeMainiac/SCR_Mod/wiki/List-of-SCPs-and-factions) for a handy dandy list. 
 
+
 # Credits
 
-SCP-160 sprite, SCP-745 sprite, SCP-1905-1 and 2 sprites, SCP-5185 sprite, SCP-1675 sprite, Chaos Insurgency clothing, SCP Foundation clothing, and GOC Clothing sprites by SydCalaharia ([Steam profile](https://steamcommunity.com/profiles/76561198081910575) )
+SCP-160, SCP-745, Chaos Insurgency clothing, SCP Foundation clothing, and GOC Clothing sprites by 
 
 SCP-ES-019 sprite, SCP-762 sprite, SCP-939 sprites, SCP-1762 sprites, SCP-1695 sprites, and SCP-131 sprites by Monti ( Monti#9691 | [Steam profile](https://steamcommunity.com/id/montyi/) )
 

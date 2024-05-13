@@ -21,53 +21,20 @@
 		  <MarketValue>3000</MarketValue>
 		  <ComfyTemperatureMin>-999</ComfyTemperatureMin>
 		  <FilthRate>20</FilthRate>
-		  <MeatAmount>106</MeatAmount>
 		  <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-		  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+		  <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
 		  <ArmorRating_Heat>-0.2</ArmorRating_Heat>
 		  <PainShockThreshold>2</PainShockThreshold> <!-- It thinks it's a god! How can you kill a god? -->
 		</statBases>
 		<uiIconScale>1.6</uiIconScale>
 		<comps>
-			<li Class="CompProperties_GiveHediffSeverity">
-				<hediff>SCR_SCP2845TransmuteHediff</hediff>
-				<range>10</range>
-				<severityPerSecond>0.01</severityPerSecond>
-				<drugExposure>true</drugExposure>
-				<allowMechs>false</allowMechs>
-			  </li>
-			<li Class="CompProperties_HoldingPlatformTarget">
-					<baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
-					<getsColdContainmentBonus>false</getsColdContainmentBonus>
-				  </li>
-				  
-				  <li Class="CompProperties_AttachPoints">
-					<points>
-					  <li>
-						<offset>(-.4, 0, .4)</offset>
-						<type>PlatformRestraint0</type>
-					  </li>
-					  <li>
-						<offset>(.4, 0, .5)</offset>
-						<type>PlatformRestraint1</type>
-					  </li>
-					  <li>
-						<offset>(.3, 0, -.6)</offset>
-						<type>PlatformRestraint2</type>
-					  </li>
-					  <li>
-						<offset>(-.2, 0, -.7)</offset>
-						<type>PlatformRestraint3</type>
-					  </li>
-					</points>
-				  </li>
-				 <!-- <li Class="CompProperties_Studiable">
-					<frequencyTicks>120000</frequencyTicks>
-					<knowledgeCategory>Basic</knowledgeCategory>
-					<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
-					<anomalyKnowledge>1.5</anomalyKnowledge>
-					<requiresHoldingPlatform>true</requiresHoldingPlatform>
-				  </li> -->
+		<li Class="CompProperties_GiveHediffSeverity">
+			<hediff>SCR_SCP2845TransmuteHediff</hediff>
+			<range>10</range>
+			<severityPerSecond>0.01</severityPerSecond>
+			<drugExposure>true</drugExposure>
+			<allowMechs>false</allowMechs>
+		  </li>
 		</comps>
 		<race>
 		  <deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
@@ -145,8 +112,7 @@
 		<tradeTags Inherit="False">
 			<li>AnimalInsectSpace</li> <!-- Save Our Ship Mod compatibility, it does not need to breathe -->
 		</tradeTags>
-  </ThingDef>
-
+	</ThingDef>
   
   <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP2845R</defName>
@@ -173,7 +139,7 @@
     </lifeStages>
   </PawnKindDef>
 
-	<!-- SCP-2845-1 -->
+<!-- SCP-2845-1 -->
 
 	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP28451R</defName>
@@ -185,7 +151,8 @@
 					<li>SCR_CSafe</li> <!-- The pillars are canonically harmless and just chilling there around the SCP-2845 instance. -->
 					<li>SCR_DDark</li>
 					<li>SCR_RNotice</li>
-				</classRating>				
+				</classRating>
+				
 				<containmentTier>0</containmentTier>
 				<willManhuntAfterBreach>false</willManhuntAfterBreach>
 			</li>
@@ -254,30 +221,31 @@
 		</tradeTags>
 	</ThingDef>
   
-	  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
-		<defName>SCR_SCP28451R</defName>
-		<label>SCP-2845-1</label>
-		<race>SCR_SCP28451R</race>
-		<ecoSystemWeight>0</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
-		<combatPower>75</combatPower> <!-- Higher combat power equals less spawned, they spawn excessively tbh -->
-		<lifeStages>
-		  <li>
-			<bodyGraphicData>
-			  <texPath>Things/Building/Furniture/Column</texPath>
-			  <drawSize>1.5</drawSize>
-			  <color>(189, 206, 59)</color>
-			  <shadowData>
-				<volume>(0.5, 0.5, 0.5)</volume>
-				<offset>(0,0,-0.3)</offset>
-			  </shadowData>
-			</bodyGraphicData>
-			<dessicatedBodyGraphicData>
-			  <texPath>Things/Building/Furniture/Column</texPath>
-			  <drawSize>1.5</drawSize>
-			  <color>(189, 206, 59)</color>
-			</dessicatedBodyGraphicData>
-		  </li>
-		</lifeStages>
-	  </PawnKindDef>
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+    <defName>SCR_SCP28451R</defName>
+    <label>SCP-2845-1</label>
+    <race>SCR_SCP28451R</race>
+    <combatPower>10</combatPower>
+    <ecoSystemWeight>0</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Building/Furniture/Column</texPath>
+          <drawSize>1.5</drawSize>
+		  <color>(189, 206, 59)</color>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.5)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Building/Furniture/Column</texPath>
+          <drawSize>1.5</drawSize>
+		  <color>(189, 206, 59)</color>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
 </Defs>

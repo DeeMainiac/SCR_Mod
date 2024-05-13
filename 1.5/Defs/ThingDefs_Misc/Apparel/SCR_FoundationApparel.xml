@@ -49,6 +49,9 @@
         <li>3</li>
       </forceEyesVisibleForRotations>
     </apparel>
+	<researchPrerequisites Inherit="False">
+	<li>SCR_FoundationGear</li>
+	</researchPrerequisites>
   </ThingDef>
 
 
