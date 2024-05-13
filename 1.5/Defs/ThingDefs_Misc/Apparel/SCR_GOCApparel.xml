@@ -59,15 +59,13 @@
       </defaultOutfitTags>
     </apparel>
 	<recipeMaker>
-	      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+	      <researchPrerequisite>SCR_GOCGearSuit</researchPrerequisite>
+		  <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
       </recipeUsers>
     </recipeMaker>
-	<researchPrerequisites Inherit="False">
-	<li>SCR_GOCGearSuit</li>
-	</researchPrerequisites>
   </ThingDef>
 
 <ThingDef ParentName="SCR_ApparelNoColorBase">
@@ -115,15 +113,13 @@
       </defaultOutfitTags>
     </apparel>
 	<recipeMaker>
-	      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+	      <researchPrerequisite>SCR_GOCGearSuit</researchPrerequisite>
+		  <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
       </recipeUsers>
     </recipeMaker>
-	<researchPrerequisites Inherit="False">
-	<li>SCR_GOCGearSuit</li>
-	</researchPrerequisites>
   </ThingDef>
 
 <ThingDef ParentName="SCR_ApparelNoColorBase">
@@ -176,15 +172,13 @@
       </defaultOutfitTags>
     </apparel>
 	<recipeMaker>
-	      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+	      <researchPrerequisite>SCR_GOCGearAdvSuit</researchPrerequisite>
+		  <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
       </recipeUsers>
     </recipeMaker>
-	<researchPrerequisites Inherit="False">
-	<li>SCR_GOCGearAdvSuit</li>
-	</researchPrerequisites>
   </ThingDef>
 
 <ThingDef ParentName="SCR_ApparelNoColorBase">
@@ -233,15 +227,13 @@
 
     </apparel>
 	<recipeMaker>
-	      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+	      <researchPrerequisite>SCR_GOCGearAdvSuit</researchPrerequisite>
+		  <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
       </recipeUsers>
     </recipeMaker>
-	<researchPrerequisites Inherit="False">
-	<li>SCR_GOCGearAdvSuit</li>
-	</researchPrerequisites>
   </ThingDef>
 
 </Defs>

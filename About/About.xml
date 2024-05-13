@@ -56,6 +56,7 @@
 		<li>hrg164hjo.alphabees.expansion</li>
 		<li>jelly.rbstuffed</li>
 		<li>apitec.plus</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
 	</loadAfter>
 	<loadBefore>
 		<li>zal.patchhoney</li>

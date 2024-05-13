@@ -4,7 +4,7 @@
 <ThingDef ParentName="BuildingBase">
 		<defName>SCR_SCP1695R</defName>
 		<label>SCP-1695</label>
-		<description>SCP-1695 is a machine with an aperature that, when a pawn is placed inside, turns them into a worm-like creature from the waist up. Removing the pawn from it reverts the transformation.</description>
+		<description>SCP-1695 is a machine with an aperture that, when a pawn is placed inside, turns them into a worm-like creature from the waist up. Removing the pawn from it reverts the transformation.</description>
 				<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -18,7 +18,7 @@
 		<thingClass>SecureContainRimworld.Building_SCP1695</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Buildings/SCR_SCP1695Closed</texPath>
+			<texPath>Things/Buildings/SCR_SCP1695/SCR_SCP1695Closed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.5,4)</drawSize>
 			<drawRotated>false</drawRotated>

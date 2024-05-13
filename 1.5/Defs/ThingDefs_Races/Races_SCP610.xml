@@ -29,6 +29,7 @@
 		  <ArmorRating_Heat>0</ArmorRating_Heat>
 		  <Flammability>10</Flammability> <!-- This is how the Foundation canonically dispatches them. -->
 		  <MeleeDoorDamageFactor MayRequire="ludeon.rimworld.biotech">0</MeleeDoorDamageFactor>
+		  <MinimumContainmentStrength>50</MinimumContainmentStrength><!-- Anomaly containment platform related -->
 		</statBases>
 		<race>
 		  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
@@ -118,6 +119,33 @@
 					<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
 				</mergeCompatibilityTags>
 			</ingredient>
+		<comps>
+			<li Class="CompProperties_HoldingPlatformTarget">
+				<baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
+				<getsColdContainmentBonus>false</getsColdContainmentBonus>
+			</li>
+	  
+			<li Class="CompProperties_AttachPoints">
+				<points>
+					<li>
+						<offset>(-.3, 0, .35)</offset>
+						<type>PlatformRestraint0</type>
+					</li>
+					<li>
+						<offset>(.3, 0, .4)</offset>
+						<type>PlatformRestraint1</type>
+					</li>
+					<li>
+						<offset>(.2, 0, -.5)</offset>
+						<type>PlatformRestraint2</type>
+					</li>
+					<li>
+						<offset>(-.2, 0, -.5)</offset>
+						<type>PlatformRestraint3</type>
+					</li>
+				</points>
+			</li>
+		</comps>
 	</ThingDef>
 	  
 	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
@@ -202,6 +230,7 @@
 		  <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
 		  <ArmorRating_Heat>0</ArmorRating_Heat>
 		  <Flammability>10</Flammability> <!-- This is how they are canonically dispatched by the Foundation! -->
+		  <MinimumContainmentStrength>50</MinimumContainmentStrength><!-- Anomaly containment platform related -->
 		</statBases>
 		<race>
 		  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
@@ -305,6 +334,33 @@
 					<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
 				</mergeCompatibilityTags>
 			</ingredient>
+			<comps>
+				<li Class="CompProperties_HoldingPlatformTarget">
+					<baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
+					<getsColdContainmentBonus>false</getsColdContainmentBonus>
+				</li>
+		  
+				<li Class="CompProperties_AttachPoints">
+					<points>
+						<li>
+							<offset>(-.3, 0, .35)</offset>
+							<type>PlatformRestraint0</type>
+						</li>
+						<li>
+							<offset>(.3, 0, .4)</offset>
+							<type>PlatformRestraint1</type>
+						</li>
+						<li>
+							<offset>(.2, 0, -.5)</offset>
+							<type>PlatformRestraint2</type>
+						</li>
+						<li>
+							<offset>(-.2, 0, -.5)</offset>
+							<type>PlatformRestraint3</type>
+						</li>
+					</points>
+				</li>
+			</comps>
 	</ThingDef>
 	  
 	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
