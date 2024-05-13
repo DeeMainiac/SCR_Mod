@@ -26,6 +26,7 @@
       <ComfyTemperatureMax>80</ComfyTemperatureMax>
 	  <MeatAmount>90</MeatAmount>
 	  <FilthRate>8</FilthRate>
+	  <MinimumContainmentStrength>70</MinimumContainmentStrength><!-- Anomaly containment platform related -->
     </statBases>
 			<tradeTags>
 				<li>AnimalFighter</li>
@@ -152,6 +153,31 @@
         <drugExposure>false</drugExposure>
         <allowMechs>false</allowMechs>
       </li>
+			<li Class="CompProperties_HoldingPlatformTarget">
+				<baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
+				<getsColdContainmentBonus>false</getsColdContainmentBonus>
+			</li>
+	  
+			<li Class="CompProperties_AttachPoints">
+				<points>
+					<li>
+						<offset>(-.4, 0, .4)</offset>
+						<type>PlatformRestraint0</type>
+					</li>
+					<li>
+						<offset>(.4, 0, .5)</offset>
+						<type>PlatformRestraint1</type>
+					</li>
+					<li>
+						<offset>(.3, 0, -1)</offset>
+						<type>PlatformRestraint2</type>
+					</li>
+					<li>
+						<offset>(-.3, 0, -1)</offset>
+						<type>PlatformRestraint3</type>
+					</li>
+				</points>
+			</li>
 	</comps>
   </ThingDef>
   
