@@ -84,6 +84,9 @@
 			<li>ManipulationLimbDigit</li>
 			<li>ManipulationLimbSegment</li>
 			<li>BreathingSource</li>
+			<li>MovingLimbCore</li>
+			<li>MovingLimbDigit</li>
+			<li>MovingLimbSegment</li>
 		</tags>
 	</BodyPartDef>
 </Defs>
