@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
+<Defs>
   <ThingDef Name="SCR_VirusConsume" ParentName="MakeableDrugBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
@@ -112,6 +112,7 @@
     <workAmount>60</workAmount>
     <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
     <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+	<isViolation>false</isViolation>
     <ingredients>
       <li>
         <filter>
