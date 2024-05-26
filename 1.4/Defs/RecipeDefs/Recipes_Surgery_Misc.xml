@@ -10,25 +10,32 @@
 	 <skillRequirements>
       <Medicine>15</Medicine>
     </skillRequirements>
-    <descriptionHyperlinks>
-      <ThingDef>SCR_SCP30331R</ThingDef>
-      <HediffDef>SCR_SCP30331R</HediffDef>
-    </descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SCR_SCP30331R</ThingDef>
+			<ThingDef>SCR_SCP30332R</ThingDef>
+			<HediffDef>SCR_SCP30331R</HediffDef>
+			<HediffDef>SCR_SCP30332R</HediffDef>
+			<RecipeDef>SCR_InstallSCP30331R</RecipeDef>
+			<RecipeDef>SCR_InstallSCP30332R</RecipeDef>
+		</descriptionHyperlinks>
     <jobString>Removing the SCP-3033-1 implant.</jobString>
     <removesHediff>SCR_SCP30331R</removesHediff>
   </RecipeDef>
  
  
-<!-- idk if I want you to be able to install them lol, but this is needed for raiders to spawn with it-->
+<!-- IDK if I want you to be able to install them LOL, but this is needed for raiders to spawn with it-->
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
     <defName>SCR_InstallSCP30331R</defName>
     <label>install SCP-3033-1</label>
     <description>Install an SCP-3033-1 "Mike" unit implant</description>
-    <descriptionHyperlinks>
-      <ThingDef>SCR_SCP30331R</ThingDef>
-      <HediffDef>SCR_SCP30331R</HediffDef>
-    </descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SCR_SCP30331R</ThingDef>
+			<ThingDef>SCR_SCP30332R</ThingDef>
+			<HediffDef>SCR_SCP30331R</HediffDef>
+			<HediffDef>SCR_SCP30332R</HediffDef>
+			<RecipeDef>SCR_InstallSCP30332R</RecipeDef>
+		</descriptionHyperlinks>
 	<skillRequirements>
       <Medicine>3</Medicine>
     </skillRequirements>
@@ -63,10 +70,14 @@
 	 <skillRequirements>
       <Medicine>15</Medicine>
     </skillRequirements>
-    <descriptionHyperlinks>
-      <ThingDef>SCR_SCP30332R</ThingDef>
-      <HediffDef>SCR_SCP30332R</HediffDef>
-    </descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SCR_SCP30331R</ThingDef>
+			<ThingDef>SCR_SCP30332R</ThingDef>
+			<HediffDef>SCR_SCP30331R</HediffDef>
+			<HediffDef>SCR_SCP30332R</HediffDef>
+			<RecipeDef>SCR_InstallSCP30331R</RecipeDef>
+			<RecipeDef>SCR_InstallSCP30332R</RecipeDef>
+		</descriptionHyperlinks>
     <jobString>Removing the SCP-3033-2 implant.</jobString>
     <removesHediff>SCR_SCP30332R</removesHediff>
   </RecipeDef>
@@ -75,10 +86,13 @@
     <defName>SCR_InstallSCP30332R</defName>
     <label>install SCP-3033-2</label>
     <description>Install an SCP-3033-2 "controller" unit implant</description>
-    <descriptionHyperlinks>
-      <ThingDef>SCR_SCP30332R</ThingDef>
-      <HediffDef>SCR_SCP30332R</HediffDef>
-    </descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SCR_SCP30331R</ThingDef>
+			<ThingDef>SCR_SCP30332R</ThingDef>
+			<HediffDef>SCR_SCP30331R</HediffDef>
+			<HediffDef>SCR_SCP30332R</HediffDef>
+			<RecipeDef>SCR_InstallSCP30331R</RecipeDef>
+		</descriptionHyperlinks>
 	    <skillRequirements>
       <Medicine>3</Medicine>
     </skillRequirements>
@@ -102,16 +116,5 @@
       <li>Brain</li>
     </appliedOnFixedBodyParts>
     <addsHediff>SCR_SCP30332R</addsHediff>
-
   </RecipeDef>
-
-
-
-
-
-
-
-
-
-
 </Defs>

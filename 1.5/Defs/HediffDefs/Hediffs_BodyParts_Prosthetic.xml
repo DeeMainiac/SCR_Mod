@@ -12,38 +12,40 @@
     <labelNoun>an SCP-3033-1</labelNoun>
     <description>An installed SCP-3033-1 "Mike" unit implant.</description>
 	    <modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
-	<classRating>
-	<li>SCR_CEuclid</li>
-	<li>SCR_DKeneq</li>
-	<li>SCR_RNotice</li>
-	</classRating>	
-		<containmentTier>1</containmentTier>
-		<isTranqable>false</isTranqable>
-	</li>
-	</modExtensions>
-    <descriptionHyperlinks><ThingDef>SCR_SCP30331R</ThingDef></descriptionHyperlinks>
+				<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+				<li>SCR_CEuclid</li>
+				<li>SCR_DKeneq</li>
+				<li>SCR_RNotice</li>
+				</classRating>	
+				<containmentTier>1</containmentTier>
+				<isTranqable>true</isTranqable>
+			</li>
+		</modExtensions>
+		<descriptionHyperlinks>
+			<ThingDef>SCR_SCP30331R</ThingDef>
+			<ThingDef>SCR_SCP30332R</ThingDef>
+			<HediffDef>SCR_SCP30332R</HediffDef>
+			<RecipeDef>SCR_InstallSCP30331R</RecipeDef>
+			<RecipeDef>SCR_InstallSCP30332R</RecipeDef>
+		</descriptionHyperlinks>
           <stages>
          <li>
             <painFactor>0</painFactor>
             <restFallFactor>0.1</restFallFactor>
             <hungerRateFactor>0.1</hungerRateFactor>
 			<disabledWorkTags>
-			<li>Caring</li>
-			<li>Animals</li>
-			<li>Intellectual</li>
-			<li>ManualSkilled</li>
-			<li>Cooking</li>
-			<li>PlantWork</li>
+				<li>Caring</li>
+				<li>Animals</li>
+				<li>Intellectual</li>
+				<li>ManualSkilled</li>
+				<li>Cooking</li>
+				<li>PlantWork</li>
 			</disabledWorkTags>
             <capMods>
                <li>
-			<capacity>Manipulation</capacity>
-			<setMax>.75</setMax>
-               </li>
-			<li>
-			<capacity>Talking</capacity>
-			<setMax>0</setMax>
+				<capacity>Manipulation</capacity>
+				<setMax>.75</setMax>
                </li>
             </capMods>
          </li>
@@ -57,24 +59,32 @@
     <defName>SCR_SCP30331R</defName>
     <label>SCP-3033-1</label>
     <description>SCP-3033-1 is a brain implant by the Chaos Insurgency to completely control a pawn via another pawn with an SCP-3033-2 "Controller" implant. This implant also gives an immunity to pain and reduces fine motor control, preventing numerous tasks from being done. It is completely inert when not installed.</description>
+    <graphicData Inherit="False">
+      <texPath>Things/Item/Equipment/SCR_SCP3033/MIKE1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
 	<modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
-	<classRating>
-	<li>SCR_CEuclid</li>
-	<li>SCR_DKeneq</li>
-	<li>SCR_RNotice</li>
-	</classRating>	
+		<li Class="SecureContainRimworld.CProceduresExtension">
+			<classRating>
+			<li>SCR_CEuclid</li>
+			<li>SCR_DKeneq</li>
+			<li>SCR_RNotice</li>
+			</classRating>	
 		<containmentTier>1</containmentTier>
-	<isTranqable>false</isTranqable>
+		<isTranqable>false</isTranqable>
 	</li>
 	</modExtensions>
-	<descriptionHyperlinks>
-	<RecipeDef>SCR_InstallSCP30331R</RecipeDef>
-	<ThingDef>SCR_SCP30332R</ThingDef>
-	</descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SCR_SCP30332R</ThingDef>
+			<HediffDef>SCR_SCP30331R</HediffDef>
+			<HediffDef>SCR_SCP30332R</HediffDef>
+			<RecipeDef>SCR_InstallSCP30331R</RecipeDef>
+			<RecipeDef>SCR_InstallSCP30332R</RecipeDef>
+		</descriptionHyperlinks>
 	
     <techHediffsTags>
-      <li>Spacer</li>
+      <li>SCR_SCP3033</li>
+	  <li>SCR_SCP3033_Slave</li>
     </techHediffsTags>
   </ThingDef>
  
@@ -85,18 +95,24 @@
     <label>SCP-3033-2</label>
     <labelNoun>an SCP-3033-2</labelNoun>
     <description>An installed SCP-3033-2 "Controller" unit implant.</description>
-	    <modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
-	<classRating>
-	<li>SCR_CEuclid</li>
-	<li>SCR_DKeneq</li>
-	<li>SCR_RNotice</li>
-	</classRating>	
+	<modExtensions>
+		<li Class="SecureContainRimworld.CProceduresExtension">
+		<classRating>
+			<li>SCR_CEuclid</li>
+			<li>SCR_DKeneq</li>
+			<li>SCR_RNotice</li>
+		</classRating>	
 		<containmentTier>1</containmentTier>
 		<isTranqable>false</isTranqable>
 	</li>
 	</modExtensions>
-    <descriptionHyperlinks><ThingDef>SCR_SCP30332R</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SCR_SCP30331R</ThingDef>
+			<ThingDef>SCR_SCP30332R</ThingDef>
+			<HediffDef>SCR_SCP30331R</HediffDef>
+			<RecipeDef>SCR_InstallSCP30331R</RecipeDef>
+			<RecipeDef>SCR_InstallSCP30332R</RecipeDef>
+		</descriptionHyperlinks>
           <stages>
          <li>
             <painFactor>0</painFactor>
@@ -109,23 +125,31 @@
     <defName>SCR_SCP30332R</defName>
     <label>SCP-3033-2</label>
     <description>SCP-3033-2 is a brain implant by the Chaos Insurgency to completely control pawns with an SCP-3033-1 "Mike" unit implant. This implant also gives an immunity to pain. It is completely inert when not installed.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SCR_SCP30331R</ThingDef>
+			<HediffDef>SCR_SCP30331R</HediffDef>
+			<HediffDef>SCR_SCP30332R</HediffDef>
+			<RecipeDef>SCR_InstallSCP30331R</RecipeDef>
+			<RecipeDef>SCR_InstallSCP30332R</RecipeDef>
+		</descriptionHyperlinks>
+    <graphicData Inherit="False">
+      <texPath>Things/Item/Equipment/SCR_SCP3033/MIKE2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
 	<modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
-	<classRating>
-	<li>SCR_CEuclid</li>
-	<li>SCR_DKeneq</li>
-	<li>SCR_RNotice</li>
-	</classRating>	
+		<li Class="SecureContainRimworld.CProceduresExtension">
+		<classRating>
+		<li>SCR_CEuclid</li>
+		<li>SCR_DKeneq</li>
+		<li>SCR_RNotice</li>
+		</classRating>	
 		<containmentTier>1</containmentTier>
-	<isTranqable>false</isTranqable>
+		<isTranqable>false</isTranqable>
 	</li>
 	</modExtensions>
-	<descriptionHyperlinks>
-	<RecipeDef>SCR_InstallSCP30332R</RecipeDef>
-	<ThingDef>SCR_SCP30331R</ThingDef>
-	</descriptionHyperlinks>
     <techHediffsTags>
-      <li>Spacer</li>
+      <li>SCR_SCP3033</li>
+	  <li>SCR_SCP3033_Master</li>
     </techHediffsTags>
   </ThingDef>
  

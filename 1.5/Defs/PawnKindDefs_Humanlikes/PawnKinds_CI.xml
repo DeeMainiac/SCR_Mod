@@ -12,9 +12,9 @@
 		<itemQuality>Normal</itemQuality>
 		<backstoryCryptosleepCommonality>0.008</backstoryCryptosleepCommonality>
 		<maxGenerationAge>40</maxGenerationAge>
-		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
-		<combatEnhancingDrugsCount>0</combatEnhancingDrugsCount>
-		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~1</combatEnhancingDrugsCount>
+		<biocodeWeaponChance>0.4</biocodeWeaponChance>
 		<gearHealthRange>0.7~2.3</gearHealthRange>
 		<initialWillRange>1~3</initialWillRange>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
@@ -22,7 +22,11 @@
 			<li>IndustrialBasic</li>
 			<li>IndustrialAdvanced</li>
 			<li>IndustrialMilitaryBasic</li>
+			<li>ChaosInsurgencyWear</li>
 		</apparelTags>
+		<weaponTags>
+			<li>ChaosInsurgency</li>
+		</weaponTags>
 		<!--
 		<backstoryFiltersOverride>
 		  <li>
@@ -47,22 +51,27 @@
 		<apparelMoney>400~700</apparelMoney>
 		<weaponMoney>500~700</weaponMoney>
 		<weaponTags>
-		 <li>MedievalMeleeDecent</li>
-		 <li>MedievalMeleeAdvanced</li>
-		 <li>SpearMen</li>
-		 <li>Spear</li>
-		 <li>Lance</li>
+			 <li>MedievalMeleeDecent</li>
+			 <li>MedievalMeleeAdvanced</li>
+			 <li>SpearMen</li>
+			 <li>Spear</li>
+			 <li>Lance</li>
+			 <li>Sword</li>
+			 <li>MikeSlaveRanged</li>
+			 <li>OrientalHandCannon</li> <!-- TSF_Hand_Mortar -->
 		</weaponTags>
 		<techHediffsMoney>700~1200</techHediffsMoney>
 		<techHediffsChance>100</techHediffsChance>
-		<techHediffsTags>
+		<techHediffsTags Inherit="False">
 		 <li>Spacer</li>
+		 <li>SCR_SCP3033_Slave</li>
 		</techHediffsTags>
-		<techHediffsRequired>
+		<techHediffsRequired Inherit="False">
 		  <li>SCR_SCP30331R</li>
 		</techHediffsRequired>
 		<disallowedTraits>
 		  <li>Wimp</li>
+		  <li>Brawler</li>
 		</disallowedTraits>
 		  <skills>
 		  <li>
@@ -85,7 +94,8 @@
 
 	<PawnKindDef ParentName="SCR_CIBase">
 		<defName>SCR_SCP30332_Controller</defName>
-		<defaultFactionType>SCR_CI</defaultFactionType>
+		<label>SCP-3033-2 master</label>
+		<label>insurgents</label>
 		<combatPower>90</combatPower>
 		<apparelMoney>1400~1700</apparelMoney>
 		<weaponMoney>500~2700</weaponMoney>
@@ -94,10 +104,11 @@
 		</weaponTags>
 		<techHediffsMoney>700~1200</techHediffsMoney>
 		<techHediffsChance>100</techHediffsChance>
-		<techHediffsTags>
+		<techHediffsTags Inherit="False">
 		 <li>Spacer</li>
+		 <li>SCR_SCP3033_Master</li>
 		</techHediffsTags>
-		<techHediffsRequired>
+		<techHediffsRequired Inherit="False">
 		  <li>SCR_SCP30332R</li>
 		</techHediffsRequired>
 		<disallowedTraits>

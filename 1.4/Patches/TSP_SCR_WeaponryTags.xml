@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
+	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="TSF_Hand_Mortar"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TSF_Hand_Mortar"]</xpath>
+			<success>Always</success>
+			<value>
+				<weaponTags></weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="TSF_Hand_Mortar"]/weaponTags</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="TSF_Hand_Mortar"]/weaponTags</xpath>
+			<value>
+				<li>OrientalHandCannon</li>
+				<li>ChaosInsurgency</li>
+				<li>MikeSlaveRanged</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>
