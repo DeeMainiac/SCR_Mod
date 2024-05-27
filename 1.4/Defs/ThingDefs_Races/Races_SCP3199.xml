@@ -116,7 +116,7 @@
 			<cooldownTime>1</cooldownTime>
 			<linkedBodyPartsGroup>Neck</linkedBodyPartsGroup> <!-- Body Part Group assigned to its neck -->
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-			<chanceFactor>1</chanceFactor>
+			<chanceFactor>0.81</chanceFactor>
 			<surpriseAttack>
 			  <extraMeleeDamages>
 				<li>
