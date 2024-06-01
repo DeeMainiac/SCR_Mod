@@ -254,7 +254,7 @@
 					</groups>
 					<parts>
 						<li>
-							<def>Foot</def>
+							<def>Leg</def>
 							<customLabel>ventral foot</customLabel> <!-- This is how RL snails move -->
 							<depth>Inside</depth>
 							<coverage>0.1</coverage>
@@ -444,7 +444,7 @@
 					<def>Ribcage</def>
 					<depth>Outside</depth>
 					<height>Top</height>
-					<coverage>0.1</coverage>
+					<coverage>0.231</coverage>
 					<groups>
 						<li>HeadClaw</li>
 					</groups>

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>SCR_SCP2228R</defName>
 		<label>SCP-2228</label>
-		<description>SCP-2228 is a board game-like playset imitating SCP Foundation containment procedures. Small items placed inside will gain anomalous properties, and will lose them upon leaving.</description>
+		<description>SCP-2228 is a board game-like play set imitating SCP Foundation containment procedures. Small items placed inside will gain anomalous properties, and will lose them upon leaving.</description>
 			<modExtensions>
 				<li Class="SecureContainRimworld.CProceduresExtension">
 					<classRating>

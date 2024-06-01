@@ -19,7 +19,7 @@
 		  <MoveSpeed>3</MoveSpeed>
 		  <MarketValue>550</MarketValue>
 		  <ComfyTemperatureMin>-35</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+		  <ComfyTemperatureMax>999</ComfyTemperatureMax>
 		  <FilthRate>16</FilthRate>
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
@@ -39,6 +39,7 @@
 		  <petness>0.6</petness>
 		  <trainability>Intermediate</trainability>
 		  <lifeExpectancy>10</lifeExpectancy>
+		  <canBePredatorPrey>false</canBePredatorPrey> <!-- No one is going to attack something that blows up! -->
 			<wildBiomes>
 				<AridShrubland>0.1</AridShrubland>
 				<BorealForest>0</BorealForest>

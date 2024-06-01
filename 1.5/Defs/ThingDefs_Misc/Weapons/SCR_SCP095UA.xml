@@ -56,7 +56,7 @@
 					<range>100.9</range>
 					<soundCast>Shot_IncendiaryLauncher</soundCast>
 					<soundCastTail>GunTail_Heavy</soundCastTail>
-					<muzzleFlashScale>20</muzzleFlashScale>
+					<muzzleFlashScale>30</muzzleFlashScale>
 					<stopBurstWithoutLos>false</stopBurstWithoutLos>
 					<requireLineOfSight>true</requireLineOfSight>
 					<targetParams>
@@ -88,6 +88,7 @@
 	    <weaponTags Inherit="False">
       <li>SCPWeapon</li>
     </weaponTags>
+	<comps></comps>
 	</ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -101,15 +102,21 @@
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <speed>200</speed>
-      <damageDef>Flame</damageDef>
-      <!-- Use default damage from explosion def -->
-      <explosionRadius>1.5</explosionRadius>
-      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
-      <ai_IsIncendiary>true</ai_IsIncendiary>
-      <!-- <arcHeightFactor>0.2</arcHeightFactor> -->
-      <shadowSize>0.6</shadowSize>
+		<speed>200</speed>
+		<damageDef>Flame</damageDef>
+		<!-- Use default damage from explosion def -->
+		<explosionRadius>1.5</explosionRadius>
+		<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+		<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<armorPenetrationBase>0.2</armorPenetrationBase>
+		<!-- <arcHeightFactor>0.2</arcHeightFactor> -->
+		<shadowSize>0.6</shadowSize>
+		<stoppingPower>10</stoppingPower>
+		<postExplosionSpawnThingDef>Filth_Blood</postExplosionSpawnThingDef>
+		<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		<filth>Filth_Blood</filth>
+		<filthCount>4</filthCount>
     </projectile>
   </ThingDef>
 </Defs>

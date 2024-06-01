@@ -45,7 +45,7 @@
 			<petness>1</petness>
 			<trainability>Intermediate</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
-			<nameOnTameChance>4</nameOnTameChance>
+			<nameOnTameChance>14</nameOnTameChance>
 			<lifeExpectancy>50</lifeExpectancy>
 			<nuzzleMtbHours>2</nuzzleMtbHours>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>

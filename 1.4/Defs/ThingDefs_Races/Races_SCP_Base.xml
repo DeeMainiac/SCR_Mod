@@ -12,8 +12,10 @@
 			<li>SCP_Creature</li>
 		</tradeTags>
 		<race>
+			<thinkTreeMain>SCR_SCPAI</thinkTreeMain>
 			<fleshType MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_StrangeFlesh</fleshType>
 			<bloodDef MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_Filth_BloodCosmicHorror</bloodDef>
+			<immuneToAging>true</immuneToAging>
 		</race>
 		<modExtensions>
 			<li Class="MorrowRim.ExtendedRaceProperties" MayRequire="sirmashedpotato.morrowrim">

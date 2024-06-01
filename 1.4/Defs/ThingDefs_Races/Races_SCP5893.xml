@@ -18,7 +18,7 @@
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>600</MarketValue>
-			<ComfyTemperatureMax>800</ComfyTemperatureMax>
+			<ComfyTemperatureMax>999</ComfyTemperatureMax>
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<FilthRate>7</FilthRate>
 			<MeatAmount>30</MeatAmount>
@@ -26,6 +26,7 @@
 			<ArmorRating_Sharp>.4</ArmorRating_Sharp>
 			<ArmorRating_Blunt>.2</ArmorRating_Blunt>
 			<ArmorRating_Heat>2</ArmorRating_Heat>
+			<Flammability>0</Flammability> <!-- With no harm to itself -->
 		</statBases>
 		<comps>
 		<li Class="CompProperties_HeatPusher">

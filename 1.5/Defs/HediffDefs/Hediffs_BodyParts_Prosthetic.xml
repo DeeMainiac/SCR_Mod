@@ -10,13 +10,13 @@
     <defName>SCR_SCP30331R</defName>
     <label>SCP-3033-1</label>
     <labelNoun>an SCP-3033-1</labelNoun>
-    <description>An installed SCP-3033-1 "Mike" unit implant.</description>
+    <description>An installed SCP-3033-1 "Mike" slave unit implant. This implant allows other Pawns with the SCP-3033-2 implant to control the body of the Pawn against its will.</description>
 	    <modExtensions>
-				<li Class="SecureContainRimworld.CProceduresExtension">
+			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
-				<li>SCR_CEuclid</li>
-				<li>SCR_DKeneq</li>
-				<li>SCR_RNotice</li>
+					<li>SCR_CEuclid</li>
+					<li>SCR_DKeneq</li>
+					<li>SCR_RNotice</li>
 				</classRating>	
 				<containmentTier>1</containmentTier>
 				<isTranqable>true</isTranqable>
@@ -45,7 +45,7 @@
             <capMods>
                <li>
 				<capacity>Manipulation</capacity>
-				<setMax>.75</setMax>
+				<setMax>0.75</setMax>
                </li>
             </capMods>
          </li>
@@ -81,7 +81,7 @@
 			<RecipeDef>SCR_InstallSCP30331R</RecipeDef>
 			<RecipeDef>SCR_InstallSCP30332R</RecipeDef>
 		</descriptionHyperlinks>
-	
+		<soundInteract>Interact_Shotgun</soundInteract>
     <techHediffsTags>
       <li>SCR_SCP3033</li>
 	  <li>SCR_SCP3033_Slave</li>
@@ -94,7 +94,7 @@
     <defName>SCR_SCP30332R</defName>
     <label>SCP-3033-2</label>
     <labelNoun>an SCP-3033-2</labelNoun>
-    <description>An installed SCP-3033-2 "Controller" unit implant.</description>
+    <description>An installed SCP-3033-2 "Controller" master unit implant. Pawns with this implant can control Pawns that have an installed SCP-3033-1 in violation of their own will.</description>
 	<modExtensions>
 		<li Class="SecureContainRimworld.CProceduresExtension">
 		<classRating>
@@ -138,15 +138,16 @@
     </graphicData>
 	<modExtensions>
 		<li Class="SecureContainRimworld.CProceduresExtension">
-		<classRating>
-		<li>SCR_CEuclid</li>
-		<li>SCR_DKeneq</li>
-		<li>SCR_RNotice</li>
-		</classRating>	
-		<containmentTier>1</containmentTier>
-		<isTranqable>false</isTranqable>
-	</li>
+			<classRating>
+			<li>SCR_CEuclid</li>
+			<li>SCR_DKeneq</li>
+			<li>SCR_RNotice</li>
+			</classRating>	
+			<containmentTier>1</containmentTier>
+			<isTranqable>false</isTranqable>
+		</li>
 	</modExtensions>
+	<soundInteract>Interact_Shotgun</soundInteract>
     <techHediffsTags>
       <li>SCR_SCP3033</li>
 	  <li>SCR_SCP3033_Master</li>

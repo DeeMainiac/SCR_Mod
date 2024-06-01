@@ -37,7 +37,7 @@
 		</butcherProducts>
     <race>
 		<thinkTreeMain>SCR_SCPAI</thinkTreeMain>
-		<body>Bird</body>
+		<body>Pikeman</body> <!-- Will give it a custom cyborg body in the future -->
 		<bloodDef>Filth_Ash</bloodDef>
 		<predator>true</predator>
 		<baseBodySize>0.3</baseBodySize>

@@ -79,7 +79,7 @@
     <label>SCP-939 breath</label>
     <description>An amnesia-inducing substance exhaled from SCP-939.
 \nNaturally recovers over time as the body filters it out.</description>
-	<initialSeverity>.15</initialSeverity>
+	<initialSeverity>0</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>10000~25000</disappearsAfterTicks>
@@ -256,4 +256,23 @@
 	  </li>
     </stages>
   </HediffDef>
+  
+	<HediffDef>
+		<defName>TSP_SCR_2845_CannotInfectSelf</defName>
+		<label>SCP-2845 Is Immune to Itself</label>
+		<description>YO DAWG, I heard you DON'T like SCP-2845 infections, so I prevented SCP-2845 from infecting SCP-2845 so you can avoid the Pillars turning into Pillars. \n \n In non-meme speak, this grants both SCP-2845 and SCP-2845-1 instances immunity to its own cursed aura. SCP-2845 and SCP-2845-1 represent, respectively, the source and the victim of the transformation curse. Neither instance can be converted!</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255, 0, 0)</defaultLabelColor>
+		<isBad>true</isBad>
+		<!-- <scenarioCanAdd>false</scenarioCanAdd> -->
+		<stages>
+			<li>
+				<label>Immune to Yourself</label>
+				<becomeVisible>false</becomeVisible>
+				<makeImmuneTo>
+					<li>SCR_SCP2845TransmuteHediff</li>
+				</makeImmuneTo>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>
