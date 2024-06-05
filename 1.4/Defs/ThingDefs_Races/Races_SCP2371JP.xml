@@ -48,6 +48,9 @@
 		  <meatLabel>SCP-2371-JP "beef"</meatLabel>
 		  <specificMeatDef>TSP_SCR_WEF_KlausCompost</specificMeatDef>
 		  <lifeExpectancy>22</lifeExpectancy>
+		  <hediffGiverSets Inherit="False">
+			<li>SCR_NoAlwaysAgingSpawn</li>
+		  </hediffGiverSets>
 		  <!-- Life Stage Ages can't share an age -->
 		  <lifeStageAges Inherit="False">
 			<li>

@@ -48,6 +48,9 @@
 			<lifeExpectancy>1</lifeExpectancy>
 			<manhunterOnTameFailChance>100</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>100</manhunterOnDamageChance>
+			<hediffGiverSets Inherit="False">
+				<li>SCR_NoAlwaysAgingSpawn</li>
+			</hediffGiverSets>
 			  <lifeStageAges Inherit="False">
 				<li>
 				  <def>MechanoidFullyFormed</def>

@@ -66,6 +66,9 @@
 		  <lifeExpectancy>30</lifeExpectancy>
 		  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 		  <manhunterOnDamageChance>2</manhunterOnDamageChance>
+		  <hediffGiverSets Inherit="False">
+			<li>TSP_SCR_NoAlways_AgingSpawn_SCP3199R</li>
+		  </hediffGiverSets>
 		  <lifeStageAges Inherit="False">
 			<li>
 			  <def>AnimalBaby</def>

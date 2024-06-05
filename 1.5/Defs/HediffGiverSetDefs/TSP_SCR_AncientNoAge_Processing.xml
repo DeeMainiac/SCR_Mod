@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<HediffGiverSetDef>
+		<defName>TSP_SCR_NoAlways_AgingSpawn</defName>
+		<hediffGivers>
+			<!-- Environmental -->
+			<li Class="HediffGiver_Bleeding">
+				<hediff>BloodLoss</hediff>
+			</li>
+			<li Class="HediffGiver_Hypothermia">
+				<hediff>HypothermicSlowdown</hediff>
+				<hediffInsectoid>HypothermicSlowdown</hediffInsectoid>
+			</li>
+			<li Class="HediffGiver_Heat">
+				<hediff>Heatstroke</hediff>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+
+	<!-- Special case for SCP-3199, which is canonically immune to all heat. -->
+	<HediffGiverSetDef>
+		<defName>TSP_SCR_NoAlways_AgingSpawn_SCP3199R</defName>
+		<hediffGivers>
+			<!-- Environmental -->
+			<li Class="HediffGiver_Bleeding">
+				<hediff>BloodLoss</hediff>
+			</li>
+			<li Class="HediffGiver_Hypothermia">
+				<hediff>Hypothermia</hediff>
+				<hediffInsectoid>Hypothermia</hediffInsectoid>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+</Defs>

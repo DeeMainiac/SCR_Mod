@@ -53,7 +53,7 @@
 		  <trainability>None</trainability>
 		  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 		  <manhunterOnDamageChance>10</manhunterOnDamageChance>
-		  <immuneToAging>true</immuneToAging> <!-- The last time I saw one of these suckers, it had every age-related disease in the game... -->
+			
 		  <lifeStageAges Inherit="False">
 				<li>
 				  <def>AnimalAdult</def>
@@ -68,7 +68,7 @@
 		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 			<hediffGiverSets Inherit="False">
-				<li>OrganicStandard</li>
+				<li>SCR_NoAlwaysAgingSpawn</li> <!-- The last time I saw one of these suckers, it had every age-related disease in the game... -->
 				<li>TSP_ST_SCP_2845_Immunity_Processing</li>
 			</hediffGiverSets>
 		</race>
@@ -209,7 +209,7 @@
 		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 			<hediffGiverSets Inherit="False">
-				<li>OrganicStandard</li>
+				<li>SCR_NoAlwaysAgingSpawn</li>
 				<li>TSP_ST_SCP_2845_Immunity_Processing</li>
 			</hediffGiverSets>
 		</race>

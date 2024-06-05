@@ -45,20 +45,22 @@
 	  <bloodDef>Filth_MachineBits</bloodDef>
 			<leatherDef>Steel</leatherDef>
 			<specificMeatDef>ChunkSlagSteel</specificMeatDef>
-
+			  <hediffGiverSets Inherit="False">
+				<li>TSP_SCR_NoAlways_AgingSpawn</li>
+			  </hediffGiverSets>
 	  	  	<wildBiomes>
-				<AridShrubland>.1</AridShrubland>
-				<BorealForest>.1</BorealForest>
-				<ColdBog>.1</ColdBog>
-				<TemperateForest>.1</TemperateForest>
-				<TemperateSwamp>.1</TemperateSwamp>
-				<TropicalRainforest>.1</TropicalRainforest>
-				<TropicalSwamp>.1</TropicalSwamp>
-				<IceSheet>.1</IceSheet>
-				<SeaIce>.1</SeaIce>
-				<Tundra>.1</Tundra>
-				<Desert>.1</Desert>
-				<ExtremeDesert>.1</ExtremeDesert>
+				<AridShrubland>0.01</AridShrubland>
+				<BorealForest>0.01</BorealForest>
+				<ColdBog>0.01</ColdBog>
+				<TemperateForest>0.01</TemperateForest>
+				<TemperateSwamp>0.01</TemperateSwamp>
+				<TropicalRainforest>0.01</TropicalRainforest>
+				<TropicalSwamp>0.01</TropicalSwamp>
+				<IceSheet>0.1</IceSheet>
+				<SeaIce>0.1</SeaIce>
+				<Tundra>0.01</Tundra>
+				<Desert>0.01</Desert>
+				<ExtremeDesert>0.1</ExtremeDesert>
 			</wildBiomes>
       <lifeStageAges Inherit="False">
         <li>

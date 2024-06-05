@@ -100,7 +100,7 @@
 		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 			<hediffGiverSets Inherit="False">
-				<li>OrganicStandard</li>
+				<li>TSP_SCR_NoAlways_AgingSpawn</li>
 				<li>TSP_ST_SCP_2845_Immunity_Processing</li>
 			</hediffGiverSets>
 		</race>
@@ -241,7 +241,7 @@
 		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 			<hediffGiverSets Inherit="False">
-				<li>OrganicStandard</li>
+				<li>TSP_SCR_NoAlways_AgingSpawn</li>
 				<li>TSP_ST_SCP_2845_Immunity_Processing</li>
 			</hediffGiverSets>
 		</race>

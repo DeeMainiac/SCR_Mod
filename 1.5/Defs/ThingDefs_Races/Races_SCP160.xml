@@ -53,6 +53,10 @@
 		<manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
 		<manhunterOnDamageChance>1</manhunterOnDamageChance>
 		<roamMtbDays>1</roamMtbDays>
+			  <hediffGiverSets Inherit="False">
+				<li>TSP_SCR_NoAlways_AgingSpawn</li>
+			  </hediffGiverSets>
+
 	  	  			<wildBiomes>
 				<AridShrubland>.1</AridShrubland>
 				<BorealForest>0</BorealForest>

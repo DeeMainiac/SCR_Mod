@@ -52,7 +52,7 @@
 		  <manhunterOnDamageChance>2.0</manhunterOnDamageChance>
 		  <canBePredatorPrey>false</canBePredatorPrey>
 			<hediffGiverSets Inherit="False">
-				<li>OrganicStandard</li>
+				<li>TSP_SCR_NoAlways_AgingSpawn</li>
 				<li>TSP_ST_SCP_610_Immunity_Processing</li>
 			</hediffGiverSets>
 		  <litterSizeCurve>
@@ -253,7 +253,7 @@
 		  <manhunterOnDamageChance>2.0</manhunterOnDamageChance>
 		  <canBePredatorPrey>false</canBePredatorPrey>
 			<hediffGiverSets Inherit="False">
-				<li>OrganicStandard</li>
+				<li>TSP_SCR_NoAlways_AgingSpawn</li>
 				<li>TSP_ST_SCP_610_Immunity_Processing</li>
 			</hediffGiverSets>
 		  <litterSizeCurve>

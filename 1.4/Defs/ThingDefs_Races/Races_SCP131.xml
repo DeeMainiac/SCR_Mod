@@ -50,6 +50,9 @@
 			<nuzzleMtbHours>2</nuzzleMtbHours>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<hediffGiverSets Inherit="False">
+				<li>SCR_NoAlwaysAgingSpawn</li>
+			</hediffGiverSets>
 		  <lifeStageAges Inherit="False">
 			<li>
 				<def>MechanoidFullyFormed</def>
