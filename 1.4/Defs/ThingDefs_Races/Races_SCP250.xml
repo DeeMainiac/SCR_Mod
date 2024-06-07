@@ -55,7 +55,7 @@
 	  <roamMtbDays>15</roamMtbDays>
 	  <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 	  <hediffGiverSets Inherit="False">
-		<li>SCR_NoAlwaysAgingSpawn</li>
+		<li>TSP_SCR_NoAlways_AgingSpawn</li>
 	  </hediffGiverSets>
 	  <manhunterOnDamageChance>0.9</manhunterOnDamageChance>
 	  			<wildBiomes>

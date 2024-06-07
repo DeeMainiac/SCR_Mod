@@ -95,7 +95,7 @@
 	<PawnKindDef ParentName="SCR_CIBase">
 		<defName>SCR_SCP30332_Controller</defName>
 		<label>SCP-3033-2 master</label>
-		<label>insurgents</label>
+		<labelPlural>insurgents</labelPlural>
 		<combatPower>90</combatPower>
 		<apparelMoney>1400~1700</apparelMoney>
 		<weaponMoney>500~2700</weaponMoney>

@@ -46,7 +46,7 @@
 			<leatherDef>Steel</leatherDef>
 			<specificMeatDef>ChunkSlagSteel</specificMeatDef>
 		<hediffGiverSets Inherit="False">
-			<li>SCR_NoAlwaysAgingSpawn</li>
+			<li>TSP_SCR_NoAlways_AgingSpawn</li>
 		</hediffGiverSets>
 	  	  	<wildBiomes>
 				<AridShrubland>.1</AridShrubland>

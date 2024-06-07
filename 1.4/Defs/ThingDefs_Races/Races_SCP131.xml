@@ -51,7 +51,7 @@
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<hediffGiverSets Inherit="False">
-				<li>SCR_NoAlwaysAgingSpawn</li>
+				<li>TSP_SCR_NoAlways_AgingSpawn</li>
 			</hediffGiverSets>
 		  <lifeStageAges Inherit="False">
 			<li>

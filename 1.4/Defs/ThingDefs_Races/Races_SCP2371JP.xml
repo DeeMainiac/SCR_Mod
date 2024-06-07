@@ -49,7 +49,7 @@
 		  <specificMeatDef>TSP_SCR_WEF_KlausCompost</specificMeatDef>
 		  <lifeExpectancy>22</lifeExpectancy>
 		  <hediffGiverSets Inherit="False">
-			<li>SCR_NoAlwaysAgingSpawn</li>
+			<li>TSP_SCR_NoAlways_AgingSpawn</li>
 		  </hediffGiverSets>
 		  <!-- Life Stage Ages can't share an age -->
 		  <lifeStageAges Inherit="False">
