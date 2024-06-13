@@ -8,15 +8,15 @@
 
   <HediffDef ParentName="ImplantHediffBase">
     <defName>SCR_SCP30331R</defName>
-    <label>SCP-3033-1</label>
+    <label>SCP-3033-1 (slave implant)</label>
     <labelNoun>an SCP-3033-1</labelNoun>
-    <description>An installed SCP-3033-1 "Mike" slave unit implant. This implant allows other Pawns with the SCP-3033-2 implant to control the body of the Pawn against its will.</description>
+    <description>An installed SCP-3033-1 "Mike" slave unit implant.</description>
 	    <modExtensions>
-			<li Class="SecureContainRimworld.CProceduresExtension">
+				<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
-					<li>SCR_CEuclid</li>
-					<li>SCR_DKeneq</li>
-					<li>SCR_RNotice</li>
+				<li>SCR_CEuclid</li>
+				<li>SCR_DKeneq</li>
+				<li>SCR_RNotice</li>
 				</classRating>	
 				<containmentTier>1</containmentTier>
 				<isTranqable>true</isTranqable>
@@ -45,7 +45,7 @@
             <capMods>
                <li>
 				<capacity>Manipulation</capacity>
-				<setMax>0.75</setMax>
+				<setMax>.75</setMax>
                </li>
             </capMods>
          </li>
@@ -57,10 +57,10 @@
 
   <ThingDef ParentName="BodyPartBase">
     <defName>SCR_SCP30331R</defName>
-    <label>SCP-3033-1</label>
+    <label>SCP-3033-1 (slave implant)</label>
     <description>SCP-3033-1 is a brain implant by the Chaos Insurgency to completely control a pawn via another pawn with an SCP-3033-2 "Controller" implant. This implant also gives an immunity to pain and reduces fine motor control, preventing numerous tasks from being done. It is completely inert when not installed.</description>
     <graphicData Inherit="False">
-      <texPath>Things/Item/Equipment/SCR_SCP3033/MIKE1</texPath>
+      <texPath>Things/Item/Equipment/SCR_SCP3033/TSP_MIKE1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	<modExtensions>
@@ -92,9 +92,9 @@
  
    <HediffDef ParentName="ImplantHediffBase">
     <defName>SCR_SCP30332R</defName>
-    <label>SCP-3033-2</label>
+    <label>SCP-3033-2 (master implant)</label>
     <labelNoun>an SCP-3033-2</labelNoun>
-    <description>An installed SCP-3033-2 "Controller" master unit implant. Pawns with this implant can control Pawns that have an installed SCP-3033-1 in violation of their own will.</description>
+    <description>An installed SCP-3033-2 "Controller" master unit implant.</description>
 	<modExtensions>
 		<li Class="SecureContainRimworld.CProceduresExtension">
 		<classRating>
@@ -133,7 +133,7 @@
 			<RecipeDef>SCR_InstallSCP30332R</RecipeDef>
 		</descriptionHyperlinks>
     <graphicData Inherit="False">
-      <texPath>Things/Item/Equipment/SCR_SCP3033/MIKE2</texPath>
+      <texPath>Things/Item/Equipment/SCR_SCP3033/TSP_MIKE2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	<modExtensions>

@@ -18,7 +18,7 @@
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>600</MarketValue>
-			<ComfyTemperatureMax>800</ComfyTemperatureMax>
+			<ComfyTemperatureMax>999</ComfyTemperatureMax>
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<FilthRate>7</FilthRate>
 			<MeatAmount>30</MeatAmount>

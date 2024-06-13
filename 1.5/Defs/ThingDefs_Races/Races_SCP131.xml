@@ -45,14 +45,14 @@
 			<petness>1</petness>
 			<trainability>Intermediate</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
-			<nameOnTameChance>4</nameOnTameChance>
+			<nameOnTameChance>14</nameOnTameChance>
 			<lifeExpectancy>50</lifeExpectancy>
 			<nuzzleMtbHours>2</nuzzleMtbHours>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
-			  <hediffGiverSets Inherit="False">
+			<hediffGiverSets Inherit="False">
 				<li>TSP_SCR_NoAlways_AgingSpawn</li>
-			  </hediffGiverSets>
+			</hediffGiverSets>
 		  <lifeStageAges Inherit="False">
 			<li>
 				<def>MechanoidFullyFormed</def>

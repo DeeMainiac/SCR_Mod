@@ -4,7 +4,7 @@
 	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP111R</defName>
 		<label>SCP-111</label>
-		<description>SCP-111 is one of six different colorful snail-like creatures that occasionally exhale fire as a defense mechanism. They explode on death.</description>
+		<description>SCP-111 is one of six different colorful snail-like creatures that occasionally exhale fire as a defense mechanism.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -19,7 +19,7 @@
 		  <MoveSpeed>3</MoveSpeed>
 		  <MarketValue>550</MarketValue>
 		  <ComfyTemperatureMin>-35</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+		  <ComfyTemperatureMax>999</ComfyTemperatureMax>
 		  <FilthRate>16</FilthRate>
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
@@ -103,9 +103,8 @@
 		  </li>
 		</comps>
 	  </ThingDef>
-
+	  
 	  <PawnKindDef Name="SCR_SCP111R" ParentName="TSP_SCP_Creature_PawnkindDef">
-
 		<defName>SCR_SCP111R</defName>
 		<label>SCP-111</label>
 		<race>SCR_SCP111R</race>

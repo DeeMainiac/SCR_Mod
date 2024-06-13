@@ -48,6 +48,7 @@
 			<xpath>/Defs/ThingDef[@Name="BasePawn"]/recipes</xpath>
 			<value>
 				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_InstallSCP30331R</li>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_RemoveSCP30331R</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -62,6 +63,7 @@
 			<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
 			<value>
 				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_InstallSCP30331R</li>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_RemoveSCP30331R</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -76,6 +78,9 @@
 			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Human"]/recipes</xpath> <!-- HAR Mod support -->
 			<value>
 				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_InstallSCP30331R</li>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_RemoveSCP30331R</li>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_InstallSCP30332R</li>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_RemoveSCP30332R</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->

@@ -46,7 +46,7 @@
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-			<hediffGiverSets>
+			<hediffGiverSets Inherit="False">
 				<li>OrganicStandard</li>
 				<li>Human</li>
 			</hediffGiverSets>

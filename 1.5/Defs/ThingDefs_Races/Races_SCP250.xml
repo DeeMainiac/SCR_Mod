@@ -34,7 +34,7 @@
     </statBases>
 	    <receivesSignals>true</receivesSignals>
 	    <comps>
-      <li Class="CompProperties_CanBeDormant" />
+      <li Class="CompProperties_CanBeDormant"></li>
       <li Class="CompProperties_WakeUpDormant">
         <wakeUpOnDamage>true</wakeUpOnDamage>
       </li>
@@ -54,9 +54,9 @@
 	  <leatherDef>Leather_Patch</leatherDef>
 	  <roamMtbDays>15</roamMtbDays>
 	  <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
-			  <hediffGiverSets Inherit="False">
-				<li>TSP_SCR_NoAlways_AgingSpawn</li>
-			  </hediffGiverSets>
+	  <hediffGiverSets Inherit="False">
+		<li>TSP_SCR_NoAlways_AgingSpawn</li>
+	  </hediffGiverSets>
 	  <manhunterOnDamageChance>0.9</manhunterOnDamageChance>
 	  			<wildBiomes>
 				<AridShrubland>.1</AridShrubland>

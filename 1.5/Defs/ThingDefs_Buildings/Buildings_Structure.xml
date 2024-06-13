@@ -77,6 +77,10 @@
 		<defName>SCR_StrengthenedWall</defName>
 		<label>steel strengthened wall</label>
 		<description>An impassable wall strengthened with steel. Capable of holding up a roof and keeping in SCP's.</description>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<containmentTier>1</containmentTier>
@@ -133,11 +137,12 @@
 		<description>An impassable wall strengthened with plasteel. Capable of holding up a roof and keeping in SCP's.</description>
 		<modExtensions>
 		<li Class="SecureContainRimworld.CProceduresExtension">
-		<containmentTier>2</containmentTier>
+			<containmentTier>2</containmentTier>
 		</li>
 		</modExtensions>
 		<statBases>
 			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0</Flammability>
 		</statBases>
 		<costList Inherit="False">
 			<Steel>1</Steel>
@@ -163,7 +168,7 @@
 		<researchPrerequisites Inherit="False">
 			<li>SCR_WallTier2</li>
 		</researchPrerequisites>
-		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<building>
 		  <relatedBuildCommands>
 			<li>SCR_Autodoor</li>
@@ -177,7 +182,7 @@
 		  </li>
 		  <li>
 		  <damageDef>Mining</damageDef>
-		  <multiplier>0.15</multiplier>
+		  <multiplier>0.1</multiplier>
 		  </li>
 		  <li>
 			<damageDef>Thump</damageDef>

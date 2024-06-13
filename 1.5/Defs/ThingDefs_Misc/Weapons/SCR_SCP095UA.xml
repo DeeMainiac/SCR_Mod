@@ -57,7 +57,7 @@
 					<soundCast>Shot_IncendiaryLauncher</soundCast>
 					<soundCastTail>GunTail_Heavy</soundCastTail>
 					<muzzleFlashScale>30</muzzleFlashScale>
-					<stopBurstWithoutLos>false</stopBurstWithoutLos>
+					<stopBurstWithoutLos>true</stopBurstWithoutLos>
 					<requireLineOfSight>true</requireLineOfSight>
 					<targetParams>
 						<canTargetLocations>true</canTargetLocations>
@@ -114,7 +114,7 @@
 		<shadowSize>0.6</shadowSize>
 		<stoppingPower>10</stoppingPower>
 		<postExplosionSpawnThingDef>Filth_Blood</postExplosionSpawnThingDef>
-		<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		<postExplosionSpawnChance>1</postExplosionSpawnChance>
 		<filth>Filth_Blood</filth>
 		<filthCount>4</filthCount>
     </projectile>

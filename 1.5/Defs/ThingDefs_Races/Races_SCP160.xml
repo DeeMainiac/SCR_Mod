@@ -44,7 +44,7 @@
 		<maxPreyBodySize>0.8</maxPreyBodySize>
 		<baseHungerRate>0.25</baseHungerRate>
 		<baseHealthScale>2.5</baseHealthScale>
-		<foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Corpse, Meal, Processed, Kibble</foodType>
+		<foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Corpse, Fluid, Liquor, OvivoreAnimal, Kibble</foodType>
 		<leatherDef>Steel</leatherDef>
 		<specificMeatDef>ChunkSlagSteel</specificMeatDef>
 		<wildness>0</wildness>
@@ -52,23 +52,22 @@
 		<nameOnTameChance>1</nameOnTameChance>
 		<manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
 		<manhunterOnDamageChance>1</manhunterOnDamageChance>
+		<hediffGiverSets Inherit="False">
+			<li>TSP_SCR_NoAlways_AgingSpawn</li>
+		</hediffGiverSets>
 		<roamMtbDays>1</roamMtbDays>
-			  <hediffGiverSets Inherit="False">
-				<li>TSP_SCR_NoAlways_AgingSpawn</li>
-			  </hediffGiverSets>
-
-	  	  			<wildBiomes>
-				<AridShrubland>.1</AridShrubland>
+	  	  	<wildBiomes>
+				<AridShrubland>0.1</AridShrubland>
 				<BorealForest>0</BorealForest>
 				<ColdBog>0</ColdBog>
-				<TemperateForest>.1</TemperateForest>
-				<TemperateSwamp>.1</TemperateSwamp>
-				<TropicalRainforest>.1</TropicalRainforest>
-				<TropicalSwamp>.1</TropicalSwamp>
+				<TemperateForest>0.1</TemperateForest>
+				<TemperateSwamp>0.1</TemperateSwamp>
+				<TropicalRainforest>0.1</TropicalRainforest>
+				<TropicalSwamp>0.1</TropicalSwamp>
 				<IceSheet>0</IceSheet>
 				<SeaIce>0</SeaIce>
 				<Tundra>0</Tundra>
-				<Desert>.2</Desert>
+				<Desert>0.2</Desert>
 				<ExtremeDesert>0</ExtremeDesert>
 			</wildBiomes>
 	  <gestationPeriodDays>12</gestationPeriodDays>
