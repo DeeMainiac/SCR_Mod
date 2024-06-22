@@ -4,7 +4,7 @@
 	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP2845R</defName>
 		<label>SCP-2845</label>
-		<description>SCP-2845 is a pastel green deer with the head of a man and a strange ring of ice and hydrogen floating behind it. It is capable of transmuting and reconstructing the materials around itself; staying around it for too long will transform any living being into an instance of SCP-2845-1. Initially thought to be supernaturally tied to Saturn, a planet in the original solar system of Old Earth, it was discovered that this SCP actually exists in packs, and can be found in any solar system with a cold gas giant.</description>
+		<description>SCP-2845 is a pastel green deer with the head of a man and a strange ring of ice and hydrogen floating behind it. It is capable of transmuting and reconstructing the materials around itself; staying around it for too long will transform any living being into an instance of SCP-2845-1. Initially thought to be supernaturally tied to Saturn, a planet in the original solar system of Old Earth, it was discovered that this SCP can be found in any solar system with a cold gas giant.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -43,7 +43,7 @@
 		  <herdAnimal>false</herdAnimal>
 		  <baseBodySize>2.5</baseBodySize>
 		  <baseHungerRate>0.1</baseHungerRate>
-		  <baseHealthScale>4</baseHealthScale>
+		  <baseHealthScale>10</baseHealthScale>
 		  <foodType>VegetarianRoughAnimal, Corpse, Fluid, Kibble</foodType>
 		  <useLeatherFrom>Deer</useLeatherFrom>
 		  <useMeatFrom>Deer</useMeatFrom>
