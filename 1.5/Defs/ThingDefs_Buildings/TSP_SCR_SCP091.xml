@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>TSP_SCR_SCP091R</defName>
+		<label>SCP-091</label>
+		<description>SCP-091 is a very large, empty tissue box that, when viewed, inserts itself into the happiest memories of its viewers' life, or in any other memory that positively evokes intense nostalgia. Viewing it and then being asked to talk about a joyful time in one's life will have that person recount it, but with the alteration being the prominent presence of SCP-091. For instance, a Pawn viewing SCP-091 and being asked about his wedding would recount the wedding as normal, but mention the presence of SCP-091, say, in the hands of his wife as they kissed or seeing it at the reception as they had their first dance. \n \n Originally, only one existed, and its nostalgic effects were permanent, but as mankind spread across the galaxy, it was discovered that other instances of SCP-091 were carried unwillingly on the starships. This particular SCP-091 instance only invokes feelings of nostalgia on a Pawn that is in its presence. After the Pawn leaves the anomalous effect's range, SCP-091 no longer affects his memories.</description>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<graphicData>
+			<texPath>Things/Buildings/TSP_SCR_SCP091</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.22,1.22)</drawSize>
+			<damageData>
+				<rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<Mass>5</Mass>
+			<Beauty>5</Beauty>
+			<Cleanliness>1</Cleanliness> <!-- Tissues -->
+			<MaxHitPoints>18</MaxHitPoints> <!-- Very delicate according to the canonical article -->
+		</statBases>
+		<clearBuildingArea>false</clearBuildingArea>
+		<blockWind>false</blockWind>
+		<blockLight>false</blockLight>
+		<blockPlants>false</blockPlants>
+		<holdsRoof>false</holdsRoof>
+		<castEdgeShadows>false</castEdgeShadows>
+		<preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+		<building>
+			<joyKind>SCR_JoyfulSCP</joyKind>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+			<canPlaceOverImpassablePlant>true</canPlaceOverImpassablePlant>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<allowWireConnection>false</allowWireConnection>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>true</ai_chillDestination>
+		</building>
+		<rotatable>false</rotatable>
+		<altitudeLayer>ItemImportant</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>5</pathCost>
+		<fillPercent>0.1</fillPercent>
+		<specialDisplayRadius>4.05</specialDisplayRadius>
+		<tradeability>Sellable</tradeability>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+			<li>SCPObjects</li>
+		</thingCategories>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RWarning</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_GiveHediffSeverity">
+				<hediff>TSP_SCR_SCP091_Nostalgia</hediff>
+				<range>4</range>
+				<severityPerSecond>999</severityPerSecond>
+				<drugExposure>false</drugExposure>
+				<allowMechs>true</allowMechs>
+			</li>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"></li> <!-- Serves as a Relic -->
+		</comps>
+		<tradeTags>
+			<li>Artifacts</li>
+		</tradeTags>
+	</ThingDef>
+  
+   <HediffDef ParentName="DiseaseBase">
+    	<defName>TSP_SCR_SCP091_Nostalgia</defName>
+    	<label>SCP-091 Anomalous Effects</label>
+		<description>This Pawn is experiencing the anomalous effect of SCP-091. When being viewed, the SCP-091 instance inserts itself into the viewer's happiness memories and most positive moments of nostalgia. This causes the viewer to associate the SCP-091 with great times in his life, improving his mood while reminescing.</description>		
+    	<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(66,255,255)</defaultLabelColor>
+		<!-- <hediffClass>HediffWithComps</hediffClass> -->
+		<isBad>false</isBad>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<stages>
+			<li>
+				<label>reminescing</label>
+				<becomeVisible>true</becomeVisible>
+				<minSeverity>0</minSeverity>
+				<opinionOfOthersFactor>15</opinionOfOthersFactor>
+				<capMods></capMods>
+			</li>
+		</stages>
+		<allowMothballIfLowPriorityWorldPawn>false</allowMothballIfLowPriorityWorldPawn>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>500~850</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-99</severityPerDay>
+			</li>
+		</comps>
+	</HediffDef>
+  
+	<ThoughtDef>
+		<defName>TSP_SCR_SCP091_Nostalgia_Thought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>TSP_SCR_SCP091_Nostalgia</hediff>
+		<stages>
+			<li>
+				<label>Standing Near SCP-091</label>
+				<description>Oh man, how I love that tissue box! My friends always brought it to me when I was sad...</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

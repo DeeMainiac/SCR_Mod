@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <!-- ============================ Outlander Combat li/1 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[1]/options</xpath>
+        <value>
+          <CJ_PsychoGrenadier_Destructive>0.15</CJ_PsychoGrenadier_Destructive>
+          <CJ_PsychoMercenary_Slasher>0.14</CJ_PsychoMercenary_Slasher>
+          <CJ_PsychoMercenary_Gunner>0.14</CJ_PsychoMercenary_Gunner>
+          <CJ_PsychoMercenary_Elite>0.14</CJ_PsychoMercenary_Elite>
+          <CJ_PsychoMercenary_Sniper>0.16</CJ_PsychoMercenary_Sniper>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

@@ -54,6 +54,9 @@
 				</points>
 			</litterSizeCurve>
 			<lifeExpectancy>13</lifeExpectancy>
+			  <hediffGiverSets Inherit="False">
+				<li>TSP_SCR_NoAlways_AgingSpawn</li>
+			  </hediffGiverSets>
 			<wildBiomes>
 				<AridShrubland>0</AridShrubland>
 				<BorealForest>.1</BorealForest>

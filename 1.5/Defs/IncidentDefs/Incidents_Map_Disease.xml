@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<IncidentDef ParentName="DiseaseIncident">
+		<defName>SCR_Disease_SCP1797R</defName>
+		<label>SCP-1797 infection</label>
+		<diseaseIncident>SCR_SCP1797R</diseaseIncident>
+		<letterLabel>Disease: SCP-1797</letterLabel>
+	</IncidentDef>
+
+	<IncidentDef ParentName="DiseaseIncident">
+		<defName>SCR_Disease_SCP610</defName>
+		<label>SCP-610 infection</label>
+		<diseaseIncident>SCR_SCP1797R</diseaseIncident>
+		<letterLabel>Disease: SCP-610!</letterLabel>
+		<category>ThreatBig</category>
+		<minRefireDays>600</minRefireDays>
+	</IncidentDef>
+</Defs>

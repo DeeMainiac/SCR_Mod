@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="SCR_SCP_Base">
+<ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP594R</defName>
     <label>SCP-594</label>
-    <description>SCP-594 is a ram-like creature that can weaponize static electricity. A great source of wool, milk, and meat.</description>
+    <description>SCP-594 is a ram-like creature that can weaponize static electricity. It is a great source of wool, milk, and meat. In a pinch, it can be trained to defend a colony with its shocking powers.</description>
       	<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
 					<li>SCR_CEuclid</li>
-					<li>SCR_DVlam</li>
+					<li>SCR_DDark</li>
 					<li>SCR_RNotice</li>
 				</classRating>
 				<containmentTier>1</containmentTier>
 				<willManhuntAfterBreach>false</willManhuntAfterBreach>
-				<hatesRoofs>true</hatesRoofs>
+				<hatesRoofs>false</hatesRoofs>
 			</li>
 	</modExtensions>
 	<statBases>
@@ -29,7 +29,7 @@
     <comps>
       <li Class="CompProperties_Shearable">
         <woolDef>WoolSheep</woolDef>
-        <shearIntervalDays>10</shearIntervalDays>
+        <shearIntervalDays>9</shearIntervalDays>
         <woolAmount>45</woolAmount>
       </li>
 	  <li Class="CompProperties_Milkable">
@@ -39,13 +39,13 @@
       </li>
     </comps>
     <race>
-	<thinkTreeMain>SCR_SCPAI</thinkTreeMain>
+	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
       <herdAnimal>true</herdAnimal>
       <body>QuadrupedAnimalWithHooves</body>
       <baseBodySize>0.8</baseBodySize>
       <baseHealthScale>0.7</baseHealthScale>
       <baseHungerRate>0.2</baseHungerRate>
-      <foodType>VegetarianRoughAnimal</foodType>
+      <foodType>VegetarianRoughAnimal, Kibble</foodType>
       <leatherDef>Leather_Plain</leatherDef>
 	  <specificMeatDef>SCR_SCP594Meat</specificMeatDef>
       <gestationPeriodDays>5.66</gestationPeriodDays>
@@ -57,11 +57,11 @@
           <li>(2.0, 0)</li>
         </points>
       </litterSizeCurve>
-      <wildness>.2</wildness>
+      <wildness>0.2</wildness>
       <roamMtbDays>5</roamMtbDays>
-      <trainability>None</trainability>
+      <trainability>Intermediate</trainability>
       <lifeExpectancy>13</lifeExpectancy>
-	  <manhunterOnTameFailChance>.3</manhunterOnTameFailChance>
+	  <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 	  <manhunterOnDamageChance>1</manhunterOnDamageChance>
 	  			<wildBiomes>
 				<AridShrubland>0</AridShrubland>
@@ -102,13 +102,12 @@
     <tradeTags>
       <li>AnimalFarm</li>
 	  <li>AnimalUncommon</li>
-	  <li>SCP</li>
+	  <li>AnimalExotic</li>
     </tradeTags>
     <tools>
       <li>
         <label>head</label>
         <capacities>
-          <li>Blunt</li>
 		  <li>SCR_Electric</li>
         </capacities>
         <power>14</power>
@@ -135,6 +134,7 @@
         <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
       </li>
       <li>
+		<label>teeth</label>
         <capacities>
          <li>SCR_Electric</li>
         </capacities>
@@ -146,7 +146,7 @@
     </tools>
   </ThingDef>
 
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef Name="SCP_Sheep" ParentName="Sheep">
     <defName>SCR_SCP594R</defName>
     <label>SCP-594</label>
     <labelPlural>SCP-594 instances</labelPlural>
