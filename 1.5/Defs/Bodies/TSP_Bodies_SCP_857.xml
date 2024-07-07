@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+
+	<BodyPartDef><!-- In an attempt to fix red errors, this leg-foot combo can have a lil frostbite, as a treat -->
+		<defName>SCR_SuperLeg</defName>
+		<label>leg</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+		<frostbiteVulnerability>0.2</frostbiteVulnerability>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>MovingLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
 	<!-- SCP-857-A (HEAD WITH SIX LEGS) -->
 	<BodyDef>
 		<defName>TSP_SCR_857A</defName>
@@ -184,7 +197,7 @@
 		</corePart>
 	</BodyDef>
 	
-	<!-- SCP-587-B (CIRCULATORY SYSTEM) -->
+	<!-- SCP-857-B (CIRCULATORY SYSTEM) -->
 	<!-- We're going to have to get creative with this. -->
 	<BodyDef>
 		<defName>TSP_SCR_857B</defName>
@@ -197,8 +210,8 @@
 			<coverage>0</coverage>
 			<parts>
 				<li>
-					<def>Leg</def> <!-- The main vein -->
-					<customLabel>inferior vena cava</customLabel> <!-- The largest vein in the human body, from heart to feet -->
+					<def>SCR_SuperLeg</def><!-- The main vein -->
+					<customLabel>inferior vena cava</customLabel><!-- The largest vein in the human body, from heart to feet -->
 					<height>Bottom</height>
 					<coverage>0.657</coverage>
 					<groups>
@@ -206,8 +219,8 @@
 					</groups>
 				</li>
 				<li>
-					<def>Leg</def> <!-- The main vein -->
-					<customLabel>superior vena cava</customLabel> <!-- The other half of the above, from heart to top of the head and back -->
+					<def>SCR_SuperLeg</def><!-- The main vein -->
+					<customLabel>superior vena cava</customLabel><!-- The other half of the above, from heart to top of the head and back -->
 					<depth>Outside</depth>
 					<height>Top</height>
 					<coverage>0.335</coverage>
@@ -216,7 +229,7 @@
 					</groups>
 					<parts>
 						<li>
-							<def>Brain</def> <!-- RL worms don't have true, centralized brains, so we will assume the same here -->
+							<def>Brain</def><!-- RL worms don't have true, centralized brains, so we will assume the same here -->
 							<customLabel>nerve cord</customLabel>
 							<depth>Inside</depth>
 							<coverage>0.08</coverage>
@@ -235,6 +248,8 @@
 		</corePart>
 	</BodyDef>
 	
+	<!-- SCP-857-C -->
+	
 	<BodyDef>
 		<defName>TSP_SCR_857C</defName>
 		<label>human brain with snail foot</label>
@@ -242,7 +257,7 @@
 			<def>Brain</def>
 			<height>Top</height>
 			<depth>Inside</depth>
-			<coverage>0</coverage> <!-- This is the core part, it doesn't functionally exist for the purpose of the game -->
+			<coverage>0</coverage><!-- This is the core part, it doesn't functionally exist for the purpose of the game -->
 			<parts>
 				<li>
 					<def>Brain</def>
@@ -254,13 +269,10 @@
 					</groups>
 					<parts>
 						<li>
-							<def>Foot</def>
-							<customLabel>ventral foot</customLabel> <!-- This is how RL snails move -->
+							<def>SCR_SuperLeg</def>
+							<customLabel>ventral foot</customLabel><!-- This is how RL snails move -->
 							<depth>Inside</depth>
 							<coverage>.5</coverage>
-							<groups>
-								<li>Feet</li>
-							</groups>
 						</li>
 					</parts>
 				</li>
@@ -275,6 +287,8 @@
 		</corePart>
 	</BodyDef>
 	
+	<!-- SCP-857-E -->
+	
 	<BodyDef>
 		<defName>TSP_SCR_857E</defName>
 		<label>human spine and nervous system</label>
@@ -282,7 +296,7 @@
 			<def>Spine</def>
 			<height>Top</height>
 			<depth>Inside</depth>
-			<coverage>0</coverage> <!-- This is the core part, it doesn't functionally exist for the purpose of the game -->
+			<coverage>0</coverage><!-- This is the core part, it doesn't functionally exist for the purpose of the game -->
 			<parts>
 				<li>
 					<def>Spine</def>
@@ -320,6 +334,8 @@
 		</corePart>
 	</BodyDef>
 	
+	<!-- SCP-857-G -->
+	
 	<BodyDef>
 		<defName>TSP_SCR_857G</defName>
 		<label>skin glider</label>
@@ -327,7 +343,7 @@
 			<def>Body</def>
 			<height>Top</height>
 			<depth>Inside</depth>
-			<coverage>0</coverage> <!-- This is the core part, it doesn't functionally exist for the purpose of the game -->
+			<coverage>0</coverage><!-- This is the core part, it doesn't functionally exist for the purpose of the game -->
 			<parts>
 				<li>
 					<def>Body</def>
@@ -399,6 +415,8 @@
 		</corePart>
 	</BodyDef>
 	
+	<!-- SCP-857-H -->
+	
 	<BodyDef>
 		<defName>TSP_SCR_857H</defName>
 		<label>ribcage</label>
@@ -453,7 +471,7 @@
 						<!-- Ribs are classed by their relation to the sternum -->
 						<li>
 							<def>Ribcage</def>
-							<customLabel>vertebrosternal ribs</customLabel> <!-- First seven pairs of ribs -->
+							<customLabel>vertebrosternal ribs</customLabel><!-- First seven pairs of ribs -->
 							<depth>Inside</depth>
 							<coverage>0.4</coverage>
 							<groups>
@@ -462,7 +480,7 @@
 						</li>
 						<li>
 							<def>Ribcage</def>
-							<customLabel>vertebrochondral ribs</customLabel> <!-- Rib pairs eight through ten, with the final two pairs not present because they are not connected to the sternum or spine, making them unable to manifest in a moving ribcage  -->
+							<customLabel>vertebrochondral ribs</customLabel><!-- Rib pairs eight through ten, with the final two pairs not present because they are not connected to the sternum or spine, making them unable to manifest in a moving ribcage  -->
 							<depth>Inside</depth>
 							<coverage>0.4</coverage>
 							<groups>
@@ -481,4 +499,7 @@
 			</parts>
 		</corePart>
 	</BodyDef>
+
+
+
 </Defs>

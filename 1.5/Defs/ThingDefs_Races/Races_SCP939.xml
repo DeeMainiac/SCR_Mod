@@ -26,7 +26,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<MeatAmount>90</MeatAmount>
 			<FilthRate>8</FilthRate>
-			<MinimumContainmentStrength>70</MinimumContainmentStrength><!-- Anomaly containment platform related -->
+			<MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">70</MinimumContainmentStrength><!-- Anomaly containment platform related -->
 		</statBases>
 		<tradeTags Inherit="False">
 			<li>SCP</li>

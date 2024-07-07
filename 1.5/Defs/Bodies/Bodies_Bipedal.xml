@@ -475,7 +475,7 @@
     </corePart>
   </BodyDef>
 
-<!-- Bipedal with no organs. For now, SCP-250 -->
+<!-- Bipedal with no organs. SCP-250 and 060-Alpha -->
 	<BodyDef>
 		<defName>SCR_BipedalBoney</defName>
 		<label>bipedal skeleton</label>

@@ -10,7 +10,6 @@
 <LetterLabelSCP939Attack>SCP-939 Invasion</LetterLabelSCP939Attack>
 <LetterSCP939Attack>A pack of SCP-939 have appeared.\n\nContain or kill them.\n\nThey will probably leave the area in a few days.</LetterSCP939Attack>
 
-
 <LetterLabelContainmentBreach>Containment Breach</LetterLabelContainmentBreach>
 <LetterContainmentBreach>One or more SCPs are trying to escape containment!\n\nStop their advances or destroy them.</LetterContainmentBreach>
 
@@ -30,6 +29,9 @@
 
 <LetterLabelSCP2845Attack>SCP-2845 Invasion</LetterLabelSCP2845Attack>
 <LetterSCP2845Attack>An SCP-2845 and its SCP-2845-1 minions have appeared.\n\nContain or kill them.\n\nThey will probably leave the area in a few days.</LetterSCP2845Attack>
+
+<LetterLabelSCP060Spawn>SCP-060-Alpha</LetterLabelSCP060Spawn>
+<LetterSCP060Spawn>SCP-060-Alpha has reformed and wants to destroy you.\n\nHope you have plenty of firefoam to stop it.</LetterSCP060Spawn>
 
 <!-- SCP-specific messages -->
 

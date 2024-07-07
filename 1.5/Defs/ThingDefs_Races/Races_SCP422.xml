@@ -24,7 +24,7 @@
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<FilthRate>.2</FilthRate>
-			<MinimumContainmentStrength>50</MinimumContainmentStrength><!-- Anomaly containment platform related -->
+			<MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">50</MinimumContainmentStrength><!-- Anomaly containment platform related -->
 		</statBases>
 		<race>
 			<body>QuadrupedAnimalWithPaws</body>

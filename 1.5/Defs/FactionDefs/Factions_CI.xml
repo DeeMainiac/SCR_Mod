@@ -157,19 +157,19 @@
         <categories>
           <li>Raider</li>
         </categories>
-        <commonality>0.5</commonality>
+        <commonality>0.2</commonality>
       </li>
       <li>
         <categories>
-          <li>Offworld</li>
+          <li>SCR_CI</li>
         </categories>
-        <commonality>0.25</commonality>
+        <commonality>0.6</commonality>
       </li>
 	        <li>
         <categories>
           <li>Pirate</li>
         </categories>
-        <commonality>0.25</commonality>
+        <commonality>0.2</commonality>
       </li>
     </backstoryFilters>
      <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>

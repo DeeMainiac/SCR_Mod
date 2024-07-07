@@ -28,7 +28,7 @@
 			<ArmorRating_Blunt>.35</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 			<Flammability>10</Flammability><!-- This is how the Foundation canonically dispatches them. -->
-			<MinimumContainmentStrength>50</MinimumContainmentStrength><!-- Anomaly containment platform related -->
+			<MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">50</MinimumContainmentStrength><!-- Anomaly containment platform related -->
 		</statBases>
 		<race>
 			<thinkTreeMain>SCR_SCPAI</thinkTreeMain>
@@ -237,7 +237,7 @@
 			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
 			<Flammability>10</Flammability><!-- This is how they are canonically dispatched by the Foundation! -->
-			<MinimumContainmentStrength>55</MinimumContainmentStrength><!-- Anomaly containment platform related -->
+			<MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">55</MinimumContainmentStrength><!-- Anomaly containment platform related -->
 		</statBases>
 		<race>
 			<thinkTreeMain>SCR_SCPAI</thinkTreeMain>

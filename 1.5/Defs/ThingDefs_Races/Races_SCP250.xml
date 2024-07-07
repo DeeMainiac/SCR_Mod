@@ -30,7 +30,7 @@
 			<ArmorRating_Blunt>.2</ArmorRating_Blunt>
 			<ToxicResistance>0</ToxicResistance>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.Rimworld.Biotech">1</ToxicEnvironmentResistance>
-			<MinimumContainmentStrength>50</MinimumContainmentStrength><!-- Anomaly containment platform related -->
+			<MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">50</MinimumContainmentStrength><!-- Anomaly containment platform related -->
 	  
 			<BoneAmount MayRequire="sihv.rombones">75</BoneAmount><!-- Multiplied by the Body Size -->
 		</statBases>
