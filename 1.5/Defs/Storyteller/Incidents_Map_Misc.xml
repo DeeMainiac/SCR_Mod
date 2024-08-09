@@ -9,19 +9,11 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP060Sprout</workerClass>
-    <baseChance>.7</baseChance>
+    <baseChance>0.7</baseChance>
     <letterLabel>SCP-060 sprout</letterLabel>
-    <letterText>A grove of SCP-060 have started growing in. These white oak trees don't take kindly to being on fire...</letterText>
+    <letterText>A grove of SCP-060 instances have started growing in. These white oak trees don't take kindly to being set on fire...</letterText>
     <letterDef>NeutralEvent</letterDef>
-	<minRefireDays>25</minRefireDays>
-    <allowedBiomes>
-      <li>TropicalRainforest</li>
-      <li>TropicalSwamp</li>
-      <li>TemperateForest</li>
-      <li>TemperateSwamp</li>
-      <li>BorealForest</li>
-      <li>AridShrubland</li>
-    </allowedBiomes>
+	<minRefireDays>7</minRefireDays>
   </IncidentDef>
 
 </Defs>

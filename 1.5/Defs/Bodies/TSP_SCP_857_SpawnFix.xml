@@ -89,4 +89,17 @@
 			<li>MovingLimbSegment</li>
 		</tags>
 	</BodyPartDef>
+	
+	<!-- In an attempt to fix red errors, this leg-foot combo can have frostbite, as a treat -->
+	<BodyPartDef>
+		<defName>SCR_SuperLeg</defName>
+		<label>leg</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+		<frostbiteVulnerability>0.2</frostbiteVulnerability>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>MovingLimbSegment</li>
+		</tags>
+	</BodyPartDef>
 </Defs>
