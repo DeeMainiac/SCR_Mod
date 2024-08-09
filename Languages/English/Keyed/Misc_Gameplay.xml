@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <LanguageData>
-
 	<!-- Letter Incidents -->
 
 	<LetterLabelSCP3199Attack>SCP-3199 Invasion</LetterLabelSCP3199Attack>
@@ -77,8 +76,11 @@
 	<SCR_Disrupt>Disruption class</SCR_Disrupt>
 	<SCR_Risk>Risk class</SCR_Risk>
 
-
 	<!-- Containment -->
+
+	<LetterLabelContainmentBreach>Containment Breach</LetterLabelContainmentBreach>
+	<LetterContainmentBreach>One or more SCPs are trying to escape containment!\n\nStop their advances or destroy them.</LetterContainmentBreach>
+
 
 	<SCR_CSafe>Safe</SCR_CSafe>
 	<SCR_CSafeDesc>This SCP is fairly easy to contain, and probably can't break out of containment on its own.</SCR_CSafeDesc>
@@ -92,8 +94,67 @@
 	<SCR_CThaumiel>Thaumiel</SCR_CThaumiel>
 	<SCR_CThaumielDesc>This SCP contains or helps contain other SCPs.</SCR_CThaumielDesc>
 
+
 	<SCR_CApollyon>Apollyon</SCR_CApollyon>
 	<SCR_CApollyonDesc>This SCP is not containable by any means.</SCR_CApollyonDesc>
+
+	<LetterLabelSCP848_SpawnItem>SCP-848</LetterLabelSCP848_SpawnItem>
+	<LetterSCP848_SpawnItem>One or more SCP-848-1s caught something in their webs.</LetterSCP848_SpawnItem>
+
+	<LetterLabelSCP2845Attack>SCP-2845 Invasion</LetterLabelSCP2845Attack>
+	<LetterSCP2845Attack>An SCP-2845 and its SCP-2845-1 minions have appeared.\n\nContain or kill them.\n\nThey will probably leave the area in a few days.</LetterSCP2845Attack>
+
+	<LetterLabelSCP060Spawn>SCP-060-Alpha</LetterLabelSCP060Spawn>
+	<LetterSCP060Spawn>SCP-060-Alpha has reformed and wants to destroy you.\n\nHope you have plenty of firefoam to stop it.</LetterSCP060Spawn>
+
+	<!-- SCP-specific messages -->
+
+	<SCP113>SCP-113 changed the pawn's gender to </SCP113>
+	<SCP113F>nothing happened.</SCP113F>
+
+	<SCP1577>An old-world airplane has arrived and is dropping some resources for you.</SCP1577>
+
+	<SCPES019> just lost a lot of faith in their ideoligion!</SCPES019>
+
+	<MessageSCP1905Spawn>An SCP-1905-1 instance has appeared, and is attacking your colonists!</MessageSCP1905Spawn>
+
+	<!-- Mod Menu Stuff-->
+
+	<!-- This stuff hasn't been implemented in any fashion yet -->
+
+	<SCP610ToggleTitle>SCP-610 Biome Spawn</SCP610ToggleTitle>
+	<SCP610ToggleDesc>Stops SCP-610 biome from generating on world map. Requires a new save.</SCP610ToggleDesc>
+
+	<SCP3199ToggleTitle>SCP-3199 Toggle</SCP3199ToggleTitle>
+	<SCP3199ToggleDesc>Stops SCP-3199 from spawning from events, and stops their eggs from hatching.</SCP3199ToggleDesc>
+
+	<SCP939ToggleTitle>SCP-939 Toggle</SCP939ToggleTitle>
+	<SCP939ToggleDesc>Stops SCP-939 from spawning from events.</SCP939ToggleDesc>
+
+	<SCP19051ToggleTitle>SCP-1905-1 Toggle</SCP19051ToggleTitle>
+	<SCP19051ToggleDesc>Stops SCP-1905-1 from spawning.</SCP19051ToggleDesc>
+
+	<SCP848ToggleTitle>SCP-848 Toggle</SCP848ToggleTitle>
+	<SCP848ToggleDesc>Stops SCP-848 and its webs from spawning, and stops them from finding objects.</SCP848ToggleDesc>
+
+	<SCP3033ToggleTitle>SCP-3033-1 and SCP-3033-2 Toggle</SCP3033ToggleTitle>
+	<SCP3033ToggleDesc>Stops SCP-3033-1 and SCP-3033-2 from spawning.</SCP3033ToggleDesc>
+
+	<!-- unused -->
+
+	<LetterLabelCISCP3033Raid>Chaos Insurgency Raid</LetterLabelCISCP3033Raid>
+	<LetterCISCP3033Raid>The Chaos Insurgency has sent SCP-3033 "Mike" units to assault the colony.\n\nThey are attacking immediately.</LetterCISCP3033Raid>
+
+	<LetterLabelCISCP3033RaidFriendly>Chaos Insurgency Reinforcements</LetterLabelCISCP3033RaidFriendly>
+	<LetterCISCP3033RaidFriendly>The Chaos Insurgency has sent SCP-3033 "Mike" units to help you out.</LetterCISCP3033RaidFriendly>
+
+	<!-- //////////////////////////////////////////Containment Procedures////////////////////////////////////////// -->
+
+	<!-- I don't recommend translating the primary class names (e.g, 'Vlam'), since they're special classification words -->
+
+	<SCR_Contain>Containment class</SCR_Contain>
+	<SCR_Disrupt>Disruption class</SCR_Disrupt>
+	<SCR_Risk>Risk class</SCR_Risk>
 
 
 	<!-- Disruption -->

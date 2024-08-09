@@ -74,6 +74,25 @@
     </stages>
   </HediffDef>
   
+    <HediffDef ParentName="DiseaseBase">
+    <defName>SCR_SCP154EquipHediff</defName>
+    <label>SCP-154</label>
+    <description>Pain caused by SCP-154 being equipped and used.\nPain will fade once unequipped.</description>
+	<initialSeverity>.1</initialSeverity>
+	<comps>
+	    <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2</severityPerDay>
+      </li>
+	</comps>
+   <stages>
+      <li>
+        <minSeverity>0.1</minSeverity>
+        <label></label>
+		<painOffset>.15</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+  
   <HediffDef ParentName="DiseaseBase">
     <defName>SCR_SCP939BreathHediff</defName>
     <label>SCP-939 breath</label>
@@ -104,7 +123,7 @@
   <HediffDef ParentName="DiseaseBase">
     <defName>SCR_SCP666Half_FoodPoisoning</defName>
     <label>SCP-666 1/2-J</label>
-    <description>Awful gastrointestinal illness caused by SCP-666 1/2-J. The patient will vomit and feel very sick for some time.</description>
+    <description>An awful gastrointestinal illness caused by SCP-666 1/2-J. The patient will vomit and feel very sick for some time.</description>
     <scenarioCanAdd>true</scenarioCanAdd>
     <initialSeverity>1</initialSeverity>
 	<maxSeverity>1</maxSeverity>

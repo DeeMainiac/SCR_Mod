@@ -32,17 +32,15 @@ Got one or all of the DLCs? There are some SCPs and factions that get more of th
 
 # Current SCPs
 
-Check this [wiki page](https://github.com/DeeMainiac/SCR_Mod/wiki/List-of-SCPs-and-factions) for a handy dandy list. 
+Almost 50 are available! Check this [wiki page](https://github.com/DeeMainiac/SCR_Mod/wiki/List-of-SCPs-and-factions) for a handy dandy list. 
 
 # Credits
 
-SCP-160 sprite, SCP-745 sprite, SCP-1905-1 and 2 sprites, SCP-5185 sprite, SCP-1675 sprite, Chaos Insurgency clothing, SCP Foundation clothing, and GOC Clothing sprites by SydCalaharia ([Steam profile](https://steamcommunity.com/profiles/76561198081910575) )
+Content relating to the SCP Foundation, including the SCP Foundation logo and other logos/icons, is licensed under [Creative Commons Sharealike 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and all concepts originate from http://www.scpwiki.com and its authors. This includes the sprites/xml in this project as well. However, keep in mind most sprites I've done for this project are spliced, so I don't recommend using them anywhere but for the context of RimWorld.
+
+SCP-160 sprite, SCP-745 sprite, SCP-1905-1 and 2 sprites, SCP-5185 sprite, SCP-1675 sprite, SCP-154 sprite, SCP-060 sprite, SCP-019 sprites, Nobody Storyteller sprite, Chaos Insurgency clothing, SCP Foundation clothing, and GOC Clothing sprites by SydCalaharia ([Steam profile](https://steamcommunity.com/profiles/76561198081910575) )
 
 SCP-ES-019 sprite, SCP-762 sprite, SCP-939 sprites, SCP-1762 sprites, SCP-1695 sprites, and SCP-131 sprites by Monti ( Monti#9691 | [Steam profile](https://steamcommunity.com/id/montyi/) )
-
-Nobody Storyteller Icon by MingoMongo on DeviantArt under CC-BY-SA 3.0 [found here](https://www.deviantart.com/mingomongo/art/SCP-Nobody-Simple-Logo-750830298).
-
-Content relating to the SCP Foundation, including the SCP Foundation logo and other logos/icons, is licensed under [Creative Commons Sharealike 3.0](https://creativecommons.org/licenses/by-sa/3.0/) and all concepts originate from http://www.scpwiki.com and its authors. This includes the sprites/xml in this project as well. However, keep in mind most sprites I've done for this project are spliced, so I don't recommend using them anywhere but for the context of RimWorld.
 
 Programming + the rest of the art (not icons) by DeeMainiac
 
@@ -50,4 +48,4 @@ Programming + the rest of the art (not icons) by DeeMainiac
 
 Send a bug report ('issue') right here on GitHub via the issues tab
 
-@me on discord (DeeMainiac#2893)
+Official discord server coming soon

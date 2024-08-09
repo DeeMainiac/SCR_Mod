@@ -152,7 +152,13 @@
 			<categories>
 			  <li>Offworld</li>
 			</categories>
-			<commonality>0.5</commonality>
+			<commonality>0.2</commonality>
+		  </li>
+		  <li>
+			<categories>
+				<li>SCR_GOC</li>
+			</categories>
+		  <commonality>1.15</commonality>
 		  </li>
 		</backstoryFilters>
 		 <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>

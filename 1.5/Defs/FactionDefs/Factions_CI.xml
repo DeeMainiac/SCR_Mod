@@ -104,7 +104,88 @@
 			<li>Base_Neolithic_Standard</li> <!-- Place holder -->
 		</baseTraderKinds>
 		<raidLootMaker>TSP_SCR_SCP_Factions_Want_SCP_Items</raidLootMaker>
-		<pawnGroupMakers>
+	<pawnGroupMakers>
+	      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+        <options>
+          <Pirate>10</Pirate>
+          <Grenadier_EMP>10</Grenadier_EMP>
+          <Grenadier_Destructive>2</Grenadier_Destructive>
+          <Mercenary_Gunner>20</Mercenary_Gunner>
+          <Mercenary_Heavy>6</Mercenary_Heavy>
+          <Mercenary_Slasher>3</Mercenary_Slasher>
+          <Mercenary_Sniper>10</Mercenary_Sniper>
+          <Mercenary_Elite>10</Mercenary_Elite>
+		  <PirateBoss>10</PirateBoss>
+		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
+        </options>
+      </li>
+	
+	 <!-- SCP-3033-1 raids, melee-only -->
+	 <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <SCR_SCP30331_Mike>200</SCR_SCP30331_Mike>
+		  <SCR_SCP30332_Controller>60</SCR_SCP30332_Controller>
+		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">15</VFEP_Footsoldier>
+        </options>
+      </li>
+	  
+	 <li MayRequire="OskarPotocki.VFE.Pirates">
+        <kindDef MayRequire="OskarPotocki.VFE.Pirates">Combat</kindDef>
+        <commonality MayRequire="OskarPotocki.VFE.Pirates">10</commonality>
+        <options MayRequire="OskarPotocki.VFE.Pirates">
+		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">999</VFEP_Footsoldier>
+        </options>
+      </li>
+	
+	      <li>
+        <!-- Base defense, mainly ranged with melee mix-ins -->
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Pirate>10</Pirate>
+          <Grenadier_Destructive>2</Grenadier_Destructive>
+          <Mercenary_Slasher>3</Mercenary_Slasher>
+          <Mercenary_Sniper>10</Mercenary_Sniper>
+          <Mercenary_Gunner>10</Mercenary_Gunner>
+          <Mercenary_Elite>10</Mercenary_Elite>
+          <PirateBoss>10</PirateBoss>
+		  <SCR_SCP30331_Mike>24</SCR_SCP30331_Mike>
+		  <SCR_SCP30332_Controller>1</SCR_SCP30332_Controller>
+		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
+        </options>
+      </li>
+	    <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader>1</Town_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1000</Elephant>
+        </carriers>
+        <guards>
+		  <SCR_SCP30331_Mike>24</SCR_SCP30331_Mike>
+		  <SCR_SCP30332_Controller>1</SCR_SCP30332_Controller>
+		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
+		  <Mercenary_Elite>10</Mercenary_Elite>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Mercenary_Elite>10</Mercenary_Elite>
+          <PirateBoss>10</PirateBoss>
+		  <SCR_SCP30331_Mike>24</SCR_SCP30331_Mike>
+		  <SCR_SCP30332_Controller>1</SCR_SCP30332_Controller>
+		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">5</VFEP_Footsoldier>
+        </options>
+      </li>
 			  <li>
 					<!-- Normal fights, ranged with melee mix-ins -->
 					<kindDef>Combat</kindDef>
@@ -167,7 +248,7 @@
 				</options>
 			  </li>
 			
-				  <li>
+			  <li>
 				<!-- Base defense, mainly ranged with melee mix-ins -->
 				<kindDef>Settlement</kindDef>
 				<options>
@@ -245,6 +326,12 @@
 		</pawnGroupMakers>
 		<permanentEnemy>true</permanentEnemy>
 		 <backstoryFilters>
+			<li>
+				<categories>
+					<li>SCR_CI</li>
+				</categories>
+				<commonality>1.6</commonality>
+			</li>
 		  <li>
 			<categories>
 			  <li>Raider</li>

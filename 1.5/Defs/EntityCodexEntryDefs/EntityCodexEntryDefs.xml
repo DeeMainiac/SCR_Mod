@@ -41,6 +41,21 @@
   </EntityCodexEntryDef>
 
   <EntityCodexEntryDef>
+    <defName>SCR_SCP060R</defName>
+    <label>SCP-060</label>
+    <category>SCR_SCP</category>
+	<description>SCP-060 is a white oak tree. If it catches fire, it causes SCP-060-Alpha, a large, dangerous, and intelligent skeleton, to appear. This entity continues to spread fires and cause property damage.</description>
+    <uiIconPath>Things/Plant/SCR_SCP060/SCR_SCP060Preview</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>60</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP060R</li>
+	  <li>SCR_SCP060AlphaR</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
     <defName>SCR_SCP095UA</defName>
     <label>SCP-095-UA</label>
     <category>SCR_SCP</category>
@@ -107,6 +122,20 @@
     <orderInCategory>131</orderInCategory>
     <linkedThings>
       <li>SCR_SCP131R</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
+    <defName>SCR_SCP154R</defName>
+    <label>SCP-154</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP154R</useDescriptionFrom>
+    <uiIconPath>Things/Item/Equipment/WeaponRanged/SCR_SCP154</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>154</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP154R</li>
     </linkedThings>
   </EntityCodexEntryDef>
 

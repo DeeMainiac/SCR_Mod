@@ -68,7 +68,6 @@
 		<!-- <li>scp.onlyclothes</li> -->
 		<li>ods.scp.mod</li>
 	</incompatibleWith>
-	<!-- =================================================================== -->
 	<description>Adds stuff from the SCP Foundation project. Requires Harmony and Humanoid Alien Races. Not compatible with other SCP mods.
 	Includes a storyteller, a biome, creatures, a pawn race, weapons, apparel, objects, factions, buildings, research projects, furniture, and containment procedures!</description>
 </ModMetaData>
