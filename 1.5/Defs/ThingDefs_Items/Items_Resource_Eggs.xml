@@ -258,8 +258,11 @@
 				<hatcherPawn>SCR_SCP2584R</hatcherPawn>
 			</li>
 		</comps>
+			<tradeTags>
+				<li>SCP</li>
+				<li>EggSCP</li>
+			</tradeTags>
 	</ThingDef>
-
 
 	<ThingDef ParentName="SCR_EggBase">
 		<defName>TSP_SCR_SCP745Egg</defName>
@@ -267,15 +270,17 @@
 		<description>A fertilized SCP-745 egg. If all goes well, it should hatch into an instance of SCP-745. It can be eaten raw, but it's much better cooked. The glowing headlight of the embryo can be seen through the shell!</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(245,245,245)</color>
 		</graphicData>
 		<statBases>
-			<DeteriorationRate>0.15</DeteriorationRate>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DeteriorationRate>0.5</DeteriorationRate>
 			<Flammability>0</Flammability>
-			<MarketValue>10.0</MarketValue>
+			<MarketValue>7.0</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>1</hatcherDaystoHatch>
+				<hatcherDaystoHatch>0.0001</hatcherDaystoHatch>
 				<hatcherPawn>SCR_SCP745R</hatcherPawn>
 			</li>
 			<li Class="CompProperties_Glower">
@@ -289,7 +294,7 @@
 				<li>EggSCP</li>
 			</tradeTags>
 	</ThingDef>
-
+	
 	<ThingDef ParentName="SCR_EggBase">
 		<defName>SCR_SCP1948Egg</defName>
 		<label>SCP-1948 egg (fert.)</label>
@@ -310,5 +315,9 @@
 				<hatcherPawn>SCR_SCP1948R</hatcherPawn>
 			</li>
 		</comps>
+			<tradeTags>
+				<li>SCP</li>
+				<li>EggSCP</li>
+			</tradeTags>
 	</ThingDef>	
 </Defs>
