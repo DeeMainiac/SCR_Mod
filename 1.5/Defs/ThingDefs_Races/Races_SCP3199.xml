@@ -41,21 +41,21 @@
 					<baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
 					<getsColdContainmentBonus>true</getsColdContainmentBonus>
 				  </li>
-				  <li Class="CompProperties_AttachPoints">
-					<points>
-					  <li>
+				  <li Class="CompProperties_AttachPoints" MayRequire="ludeon.rimworld.anomaly">
+					<points MayRequire="ludeon.rimworld.anomaly">
+					  <li MayRequire="ludeon.rimworld.anomaly">
 						<offset>(-.35, 0, .1)</offset>
 						<type>PlatformRestraint0</type>
 					  </li>
-					  <li>
+					  <li MayRequire="ludeon.rimworld.anomaly">
 						<offset>(.26, 0, .3)</offset>
 						<type>PlatformRestraint1</type>
 					  </li>
-					  <li>
+					  <li MayRequire="ludeon.rimworld.anomaly">
 						<offset>(.3, 0, -.6)</offset>
 						<type>PlatformRestraint2</type>
 					  </li>
-					  <li>
+					  <li MayRequire="ludeon.rimworld.anomaly">
 						<offset>(-.2, 0, -.7)</offset>
 						<type>PlatformRestraint3</type>
 					  </li>
@@ -117,84 +117,84 @@
 				<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 		<tools>
-		<li>
-			<label>talons</label>
-			<capacities>
-			  <li>Scratch</li>
-			</capacities>
-			<power>10</power>
-			<cooldownTime>1.5</cooldownTime>
-			<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
-			<surpriseAttack>
-			  <extraMeleeDamages>
-				<li>
-				  <def>Stun</def>
-				  <amount>12</amount>
-				</li>
-			  </extraMeleeDamages>
-			</surpriseAttack>
-		  </li>
-		  <li>
-			<!-- My autism's kicking in and I am having trouble describing this: basically, imagine the SCP-3199 instance rearing it's long neck back like a baseball bat and then slamming forward, using its skull to crash into you and cause serious damage. -->
-			<label>neck slam</label> 
-			<capacities>
-			  <li>Blunt</li>
-			</capacities>
-			<power>20</power>
-			<cooldownTime>1</cooldownTime>
-			<linkedBodyPartsGroup>Neck</linkedBodyPartsGroup> <!-- Body Part Group assigned to its neck -->
-			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-			<chanceFactor>0.81</chanceFactor>
-			<surpriseAttack>
-			  <extraMeleeDamages>
-				<li>
-				  <def>Stun</def>
-				  <amount>28</amount>
-				</li>
-			  </extraMeleeDamages>
-			</surpriseAttack>
-		  </li>
-		  <li>
-			<label>head</label>
-			<capacities>
-			  <li>Blunt</li>
-			</capacities>
-			<power>10</power>
-			<cooldownTime>2.1</cooldownTime>
-			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-			<chanceFactor>0.2</chanceFactor>
-			<surpriseAttack>
-			  <extraMeleeDamages>
-				<li>
-				  <def>Stun</def>
-				  <amount>12</amount>
-				</li>
-			  </extraMeleeDamages>
-			</surpriseAttack>
-		  </li>
-		  <li>
-			<!-- It canonically has a venomous bite. Why was this left out? -->
-			<label>acidic bite</label>
-			<capacities>
-			  <li>ToxicBite</li>
-			  <li MayRequire="ludeon.rimworld.biotech">TSP_SCR_SCP3199_Acid</li>
-			  <!-- <li MayRequire="ludeon.rimworld.biotech">AcidBurn</li> -->
-			</capacities>
-			<power>14</power>
-			<cooldownTime>2.66</cooldownTime>
-			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-			<chanceFactor>1.5</chanceFactor>
-			<surpriseAttack>
-			  <extraMeleeDamages>
-				<li>
-				  <def>Stun</def>
-				  <amount>18</amount>
-				</li>
-			  </extraMeleeDamages>
-			</surpriseAttack>
-		  </li>
+			<li>
+				<label>talons</label>
+				<capacities>
+				  <li>Scratch</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>12</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			  </li>
+			  <li>
+				<!-- My autism's kicking in and I am having trouble describing this: basically, imagine the SCP-3199 instance rearing it's long neck back like a baseball bat and then slamming forward, using its skull to crash into you and cause serious damage. -->
+				<label>neck slam</label> 
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>Neck</linkedBodyPartsGroup> <!-- Body Part Group assigned to its neck -->
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.81</chanceFactor>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>28</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			  </li>
+			  <li>
+				<label>head</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.1</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>12</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			  </li>
+			  <li>
+				<!-- It canonically has a venomous bite. Why was this left out? -->
+				<label>acidic bite</label>
+				<capacities>
+				  <li>ToxicBite</li>
+				  <li MayRequire="ludeon.rimworld.biotech">TSP_SCR_SCP3199_Acid</li>
+				  <!-- <li MayRequire="ludeon.rimworld.biotech">AcidBurn</li> -->
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.66</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>1.5</chanceFactor>
+				<surpriseAttack>
+				  <extraMeleeDamages>
+					<li>
+					  <def>Stun</def>
+					  <amount>18</amount>
+					</li>
+				  </extraMeleeDamages>
+				</surpriseAttack>
+			  </li>
 		</tools>
 	</ThingDef>
 	  

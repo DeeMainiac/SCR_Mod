@@ -494,7 +494,7 @@
 		  <baseBodySize>1.15</baseBodySize>
 		  <baseHealthScale>2.25</baseHealthScale>
 		  <foodType>Meat, CarnivoreAnimal, OmnivoreHuman, Fluid, Liquor, Seed, Kibble</foodType>
-		  <gestationPeriodDays>59</gestationPeriodDays> <!-- As they mate once a year -->
+		  <gestationPeriodDays>59</gestationPeriodDays> <!-- As they canonically mate once a year -->
 		  <meatMarketValue>0.8</meatMarketValue>
 		  <manhunterOnDamageChance>2</manhunterOnDamageChance>
 		  <manhunterOnTameFailChance>2</manhunterOnTameFailChance>

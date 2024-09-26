@@ -31,12 +31,11 @@
 			<li>Astropolitan</li>
 		</allowedCultures>
 		<requiredMemes>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
-				<!-- <li MayRequire="vanillaexpanded.vmemese">VME_Structure_Authoritarianism</li> -->
 				<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology,erdelf.humanoidalienraces">HAR_Xenophobia</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology,deemainiac.securecontainrimworld">Ritualist</li>
 		</requiredMemes>
 		<disallowedMemes>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
@@ -45,7 +44,6 @@
 				<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
 
-				<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
 				<li MayRequire="llunak.MorePrecepts">Pacifism</li>
 				<li MayRequire="Qux.factionhippie">PeaceLove</li>
 				<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
@@ -62,6 +60,10 @@
 				<li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">Research_ExtremelySlow</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Research_VerySlow</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Research_Slow</li>
 
 				<!-- The following Precepts are only forbidden if you have the Mod -->
 				<li MayRequire="martinbaste.Ideo.XenoPrecept,Ludeon.RimWorld.Ideology">XenoDiversity_Horrible</li>
@@ -90,6 +92,15 @@
 				<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Horrible</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Disapproved</li>
 		</disallowedPrecepts>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+			<MorrowRim_Structure_OriginDagothUr MayRequire="Ludeon.RimWorld.Ideology,sirmashedpotato.morrowrim.thesixthhouse">4</MorrowRim_Structure_OriginDagothUr>
+			<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology,vanillaexpanded.vmemese">11</VME_Structure_Eschatologism>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">0.02</Structure_Ideological>
+			<VME_Structure_Authoritarianism MayRequire="vanillaexpanded.vmemese,Ludeon.RimWorld.Ideology">11</VME_Structure_Authoritarianism>
+			<VME_Structure_Esotericism MayRequire="vanillaexpanded.vmemese,Ludeon.RimWorld.Ideology">1</VME_Structure_Esotericism>
+		</structureMemeWeights>
 		<caravanTraderKinds>
 			<li>Caravan_Neolithic_Slaver</li>
 			<li MayRequire="TSP.Isengriff.Storytime">TSP_ST_MMT_Caravan_LivingVehicle</li>

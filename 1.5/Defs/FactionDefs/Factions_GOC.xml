@@ -31,11 +31,12 @@
 			<li>Astropolitan</li>
 		</allowedCultures>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li> -->
 			<!-- <li MayRequire="vanillaexpanded.vmemese">VME_Structure_Authoritarianism</li> -->
 			<li MayRequire="sarg.alphamemes">AM_Iconoclast</li>
-			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li> -->
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology,deemainiac.securecontainrimworld">Ritualist</li>
 		</requiredMemes>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
@@ -56,6 +57,10 @@
 			<li MayRequire="SZ.TW.New.GuoHun,Ludeon.RimWorld.Ideology">SZ_Structure_CultureQiYuan</li>
 		</disallowedMemes>
 		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_ExtremelySlow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_VerySlow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_Slow</li>
+		
 			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
 
@@ -65,6 +70,12 @@
 			
 			<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Essential</li>
 		</disallowedPrecepts>
+		<structureMemeWeights>
+			<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology,vanillaexpanded.vmemese">1</VME_Structure_Eschatologism>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<VME_Structure_Authoritarianism MayRequire="vanillaexpanded.vmemese,Ludeon.RimWorld.Ideology">3</VME_Structure_Authoritarianism>
+			<VME_Structure_Esotericism MayRequire="vanillaexpanded.vmemese,Ludeon.RimWorld.Ideology">7</VME_Structure_Esotericism>
+		</structureMemeWeights>
 		<caravanTraderKinds>
 		  <li>Caravan_Outlander_BulkGoods</li>
 		</caravanTraderKinds>
@@ -161,7 +172,7 @@
 		  <commonality>1.15</commonality>
 		  </li>
 		</backstoryFilters>
-		 <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		 <hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
 		<maxPawnCostPerTotalPointsCurve>
 		  <points>
 			<li>(400,200)</li>
