@@ -6,6 +6,7 @@
     <label>SCP-3199 flock</label>
     <targetTags>
       <li>Map_PlayerHome</li>
+	  <li>Map_RaidBeacon</li>
     </targetTags>
     <workerClass>SecureContainRimworld.IncidentWorker_SCP3199</workerClass>
     <baseChance>3</baseChance>
@@ -135,39 +136,39 @@
 
 <!-- Storyteller Specific Events -->
 
-<IncidentDef>
-    <defName>SCR_Incident_SCP3199_Hunt_Storyteller</defName>
-    <label>SCP-3199 flock</label>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-      <li>Map_TempIncident</li>
-      <li>Map_Misc</li>
-      <li>Map_RaidBeacon</li>
-    </targetTags>
-    <workerClass>SecureContainRimworld.IncidentWorker_SCP3199</workerClass>
-    <baseChance>3</baseChance>
-    <category>SCR_SCPThreat</category>
-    <pointsScaleable>true</pointsScaleable>
-    <tale>ManhunterPack</tale>
-	<minRefireDays>20</minRefireDays>
-  </IncidentDef>
+	<IncidentDef>
+		<defName>SCR_Incident_SCP3199_Hunt_Storyteller</defName>
+		<label>SCP-3199 flock</label>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		  <li>Map_TempIncident</li>
+		  <li>Map_Misc</li>
+		  <li>Map_RaidBeacon</li>
+		</targetTags>
+		<workerClass>SecureContainRimworld.IncidentWorker_SCP3199</workerClass>
+		<baseChance>3</baseChance>
+		<category>SCR_SCPThreat</category>
+		<pointsScaleable>true</pointsScaleable>
+		<tale>ManhunterPack</tale>
+		<minRefireDays>20</minRefireDays>
+	</IncidentDef>
 
-  <IncidentDef>
-    <defName>SCR_Incident_SCP939_Hunt_Storyteller</defName>
-    <label>SCP-3199 pack</label>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-      <li>Map_TempIncident</li>
-      <li>Map_Misc</li>
-      <li>Map_RaidBeacon</li>
-    </targetTags>
-    <workerClass>SecureContainRimworld.IncidentWorker_SCP939</workerClass>
-    <baseChance>3</baseChance>
-    <category>SCR_SCPThreat</category>
-    <pointsScaleable>true</pointsScaleable>
-    <tale>ManhunterPack</tale>
-	<minRefireDays>20</minRefireDays>
-  </IncidentDef>
+	<IncidentDef>
+		<defName>SCR_Incident_SCP939_Hunt_Storyteller</defName>
+		<label>SCP-3199 pack</label>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		  <li>Map_TempIncident</li>
+		  <li>Map_Misc</li>
+		  <li>Map_RaidBeacon</li>
+		</targetTags>
+		<workerClass>SecureContainRimworld.IncidentWorker_SCP939</workerClass>
+		<baseChance>3</baseChance>
+		<category>SCR_SCPThreat</category>
+		<pointsScaleable>true</pointsScaleable>
+		<tale>ManhunterPack</tale>
+		<minRefireDays>20</minRefireDays>
+	</IncidentDef>
 
   <IncidentDef>
     <defName>SCR_Incident_SCP131Join_Storyteller</defName>

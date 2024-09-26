@@ -32,10 +32,7 @@
           <RestRateMultiplier>0.5</RestRateMultiplier>
         </statOffsets>
 		<skillGains>
-          <li>
-            <key>Shooting</key>
-            <value>4</value>
-          </li>
+          <Shooting>4</Shooting>
         </skillGains>
       </li>
     </degreeDatas>
