@@ -54,7 +54,7 @@
 		<slot>Adulthood</slot>
 		<title>safe D-class</title>
 		<titleShort>d-class</titleShort>
-		<description>[PAWN_nameDef] was a death-row inmate or unfortunate prisoner obtained by the SCP Foundation for the purpose of studying SCPs. [PAWN_pronoun] came into contact with safe-classed SCPs on the regular.</description>
+		<description>[PAWN_nameDef] was a death-row inmate or unfortunate prisoner obtained by the SCP Foundation for the purpose of studying SCP's. [PAWN_pronoun] came into contact with safe-classed SCP's on the regular.</description>
 		<skillGains>
 			<Construction>2</Construction>
 			<Intellectual>-2</Intellectual>
@@ -67,6 +67,9 @@
 		</workDisables>
 		<spawnCategories>
 			<li>Pirate</li>
+			<li>Madman</li>
+			<li>Outsider</li>
+			<li>Raider</li>
 			<li>Offworld</li>
 			<li>SCR_Foundation</li>
 		</spawnCategories>
@@ -79,7 +82,7 @@
 		<slot>Adulthood</slot>
 		<title>doomed D-class</title>
 		<titleShort>D-class</titleShort>
-		<description>[PAWN_nameDef] was a death-row inmate or unfortunate prisoner obtained by the SCP Foundation for the purpose of studying SCPs. [PAWN_pronoun] came into contact with Euclid or Keter-classed SCPs on the regular and has been frequently amnesticized. [PAWN_pronoun] was slated for execution.</description>
+		<description>[PAWN_nameDef] was a death-row inmate or unfortunate prisoner obtained by the SCP Foundation for the purpose of studying SCP's. [PAWN_pronoun] came into contact with Euclid or Keter-classed SCP's on the regular and has been frequently amnesticized. [PAWN_pronoun] was slated for execution.</description>
 		<skillGains>
 			<Construction>2</Construction>
 			<Intellectual>-2</Intellectual>
@@ -105,7 +108,7 @@
 		<slot>Adulthood</slot>
 		<title>D-class</title>
 		<titleShort>D-class</titleShort>
-		<description>[PAWN_nameDef] was convicted of a violent crime and sentenced to death. The SCP Foundation obtained [PAWN_pronoun] for the purpose of studying SCPs. [PAWN_pronoun] was slated for execution.</description>
+		<description>[PAWN_nameDef] was convicted of a violent crime and sentenced to death. The SCP Foundation obtained [PAWN_pronoun] for the purpose of studying SCP's. [PAWN_pronoun] was slated for execution.</description>
 		<skillGains>
 			<Construction>2</Construction>
 			<Social>-4</Social>
@@ -158,7 +161,7 @@
 		<defName>SCR_FContainSpecialist</defName>
 		<identifier>SCR_FContainSpecialist</identifier>
 		<slot>Adulthood</slot>
-		<title>foundation containment specialist</title>
+		<title>Foundation containment specialist</title>
 		<titleShort>containment specialist</titleShort>
 		<description>[PAWN_nameDef] is part of a containment team. [PAWN_possessive] containment team is sent out to secure anomalous objects and contain them for further processing.</description>
 		<skillGains>
@@ -184,9 +187,9 @@
 		<defName>SCR_FContainTech</defName>
 		<identifier>SCR_FContainTech</identifier>
 		<slot>Adulthood</slot>
-		<title>foundation containment technician</title>
+		<title>Foundation containment technician</title>
 		<titleShort>containment technician</titleShort>
-		<description>[PAWN_nameDef] helps refine and maintain the containment of SCPs and other anomalies. [PAWN_pronoun] works closely with other foundation personnel.</description>
+		<description>[PAWN_nameDef] helps refine and maintain the containment of SCP's and other anomalies. [PAWN_pronoun] works closely with other Foundation personnel.</description>
 		<skillGains>
 			<Construction>6</Construction>
 			<Intellectual>2</Intellectual>
@@ -207,9 +210,9 @@
 		<defName>SCR_FResearchAssistant</defName>
 		<identifier>SCR_FResearchAssistant</identifier>
 		<slot>Adulthood</slot>
-		<title>foundation research assistant</title>
+		<title>Foundation research assistant</title>
 		<titleShort>research assistant</titleShort>
-		<description>[PAWN_nameDef] is a well-rounded assistant among the foundation's research staff. [PAWN_pronoun] is proficient in getting to various locations around the facility, so much so that others have difficulty keeping up with [PAWN_possessive].</description>
+		<description>[PAWN_nameDef] is a well-rounded assistant among the Foundation's research staff. [PAWN_pronoun] is proficient in getting to various locations around the facility, so much so that others have difficulty keeping up with [PAWN_possessive].</description>
 		<skillGains>
 			<Medicine>5</Medicine>
 			<Intellectual>3</Intellectual>
@@ -235,9 +238,9 @@
 		<defName>SCR_FChemistResearch</defName>
 		<identifier>SCR_FChemistResearch</identifier>
 		<slot>Adulthood</slot>
-		<title>foundation chemistry researcher</title>
-		<titleShort>foundation chemist</titleShort>
-		<description>[PAWN_nameDef] is a specialized researcher trained in chemistry. [PAWN_pronoun] is knowledgeable about chemicals and helps research SCPs on a chemical level.</description>
+		<title>Foundation chemistry researcher</title>
+		<titleShort>Foundation chemist</titleShort>
+		<description>[PAWN_nameDef] is a specialized researcher trained in chemistry. [PAWN_pronoun] is knowledgeable about chemicals and helps research SCP's on a chemical level.</description>
 		<skillGains>
 			<Medicine>5</Medicine>
 			<Intellectual>3</Intellectual>
@@ -262,9 +265,9 @@
 		<defName>SCR_FBotanyResearch</defName>
 		<identifier>SCR_FBotanyResearch</identifier>
 		<slot>Adulthood</slot>
-		<title>foundation botany researcher</title>
-		<titleShort>foundation botanist</titleShort>
-		<description>[PAWN_nameDef] is a specialized researcher trained in botany. [PAWN_pronoun] is knowledgeable about plants and animals, and brings this expertise to the foundation to better contain SCPs and anomalies.</description>
+		<title>Foundation botany researcher</title>
+		<titleShort>Foundation botanist</titleShort>
+		<description>[PAWN_nameDef] is a specialized researcher trained in botany. [PAWN_pronoun] is knowledgeable about plants and animals, and brings this expertise to the Foundation to better contain SCP's and anomalies.</description>
 		<skillGains>
 			<Medicine>3</Medicine>
 			<Intellectual>3</Intellectual>
@@ -291,7 +294,7 @@
 		<defName>SCR_FAnomalyResearch</defName>
 		<identifier>SCR_FAnomalyResearch</identifier>
 		<slot>Adulthood</slot>
-		<title>foundation anomaly researcher</title>
+		<title>Foundation anomaly researcher</title>
 		<titleShort>SCP researcher</titleShort>
 		<description>[PAWN_nameDef] is a specialized researcher. [PAWN_pronoun] spends most of [PAWN_possessive] time researching unexplained anomalies, trying to figure out how they operate.</description>
 		<skillGains>
@@ -319,7 +322,7 @@
 		<defName>SCR_FSecurityOfficer</defName>
 		<identifier>SCR_FSecurityOfficer</identifier>
 		<slot>Adulthood</slot>
-		<title>foundation security officer</title>
+		<title>Foundation security officer</title>
 		<titleShort>security officer</titleShort>
 		<description>[PAWN_nameDef] is part of a larger crew of officers who are tasked with maintaining physical or information security for Foundation projects, operations, and personnel. [PAWN_pronoun] is often the first line of defense against external threats.</description>
 		<skillGains>
@@ -344,7 +347,7 @@
 		<defName>SCR_FTacticalResponseO</defName>
 		<identifier>SCR_FTacticalResponseO</identifier>
 		<slot>Adulthood</slot>
-		<title>foundation tactical response officer</title>
+		<title>Foundation tactical response officer</title>
 		<titleShort>tactical response officer</titleShort>
 		<description>[PAWN_nameDef] is a skilled member of a combat team. [PAWN_pronoun] helps escort containment teams when situations are dangerous. [PAWN_nameDef] is used to being ready at the drop of a hat, even during sleep.</description>
 		<skillGains>
@@ -368,7 +371,7 @@
 		<defName>SCR_FFieldAgent</defName>
 		<identifier>SCR_FFieldAgent</identifier>
 		<slot>Adulthood</slot>
-		<title>foundation field agent</title>
+		<title>Foundation field agent</title>
 		<titleShort>field agent</titleShort>
 		<description>[PAWN_nameDef] is trained to look for and investigate any signs of unidentified anomalous activity. [PAWN_pronoun] is trained to go undercover in local services.</description>
 		<skillGains>
@@ -393,7 +396,7 @@
 		<defName>SCR_FSiteDirector</defName>
 		<identifier>SCR_FSiteDirector</identifier>
 		<slot>Adulthood</slot>
-		<title>foundation site director</title>
+		<title>Foundation site director</title>
 		<titleShort>site director</titleShort>
 		<description>[PAWN_nameDef] is usually the most important person in a local Foundation site. All departmental directors report directly to [PAWN_possessive].</description>
 		<skillGains>
