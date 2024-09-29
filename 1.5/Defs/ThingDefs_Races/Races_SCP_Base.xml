@@ -43,6 +43,7 @@
 	</ThingDef>
   
 	<PawnKindDef Name="TSP_SCP_Creature_PawnkindDef" ParentName="AnimalKindBase" Abstract="True">
+		<overrideDebugActionCategory MayRequire="ludeon.rimworld.anomaly">Entity</overrideDebugActionCategory>
 		<ecoSystemWeight>0</ecoSystemWeight>
 	</PawnKindDef>  
 </Defs>

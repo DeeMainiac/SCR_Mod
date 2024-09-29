@@ -84,11 +84,11 @@
     <baseWeatherCommonalities>
       <Clear>0.015</Clear>
       <Fog>15</Fog>
-      <DryThunderstorm>0.25</DryThunderstorm>
+      <!-- <DryThunderstorm>0.025</DryThunderstorm> -->
       <RainyThunderstorm>1</RainyThunderstorm>
       <FoggyRain>3</FoggyRain>
-      <SnowGentle>5</SnowGentle>
-      <SnowHard>6</SnowHard>
+      <SnowGentle>3</SnowGentle>
+      <SnowHard>8</SnowHard>
 	  <RG_Blizzard MayRequire="regrowth.botr.core">5</RG_Blizzard> <!-- As it is found in northern Russia -->
 	  <RG_SandStorm MayRequire="regrowth.botr.core">6</RG_SandStorm>
 	  <RG_FoggySandstorm MayRequire="regrowth.botr.core">6</RG_FoggySandstorm>
@@ -103,6 +103,7 @@
 		<Plant_TreeDrago>0.0345</Plant_TreeDrago>
 		<Plant_TreeOak>0.011</Plant_TreeOak>
 		<Plant_Rafflesia>0.05</Plant_Rafflesia>
+		<Plant_TreeHarbinger MayRequire="ludeon.rimworld.anomaly">0.2</Plant_TreeHarbinger>
 		<AB_AlienTree MayRequire="sarg.alphabiomes">0.25</AB_AlienTree>
 		<AB_HalfAlienTree MayRequire="sarg.alphabiomes">0.865</AB_HalfAlienTree>
 		<AB_GlobularPlant MayRequire="sarg.alphabiomes">2</AB_GlobularPlant>
@@ -147,6 +148,10 @@
 		<Boomrat>0.05</Boomrat>
 		<Boomalope>0.06</Boomalope>
 		<WildBoar>0.1</WildBoar>
+		<Bulbfreak MayRequire="ludeon.rimworld.anomaly">0.085</Bulbfreak>
+		<Toughspike MayRequire="ludeon.rimworld.anomaly">0.15</Toughspike>
+		<Fingerspike MayRequire="ludeon.rimworld.anomaly">1</Fingerspike>
+		<Dreadmeld MayRequire="ludeon.rimworld.anomaly">0.001</Dreadmeld>
 		<Toxalope MayRequire="Ludeon.RimWorld.Biotech">2</Toxalope>
 		<WasteRat MayRequire="Ludeon.RimWorld.Biotech">2</WasteRat>
 		<BMT_Trilobite MayRequire="biomesteam.biomesprehistoric">2</BMT_Trilobite>
@@ -173,10 +178,9 @@
 		<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.42</Toxalope>
     </pollutionWildAnimals>
     <allowedPackAnimals>
-      <li>Muffalo</li>
+      <!-- <li>Muffalo</li> -->
       <li>Dromedary</li>
       <li>Elephant</li>
-      <li>Alpaca</li>
     </allowedPackAnimals>
 		<terrainPatchMakers>
 			<li MayRequire="sarg.alphabiomes">
@@ -211,12 +215,4 @@
 			</li>
 		</terrainPatchMakers>
   </BiomeDef>
-
-
-
-
-
-
-
-
 </Defs>

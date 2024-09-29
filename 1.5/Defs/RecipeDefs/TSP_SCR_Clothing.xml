@@ -7,6 +7,7 @@
 		<description>Assemble the Black Suit and Grey Suit to make a Global Occult Colalition White Suit.</description>
 		<jobString>Making power armor.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
 		<effectWorking>Cook</effectWorking>
 		<workAmount>1000</workAmount>
 		<soundWorking>Recipe_SmashCorpseMechanoid</soundWorking>
@@ -50,7 +51,6 @@
 			<SCR_GOCWhitesuit>1</SCR_GOCWhitesuit>
 			<SCR_GOCWhitesuitHelmet>1</SCR_GOCWhitesuitHelmet>
 		</products>
-		<workSkill>Crafting</workSkill>
 		<recipeUsers>
 			<li>TableMachining</li>
 			<li>FabricationBench</li>
@@ -113,16 +113,15 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<SCR_GOCWhitesuit>1</SCR_GOCWhitesuit>
-			<SCR_GOCWhitesuitHelmet>1</SCR_GOCWhitesuitHelmet>
+			<SCR_ClassDJumpsuit>1</SCR_ClassDJumpsuit>
 		</products>
-		<workSkill>Crafting</workSkill>
 		<recipeUsers>
-			<li>TableMachining</li>
-			<li>FabricationBench</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+			<li>CraftingSpot</li>
 		</recipeUsers>
 		<researchPrerequisites>
-			<li>SCR_GOCGearAdvSuit</li>
+			<li>SCR_FoundationGear</li>
 		</researchPrerequisites>
 	</RecipeDef>
 </Defs>

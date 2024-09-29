@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
+	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional" MayRequire="ludeon.rimworld.anomaly">
+		<xpath MayRequire="ludeon.rimworld.anomaly">/Defs/MeditationFocusDef[defName="Void"]/requiredBackstoriesAny</xpath>
+		<nomatch Class="PatchOperationAdd" MayRequire="ludeon.rimworld.anomaly">
+			<xpath>/Defs/MeditationFocusDef[defName="Void"]</xpath>
+			<success>Always</success>
+			<value MayRequire="ludeon.rimworld.anomaly">
+				<requiredBackstoriesAny></requiredBackstoriesAny>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/BackstoryDef/spawnCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/BackstoryDef</xpath>
+			<success>Always</success>
+			<value>
+				<spawnCategories></spawnCategories>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/BackstoryDef/spawnCategories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/AlienRace.AlienBackstoryDef</xpath>
+			<success>Always</success>
+			<value>
+				<spawnCategories></spawnCategories>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/MeditationFocusDef[defName="Void"]/requiredBackstoriesAny</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/MeditationFocusDef[defName="Void"]/requiredBackstoriesAny</xpath>
+			<value>
+				<!-- <li>TSP_CanIntoHoraxVoid_Meditate</li> -->
+				<li>
+					<categoryName>TSP_CanIntoHoraxVoid_Meditate</categoryName>
+					<slot>Childhood</slot> <!-- Should be Adulthood, but Ludeon hasn't fixed the bug yet -->
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

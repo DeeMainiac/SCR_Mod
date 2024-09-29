@@ -25,6 +25,7 @@
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>Electricity</li>
+	  <li MayRequire="ludeon.rimworld.anomaly">EntityContainment</li>
 	  <li MayRequire="jecrell.doorsexpanded">ProjectHeron_PrisonDoors</li>
     </prerequisites>
     <researchViewX>1</researchViewX>
@@ -57,26 +58,27 @@
     <researchViewX>1</researchViewX>
     <researchViewY>3</researchViewY>
 	<prerequisites>
-		<li MayRequire="jecrell.doorsexpanded">ProjectHeron_PrisonDoors</li>
 		<li>Machining</li>
+		<li MayRequire="ludeon.rimworld.anomaly">EntityContainment</li>
+		<li MayRequire="jecrell.doorsexpanded">ProjectHeron_PrisonDoors</li>
 		<li MayRequire="Mlie.AncientRimCore">AR_Project_Metal_II</li> <!-- Steel forging -->
 	</prerequisites>
   </ResearchProjectDef>
   
     <ResearchProjectDef>
-    <defName>SCR_WallTier2</defName>
-    <label>plasteel reinforced walls</label>
-	<tab>SCR_SCP</tab>
-    <description>Allows for the construction of concrete walls strengthened with plasteel rebar. Keeps most SCP's contained.</description>
-    <baseCost>2000</baseCost>
-    <techLevel>Spacer</techLevel>
-    <prerequisites>
-      <li>SCR_WallTier1</li>
-	  <li MayRequire="jecrell.doorsexpanded">ProjectHeron_RemoteDoors</li>
-    </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>3</researchViewY>
-  </ResearchProjectDef>
+		<defName>SCR_WallTier2</defName>
+		<label>plasteel reinforced walls</label>
+		<tab>SCR_SCP</tab>
+		<description>Allows for the construction of concrete walls strengthened with plasteel rebar. Keeps most SCP's contained.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		  <li>SCR_WallTier1</li>
+		  <li MayRequire="jecrell.doorsexpanded">ProjectHeron_RemoteDoors</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>SCR_SecurityDoors</defName>
