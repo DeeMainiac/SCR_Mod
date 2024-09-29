@@ -44,7 +44,9 @@
       </li>
     </comps>
 		<race>
-			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+			<deathAction>
+				<workerClass>SecureContainRimworld.DeathActionWorker_SCP3199_SpawnEgg</workerClass>
+			</deathAction>
 			<thinkTreeMain>SCR_SCPAI</thinkTreeMain>
 			<body>SCR_BipedalQuad</body>
 			<predator>false</predator>

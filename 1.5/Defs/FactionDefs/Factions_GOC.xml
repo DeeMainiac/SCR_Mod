@@ -7,7 +7,7 @@
 		<description>A large collection of anomalous and occult organizations. They seek to keep humanlikes safe from anomalous and paranormal entities by destroying them. They have particularly shaky relationships with powerful groups that hold and use anomalous entities.</description>
 	    <pawnSingular>peacekeeper</pawnSingular>
 		<pawnsPlural>peacekeepers</pawnsPlural>
-		<listOrderPriority>11</listOrderPriority>
+		<listOrderPriority>50</listOrderPriority>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<maxCountAtGameStart>1</maxCountAtGameStart>
 		<fixedName>Global Occult Coalition</fixedName>
@@ -169,7 +169,7 @@
 			<categories>
 				<li>SCR_GOC</li>
 			</categories>
-		  <commonality>1.15</commonality>
+		  <commonality>2</commonality>
 		  </li>
 		</backstoryFilters>
 		 <hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>

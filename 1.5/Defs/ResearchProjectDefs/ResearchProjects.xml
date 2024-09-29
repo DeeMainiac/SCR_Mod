@@ -109,4 +109,88 @@
     <researchViewY>3</researchViewY>
   </ResearchProjectDef>
 
+
+<!-- Faction Clothing research ====================================================== -->
+
+  <ResearchProjectDef>
+    <defName>SCR_FoundationGear</defName>
+    <label>foundation personnel apparel</label>
+	<tab>SCR_SCP</tab>
+    <description>craft useful researching gear often worn by SCP Foundation personnel. Includes glasses, lab coat, and a suit jacket, as well as "prison garb" for D-Class subjects.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+	  <li>ComplexClothing</li>
+    </prerequisites>
+    <researchViewX>0.50</researchViewX>
+    <researchViewY>3.80</researchViewY>
+  </ResearchProjectDef>
+
+<!-- Insignia'd Helmets -->
+
+  <ResearchProjectDef>
+    <defName>SCR_InsigniaHelmets</defName>
+    <label>simple insignia helmets</label>
+	<tab>SCR_SCP</tab>
+    <description>Create simple helmets with faction insignias on them.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Machining</li>
+	  <li>ComplexClothing</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>4.80</researchViewY>
+  </ResearchProjectDef>
+
+<!-- GOC -->
+
+  <ResearchProjectDef>
+    <defName>SCR_GOCGearSuit</defName>
+    <label>Global Occult Coalition suits</label>
+	<tab>SCR_SCP</tab>
+    <description>Create the suits the GOC frequently fields. Includes the Black Suit and the Grey Suit.</description>
+    <baseCost>900</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>FlakArmor</li>
+    </prerequisites>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.80</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>SCR_GOCGearAdvSuit</defName>
+    <label>Global Occult Coalition advanced suits</label>
+	<tab>SCR_SCP</tab>
+    <description>Create the suits the GOC is proud to arm its soldiers with. Includes the White Suit and helmet.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+	  <li>SCR_GOCGearSuit</li>
+	  <li>Fabrication</li>
+    </prerequisites>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>4.80</researchViewY>
+  </ResearchProjectDef>
+
+<!-- CI -->
+
+  <ResearchProjectDef>
+    <defName>SCR_CIGear</defName>
+    <label>Chaos Insurgency gear</label>
+	<tab>SCR_SCP</tab>
+    <description>Create the gear the Chaos Insurgency frequently fields. Includes the gas mask and the military vest.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Machining</li>
+	  <li>ComplexClothing</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>5.80</researchViewY>
+  </ResearchProjectDef>
+
 </Defs>

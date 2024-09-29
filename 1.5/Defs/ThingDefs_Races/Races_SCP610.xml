@@ -44,6 +44,7 @@
 		  <foodType>CarnivoreAnimalStrict, Corpse, Fungus, Kibble</foodType>
 		  <leatherDef>Leather_Patch</leatherDef>
 		  <useMeatFrom>Human</useMeatFrom> <!-- Temporary, I have some plans for this -->
+		  <specificMeatDef IsNull="True" Inherit="False"></specificMeatDef>
 		  <gestationPeriodDays>10</gestationPeriodDays>
 		  <nameOnTameChance>0</nameOnTameChance>
 		  <trainability>None</trainability>
@@ -120,12 +121,12 @@
 				</mergeCompatibilityTags>
 			</ingredient>
 		<comps>
-			<li Class="CompProperties_HoldingPlatformTarget">
+			<li Class="CompProperties_HoldingPlatformTarget"  MayRequire="ludeon.rimworld.anomaly">
 				<baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
 				<getsColdContainmentBonus>false</getsColdContainmentBonus>
 			</li>
 	  
-			<li Class="CompProperties_AttachPoints">
+			<li Class="CompProperties_AttachPoints" MayRequire="ludeon.rimworld.anomaly">
 				<points>
 					<li>
 						<offset>(-.3, 0, .35)</offset>
@@ -244,7 +245,10 @@
 		  <maxPreyBodySize>5</maxPreyBodySize>
 		  <foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Corpse, Fungus, Kibble</foodType>
 		  <leatherDef>Leather_Patch</leatherDef>
-		  <useMeatFrom>Human</useMeatFrom> <!-- Temporary, I have some plans for this -->
+		  <useMeatFrom>Human</useMeatFrom> <!-- Temporary, I have some plans for this -->		  
+		  <bloodDef>Filth_AmnioticFluid</bloodDef>
+		  <bloodSmearDef>Filth_AmnioticFluid</bloodSmearDef>
+		  <specificMeatDef IsNull="True" Inherit="False"></specificMeatDef>
 		  <gestationPeriodDays>10</gestationPeriodDays>
 		  <nameOnTameChance>0</nameOnTameChance>
 		  <trainability>None</trainability>
@@ -335,12 +339,12 @@
 				</mergeCompatibilityTags>
 			</ingredient>
 			<comps>
-				<li Class="CompProperties_HoldingPlatformTarget">
+				<li Class="CompProperties_HoldingPlatformTarget"  MayRequire="ludeon.rimworld.anomaly">
 					<baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
 					<getsColdContainmentBonus>false</getsColdContainmentBonus>
 				</li>
 		  
-				<li Class="CompProperties_AttachPoints">
+				<li Class="CompProperties_AttachPoints" MayRequire="ludeon.rimworld.anomaly">
 					<points>
 						<li>
 							<offset>(-.3, 0, .35)</offset>

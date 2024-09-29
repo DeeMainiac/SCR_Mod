@@ -31,8 +31,7 @@
 						<chance>999</chance>
 					</li>
 					<li>
-						<defName>DrugDesire</defName>
-						<degree>2</degree>
+						<defName Degree="2">DrugDesire</defName>
 						<chance>0.2</chance>
 					</li>
 					<li>
@@ -175,7 +174,7 @@
 				-->
 			  
 				<bodyTypes Inherit="False">
-					<li>Fat</li> <!-- All instances canonically look obese -->
+					<li>Fat</li> <!-- All instances canonically look obese, but other body types are supported for Genes! -->
 				</bodyTypes>
 			  
 				<customDrawSize>(1.2,1.2)</customDrawSize>
@@ -325,12 +324,12 @@
 					<li>Heads</li>
 					<li>Head</li>
 					<li>Jaw</li>
-					<!-- <li>Fur</li> -->
+					<li>Fur</li>
 					<li>AG_Bodies</li>
 					<li>Bodies</li>
 					<li>Body</li>
 					<li>BeardStyle</li>
-					<!-- <li>Furskin</li> -->
+					<li>Furskin</li>
 				</blackGeneTags>
 				<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
 					<li>Jaw</li>
@@ -359,7 +358,7 @@
 			<MeatAmount>150</MeatAmount>
 			<LeatherAmount>150</LeatherAmount>
 			<RoyalFavorValue>1</RoyalFavorValue>  <!-- LOL... If it would please your highness, one greasy, jail-inked murderer scum.... on the house! -->
-			<PsychicSensitivity>0.27</PsychicSensitivity>  <!--I ain't gonna meditate!!!!-->
+			<PsychicSensitivity>0.27</PsychicSensitivity>  <!-- I ain't gonna meditate!!!! -->
 			<MentalBreakThreshold>0.7</MentalBreakThreshold>
 			<CarryingCapacity>200</CarryingCapacity>
 			<ArrestSuccessChance>1.5</ArrestSuccessChance>
@@ -368,7 +367,7 @@
 			<ShootingAccuracyPawn>6</ShootingAccuracyPawn>
 			<MeleeHitChance>2</MeleeHitChance>
 			<MeleeDodgeChance>0.5</MeleeDodgeChance>
-			<PainShockThreshold>2</PainShockThreshold> <!--And I ain't no wuss either!!!!-->
+			<PainShockThreshold>2</PainShockThreshold> <!-- And I ain't no wuss either!!!! -->
 			<HuntingStealth>2.3</HuntingStealth> <!-- As they canonically live in plain sight -->
 			<SocialImpact>1.5</SocialImpact> <!-- They canonically tricked SCP interrogators into revealing secrets about themselves to the instances -->
 			<MiningSpeed>1.2</MiningSpeed>
@@ -410,6 +409,7 @@
 			<cooldownTime>0.5</cooldownTime>
 			<linkedBodyPartsGroup>TSP_CJ_SCR_1788_LesserArms_Left</linkedBodyPartsGroup>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 			<surpriseAttack>
 			  <extraMeleeDamages>
 				<li>
@@ -448,6 +448,7 @@
 			<cooldownTime>0.5</cooldownTime>
 			<linkedBodyPartsGroup>TSP_CJ_SCR_1788_LesserArms_Right</linkedBodyPartsGroup>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
 			<surpriseAttack>
 			  <extraMeleeDamages>
 				<li>
@@ -485,21 +486,31 @@
 		  <thinkTreeMain>Humanlike</thinkTreeMain>
 		  <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 		  <intelligence>Humanlike</intelligence>
+		  <renderTree>Humanlike</renderTree>
+		  <linkedCorpseKind>Human</linkedCorpseKind>
 		  <makesFootprints>true</makesFootprints>
 		  <lifeExpectancy>250</lifeExpectancy>
 		  <useMeatFrom>Human</useMeatFrom>
 		  <leatherDef>Leather_Human</leatherDef>
+		  <specificMeatDef IsNull="True" Inherit="False"></specificMeatDef>
 		  <nameCategory>HumanStandard</nameCategory>
 		  <body>TSP_CJ_SCR_1788</body>
 		  <baseBodySize>1.15</baseBodySize>
 		  <baseHealthScale>2.25</baseHealthScale>
-		  <foodType>Meat, CarnivoreAnimal, OmnivoreHuman, Fluid, Liquor, Seed, Kibble</foodType>
+		  <foodType>Meat, CarnivoreAnimal, CarnivoreAnimalStrict, OmnivoreHuman, Fluid, Liquor, Seed, Meal, Processed, Kibble</foodType>
 		  <gestationPeriodDays>59</gestationPeriodDays> <!-- As they canonically mate once a year -->
 		  <meatMarketValue>0.8</meatMarketValue>
 		  <manhunterOnDamageChance>2</manhunterOnDamageChance>
 		  <manhunterOnTameFailChance>2</manhunterOnTameFailChance>
-		  <fleshType MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_StrangeFlesh</fleshType>
-		  <bloodDef MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_Filth_BloodCosmicHorror</bloodDef>
+		  <canBecomeShambler MayRequire="ludeon.rimworld.anomaly">false</canBecomeShambler>
+		  <corpseHiddenWhileUndiscovered>false</corpseHiddenWhileUndiscovered> <!-- Exempted from other SCP's -->
+		  <!-- Moved to Patch for "Anomaly" Support -->
+			<!--
+			<fleshType MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_StrangeFlesh</fleshType>
+			-->
+			<fleshType>TSP_SCR_AnomalousFlesh</fleshType>
+			<bloodDef MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_Filth_BloodCosmicHorror</bloodDef>
+			<bloodSmearDef MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_Filth_BloodCosmicHorror</bloodSmearDef>
 		  <litterSizeCurve>
 			<points>
 				<li>(0, 0)</li>
@@ -517,7 +528,7 @@
 			</li>
 			<li>
 			  <def>HumanlikeChild</def>
-			  <minAge>0.1</minAge>
+			  <minAge>0.001</minAge>
 			</li>
 			<li>
 			  <def>HumanlikeTeenager</def>
@@ -525,31 +536,31 @@
 			</li>
 			<li>
 			  <def>HumanlikeAdult</def>
-			  <minAge>13</minAge> <!-- As they instantly turn unto their adult form when puberty starts -->
+			  <minAge>12</minAge> <!-- As they instantly turn unto their adult form when puberty starts -->
 			</li>
 		  </lifeStageAges>
 			  <lifeStageWorkSettings MayRequire="Ludeon.Rimworld.Biotech">
-				<Firefighter>2</Firefighter>
+				<Firefighter>3</Firefighter>
 				<Patient>0</Patient>
-				<Doctor>13</Doctor>
+				<Doctor>12</Doctor>
 				<PatientBedRest>0</PatientBedRest>
 				<Childcare MayRequire="Ludeon.Rimworld.Biotech">13</Childcare>
 				<BasicWorker>3</BasicWorker>
 				<Warden>0</Warden>
-				<Handling>7</Handling>
+				<Handling>5</Handling>
 				<Cooking>5</Cooking>
-				<Hunting>0</Hunting>
+				<Hunting>1</Hunting>
 				<Construction>5</Construction>
 				<Growing>5</Growing>
-				<Mining>0</Mining>
+				<Mining>1</Mining>
 				<PlantCutting>1</PlantCutting>
-				<Smithing>7</Smithing>
-				<Tailoring>7</Tailoring>
-				<Art>13</Art>
-				<Crafting>7</Crafting>
+				<Smithing>5</Smithing>
+				<Tailoring>5</Tailoring>
+				<Art>5</Art>
+				<Crafting>5</Crafting>
 				<Hauling>0</Hauling>
 				<Cleaning>3</Cleaning>
-				<Research>13</Research>
+				<Research>12</Research>
 			  </lifeStageWorkSettings>
 		  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 		  <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
@@ -565,12 +576,12 @@
 				<li MayRequire="Ludeon.Rimworld.Biotech">(8,0)</li>
 				<li MayRequire="Ludeon.Rimworld.Biotech">(12.5,0)</li>
 				<li MayRequire="Ludeon.Rimworld.Biotech">(14,0)</li>
-				<li MayRequire="Ludeon.Rimworld.Biotech">(14.1,0)</li>
-				<li MayRequire="Ludeon.Rimworld.Biotech">(16,0)</li>
-				<li>(18,130)</li>
-				<li>(21,210)</li>
-				<li>(25,210)</li>
-				<li>(30,190)</li>
+				<li>(14.1,100)</li>
+				<li>(16,100)</li>
+				<li>(18,225)</li>
+				<li>(21,110)</li>
+				<li>(25,100)</li>
+				<li>(30,90)</li>
 				<li>(50,10)</li>
 				<li>(60,0.1)</li>
 				<li>(70,0.1)</li>
@@ -581,10 +592,10 @@
 				<li>(300,0)</li>
 			</points>
 		  </ageGenerationCurve>
-		  <hediffGiverSets>
+		  <hediffGiverSets Inherit="False">
 			<li>OrganicStandard</li>
 			<li>Human</li>
-			<li>TSP_CJ_SCR_1788_Flavor_Processing</li>
+			<!-- <li>TSP_CJ_SCR_1788_Flavor_Processing</li> -->
 		  </hediffGiverSets>
 		</race>
 		<recipes>

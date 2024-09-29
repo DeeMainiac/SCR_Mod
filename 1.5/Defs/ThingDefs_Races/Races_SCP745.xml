@@ -36,6 +36,7 @@
 		  <foodType>Meat, CarnivoreAnimalStrict, CarnivoreAnimal, Corpse, Kibble</foodType>
 		  <leatherDef>Leather_Lizard</leatherDef>
 		  <useMeatFrom>Iguana</useMeatFrom>
+		  <specificMeatDef IsNull="True" Inherit="False"></specificMeatDef>
 		  <wildness>0.9</wildness>
 		  <trainability>Advanced</trainability>
 		  <gestationPeriodDays>10</gestationPeriodDays>
@@ -157,17 +158,17 @@
 					<eggLayIntervalDays>6.6</eggLayIntervalDays>
 					<eggCountRange>2~2</eggCountRange>
 				</li>
-					<li Class="GlowingGhoul.CompProperties_GlowingGhoul">
+					<li Class="GlowingGhoul.CompProperties_GlowingGhoul" MayRequire="zal.falloutracesplayableghoul">
 						<!-- <overlightRadius>1</overlightRadius> -->
 						<glowRadius>9</glowRadius>
 						<glowColor>(255,255,255)</glowColor>
 					</li>
-					  <li Class="CompProperties_HoldingPlatformTarget">
+					  <li Class="CompProperties_HoldingPlatformTarget"  MayRequire="ludeon.rimworld.anomaly">
 						<baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
-						<getsColdContainmentBonus>false</getsColdContainmentBonus>
+						<getsColdContainmentBonus>true</getsColdContainmentBonus>
 					  </li>
 					  
-					  <li Class="CompProperties_AttachPoints">
+					  <li Class="CompProperties_AttachPoints" MayRequire="ludeon.rimworld.anomaly">
 						<points>
 						  <li>
 							<offset>(-.3, 0, .4)</offset>

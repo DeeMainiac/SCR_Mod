@@ -34,6 +34,9 @@
 			<nuzzleMtbHours>4</nuzzleMtbHours>
 			<useLeatherFrom>Human</useLeatherFrom>
 			<useMeatFrom>Human</useMeatFrom>
+			<bloodDef>Filth_Blood</bloodDef> <!-- Always bleeds human blood -->
+			<bloodSmearDef>Filth_Blood</bloodSmearDef> <!-- Always bleeds human blood -->
+			<specificMeatDef IsNull="True" Inherit="False"></specificMeatDef>
 			<nameCategory>HumanStandard</nameCategory>
 			<lifeExpectancy>20</lifeExpectancy>
 			<foodType>Corpse, OmnivoreHuman, OvivoreAnimal, Meal, Fluid, Kibble</foodType>

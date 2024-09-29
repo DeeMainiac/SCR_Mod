@@ -295,6 +295,7 @@
 			</tradeTags>
 	</ThingDef>
 	
+	<!--
 	<ThingDef ParentName="SCR_EggBase">
 		<defName>SCR_SCP1948Egg</defName>
 		<label>SCP-1948 egg (fert.)</label>
@@ -320,4 +321,5 @@
 				<li>EggSCP</li>
 			</tradeTags>
 	</ThingDef>	
+	-->
 </Defs>

@@ -41,6 +41,11 @@
 			</li>
 		</skills>
 		<initialWillRange>102~103</initialWillRange>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
 	</PawnKindDef>
 
   <!-- Povery tier - drifter -->

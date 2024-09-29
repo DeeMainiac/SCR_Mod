@@ -116,7 +116,7 @@
 		<postExplosionSpawnThingDef>Filth_Blood</postExplosionSpawnThingDef>
 		<postExplosionSpawnChance>1</postExplosionSpawnChance>
 		<filth>Filth_Blood</filth>
-		<filthCount>4</filthCount>
+		<filthCount>6</filthCount>
     </projectile>
   </ThingDef>
 </Defs>

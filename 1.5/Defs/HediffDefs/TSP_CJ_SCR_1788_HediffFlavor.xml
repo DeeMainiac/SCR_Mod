@@ -7,6 +7,8 @@
 		<label>SCP-1788-1 Power</label>
 		<description>SCP-1788-1 instances are remarkably stronger than any man.</description>
 		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<priceImpact>false</priceImpact>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.4, 1, 0.4)</defaultLabelColor>
 		<isBad>false</isBad>
@@ -15,6 +17,7 @@
 			<li>
 				<label>redundant body parts</label>
 				<becomeVisible>false</becomeVisible>
+				<foodPoisoningChanceFactor>0.5</foodPoisoningChanceFactor>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -31,10 +34,6 @@
 					<li>
 						<capacity>Hearing</capacity>
 						<offset>0.15</offset>
-					</li>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>1</offset> <!-- Four arms -->
 					</li>
 					<li>
 						<capacity>Eating</capacity>

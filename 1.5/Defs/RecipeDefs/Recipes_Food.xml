@@ -40,7 +40,7 @@
 		  </recipeUsers>
 	</RecipeDef>
 
-	   <RecipeDef>
+	<RecipeDef>
 		<defName>SCR_Make666HalfJ</defName>
 		<label>cook SCP-666 1/2-J</label>
 		<description>Makes a slightly salty, mushroom-stuffed, crab dish that gives very nasty food poisoning.</description>
@@ -64,9 +64,7 @@
 			<categories>
 				<li>MeatRaw</li>
 			</categories>
-			<disallowedThingDefs>
-				<li>Meat_Human</li>
-			</disallowedThingDefs>
+			<disallowedThingDefs></disallowedThingDefs>
 		</defaultIngredientFilter>
 		<fixedIngredientFilter>
 			<categories>

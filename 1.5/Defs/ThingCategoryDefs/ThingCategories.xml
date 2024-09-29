@@ -48,4 +48,10 @@
 		<label>SCP Eggs</label>
 		<parent>EggsFertilized</parent>
 	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>TSP_SCR_Corpses_SCP</defName>
+		<label>SCP Corpses</label>
+		<parent>CorpsesAnimal</parent>
+	</ThingCategoryDef>
 </Defs>

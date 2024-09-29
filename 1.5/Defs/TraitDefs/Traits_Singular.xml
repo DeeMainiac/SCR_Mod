@@ -36,7 +36,7 @@
         </skillGains>
       </li>
     </degreeDatas>
-	    <conflictingTraits>
+	<conflictingTraits>
 		<li>Wimp</li>
 		<li>Brawler</li>
     </conflictingTraits>
@@ -45,12 +45,43 @@
     </requiredWorkTags>
   </TraitDef>
 
-
-
-
-
-
-
-
-
+	<TraitDef>
+		<defName>TSP_CJ_SCR_1788_Bonus</defName>
+		<commonality>0</commonality>
+		<degreeDatas>
+			<li>
+				<label>SCP-1788-1 Power</label>
+				<description>SCP-1788-1 instances are remarkably stronger than any man.</description>
+				<marketValueFactorOffset>0.4</marketValueFactorOffset>
+				<hungerRateFactor>0.5</hungerRateFactor>
+				<statFactors>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+					<CarryingCapacity>20</CarryingCapacity>
+				</statFactors>
+				<statOffsets>
+					<RestRateMultiplier>0.5</RestRateMultiplier>
+				</statOffsets>
+				<skillGains>
+					<Shooting>4</Shooting>
+				</skillGains>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>Wimp</li>
+			<li>Brawler</li>
+		</conflictingTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CKeter</li>
+					<li>SCR_DEkhi</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>2</containmentTier>	
+			</li>
+		</modExtensions>
+	</TraitDef>
 </Defs>

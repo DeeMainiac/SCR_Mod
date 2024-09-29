@@ -93,7 +93,7 @@
 				<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Disapproved</li>
 		</disallowedPrecepts>
 		<structureMemeWeights>
-			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">0.5</Structure_TheistEmbodied>
 			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
 			<MorrowRim_Structure_OriginDagothUr MayRequire="Ludeon.RimWorld.Ideology,sirmashedpotato.morrowrim.thesixthhouse">4</MorrowRim_Structure_OriginDagothUr>
 			<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology,vanillaexpanded.vmemese">11</VME_Structure_Eschatologism>
@@ -139,8 +139,8 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-          <SCR_SCP30331_Mike>200</SCR_SCP30331_Mike>
-		  <SCR_SCP30332_Controller>60</SCR_SCP30332_Controller>
+          <SCR_SCP30331_Mike>800</SCR_SCP30331_Mike>
+		  <SCR_SCP30332_Controller>50</SCR_SCP30332_Controller>
 		  <VFEP_Footsoldier MayRequire="OskarPotocki.VFE.Pirates">15</VFEP_Footsoldier>
         </options>
       </li>
@@ -341,7 +341,7 @@
 				<categories>
 					<li>SCR_CI</li>
 				</categories>
-				<commonality>1.6</commonality>
+				<commonality>2</commonality>
 			</li>
 		  <li>
 			<categories>
@@ -371,7 +371,7 @@
 			<categories>
 			  <li>Sadist</li>
 			</categories>
-			<commonality>0.55</commonality>
+			<commonality>0.75</commonality>
 		  </li>
 		</backstoryFilters>
 		 <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>

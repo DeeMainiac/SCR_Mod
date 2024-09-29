@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
+<Defs>
   <IncidentDef>
     <defName>SCR_SCP060Sprout</defName>
     <label>SCP-060 sprout</label>
@@ -15,5 +15,4 @@
     <letterDef>NeutralEvent</letterDef>
 	<minRefireDays>7</minRefireDays>
   </IncidentDef>
-
 </Defs>

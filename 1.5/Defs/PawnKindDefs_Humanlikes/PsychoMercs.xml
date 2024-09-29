@@ -34,6 +34,11 @@
 		<maxGenerationAge>200</maxGenerationAge>
 		<biocodeWeaponChance>0.85</biocodeWeaponChance>
 		<initialWillRange>102~104</initialWillRange>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
 	</PawnKindDef>
 
   <!--  Low merc tier - grenadiers -->
@@ -81,6 +86,11 @@
         <range>6~10</range>
       </li>
     </skills>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
   </PawnKindDef>
   
     <PawnKindDef ParentName="CJ_PsychoGrenadierBase">
@@ -126,6 +136,11 @@
 			<li>AdvancedWeapon</li>
 		</techHediffsTags>
 		<biocodeWeaponChance>0.5</biocodeWeaponChance>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
 	</PawnKindDef>
   
 	<PawnKindDef ParentName="CJ_PsychoMercenaryMidTierBase" Name="CJ_PsychoMercenaryGunnerBase" Abstract="True">
@@ -166,6 +181,11 @@
 			<range>7~20</range>
 		  </li>
 		</skills>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
 	</PawnKindDef>
   
 	<PawnKindDef ParentName="CJ_PsychoMercenaryMidTierBase" Name="CJ_PsychoMercenarySniperBase" Abstract="True">
@@ -199,6 +219,11 @@
 			<range>9~20</range>
 		  </li>
 		</skills>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
 	</PawnKindDef>
   
     <PawnKindDef ParentName="CJ_PsychoMercenaryMidTierBase" Name="CJ_PsychoMercenarySlasherBase" Abstract="True">
@@ -242,7 +267,12 @@
 			<range>14~20</range>
 		  </li>
 		</skills>
-  </PawnKindDef>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
   
 	<PawnKindDef ParentName="CJ_PsychoMercenaryGunnerBase">
 		<defName>CJ_PsychoMercenary_Gunner</defName>
@@ -324,6 +354,11 @@
 		<combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
 		<combatEnhancingDrugsCount>1~6</combatEnhancingDrugsCount>
 		<biocodeWeaponChance>1</biocodeWeaponChance>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
 		<modExtensions>
 			<li Class="VFEAncients.PawnKindExtension_Powers" MayRequire="vanillaexpanded.vfea">
 				<numRandomSuperpowers MayRequire="vanillaexpanded.vfea">1</numRandomSuperpowers>
@@ -363,6 +398,11 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
   </PawnKindDef>
 
   <PawnKindDef ParentName="CJ_PsychoMercenaryEliteBase">
@@ -412,5 +452,10 @@
 			<range>17~20</range>
 		  </li>
 		</skills>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
 	</PawnKindDef>
 </Defs>

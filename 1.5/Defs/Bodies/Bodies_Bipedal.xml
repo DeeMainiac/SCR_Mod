@@ -729,7 +729,7 @@
 					  <depth>Inside</depth>
 					</li>
 					<li>
-						<def>Leg</def>
+						<def>SCR_SuperLeg</def>
 						<customLabel>locomotion organ</customLabel>
 						<coverage>0.02</coverage>
 						<height>Bottom</height>

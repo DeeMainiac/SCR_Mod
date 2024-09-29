@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<RecipeDef>
+		<defName>TSP_SCR_GOC_MakeWhiteSuit</defName>
+		<label>make GOC White Suit</label>
+		<description>Assemble the Black Suit and Grey Suit to make a Global Occult Colalition White Suit.</description>
+		<jobString>Making power armor.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_SmashCorpseMechanoid</soundWorking>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<workSkillLearnFactor>3</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SCR_GOCBlacksuit</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SCR_GOCGreysuit</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SCR_GOCHelmet</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SCR_GOCHelmet</li>
+				<li>SCR_GOCGreysuit</li>
+				<li>SCR_GOCBlacksuit</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SCR_GOCWhitesuit>1</SCR_GOCWhitesuit>
+			<SCR_GOCWhitesuitHelmet>1</SCR_GOCWhitesuitHelmet>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>TableMachining</li>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>SCR_GOCGearAdvSuit</li>
+		</researchPrerequisites>
+	</RecipeDef>
+</Defs>

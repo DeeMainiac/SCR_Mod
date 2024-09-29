@@ -1,178 +1,244 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
+	<ThingDef ParentName="SCR_InsigniaHelmetBase">
+		<defName>SCR_CIHelmet</defName>
+		<label>CI helmet</label>
+			<description>A simple helmet designed to protect the head.\n\nIt has the insignia of the Chaos Insurgency on it.</description>
+		<graphicData>
+		  <texPath>Things/Item/Apparel/CI/ChaosHelmet/SCR_ChaosHelmet_south</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+		  <wornGraphicPath>Things/Item/Apparel/CI/ChaosHelmet/SCR_ChaosHelmet</wornGraphicPath>
+		  <defaultOutfitTags>
+			<li>SCR_CI</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>ChaosInsurgencyWear</li>
+		  </tags>
+		</apparel>
+		<recipeMaker>
+			<!--
+			<researchPrerequisits>
+				<li>SCR_CIGear</li>
+			</researchPrerequisits>
+			-->
+		</recipeMaker>
+	</ThingDef>
 
-<ThingDef ParentName="SCR_InsigniaHelmetBase">
-	<defName>SCR_CIHelmet</defName>
-	<label>CI helmet</label>
-		<description>A simple helmet designed to protect the head.\n\nIt has the insignia of the Chaos Insurgency on it.</description>
-    <graphicData>
-      <texPath>Things/Item/Apparel/CI/ChaosHelmet/SCR_ChaosHelmet_south</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <apparel>
-      <wornGraphicPath>Things/Item/Apparel/CI/ChaosHelmet/SCR_ChaosHelmet</wornGraphicPath>
-      <defaultOutfitTags>
-        <li>SCR_CI</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef>
+	<ThingDef ParentName="HatMakeableBase">       
+		<defName>SCR_CIGasMask</defName>
+		<label>CI gas mask</label>
+		<description>A flexible mask worn over the face with an embedded air filter. It dramatically reduces exposure to pollution through the lungs, but does not protect the skin on the rest of the body.\n\nIt prevents tox gas irritants from entering through the eyes and mouth.\nIt has the Chaos Insurgency insignia on it.</description>
+		<graphicData>
+		  <texPath>Things/Item/Apparel/CI/GasMask/SCR_CIGasMask_south</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <WorkToMake>6000</WorkToMake>
+		  <Mass>1</Mass>
+		  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+		  <EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+		  <Mashed_Ashlands_AshResistance MayRequire="sirmashedpotato.ashlands">0.91</Mashed_Ashlands_AshResistance>
+		</equippedStatOffsets>
+		<recipeMaker>
+		  <researchPrerequisite>SCR_CIGear</researchPrerequisite>
+		  <unfinishedThingDef>UnfinishedMask</unfinishedThingDef>
+		  <recipeUsers Inherit="False">
+			<li>TableMachining</li>
+		  </recipeUsers>
+		  <displayPriority>215</displayPriority>
+		</recipeMaker>
+			<costStuffCount>50</costStuffCount>
+			<stuffCategories>
+				<li>Metallic</li>
+				<li>Fabric</li>
+				<li>Leathery</li>
 
-<ThingDef ParentName="HatMakeableBase">       
-    <defName>SCR_CIGasMask</defName>
-    <label>CI gas mask</label>
-    <description>A flexible mask worn over the face with an embedded air filter. It dramatically reduces exposure to pollution through the lungs, but does not protect the skin on the rest of the body.\n\nIt prevents tox gas irritants from entering through the eyes and mouth.\nIt has the Chaos Insurgency insignia on it.</description>
-    <graphicData>
-      <texPath>Things/Item/Apparel/CI/GasMask/SCR_CIGasMask_south</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>80</MaxHitPoints>
-      <WorkToMake>6000</WorkToMake>
-      <Mass>0.4</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>0.8</EquipDelay>
-    </statBases>
-    <equippedStatOffsets MayRequire="Ludeon.RimWorld.Biotech">
-      <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
-    </equippedStatOffsets>
-    <recipeMaker>
-      <researchPrerequisite>SCR_CIGear</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedMask</unfinishedThingDef>
-      <recipeUsers Inherit="False">
-        <li>TableMachining</li>
-      </recipeUsers>
-      <displayPriority>215</displayPriority>
-    </recipeMaker>
-    <costList>
-      <Steel>20</Steel>
-      <Chemfuel>20</Chemfuel>
-    </costList>
-    <apparel>
-      <countsAsClothingForNudity>false</countsAsClothingForNudity>
-      <developmentalStageFilter >Child, Adult</developmentalStageFilter>
-      <immuneToToxGasExposure MayRequire="Ludeon.RimWorld.Biotech">true</immuneToToxGasExposure>
-      <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Item/Apparel/CI/GasMask/SCR_CIGasMask</wornGraphicPath>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <tags>
-        <li>CI</li>
-      </tags>
-      <forceEyesVisibleForRotations>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </forceEyesVisibleForRotations>
-    </apparel>
-  </ThingDef>
+				<!-- Mod support -->
+				<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+				<li MayRequire="Dubwise.Rimefeller">Composite</li>
+				<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+				<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+				<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+				<li MayRequire="sarg.rimbees">RB_Waxy</li>
+				<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+				<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
+			</stuffCategories>
+		<apparel>
+		  <countsAsClothingForNudity>true</countsAsClothingForNudity> <!-- Nudists don't like a fully covered face -->
+		  <developmentalStageFilter >Child, Adult</developmentalStageFilter>
+		  <immuneToToxGasExposure MayRequire="Ludeon.RimWorld.Biotech">true</immuneToToxGasExposure>
+		  <blocksVision>false</blocksVision>
+		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		  <canBeGeneratedToSatisfyToxicEnvironmentResistance MayRequire="ludeon.rimworld.biotech">true</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		  <bodyPartGroups>
+			<li>FullHead</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Things/Item/Apparel/CI/GasMask/SCR_CIGasMask</wornGraphicPath>
+		  <layers>
+			<li>Eyes</li>
+		  </layers>
+		  <tags>
+			<li>CI</li>
+			<li>ChaosInsurgencyWear</li>
+		  </tags>
+		  <forceEyesVisibleForRotations>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		  </forceEyesVisibleForRotations>
+		</apparel>
+	  </ThingDef>
 
-<ThingDef ParentName="SCR_ApparelNoColorBase">
-	<defName>SCR_MilitaryGarb</defName>
-	<label>military vest</label>
-	<description>A bulletproof vest and camo shirt combination typically worn by Chaos Insurgency soldiers. It has been adopted by other militant groups as a good flak jacket alternative.</description>
-    <graphicData>
-      <texPath>Things/Item/Apparel/CI/CIMilitary/SCR_CIMilitary_Male_south</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<techLevel>Industrial</techLevel>
-	<costList>
-      <Cloth>40</Cloth>
-      <Steel>75</Steel>
-    </costList>
-    <thingCategories>
-      <li>Apparel</li>
-    </thingCategories>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>5000</WorkToMake>
-      <Mass>4</Mass>
-      <Flammability>0.5</Flammability>
-      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.3</ArmorRating_Heat>
-      <Insulation_Cold>1</Insulation_Cold>
-      <EquipDelay>3.5</EquipDelay>
-    </statBases>
-	<equippedStatOffsets>
-    </equippedStatOffsets>
-    <apparel>
-      <bodyPartGroups>
-        <li>Neck</li>
-		<li>Shoulders</li>
-		<li>Torso</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Item/Apparel/CI/CIMilitary/SCR_CIMilitary</wornGraphicPath>
-      <layers>
-        <li>OnSkin</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>SCR_CI</li>
-      </defaultOutfitTags>
-    </apparel>
-	<recipeMaker>
-	      <researchPrerequisite>SCR_CIGear</researchPrerequisite>
-		  <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-      <recipeUsers>
-        <li>ElectricTailoringBench</li>
-        <li>HandTailoringBench</li>
-      </recipeUsers>
-    </recipeMaker>
-  </ThingDef>
+	<ThingDef ParentName="SCR_ApparelNoColorBase">
+		<defName>SCR_MilitaryGarb</defName>
+		<label>military vest</label>
+		<description>A bulletproof vest and camo shirt combination typically worn by Chaos Insurgency soldiers. It has been adopted by other militant groups as a good flak jacket alternative.</description>
+		<graphicData>
+		  <texPath>Things/Item/Apparel/CI/CIMilitary/SCR_CIMilitary_Male_south</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
 
-<ThingDef ParentName="SCR_ApparelNoColorBase">
-	<defName>SCR_ChaosArmor</defName>
-	<label>chaos armor</label>
-		<description>A powerful suit stolen from the GOC and modified, it is an impressive display of anomalous technology.</description>
-    <graphicData>
-      <texPath>Things/Item/Apparel/CI/CIArmor/SCR_CIArmor_Hulk_south</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<techLevel>Spacer</techLevel>
-	<!--<costList>
-      <Cloth>80</Cloth> not allowed to craft at this time, just out in the wild tbh
-    </costList> -->
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>12000</WorkToMake>
-      <Mass>10</Mass>
-      <Flammability>0.4</Flammability>
-      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.7</ArmorRating_Heat>
-      <Insulation_Cold>34</Insulation_Cold>
-      <Insulation_Heat>15</Insulation_Heat>
-      <EquipDelay>10</EquipDelay>
-    </statBases>
-	<equippedStatOffsets>
-    </equippedStatOffsets>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Item/Apparel/CI/CIArmor/SCR_CIArmor</wornGraphicPath>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>SCR_CI</li>
-      </defaultOutfitTags>
-	  <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <soundWear>Wear_PowerArmor</soundWear>
-      <soundRemove>Remove_PowerArmor</soundRemove>
-    </apparel>
-  </ThingDef>
+			<!-- Mod support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+			<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+			<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
+		</stuffCategories>
+		<thingCategories>
+		  <li>Apparel</li>
+		</thingCategories>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <WorkToMake>5000</WorkToMake>
+		  <Mass>4</Mass>
+		  <Flammability>0.5</Flammability>
+		  <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierInsulation_Cold>0.34</StuffEffectMultiplierInsulation_Cold>
+		  <StuffEffectMultiplierInsulation_Heat>0.34</StuffEffectMultiplierInsulation_Heat>
+		  <ArmorRating_Heat>0.3</ArmorRating_Heat>
+		  <Insulation_Cold>1</Insulation_Cold>
+		  <EquipDelay>3.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Torso</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Things/Item/Apparel/CI/CIMilitary/SCR_CIMilitary</wornGraphicPath>
+		  <layers>
+			<li>OnSkin</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>SCR_CI</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>CI</li>
+			<li>ChaosInsurgencyWear</li>
+		  </tags>
+		</apparel>
+		<recipeMaker>
+			  <researchPrerequisites>
+				<li>SCR_CIGear</li>
+			  </researchPrerequisites>
+			  <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		  <recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		  </recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="SCR_ApparelNoColorBase">
+		<defName>SCR_ChaosArmor</defName>
+		<label>chaos armor</label>
+			<description>A powerful suit stolen from the GOC and modified. It is an impressive display of anomalous technology.</description>
+		<graphicData>
+		  <texPath>Things/Item/Apparel/CI/CIArmor/SCR_CIArmor_Hulk_south</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<costStuffCount>200</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+
+			<!-- Mod support -->
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+			<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+		</stuffCategories>
+		<costList>
+			<Uranium>10</Uranium>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<recipeMaker>
+		  <recipeUsers Inherit="False"></recipeUsers> <!-- Cannot be made by yourself, yet -->
+		</recipeMaker>
+		<thingCategories>
+		  <li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>10</Mass>
+			<Flammability>0.4</Flammability>
+			<StuffEffectMultiplierArmor>1.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.45</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1.45</StuffEffectMultiplierInsulation_Heat>
+			<!--
+			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			-->
+			<ArmorRating_Heat>0.7</ArmorRating_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets></equippedStatOffsets>
+		<apparel>
+		  <bodyPartGroups>
+			<li>Torso</li>
+			<li>Neck</li>
+			<li>Shoulders</li>
+			<li>Arms</li>
+			<li>Legs</li>
+			<li>Hands</li>
+			<li>Feet</li>
+		  </bodyPartGroups>
+		  <wornGraphicPath>Things/Item/Apparel/CI/CIArmor/SCR_CIArmor</wornGraphicPath>
+		  <layers>
+			<li>Shell</li>
+		  </layers>
+		  <defaultOutfitTags>
+			<li>SCR_CI</li>
+		  </defaultOutfitTags>
+		  <tags>
+			<li>CI</li>
+			<li>ChaosInsurgencyWearAdvanced</li>
+		  </tags>
+		  <useDeflectMetalEffect>true</useDeflectMetalEffect>
+		  <soundWear>Wear_PowerArmor</soundWear>
+		  <soundRemove>Remove_PowerArmor</soundRemove>
+		</apparel>
+	</ThingDef>
 
 </Defs>

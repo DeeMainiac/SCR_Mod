@@ -53,6 +53,7 @@
 		  <baseHealthScale>1.0</baseHealthScale>
 		  <foodType>OmnivoreAnimal, OvivoreAnimal, VegetarianAnimal, Fluid, Meal, Kibble</foodType>
 		  <useMeatFrom>Megaspider</useMeatFrom>
+		  <specificMeatDef IsNull="True" Inherit="False"></specificMeatDef>
 		  <leatherDef>Leather_Patch</leatherDef>
 		  <gestationPeriodDays>10</gestationPeriodDays>
 		  <litterSizeCurve>

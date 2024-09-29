@@ -35,8 +35,11 @@
 					<customLabel>slave brain</customLabel>
 					<coverage>0.8</coverage>
 					<groups>
+						<li>TSP_CJ_SCR_1788_SlaveOrgan_Brain</li>
+						<!--
 						<li>Torso</li>
 						<li>TSP_CJ_SCR_1788_SlaveOrgan</li>
+						-->
 					</groups>
 				</li>
 			</parts>
@@ -913,6 +916,12 @@
 		<defName>TSP_CJ_SCR_1788_SlaveOrgan</defName>
 		<label>redundant organs</label>
 		<labelShort>redundant organs</labelShort>
+	</BodyPartGroupDef>
+	
+  	<BodyPartGroupDef>
+		<defName>TSP_CJ_SCR_1788_SlaveOrgan_Brain</defName>
+		<label>redundant brain</label>
+		<labelShort>redundant brain</labelShort>
 	</BodyPartGroupDef>
 	
   	<BodyPartGroupDef>

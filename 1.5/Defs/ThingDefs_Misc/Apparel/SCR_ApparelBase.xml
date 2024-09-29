@@ -1,39 +1,59 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-  <ThingDef Name="SCR_ApparelNoColorBase" Abstract="True">
-    <thingClass>Apparel</thingClass>
-    <category>Item</category>
-    <drawerType>MapMeshOnly</drawerType>
-    <selectable>True</selectable>
-    <pathCost>14</pathCost>
-    <useHitPoints>True</useHitPoints>
-    <techLevel>Medieval</techLevel>
-    <graphicData>
-      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
-    </graphicData>
-    <drawGUIOverlay>true</drawGUIOverlay>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>2</DeteriorationRate>
-      <Beauty>-3</Beauty>
-    </statBases>
-    <altitudeLayer>Item</altitudeLayer>
-    <alwaysHaulable>True</alwaysHaulable>
-    <tickerType>Never</tickerType>
-    <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>false</smeltable>
-    <comps>
-      <li Class="CompProperties_Forbiddable"/>
-    </comps>
-  </ThingDef>
+	<ThingDef Name="SCR_ApparelNoColorBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<pathCost>7</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+		  <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<selectable>true</selectable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <DeteriorationRate>0.1</DeteriorationRate>
+		  <Beauty>0</Beauty>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<apparel>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance MayRequire="ludeon.rimworld.biotech">false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<comps>
+		  <li Class="CompProperties_Forbiddable"></li>
+		</comps>
+	</ThingDef>
 
 	<ThingDef Name="SCR_InsigniaHelmetBase" ParentName="SCR_ApparelNoColorBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
-		<costList>
-		  <Cloth>80</Cloth>
-		</costList>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+
+			<!-- Mod support -->
+			<li MayRequire="TaosChagic.Igloo">Snowy</li>
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+			<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			<li MayRequire="sarg.rimbees">RB_Waxy</li>
+			<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+			<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
+		</stuffCategories>
 		<thingCategories>
 		  <li>Apparel</li>
 		</thingCategories>
@@ -41,13 +61,12 @@
 		  <MaxHitPoints>120</MaxHitPoints>
 		  <WorkToMake>4000</WorkToMake>
 		  <Mass>1.2</Mass>
-		  <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+		  <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
 		  <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
 		  <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 		  <EquipDelay>1.5</EquipDelay>
 		</statBases>
-		<equippedStatOffsets>
-		</equippedStatOffsets>
+		<equippedStatOffsets></equippedStatOffsets>
 		<apparel>
 		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 		  <bodyPartGroups>
@@ -63,8 +82,11 @@
 			<li>ElectricTailoringBench</li>
 			<li>HandTailoringBench</li>
 		  </recipeUsers>
+		  <soundWorking>Recipe_SmashCorpseMechanoid</soundWorking>
 		  <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-		  <researchPrerequisite>SCR_InsigniaHelmets</researchPrerequisite>
+		  <researchPrerequisites>	
+			<li>SCR_InsigniaHelmets</li>
+		  </researchPrerequisites>
 		</recipeMaker>
 	</ThingDef>
 </Defs>

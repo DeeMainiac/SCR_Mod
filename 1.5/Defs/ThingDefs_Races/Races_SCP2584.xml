@@ -55,6 +55,7 @@
       <foodType>Meat, CarnivoreAnimal, CarnivoreAnimalStrict, Meal, Processed, Corpse, Fluid, OvivoreAnimal, Liquor, Seed, Kibble</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
       <useMeatFrom>Cobra</useMeatFrom>
+	  <specificMeatDef IsNull="True" Inherit="False"></specificMeatDef>
       <wildness>0</wildness>
       <petness>0.5</petness>
       <manhunterOnTameFailChance>0</manhunterOnTameFailChance>

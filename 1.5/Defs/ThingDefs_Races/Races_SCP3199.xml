@@ -37,7 +37,7 @@
 					<eggLayFemaleOnly>false</eggLayFemaleOnly>
 				  </li>
 				  <li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li> <!-- It refutes humanity by its SHEER SPEED. This Comp causes it to be unable to be slowed down, regardless of the terrain. -->
-				  <li Class="CompProperties_HoldingPlatformTarget">
+				  <li Class="CompProperties_HoldingPlatformTarget"  MayRequire="ludeon.rimworld.anomaly">
 					<baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
 					<getsColdContainmentBonus>true</getsColdContainmentBonus>
 				  </li>
@@ -70,7 +70,9 @@
 			</tradeTags>
 		<race>
 		  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
-		  <deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_SCP3199_SpawnEgg</deathActionWorkerClass>
+			<deathAction>
+				<workerClass>SecureContainRimworld.DeathActionWorker_SCP3199_SpawnEgg</workerClass>
+			</deathAction>
 		  <body>SCR_Neck</body>
 		  <herdAnimal>true</herdAnimal>
 		  <predator>true</predator>

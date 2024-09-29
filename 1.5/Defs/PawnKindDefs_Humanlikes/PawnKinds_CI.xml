@@ -57,6 +57,7 @@
 			 <li>Spear</li>
 			 <li>Lance</li>
 			 <li>Sword</li>
+			 <li>Dagger</li>
 			 <li>MikeSlaveRanged</li>
 			 <li>OrientalHandCannon</li> <!-- TSF_Hand_Mortar -->
 		</weaponTags>
@@ -73,10 +74,18 @@
 		  <li>Wimp</li>
 		  <li>Brawler</li>
 		</disallowedTraits>
-		  <skills>
+		<apparelRequired>
+			<li>SCR_CIHelmet</li>
+			<li>SCR_MilitaryGarb</li>
+		</apparelRequired>
+		<skills>
 		  <li>
 			  <skill>Melee</skill>
-			  <range>4~20</range>
+			  <range>7~20</range>
+		  </li>
+		  <li>
+			  <skill>Shooting</skill>
+			  <range>5~9</range>
 		  </li>
 		</skills>
 		<inventoryOptions>
@@ -88,20 +97,24 @@
 			</li>
 		  </subOptionsChooseOne>
 		</inventoryOptions>
-		<initialResistanceRange>1~2</initialResistanceRange>
-		<initialWillRange>0.01~1.5</initialWillRange>
+		<initialResistanceRange>0.1~0.2</initialResistanceRange>
+		<initialWillRange>0.01~0.5</initialWillRange>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="SCR_CIBase">
 		<defName>SCR_SCP30332_Controller</defName>
 		<label>SCP-3033-2 master</label>
 		<labelPlural>insurgents</labelPlural>
-		<combatPower>90</combatPower>
+		<combatPower>130</combatPower>
 		<apparelMoney>1400~1700</apparelMoney>
 		<weaponMoney>500~2700</weaponMoney>
 		<weaponTags>
 		  <li>Gun</li>
 		</weaponTags>
+		<apparelTags>
+			<li>ChaosInsurgencyWearAdvanced</li>
+			<li>GasMask</li>
+		</apparelTags>
 		<techHediffsMoney>700~1200</techHediffsMoney>
 		<techHediffsChance>100</techHediffsChance>
 		<techHediffsTags Inherit="False">
@@ -114,12 +127,17 @@
 		<disallowedTraits>
 		  <li>Wimp</li>
 		  <li>Brawler</li>
+		  <li>Kind</li>
 		</disallowedTraits>
+		<apparelRequired>
+			<li>SCR_MilitaryGarb</li>
+			<li>SCR_ChaosArmor</li>
+		</apparelRequired>
 		<skills>
-		  <li>
-			  <skill>Social</skill>
-			  <range>4~20</range>
-		  </li>
+			<li>
+				<skill>Social</skill>
+				<range>4~20</range>
+			</li>
 		</skills>
 		<inventoryOptions>
 		  <skipChance>0</skipChance>

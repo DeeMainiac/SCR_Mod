@@ -35,6 +35,7 @@
       <foodType>CarnivoreAnimal, Meat, Corpse, OvivoreAnimal, Fluid, Processed, Meal, Kibble</foodType>
       <leatherDef>Leather_Light</leatherDef>
 	  <useMeatFrom>Cat</useMeatFrom>
+	  <specificMeatDef IsNull="True" Inherit="False"></specificMeatDef>
       <wildness>0</wildness>
       <petness>1</petness>
       <trainability>Intermediate</trainability>

@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingCategoryDef[defName="CorpsesEntity"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingCategoryDef[defName="CorpsesEntity"]/parent</xpath>
+			<value>
+				<parent>CorpsesAnimal</parent>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingCategoryDef[defName="ROM_CosmicHorrorCorpses"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingCategoryDef[defName="TSP_SCR_Corpses_SCP"]/parent</xpath>
+			<value>
+				<parent>ROM_CosmicHorrorCorpses</parent>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingCategoryDef[defName="CorpsesEntity"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingCategoryDef[defName="TSP_SCR_Corpses_SCP"]/parent</xpath>
+			<value>
+				<parent>CorpsesEntity</parent>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional" MayRequire="ludeon.rimworld.anomaly">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingCategoryDef[defName="CorpsesEntity"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingCategoryDef[defName="ROM_CosmicHorrorCorpses"]/parent</xpath>
+			<value>
+				<parent>CorpsesEntity</parent>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional" MayRequire="ludeon.rimworld.anomaly">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingCategoryDef[defName="CorpsesEntity"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingCategoryDef[defName="ROM_CosmicHorrorCorpses"]/parent</xpath>
+			<value>
+				<parent>CorpsesEntity</parent>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="ROM_Filth_BloodCosmicHorror"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="SCR_SCP_Creature_Base"]/race/bloodDef</xpath>
+			<value>
+				<bloodDef>ROM_Filth_BloodCosmicHorror</bloodDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="ROM_Filth_BloodCosmicHorror"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="ROM_Filth_BloodCosmicHorror"]/race/bloodDef</xpath>
+			<value>
+				<bloodDef>ROM_Filth_BloodCosmicHorror</bloodDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="ROM_Filth_BloodCosmicHorror"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="SCR_SCP_Creature_Base"]/race/bloodSmearDef</xpath>
+			<value>
+				<bloodSmearDef>ROM_Filth_BloodCosmicHorror</bloodSmearDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="ROM_Filth_BloodCosmicHorror"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "SCR_SCP610A" or defName = "SCR_SCP610B"]/race/bloodDef</xpath>
+			<value>
+				<bloodDef>ROM_Filth_BloodCosmicHorror</bloodDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Filth_TwistedFlesh"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "SCR_SCP610A" or defName = "SCR_SCP610B"]/race/bloodSmearDef</xpath>
+			<value>
+				<bloodSmearDef>ROM_Filth_BloodCosmicHorror</bloodSmearDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Filth_DarkBlood"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="SCR_SCP_Creature_Base"]/race/bloodDef</xpath>
+			<value>
+				<bloodDef>Filth_DarkBlood</bloodDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Filth_DarkBlood"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="SCR_SCP_Creature_Base"]/race/bloodDef</xpath>
+			<value>
+				<bloodDef>Filth_DarkBlood</bloodDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Filth_DarkBlood"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="SCR_SCP_Creature_Base"]/race/bloodSmearDef</xpath>
+			<value>
+				<bloodSmearDef>Filth_DarkBloodSmear</bloodSmearDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Filth_Fleshmass"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "SCR_SCP610A" or defName = "SCR_SCP610B"]/race/bloodDef</xpath>
+			<value>
+				<bloodDef>Filth_Fleshmass</bloodDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Filth_TwistedFlesh"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName = "SCR_SCP610A" or defName = "SCR_SCP610B"]/race/bloodSmearDef</xpath>
+			<value>
+				<bloodSmearDef>Filth_TwistedFlesh</bloodSmearDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Filth_DarkBlood"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="CJ_Psycho"]/race/bloodDef</xpath>
+			<value>
+				<bloodDef>Filth_DarkBlood</bloodDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Filth_DarkBloodSmear"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="CJ_Psycho"]/race/bloodSmearDef</xpath>
+			<value>
+				<bloodSmearDef>Filth_DarkBloodSmear</bloodSmearDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="ROM_Filth_BloodCosmicHorror"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="CJ_Psycho"]/race/bloodDef</xpath>
+			<value>
+				<bloodDef>ROM_Filth_BloodCosmicHorror</bloodDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="ROM_Filth_BloodCosmicHorror"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="CJ_Psycho"]/race/bloodSmearDef</xpath>
+			<value>
+				<bloodSmearDef>ROM_Filth_BloodCosmicHorror</bloodSmearDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="ROM_Filth_BloodCosmicHorror"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="CJ_Psycho"]/race/bloodSmearDef</xpath>
+			<value>
+				<bloodSmearDef>ROM_Filth_BloodCosmicHorror</bloodSmearDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Meat_Twisted"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="CJ_Psycho"]/race/useMeatFrom</xpath>
+			<value>
+				<useMeatFrom IsNull="True" Inherit="False"></useMeatFrom>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Meat_Twisted"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="CJ_Psycho"]/race/specificMeatDef</xpath>
+			<value>
+				<specificMeatDef>Meat_Twisted</specificMeatDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

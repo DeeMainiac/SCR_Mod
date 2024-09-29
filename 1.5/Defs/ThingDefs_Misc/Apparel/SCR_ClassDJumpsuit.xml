@@ -26,7 +26,7 @@
       <EquipDelay>1.5</EquipDelay>
     </statBases>
 	<equippedStatOffsets>
-      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.35</SlaveSuppressionOffset>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.5</SlaveSuppressionOffset>
     </equippedStatOffsets>
     <apparel>
       <slaveApparel>true</slaveApparel>
@@ -45,7 +45,9 @@
       </defaultOutfitTags>
     </apparel>
 	<recipeMaker>
-	      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+	      <researchPrerequisites>
+			<li>SCR_FoundationGear</li>
+		  </researchPrerequisites>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>

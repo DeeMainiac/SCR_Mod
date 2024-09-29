@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCR_SCP578R</defName>
 		<label>SCP-578</label>
-		<description>SCP-578 is a liquid that, when it comes in contact with human blood, solidifies into a beautiful gemstone known as SCP-578-1.</description>
+		<description>SCP-578 is a liquid that, when it comes in contact with blood, solidifies into a beautiful gemstone known as SCP-578-1.</description>
 			<modExtensions>
 				<li Class="SecureContainRimworld.CProceduresExtension">
 					<classRating>
@@ -41,6 +41,7 @@
 		<allowedArchonexusCount>10000</allowedArchonexusCount>
 		<tradeTags>
 			<li>SCP</li>
+			<li>ExoticMisc</li>
 		</tradeTags>
   </ThingDef>
 
@@ -95,11 +96,11 @@
       <commonality>0.01</commonality>
       <color>(115, 7, 7)</color>
       <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <!-- <soundImpactStuff>BulletImpact_Metal</soundImpactStuff> -->
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <statOffsets>
-        <Beauty>10</Beauty>
+        <Beauty>11</Beauty>
       </statOffsets>
       <statFactors>
         <MaxHitPoints>1</MaxHitPoints>

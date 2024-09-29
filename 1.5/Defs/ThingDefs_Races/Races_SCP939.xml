@@ -153,12 +153,12 @@
         <drugExposure>false</drugExposure>
         <allowMechs>false</allowMechs>
       </li>
-			<li Class="CompProperties_HoldingPlatformTarget">
+			<li Class="CompProperties_HoldingPlatformTarget"  MayRequire="ludeon.rimworld.anomaly">
 				<baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
 				<getsColdContainmentBonus>false</getsColdContainmentBonus>
 			</li>
 	  
-			<li Class="CompProperties_AttachPoints">
+			<li Class="CompProperties_AttachPoints" MayRequire="ludeon.rimworld.anomaly">
 				<points>
 					<li>
 						<offset>(-.4, 0, .4)</offset>

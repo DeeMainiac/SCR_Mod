@@ -35,12 +35,12 @@
 				<drugExposure>true</drugExposure>
 				<allowMechs>false</allowMechs>
 			  </li>
-			<li Class="CompProperties_HoldingPlatformTarget">
+			<li Class="CompProperties_HoldingPlatformTarget"  MayRequire="ludeon.rimworld.anomaly">
 					<baseEscapeIntervalMtbDays>40</baseEscapeIntervalMtbDays>
 					<getsColdContainmentBonus>true</getsColdContainmentBonus>
 				  </li>
 				  
-				  <li Class="CompProperties_AttachPoints">
+				  <li Class="CompProperties_AttachPoints" MayRequire="ludeon.rimworld.anomaly">
 					<points>
 					  <li>
 						<offset>(-.4, 0, .4)</offset>
@@ -69,7 +69,9 @@
 				  </li> -->
 		</comps>
 		<race>
-		  <deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+			<deathAction>
+				<workerClass>DeathActionWorker_BigExplosion</workerClass>
+			</deathAction>
 		  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
 		  <body>QuadrupedAnimalWithHooves</body>
 		  <herdAnimal>false</herdAnimal>
@@ -79,6 +81,7 @@
 		  <foodType>VegetarianRoughAnimal, Corpse, Fluid, Kibble</foodType>
 		  <useLeatherFrom>Deer</useLeatherFrom>
 		  <useMeatFrom>Deer</useMeatFrom>
+		  <specificMeatDef IsNull="True" Inherit="False"></specificMeatDef>
 		  <wildness>1</wildness>
 		  <gestationPeriodDays>6.66</gestationPeriodDays>
 		  <lifeExpectancy>10000</lifeExpectancy>

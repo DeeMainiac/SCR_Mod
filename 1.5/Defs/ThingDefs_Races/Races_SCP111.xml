@@ -24,7 +24,9 @@
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
 		<race>
-		  <deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
+			<deathAction>
+				<workerClass>DeathActionWorker_SmallExplosion</workerClass>
+			</deathAction>
 		  <herdAnimal>true</herdAnimal>
 		  <body>SCR_Snail</body>
 		  <baseBodySize>0.1</baseBodySize>
