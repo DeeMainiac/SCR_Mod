@@ -29,7 +29,7 @@
 
 	<ThingDef ParentName="HatMakeableBase">       
 		<defName>SCR_CIGasMask</defName>
-		<label>CI gas mask</label>
+		<label>gas mask (Chaos Insurgency)</label>
 		<description>A flexible mask worn over the face with an embedded air filter. It dramatically reduces exposure to pollution through the lungs, but does not protect the skin on the rest of the body.\n\nIt prevents tox gas irritants from entering through the eyes and mouth.\nIt has the Chaos Insurgency insignia on it.</description>
 		<graphicData>
 		  <texPath>Things/Item/Apparel/CI/GasMask/SCR_CIGasMask_south</texPath>
@@ -74,7 +74,7 @@
 			</stuffCategories>
 		<apparel>
 		  <countsAsClothingForNudity>true</countsAsClothingForNudity> <!-- Nudists don't like a fully covered face -->
-		  <developmentalStageFilter >Child, Adult</developmentalStageFilter>
+		  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
 		  <immuneToToxGasExposure MayRequire="Ludeon.RimWorld.Biotech">true</immuneToToxGasExposure>
 		  <blocksVision>false</blocksVision>
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
@@ -84,7 +84,7 @@
 		  </bodyPartGroups>
 		  <wornGraphicPath>Things/Item/Apparel/CI/GasMask/SCR_CIGasMask</wornGraphicPath>
 		  <layers>
-			<li>Eyes</li>
+			<li>EyeCover</li>
 		  </layers>
 		  <tags>
 			<li>CI</li>

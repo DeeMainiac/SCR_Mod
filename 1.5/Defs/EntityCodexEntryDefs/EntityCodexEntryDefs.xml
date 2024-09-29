@@ -54,6 +54,21 @@
 	  <li>SCR_SCP060AlphaR</li>
     </linkedThings>
   </EntityCodexEntryDef>
+  
+  <EntityCodexEntryDef>
+    <defName>SCR_SCP091R</defName>
+    <label>SCP-091</label>
+    <category>SCR_SCP</category>
+	<description>SCP-091 is a very large, empty tissue box that, when viewed, inserts itself into the happiest memories of its viewers' life, or in any other memory that positively evokes intense nostalgia. Viewing it and then being asked to talk about a joyful time in one's life will have that person recount it, but with the alteration being the prominent presence of SCP-091.</description>
+    <uiIconPath>Things/Buildings/TSP_SCR_SCP091</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>91</orderInCategory>
+    <linkedThings>
+      <li>TSP_SCR_SCP091R</li>
+	  <li>SCR_SCP060AlphaR</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
 
   <EntityCodexEntryDef>
     <defName>SCR_SCP095UA</defName>
@@ -291,6 +306,8 @@
     <orderInCategory>594</orderInCategory>
     <linkedThings>
       <li>SCR_SCP594R</li>
+	  <li>SCR_SCP594Meat</li>
+	  <li>SCR_ThunderMuttonMeal</li>
     </linkedThings>
   </EntityCodexEntryDef>
 
@@ -298,7 +315,7 @@
     <defName>SCR_SCP610R</defName>
     <label>SCP-610</label>
     <category>SCR_SCP</category>
-    <description>SCP-610 is an aggressive alien, fleshy substance that carpets entire regions, spawning aggressive creatures to defend its fleshy hives with. Any violent contact with SCP-610 instances guarantee infection, of which there is no cure (besides amputation). They are vulnerable to fire.</description>
+    <description>SCP-610 is an aggressive, alien, fleshy substance that carpets entire regions, spawning aggressive creatures to defend its fleshy hives with. Any violent contact with SCP-610 instances guarantee infection, of which there is no cure (besides amputation). They are vulnerable to fire.</description>
     <uiIconPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610B_south</uiIconPath>
     <startDiscovered>true</startDiscovered>
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
@@ -389,16 +406,15 @@
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
     <orderInCategory>857</orderInCategory>
     <linkedThings>
-      <li>SCR_SCP857A</li>
-	  <li>SCR_SCP857B</li>
-      <li>SCR_SCP857C</li>
-    <!--  <li>SCR_SCP857D</li> -->
-      <li>SCR_SCP857E</li>
-    <!--  <li>SCR_SCP857F</li> -->
-      <li>SCR_SCP857G</li>
-      <li>SCR_SCP857H</li>
-	  <li>SCR_SCP857I</li>
-
+		<li>SCR_SCP857A</li>
+		<li>SCR_SCP857B</li>
+		<li>SCR_SCP857C</li>
+		<!-- <li>SCR_SCP857D</li> -->
+		<li>SCR_SCP857E</li>
+		<!-- <li>SCR_SCP857F</li> -->
+		<li>SCR_SCP857G</li>
+		<li>SCR_SCP857H</li>
+		<li>SCR_SCP857I</li>
     </linkedThings>
   </EntityCodexEntryDef>
 
@@ -485,6 +501,21 @@
       <li>SCR_SCP1762R</li>
     </linkedThings>
   </EntityCodexEntryDef>
+  
+	<EntityCodexEntryDef>
+		<defName>SCR_SCP1778</defName>
+		<label>SCP-1778-1</label>
+		<description>A maddened human super soldier, originally pre-selected for sociopathy and violence, and further altered by the now lost ritual of SCP-1778. What separates SCP-1788-1 instances from normal men, besides their cruelty, is their power. SCP-1788-1 instances have redundant organs in their respitory, circulatory, nervous, and digestive systems, plus dual spines and brains. SCP-1788-1 instances have denser bones and their muscle fibers are organized in efficient structures resembling carbon nano-tube latticework. This improves the strength and effiency of both, and causes them to be harder to harm. Do not cross them.</description>
+		<category>SCR_SCP</category>
+		<uiIconPath>Things/Psycho/CJ_Psycho_Preview</uiIconPath>
+		<startDiscovered>true</startDiscovered>
+		<allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+		<orderInCategory>1778</orderInCategory>
+		<linkedThings>
+			<li>CJ_Psycho</li>
+			<li>TSP_CJ_SCR_1788_History</li>
+		</linkedThings>
+	</EntityCodexEntryDef>
 
   <EntityCodexEntryDef>
     <defName>SCR_SCP1797R</defName>
@@ -570,6 +601,7 @@
     <linkedThings>
       <li>SCR_SCP2371JP</li>
 	  <li>SCR_SCP2371JPSeed</li>
+	  <li>TSP_SCR_WEF_KlausCompost</li>
     </linkedThings>
   </EntityCodexEntryDef>
 

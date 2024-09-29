@@ -42,32 +42,41 @@
 			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
 			<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
 		</stuffCategories>
-		<costStuffCount>15</costStuffCount>
+		<costStuffCount>25</costStuffCount>
 		<apparel>
-		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
-		  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-		  <bodyPartGroups>
-			<li>Eyes</li>
-		  </bodyPartGroups>
-		  <wornGraphicPath>Things/Item/Apparel/Foundation/Glasses/SCR_glasses</wornGraphicPath>
-		  <layers>
-			<li>Overhead</li>
-		  </layers>
-		  <tags>
-			<li>Glasses</li>
-			<li>SCP_NonAnomalous_Clothing</li>
-			<li>IndustrialBasic</li>
-			<li>Outlander</li>
-			<li>OniWear</li>
-			<li>Usa</li>
-			<li>RWPGentlemanWear</li>
-			<li>Scientist</li>
-		  </tags>
-		  <forceEyesVisibleForRotations>
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
-		  </forceEyesVisibleForRotations>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<blocksVision>false</blocksVision>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Item/Apparel/Foundation/Glasses/SCR_glasses</wornGraphicPath>
+			<layers>
+				<li>EyeCover</li>
+			</layers>
+			<tags>
+				<li>Glasses</li>
+				<li>SCP_NonAnomalous_Clothing</li>
+				<li>IndustrialBasic</li>
+				<li>Outlander</li>
+				<li>OniWear</li>
+				<li>Usa</li>
+				<li>RWPGentlemanWear</li>
+				<li>Scientist</li>
+			</tags>
+			<forceEyesVisibleForRotations>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</forceEyesVisibleForRotations>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
 		</apparel>
 	  </ThingDef>
 
@@ -78,7 +87,7 @@
 		<description>A stylish suit jacket with a tie.</description>
 		<recipeMaker>
 			  <researchPrerequisites>
-				<li>SCR_FoundationGear</li>
+				<li>ComplexClothing</li>
 			  </researchPrerequisites>
 			  <displayPriority>208</displayPriority>
 		</recipeMaker>
@@ -122,6 +131,9 @@
 			<li>IndustrialAdvanced</li>
 			<li>Outlander</li>
 			<li>CallOfCthulhu_Detective</li>
+			<li>Royal</li>
+			<li>RoyalTier1</li>
+			<li>RoyalTier2</li>
 			<li>WeebClothes</li>
 			<li>Usa</li>
 			<li>president</li>
@@ -133,6 +145,29 @@
 			<li>MF_CorporateTier2</li>
 			<li>MF_CorporateTier3</li>
 			<li>SCP_NonAnomalous_Clothing</li>
+			<li>mafia_survetement</li>
+			<li>RWPGentlemanWear</li>
+			<li>mafia</li>
+			<li>mafia_bonnet</li>
+			<li>Bonnet_mafieux</li>
+			<li>mafia_survetement</li>
+			<li>mafia_bonnet</li>
+			<li>Godfather</li>
+			<li>CallOfCthulhu_Detective</li>
+			<li>CallOfCthulhu_JuniorDetective</li>
+			<li>CallOfCthulhu_Townsfolk</li>
+			<li>RWPWesternWear</li>
+			<li>MWApparel</li>
+			<li>MWApparel1</li>
+			<li>MWApparel2</li>
+			<li>MWApparel3</li>
+			<li>MWApparel4</li>
+			<li>MWApparel5</li>
+			<li>MWApparel6</li>
+			<li>MWApparel7</li>
+			<li>MWApparel8</li>
+			<li>MWApparel9</li>
+			<li>MWApparel10</li>
 		  </tags>
 		  <defaultOutfitTags>
 			<li>Worker</li>
@@ -197,13 +232,13 @@
 			<li>Soldier</li>
 		  </defaultOutfitTags>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<colorGenerator Class="ColorGenerator_StandardApparel"></colorGenerator>
 		<tradeTags>
 		  <li>BasicClothing</li>
 		  <li>SCR_Foundation</li>
 		</tradeTags>
 		<researchPrerequisites Inherit="False">
-		<li>SCR_FoundationGear</li>
+			<li>SCR_FoundationGear</li>
 		</researchPrerequisites>
 	  </ThingDef>
 	 -->

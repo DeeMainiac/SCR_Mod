@@ -142,7 +142,7 @@
 			<preferability>RawBad</preferability>
 			<foodType Inherit="False">VegetableOrFruit, Plant, VegetarianAnimal, VegetarianRoughAnimal, Seed, Tree, Kibble</foodType>
 			<optimalityOffsetHumanlikes>0</optimalityOffsetHumanlikes>
-			<optimalityOffsetFeedingAnimals>20</optimalityOffsetFeedingAnimals>
+			<optimalityOffsetFeedingAnimals>60</optimalityOffsetFeedingAnimals>
 			<tasteThought Inherit="False"></tasteThought>
 			<specialThoughtDirect Inherit="False"></specialThoughtDirect>
 			<specialThoughtAsIngredient Inherit="False"></specialThoughtAsIngredient>
