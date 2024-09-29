@@ -21,6 +21,7 @@
 			<humanRecipeImport>true</humanRecipeImport>
 			<allowHumanBios>true</allowHumanBios>
 			<immuneToAge>true</immuneToAge>
+			<minAgeForAdulthood>13</minAgeForAdulthood>
 			<forcedRaceTraitEntries>
 					<li>
 						<defName>Psychopath</defName>
