@@ -547,4 +547,131 @@
 		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="SecurityDoor"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOO!! -->
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- MOSAICS -->
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEC_Mosaics"]</xpath>
+					<value>
+						<li>SecurityDoor</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="SCR_SecurityDoors"]</xpath>
+					<value>
+						<li>SecurityDoor</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="SCR_SecurityDoors"]</xpath>
+					<value>
+						<li>SecurityDoor</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="SCR_SecurityDoors"]</xpath>
+					<value>
+						<li>SecurityDoor</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="SCR_SecurityDoors"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="SCR_SecurityDoors"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="SCR_SecurityDoors"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="SCR_SecurityDoors"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="SCR_SecurityDoors"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="SCR_SecurityDoors"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>SecurityDoor</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="SCR_SecurityDoors"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>SecurityDoor</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[researchPrerequisite="SCR_SecurityDoors"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>SecurityDoor</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="SCR_SecurityDoors"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="SecurityDoor"]/researchViewX</xpath>
+					<value>
+						<researchViewX>2</researchViewX>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="SecurityDoor"]/researchViewY</xpath>
+					<value>
+						<researchViewY>4</researchViewY>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="SecurityDoor"]/tab</xpath>
+					<value>
+						<tab>SCR_SCP</tab>
+					</value>
+				</li>
+			</operations>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
 </Patch>
