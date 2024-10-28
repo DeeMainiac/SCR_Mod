@@ -1,198 +1,210 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
-
-  <ThingDef ParentName="SCR_SCP_Base">
-    <defName>SCR_SCP3199R</defName>
-    <label>SCP-3199</label>
-    <description>SCP-3199 is a bipedal abomination that will attack its prey with claws and a venomous acid bite. Its eggs are difficult to get rid of, and each instance carries an egg with it shortly after birth. Killing a SCP-3199 instance will not kill the egg inside it. Eggs will only stop hatching in cold temperatures, of which then can be disposed.</description>
-	<modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
-
-	<classRating>
-		<li>SCR_CKeter</li>
-		<li>SCR_DKeneq</li>
-		<li>SCR_RNotice</li>
-	</classRating>
-
-	<containmentTier>2</containmentTier>
-	<willManhuntAfterBreach>true</willManhuntAfterBreach>
-	
-	</li>
-	</modExtensions>
-	
-	<statBases>
-      <MoveSpeed>6.9</MoveSpeed>
-      <MarketValue>300</MarketValue>
-      <ComfyTemperatureMin>1</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>1000</ComfyTemperatureMax> <!-- Under no circumstances should heat kill it, per its canonical article. -->
-	<FilthRate>18</FilthRate>
-    </statBases>
-	    <comps>
-      <li Class="CompProperties_EggLayer">
-        <eggUnfertilizedDef>SCR_SCP3199Egg</eggUnfertilizedDef>
-        <eggFertilizedDef>SCR_SCP3199Egg</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>1.5</eggLayIntervalDays>
-        <eggCountRange>1</eggCountRange>
-		<eggLayFemaleOnly>false</eggLayFemaleOnly>
-      </li>
-	  <li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li> <!-- It refutes humanity by its SHEER SPEED. This Comp causes it to be unable to be slowed down, regardless of the terrain. -->
-    </comps>
-		  	<tradeTags>
-			<li>AnimalRare</li>
-			<li>AnimalFighter</li>
-			<li>SCP</li>
+	<ThingDef ParentName="SCR_SCP_Creature_Base">
+		<defName>SCR_SCP3199R</defName>
+		<label>SCP-3199</label>
+		<description>SCP-3199 is a bipedal abomination that will attack its prey with claws and a venomous acid bite. Its eggs are difficult to get rid of, and each instance carries an egg with it shortly after birth. Killing a SCP-3199 instance will not kill the egg inside it. Eggs will only stop hatching in cold temperatures, in which they then can be disposed.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CKeter</li>
+					<li>SCR_DKeneq</li>
+					<li>SCR_RDanger</li>
+				</classRating>
+				<containmentTier>2</containmentTier>
+				<willManhuntAfterBreach>true</willManhuntAfterBreach>
+			</li>
+		</modExtensions>
+		
+		<statBases>
+		  <MoveSpeed>6.9</MoveSpeed>
+		  <MarketValue>300</MarketValue>
+		  <ComfyTemperatureMin>1</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>1000</ComfyTemperatureMax> <!-- Under no circumstances should heat kill it, per its canonical article. -->
+		  <Flammability>0.25</Flammability>
+		  <SM_AcidDmgMult MayRequire="redmattis.betterprerequisites">0</SM_AcidDmgMult>
+		<FilthRate>18</FilthRate>
+		</statBases>
+			<comps>
+				  <li Class="CompProperties_EggLayer">
+					<eggUnfertilizedDef>SCR_SCP3199Egg</eggUnfertilizedDef>
+					<eggFertilizedDef>SCR_SCP3199Egg</eggFertilizedDef>
+					<eggFertilizationCountMax>1</eggFertilizationCountMax>
+					<eggLayIntervalDays>1.5</eggLayIntervalDays>
+					<eggCountRange>1</eggCountRange>
+					<eggLayFemaleOnly>false</eggLayFemaleOnly>
+				  </li>
+				  <li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li> <!-- It refutes humanity by its SHEER SPEED. This Comp causes it to be unable to be slowed down, regardless of the terrain. -->
+		</comps>
+			<tradeTags>
+				<li>AnimalRare</li>
+				<li>AnimalFighter</li>
+				<li>AnimalFarm</li>
+				<li>AnimalExotic</li>
 			</tradeTags>
-    <race>
-	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
-	  <deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_SCP3199_SpawnEgg</deathActionWorkerClass>
-      <body>SCR_Neck</body>
-	  <herdAnimal>true</herdAnimal>
-      <predator>true</predator>
-	  <needsRest>false</needsRest>
-      <baseBodySize>2</baseBodySize>
-      <baseHungerRate>0.4</baseHungerRate>
-      <baseHealthScale>1.8</baseHealthScale>
-      <foodType>CarnivoreAnimalStrict, Meat, Kibble</foodType>
-      <leatherDef>Leather_Patch</leatherDef>
-	  <specificMeatDef>SCR_SCP3199Meat</specificMeatDef>
-	  <bloodDef>Filth_Fuel</bloodDef> <!-- It canonically becomes more powerful under extreme heat and it causes its eggs to hatch faster. This is intended to represent that. -->
-      <wildness>0.9</wildness>
-      <trainability>Advanced</trainability> <!-- If it REFUTES HUMANITY, then it's pretty dang smart! -->
-      <gestationPeriodDays>10</gestationPeriodDays>
-      <nameOnTameChance>1</nameOnTameChance>
-      <lifeExpectancy>30</lifeExpectancy>
-	  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
-	  <manhunterOnDamageChance>2</manhunterOnDamageChance>
-      <lifeStageAges Inherit="False">
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>0.2</minAge>
-          <soundWounded>Pawn_Wildboar_Wounded</soundWounded>
-          <soundDeath>Pawn_Wildboar_Death</soundDeath>
-          <soundCall>Pawn_Wildboar_Wounded</soundCall>
-          <soundAngry>Pawn_Wildboar_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-    </race>
-    <tools>
-	<li>
-        <label>talons</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>10</power>
-        <cooldownTime>1.5</cooldownTime>
-        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>12</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-	  <li>
-		<!-- My autism's kicking in and I am having trouble describing this: basically, imagine the SCP-3199 instance rearing it's long neck back like a baseball bat and then slamming forward, using its skull to crash into you and cause serious damage. -->
-        <label>neck slam</label> 
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>1</cooldownTime>
-        <linkedBodyPartsGroup>Neck</linkedBodyPartsGroup> <!-- Body Part Group assigned to its neck -->
-		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>28</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>10</power>
-        <cooldownTime>2.1</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>12</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-		<!-- It canonically has a venomous bite. Why was this left out? -->
-        <label>acidic bite</label>
-        <capacities>
-          <li>ToxicBite</li>
-        </capacities>
-        <power>14</power>
-        <cooldownTime>2.66</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.8</chanceFactor>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>18</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-    </tools>
-  </ThingDef>
-  
-  
-  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
-    <defName>SCR_SCP3199R</defName>
-    <label>SCP-3199</label>
-    <race>SCR_SCP3199R</race>
-    <combatPower>200</combatPower>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCR_SCP3199/SCR_SCP3199</texPath>
-          <drawSize>1</drawSize>
-		  <color>(219, 219, 206)</color>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCR_SCP3199/SCR_Dessicated_SCP3199</texPath>
-          <drawSize>1</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCR_SCP3199/SCR_SCP3199</texPath>
-          <drawSize>1.8</drawSize>
-          <shadowData>
-            <volume>(0.25, 0.3, 0.25)</volume>
-            <offset>(0,0,-0.15)</offset>
-          </shadowData> 
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCR_SCP3199/SCR_Dessicated_SCP3199</texPath>
-          <drawSize>1.8</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-  </Defs>
+		<race>
+		  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
+		  <deathActionWorkerClass>SecureContainRimworld.DeathActionWorker_SCP3199_SpawnEgg</deathActionWorkerClass>
+		  <body>SCR_Neck</body>
+		  <herdAnimal>true</herdAnimal>
+		  <predator>true</predator>
+		  <needsRest>false</needsRest> <!-- No Foundation reports show them sleeping, though they do lay dormant sometimes -->
+		  <baseBodySize>2</baseBodySize>
+		  <baseHungerRate>0.4</baseHungerRate>
+		  <baseHealthScale>1.8</baseHealthScale>
+		  <maxPreyBodySize>5</maxPreyBodySize>
+		  <nameCategory>HumanStandard</nameCategory>
+		  <foodType>CarnivoreAnimalStrict, Meat, Kibble</foodType>
+		  <leatherDef>Leather_Patch</leatherDef>
+		  <specificMeatDef>SCR_SCP3199Meat</specificMeatDef>
+		  <bloodDef>Filth_Fuel</bloodDef> <!-- It canonically becomes more powerful under extreme heat and it causes its eggs to hatch faster. This is intended to represent that. -->
+		  <wildness>0.9</wildness>
+		  <trainability>Advanced</trainability> <!-- If it REFUTES HUMANITY, then it's pretty dang smart! -->
+		  <gestationPeriodDays>10</gestationPeriodDays>
+		  <nameOnTameChance>1</nameOnTameChance>
+		  <lifeExpectancy>30</lifeExpectancy>
+		  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+		  <manhunterOnDamageChance>2</manhunterOnDamageChance>
+		  <hediffGiverSets Inherit="False">
+			<li>TSP_SCR_NoAlways_AgingSpawn_SCP3199R</li>
+		  </hediffGiverSets>
+		  <lifeStageAges Inherit="False">
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
+			  <soundWounded>Pawn_Wildboar_Wounded</soundWounded>
+			  <soundDeath>Pawn_Wildboar_Death</soundDeath>
+			  <soundCall>Pawn_Wildboar_Wounded</soundCall>
+			  <soundAngry>Pawn_Wildboar_Angry</soundAngry>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>0.2</minAge>
+			  <soundWounded>Pawn_Wildboar_Wounded</soundWounded>
+			  <soundDeath>Pawn_Wildboar_Death</soundDeath>
+			  <soundCall>Pawn_Wildboar_Wounded</soundCall>
+			  <soundAngry>Pawn_Wildboar_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+				<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+				<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+				<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tools>
+		<li>
+			<label>talons</label>
+			<capacities>
+			  <li>Scratch</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>1.5</cooldownTime>
+			<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>12</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<!-- My autism's kicking in and I am having trouble describing this: basically, imagine the SCP-3199 instance rearing it's long neck back like a baseball bat and then slamming forward, using its skull to crash into you and cause serious damage. -->
+			<label>neck slam</label> 
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>20</power>
+			<cooldownTime>1</cooldownTime>
+			<linkedBodyPartsGroup>Neck</linkedBodyPartsGroup> <!-- Body Part Group assigned to its neck -->
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.81</chanceFactor>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>28</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>2.1</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>12</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<!-- It canonically has a venomous bite. Why was this left out? -->
+			<label>acidic bite</label>
+			<capacities>
+			  <li>ToxicBite</li>
+			  <li MayRequire="ludeon.rimworld.biotech">TSP_SCR_SCP3199_Acid</li>
+			  <!-- <li MayRequire="ludeon.rimworld.biotech">AcidBurn</li> -->
+			</capacities>
+			<power>14</power>
+			<cooldownTime>2.66</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>1.5</chanceFactor>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>18</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		</tools>
+	</ThingDef>
+	  
+	  
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
+		<defName>SCR_SCP3199R</defName>
+		<label>SCP-3199</label>
+		<race>SCR_SCP3199R</race>
+		<combatPower>200</combatPower>
+		<lifeStages>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>Things/Pawn/Animal/SCR_SCP3199/SCR_SCP3199</texPath>
+			  <drawSize>1</drawSize>
+			  <color>(219, 219, 206)</color>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/SCR_SCP3199/SCR_Dessicated_SCP3199</texPath>
+			  <drawSize>1</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>Things/Pawn/Animal/SCR_SCP3199/SCR_SCP3199</texPath>
+			  <drawSize>1.8</drawSize>
+			  <shadowData>
+				<volume>(0.25, 0.3, 0.25)</volume>
+				<offset>(0,0,-0.15)</offset>
+			  </shadowData> 
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/SCR_SCP3199/SCR_Dessicated_SCP3199</texPath>
+			  <drawSize>1.8</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

@@ -5,7 +5,7 @@
 		<label>bean bag round</label>
 		<thingClass>SecureContainRimworld.SCR_Projectile_TranqRifle</thingClass>
 		<projectile>
-			<damageDef>Bullet</damageDef>
+			<damageDef>Stun</damageDef>
 			<damageAmountBase>2</damageAmountBase>
 			<stoppingPower>3.5</stoppingPower>
 			<speed>60</speed>
@@ -26,6 +26,7 @@
 		<soundInteract>Interact_Shotgun</soundInteract>
 		<weaponTags>
 			<li>SCR_SCP</li>
+			<li>NonLethal</li>
 		</weaponTags>
 		<weaponClasses>
 			<li>ShortShots</li>
@@ -39,13 +40,29 @@
 			<AccuracyLong>0.64</AccuracyLong>
 			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
 		</statBases>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		  
+		  <!-- Mod support -->
+		  <li MayRequire="TaosChagic.Igloo">Snowy</li>
+		  <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		  <li MayRequire="Dubwise.Rimefeller">Composite</li>
+		  <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		  <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+		  <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+		  <li MayRequire="sarg.rimbees">RB_Waxy</li>
+		</stuffCategories>
 		<costList>
-			<Steel>60</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 			<MedicineIndustrial>1</MedicineIndustrial>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>SCR_TranqGuns</researchPrerequisite>
+			<researchPrerequisites>
+				<li>SCR_TranqGuns</li>
+			</researchPrerequisites>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -55,8 +72,9 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SCR_Bullet_RiotShotgun</defaultProjectile>
-				<warmupTime>.9</warmupTime>
+				<warmupTime>0.7</warmupTime>
 				<range>16</range>
+				<burstShotCount>2</burstShotCount>
 				<soundCast>Shot_Shotgun</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/BiomeDef/diseases</xpath>
+		<value>
+			<li>
+				<diseaseInc>SCR_Disease_SCP1797R</diseaseInc>
+				<commonality>40</commonality>
+			</li>
+		</value>
+	</Operation>
+</Patch>

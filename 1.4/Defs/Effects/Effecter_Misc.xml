@@ -6,7 +6,7 @@
     <children>
       <li>
         <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
-        <scale>.000001</scale>
+        <scale>0.000001</scale>
         <chancePerTick>0.0001</chancePerTick>
         <positionRadius>10</positionRadius>
         <moteDef>SCR_MoteSCP1762R</moteDef>

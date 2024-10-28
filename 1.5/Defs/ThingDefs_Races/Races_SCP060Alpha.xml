@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
-<ThingDef ParentName="SCR_SCP_Base">
+<Defs>
+	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP060AlphaR</defName>
 		<label>SCP-060-Alpha</label>
 		<description>SCP-060-Alpha is a skeleton that appears after an SCP-060 instance catches fire. It will spread fires and cause destruction until it is destroyed. Firefoam and/or water are the only ways to destroy it quickly.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
-
 				<classRating>
 					<li>SCR_CEuclid</li>
 					<li>SCR_DEkhi</li>
 					<li>SCR_RNotice</li>
 				</classRating>
-
 				<containmentTier>2</containmentTier>
 				<willManhuntAfterBreach>true</willManhuntAfterBreach>
-	
 			</li>
 		</modExtensions>
 			<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -111,7 +108,7 @@
 
 	</ThingDef>
 
-<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
 		<defName>SCR_SCP060AlphaR</defName>
 		<label>SCP-060-Alpha</label>
 		<race>SCR_SCP060AlphaR</race>
@@ -133,5 +130,4 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 </Defs>

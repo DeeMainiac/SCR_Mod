@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
+<Defs>
   <HediffDef ParentName="InfectionBase">
     <defName>SCR_SCP1797R</defName>
     <label>SCP-1797</label>
-    <description>SCP-1797 is an infectious disease similar to the influenza virus, except it also forms tumors that fall off and make SCP-1797-A instances.</description>
+    <description>SCP-1797 is an infectious disease similar to a mild case of the influenza virus, except it also forms tumors that fall off and make SCP-1797-A instances. It cannot kill its host, but it sure is painful!</description>
     <makesSickThought>true</makesSickThought>
-    <lethalSeverity>1</lethalSeverity>
+    <!-- <lethalSeverity>1</lethalSeverity> -->
     <tendable>true</tendable>
     <comps>
       <li Class="HediffCompProperties_TendDuration">
         <baseTendDurationHours>12</baseTendDurationHours>
-        <severityPerDayTended>-0.0773</severityPerDayTended>
+        <severityPerDayTended>-0.0799</severityPerDayTended>
       </li>
       <li Class="HediffCompProperties_Immunizable">
         <severityPerDayNotImmune>0.2488</severityPerDayNotImmune>
-        <immunityPerDaySick>0.2388</immunityPerDaySick>
-        <severityPerDayImmune>-0.4947</severityPerDayImmune>
+        <immunityPerDaySick>0.245</immunityPerDaySick>
+        <severityPerDayImmune>-0.18</severityPerDayImmune>
         <immunityPerDayNotSick>-0.06</immunityPerDayNotSick>
       </li>
 	  <li Class="HediffCompProperties_Discoverable">
@@ -26,6 +26,7 @@
     <stages>
       <li>
         <label>minor</label>
+		<painOffset>0.1</painOffset>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
@@ -42,9 +43,9 @@
         </capMods>
       </li>
       <li>
-        <minSeverity>0.666</minSeverity>
+        <minSeverity>0.65</minSeverity>
         <label>major</label>
-        <vomitMtbDays>1.5</vomitMtbDays>
+		<painOffset>0.1</painOffset>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
@@ -63,9 +64,9 @@
       <li>
         <minSeverity>0.833</minSeverity>
         <label>cat-tastrophe</label>
-        <lifeThreatening>true</lifeThreatening>
-        <vomitMtbDays>0.75</vomitMtbDays>
-        <painOffset>0.05</painOffset>
+        <lifeThreatening>false</lifeThreatening>
+        <vomitMtbDays>4.75</vomitMtbDays>
+        <painOffset>0.25</painOffset>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
@@ -89,7 +90,7 @@
 <HediffDef ParentName="InfectionBase">
     <defName>SCR_SCP610Infection</defName>
     <label>SCP-610 infection</label>
-    <labelNoun>an SCP-610 infection</labelNoun>
+    <labelNoun>a SCP-610 infection</labelNoun>
     <description>SCP-610 infection. A fatal infection inflicted by a creature infested with SCP-610. Even with treatment, this illness can cause large growths of scar tissue and boils. After death, the body will reanimate after some time.</description>
     <makesSickThought>true</makesSickThought>
     <lethalSeverity>1</lethalSeverity>
@@ -98,12 +99,15 @@
       <li Class="HediffCompProperties_TendDuration">
         <baseTendDurationHours>4</baseTendDurationHours>
       </li>
-      <!--<li Class="HediffCompProperties_Immunizable">
+	  <!-- Maybe it should be curable? -->
+      <!--
+	  <li Class="HediffCompProperties_Immunizable">
         <severityPerDayNotImmune>0.84</severityPerDayNotImmune>
         <immunityPerDaySick>0.6441</immunityPerDaySick>
-        <severityPerDayImmune>-0.70</severityPerDayImmune>
-        <immunityPerDayNotSick>-0.40</immunityPerDayNotSick>
-      </li> -->
+        <severityPerDayImmune>-2</severityPerDayImmune>
+        <immunityPerDayNotSick>-1</immunityPerDayNotSick>
+      </li>
+	  -->
       <li Class="HediffCompProperties_Discoverable">
         <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
 		<letterType>NegativeEvent</letterType>
@@ -119,14 +123,18 @@
         <minSeverity>0.33</minSeverity>
         <label>major</label>
 		<lifeThreatening>true</lifeThreatening>
-        <painOffset>0.08</painOffset>
+        <painOffset>0.18</painOffset>
       </li>
       <li>
         <minSeverity>0.78</minSeverity>
-        <label>extreme</label>
+        <label>severe</label>
         <lifeThreatening>true</lifeThreatening>
-        <painOffset>0.12</painOffset>
+        <painOffset>0.4</painOffset>
         <capMods>
+			<li>
+				<capacity>Consciousness</capacity>
+				<setMax>0.87</setMax>
+			</li>
           <li>
             <capacity>Manipulation</capacity>
             <offset>-0.05</offset>
@@ -137,8 +145,32 @@
         <minSeverity>0.87</minSeverity>
         <label>extreme</label>
         <lifeThreatening>true</lifeThreatening>
-        <painOffset>0.85</painOffset>
+        <painOffset>1</painOffset>
         <capMods>
+			<li>
+				<capacity>Consciousness</capacity>
+				<setMax>0.75</setMax>
+			</li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <offset>-0.05</offset>
+          </li>
+		  </capMods>
+		</li>
+      <li>
+        <minSeverity>0.945</minSeverity>
+        <label>terminal</label>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.9</painOffset>
+        <capMods>
+			<li>
+				<capacity>Consciousness</capacity>
+				<setMax>0.5</setMax>
+			</li>
           <li>
             <capacity>Manipulation</capacity>
             <offset>-0.1</offset>

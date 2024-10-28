@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
-<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="BaseGun">
 		<defName>SCR_SCP095UA</defName>
 		<label>SCP-095-UA</label>
-		<description>SCP-095-UA is an incendiary rocket launcher with an extremely, unnaturally, accurate projectile. It has strange, likely sarkic symbols and blood on the inside of the barrel.</description>
+		<description>SCP-095-UA is an incendiary rocket launcher with an extremely, unnaturally, accurate projectile. It cannot miss. It has strange, likely Sarkic symbols and blood on the inside of the barrel.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -30,34 +31,41 @@
 			<li>SCP</li>
 		</tradeTags>
 		<statBases>
-			<Mass>5</Mass>
-			<MarketValue>3000</MarketValue>
-      <AccuracyTouch>.4</AccuracyTouch>
-      <AccuracyShort>2</AccuracyShort>
-      <AccuracyMedium>2</AccuracyMedium>
-      <AccuracyLong>2</AccuracyLong>
-      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+			<Mass>10</Mass>
+			<MarketValue>5000</MarketValue>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>2</AccuracyShort>
+			<AccuracyMedium>2</AccuracyMedium>
+			<AccuracyLong>2</AccuracyLong>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
 		</statBases>
-	<thingSetMakerTags>
-      <li>RewardStandardLowFreq</li>
-    </thingSetMakerTags>
+		<equippedStatOffsets> 
+			<ShootingAccuracyPawn>200</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+			<thingSetMakerTags>
+			  <li>RewardStandardLowFreq</li>
+			</thingSetMakerTags>
 	        <smeltable>false</smeltable>
-		<verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_IncendiaryLauncher</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
-		<forcedMissRadius>1.9</forcedMissRadius>
-        <range>100.9</range>
-        <soundCast>Shot_IncendiaryLauncher</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>20</muzzleFlashScale>
-		<targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-      </li>
-    </verbs>
+			<verbs Inherit="False">
+			  <li Inherit="False">
+					<verbClass>Verb_Shoot</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>TSP_SCR_Bullet_IncendiaryLauncher</defaultProjectile>
+					<warmupTime>3.4</warmupTime>
+					<!-- <forcedMissRadius>0</forcedMissRadius> -->
+					<range>100.9</range>
+					<soundCast>Shot_IncendiaryLauncher</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>30</muzzleFlashScale>
+					<stopBurstWithoutLos>true</stopBurstWithoutLos>
+					<requireLineOfSight>true</requireLineOfSight>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+						<canTargetBuildings>true</canTargetBuildings>
+						<neverTargetIncapacitated>false</neverTargetIncapacitated>
+					</targetParams>
+			  </li>
+		</verbs>
 	    <tools>
       <li>
         <label>stock</label>
@@ -65,7 +73,7 @@
           <li>Blunt</li>
         </capacities>
         <power>9</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>1</cooldownTime>
       </li>
       <li>
         <label>barrel</label>
@@ -74,13 +82,41 @@
           <li>Poke</li>
         </capacities>
         <power>9</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>1</cooldownTime>
       </li>
     </tools>
 	    <weaponTags Inherit="False">
       <li>SCPWeapon</li>
     </weaponTags>
+	<comps></comps>
 	</ThingDef>
 
-
+  <ThingDef ParentName="BaseBullet">
+    <defName>TSP_SCR_Bullet_IncendiaryLauncher</defName>
+    <label>anomalous incendiary bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(254,189,58)</color>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+		<speed>200</speed>
+		<damageDef>Flame</damageDef>
+		<!-- Use default damage from explosion def -->
+		<explosionRadius>1.5</explosionRadius>
+		<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+		<preExplosionSpawnChance>0.6</preExplosionSpawnChance>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<armorPenetrationBase>0.2</armorPenetrationBase>
+		<!-- <arcHeightFactor>0.2</arcHeightFactor> -->
+		<shadowSize>0.6</shadowSize>
+		<stoppingPower>10</stoppingPower>
+		<postExplosionSpawnThingDef>Filth_Blood</postExplosionSpawnThingDef>
+		<postExplosionSpawnChance>1</postExplosionSpawnChance>
+		<filth>Filth_Blood</filth>
+		<filthCount>6</filthCount>
+    </projectile>
+  </ThingDef>
 </Defs>

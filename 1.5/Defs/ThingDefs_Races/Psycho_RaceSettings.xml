@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <AlienRace.RaceSettings>
+    <defName>Psycho_Race_Settings</defName>
+    <pawnKindSettings>
+	<!-- Just leaving defaults with 0.0 chance for now, Psycho pawns will not spawn on their own in game....THIS IS NOT FINISHED! And they shouldn't spawn as part of player faction anyway-->
+      <startingColonists>
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>CJ_PsychoDrifter</li>
+				<li>CJ_PsychoScavenger</li>
+              </kindDefs>
+              <chance>1</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerColony</li>
+			<li>PlayerTribe</li>
+          </factionDefs>
+        </li>
+		<!--
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>CJ_PsychoScavenger</li>
+              </kindDefs>
+              <chance>0</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerTribe</li>
+			<li>PlayerTribe</li>
+          </factionDefs>
+        </li>
+		-->
+        <li MayRequire="VanillaExpanded.VFEA">
+          <pawnKindEntries MayRequire="VanillaExpanded.VFEA">
+            <li MayRequire="VanillaExpanded.VFEA">
+              <kindDefs MayRequire="VanillaExpanded.VFEA">
+                <li MayRequire="VanillaExpanded.VFEA">TSP_VFEA_SCR_1788_Goon</li>
+              </kindDefs>
+              <chance MayRequire="VanillaExpanded.VFEA">6</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs MayRequire="VanillaExpanded.VFEA">
+            <li MayRequire="VanillaExpanded.VFEA">VFEA_NewVault</li>
+          </factionDefs>
+        </li>
+      </startingColonists>
+	  
+      <alienslavekinds>
+        <li>
+          <kindDefs>
+            <li>CJ_PsychoDrifter</li>
+          </kindDefs>
+          <chance>0</chance>
+        </li>
+      </alienslavekinds>
+
+      <alienwandererkinds>
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>CJ_PsychoDrifter</li>
+				<li>CJ_PsychoScavenger</li>
+				<li>CJ_PsychoPirate</li>
+				<li>CJ_PsychoMercenary_Gunner</li>
+				<li>CJ_PsychoMercenary_Slasher</li>
+				<li>CJ_PsychoMercenary_Sniper</li>
+				<li>CJ_PsychoMercenary_Elite</li>
+				<li>CJ_Psycho_PirateBoss</li>
+              </kindDefs>
+              <chance>15</chance>
+            </li>
+            <li>
+              <kindDefs>
+					<li MayRequire="VanillaExpanded.VFEA">TSP_VFEA_SCR_1788_Goon</li>
+              </kindDefs>
+              <chance>0.5</chance>
+            </li>
+			<li MayRequire="VanillaExpanded.VFEA">
+				<li MayRequire="VanillaExpanded.VFEA">
+					<kindDefs MayRequire="VanillaExpanded.VFEA">
+						<li MayRequire="VanillaExpanded.VFEA">TSP_VFEA_SCR_1788_Goon</li>
+					</kindDefs>
+					<chance MayRequire="VanillaExpanded.VFEA">18</chance>
+				</li>
+			</li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerColony</li>
+			<li>PlayerTribe</li>
+          </factionDefs>
+        </li>
+        <li MayRequire="VanillaExpanded.VFEA">
+          <pawnKindEntries MayRequire="VanillaExpanded.VFEA">
+            <li MayRequire="VanillaExpanded.VFEA">
+              <kindDefs MayRequire="VanillaExpanded.VFEA">
+					<li MayRequire="VanillaExpanded.VFEA">TSP_VFEA_SCR_1788_Goon</li>
+              </kindDefs>
+              <chance MayRequire="VanillaExpanded.VFEA">15</chance>
+            </li>
+			<li MayRequire="VanillaExpanded.VFEA">
+				<li MayRequire="VanillaExpanded.VFEA">
+					<kindDefs MayRequire="VanillaExpanded.VFEA">
+						<li MayRequire="VanillaExpanded.VFEA">TSP_VFEA_SCR_1788_Goon</li>
+					</kindDefs>
+					<chance MayRequire="VanillaExpanded.VFEA">18</chance>
+				</li>
+			</li>
+          </pawnKindEntries>
+          <factionDefs MayRequire="VanillaExpanded.VFEA">
+            <li MayRequire="VanillaExpanded.VFEA">VFEA_NewVault</li>
+          </factionDefs>
+        </li>
+      </alienwandererkinds>
+    </pawnKindSettings>
+  </AlienRace.RaceSettings>
+</Defs>

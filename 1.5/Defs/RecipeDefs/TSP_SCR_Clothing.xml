@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<RecipeDef>
+		<defName>TSP_SCR_GOC_MakeWhiteSuit</defName>
+		<label>make GOC White Suit</label>
+		<description>Assemble the Black Suit and Grey Suit to make a Global Occult Colalition White Suit.</description>
+		<jobString>Making power armor.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_SmashCorpseMechanoid</soundWorking>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<workSkillLearnFactor>3</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SCR_GOCBlacksuit</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SCR_GOCGreysuit</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SCR_GOCHelmet</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SCR_GOCHelmet</li>
+				<li>SCR_GOCGreysuit</li>
+				<li>SCR_GOCBlacksuit</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SCR_GOCWhitesuit>1</SCR_GOCWhitesuit>
+			<SCR_GOCWhitesuitHelmet>1</SCR_GOCWhitesuitHelmet>
+		</products>
+		<recipeUsers>
+			<li>TableMachining</li>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>SCR_GOCGearAdvSuit</li>
+		</researchPrerequisites>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>TSP_SCR_SCP_MakeDClass</defName>
+		<label>make D-Class Jumpsuit</label>
+		<description>Assemble the Black Suit and Grey Suit to make a Global Occult Colalition White Suit.</description>
+		<jobString>Making prison garb.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<workSkillLearnFactor>3</workSkillLearnFactor>
+		<ingredients>
+			<li MayRequire="ludeon.rimworld.ideology">
+				<filter MayRequire="ludeon.rimworld.ideology">
+					<thingDefs MayRequire="ludeon.rimworld.ideology">
+						<li MayRequire="ludeon.rimworld.ideology">Apparel_Collar</li>
+					</thingDefs>
+				</filter>
+				<count MayRequire="ludeon.rimworld.ideology">1</count>
+			</li>
+			<li MayRequire="ludeon.rimworld.ideology">
+				<filter MayRequire="ludeon.rimworld.ideology">
+					<thingDefs MayRequire="ludeon.rimworld.ideology">
+						<li MayRequire="ludeon.rimworld.ideology">Apparel_BodyStrap</li>
+					</thingDefs>
+				</filter>
+				<count MayRequire="ludeon.rimworld.ideology">1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Textiles</li>
+					</categories>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>85</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Textiles</li>
+			</categories>
+			<thingDefs>
+				<li MayRequire="ludeon.rimworld.ideology">Apparel_BodyStrap</li>
+				<li MayRequire="ludeon.rimworld.ideology">Apparel_Collar</li>
+				<li>SCR_ClassDJumpsuit</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SCR_ClassDJumpsuit>1</SCR_ClassDJumpsuit>
+		</products>
+		<recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>SCR_FoundationGear</li>
+		</researchPrerequisites>
+	</RecipeDef>
+</Defs>

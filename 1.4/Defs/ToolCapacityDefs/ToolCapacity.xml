@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
-
-
-
 	<ToolCapacityDef>
 		<defName>SCR_Flame</defName>
 		<label>fire</label>
@@ -15,14 +13,16 @@
 
 	<ToolCapacityDef>
 		<defName>SCR_SCP610_InfectingBite</defName>
-		<label>bite</label>
+		<label>SCP-610 bite</label>
 	</ToolCapacityDef>
 
 	<ToolCapacityDef>
 		<defName>SCR_SCP610_InfectingScratch</defName>
-		<label>scratch</label>
+		<label>SCP-610 scratch</label>
 	</ToolCapacityDef>
-
-
-
+	
+	<ToolCapacityDef MayRequire="ludeon.rimworld.biotech">
+		<defName>TSP_SCR_SCP3199_Acid</defName>
+		<label>acidic bite</label>
+	</ToolCapacityDef>
 </Defs>
