@@ -4,7 +4,7 @@
 	<ThingDef ParentName="SCR_SCP_Base">
 		<defName>SCR_SCP939R</defName>
 		<label>SCP-939</label>
-		<description>SCP-939 is a quadrupedal creature that imitates the humanlike voices of those they kill. They also emit a potent memory-altering gas.</description>
+		<description>SCP-939 is a quadrupedal creature that imitates the sounds and voices of those they kill. They also emit a potent memory-altering gas.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -37,7 +37,7 @@
 			<predator>true</predator>
 			<baseBodySize>2.2</baseBodySize>
 			<maxPreyBodySize>2.5</maxPreyBodySize>
-			<baseHungerRate>0.25</baseHungerRate>
+			<baseHungerRate>0.3</baseHungerRate>
 			<baseHealthScale>1.8</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict, Corpse, Kibble</foodType>
 			<leatherDef>Leather_Light</leatherDef>
@@ -86,7 +86,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>15</power>
+				<power>13</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -103,14 +103,14 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>15</power>
+				<power>13</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>14</amount>
+							<amount>13</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -119,7 +119,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>25</power>
+				<power>23</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.7</chanceFactor>
@@ -137,7 +137,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>10</power>
+				<power>8</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -185,7 +185,7 @@
 		<defName>SCR_SCP939R</defName>
 		<label>SCP-939</label>
 		<race>SCR_SCP939R</race>
-		<combatPower>200</combatPower>
+		<combatPower>300</combatPower>
 		<canArriveManhunter>true</canArriveManhunter>
 		<lifeStages>
 			<li>

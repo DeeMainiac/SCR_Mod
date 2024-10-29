@@ -32,7 +32,7 @@
 			<ToxicEnvironmentResistance MayRequire="Ludeon.Rimworld.Biotech">1</ToxicEnvironmentResistance>
 			<MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">50</MinimumContainmentStrength><!-- Anomaly containment platform related -->
 	  
-			<BoneAmount MayRequire="sihv.rombones">75</BoneAmount><!-- Multiplied by the Body Size -->
+			<BoneAmount MayRequire="sihv.rombones">95</BoneAmount><!-- Multiplied by the Body Size -->
 		</statBases>
 		<receivesSignals>true</receivesSignals>
 		<comps>

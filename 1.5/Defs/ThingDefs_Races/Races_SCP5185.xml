@@ -71,10 +71,10 @@
 				<AridShrubland>0</AridShrubland>
 				<BorealForest>0</BorealForest>
 				<ColdBog>0</ColdBog>
-				<TemperateForest>0</TemperateForest>
-				<TemperateSwamp>0</TemperateSwamp>
+				<TemperateForest>.1</TemperateForest>
+				<TemperateSwamp>.1</TemperateSwamp>
 				<TropicalRainforest>.2</TropicalRainforest>
-				<TropicalSwamp>0</TropicalSwamp>
+				<TropicalSwamp>.2</TropicalSwamp>
 				<IceSheet>0</IceSheet>
 				<SeaIce>0</SeaIce>
 				<Tundra>0</Tundra>
