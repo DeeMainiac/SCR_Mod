@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="AnimalThingBase">
+    <defName>SCR_SCP5133R</defName>
+    <label>SCP-5133-1</label>
+		<description>SCP-5133-1 is a small creature resembling a Southern Brown Tree Frog made of fruit instead of meat.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+				<isTranqable>true</isTranqable>
+			</li>
+		</modExtensions>
+    <statBases>
+      <MoveSpeed>2.1</MoveSpeed>
+      <MarketValue>50</MarketValue>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+    </statBases>
+    <uiIconScale>2</uiIconScale>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>SCR_SCP5133Egg</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>1.333</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1~2</eggCountRange>
+      </li>
+    </comps>
+    <race>
+      <body>QuadrupedAnimalWithPaws</body>
+	  <predator>false</predator>
+      <baseBodySize>0.1</baseBodySize>
+      <baseHealthScale>0.25</baseHealthScale>
+      <baseHungerRate>0.1</baseHungerRate>
+	  <specificMeatDef>RawBerries</specificMeatDef>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Light</leatherDef>
+      <wildness>.2</wildness>
+	  <nameOnTameChance>1</nameOnTameChance>
+      <trainability>None</trainability>
+	  <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>0</manhunterOnDamageChance>
+      <gestationPeriodDays>5.661</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.8, 1)</li>
+          <li>(2.4, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>.01</lifeExpectancy>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  		<wildBiomes>
+				<AridShrubland>.0</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>.3</TemperateForest>
+				<TemperateSwamp>.5</TemperateSwamp>
+				<TropicalRainforest>.3</TropicalRainforest>
+				<TropicalSwamp>.3</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+    </race>
+	    <tradeTags>
+      <li>SCP</li>
+	  <li>AnimalUncommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SCR_SCP5133R</defName>
+    <label>SCP-5133-1</label>
+    <race>SCR_SCP5133R</race>
+    <combatPower>10</combatPower>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
+	<canArriveManhunter>false</canArriveManhunter>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/SCR_SCP5133/SCR_SCP5133</texPath>
+          <drawSize>.3</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
+          <drawSize>.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+
+
+
+
+
+
+
+
+</Defs>

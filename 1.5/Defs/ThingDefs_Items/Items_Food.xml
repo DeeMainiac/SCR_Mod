@@ -19,6 +19,43 @@
 	</tradeTags>
   </ThingDef>
 
+  <ThingDef ParentName="ResourceBase">
+    <defName>SCR_4155SoftServe</defName>
+    <label>vanilla soft serve</label>
+    <description>Non-anomalous soft serve harvested from SCP-4155. It fulfills the need for recreation, but it is not very nutritious.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Chocolate</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.88</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>3</MarketValue>
+      <Mass>0.075</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>8</DeteriorationRate>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+	  <li>SCP</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <joy>0.10</joy>
+      <joyKind>Gluttonous</joyKind>
+      <maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
+      <defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+    <possessionCount>5</possessionCount>
+  </ThingDef>
+
   <ThingDef ParentName="MealBase">
     <defName>SCR_SCP666HalfJ</defName>
     <label>SCP-666-1/2-J</label>

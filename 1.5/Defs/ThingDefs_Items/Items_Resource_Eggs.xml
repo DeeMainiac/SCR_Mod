@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-
 <Defs>
+
 	<ThingDef Abstract="True" Name="SCR_EggBase" ParentName="OrganicProductBase">
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
@@ -247,6 +247,33 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+		<ThingDef ParentName="EggFertBase">
+		<defName>SCR_SCP5133Egg</defName>
+		<label>SCP-5133 egg (fert.)</label>
+		<description>A fertilized SCP-5133 egg. If all goes well, it should hatch into an instance of SCP-5133. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DeteriorationRate>.5</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>SCR_SCP5133R</hatcherPawn>
+			</li>
+		</comps>
+			<tradeTags>
+				<li>SCP</li>
+				<li>EggSCP</li>
+			</tradeTags>
+	</ThingDef>
+	
 	<!--
 	<ThingDef ParentName="EggFertBase">
 		<defName>SCR_SCP1948Egg</defName>
