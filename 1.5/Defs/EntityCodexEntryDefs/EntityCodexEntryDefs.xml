@@ -446,6 +446,20 @@
   </EntityCodexEntryDef>
 
   <EntityCodexEntryDef>
+    <defName>SCR_SCP1079R</defName>
+    <label>SCP-1079</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP1079R</useDescriptionFrom>
+    <uiIconPath>Things/Item/Resource/SCR_SCP1079A</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>1079</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP1079R</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
     <defName>SCR_SCP1577R</defName>
     <label>SCP-1577</label>
     <category>SCR_SCP</category>
@@ -686,6 +700,21 @@
     <orderInCategory>4074</orderInCategory>
     <linkedThings>
       <li>SCR_SCP4074R</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
+    <defName>SCR_SCP4155R</defName>
+    <label>SCP-4155</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP4155R</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCR_SCP4155/SCR_SCP4155_east</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>4155</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP5133R</li>
+	  <li>SCR_4155SoftServe</li>
     </linkedThings>
   </EntityCodexEntryDef>
 

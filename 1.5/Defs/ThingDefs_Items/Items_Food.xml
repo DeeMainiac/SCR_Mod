@@ -24,7 +24,7 @@
     <label>vanilla soft serve</label>
     <description>Non-anomalous soft serve harvested from SCP-4155. It fulfills the need for recreation, but it is not very nutritious.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Chocolate</texPath>
+      <texPath>Things/Item/Resource/SCR_SCP4155SoftServe</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
       <drawSize>0.88</drawSize>
     </graphicData>
@@ -101,7 +101,6 @@
       <li Class="CompProperties_Ingredients">
         <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
       </li>
-	  <!-- FEED IT TO YOUR ENEMIES!! -->
       <li Class="CompProperties_Drug">
         <listOrder>1000</listOrder>
       </li>
