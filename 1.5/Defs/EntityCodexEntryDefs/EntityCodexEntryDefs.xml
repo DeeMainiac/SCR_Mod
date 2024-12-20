@@ -713,7 +713,7 @@
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
     <orderInCategory>4155</orderInCategory>
     <linkedThings>
-      <li>SCR_SCP5133R</li>
+      <li>SCR_SCP4155R</li>
 	  <li>SCR_4155SoftServe</li>
     </linkedThings>
   </EntityCodexEntryDef>
@@ -729,7 +729,7 @@
     <orderInCategory>5133</orderInCategory>
     <linkedThings>
       <li>SCR_SCP5133R</li>
-    </linkedThings>
+	  </linkedThings>
   </EntityCodexEntryDef>
 
   <EntityCodexEntryDef>

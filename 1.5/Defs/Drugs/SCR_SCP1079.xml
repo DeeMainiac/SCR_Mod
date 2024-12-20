@@ -4,7 +4,7 @@
 <ThingDef ParentName="DrugBase">
     <defName>SCR_SCP1079R</defName>
     <label>SCP-1079</label>
-    <description>A piece of Wondertainment's Bubblebath Bon Bons. It causes the consumer's blood to boil and escape from their pores. Eating several in short succession can be fatal. It fulfills the need for recreation, but it is not very nutritious.</description>
+    <description>A piece of Wondertainment's Bubblebath Bonbons. It causes the consumer's blood to boil and escape from their pores. Eating several in short succession can be fatal. It fulfills the need for recreation, but it is not very nutritious.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -16,8 +16,8 @@
 			</li>
 		</modExtensions>
 	<graphicData>
-      <texPath>Things/Item/Resource/SCR_SCP1079</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Things/Item/Resource/SCR_SCP1079B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.88</drawSize>
     </graphicData>
     <soundInteract>Standard_Drop</soundInteract>
