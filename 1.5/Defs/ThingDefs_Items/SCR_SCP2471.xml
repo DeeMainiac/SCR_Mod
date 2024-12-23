@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>SCR_SCP2471R</defName>
+		<label>SCP-2471</label>
+		<description>SCP-2471 is a fortune cookie that gives an aphorism or statement of wisdom usefully tailored to the one who cracked it open.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Item/Resource/SCR_SCP2471</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.88</drawSize>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>0.075</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>8</DeteriorationRate>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<thingCategories>
+			<li>Foods</li>
+			<li>SCP</li>
+		</thingCategories>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Processed</foodType>
+			<joy>0.10</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<allowedArchonexusCount>80</allowedArchonexusCount>
+		<possessionCount>5</possessionCount>
+	</ThingDef>
+
+
+</Defs>

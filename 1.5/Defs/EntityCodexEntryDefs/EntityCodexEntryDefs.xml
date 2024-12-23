@@ -328,7 +328,7 @@
     <label>SCP-610</label>
     <category>SCR_SCP</category>
     <description>SCP-610 is an aggressive alien, fleshy substance that carpets entire regions, spawning aggressive creatures to defend its fleshy hives with. Any violent contact with SCP-610 instances guarantee infection, of which there is no cure (besides amputation). They are vulnerable to fire.</description>
-    <uiIconPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610B_south</uiIconPath>
+    <uiIconPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610</uiIconPath>
     <startDiscovered>true</startDiscovered>
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
     <orderInCategory>610</orderInCategory>
@@ -450,7 +450,7 @@
     <label>SCP-1079</label>
     <category>SCR_SCP</category>
     <useDescriptionFrom>SCR_SCP1079R</useDescriptionFrom>
-    <uiIconPath>Things/Item/Resource/SCR_SCP1079A</uiIconPath>
+    <uiIconPath>Things/Item/Resource/SCR_SCP1079</uiIconPath>
     <startDiscovered>true</startDiscovered>
     <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
     <orderInCategory>1079</orderInCategory>

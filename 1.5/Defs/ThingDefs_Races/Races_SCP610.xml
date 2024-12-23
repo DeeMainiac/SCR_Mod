@@ -27,7 +27,7 @@
 			<ArmorRating_Sharp>.35</ArmorRating_Sharp>
 			<ArmorRating_Blunt>.35</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
-			<Flammability>10</Flammability><!-- This is how the Foundation canonically dispatches them. -->
+			<Flammability>10</Flammability>
 			<MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">50</MinimumContainmentStrength><!-- Anomaly containment platform related -->
 		</statBases>
 		<race>
@@ -39,9 +39,9 @@
 			<baseHungerRate>0.5</baseHungerRate>
 			<baseHealthScale>1</baseHealthScale>
 			<maxPreyBodySize>1.1</maxPreyBodySize>
-			<foodType>CarnivoreAnimalStrict, Corpse, Fungus, Kibble</foodType>
+			<foodType>CarnivoreAnimalStrict, Corpse</foodType>
 			<leatherDef>Leather_Patch</leatherDef>
-			<useMeatFrom>Human</useMeatFrom><!-- Temporary, I have some plans for this -->
+			<useMeatFrom>Human</useMeatFrom>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>0</nameOnTameChance>
 			<trainability>None</trainability>
@@ -63,20 +63,10 @@
 				</points>
 			</litterSizeCurve>
 			<lifeExpectancy>5</lifeExpectancy>
-			<lifeStageAges Inherit="False">
-				<!--
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.2</minAge>
-        </li>
-		-->
+			<lifeStageAges>
 				<li>
-					<def>AnimalAdult</def>
-					<minAge>0.5</minAge>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
 					<soundWounded>Pawn_Warg_Wounded</soundWounded>
 					<soundDeath>Pawn_Warg_Death</soundDeath>
 					<soundCall>Pawn_Melee_HumanBite_Hit</soundCall>
@@ -148,11 +138,7 @@
 				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
 			</li>
 		</tools>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
-			</mergeCompatibilityTags>
-		</ingredient>
+
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -161,42 +147,15 @@
 		<race>SCR_SCP610A</race>
 		<combatPower>300</combatPower>
 		<ecoSystemWeight>0</ecoSystemWeight>
+		<alternateGraphicChance>.4</alternateGraphicChance>
+		<alternateGraphics>
+			<li><texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610D</texPath></li>
+		</alternateGraphics>
 		<lifeStages>
-			<!--
-      <li>
-        <label>small SCP-610-A instance</label>
-        <labelPlural>small SCP-610-A instances</labelPlural>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610B</texPath>
-          <drawSize>1</drawSize>
-          <color>(123,104,89)</color>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
-          <drawSize>1</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610B</texPath>
-          <drawSize>1</drawSize>
-          <color>(123,104,89)</color>
-          <shadowData>
-            <volume>(0.25, 0.3, 0.25)</volume>
-            <offset>(0,0,-0.15)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
-          <drawSize>1</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-	  -->
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610B</texPath>
-					<drawSize>1.7</drawSize>
-					<color>(123,104,89)</color>
+					<texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610A</texPath>
+					<drawSize>4</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -236,7 +195,7 @@
 			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
 			<ArmorRating_Heat>0</ArmorRating_Heat>
-			<Flammability>10</Flammability><!-- This is how they are canonically dispatched by the Foundation! -->
+			<Flammability>10</Flammability>
 			<MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">55</MinimumContainmentStrength><!-- Anomaly containment platform related -->
 		</statBases>
 		<race>
@@ -248,9 +207,9 @@
 			<baseHungerRate>0.5</baseHungerRate>
 			<baseHealthScale>1.2</baseHealthScale>
 			<maxPreyBodySize>2</maxPreyBodySize>
-			<foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Corpse, Fungus, Kibble</foodType>
+			<foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Corpse</foodType>
 			<leatherDef>Leather_Patch</leatherDef>
-			<useMeatFrom>Human</useMeatFrom><!-- Temporary, I have some plans for this -->
+			<useMeatFrom>Human</useMeatFrom>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>0</nameOnTameChance>
 			<trainability>None</trainability>
@@ -272,19 +231,9 @@
 				</points>
 			</litterSizeCurve>
 			<lifeExpectancy>40</lifeExpectancy>
-			<lifeStageAges Inherit="False">
-				<!--
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.2</minAge>
-        </li>
-		-->
+			<lifeStageAges>
 				<li>
-					<def>AnimalAdult</def>
+					<def>MechanoidFullyFormed</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Warg_Wounded</soundWounded>
 					<soundDeath>Pawn_Warg_Death</soundDeath>
@@ -371,11 +320,6 @@
 				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
 			</li>
 		</tools>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
-			</mergeCompatibilityTags>
-		</ingredient>
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -384,42 +328,15 @@
 		<race>SCR_SCP610B</race>
 		<combatPower>500</combatPower>
 		<ecoSystemWeight>0</ecoSystemWeight>
+		<alternateGraphicChance>.4</alternateGraphicChance>
+		<alternateGraphics>
+			<li><texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610C</texPath></li>
+		</alternateGraphics>
 		<lifeStages>
-			<!--
-      <li>
-        <label>small SCP-610-B instance</label>
-        <labelPlural>small SCP-610-B instances</labelPlural>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610A</texPath>
-          <drawSize>1.5</drawSize>
-          <color>(123,104,89)</color>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
-          <drawSize>1</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610A</texPath>
-          <drawSize>1.7</drawSize>
-          <color>(123,104,89)</color>
-          <shadowData>
-            <volume>(0.25, 0.3, 0.25)</volume>
-            <offset>(0,0,-0.15)</offset>
-          </shadowData>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
-          <drawSize>1</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-	  -->
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610A</texPath>
-					<drawSize>2</drawSize>
-					<color>(123,104,89)</color>
+					<texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610B</texPath>
+					<drawSize>4</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.15)</offset>

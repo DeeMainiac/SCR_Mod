@@ -1,67 +1,76 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="DrugBase">
+<ThingDef ParentName="MechSerumBase">
     <defName>SCR_SCP1079R</defName>
     <label>SCP-1079</label>
-    <description>A piece of Wondertainment's Bubblebath Bonbons. It causes the consumer's blood to boil and escape from their pores. Eating several in short succession can be fatal. It fulfills the need for recreation, but it is not very nutritious.</description>
-		<modExtensions>
+    <description>SCP-1079 is a candy labeled as Wondertainment's Bubblebath Bonbons. It causes the consumer's blood to boil and escape from their pores. Eating several in short succession can be fatal.</description>
+    <modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
 					<li>SCR_CSafe</li>
-					<li>SCR_DVlam</li>
+					<li>SCR_DDark</li>
 					<li>SCR_RNotice</li>
 				</classRating>
 				<containmentTier>0</containmentTier>
 			</li>
-		</modExtensions>
+	</modExtensions>
 	<graphicData>
-      <texPath>Things/Item/Resource/SCR_SCP1079B</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.88</drawSize>
-    </graphicData>
-    <soundInteract>Standard_Drop</soundInteract>
-    <soundDrop>Standard_Drop</soundDrop>
-    <socialPropernessMatters>true</socialPropernessMatters>
+      <texPath>Things/Item/Resource/SCR_SCP1079</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    	<drawSize>.7</drawSize>
+	</graphicData>
+    <stackLimit>32</stackLimit>
     <statBases>
       <MarketValue>10</MarketValue>
-      <Mass>0.075</Mass>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>8</DeteriorationRate>
-      <Nutrition>0.1</Nutrition>
     </statBases>
     <thingCategories>
-      <li>Foods</li>
-	  <li>SCP</li>
+      <li>Items</li>
+	  <li>SCPObjects</li>
     </thingCategories>
-    <ingestible>
-      <preferability>DesperateOnly</preferability>
-      <foodType>Processed</foodType>
-      <joy>0.05</joy>
-      <joyKind>Gluttonous</joyKind>
-      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-      <defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
-      <ingestSound>Meal_Eat</ingestSound>
-      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-    </ingestible>
-    <allowedArchonexusCount>80</allowedArchonexusCount>
-    <possessionCount>10</possessionCount>
+    <tradeability>Sellable</tradeability>
+	<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
 	<comps>
-	<!--      <li Class="CompProperties_Usable">
+	  <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
-        <useLabel>consume a SCP-1079 candy</useLabel>
-        <useDuration>100</useDuration>
-      </li> -->
+        <useLabel>Consume a SCP-1079 candy</useLabel>
+        <useDuration>90</useDuration>
+      </li>
       <li Class="CompProperties_UseEffect">
         <compClass>SecureContainRimworld.CompUseEffect_UseSCP1079</compClass>
       </li>
-      <li Class="CompProperties_UseEffectPlaySound">
-        <soundOnUsed>Ingest_Pill</soundOnUsed>
-      </li>
 <li Class="CompProperties_UseEffectDestroySelf" />
     </comps>
-	
   </ThingDef>
 
+  <RecipeDef>
+    <defName>Administer_SCP1079R</defName>
+    <label>administer SCP-1079</label>
+    <description>Administer a SCP-1079 candy.</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Administering SCP-1079.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>100</workAmount>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SCR_SCP1079R</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_SCP1079R</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
 
 </Defs>

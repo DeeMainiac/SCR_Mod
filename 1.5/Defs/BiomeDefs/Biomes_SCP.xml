@@ -37,7 +37,7 @@
     <diseases>
      <li>
         <diseaseInc>SCR_Disease_SCP1797R</diseaseInc>
-        <commonality>40</commonality> <!-- As this has no cure, it's unfair to throw it too commonly, and besides, the creatures always givt it to you -->
+        <commonality>25</commonality> <!-- As this has no cure, it's unfair to throw it too commonly, and besides, the creatures always givt it to you -->
       </li>
       <li>
         <diseaseInc>Disease_Plague</diseaseInc>
@@ -76,7 +76,7 @@
     <baseWeatherCommonalities>
       <Clear>0.015</Clear>
       <Fog>15</Fog>
-      <DryThunderstorm>0.25</DryThunderstorm>
+      <DryThunderstorm>0.2</DryThunderstorm>
       <RainyThunderstorm>1</RainyThunderstorm>
       <FoggyRain>3</FoggyRain>
       <SnowGentle>5</SnowGentle>
@@ -87,13 +87,14 @@
 	  <PoisonForestSpores MayRequire="mlie.advancedbiomes">15</PoisonForestSpores>
     </baseWeatherCommonalities>
     <wildPlants>
-		<SCR_SCP610_Grass>5</SCR_SCP610_Grass>
-		<Plant_Brambles>0.5</Plant_Brambles>
-		<Plant_Dandelion>0.6</Plant_Dandelion>
-		<Plant_Agave>0.09</Plant_Agave>
+		<SCR_SCP610_Grass>3</SCR_SCP610_Grass>
+		<Plant_Brambles>0.3</Plant_Brambles>
+		<Plant_Dandelion>0.2</Plant_Dandelion>
+		<Plant_Agave>0.08</Plant_Agave>
 		<Plant_TreeDrago>0.025</Plant_TreeDrago>
 		<Plant_TreeOak>0.015</Plant_TreeOak>
-		<Plant_Rafflesia>0.5</Plant_Rafflesia>
+		<Plant_Rafflesia>0.1</Plant_Rafflesia>
+		
 		<AB_AlienTree MayRequire="sarg.alphabiomes">0.25</AB_AlienTree>
 		<AB_HalfAlienTree MayRequire="sarg.alphabiomes">0.65</AB_HalfAlienTree>
 		<AB_GlobularPlant MayRequire="sarg.alphabiomes">2</AB_GlobularPlant>
@@ -111,11 +112,13 @@
 		<AB_GlowingAgarilux MayRequire="sarg.alphabiomes">0.1</AB_GlowingAgarilux>
 		<AB_Bryolux MayRequire="sarg.alphabiomes">0.1</AB_Bryolux>
 		<AB_AgariluxPrime MayRequire="sarg.alphabiomes">0.0001</AB_AgariluxPrime>
+		
 		<Plant_GrayGrass MayRequire="ludeon.rimworld.biotech">1</Plant_GrayGrass>
 		<Plant_Ripthorn MayRequire="ludeon.rimworld.biotech">1</Plant_Ripthorn>
 		<Plant_TreeGrayPine MayRequire="ludeon.rimworld.biotech">0.75</Plant_TreeGrayPine>
 		<Plant_Witchwood MayRequire="ludeon.rimworld.biotech">0.75</Plant_Witchwood>
 		<Plant_RatPalm MayRequire="ludeon.rimworld.biotech">0.75</Plant_RatPalm>
+		
 		<PlantDemonBreath MayRequire="tarojun.morishep.onioftherim">0.005</PlantDemonBreath>
 		<MorrowRim_FunnelCap MayRequire="sirmashedpotato.morrowrim">0.1</MorrowRim_FunnelCap>
 		<MorrowRim_WeepingParasol MayRequire="sirmashedpotato.morrowrim.ashswamp">0.5</MorrowRim_WeepingParasol>
@@ -140,6 +143,7 @@
 		<WildBoar>0.1</WildBoar>
 		<Toxalope MayRequire="Ludeon.RimWorld.Biotech">2</Toxalope>
 		<WasteRat MayRequire="Ludeon.RimWorld.Biotech">2</WasteRat>
+		
 		<BMT_Trilobite MayRequire="biomesteam.biomesprehistoric">2</BMT_Trilobite>
 		<BMT_GlowSlug MayRequire="biomesteam.biomescaverns">1</BMT_GlowSlug>
 		<BMT_GlowSnail MayRequire="biomesteam.biomescaverns">1</BMT_GlowSnail>
@@ -156,7 +160,7 @@
 		<Onibi MayRequire="x3v21.jmc">0.01</Onibi> <!-- Will-o-wisp -->
 		<MycoidCattle MayRequire="epicfloor.mycoidcattle">0.3</MycoidCattle>
 		<Bat MayRequire="zal.witchinghour">0.05</Bat>
-		<AA_FungalHusk MayRequire="sarg.alphaanimals">1</AA_FungalHusk>
+		<AA_FungalHusk MayRequire="sarg.alphaanimals">.5</AA_FungalHusk>
     </wildAnimals>
     <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
 		<SCR_SCP610A>4</SCR_SCP610A>
