@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<IncidentDef>
+		<defName>SCR_SCP060Sprout</defName>
+		<label>SCP-060 sprout</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+		</targetTags>
+		<workerClass>SecureContainRimworld.IncidentWorker_SCP060Sprout</workerClass>
+		<baseChance>1</baseChance>
+		<letterLabel>SCP-060 sprout</letterLabel>
+		<letterText>A grove of SCP-060 instances have started growing in. These white oak trees don't take kindly to being on fire...</letterText>
+		<letterDef>NeutralEvent</letterDef>
+		<minRefireDays>25</minRefireDays>
+	</IncidentDef>
+</Defs>

@@ -19,25 +19,46 @@
 	</modExtensions>
   <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
       <statBases>
-      <MoveSpeed>7.2</MoveSpeed>
-      <MarketValue>1000</MarketValue>
-	  <ComfyTemperatureMax>80</ComfyTemperatureMax>
-      <ComfyTemperatureMin>-80</ComfyTemperatureMin>
-	  <FilthRate>2</FilthRate>
-	  <MeatAmount>0</MeatAmount>
-	  <LeatherAmount>0</LeatherAmount>
-	  <ArmorRating_Sharp>.4</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>.2</ArmorRating_Blunt>
-	  <ToxicResistance>0</ToxicResistance>
-	  <ToxicEnvironmentResistance MayRequire="Ludeon.Rimworld.Biotech">1</ToxicEnvironmentResistance>
-	  <BoneAmount MayRequire="sihv.rombones">75</BoneAmount> <!-- Multiplied by the Body Size -->
+		  <MoveSpeed>7.2</MoveSpeed>
+		  <MarketValue>1000</MarketValue>
+		  <ComfyTemperatureMax>80</ComfyTemperatureMax>
+		  <ComfyTemperatureMin>-80</ComfyTemperatureMin>
+		  <FilthRate>2</FilthRate>
+		  <MeatAmount>0</MeatAmount>
+		  <LeatherAmount>0</LeatherAmount>
+		  <ArmorRating_Sharp>.4</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>.2</ArmorRating_Blunt>
+		  <ToxicResistance>0</ToxicResistance>
+		  <ToxicEnvironmentResistance MayRequire="Ludeon.Rimworld.Biotech">1</ToxicEnvironmentResistance>
+		  <BoneAmount MayRequire="sihv.rombones">75</BoneAmount> <!-- Multiplied by the Body Size -->
+		  <MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">30</MinimumContainmentStrength> <!-- Anomaly containment platform related -->
     </statBases>
 	    <receivesSignals>true</receivesSignals>
 	    <comps>
-      <li Class="CompProperties_CanBeDormant"></li>
-      <li Class="CompProperties_WakeUpDormant">
-        <wakeUpOnDamage>true</wakeUpOnDamage>
-      </li>
+			  <li Class="CompProperties_CanBeDormant"></li>
+			  <li Class="CompProperties_WakeUpDormant">
+				<wakeUpOnDamage>true</wakeUpOnDamage>
+				</li>
+			<li Class="CompProperties_AttachPoints" MayRequire="Ludeon.RimWorld.Anomaly">
+				<points MayRequire="Ludeon.RimWorld.Anomaly">
+					<li MayRequire="Ludeon.RimWorld.Anomaly">
+						<offset>(-.24, 0, .3)</offset>
+						<type>PlatformRestraint0</type>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">
+						<offset>(.3, 0, .3)</offset>
+						<type>PlatformRestraint1</type>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">
+						<offset>(.4, 0, -.5)</offset>
+						<type>PlatformRestraint2</type>
+					</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">
+						<offset>(-.2, 0, -.7)</offset>
+						<type>PlatformRestraint3</type>
+					</li>
+				</points>
+			</li>
     </comps>
   <race>
       <thinkTreeMain>SCR_SCPAI</thinkTreeMain>

@@ -188,7 +188,7 @@
 		  -->
 		  <li>
 			<bodyGraphicData>
-			  <texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610B</texPath>
+			  <texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610A</texPath>
 			  <drawSize>1.7</drawSize>
 			  <color>(123,104,89)</color>
 			  <shadowData>
@@ -373,6 +373,10 @@
 		<race>SCR_SCP610B</race>
 		<combatPower>500</combatPower>
 		<ecoSystemWeight>0</ecoSystemWeight>
+		<alternateGraphicChance>0.34</alternateGraphicChance>
+		<alternateGraphics>
+			<li><texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610C</texPath></li>
+		</alternateGraphics>
 		<lifeStages>
 			<!--
 		  <li>
@@ -406,7 +410,7 @@
 		  -->
 		  <li>
 			<bodyGraphicData>
-			  <texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610A</texPath>
+			  <texPath>Things/Pawn/Animal/SCR_SCP610/SCR_SCP610B</texPath>
 			  <drawSize>2</drawSize>
 			  <color>(123,104,89)</color>
 			  <shadowData>

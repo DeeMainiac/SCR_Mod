@@ -380,6 +380,7 @@
 			<HSAU_DecaySensitivity MayRequire="baskerville.hellsingarmsultimate">0.5</HSAU_DecaySensitivity>
 			<MeleeDoorDamageFactor MayRequire="ludeon.rimworld.biotech">5</MeleeDoorDamageFactor>
 			<StaggerDurationFactor MayRequire="ludeon.rimworld.biotech">0.5</StaggerDurationFactor>
+			<MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">125</MinimumContainmentStrength> <!-- Anomaly containment platform related -->
 		</statBases>
 		<tools>
 		  <li>

@@ -27,6 +27,7 @@
 			<ArmorRating_Blunt>.2</ArmorRating_Blunt>
 			<ArmorRating_Heat>2</ArmorRating_Heat>
 			<Flammability>0</Flammability> <!-- With no harm to itself -->
+			<MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">15</MinimumContainmentStrength> <!-- Anomaly containment platform related -->
 		</statBases>
 		<comps>
 		<li Class="CompProperties_HeatPusher">

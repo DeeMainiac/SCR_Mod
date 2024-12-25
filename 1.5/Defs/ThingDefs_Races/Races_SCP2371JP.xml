@@ -23,6 +23,7 @@
 		  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
 		  <MarketValue>300</MarketValue>
 		  <FilthRate>6</FilthRate>
+		  <MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">0</MinimumContainmentStrength> <!-- Anomaly containment platform related -->
 		</statBases>
 		<comps>
 			<!-- Cannot be milked, according to the canonical article. -->

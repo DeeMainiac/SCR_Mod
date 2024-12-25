@@ -21,6 +21,7 @@
 		  <ComfyTemperatureMin>-35</ComfyTemperatureMin>
 		  <ComfyTemperatureMax>999</ComfyTemperatureMax>
 		  <FilthRate>16</FilthRate>
+		  <MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">3</MinimumContainmentStrength> <!-- Anomaly containment platform related -->
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
 		<race>
