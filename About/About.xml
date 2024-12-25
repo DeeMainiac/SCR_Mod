@@ -39,6 +39,11 @@
 				<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
 			</li>
+			<li>
+				<packageId>erdelf.HumanoidAlienRaces</packageId>
+				<displayName>Humanoid Alien Races</displayName>
+				<steamWorkshopUrl>https://www.steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+			</li>
 		</v1.5>
 	</modDependenciesByVersion>
 	<loadAfter>

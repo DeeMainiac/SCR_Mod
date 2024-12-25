@@ -617,6 +617,20 @@
   </EntityCodexEntryDef>
 
   <EntityCodexEntryDef>
+    <defName>SCR_SCP2471R</defName>
+    <label>SCP-2471</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP2471R</useDescriptionFrom>
+    <uiIconPath>Things/Item/Resource/SCR_SCP2471</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>2471</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP2471R</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
     <defName>SCR_SCP2584R</defName>
     <label>SCP-2584</label>
     <category>SCR_SCP</category>
