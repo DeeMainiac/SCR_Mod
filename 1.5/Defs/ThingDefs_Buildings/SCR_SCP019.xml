@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BuildingBase">
+    <defName>SCR_SCP019R</defName>
+    <label>SCP-019</label>
+    <description>SCP-1689 is a Greek vase that spawns SCP-019-2 instances over time. Extreme temperatures as well as disturbing the vase can increase spawn rates.</description>
+			<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CKeter</li>
+					<li>SCR_DKeneq</li>
+					<li>SCR_RCaution</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		    <thingClass>SecureContainRimworld.Building_SCPSpawner019</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/SCR_SCP019/SCR_SCP019</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.65, 0.25, 0.6)</volume>
+        <offset>(0, 0, -0.15)</offset>
+      </shadowData>
+    </graphicData>
+    <thingCategories>
+      <li>SCPObjects</li>
+    </thingCategories>
+    <building>
+      <destroySound>BuildingDestroyed_Soft_Small</destroySound>
+	  <ai_chillDestination>false</ai_chillDestination>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+    </building>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>10</Beauty>
+      <Mass>35</Mass>
+      <WorkToBuild>8000</WorkToBuild>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>Sellable</tradeability>
+    <tradeTags>
+      <li>Artifacts</li>
+	  <li>SCP</li>
+    </tradeTags>
+  </ThingDef>
+
+
+</Defs>

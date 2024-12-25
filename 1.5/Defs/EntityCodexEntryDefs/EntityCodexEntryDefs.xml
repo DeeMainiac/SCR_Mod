@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <KnowledgeCategoryDef>
-    <defName>SCR_SCP</defName>
-    <label>SCPs</label>
-    <color>(1, 1, 1, 1)</color>
-    <texPath>UI/AnomalyResearchCategoryMarkers/AnomalyResearchCategory_Basic</texPath>
-  </KnowledgeCategoryDef>
-
 <!--
+
   <EntityCodexEntryDef>
     <defName>SCR_SCP529R</defName>
     <label>SCP-529</label>
@@ -23,8 +16,30 @@
     </linkedThings>
   </EntityCodexEntryDef>
 -->
+  <KnowledgeCategoryDef>
+    <defName>SCR_SCP</defName>
+    <label>SCPs</label>
+    <color>(1, 1, 1, 1)</color>
+    <texPath>UI/AnomalyResearchCategoryMarkers/AnomalyResearchCategory_Basic</texPath>
+  </KnowledgeCategoryDef>
 
-<!-- SCP entries go in order, please! -->
+
+<!-- SCP entries go in order, please! Read from this link to understand how to edit this: https://github.com/DeeMainiac/SCR_Mod/wiki/How-to-make-your-stuff-into-SCPs-(for-modders)#anomaly-dlc -->
+
+  <EntityCodexEntryDef>
+    <defName>SCR_SCP019R</defName>
+    <label>SCP-019</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP019R</useDescriptionFrom>
+    <uiIconPath>Things/Buildings/SCR_SCP019/SCR_SCP019Preview</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>19</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP019R</li>
+	  <li>SCR_SCP0192R</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
 
   <EntityCodexEntryDef>
     <defName>SCR_SCP043R</defName>
@@ -108,6 +123,20 @@
     <orderInCategory>113</orderInCategory>
     <linkedThings>
       <li>SCR_SCP113R</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
+    <defName>SCR_SCP123J</defName>
+    <label>SCP-123-J</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP123J</useDescriptionFrom>
+    <uiIconPath>Things/Item/Resource/SCR_SCP123J</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>123</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP123J</li>
     </linkedThings>
   </EntityCodexEntryDef>
 
@@ -432,6 +461,20 @@
   </EntityCodexEntryDef>
 
   <EntityCodexEntryDef>
+    <defName>SCR_SCP1079R</defName>
+    <label>SCP-1079</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP1079R</useDescriptionFrom>
+    <uiIconPath>Things/Item/Resource/SCR_SCP1079</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>1079</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP1079R</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
     <defName>SCR_SCP1577R</defName>
     <label>SCP-1577</label>
     <category>SCR_SCP</category>
@@ -608,6 +651,20 @@
   </EntityCodexEntryDef>
 
   <EntityCodexEntryDef>
+    <defName>SCR_SCP2471R</defName>
+    <label>SCP-2471</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP2471R</useDescriptionFrom>
+    <uiIconPath>Things/Item/Resource/SCR_SCP2471</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>2471</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP2471R</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
     <defName>SCR_SCP2584R</defName>
     <label>SCP-2584</label>
     <category>SCR_SCP</category>
@@ -692,6 +749,35 @@
     <linkedThings>
       <li>SCR_SCP4074R</li>
     </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
+    <defName>SCR_SCP4155R</defName>
+    <label>SCP-4155</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP4155R</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCR_SCP4155/SCR_SCP4155_east</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>4155</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP4155R</li>
+	  <li>SCR_4155SoftServe</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
+    <defName>SCR_SCP5133R</defName>
+    <label>SCP-5133</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP5133R</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCR_SCP5133/SCR_SCP5133_east</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>5133</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP5133R</li>
+	  </linkedThings>
   </EntityCodexEntryDef>
 
   <EntityCodexEntryDef>

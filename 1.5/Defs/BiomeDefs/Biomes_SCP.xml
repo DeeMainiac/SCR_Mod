@@ -37,10 +37,9 @@
     <diseaseMtbDays>33</diseaseMtbDays>
     <diseases>
 	<!--
-	 <li>
-		<diseaseInc>SCR_Disease_SCP610</diseaseInc>
-		<commonality>0.001</commonality>
-		As this has no cure, it's unfair to throw it commonly, and besides, the creatures always give it to you
+     <li>
+        <diseaseInc>SCR_Disease_SCP1797R</diseaseInc>
+        <commonality>0.001</commonality> As this has no cure, it's unfair to throw it too commonly, and besides, the creatures always givt it to you
       </li>
 	  -->
       <li>
@@ -96,15 +95,16 @@
 	  <PoisonForestSpores MayRequire="mlie.advancedbiomes">15</PoisonForestSpores>
     </baseWeatherCommonalities>
     <wildPlants>
+
 		<SCR_SCP610_Grass>5</SCR_SCP610_Grass>
 		<Plant_Brambles>0.5</Plant_Brambles>
 		<Plant_Dandelion>0.6</Plant_Dandelion>
 		<Plant_Agave>0.09</Plant_Agave>
 		<Plant_TreeDrago>0.0345</Plant_TreeDrago>
-		<Plant_TreeOak>0.011</Plant_TreeOak>
+		<Plant_TreeOak>0.0011</Plant_TreeOak>
 		<Plant_Rafflesia>0.05</Plant_Rafflesia>
 		<Plant_TreeHarbinger MayRequire="ludeon.rimworld.anomaly">0.2</Plant_TreeHarbinger>
-		<AB_AlienTree MayRequire="sarg.alphabiomes">0.25</AB_AlienTree>
+		<AB_AlienTree MayRequire="sarg.alphabiomes">1</AB_AlienTree>
 		<AB_HalfAlienTree MayRequire="sarg.alphabiomes">0.865</AB_HalfAlienTree>
 		<AB_GlobularPlant MayRequire="sarg.alphabiomes">2</AB_GlobularPlant>
 		<AB_GiantGamma MayRequire="sarg.alphabiomes">0.2</AB_GiantGamma>
@@ -126,6 +126,7 @@
 		<Plant_TreeGrayPine MayRequire="ludeon.rimworld.biotech">0.75</Plant_TreeGrayPine>
 		<Plant_Witchwood MayRequire="ludeon.rimworld.biotech">0.75</Plant_Witchwood>
 		<Plant_RatPalm MayRequire="ludeon.rimworld.biotech">0.75</Plant_RatPalm>
+		
 		<PlantDemonBreath MayRequire="tarojun.morishep.onioftherim">0.005</PlantDemonBreath>
 		<MorrowRim_FunnelCap MayRequire="sirmashedpotato.morrowrim">0.1</MorrowRim_FunnelCap>
 		<MorrowRim_WeepingParasol MayRequire="sirmashedpotato.morrowrim.ashswamp">0.5</MorrowRim_WeepingParasol>
@@ -154,6 +155,7 @@
 		<Dreadmeld MayRequire="ludeon.rimworld.anomaly">0.001</Dreadmeld>
 		<Toxalope MayRequire="Ludeon.RimWorld.Biotech">2</Toxalope>
 		<WasteRat MayRequire="Ludeon.RimWorld.Biotech">2</WasteRat>
+		
 		<BMT_Trilobite MayRequire="biomesteam.biomesprehistoric">2</BMT_Trilobite>
 		<BMT_GlowSlug MayRequire="biomesteam.biomescaverns">1</BMT_GlowSlug>
 		<BMT_GlowSnail MayRequire="biomesteam.biomescaverns">1</BMT_GlowSnail>
@@ -170,7 +172,7 @@
 		<Onibi MayRequire="x3v21.jmc">0.01</Onibi> <!-- Will-o-wisp -->
 		<MycoidCattle MayRequire="epicfloor.mycoidcattle">0.3</MycoidCattle>
 		<Bat MayRequire="zal.witchinghour">0.05</Bat>
-		<AA_FungalHusk MayRequire="sarg.alphaanimals">2</AA_FungalHusk>
+		<AA_FungalHusk MayRequire="sarg.alphaanimals">0.52</AA_FungalHusk>
     </wildAnimals>
     <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
 		<SCR_SCP610A MayRequire="Ludeon.RimWorld.Biotech">4</SCR_SCP610A>

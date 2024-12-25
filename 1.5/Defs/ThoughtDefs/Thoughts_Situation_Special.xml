@@ -151,7 +151,7 @@
 		<stages>
 			<li>
 				<label>was inside SCP-1695</label>
-				<description>I was installed into a Meaty the Meatworm instance. I can still here the wriggling and squirming inside there.</description>
+				<description>I was installed into a Meaty the Meatworm instance.</description>
 				<baseMoodEffect>-35</baseMoodEffect>
 			</li>
 		</stages>
@@ -210,7 +210,7 @@
 		<stages>
 			<li>
 				<label>stepping on SCP-610 corruption</label>
-				<description>The corruption of the Flesh That Hates is everywhere. Just hearing the all-consuming demon fungus squish and throb under my weight makes me feel malaise.</description>
+				<description>The corruption of the Flesh That Hates is everywhere. Just hearing the all-consuming fungus squish and throb under my weight makes me feel awful.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>

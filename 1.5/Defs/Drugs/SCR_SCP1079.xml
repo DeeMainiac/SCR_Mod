@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="MechSerumBase">
+    <defName>SCR_SCP1079R</defName>
+    <label>SCP-1079</label>
+    <description>SCP-1079 is a candy labeled as Wondertainment's Bubblebath Bonbons. It causes the consumer's blood to boil and escape from their pores. Eating several in short succession can be fatal.</description>
+    <modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+	</modExtensions>
+	<graphicData>
+      <texPath>Things/Item/Resource/SCR_SCP1079</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    	<drawSize>.7</drawSize>
+	</graphicData>
+    <stackLimit>32</stackLimit>
+    <statBases>
+      <MarketValue>10</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+	  <li>SCPObjects</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+	<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
+	<comps>
+	  <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Consume a SCP-1079 candy</useLabel>
+        <useDuration>90</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>SecureContainRimworld.CompUseEffect_UseSCP1079</compClass>
+      </li>
+<li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>Administer_SCP1079R</defName>
+    <label>administer SCP-1079</label>
+    <description>Administer a SCP-1079 candy.</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Administering SCP-1079.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>100</workAmount>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SCR_SCP1079R</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_SCP1079R</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+</Defs>
