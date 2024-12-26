@@ -74,17 +74,17 @@
 	<!-- SCP-2741 -->
 
 	<ThoughtDef>
-		<defName>SCR_Ate2741</defName>
+		<defName>SCR_Ate2741R</defName>
 		<showBubble>true</showBubble>
 		<icon>Things/Mote/ThoughtSymbol/Food</icon>
-		<durationDays>1</durationDays>
+		<durationDays>.5</durationDays>
 		<nullifyingTraits>
 			<li>Psychopath</li>
 		</nullifyingTraits>
 		<stages>
 			<li>
-				<label>fortune cookie</label>
-				<description>The note in my fortune cookie gives me a little hope.</description>
+				<label>Ate SCP-2741</label>
+				<description>The note in my fortune cookie gives me a little hope. It's... strangely relevant to me.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>

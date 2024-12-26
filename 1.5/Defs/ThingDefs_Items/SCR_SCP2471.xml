@@ -43,6 +43,7 @@
 			<maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
 			<defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
 			<ingestSound>Meal_Eat</ingestSound>
+			<tasteThought>SCR_Ate2741R</tasteThought>
 		</ingestible>
 		<allowedArchonexusCount>80</allowedArchonexusCount>
 		<possessionCount>5</possessionCount>

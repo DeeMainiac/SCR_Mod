@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SCR_SCP_Base">
+	<ThingDef ParentName="AnimalThingBase">
 		<defName>SCR_SCP4155R</defName>
 		<label>SCP-4155</label>
 		<description>SCP-4155 is a small blind and hairless cat that sheds vanilla soft serve ice cream.</description>
@@ -19,22 +19,21 @@
 			<MoveSpeed>4.5</MoveSpeed>
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
-			<FilthRate>.2</FilthRate>
 		</statBases>
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
-			<baseBodySize>0.30</baseBodySize>
-			<maxPreyBodySize>0.15</maxPreyBodySize>
+			<baseBodySize>0.32</baseBodySize>
+			<maxPreyBodySize>0.25</maxPreyBodySize>
 			<baseHungerRate>0.15</baseHungerRate>
 			<baseHealthScale>0.42</baseHealthScale>
-			<foodType>CarnivoreAnimal, Meat, Corpse, OvivoreAnimal, Fluid, Processed, Meal, Kibble</foodType>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Leather_Light</leatherDef>
 			<useMeatFrom>Cat</useMeatFrom>
 			<wildness>0</wildness>
 			<petness>1</petness>
 			<trainability>None</trainability>
-			<nuzzleMtbHours>4</nuzzleMtbHours>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>5</nameOnTameChance>
 			<litterSizeCurve>
@@ -46,7 +45,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>13</lifeExpectancy>
+			<lifeExpectancy>10</lifeExpectancy>
 			<wildBiomes>
 				<AridShrubland>0.1</AridShrubland>
 				<BorealForest>0</BorealForest>
@@ -61,7 +60,7 @@
 				<Desert>0</Desert>
 				<ExtremeDesert>0</ExtremeDesert>
 			</wildBiomes>
-			<lifeStageAges Inherit="False">
+			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
@@ -73,102 +72,101 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.4</minAge>
-          <soundWounded>Pawn_Cat_Injured</soundWounded>
-          <soundDeath>Pawn_Cat_Death</soundDeath>
-          <soundCall>Pawn_Cat_Call</soundCall>
-          <soundAngry>Pawn_Cat_Angry</soundAngry>
+					<soundWounded>Pawn_Cat_Injured</soundWounded>
+					<soundDeath>Pawn_Cat_Death</soundDeath>
+					<soundCall>Pawn_Cat_Call</soundCall>
+					<soundAngry>Pawn_Cat_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<soundEating>PredatorSmall_Eat</soundEating>
 		</race>
 		<tradeTags>
-			<li>AnimalExotic</li>
 			<li>SCP</li>
 		</tradeTags>
 		<tools>
-      <li>
-        <label>left claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>6</power>
-        <cooldownTime>1.5</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>14</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>right claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>6</power>
-        <cooldownTime>1.5</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>14</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>7</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.7</chanceFactor>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>14</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>3</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-    </tools>
-    <comps>
-      <li Class="CompProperties_Milkable">
-        <milkDef>SCR_4155SoftServe</milkDef>
-        <milkIntervalDays>3</milkIntervalDays>
-        <milkAmount>10</milkAmount>
-        <milkFemaleOnly>false</milkFemaleOnly>
-      </li>
-    </comps>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>SCR_4155SoftServe</milkDef>
+				<milkIntervalDays>3</milkIntervalDays>
+				<milkAmount>10</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
 		
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>SCR_SCP4155R</defName>
 		<label>SCP-4155</label>
 		<race>SCR_SCP4155R</race>
-		<combatPower>20</combatPower>
-		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<combatPower>35</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>3~6</wildGroupSize>
-		<alternateGraphicChance>0.8</alternateGraphicChance>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
