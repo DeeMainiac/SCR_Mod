@@ -2,8 +2,8 @@
 <Defs>
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCR_ES_SCP019R</defName>
-		<label>SCP-ES-019</label>
-		<description>SCP-ES-019 is a small red and black MP3 player with headphones. It emits strange audio that can cause mental breaks in listeners.</description>
+		<label>SCP-019-ES</label>
+		<description>SCP-019-ES is a small red and black MP3 player with headphones. It emits strange audio that can cause mental breaks in listeners.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>

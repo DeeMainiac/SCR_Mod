@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="SCR_SCP_Base">
+<ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP1675R</defName>
     <label>SCP-1675</label>
-    <description>SCP-1675 is an autonomous robot that wanders aimlessly until it detects a goose. Upon seeing a goose, it immediately attempts to slaughter it while shouting insults in French.</description>
+    <description>SCP-1675 is an autonomous robot that wanders aimlessly until it detects a goose. Upon seeing a goose, it immediately attempts to slaughter it while insulting geese in French.</description>
     		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -27,7 +27,7 @@
 	  <MeatAmount>0</MeatAmount>
 	  <ArmorRating_Heat>2.00</ArmorRating_Heat>
     </statBases>
-			<butcherProducts>
+		<butcherProducts>
 			<Steel>30</Steel>
 		</butcherProducts>
     <uiIconScale>1.1</uiIconScale>
@@ -45,8 +45,10 @@
 	  <bloodDef>Filth_MachineBits</bloodDef>
 			<leatherDef>Steel</leatherDef>
 			<specificMeatDef>ChunkSlagSteel</specificMeatDef>
-
-	  	  		<wildBiomes>
+		<hediffGiverSets Inherit="False">
+			<li>TSP_SCR_NoAlways_AgingSpawn</li>
+		</hediffGiverSets>
+	  	  	<wildBiomes>
 				<AridShrubland>.1</AridShrubland>
 				<BorealForest>.1</BorealForest>
 				<ColdBog>.1</ColdBog>
@@ -76,7 +78,6 @@
 	<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <tradeTags>
 	  <li>AnimalExotic</li>
-	  <li>SCP</li>
     </tradeTags>
     <tools>
 	      <li>
@@ -114,7 +115,7 @@
   </ThingDef>
   
   <PawnKindDef Name="SCR_SCP1675R" ParentName="TSP_SCP_Creature_PawnkindDef">
-    <defaultFactionType></defaultFactionType>
+    <defaultFactionType Inherit="False"></defaultFactionType>
     <defName>SCR_SCP1675R</defName>
     <label>SCP-1675</label>
     <race>SCR_SCP1675R</race>

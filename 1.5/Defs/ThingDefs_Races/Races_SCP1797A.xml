@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="SCR_SCP_Base">
+<ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP1797A</defName>
     <label>SCP-1797-A</label>
-    <description>SCP-1797-A is a kitten that was formerly a tumor that fell off of a pawn infected with SCP-1797. It cannot reproduce on its own.</description>
-    		<modExtensions>
+    <description>SCP-1797-A is a cat that was formerly a tumor that cleaved off of a pawn infected with SCP-1797. It cannot reproduce on its own.</description>
+    	<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
 					<li>SCR_CEuclid</li>
@@ -81,7 +81,6 @@
       <li>AnimalCommon</li>
       <li>AnimalPet</li>
 	  <li>AnimalExotic</li>
-	  <li>SCP</li>
     </tradeTags>
     <tools>
       <li>
@@ -158,7 +157,7 @@
 	</comps> -->
   </ThingDef>
   
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP1797A</defName>
     <label>SCP-1797-A</label>
     <race>SCR_SCP1797A</race>

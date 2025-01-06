@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<ThingDef ParentName="SCR_SCP_Base">
+	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP111R</defName>
 		<label>SCP-111</label>
-		<description>SCP-111 is one of six different colorful snail-like creatures that occasionally exhale fire as a defense mechanism. They explode on death, but predators haven't picked up on that detail yet.</description>
+		<description>SCP-111 is one of six different colorful snail-like creatures that occasionally exhale fire as a defense mechanism.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -19,15 +19,15 @@
 		  <MoveSpeed>3</MoveSpeed>
 		  <MarketValue>550</MarketValue>
 		  <ComfyTemperatureMin>-35</ComfyTemperatureMin>
-		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+		  <ComfyTemperatureMax>999</ComfyTemperatureMax>
 		  <FilthRate>16</FilthRate>
+		  <MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">3</MinimumContainmentStrength> <!-- Anomaly containment platform related -->
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
 		<race>
-		
-		<deathAction>
-		<workerClass>DeathActionWorker_SmallExplosion</workerClass>
-		</deathAction>
+			<deathAction>
+				<workerClass>DeathActionWorker_SmallExplosion</workerClass>
+			</deathAction>
 		  <herdAnimal>true</herdAnimal>
 		  <body>SCR_Snail</body>
 		  <baseBodySize>0.1</baseBodySize>
@@ -42,6 +42,7 @@
 		  <petness>0.6</petness>
 		  <trainability>Intermediate</trainability>
 		  <lifeExpectancy>10</lifeExpectancy>
+		  <canBePredatorPrey>false</canBePredatorPrey> <!-- No one is going to attack something that blows up! -->
 			<wildBiomes>
 				<AridShrubland>0.1</AridShrubland>
 				<BorealForest>0</BorealForest>
@@ -74,15 +75,14 @@
 			  <soundAngry>Pawn_DogSmall_Angry</soundAngry>
 			</li>
 		  </lifeStageAges>
-		  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-		  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		  <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
 		  <li>AnimalCommon</li>
 		  <li>AnimalFarm</li>
 		  <li>AnimalExotic</li>
-		  <li>SCP</li>
 		</tradeTags>
 		<tools>
 		  <li>
@@ -105,14 +105,14 @@
 			<eggCountRange>1~2</eggCountRange>
 		  </li>
 		</comps>
-		
 	  </ThingDef>
-	  <PawnKindDef Name="SCR_SCP111R" ParentName="AnimalKindBase">
+	  
+	  <PawnKindDef Name="SCR_SCP111R" ParentName="TSP_SCP_Creature_PawnkindDef">
 		<defName>SCR_SCP111R</defName>
 		<label>SCP-111</label>
 		<race>SCR_SCP111R</race>
 		<combatPower>20</combatPower>
-		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<wildGroupSize>3~6</wildGroupSize>
 		<alternateGraphicChance>0.8</alternateGraphicChance>
 		<alternateGraphics>

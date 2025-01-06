@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThinkTreeDef[defName="TryContainmentBreach"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThinkTreeDef[defName="Humanlike"]/thinkRoot/subNodes</xpath>
+			<value>
+				<!-- Deemaniac, I don't know how to change this, but ALL HAR Race Pawns have a Faction, so this is probably not going to work -->
+				<!-- I assume that if the INVERT Boolean statement is set to false, it will work if it has a Faction, wish me luck -->
+				<li Class="ThinkNode_ConditionalHasFaction">
+					<invert>false</invert>
+					<subNodes>
+						<li Class="ThinkNode_ConditionalStarving">
+							<subNodes>
+								<li Class="ThinkNode_Subtree">
+									<treeDef>TryContainmentBreach</treeDef>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

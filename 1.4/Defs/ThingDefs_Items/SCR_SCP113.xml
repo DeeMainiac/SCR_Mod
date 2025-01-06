@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCR_SCP113R</defName>
 		<label>SCP-113</label>
-		<description>SCP-113 is an object that looks like a small, polished red jasper that switches the gender of the pawn who touches it.</description>
+		<description>SCP-113 is an object that looks like a small, polished piece of red jasper that switches the gender of the pawn who touches it.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>

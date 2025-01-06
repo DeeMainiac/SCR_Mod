@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP5893R</defName>
 		<label>SCP-5893</label>
 		<description>SCP-5893 is a stygimoloch that exudes heat. If threatened, it can erupt into flame and essentially explode with no harm to itself.</description>
@@ -18,7 +18,7 @@
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>600</MarketValue>
-			<ComfyTemperatureMax>800</ComfyTemperatureMax>
+			<ComfyTemperatureMax>999</ComfyTemperatureMax>
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<FilthRate>7</FilthRate>
 			<MeatAmount>30</MeatAmount>
@@ -26,39 +26,40 @@
 			<ArmorRating_Sharp>.4</ArmorRating_Sharp>
 			<ArmorRating_Blunt>.2</ArmorRating_Blunt>
 			<ArmorRating_Heat>2</ArmorRating_Heat>
+			<Flammability>0</Flammability> <!-- With no harm to itself -->
+			<MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">15</MinimumContainmentStrength> <!-- Anomaly containment platform related -->
 		</statBases>
 		<comps>
 		<li Class="CompProperties_HeatPusher">
-        <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>20</heatPerSecond>
-        <heatPushMinTemperature>-1000</heatPushMinTemperature>
-		<heatPushMaxTemperature>38</heatPushMaxTemperature>
+			<compClass>CompHeatPusherPowered</compClass>
+			<heatPerSecond>20</heatPerSecond>
+			<heatPushMinTemperature>-1000</heatPushMinTemperature>
+			<heatPushMaxTemperature>38</heatPushMaxTemperature>
       </li>
       <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>SCR_SCP5893Egg</eggFertilizedDef>
-        <eggFertilizationCountMax>4</eggFertilizationCountMax>
-        <eggLayIntervalDays>20</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>1~4</eggCountRange>
+			<eggFertilizedDef>SCR_SCP5893Egg</eggFertilizedDef>
+			<eggFertilizationCountMax>4</eggFertilizationCountMax>
+			<eggLayIntervalDays>20</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>1~4</eggCountRange>
       </li>
     </comps>
 		<race>
-		<deathAction>
-		<workerClass>DeathActionWorker_BigExplosion</workerClass>
-		</deathAction>
+			<deathAction>
+				<workerClass>SecureContainRimworld.DeathActionWorker_SCP3199_SpawnEgg</workerClass>
+			</deathAction>
 			<thinkTreeMain>SCR_SCPAI</thinkTreeMain>
 			<body>SCR_BipedalQuad</body>
 			<predator>false</predator>
 			<baseBodySize>1.2</baseBodySize>
 			<baseHungerRate>0.325</baseHungerRate>
 			<baseHealthScale>1.9</baseHealthScale>
-			<foodType>CarnivoreAnimal, VegetarianRoughAnimal, OvivoreAnimal, Kibble</foodType>
-			<wildness>.8</wildness>
+			<foodType>Meat, CarnivoreAnimal, VegetableOrFruit, VegetarianRoughAnimal, OvivoreAnimal, Fluid, Meal, Processed, Kibble</foodType>
+			<wildness>0.8</wildness>
 			<roamMtbDays>2</roamMtbDays>
-			<specificMeatDef MayRequire="biomesteam.biomescore">BMT_GastropodMeat</specificMeatDef>
 			<trainability>Advanced</trainability>
-			<leatherDef>Leather_Light</leatherDef>
-			<manhunterOnTameFailChance>.7</manhunterOnTameFailChance>
+			<leatherDef>Leather_Lizard</leatherDef>
+			<manhunterOnTameFailChance>0.7</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<wildBiomes>
 				<AridShrubland>.2</AridShrubland>
@@ -105,7 +106,7 @@
 		<tradeTags>
 			<li>AnimalRare</li>
 			<li>AnimalFighter</li>
-			<li>SCP</li>
+			<li>AnimalExotic</li>
 		</tradeTags>
 		<tools>
 			<li>
@@ -132,13 +133,13 @@
 		
 
 	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
 		<defName>SCR_SCP5893R</defName>
 		<label>SCP-5893</label>
 		<race>SCR_SCP5893R</race>
 		<combatPower>100</combatPower>
 		<wildGroupSize>4~8</wildGroupSize>
-		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<canArriveManhunter>true</canArriveManhunter>
 		<lifeStages>
 			<li>

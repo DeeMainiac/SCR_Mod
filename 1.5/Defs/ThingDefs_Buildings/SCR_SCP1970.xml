@@ -41,7 +41,7 @@
     <passability>PassThroughOnly</passability>
     <defaultPlacingRot>South</defaultPlacingRot>
     <building>
-      <joyKind>Television</joyKind>
+      <joyKind>SCR_JoyfulSCP</joyKind>
       <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
       <watchBuildingStandDistanceRange>2~4</watchBuildingStandDistanceRange>
       <watchBuildingStandRectWidth>5</watchBuildingStandRectWidth>

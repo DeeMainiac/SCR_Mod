@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional" MayRequire="vanillaexpanded.vfea">
+	<!-- Does this exist? -->
+		<xpath MayRequire="vanillaexpanded.vfea">/Defs/PawnKindDef[defName="VFEA_AncientSoldierOneAbility"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationReplace" MayRequire="vanillaexpanded.vfea">
+			<success MayRequire="vanillaexpanded.vfea">Always</success>
+			<xpath MayRequire="vanillaexpanded.vfea">/Defs</xpath>
+			<value MayRequire="vanillaexpanded.vfea">
+				<PawnKindDef ParentName="CJ_PsychoAncientSoldier" MayRequire="vanillaexpanded.vfea">
+					<defName>TSP_VFEA_SCR_1788_Goon</defName>
+					<label>mothballed SCP-1788-1</label>
+					<labelPlural>SCP-1788-1 instances</labelPlural>
+					<combatPower>90</combatPower>
+					<initialResistanceRange>3~7</initialResistanceRange>
+					<defaultFactionType MayRequire="vanillaexpanded.vfea">VFEA_AncientSoldiers</defaultFactionType>
+					<backstoryCryptosleepCommonality>0.85</backstoryCryptosleepCommonality>
+					<chemicalAddictionChance>1</chemicalAddictionChance>
+					<apparelMoney>2000~3800</apparelMoney>
+					<apparelTags>
+					  <li>IndustrialBasic</li>
+					  <li>IndustrialAdvanced</li>
+					  <li>IndustrialMilitaryBasic</li>
+					  <li>IndustrialMilitaryAdvanced</li>
+					  <li>SpacerMilitary</li>
+					  <li>BeltDefensePop</li>
+					</apparelTags>
+					<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+					<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+					<weaponMoney>400~1000</weaponMoney>
+					<weaponTags>
+					  <li>Gun</li>
+					  <li>GunAdvanced</li>
+					  <li>Lance</li>
+					</weaponTags>
+					<techHediffsMoney>2000~3000</techHediffsMoney>
+					<techHediffsTags Inherit="False">
+					  <li>AdvancedWeapon</li>
+					</techHediffsTags>
+					<techHediffsChance>1</techHediffsChance>
+					<combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+					<combatEnhancingDrugsCount>4~8</combatEnhancingDrugsCount>
+					<biocodeWeaponChance>1</biocodeWeaponChance>
+				</PawnKindDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>
