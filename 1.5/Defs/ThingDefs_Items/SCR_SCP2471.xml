@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>SCR_SCP2471R</defName>
 		<label>SCP-2471</label>
-		<description>SCP-2471 is a fortune cookie that gives an aphorism or statement of wisdom usefully tailored to the one who cracked it open.</description>
+		<description>SCP-2471 is a fortune cookie that gives an aphorism or statement of wisdom; its text is usefully tailored to the Pawn who cracked it open.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
