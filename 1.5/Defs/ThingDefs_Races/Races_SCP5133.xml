@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="AnimalThingBase">
+<ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP5133R</defName>
     <label>SCP-5133-1</label>
 		<description>SCP-5133-1 is a small creature resembling a Southern Brown Tree Frog made of fruit instead of meat.</description>
@@ -99,7 +99,7 @@
     </tradeTags>
   </ThingDef>
 
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP5133R</defName>
     <label>SCP-5133-1</label>
     <race>SCR_SCP5133R</race>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<ThingDef ParentName="SCR_SCP_Base">
+	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP4155R</defName>
 		<label>SCP-4155</label>
 		<description>SCP-4155 is a small blind and hairless cat that sheds vanilla soft serve ice cream.</description>
@@ -161,7 +161,7 @@
     </comps>
 		
 	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
 		<defName>SCR_SCP4155R</defName>
 		<label>SCP-4155</label>
 		<race>SCR_SCP4155R</race>

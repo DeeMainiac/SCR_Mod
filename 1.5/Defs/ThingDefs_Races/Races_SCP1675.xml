@@ -5,7 +5,7 @@
     <defName>SCR_SCP1675R</defName>
     <label>SCP-1675</label>
     <description>SCP-1675 is an autonomous robot that wanders aimlessly until it detects a goose. Upon seeing a goose, it immediately attempts to slaughter it while insulting geese in French.</description>
-    		<modExtensions>
+    	<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
 					<li>SCR_CSafe</li>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="AnimalThingBase">
+<ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP0192R</defName>
     <label>SCP-019-2</label>
-		<description>SCP-019-2 is a small, naked humanoid creature with animaloid features originating from SCP-019. It is incredibly hostile, constantly seeking out targets to attack. It doesn't live very long due to its improper anatomy.</description>
+		<description>SCP-019-2 is a small, naked, humanoid creature with animaloid features originating from SCP-019. It is incredibly hostile, constantly seeking out targets to attack. It doesn't live very long due to its improper anatomy.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 
@@ -70,8 +70,8 @@
       <baseBodySize>0.2</baseBodySize>
       <baseHealthScale>0.25</baseHealthScale>
       <baseHungerRate>0.1</baseHungerRate>
-      <useMeatFrom>Cat</useMeatFrom>
-      <foodType>CarnivoreAnimalStrict</foodType>
+      <!-- <useMeatFrom>Cat</useMeatFrom> -->
+      <foodType>CarnivoreAnimalStrict, Kibble</foodType>
       <leatherDef>Leather_Light</leatherDef>
       <wildness>1</wildness>
       <trainability>None</trainability>

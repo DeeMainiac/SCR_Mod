@@ -4,7 +4,7 @@
   <ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP939R</defName>
     <label>SCP-939</label>
-    <description>SCP-939 is a quadrupedal creature that imitates the voices and sounds of those they kill. They also emit a potent memory-altering gas.</description>
+    <description>SCP-939 is a quadrupedal creature that imitates the voices and sounds of those they kill. It also emits a potent, memory-altering gas.</description>
 	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 	<classRating>
