@@ -127,7 +127,7 @@
 		<Plant_Witchwood MayRequire="ludeon.rimworld.biotech">0.75</Plant_Witchwood>
 		<Plant_RatPalm MayRequire="ludeon.rimworld.biotech">0.75</Plant_RatPalm>
 		
-		<PlantDemonBreath MayRequire="tarojun.morishep.onioftherim">0.005</PlantDemonBreath>
+		<OotR_Plant_DemonBreath MayRequire="tarojun.morishep.onioftherim">0.005</OotR_Plant_DemonBreath>
 		<MorrowRim_FunnelCap MayRequire="sirmashedpotato.morrowrim">0.1</MorrowRim_FunnelCap>
 		<MorrowRim_WeepingParasol MayRequire="sirmashedpotato.morrowrim.ashswamp">0.5</MorrowRim_WeepingParasol>
 		<RB_Plant_Hive_Swamp MayRequire="sarg.rimbees">0.002</RB_Plant_Hive_Swamp>
