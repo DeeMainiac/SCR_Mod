@@ -4,7 +4,7 @@
 	<ThingDef ParentName="SCR_SCP_Creature_Base">
 		<defName>SCR_SCP4155R</defName>
 		<label>SCP-4155</label>
-		<description>SCP-4155 is a small blind and hairless cat that sheds vanilla soft serve ice cream.</description>
+		<description>SCP-4155 is a small, blind, and hairless cat that sheds vanilla soft serve ice cream.</description>
 		<modExtensions>
 			<li Class="SecureContainRimworld.CProceduresExtension">
 				<classRating>
@@ -31,10 +31,11 @@
 			<foodType>CarnivoreAnimal, Meat, Corpse, OvivoreAnimal, Fluid, Processed, Meal, Kibble</foodType>
 			<leatherDef>Leather_Light</leatherDef>
 			<useMeatFrom>Cat</useMeatFrom>
+			<specificMeatDef Inherit="False" IsNull="True"></specificMeatDef>
 			<wildness>0</wildness>
 			<petness>1</petness>
 			<trainability>None</trainability>
-			<nuzzleMtbHours>4</nuzzleMtbHours>
+			<nuzzleMtbHours>3</nuzzleMtbHours>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>5</nameOnTameChance>
 			<litterSizeCurve>
@@ -51,13 +52,13 @@
 				<AridShrubland>0.1</AridShrubland>
 				<BorealForest>0</BorealForest>
 				<ColdBog>0</ColdBog>
-				<TemperateForest>0.5</TemperateForest>
-				<TemperateSwamp>0.7</TemperateSwamp>
-				<TropicalRainforest>0.7</TropicalRainforest>
-				<TropicalSwamp>0.4</TropicalSwamp>
-				<IceSheet>0</IceSheet>
-				<SeaIce>0</SeaIce>
-				<Tundra>0</Tundra>
+				<TemperateForest>0</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<IceSheet>0.5</IceSheet>
+				<SeaIce>0.6</SeaIce>
+				<Tundra>1</Tundra>
 				<Desert>0</Desert>
 				<ExtremeDesert>0</ExtremeDesert>
 			</wildBiomes>
@@ -73,10 +74,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.4</minAge>
-          <soundWounded>Pawn_Cat_Injured</soundWounded>
-          <soundDeath>Pawn_Cat_Death</soundDeath>
-          <soundCall>Pawn_Cat_Call</soundCall>
-          <soundAngry>Pawn_Cat_Angry</soundAngry>
+					<soundWounded>Pawn_Cat_Injured</soundWounded>
+					<soundDeath>Pawn_Cat_Death</soundDeath>
+					<soundCall>Pawn_Cat_Call</soundCall>
+					<soundAngry>Pawn_Cat_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -86,6 +87,7 @@
 		<tradeTags>
 			<li>AnimalExotic</li>
 			<li>SCP</li>
+			<li>AnimalFarm</li>
 		</tradeTags>
 		<tools>
       <li>
