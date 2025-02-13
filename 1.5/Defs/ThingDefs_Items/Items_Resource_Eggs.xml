@@ -21,7 +21,7 @@
 			<FoodPoisonChanceFixedHuman>0.5</FoodPoisonChanceFixedHuman>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
-			<MarketValue>0.0001</MarketValue> <!-- Causes errors in which it is spawned ten thousand times with Traders if the Trader demands a cost instead of a Tag. -->
+			<MarketValue>0.0001</MarketValue>
 			<Nutrition>-5</Nutrition>
 		</statBases>
 		<tickerType>Normal</tickerType>
@@ -266,6 +266,58 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>5</hatcherDaystoHatch>
 				<hatcherPawn>SCR_SCP5133R</hatcherPawn>
+			</li>
+		</comps>
+			<tradeTags>
+				<li>SCP</li>
+				<li>EggSCP</li>
+			</tradeTags>
+	</ThingDef>
+	
+		<ThingDef ParentName="EggFertBase">
+		<defName>SCR_SCP3465Egg</defName>
+		<label>SCP-3465 egg (fert.)</label>
+		<description>A fertilized SCP-3465 egg. If all goes well, it should hatch into an instance of SCP-3465. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DeteriorationRate>.5</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>13</hatcherDaystoHatch>
+				<hatcherPawn>SCR_SCP3465R</hatcherPawn>
+			</li>
+		</comps>
+			<tradeTags>
+				<li>SCP</li>
+				<li>EggSCP</li>
+			</tradeTags>
+	</ThingDef>
+	
+		<ThingDef ParentName="EggFertBase">
+		<defName>SCR_SCP682CUEgg</defName>
+		<label>SCP-682-CU egg (fert.)</label>
+		<description>A fertilized SCP-682-CU egg. If all goes well, it should hatch into a vewy cute instance of SCP-682-CU. It can be eaten raw, but it's much better cooked. But how could you eat SCP-682-CU?!</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DeteriorationRate>.5</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>13</hatcherDaystoHatch>
+				<hatcherPawn>SCR_SCP682CU</hatcherPawn>
 			</li>
 		</comps>
 			<tradeTags>
