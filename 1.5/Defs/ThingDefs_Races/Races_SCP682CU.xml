@@ -82,6 +82,7 @@
       <leatherDef>Leather_Lizard</leatherDef>
       <wildness>0.5</wildness>
       <trainability>None</trainability>
+	  <useMeatFrom>Iguana</useMeatFrom>
       <petness>0.15</petness>
       <lifeExpectancy>12</lifeExpectancy>
       <soundEating>Reptile_Eat</soundEating>
