@@ -31,8 +31,9 @@
 			<leatherDef>Leather_Lizard</leatherDef>
 			<useMeatFrom>Tortoise</useMeatFrom>
 			<wildness>0.75</wildness>
-			<hediffGiverSets>
-				<li>SCR_SCP3465Immunity</li>
+			<hediffGiverSets Inherit="False">
+				<li>OrganicStandard</li>
+				<li>SCR_SCP3465RImmunity</li>
 			</hediffGiverSets>
 			<trainability>None</trainability>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
