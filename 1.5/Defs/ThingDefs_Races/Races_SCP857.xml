@@ -494,8 +494,8 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>7</power>
-				<cooldownTime>0.3</cooldownTime>
+				<power>4</power>
+				<cooldownTime>0.5</cooldownTime>
 				<chanceFactor>1</chanceFactor>
 				<linkedBodyPartsGroup>Neck</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -507,7 +507,7 @@
 		<defName>SCR_SCP857E</defName>
 		<label>SCP-857-E</label>
 		<race>SCR_SCP857E</race>
-		<combatPower>25</combatPower>
+		<combatPower>250</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
