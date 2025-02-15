@@ -284,7 +284,7 @@
 		<defName>SCR_SCP857A</defName>
 		<label>SCP-857-A</label>
 		<race>SCR_SCP857A</race>
-		<combatPower>10</combatPower>
+		<combatPower>100</combatPower>
 		<alternateGraphicChance>0.89</alternateGraphicChance>
 		<alternateGraphics>
 		  <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath></li>
@@ -373,7 +373,7 @@
 		<defName>SCR_SCP857B</defName>
 		<label>SCP-857-B</label>
 		<race>SCR_SCP857B</race>
-		<combatPower>10</combatPower>
+		<combatPower>100</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -440,7 +440,7 @@
 		<defName>SCR_SCP857C</defName>
 		<label>SCP-857-C</label>
 		<race>SCR_SCP857C</race>
-		<combatPower>10</combatPower>
+		<combatPower>100</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -507,7 +507,7 @@
 		<defName>SCR_SCP857E</defName>
 		<label>SCP-857-E</label>
 		<race>SCR_SCP857E</race>
-		<combatPower>250</combatPower>
+		<combatPower>200</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -606,7 +606,7 @@
 		<defName>SCR_SCP857G</defName>
 		<label>SCP-857-G</label>
 		<race>SCR_SCP857G</race>
-		<combatPower>10</combatPower>
+		<combatPower>100</combatPower>
 		<wildGroupSize>4~10</wildGroupSize>
 		<lifeStages>
 			<li>
@@ -702,7 +702,7 @@
 		<defName>SCR_SCP857H</defName>
 		<label>SCP-857-H</label>
 		<race>SCR_SCP857H</race>
-		<combatPower>25</combatPower>
+		<combatPower>250</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -781,7 +781,7 @@
 		<defName>SCR_SCP857I</defName>
 		<label>SCP-857-I</label>
 		<race>SCR_SCP857I</race>
-		<combatPower>15</combatPower>
+		<combatPower>200</combatPower>
 		<alternateGraphicChance>0.89</alternateGraphicChance>
 	<alternateGraphics>
       <li><texPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</texPath></li>
