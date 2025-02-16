@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="AnimalThingBase">
+<ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP682CU</defName>
     <label>SCP-682-CU</label>
     <description>SCP-682-CU is a very cute wittle lizard, so anomalously cute!</description>
@@ -134,12 +134,12 @@
     </tradeTags>
   </ThingDef>
   
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP682CU</defName>
     <label>SCP-682-CU</label>
     <race>SCR_SCP682CU</race>
     <combatPower>40</combatPower>
-    <ecoSystemWeight>0.30</ecoSystemWeight>
+    <ecoSystemWeight>0</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
