@@ -85,6 +85,20 @@
   </EntityCodexEntryDef>
 
   <EntityCodexEntryDef>
+    <defName>SCR_SCP065J</defName>
+    <label>SCP-065-J</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP065J</useDescriptionFrom>
+    <uiIconPath>Things/Plant/SCR_SCP065J/SCR_SCP065J</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>65</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP065J</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
     <defName>SCR_SCP095UA</defName>
     <label>SCP-095-UA</label>
     <category>SCR_SCP</category>
@@ -365,6 +379,20 @@
     <orderInCategory>666</orderInCategory>
     <linkedThings>
       <li>SCR_SCP666HalfJ</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
+    <defName>SCR_SCP682CU</defName>
+    <label>SCP-682-CU</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP682CU</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCR_SCP682CU/SCR_SCP682CU_east</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>682</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP682CU</li>
     </linkedThings>
   </EntityCodexEntryDef>
 
@@ -734,6 +762,21 @@
     <linkedThings>
       <li>SCR_SCP3199R</li>
 	  <li>SCR_SCP3199Egg</li>
+    </linkedThings>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
+    <defName>SCR_SCP3465R</defName>
+    <label>SCP-3465</label>
+    <category>SCR_SCP</category>
+    <useDescriptionFrom>SCR_SCP3465R</useDescriptionFrom>
+    <uiIconPath>Things/Pawn/Animal/SCR_SCP3465/SCR_SCP3465_east</uiIconPath>
+    <startDiscovered>true</startDiscovered>
+    <allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+    <orderInCategory>3465</orderInCategory>
+    <linkedThings>
+      <li>SCR_SCP3465R</li>
+	  <li>SCR_SCP3465Egg</li>
     </linkedThings>
   </EntityCodexEntryDef>
 

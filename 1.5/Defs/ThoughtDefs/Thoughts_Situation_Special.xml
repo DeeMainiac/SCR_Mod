@@ -157,6 +157,20 @@
 		</stages>
 	</ThoughtDef>
 
+<!-- SCP-3465 -->
+
+	<ThoughtDef>
+		<defName>SCR_SCP3465_Thought</defName>
+		<workerClass>SecureContainRimworld.ThoughtWorker_SCP3465</workerClass>
+		<stages>
+			<li>
+				<label>SCP-3465 nearby</label>
+				<description>Being near this turtle make me feel nice...</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
 	<!-- SCP-2845 -->
 
 	<ThoughtDef>
@@ -171,6 +185,8 @@
 		</stages>
 	</ThoughtDef>
 
+<!-- SCP-732-J -->
+
 	<ThoughtDef>
 		<defName>SCR_CarryingCeramicSeahorse</defName>
 		<workerClass>SecureContainRimworld.ThoughtWorker_SmolSeahorse</workerClass>
@@ -183,6 +199,8 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+  
+  <!-- SCP-2022 -->
   
 	<ThoughtDef>
 		<defName>SCR_AteSCP2022</defName>

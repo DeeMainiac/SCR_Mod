@@ -1,297 +1,327 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <Defs>
-  <HediffDef ParentName="DiseaseBase">
-    <defName>SCR_TranqHediff</defName>
-    <label>tranquilizer</label>
-    <description>Sleep drugs in the body delivered by a tranquilizer dart or a stun baton. Renders creatures unconscious after a time.
-\nNaturally recovers over time as the body filters it out.</description>
-    <!-- <lethalSeverity>-1</lethalSeverity> -->
-	<initialSeverity>0.15</initialSeverity>
-    <comps>
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>45000~100000</disappearsAfterTicks>
-      </li>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.75</severityPerDay>
-		<showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <minSeverity>0.05</minSeverity>
-        <label>little</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.8</setMax>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <setMax>0.85</setMax>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <minSeverity>0.15</minSeverity>
-        <label>moderate</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.5</setMax>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <postFactor>0.75</postFactor>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <minSeverity>0.3</minSeverity>
-        <label>severe</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.4</setMax>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <postFactor>0.75</postFactor>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <minSeverity>0.66</minSeverity>
-        <label>extreme</label>
-        <lifeThreatening>false</lifeThreatening>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.1</setMax>
-          </li>
-        </capMods>
-      </li>
-    </stages>
-  </HediffDef>
-  
-    <HediffDef ParentName="DiseaseBase">
-    <defName>SCR_SCP154EquipHediff</defName>
-    <label>SCP-154</label>
-    <description>Pain caused by SCP-154 being equipped and used.\nPain will fade once unequipped.</description>
-	<initialSeverity>.1</initialSeverity>
-	<comps>
-	    <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-2</severityPerDay>
-      </li>
-	</comps>
-   <stages>
-      <li>
-        <minSeverity>0.1</minSeverity>
-        <label></label>
-		<painOffset>.15</painOffset>
-      </li>
-    </stages>
-  </HediffDef>
-  
-  <HediffDef ParentName="DiseaseBase">
-    <defName>SCR_SCP939BreathHediff</defName>
-    <label>SCP-939 breath</label>
-    <description>An amnesia-inducing substance exhaled from SCP-939.
-\nNaturally recovers over time as the body filters it out.</description>
-	<initialSeverity>0</initialSeverity>
-    <comps>
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>10000~25000</disappearsAfterTicks>
-      </li>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.75</severityPerDay>
-		<showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-   <stages>
-      <li>
-        <minSeverity>0.15</minSeverity>
-        <label>moderate</label>
-      </li>
-      <li>
-        <minSeverity>0.30</minSeverity>
-        <label>severe</label>
-      </li>
-    </stages>
-  </HediffDef>
-  
-  <HediffDef ParentName="DiseaseBase">
-    <defName>SCR_SCP666Half_FoodPoisoning</defName>
-    <label>SCP-666 1/2-J</label>
-    <description>An awful gastrointestinal illness caused by SCP-666 1/2-J. The patient will vomit and feel very sick for some time.</description>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <initialSeverity>1</initialSeverity>
-	<maxSeverity>1</maxSeverity>
-	<makesSickThought>true</makesSickThought>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.79</severityPerDay>
-		<showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <label>recovering</label>
-		<minSeverity>0</minSeverity>
-        <vomitMtbDays>0.8</vomitMtbDays>
-        <painOffset>0.5</painOffset>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.3</setMax>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <postFactor>0.75</postFactor>
-          </li>
-          <li>
-            <capacity>Manipulation</capacity>
-            <postFactor>0.9</postFactor>
-          </li>
-          <li>
-            <capacity>BloodFiltration</capacity>
-            <postFactor>0.7</postFactor>
-          </li>
-          <li>
-            <capacity>Eating</capacity>
-            <postFactor>0.2</postFactor>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <label>major</label>
-        <minSeverity>0.4</minSeverity>
-        <vomitMtbDays>0.1</vomitMtbDays>
-        <painOffset>0.5</painOffset>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <postFactor>0.5</postFactor>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <postFactor>0.7</postFactor>
-          </li>
-          <li>
-            <capacity>Manipulation</capacity>
-            <postFactor>0.9</postFactor>
-          </li>
-          <li>
-            <capacity>BloodFiltration</capacity>
-            <postFactor>0.7</postFactor>
-          </li>
-          <li>
-            <capacity>Eating</capacity>
-            <postFactor>0.01</postFactor>
-          </li>
-        </capMods>
-      </li>
-	  <li>
-        <label>initial</label>
-        <minSeverity>0.85</minSeverity>
-        <painOffset>0.1</painOffset>
-		<vomitMtbDays>0.03</vomitMtbDays>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <postFactor>0.95</postFactor>
-          </li>
-          <li>
-            <capacity>Manipulation</capacity>
-            <postFactor>0.9</postFactor>
-          </li>
-          <li>
-            <capacity>BloodFiltration</capacity>
-            <postFactor>0.7</postFactor>
-          </li>
-          <li>
-            <capacity>Eating</capacity>
-            <setMax>0.01</setMax>
-          </li>
-        </capMods>
-      </li>
-    </stages>
-  </HediffDef>
-  
-   <!-- SCP-2845 -->
 
- <HediffDef ParentName="DiseaseBase">
-    <defName>SCR_SCP2845TransmuteHediff</defName>
-    <label>SCP-2845 Transmutation Aura</label>
-    <description>This Pawn is under the effect of SCP-2845's transmutation aura. If he does not leave the hazardous zone around SCP-2845, he will fatally transform into a SCP-2845-1 instance! \n It naturally recovers over time as the body filters it out.</description>
-	<initialSeverity>0.15</initialSeverity>
-	<lethalSeverity>0.84</lethalSeverity>
-	<makesSickThought>true</makesSickThought>
-    <comps>
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>45000~100000</disappearsAfterTicks>
-      </li>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1</severityPerDay>
-		<showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-   <stages>
-      <li>
-			<minSeverity>0.15</minSeverity>
-			<label>initial</label>
-			<capMods>
-			  <li>
-				<capacity>Consciousness</capacity>
-				<setMax>0.9</setMax>
-			  </li>
-			</capMods>
-      </li>
-      <li>
-			<minSeverity>0.30</minSeverity>
-			<label>moderate</label>
-			<lifeThreatening>true</lifeThreatening>
-			<capMods>
-			  <li>
-				<capacity>Consciousness</capacity>
-				<setMax>0.8</setMax>
-			  </li>
-			</capMods>
-      </li>
-	  <li>
-		  <minSeverity>0.50</minSeverity>
-		  <label>oh deer</label>
-		  <lifeThreatening>true</lifeThreatening>
-			<capMods>
-			  <li>
-				<capacity>Consciousness</capacity>
-				<setMax>0.5</setMax>
-			  </li>
-			  <li>
-				<capacity>Moving</capacity>
-				<setMax>0.5</setMax>
-			  </li>
-			</capMods>
-	  </li>
-    </stages>
-  </HediffDef>
-  
-	<HediffDef>
-		<defName>TSP_SCR_2845_CannotInfectSelf</defName>
-		<label>SCP-2845 Is Immune to Itself</label>
-		<description>YO DAWG, I heard you DON'T like SCP-2845 infections, so I prevented SCP-2845 from infecting SCP-2845 so you can avoid the Pillars turning into Pillars. \n \n In non-meme speak, this grants both SCP-2845 and SCP-2845-1 instances immunity to its own cursed aura. SCP-2845 and SCP-2845-1 represent, respectively, the source and the victim of the transformation curse. Neither instance can be converted!</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(255, 0, 0)</defaultLabelColor>
-		<isBad>true</isBad>
-		<!-- <scenarioCanAdd>false</scenarioCanAdd> -->
+	<HediffDef ParentName="DiseaseBase">
+		<defName>SCR_TranqHediff</defName>
+		<label>tranquilizer</label>
+		<description>Sleep drugs in the body delivered by a tranquilizer dart or a stun baton. Renders creatures unconscious after a time.
+\nNaturally recovers over time as the body filters it out.</description>
+		<lethalSeverity>1</lethalSeverity>
+		<initialSeverity>.15</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>45000~100000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+			</li>
+		</comps>
 		<stages>
 			<li>
-				<label>Immune to Yourself</label>
+				<minSeverity>0.05</minSeverity>
+				<label>little</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.8</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.15</minSeverity>
+				<label>moderate</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.5</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.3</minSeverity>
+				<label>severe</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.3</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.40</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>false</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+  
+	<HediffDef ParentName="DiseaseBase">
+		<defName>SCR_SCP154EquipHediff</defName>
+		<label>SCP-154</label>
+		<description>Pain caused by SCP-154 being equipped and used.\nPain will fade once unequipped.</description>
+		<initialSeverity>.1</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<label/>
+				<painOffset>.15</painOffset>
+			</li>
+		</stages>
+	</HediffDef>
+  
+	<HediffDef ParentName="DiseaseBase">
+		<defName>SCR_SCP939BreathHediff</defName>
+		<label>SCP-939 breath</label>
+		<description>An amnesia-inducing substance exhaled from SCP-939.
+\nNaturally recovers over time as the body filters it out.</description>
+		<initialSeverity>.15</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>45000~60000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.15</minSeverity>
+				<label>moderate</label>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>severe</label>
+			</li>
+		</stages>
+	</HediffDef>
+  
+	<HediffDef ParentName="DiseaseBase">
+		<defName>SCR_SCP666Half_FoodPoisoning</defName>
+		<label>SCP-666 1/2-J</label>
+		<description>An awful gastrointestinal illness caused by SCP-666 1/2-J. The patient will vomit and feel very sick for some time.</description>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<initialSeverity>1</initialSeverity>
+		<makesSickThought>true</makesSickThought>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.9</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>recovering</label>
+				<vomitMtbDays>0.8</vomitMtbDays>
+				<painOffset>0.5</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.3</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.75</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<postFactor>0.7</postFactor>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<postFactor>0.2</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>major</label>
+				<minSeverity>0.4</minSeverity>
+				<vomitMtbDays>0.1</vomitMtbDays>
+				<painOffset>0.5</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.5</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.7</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<postFactor>0.7</postFactor>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<postFactor>0.05</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>initial</label>
+				<minSeverity>0.85</minSeverity>
+				<painOffset>0.1</painOffset>
+				<vomitMtbDays>0.03</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.95</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+  
+	<!-- SCP-2845 -->
+
+	<HediffDef ParentName="DiseaseBase">
+		<defName>SCR_SCP2845TransmuteHediff</defName>
+		<label>SCP-2845 Transmutation Aura</label>
+		<description>This pawn is under the effect of SCP-2845's transmutation aura, fatally transforming them into an SCP-2845-1 instance.
+\nNaturally recovers over time as the body filters it out.</description>
+		<initialSeverity>0.15</initialSeverity>
+		<lethalSeverity>0.84</lethalSeverity>
+		<makesSickThought>true</makesSickThought>
+
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>45000~100000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.15</minSeverity>
+				<label>initial</label>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>moderate</label>
+				<lifeThreatening>true</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.50</minSeverity>
+				<label>severe</label>
+				<lifeThreatening>true</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.4</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+  
+	<!-- SCP-3465 -->
+  
+	<HediffDef ParentName="DiseaseBase">
+		<defName>SCR_SCP3465Hediff</defName>
+		<label>SCP-3465</label>
+		<description>An effect emitted from SCP-3465 that causes sleepiness, happiness, and satiation.
+\nNaturally recovers over time as the body filters it out.</description>
+		<initialSeverity>.15</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>45000~60000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.4</severityPerDay>
+			</li>
+		</comps>
+		<maxSeverity>1</maxSeverity>
+		<alwaysShowSeverity>true</alwaysShowSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0.15</minSeverity>
+				<label>initial</label>
+				<statFactors>
+					<RestFallRateFactor>1.1</RestFallRateFactor>
+				</statFactors>
+					<hungerRateFactor>.9</hungerRateFactor>
+					<socialFightChanceFactor>.8</socialFightChanceFactor>
+			</li>
+			<li>
+				<minSeverity>0.30</minSeverity>
+				<label>moderate</label>
+				<statFactors>
+					<RestFallRateFactor>1.4</RestFallRateFactor>
+				</statFactors>
+					<hungerRateFactor>.8</hungerRateFactor>
+					<socialFightChanceFactor>.75</socialFightChanceFactor>
+			</li>
+			<li>
+				<minSeverity>0.50</minSeverity>
+				<label>severe</label>
+				<statFactors>
+					<RestFallRateFactor>1.6</RestFallRateFactor>
+				</statFactors>
+					<hungerRateFactor>.75</hungerRateFactor>
+					<socialFightChanceFactor>.5</socialFightChanceFactor>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>extreme</label>
+				<statFactors>
+					<RestFallRateFactor>2</RestFallRateFactor>
+				</statFactors>
+					<hungerRateFactor>.65</hungerRateFactor>
+					<socialFightChanceFactor>.45</socialFightChanceFactor>
+			</li>
+		</stages>
+	</HediffDef>
+  
+  	<HediffDef>
+		<defName>SCR_SCP3465Immunity</defName>
+		<label>SCP-3465 immunity</label>
+		<description>Grants a SCP-3465 instance immunity to its own effect.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255, 0, 0)</defaultLabelColor>
+		<isBad>false</isBad>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<stages>
+			<li>
+				<label>immunity to SCP-3465</label>
 				<becomeVisible>false</becomeVisible>
 				<makeImmuneTo>
-					<li>SCR_SCP2845TransmuteHediff</li>
+					<li>SCR_SCP3465Hediff</li>
 				</makeImmuneTo>
 			</li>
 		</stages>
 	</HediffDef>
+  
 </Defs>
