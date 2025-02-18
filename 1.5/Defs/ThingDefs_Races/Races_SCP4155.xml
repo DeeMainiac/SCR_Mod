@@ -170,7 +170,6 @@
 		<combatPower>20</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<wildGroupSize>3~6</wildGroupSize>
-		<alternateGraphicChance>0.8</alternateGraphicChance>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
