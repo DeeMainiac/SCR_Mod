@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Class-A -->
+
+  <ThingDef ParentName="MechSerumBase">
+    <defName>SCR_ClassAAmnestic</defName>
+    <label>Class-A Amnestic</label>
+    <description>Class-A amnestics remove memories that are at the forefront of the consumer's mind, having been created no later than 6 or so hours ago.</description>
+	<graphicData>
+      <texPath>Things/Item/Drug/Penoxycyline</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    		<drawSize>.8</drawSize>
+	</graphicData>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+	<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>consume a Class-A amnestic pill</useLabel>
+        <useDuration>100</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>SecureContainRimworld.CompUseEffect_UseClassAAmnestic</compClass>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>Ingest_Pill</soundOnUsed>
+      </li>
+<li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+  
+  <RecipeDef>
+    <defName>Administer_ClassAAmnestic</defName>
+    <label>administer Class-A amnestic</label>
+    <description>Administer a Class-A amnestic pill to erase very recently formed memories.</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Administering amnestic.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>100</workAmount>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SCR_ClassAAmnestic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_ClassAAmnestic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+  <!-- Class B -->
+  
+    <ThingDef ParentName="MechSerumBase">
+    <defName>SCR_ClassBAmnestic</defName>
+    <label>Class-B Amnestic</label>
+    <description>Class-B amnestics remove memories that have been created no later than 24 or so hours ago.</description>
+	<graphicData>
+      <texPath>Things/Item/Drug/Penoxycyline</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    		<drawSize>.8</drawSize>
+	</graphicData>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+	<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>consume a Class-B amnestic pill</useLabel>
+        <useDuration>100</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>SecureContainRimworld.CompUseEffect_UseClassBAmnestic</compClass>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>Ingest_Pill</soundOnUsed>
+      </li>
+<li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+  
+  <RecipeDef>
+    <defName>Administer_ClassBAmnestic</defName>
+    <label>administer Class-B amnestic</label>
+    <description>Administer a Class-B amnestic pill to erase very recently formed memories.</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Administering amnestic.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>100</workAmount>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SCR_ClassBAmnestic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_ClassBAmnestic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+  <!-- Class C, unlikely to be added -->
+  
+  <!-- Class D -->
+  
+  <ThingDef ParentName="MechSerumBase">
+    <defName>SCR_ClassDAmnestic</defName>
+    <label>Class-D Amnestic</label>
+    <description>Class-D amnestics remove memories from a long time ago, rewriting their childhood. Keeps skills and personality traits intact.</description>
+	<graphicData>
+      <texPath>Things/Item/Drug/Penoxycyline</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    		<drawSize>.8</drawSize>
+	</graphicData>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+	<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>consume a Class-D amnestic pill</useLabel>
+        <useDuration>100</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>SecureContainRimworld.CompUseEffect_UseClassDAmnestic</compClass>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>Ingest_Pill</soundOnUsed>
+      </li>
+<li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+  
+  <RecipeDef>
+    <defName>Administer_ClassDAmnestic</defName>
+    <label>administer Class-D amnestic</label>
+    <description>Administer a Class-D amnestic pill to erase childhood memories.</description> <!-- see childhood backstory Amnesticized -->
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Administering amnestic.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>100</workAmount>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SCR_ClassDAmnestic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_ClassDAmnestic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+  <!-- Class E, unlikely to add -->
+  
+  <!-- Class F -->
+  
+  <ThingDef ParentName="MechSerumBase">
+    <defName>SCR_ClassFAmnestic</defName>
+    <label>Class-F Amnestic</label>
+    <description>Class-F amnestics completely erase childhood and adulthood memories.</description>
+	<graphicData>
+      <texPath>Things/Item/Drug/Penoxycyline</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    		<drawSize>.8</drawSize>
+	</graphicData>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+	<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>consume a Class-F amnestic pill</useLabel>
+        <useDuration>100</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>SecureContainRimworld.CompUseEffect_UseClassFAmnestic</compClass>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>Ingest_Pill</soundOnUsed>
+      </li>
+<li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+  
+  <RecipeDef>
+    <defName>Administer_ClassFAmnestic</defName>
+    <label>administer Class-F amnestic</label>
+    <description>Administer a Class-F amnestic pill to erase childhood and adulthood memories.</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Administering amnestic.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>100</workAmount>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SCR_ClassFAmnestic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_ClassFAmnestic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+  </Defs>

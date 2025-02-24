@@ -70,4 +70,67 @@
     </stockGenerators>
   </TraderKindDef>
 
+<TraderKindDef>
+    <defName>SCR_Orbital_PetSmarter</defName>
+    <label>PetSmarter</label>
+    <orbital>true</orbital>
+	<requestable>true</requestable>
+	<!--<commonality>.8</commonality>-->
+    <stockGenerators>
+      
+      <!-- Resources -->
+     <!-- <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>6000~8000</countRange>
+      </li> -->
+	  
+	  <!-- Animals -->
+	  
+      <li Class="StockGenerator_Category">
+        <categoryDef>PetSmarter</categoryDef>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <totalPriceRange>200~1500</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>PetSmarter</categoryDef>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <totalPriceRange>100~2000</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>PetSmarter</categoryDef>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>2~4</countRange>
+      </li>
+      
+      <!-- Drugs -->
+      <!-- none -->
+      
+      <!-- Techprints -->
+      <!-- none -->
+      
+      <!-- Weapons -->
+      <!-- none -->
+      
+      <!-- Apparel -->
+      <!-- none -->
+
+      <!-- Implants -->
+      <!-- none -->
+      
+      <!-- Buildings -->
+      <!-- none -->
+      
+      <!-- Exotic -->
+      <!-- none -->
+      
+      <!-- Slaves -->
+      <!-- none -->
+      
+      <!-- Buying -->
+     <!-- <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>SCP</tag></li>
+      --> 
+    </stockGenerators>
+  </TraderKindDef>
+
 </Defs>

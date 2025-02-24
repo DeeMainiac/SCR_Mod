@@ -102,6 +102,7 @@
       <li>AnimalUncommon</li>
 		<li>AnimalPet</li>
 		<li>SCP</li>
+		<li>PetSmarter</li>
     </tradeTags>
   </ThingDef>
 
