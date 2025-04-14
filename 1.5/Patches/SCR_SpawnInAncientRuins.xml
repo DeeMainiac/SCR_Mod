@@ -44,10 +44,11 @@
 
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="Apparel_Robe"]</xpath>
+		<xpath>/Defs/ThingSetMakerDef[defName="MapGen_AncientComplex_SecurityCrate"]/root/options</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingSetMakerDef[defName="MapGen_AncientComplex_SecurityCrate"]/root/options</xpath>
+			<success>Always</success>
 			<value>
 				<!--
 				<li>
@@ -124,7 +125,7 @@
 									<li MayRequire="sarg.rimbees">RB_Bee_TSP_SCR_SCP6394R_Queen</li>
 								</thingDefs>
 							</filter>
-							<countRange MayRequire="sarg.rimbees">1~2</countRange>
+							<countRange MayRequire="sarg.rimbees">2~2</countRange>
 						</fixedParams>
 					</thingSetMaker>
 				</li>
