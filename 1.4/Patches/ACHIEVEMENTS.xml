@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<!-- Is this Mod present? -->
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods> 
+		<!-- If it is, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs</xpath>
+			<value>
+				<AchievementsExpanded.AchievementTabDef>
+					<defName>TSP_SCR</defName>
+					<label>SCP</label>
+				</AchievementsExpanded.AchievementTabDef>
+
+				<AchievementsExpanded.Reward_EnemyRaid>
+					<defName>TSP_SCR_SCP3199R_Attack</defName>
+					<label>Summon Swarm of SCP-3199 Instances</label>
+					<tab>TSP_SCR</tab>
+					<cost>10</cost>
+					<incident>SCR_Incident_SCP3199_Hunt</incident>
+				</AchievementsExpanded.Reward_EnemyRaid>
+				
+				<AchievementsExpanded.Reward_EnemyRaid>
+					<defName>TSP_SCR_SCP939R_Attack</defName>
+					<label>Summon Pack of SCP-939 Instances</label>
+					<tab>TSP_SCR</tab>
+					<cost>10</cost>
+					<incident>SCR_Incident_SCP939_Hunt</incident>
+				</AchievementsExpanded.Reward_EnemyRaid>
+				
+				<AchievementsExpanded.Reward_EnemyRaid>
+					<defName>TSP_SCR_SCP2845R_Attack</defName>
+					<label>Invoke SCP-2854</label>
+					<tab>TSP_SCR</tab>
+					<cost>10</cost>
+					<incident>SCR_Incident_SCP2845_Hunt</incident>
+				</AchievementsExpanded.Reward_EnemyRaid>
+
+				<AchievementsExpanded.Reward_EnemyRaid>
+					<defName>TSP_SCR_SCP131R_Befriend</defName>
+					<label>Befriend SCP-131 Instances</label>
+					<tab>TSP_SCR</tab>
+					<cost>15</cost>
+					<incident>SCR_Incident_SCP131Join</incident>
+				</AchievementsExpanded.Reward_EnemyRaid>
+				
+				<AchievementsExpanded.Reward_EnemyRaid>
+					<defName>TSP_SCR_SCP848R_Befriend</defName>
+					<label>Befriend SCP-848 Instances</label>
+					<tab>TSP_SCR</tab>
+					<cost>40</cost>
+					<incident>SCR_Incident_SCP848_Growth</incident>
+				</AchievementsExpanded.Reward_EnemyRaid>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP3199_MeatCollect</defName>
+					<label>Suppertime Refuted</label>
+					<description>Obtain three thousand chunks of SCP-3199 meat at once!</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.ItemTracker">
+						<def>SCR_SCP3199Meat</def>
+						<count>3000</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>140</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP3199R_Tame</defName>
+					<label>Who's Refuting Whom?</label>
+					<description>Tame a SCP-3199 instance.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP3199R</key>
+								<value>1</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>100</points>
+				</AchievementsExpanded.AchievementDef>	
+
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP3199R_Kill</defName>
+					<label>Refuting the Refutation</label>
+					<description>Witness or cause the death of a SCP-3199 instance.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KillTracker">
+						<kindDef>SCR_SCP3199R</kindDef>
+						<count>1</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>20</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP3199R_Kill_Huge</defName>
+					<label>Humanity Refuted, My Rear!</label>
+					<description>Witness or cause the deaths of one hundred SCP-3199 instances.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KillTracker">
+						<kindDef>SCR_SCP3199R</kindDef>
+						<count>100</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>400</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP939R_Kill</defName>
+					<label>Let Speak the Dogs of War</label>
+					<description>Witness or cause the death of a SCP-939 instance.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KillTracker">
+						<kindDef>SCR_SCP939R</kindDef>
+						<count>1</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>30</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP939R_Kill_Huge</defName>
+					<label>Voices of the Slain</label>
+					<description>Witness or cause the deaths of one hundred SCP-939 instances.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KillTracker">
+						<kindDef>SCR_SCP939R</kindDef>
+						<count>100</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>300</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP2845R_Kill</defName>
+					<label>Deep Probe Saturn</label>
+					<description>Witness or cause the death of a SCP-2845 instance.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KillTracker">
+						<kindDef>SCR_SCP2845R</kindDef>
+						<count>1</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>400</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP2845R_Tame</defName>
+					<label>Standing Tall</label>
+					<description>Tame a SCP-2845-1 instance.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP28451R</key>
+								<value>1</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>30</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP2845R_MajorTame</defName>
+					<label>Pillars of the Community</label>
+					<description>Have seven tamed SCP-2845-1 instances.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP28451R</key>
+								<value>7</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>100</points>
+				</AchievementsExpanded.AchievementDef>	
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP2845R_MajorSuperTame</defName>
+					<label>More Pillars of the Community</label>
+					<description>Have twenty-five tamed SCP-2845-1 instances.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP28451R</key>
+								<value>25</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>150</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP2845R_MajorSuperDuperTame</defName>
+					<label>Collonade</label>
+					<description>Have fifty tamed SCP-2845-1 instances!</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP28451R</key>
+								<value>50</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>200</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP2845R_MajorSuperDuperUltraTame</defName>
+					<label>Saturn's Blessing</label>
+					<description>Have one hundred tamed SCP-2845-1 instances!</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP28451R</key>
+								<value>100</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>300</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP666Point5J_Cook</defName>
+					<label>BLEEEEGGGHHH</label>
+					<description>Cook an instance of SCP-666-1/2-J.</description>
+					<tab>TSP_SCR</tab>		
+					<tracker Class="AchievementsExpanded.ItemCraftTracker">
+						<def>SCR_SCP666HalfJ</def>
+						<count>1</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>20</points> 
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Tame_A</defName>
+					<label>Getting a Head</label>
+					<description>Tame an instance of SCP-857-A.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP857A</key>
+								<value>1</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>20</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Tame_B</defName>
+					<label>The Heart of the Matter</label>
+					<description>Tame an instance of SCP-857-B.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP857B</key>
+								<value>1</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>20</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Tame_C</defName>
+					<label>His Thoughts Are Slow</label>
+					<description>Tame an instance of SCP-857-C.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP857C</key>
+								<value>1</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>20</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Tame_E</defName>
+					<label>Spine Crawling Fun</label>
+					<description>Tame an instance of SCP-857-E.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP857E</key>
+								<value>1</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>20</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Tame_G</defName>
+					<label>Hide Away</label>
+					<description>Tame an instance of SCP-857-G.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP857G</key>
+								<value>1</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>20</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Tame_H</defName>
+					<label>Just Ribbing You</label>
+					<description>Tame an instance of SCP-857-H.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP857H</key>
+								<value>1</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>20</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Tame_I</defName>
+					<label>Smarter Than the Average Head</label>
+					<description>Tame an instance of SCP-857-I.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP857I</key>
+								<value>1</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>20</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Tame_Full</defName>
+					<label>Ethical Organ Harvesting</label>
+					<description>Tame one of each of the types of SCP-857 instances.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KindDefTracker">
+						<kindDefs>
+							<li>
+								<key>SCR_SCP857A</key>
+								<value>1</value>
+							</li>
+							<li>
+								<key>SCR_SCP857B</key>
+								<value>1</value>
+							</li>
+							<li>
+								<key>SCR_SCP857C</key>
+								<value>1</value>
+							</li>
+							<li>
+								<key>SCR_SCP857E</key>
+								<value>1</value>
+							</li>
+							<li>
+								<key>SCR_SCP857G</key>
+								<value>1</value>
+							</li>
+							<li>
+								<key>SCR_SCP857H</key>
+								<value>1</value>
+							</li>
+							<li>
+								<key>SCR_SCP857I</key>
+								<value>1</value>
+							</li>
+						</kindDefs>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>300</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Kill_A</defName>
+					<label>Head Mount</label>
+					<description>Witness or cause the death of a SCP-857-A instance.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KillTracker">
+						<kindDef>SCR_SCP857A</kindDef>
+						<count>1</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>30</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Kill_B</defName>
+					<label>Shot Through the Heart, You're to Blame</label>
+					<description>Witness or cause the death of a SCP-857-B instance.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KillTracker">
+						<kindDef>SCR_SCP857B</kindDef>
+						<count>1</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>30</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Kill_C</defName>
+					<label>Perish the Thought</label>
+					<description>Witness or cause the death of a SCP-857-C instance.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KillTracker">
+						<kindDef>SCR_SCP857C</kindDef>
+						<count>1</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>30</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Kill_E</defName>
+					<label>Nervous Nervous System</label>
+					<description>Witness or cause the death of a SCP-857-E instance.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KillTracker">
+						<kindDef>SCR_SCP857E</kindDef>
+						<count>1</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>30</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Kill_G</defName>
+					<label>One Last Glide</label>
+					<description>Witness or cause the death of a SCP-857-G instance.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KillTracker">
+						<kindDef>SCR_SCP857G</kindDef>
+						<count>1</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>30</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Kill_H</defName>
+					<label>Spare Ribs</label>
+					<description>Witness or cause the death of a SCP-857-H instance.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KillTracker">
+						<kindDef>SCR_SCP857H</kindDef>
+						<count>1</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>30</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP857R_Kill_I</defName>
+					<label>Head Hunters</label>
+					<description>Witness or cause the death of a SCP-857-I instance.</description>
+					<tab>TSP_SCR</tab>
+					<tracker Class="AchievementsExpanded.KillTracker">
+						<kindDef>SCR_SCP857I</kindDef>
+						<count>1</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>30</points>
+				</AchievementsExpanded.AchievementDef>
+				
+				<AchievementsExpanded.AchievementDef>
+					<defName>TSP_SCR_SCP578R_Bonk</defName>
+					<label>Blood Bonk</label>
+					<description>Make a Club out of SCP-578-1 instances.</description>
+					<tab>TSP_SCR</tab>		
+					<tracker Class="AchievementsExpanded.ItemCraftTracker">
+						<def>MeleeWeapon_Club</def>
+						<madeFrom>SCR_SCP578_1R</madeFrom>
+						<count>1</count>
+					</tracker>
+					<texPath>UI/HeroArt/Storytellers/NobodyMedium</texPath>
+					<points>70</points> 
+				</AchievementsExpanded.AchievementDef>
+
+				<!--
+					A = The item to be crafted
+					B = The Stuff type of which it is to be made
+					C = The number of items to be made
+					<tracker Class="AchievementsExpanded.ItemCraftTracker">
+						<def>A</def>
+						<madeFrom>B</madeFrom>
+						<count>C</count>
+					</tracker>
+				-->
+			</value>
+		</match>
+		<!-- If the Mod in question is not installed, the original code stands. -->
+	</Operation>
+</Patch>

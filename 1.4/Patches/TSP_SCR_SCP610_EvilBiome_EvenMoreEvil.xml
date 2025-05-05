@@ -16,11 +16,11 @@
 					<RainyThunderstorm>1</RainyThunderstorm>
 					<FoggyRain>3</FoggyRain>
 					<SnowGentle>1</SnowGentle>
-					<SnowHard>7</SnowHard>
+					<SnowHard>9</SnowHard>
 					<RG_Blizzard MayRequire="regrowth.botr.core">7</RG_Blizzard> <!-- As it is found in northern Russia -->
 					<RG_FoggySandstorm MayRequire="regrowth.botr.core">5</RG_FoggySandstorm>
 					<RG_SandStormHard MayRequire="regrowth.botr.core">5</RG_SandStormHard>
-					<PoisonForestSpores MayRequire="mlie.advancedbiomes">10</PoisonForestSpores>
+					<PoisonForestSpores MayRequire="mlie.advancedbiomes">13</PoisonForestSpores>
 				</baseWeatherCommonalities>
 			</value>
 		</match>

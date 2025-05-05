@@ -1,19 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-
-	<BodyPartDef><!-- In an attempt to fix red errors, this leg-foot combo can have a lil frostbite, as a treat -->
-		<defName>SCR_SuperLeg</defName>
-		<label>leg</label>
-		<hitPoints>25</hitPoints>
-		<skinCovered>true</skinCovered>
-		<frostbiteVulnerability>0.2</frostbiteVulnerability>
-		<tags>
-			<li>MovingLimbCore</li>
-			<li>MovingLimbSegment</li>
-		</tags>
-	</BodyPartDef>
-
 	<!-- SCP-857-A (HEAD WITH SIX LEGS) -->
 	<BodyDef>
 		<defName>TSP_SCR_857A</defName>
@@ -237,7 +224,7 @@
 					</parts>
 				</li>
 				<li>
-					<def>TSP_SCR_857_Enchantment</def>
+					<def>TSP_SCR_857_Enchantment_HasHeart</def>
 					<depth>Inside</depth>
 					<height>Middle</height>
 					<coverage>0</coverage>
@@ -263,7 +250,7 @@
 					<def>Brain</def>
 					<depth>Outside</depth>
 					<height>Middle</height>
-					<coverage>.5</coverage>
+					<coverage>0.5</coverage>
 					<groups>
 						<li>FullHead</li>
 					</groups>
@@ -272,12 +259,12 @@
 							<def>SCR_SuperLeg</def>
 							<customLabel>ventral foot</customLabel><!-- This is how RL snails move -->
 							<depth>Inside</depth>
-							<coverage>.5</coverage>
+							<coverage>0.15</coverage>
 						</li>
 					</parts>
 				</li>
 				<li>
-					<def>TSP_SCR_857_Enchantment</def>
+					<def>TSP_SCR_857_Enchantment_HasFeet</def>
 					<depth>Inside</depth>
 					<height>Middle</height>
 					<coverage>0</coverage>
@@ -462,7 +449,7 @@
 					<def>Ribcage</def>
 					<depth>Outside</depth>
 					<height>Top</height>
-					<coverage>0.1</coverage>
+					<coverage>0.231</coverage>
 					<groups>
 						<li>HeadClaw</li>
 					</groups>

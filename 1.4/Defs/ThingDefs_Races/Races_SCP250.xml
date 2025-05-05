@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="SCR_SCP_Base">
+  <ThingDef ParentName="SCR_SCP_Creature_Base">
     <defName>SCR_SCP250R</defName>
     <label>SCP-250</label>
   <description>SCP-250 is a living skeletal Allosaurus.</description>
   	<modExtensions>
 	<li Class="SecureContainRimworld.CProceduresExtension">
 
-	<classRating>
-		<li>SCR_CEuclid</li>
-		<li>SCR_DVlam</li>
-		<li>SCR_RNotice</li>
-	</classRating>
-	<containmentTier>1</containmentTier>
-	<isTranqable>false</isTranqable>
+		<classRating>
+			<li>SCR_CEuclid</li>
+			<li>SCR_DVlam</li>
+			<li>SCR_RNotice</li>
+		</classRating>
+		<containmentTier>1</containmentTier>
+		<isTranqable>false</isTranqable>
 	</li>
 	</modExtensions>
   <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -34,7 +34,7 @@
     </statBases>
 	    <receivesSignals>true</receivesSignals>
 	    <comps>
-      <li Class="CompProperties_CanBeDormant" />
+      <li Class="CompProperties_CanBeDormant"></li>
       <li Class="CompProperties_WakeUpDormant">
         <wakeUpOnDamage>true</wakeUpOnDamage>
       </li>
@@ -48,13 +48,16 @@
       <baseHungerRate>0.325</baseHungerRate>
       <baseHealthScale>2.5</baseHealthScale>
       <foodType>CarnivoreAnimalStrict, CarnivoreAnimal, Meat, Corpse, Fluid, Processed, Meal, Kibble</foodType>
-      <wildness>.97</wildness>
-      <trainability>Advanced</trainability>
-	  <useMeatFrom>Iguana</useMeatFrom>
-	  <leatherDef>Leather_Light</leatherDef>
-
-	  <manhunterOnTameFailChance>.65</manhunterOnTameFailChance>
-	  <manhunterOnDamageChance>.9</manhunterOnDamageChance>
+      <wildness>0.8</wildness>
+      <trainability>Intermediate</trainability>
+	  <specificMeatDef>Leather_Lizard</specificMeatDef>
+	  <leatherDef>Leather_Patch</leatherDef>
+	  <roamMtbDays>15</roamMtbDays>
+	  <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+	  <hediffGiverSets Inherit="False">
+		<li>TSP_SCR_NoAlways_AgingSpawn</li>
+	  </hediffGiverSets>
+	  <manhunterOnDamageChance>0.9</manhunterOnDamageChance>
 	  			<wildBiomes>
 				<AridShrubland>.1</AridShrubland>
 				<BorealForest>0</BorealForest>
@@ -78,7 +81,7 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.5</minAge>
+          <minAge>0.1</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
@@ -92,7 +95,7 @@
 	<tradeTags>
 			<li>AnimalRare</li>
 			<li>AnimalFighter</li>
-			<li>SCP</li>
+			<li>AnimalExotic</li>
 		</tradeTags>
       <tools>
 			<li>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<HediffGiverSetDef>
+		<defName>TSP_ST_SCP_2845_Immunity_Processing</defName>
+		<!-- Code derived entirely, and courtesy of, the Oni Mod by Lucky, Mori Ginto, and Tarojun -->
+		<!-- https://www.steamcommunity.com/sharedfiles/filedetails/?id=2891432261 -->
+		<hediffGivers>
+			<li Class="HediffGiver_Birthday">
+				<hediff>TSP_SCR_2845_CannotInfectSelf</hediff>
+				<ageFractionChanceCurve>
+					<points>
+						<li>(0, 1)</li> <!-- Always -->
+						<li>(1, 1)</li>
+					</points>
+				</ageFractionChanceCurve>
+			</li>
+			
+			<!-- Special -->
+			<li Class="HediffGiver_RandomAgeCurved">
+				<hediff>TSP_SCR_2845_CannotInfectSelf</hediff>
+				<!--
+				<partsToAffect>
+					<li>Torso</li>
+				</partsToAffect>
+				-->
+				<allowOnLodgers>true</allowOnLodgers>
+				<allowOnQuestRewardPawns>true</allowOnQuestRewardPawns>
+				<allowOnQuestReservedPawns>true</allowOnQuestReservedPawns>
+				<allowOnBeggars>true</allowOnBeggars>
+				<minPlayerPopulation>0</minPlayerPopulation>
+				<ageFractionMtbDaysCurve>
+					<points>
+						<li>(0, 0.0001)</li>
+						<li>(0.5, 0.0001)</li>
+						<li>(1, 0.0001)</li>
+					</points>
+				</ageFractionMtbDaysCurve>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+</Defs>

@@ -1,17 +1,20 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
 	<FactionDef ParentName="FactionBase">
 		<defName>SCR_GOC</defName>
 		<label>Global Occult Coalition</label>
-		<description>A large collection of anomalous and occult organizations. They seek to keep humanlikes safe and unaware of anomalous and paranormal entities by destroying them. They have particularly shaky relationships with powerful groups that hold and use anomalous entities.</description>
-	   <!-- <pawnSingular>insurgent</pawnSingular>
-		<pawnsPlural>insurgents</pawnsPlural> -->
-		<listOrderPriority>11</listOrderPriority>
+		<description>A large collection of anomalous and occult organizations. They seek to keep humanlikes safe from anomalous and paranormal entities by destroying them. They have particularly shaky relationships with powerful groups that hold and use anomalous entities.</description>
+	    <pawnSingular>peacekeeper</pawnSingular>
+		<pawnsPlural>peacekeepers</pawnsPlural>
+		<listOrderPriority>50</listOrderPriority>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
 		<fixedName>Global Occult Coalition</fixedName>
 		<leaderTitle>High Command</leaderTitle>
 		<leaderTitleFemale>High Command</leaderTitleFemale>
 		<factionIconPath>World/WorldObjects/Expanding/GlobalOccultCoalition</factionIconPath>
+		<settlementGenerationWeight>0.85</settlementGenerationWeight>
 		<colorSpectrum>
 		  <li>(182, 208, 226)</li> <!-- Powder blue -->
 		</colorSpectrum>
@@ -28,11 +31,12 @@
 			<li>Astropolitan</li>
 		</allowedCultures>
 		<requiredMemes>
-		   <li MayRequire="vanillaexpanded.vmemese">VME_Structure_Authoritarianism</li>
-		   <li MayRequire="sarg.alphamemes">AM_Iconoclast</li>
-		   <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
-		   <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
-		   <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li> -->
+			<!-- <li MayRequire="vanillaexpanded.vmemese">VME_Structure_Authoritarianism</li> -->
+			<li MayRequire="sarg.alphamemes">AM_Iconoclast</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology,deemainiac.securecontainrimworld">Ritualist</li>
 		</requiredMemes>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
@@ -40,21 +44,40 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 			
+			<li MayRequire="Ludeon.RimWorld.Ideology,erdelf.humanoidalienraces">HAR_Xenophobia</li>
 			<li MayRequire="llunak.MorePrecepts">Pacifism</li>
 			<li MayRequire="Qux.factionhippie">PeaceLove</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
-			<li MayRequire="VanillaExpanded.VMemesE">VME_Vegan</li>
 			<li MayRequire="Zezz.Altrumeme">Altruism</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology,erdelf.humanoidalienraces">HAR_Xenophilia</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Structure_Atheist</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Structure_SteampunkRevival</li> <!-- Broken God -->
+			<li MayRequire="SZ.TW.New.GuoHun,Ludeon.RimWorld.Ideology">SZ_Structure_CultureQiYuan</li>
 		</disallowedMemes>
 		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_ExtremelySlow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_VerySlow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_Slow</li>
+		
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+			<li MayRequire="Ludeon.Rimworld.Ideology">Execution_HorribleIfInnocent</li>
 			
+			<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Essential</li>
 		</disallowedPrecepts>
+		<structureMemeWeights>
+			<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology,vanillaexpanded.vmemese">1</VME_Structure_Eschatologism>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<VME_Structure_Authoritarianism MayRequire="vanillaexpanded.vmemese,Ludeon.RimWorld.Ideology">3</VME_Structure_Authoritarianism>
+			<VME_Structure_Esotericism MayRequire="vanillaexpanded.vmemese,Ludeon.RimWorld.Ideology">7</VME_Structure_Esotericism>
+		</structureMemeWeights>
 		<caravanTraderKinds>
 		  <li>Caravan_Outlander_BulkGoods</li>
-		  <li>Caravan_Outlander_CombatSupplier</li>
-		  <li>Caravan_Outlander_PirateMerchant</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
 		  <li>Visitor_Outlander_Standard</li>
@@ -62,8 +85,7 @@
 		<baseTraderKinds>
 		  <li>Base_Outlander_Standard</li>
 		</baseTraderKinds>
-		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
-		
+		<raidLootMaker>TSP_SCR_SCP_Factions_Want_SCP_Items</raidLootMaker>
 		<pawnGroupMakers>
 			  <li>
 			<!-- Normal fights, ranged with melee mix-ins -->
@@ -126,7 +148,6 @@
 			  <Mercenary_Slasher>7</Mercenary_Slasher>
 			  <Mercenary_Gunner>10</Mercenary_Gunner>
 			  <Mercenary_Elite>10</Mercenary_Elite>
-			  <Town_Councilman>10</Town_Councilman>
 			</options>
 		  </li>
 		</pawnGroupMakers>
@@ -136,7 +157,7 @@
 			<categories>
 			  <li>Scientist</li>
 			</categories>
-			<commonality>0.2</commonality>
+			<commonality>1</commonality>
 		  </li>
 		  <li>
 			<categories>
@@ -145,13 +166,13 @@
 			<commonality>0.2</commonality>
 		  </li>
 		  <li>
-		  <categories>
-		  <li>SCR_GOC</li>
-		  </categories>
-		  <commonality>0.6</commonality>
+			<categories>
+				<li>SCR_GOC</li>
+			</categories>
+		  <commonality>2</commonality>
 		  </li>
 		</backstoryFilters>
-		 <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		 <hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
 		<maxPawnCostPerTotalPointsCurve>
 		  <points>
 			<li>(400,200)</li>
@@ -159,9 +180,47 @@
 			<li>(100000,10000)</li>
 		  </points>
 		</maxPawnCostPerTotalPointsCurve>
-		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-		<allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
+		<settlementTexturePath>World/WorldObjects/Expanding/GlobalOccultCoalition</settlementTexturePath>
+		<allowedArrivalTemperatureRange>-999~999</allowedArrivalTemperatureRange>
 		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>50</configurationListOrderPriority>
-	  </FactionDef>
+	</FactionDef>
+	  
+	<ThingSetMakerDef>
+		<defName>TSP_SCR_SCP_Factions_Want_SCP_Items</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+						<li>MedicineIndustrial</li>
+						<li>MealSurvivalPack</li>
+						<li>Luciferium</li>
+
+						<!-- Artifacts/Objects -->
+						<li>SCR_SCP1905R</li>
+						<li>SCR_SCP572R</li>
+						<li>SCR_SCP127R</li>
+						<li>SCR_SCP3118R</li>
+						<li>SCR_SCP262R</li>
+						<li>SCR_SCP095UA</li>
+						<li>SCR_SCP475R</li>
+						<li>SCR_SCP113R</li>
+						<li>SCR_ES_SCP019R</li>
+						<li>SCR_SCP732J</li>
+						<li>SCR_SCP1577R</li>
+						<li>SCR_SCP578R</li>
+						<li>SCR_SCP500R</li>
+						<li>SCR_SCP2022R</li>
+						<li>SCR_SCP1689R</li>
+						<li>SCR_SCP1695R</li>
+						<li>SCR_SCP2228R</li>
+						<li>SCR_SCP1762R</li>
+						<li>SCR_SCP762R</li>
+						<li>SCR_SCP043R</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
 </Defs>

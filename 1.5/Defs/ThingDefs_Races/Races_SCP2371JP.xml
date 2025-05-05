@@ -1,125 +1,129 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
+	<ThingDef ParentName="SCR_SCP_Creature_Base">
+		<defName>SCR_SCP2371JP</defName>
+		<label>SCP-2371-JP</label>
+		<description>SCP-2371-JP is a soybean plant that transforms into a cow-like creature upon germination. Its vegan-friendly "meat" tastes exactly like beef.</description>
+			<modExtensions>
+				<li Class="SecureContainRimworld.CProceduresExtension">
 
-<ThingDef ParentName="SCR_SCP_Base">
-    <defName>SCR_SCP2371JP</defName>
-    <label>SCP-2371-JP</label>
-    <description>SCP-2371-JP is a soybean plant that transforms into a cow-like creature. Its vegan-friendly "meat" tastes exactly like beef.</description>
-    	<modExtensions>
-			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RNotice</li>
+				</classRating>
 
-			<classRating>
-				<li>SCR_CSafe</li>
-				<li>SCR_DDark</li>
-				<li>SCR_RNotice</li>
-			</classRating>
-
-			<containmentTier>0</containmentTier>
-			
+				<containmentTier>0</containmentTier>
+				
+				</li>
+		</modExtensions>
+		<statBases>
+		  <MoveSpeed>3.2</MoveSpeed>
+		  <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+		  <MarketValue>300</MarketValue>
+		  <FilthRate>6</FilthRate>
+		  <MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">0</MinimumContainmentStrength> <!-- Anomaly containment platform related -->
+		</statBases>
+		<comps>
+			<!-- Cannot be milked, according to the canonical article. -->
+		   <li Class="CompProperties_EggLayer">
+			<eggUnfertilizedDef>SCR_SCP2371JPSeed</eggUnfertilizedDef>
+			<eggFertilizedDef>SCR_SCP2371JPSeed</eggFertilizedDef>
+			<eggFertilizationCountMax>1</eggFertilizationCountMax>
+			<eggLayIntervalDays>6.6</eggLayIntervalDays>
+			<eggCountRange>1~4</eggCountRange>
+		  </li>
+		</comps>
+		<race>
+		  <body>QuadrupedAnimalWithHooves</body>
+		  <herdAnimal>true</herdAnimal>
+		  <baseBodySize>2.4</baseBodySize>
+		  <baseHungerRate>0.535</baseHungerRate>
+		  <baseHealthScale>1.5</baseHealthScale>
+		  <foodType>VegetarianRoughAnimal, Kibble</foodType>
+		  <leatherDef>Hay</leatherDef>
+		  <wildness>0</wildness>
+		  <roamMtbDays>1</roamMtbDays>
+		  <trainability>None</trainability>
+		  <meatLabel>SCP-2371-JP "beef"</meatLabel>
+		  <specificMeatDef>TSP_SCR_WEF_KlausCompost</specificMeatDef>
+		  <lifeExpectancy>22</lifeExpectancy>
+		  <hediffGiverSets Inherit="False">
+			<li>TSP_SCR_NoAlways_AgingSpawn</li>
+		  </hediffGiverSets>
+		  <!-- Life Stage Ages can't share an age -->
+		  <lifeStageAges Inherit="False">
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
 			</li>
-	</modExtensions>
-	<statBases>
-      <MoveSpeed>3.2</MoveSpeed>
-      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
-      <MarketValue>300</MarketValue>
-      <FilthRate>6</FilthRate>
-    </statBases>
-    <comps>
-		<!-- Cannot be milked, according to the canonical article. -->
-	   <li Class="CompProperties_EggLayer">
-        <eggUnfertilizedDef>SCR_SCP2371JPSeed</eggUnfertilizedDef>
-        <eggFertilizedDef>SCR_SCP2371JPSeed</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>6.6</eggLayIntervalDays>
-        <eggCountRange>1~4</eggCountRange>
-      </li>
-    </comps>
-    <race>
-      <body>QuadrupedAnimalWithHooves</body>
-      <herdAnimal>true</herdAnimal>
-      <baseBodySize>2.4</baseBodySize>
-      <baseHungerRate>0.535</baseHungerRate>
-      <baseHealthScale>1.5</baseHealthScale>
-      <foodType>VegetarianRoughAnimal, Kibble</foodType>
-      <leatherDef>Hay</leatherDef>
-      <wildness>0</wildness>
-      <roamMtbDays>2</roamMtbDays>
-      <trainability>None</trainability>
-      <meatLabel>SCP-2371-JP "beef"</meatLabel>
-	  <specificMeatDef>TSP_SCR_WEF_KlausCompost</specificMeatDef>
-      <lifeExpectancy>22</lifeExpectancy>
-	  <!-- Life Stage Ages can't share an age -->
-      <lifeStageAges Inherit="False">
-        <li>
-          <def>AnimalBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0.0001</minAge>
-        </li>
-        <li>
-          <def>AnimalAdult</def>
-          <minAge>0.0002</minAge>
-          <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
-          <soundDeath>Pawn_Muffalo_Death</soundDeath>
-          <soundCall>Pawn_Muffalo_Call</soundCall>
-          <soundAngry>Pawn_Muffalo_Angry</soundAngry>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-    </race>
-	<tradeTags>
-      <li>AnimalFarm</li>
-	  <li>SCP</li>
-    </tradeTags>
-    <tools>
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>8.8</power>
-        <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.7</chanceFactor>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>7</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-      <li>
-        <label>left hoof</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>8</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <label>right hoof</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>8</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-      </li>
-    </tools>
-  </ThingDef>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>0.001</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>0.002</minAge>
+			  <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+			  <soundDeath>Pawn_Muffalo_Death</soundDeath>
+			  <soundCall>Pawn_Muffalo_Call</soundCall>
+			  <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+		  <li>AnimalFarm</li>
+		  <li>AnimalExotic</li>
+		</tradeTags>
+		<tools>
+		  <li>
+			<capacities>
+			  <li>Bite</li>
+			</capacities>
+			<power>8.8</power>
+			<cooldownTime>2.6</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.7</chanceFactor>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>7</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		  </li>
+		  <li>
+			<label>left hoof</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Poke</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+		  </li>
+		  <li>
+			<label>right hoof</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Poke</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+		  </li>
+		</tools>
+	</ThingDef>
 
-  <PawnKindDef ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
     <defName>SCR_SCP2371JP</defName>
     <label>SCP-2371-JP</label>
     <race>SCR_SCP2371JP</race>

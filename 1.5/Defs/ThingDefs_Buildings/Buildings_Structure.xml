@@ -1,310 +1,361 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
+	<ThingDef ParentName="BuildingBase" Name="SCR_Wall" Abstract="True">
+		<defName>SCR_Wall</defName>
+		<label>wall</label>
+		<description>An impassable wall. Capable of holding up a roof.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+		  <texPath>Things/Buildings/Linked/SCR_Wall_Atlas_Concrete</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <linkType>CornerFiller</linkType>
+		  <linkFlags>
+		  <li>Wall</li>
+		  </linkFlags>
+		  <damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+			<edgeTop>Damage/Edge</edgeTop>
+			<edgeBot>Damage/Edge</edgeBot>
+			<edgeLeft>Damage/Edge</edgeLeft>
+			<edgeRight>Damage/Edge</edgeRight>
+		  </damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+		<statBases>
+		  <MaxHitPoints>600</MaxHitPoints>
+		  <WorkToBuild>135</WorkToBuild>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<!-- <costStuffCount>5</costStuffCount> -->
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Structure</designationCategory>
+		<staticSunShadowHeight>1.25</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<!--
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Stony</li>
+		</stuffCategories>
+		-->
+		
+		<researchPrerequisites Inherit="False">
+			<li>SCR_WallTier1</li>
+		</researchPrerequisites>
+		
+		<building>
+		  <isInert>true</isInert>
+		  <isPlaceOverableWall>true</isPlaceOverableWall>
+		  <ai_chillDestination>false</ai_chillDestination>
+		  <blueprintGraphicData>
+			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+		  </blueprintGraphicData>
+		</building>
+	  </ThingDef>
 
-<ThingDef ParentName="BuildingBase" Name="SCR_Wall" Abstract="True">
-    <defName>SCR_Wall</defName>
-    <label>wall</label>
-    <description>An impassable wall. Capable of holding up a roof.</description>
-    <thingClass>Building</thingClass>
-    <category>Building</category>
-    <graphicData>
-      <texPath>Things/Buildings/Linked/SCR_Wall_Atlas_Concrete</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <linkType>CornerFiller</linkType>
-	  <linkFlags>
-	  <li>Wall</li>
-	  </linkFlags>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-        <edgeTop>Damage/Edge</edgeTop>
-        <edgeBot>Damage/Edge</edgeBot>
-        <edgeLeft>Damage/Edge</edgeLeft>
-        <edgeRight>Damage/Edge</edgeRight>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
-    <statBases>
-      <MaxHitPoints>650</MaxHitPoints>
-      <WorkToBuild>135</WorkToBuild>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <costStuffCount>5</costStuffCount>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
-    <coversFloor>true</coversFloor>
-    <placingDraggableDimensions>1</placingDraggableDimensions>
-    <tickerType>Never</tickerType>
-    <rotatable>false</rotatable>
-    <selectable>true</selectable>
-    <neverMultiSelect>true</neverMultiSelect>
-    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
-    <holdsRoof>true</holdsRoof>
-    <designationCategory>Structure</designationCategory>
-    <staticSunShadowHeight>1.0</staticSunShadowHeight>
-    <blockLight>true</blockLight>
-    <canOverlapZones>false</canOverlapZones>
-    <fertility>0</fertility>
-    <stuffCategories>
-      <li>Metallic</li>
-      <li>Stony</li>
-    </stuffCategories>
+	  <ThingDef ParentName="SCR_Wall">
+		<defName>SCR_StrengthenedWall</defName>
+		<label>steel strengthened wall</label>
+		<description>An impassable wall strengthened with steel. Capable of holding up a roof and keeping in SCP's.</description>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<containmentTier>1</containmentTier>
+			</li>
+		</modExtensions>
+		<costList Inherit="False">
+		  <Steel>2</Steel>
+		</costList>
+		<costStuffCount>5</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Woody</li>
+
+			<!-- Mod support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+			<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			<li MayRequire="sarg.rimbees">RB_Waxy</li>
+			<li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
+			<li MayRequire="wyr3d.chitin">WYD_Chitin</li>
+		</stuffCategories>
+
+		<building>
+		  <relatedBuildCommands>
+			<li>SCR_Autodoor</li>
+			<li>SCR_AutoBlastdoor</li>
+		  </relatedBuildCommands>
+		</building>
+		
+			<damageMultipliers Inherit="False">
+		  <li>
+			<damageDef>Bomb</damageDef>
+			<multiplier>1.5</multiplier>
+		  </li>
+		  <li>
+		  <damageDef>Mining</damageDef>
+		  <multiplier>0.4</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Thump</damageDef>
+			<multiplier>1.9</multiplier>
+		  </li>
+		</damageMultipliers>
+		
+	  </ThingDef>
+
+	  <ThingDef ParentName="SCR_Wall">
+		<defName>SCR_ReinforcedWall</defName>
+		<label>plasteel reinforced wall</label>
+		<description>An impassable wall strengthened with plasteel. Capable of holding up a roof and keeping in SCP's.</description>
+		<modExtensions>
+		<li Class="SecureContainRimworld.CProceduresExtension">
+			<containmentTier>2</containmentTier>
+		</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costList Inherit="False">
+			<Steel>1</Steel>
+			<Plasteel>1</Plasteel>
+		</costList>
+		<costStuffCount>5</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Woody</li>
+
+			<!-- Mod support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+			<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			<li MayRequire="sarg.rimbees">RB_Waxy</li>
+			<li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
+			<li MayRequire="wyr3d.chitin">WYD_Chitin</li>
+		</stuffCategories>
+		<researchPrerequisites Inherit="False">
+			<li>SCR_WallTier2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<building>
+		  <relatedBuildCommands>
+			<li>SCR_Autodoor</li>
+			<li>SCR_AutoBlastdoor</li>
+		  </relatedBuildCommands>
+		</building>
+			<damageMultipliers>
+		  <li>
+			<damageDef>Bomb</damageDef>
+			<multiplier>1.05</multiplier>
+		  </li>
+		  <li>
+		  <damageDef>Mining</damageDef>
+		  <multiplier>0.1</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Thump</damageDef>
+			<multiplier>1.16</multiplier>
+		  </li>
+		</damageMultipliers>
 	
-	<researchPrerequisites Inherit="False">
-	<li>SCR_WallTier1</li>
-	</researchPrerequisites>
-	
-    <building>
-      <isInert>true</isInert>
-      <isPlaceOverableWall>true</isPlaceOverableWall>
-      <ai_chillDestination>false</ai_chillDestination>
-	  <supportsWallAttachments>true</supportsWallAttachments>
-      <blueprintGraphicData>
-        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-      </blueprintGraphicData>
-	  <relatedBuildCommands>        
-	  <li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
-	  </relatedBuildCommands>
-    </building>
   </ThingDef>
-
-  <ThingDef ParentName="SCR_Wall">
-    <defName>SCR_StrengthenedWall</defName>
-    <label>steel strengthened wall</label>
-    <description>An impassable wall strengthened with steel. Capable of holding up a roof and keeping in SCPs.</description>
-	<modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
-	<containmentTier>1</containmentTier>
-	</li>
-	</modExtensions>
-    <costList>
-      <Steel>3</Steel>
-    </costList>
-    <costStuffCount>5</costStuffCount>
-    <stuffCategories>
-      <li>Stony</li>
-	  <li>Metallic</li>
-    </stuffCategories>
-
-    <building>
-      <relatedBuildCommands>
-        <li>SCR_Autodoor</li>
-      </relatedBuildCommands>
-    </building>
-	
-	    <damageMultipliers>
-      <li>
-        <damageDef>Bomb</damageDef>
-        <multiplier>1.9</multiplier>
-      </li>
-	  <li>
-	  <damageDef>Mining</damageDef>
-	  <multiplier>.4</multiplier>
-	  </li>
-      <li>
-        <damageDef>Thump</damageDef>
-        <multiplier>1.9</multiplier>
-      </li>
-    </damageMultipliers>
-	
-  </ThingDef>
-
-  <ThingDef ParentName="SCR_Wall">
-    <defName>SCR_ReinforcedWall</defName>
-    <label>plasteel reinforced wall</label>
-    <description>An impassable wall strengthened with plasteel. Capable of holding up a roof and keeping in SCPs.</description>
-	<modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
-	<containmentTier>2</containmentTier>
-	</li>
-	</modExtensions>
-    <costList>
-	<Steel>1</Steel>
-    <Plasteel>2</Plasteel>
-    <!--  <ComponentIndustrial>6</ComponentIndustrial> -->
-    </costList>
-    <costStuffCount>5</costStuffCount>
-    <stuffCategories>
-	  <li>Stony</li>
-      <li>Metallic</li>
-    </stuffCategories>
-	<researchPrerequisites Inherit="False">
-	<li>SCR_WallTier2</li>
-	</researchPrerequisites>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-    <building>
-      <relatedBuildCommands>
-        <li>SCR_AutoBlastdoor</li>
-      </relatedBuildCommands>
-    </building>
-	    <damageMultipliers>
-      <li>
-        <damageDef>Bomb</damageDef>
-        <multiplier>1.7</multiplier>
-      </li>
-	  <li>
-	  <damageDef>Mining</damageDef>
-	  <multiplier>.4</multiplier>
-	  </li>
-      <li>
-        <damageDef>Thump</damageDef>
-        <multiplier>1.7</multiplier>
-      </li>
-    </damageMultipliers>
-	
-  </ThingDef>
-  
-  
-  
-
- 
-  
   
 																<!-- Doors -->
+	<ThingDef ParentName="DoorBase">
+		<defName>SCR_Autodoor</defName>
+		<label>security door</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down, as well as keeping SCP's from passing through.</description>
+		<modExtensions>
+		<li Class="SecureContainRimworld.CProceduresExtension">
+		<containmentTier>1</containmentTier>
+		</li>
+		</modExtensions>
+		<statBases>
+		  <WorkToBuild>1100</WorkToBuild>
+		</statBases>
+		<graphicData>
+		  <texPath>Things/Building/Door/Autodoor_Mover</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <damageData>
+		  <!--  no damage marks because they don't move with the door
+			<rect>(0,0.12,1,0.76)</rect>-->
+			<enabled>false</enabled>
+		  </damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
+		<costStuffCount>55</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Woody</li>
 
-<ThingDef ParentName="DoorBase">
-    <defName>SCR_Autodoor</defName>
-    <label>security door</label>
-    <description>Divides rooms. Powered operation allows people to move through the door without slowing down, as well as keeping SCPs from passing through.</description>
-    <modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
-	<containmentTier>1</containmentTier>
-	</li>
-	</modExtensions>
-	<statBases>
-      <WorkToBuild>1100</WorkToBuild>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Building/Door/Autodoor_Mover</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <damageData>
-      <!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
-        <enabled>false</enabled>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
-    <costList>
-      <Steel>30</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
-    <costStuffCount>25</costStuffCount>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>50</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-      <li Class="CompProperties_Styleable" />
-    </comps>
-	<researchPrerequisites>
-	<li>SCR_SecurityDoors</li>
-	</researchPrerequisites>
-    <designationHotKey>Misc2</designationHotKey>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-  </ThingDef>
+			<!-- Mod support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+			<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			<li MayRequire="sarg.rimbees">RB_Waxy</li>
+			<li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
+			<li MayRequire="wyr3d.chitin">WYD_Chitin</li>
+		</stuffCategories>
+		<comps>
+		  <li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>50</basePowerConsumption>
+		  </li>
+		  <li Class="CompProperties_Breakdownable"/>
+		  <li Class="CompProperties_Styleable" />
+		</comps>
+		<researchPrerequisites>
+		<li>SCR_SecurityDoors</li>
+		</researchPrerequisites>
+		<designationHotKey>Misc2</designationHotKey>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	  </ThingDef>
 
-<ThingDef ParentName="DoorBase">
-    <defName>SCR_AutoBlastdoor</defName>
-    <label>blast door</label>
-    <description>Strong blast door that keeps SCPs inside, even when power is cut off. Powered operation allows people to move through the door without slowing down.</description>
-    <modExtensions>
-	<li Class="SecureContainRimworld.CProceduresExtension">
+	<ThingDef ParentName="DoorBase">
+		<defName>SCR_AutoBlastdoor</defName>
+		<label>blast door</label>
+		<description>Strong blast door that keeps SCPs inside, even when power is cut off. Powered operation allows people to move through the door without slowing down.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<containmentTier>2</containmentTier>
+			</li>
+		</modExtensions>
+		<statBases>
+		  <MaxHitPoints>2000</MaxHitPoints>
+		  <WorkToBuild>1100</WorkToBuild>
+		</statBases>
+		<graphicData>
+		  <texPath>Things/Building/Door/Autodoor_Mover</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <damageData>
+		  <!--  no damage marks because they don't move with the door
+			<rect>(0,0.12,1,0.76)</rect>-->
+			<enabled>false</enabled>
+		  </damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
+		<costList>
+		  <ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<costStuffCount>125</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
 
-	<containmentTier>2</containmentTier>
-	
-	</li>
-	</modExtensions>
-	<statBases>
-	  <MaxHitPoints>2000</MaxHitPoints>
-      <WorkToBuild>1100</WorkToBuild>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Building/Door/Autodoor_Mover</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <damageData>
-      <!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
-        <enabled>false</enabled>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/Door/Autodoor_MenuIcon</uiIconPath>
-        <costList>
-      <Steel>120</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
-    </costList>
-    <costStuffCount>25</costStuffCount>  
-	<researchPrerequisites>
-	<li>SCR_BlastDoors</li>
-	</researchPrerequisites>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>50</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-      <li Class="CompProperties_Styleable" />
-    </comps>
-    <designationHotKey>Misc2</designationHotKey>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-  </ThingDef>
+			<!-- Mod support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>SCR_BlastDoors</li>
+		</researchPrerequisites>
+		<comps>
+		  <li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>50</basePowerConsumption>
+		  </li>
+		  <li Class="CompProperties_Breakdownable"/>
+		  <li Class="CompProperties_Styleable" />
+		</comps>
+		<designationHotKey>Misc2</designationHotKey>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	  </ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
-    <defName>SCR_ContainRoomMarker</defName>
-    <label>containment room marker</label>
-    <description>An electronic sign designating a containment room. It must be placed in an area enclosed by fences, barricades, walls, and doors. It will alert you to containment breaches in this area.\n\nEven if you don't have one of these, SCPs can still breach containment.</description>
-    <thingClass>Building</thingClass>
-    <tickerType>Long</tickerType>
-    <designationCategory>Misc</designationCategory>
-    <minifiedDef>MinifiedThing</minifiedDef>
-        <graphicData>
-      <texPath>Things/Buildings/SCR_ContainRoomMarker</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shadowData>
-        <volume>(0.2, 0.5, 0.2)</volume>
-        <offset>(0,0,-0.23)</offset>
-      </shadowData>
-      <damageData>
-        <rect>(0.25,0.6,0.5,0.2)</rect>
-      </damageData>
-    </graphicData>
-	<thingCategories>
-      <li>BuildingsMisc</li>
-    </thingCategories>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.1</fillPercent>
-    <pathCost>0</pathCost>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Mass>8</Mass>
-      <WorkToBuild>500</WorkToBuild>
-      <Flammability>1.0</Flammability>
-      <Beauty>0</Beauty>
-    </statBases>
-    <costList>
-      <Steel>2</Steel>
-    </costList>
-	  <!--<disallowedThingDefs>
-          <li>Gold</li>
-          <li>Silver</li>
-          <li>Jade</li>
-      </disallowedThingDefs> -->
-    <costStuffCount>5</costStuffCount>
-    <rotatable>false</rotatable>
-    <fertility>0</fertility>
-    <building>
-      <isInert>true</isInert>
-      <ai_chillDestination>false</ai_chillDestination>
-      <ai_neverTrashThis>true</ai_neverTrashThis>
-    </building>
-  </ThingDef>
+	  <ThingDef ParentName="BuildingBase">
+		<defName>SCR_ContainRoomMarker</defName>
+		<label>containment room marker</label>
+		<description>An electronic sign designating a containment room. It must be placed in an area enclosed by fences, barricades, walls, and doors. It will alert you to containment breaches in this area.</description>
+		<thingClass>Building</thingClass>
+		<tickerType>Long</tickerType>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+			<graphicData>
+		  <texPath>Things/Buildings/SCR_ContainRoomMarker</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shadowData>
+			<volume>(0.2, 0.5, 0.2)</volume>
+			<offset>(0,0,-0.23)</offset>
+		  </shadowData>
+		  <damageData>
+			<rect>(0.25,0.6,0.5,0.2)</rect>
+		  </damageData>
+		</graphicData>
+		<thingCategories>
+		  <li>BuildingsMisc</li>
+		</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.1</fillPercent>
+		<pathCost>0</pathCost>
+		<statBases>
+		  <MaxHitPoints>100</MaxHitPoints>
+		  <Mass>8</Mass>
+		  <WorkToBuild>1</WorkToBuild>
+		  <Flammability>0</Flammability>
+		  <Beauty>0</Beauty>
+		</statBases>
+		<costStuffCount>4</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Metallic</li>
+			<li>Woody</li>
+
+			<!-- Mod support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+			<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+			<li MayRequire="sarg.rimbees">RB_Waxy</li>
+			<li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
+			<li MayRequire="wyr3d.chitin">WYD_Chitin</li>
+		</stuffCategories>
+		<rotatable>false</rotatable>
+		<fertility>0</fertility>
+		<building>
+		  <isInert>true</isInert>
+		  <ai_chillDestination>false</ai_chillDestination>
+		  <ai_neverTrashThis>true</ai_neverTrashThis>
+		</building>
+	  </ThingDef>
 
 </Defs>

@@ -4,44 +4,48 @@
   <BiomeDef>
     <defName>SCR_SCP610Biome</defName>
     <label>SCP-610 Plague Lands</label>
-    <description>A region that SCP-610 has taken over. The majority of surfaces are covered in an alien and fleshy substance. Aggressive, territorial beings infested with SCP-610 patrol around sickly hives. Don't let them touch you!\n\n\	WARNING: This is an extremely difficult Biome! While plant and animal life are abundant, predatory SCP-610 instances intermingle among them, instantly infecting anything they attack with SCP-610. Their only weakness is fire, but watch out! Everything in the Biome is flammable; one wrong spark could send a conflagration across the Map! Moreover, SCP-610 is not curable by medicine or amputation and is guaranteed to be contracted in a SCP-610 attack.</description>
+    <description>A region that SCP-610 has taken over. The majority of surfaces are covered in an alien and fleshy substance. Aggressive, territorial beings infested with SCP-610 patrol around sickly hives. Don't let them touch you!\n\n	WARNING: This is an extremely difficult Biome! While plant and animal life are abundant, predatory SCP-610 instances intermingle among them, instantly infecting anything they attack with SCP-610. These instances dominate the entire landscape! \n	Their only weakness is fire, but watch out! Everything in the Biome is flammable; one wrong spark could send a conflagration across the Map! Moreover, SCP-610 is not curable by medicine or amputation and is guaranteed to be contracted in a SCP-610 attack.</description>
 	<modExtensions>
 		<li Class="SecureContainRimworld.CProceduresExtension">
 			<classRating>
 				<li>SCR_CKeter</li>
 				<li>SCR_DEkhi</li>
-				<li>SCR_RDanger</li>
+				<li>SCR_RCritical</li>
 			</classRating>
-			<containmentTier>0</containmentTier>
+			<containmentTier>3</containmentTier>
 		</li>
 	</modExtensions>
 	<workerClass>SecureContainRimworld.SCR_BiomeWorker_SCP610</workerClass>
     <allowFarmingCamps>false</allowFarmingCamps>
     <animalDensity>2</animalDensity>
-    <plantDensity>2.02</plantDensity>
+    <plantDensity>2.2</plantDensity>
     <settlementSelectionWeight>0</settlementSelectionWeight>
     <movementDifficulty>7</movementDifficulty>
-	<canAutoChoose>false</canAutoChoose>
+	<canAutoChoose>true</canAutoChoose>
     <texture>World/Biomes/SCR_BiomeSCP610</texture>
     <forageability>0.25</forageability>
     <foragedFood>RawFungus</foragedFood>
-    <wildPlantRegrowDays>1.05</wildPlantRegrowDays>
+    <wildPlantRegrowDays>0.1</wildPlantRegrowDays>
 	<allowRoads>false</allowRoads>
 	<allowRivers>true</allowRivers>
+	<isExtremeBiome>true</isExtremeBiome>
     <soundsAmbient>
-		<li>Ambient_NightInsects_Jungle</li>
+		<!-- <li>Ambient_NightInsects_Jungle</li> -->
 		<li>Ambient_Wind_Desolate</li>
 		<li MayRequire="regrowth.botr.core">RG_Ambient_Sandstorm</li>
     </soundsAmbient>
-    <diseaseMtbDays>165</diseaseMtbDays>
+    <diseaseMtbDays>33</diseaseMtbDays>
     <diseases>
-     <li>
-        <diseaseInc>SCR_Disease_SCP1797R</diseaseInc>
-        <commonality>40</commonality> <!-- As this has no cure, it's unfair to throw it too commonly, and besides, the creatures always givt it to you -->
+	<!--
+	 <li>
+		<diseaseInc>SCR_Disease_SCP610</diseaseInc>
+		<commonality>0.001</commonality>
+		As this has no cure, it's unfair to throw it commonly, and besides, the creatures always give it to you
       </li>
+	  -->
       <li>
         <diseaseInc>Disease_Plague</diseaseInc>
-        <commonality>200</commonality>
+        <commonality>100</commonality>
       </li>
       <li>
         <diseaseInc>Disease_GutWorms</diseaseInc>
@@ -49,11 +53,15 @@
       </li>
 	  <li>
         <diseaseInc>Disease_AnimalFlu</diseaseInc>
-        <commonality>200</commonality>
+        <commonality>150</commonality>
       </li>
       <li>
         <diseaseInc>Disease_AnimalPlague</diseaseInc>
-        <commonality>200</commonality>
+        <commonality>150</commonality>
+      </li>
+      <li>
+        <diseaseInc>SCR_Incident_SCP610Form</diseaseInc>
+        <commonality>300</commonality>
       </li>
     </diseases>
     <terrainsByFertility>
@@ -82,6 +90,7 @@
       <SnowGentle>5</SnowGentle>
       <SnowHard>6</SnowHard>
 	  <RG_Blizzard MayRequire="regrowth.botr.core">5</RG_Blizzard> <!-- As it is found in northern Russia -->
+	  <RG_SandStorm MayRequire="regrowth.botr.core">6</RG_SandStorm>
 	  <RG_FoggySandstorm MayRequire="regrowth.botr.core">6</RG_FoggySandstorm>
 	  <RG_SandStormHard MayRequire="regrowth.botr.core">3</RG_SandStormHard>
 	  <PoisonForestSpores MayRequire="mlie.advancedbiomes">15</PoisonForestSpores>
@@ -91,15 +100,15 @@
 		<Plant_Brambles>0.5</Plant_Brambles>
 		<Plant_Dandelion>0.6</Plant_Dandelion>
 		<Plant_Agave>0.09</Plant_Agave>
-		<Plant_TreeDrago>0.025</Plant_TreeDrago>
-		<Plant_TreeOak>0.015</Plant_TreeOak>
-		<Plant_Rafflesia>0.5</Plant_Rafflesia>
+		<Plant_TreeDrago>0.0345</Plant_TreeDrago>
+		<Plant_TreeOak>0.011</Plant_TreeOak>
+		<Plant_Rafflesia>0.05</Plant_Rafflesia>
 		<AB_AlienTree MayRequire="sarg.alphabiomes">0.25</AB_AlienTree>
-		<AB_HalfAlienTree MayRequire="sarg.alphabiomes">0.65</AB_HalfAlienTree>
+		<AB_HalfAlienTree MayRequire="sarg.alphabiomes">0.865</AB_HalfAlienTree>
 		<AB_GlobularPlant MayRequire="sarg.alphabiomes">2</AB_GlobularPlant>
 		<AB_GiantGamma MayRequire="sarg.alphabiomes">0.2</AB_GiantGamma>
-		<AB_BloodBouquet MayRequire="sarg.alphabiomes">0.09</AB_BloodBouquet>
-		<AB_GiantStikehr MayRequire="sarg.alphabiomes">0.1</AB_GiantStikehr>
+		<AB_BloodBouquet MayRequire="sarg.alphabiomes">0.39</AB_BloodBouquet>
+		<AB_GiantStikehr MayRequire="sarg.alphabiomes">0.06</AB_GiantStikehr>
 		<AB_LilacBeacon MayRequire="sarg.alphabiomes">0.01</AB_LilacBeacon>
 		<AB_WitchesOyster MayRequire="sarg.alphabiomes">0.01</AB_WitchesOyster>
 		<AB_AgaricusDomeCap MayRequire="sarg.alphabiomes">0.3</AB_AgaricusDomeCap>
@@ -111,7 +120,7 @@
 		<AB_GlowingAgarilux MayRequire="sarg.alphabiomes">0.1</AB_GlowingAgarilux>
 		<AB_Bryolux MayRequire="sarg.alphabiomes">0.1</AB_Bryolux>
 		<AB_AgariluxPrime MayRequire="sarg.alphabiomes">0.0001</AB_AgariluxPrime>
-		<Plant_GrayGrass MayRequire="ludeon.rimworld.biotech">1</Plant_GrayGrass>
+		<Plant_GrayGrass MayRequire="ludeon.rimworld.biotech">1.6</Plant_GrayGrass>
 		<Plant_Ripthorn MayRequire="ludeon.rimworld.biotech">1</Plant_Ripthorn>
 		<Plant_TreeGrayPine MayRequire="ludeon.rimworld.biotech">0.75</Plant_TreeGrayPine>
 		<Plant_Witchwood MayRequire="ludeon.rimworld.biotech">0.75</Plant_Witchwood>
@@ -119,16 +128,16 @@
 		<PlantDemonBreath MayRequire="tarojun.morishep.onioftherim">0.005</PlantDemonBreath>
 		<MorrowRim_FunnelCap MayRequire="sirmashedpotato.morrowrim">0.1</MorrowRim_FunnelCap>
 		<MorrowRim_WeepingParasol MayRequire="sirmashedpotato.morrowrim.ashswamp">0.5</MorrowRim_WeepingParasol>
-		<RB_Plant_Hive_Swamp MayRequire="sarg.rimbees">0.001</RB_Plant_Hive_Swamp>
+		<RB_Plant_Hive_Swamp MayRequire="sarg.rimbees">0.002</RB_Plant_Hive_Swamp>
 		<PoisonMushroom MayRequire="mlie.advancedbiomes">0.08</PoisonMushroom>
 		<MorrowRim_Trama MayRequire="sirmashedpotato.morrowrim">3</MorrowRim_Trama>
 		<RN_PlantClover MayRequire="rimnature.velcroboy333">0.01</RN_PlantClover>
-		<MorrowRim_AshGrass MayRequire="sirmashedpotato.morrowrim">0.1</MorrowRim_AshGrass>
+		<MorrowRim_AshGrass MayRequire="sirmashedpotato.morrowrim">0.31</MorrowRim_AshGrass>
 		<MorrowRim_SmallMushrooms MayRequire="sirmashedpotato.morrowrim">2</MorrowRim_SmallMushrooms>
-		<BMT_ExplodingAngel MayRequire="biomesteam.biomesprehistoric">0.001</BMT_ExplodingAngel>
-		<TreeDead MayRequire="mlie.advancedbiomes">1</TreeDead>
+		<BMT_ExplodingAngel MayRequire="biomesteam.biomescaverns">0.00001</BMT_ExplodingAngel>
+		<TreeDead MayRequire="mlie.advancedbiomes">1.1</TreeDead>
 		<PoisonPlantDandelion MayRequire="mlie.advancedbiomes">0.01</PoisonPlantDandelion>
-		<PoisonRafflesia MayRequire="mlie.advancedbiomes">0.5</PoisonRafflesia>
+		<PoisonRafflesia MayRequire="mlie.advancedbiomes">0.45</PoisonRafflesia>
 	</wildPlants>
     <wildAnimals>
 		<SCR_SCP610A>4</SCR_SCP610A>
@@ -143,7 +152,7 @@
 		<BMT_Trilobite MayRequire="biomesteam.biomesprehistoric">2</BMT_Trilobite>
 		<BMT_GlowSlug MayRequire="biomesteam.biomescaverns">1</BMT_GlowSlug>
 		<BMT_GlowSnail MayRequire="biomesteam.biomescaverns">1</BMT_GlowSnail>
-		<BMT_GiantSlug MayRequire="biomesteam.biomescaverns">0.5</BMT_GiantSlug>
+		<BMT_GiantSlug MayRequire="biomesteam.biomescaverns">0.65</BMT_GiantSlug>
 		<BMT_GiantSnail MayRequire="biomesteam.biomescaverns">0.85</BMT_GiantSnail>
 		<BMT_AcidSlug MayRequire="biomesteam.biomescaverns">0.1</BMT_AcidSlug>
 		<BMT_CactusCrab MayRequire="biomesteam.biomescaverns">0.21</BMT_CactusCrab>
@@ -156,11 +165,12 @@
 		<Onibi MayRequire="x3v21.jmc">0.01</Onibi> <!-- Will-o-wisp -->
 		<MycoidCattle MayRequire="epicfloor.mycoidcattle">0.3</MycoidCattle>
 		<Bat MayRequire="zal.witchinghour">0.05</Bat>
-		<AA_FungalHusk MayRequire="sarg.alphaanimals">1</AA_FungalHusk>
+		<AA_FungalHusk MayRequire="sarg.alphaanimals">2</AA_FungalHusk>
     </wildAnimals>
     <pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
-		<SCR_SCP610A>4</SCR_SCP610A>
-		<SCR_SCP610B>3.5</SCR_SCP610B>
+		<SCR_SCP610A MayRequire="Ludeon.RimWorld.Biotech">4</SCR_SCP610A>
+		<SCR_SCP610B MayRequire="Ludeon.RimWorld.Biotech">3.5</SCR_SCP610B>
+		<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.42</Toxalope>
     </pollutionWildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>

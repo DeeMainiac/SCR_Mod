@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<!--
+		Note to three-legged_wolf, from three-legged_wolf; how about custom backstory_category, to avoid senseless backstories like kitten-tamer cannibals? 
+		It'll take alot of effort, but would be very cool...
+		Give it some thought.
+		
+		Sincerely yours, 
+		-TLW
+	-->
+	
+	<PawnKindDef Name="CJ_PsychoMercenaryBase" Abstract="True">
+		<label>SCP-1788-1 instance</label>
+		<labelPlural>SCP-1788-1 instances</labelPlural>
+		<race>CJ_Psycho</race>
+		<defaultFactionType>AncientsHostile</defaultFactionType>
+		<chemicalAddictionChance>0.33</chemicalAddictionChance>
+		<invNutrition>6</invNutrition>
+		<itemQuality>Normal</itemQuality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<backstoryCryptosleepCommonality>0.14</backstoryCryptosleepCommonality>
+		<combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~6</combatEnhancingDrugsCount>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<!-- <li>Pirate</li> -->
+					<li>Sadist</li>
+					<li>Raider</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<maxGenerationAge>200</maxGenerationAge>
+		<biocodeWeaponChance>0.85</biocodeWeaponChance>
+		<initialWillRange>102~104</initialWillRange>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+
+  <!--  Low merc tier - grenadiers -->
+  
+  <PawnKindDef Abstract="True" Name="CJ_PsychoGrenadierBase" ParentName="CJ_PsychoMercenaryBase">
+	<label>SCP-1788-1 instance</label>
+	<labelPlural>SCP-1788-1 instances</labelPlural>
+    <race>CJ_Psycho</race>
+    <gearHealthRange>0.7~2.3</gearHealthRange>
+    <initialWillRange>1~3</initialWillRange>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>400~700</apparelMoney>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <weaponMoney>500~500</weaponMoney>
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>500~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+	  <li>AdvancedWeapon</li>
+    </techHediffsTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <inventoryOptions>
+      <skipChance>0.5</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~20</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>6~10</range>
+      </li>
+    </skills>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="CJ_PsychoGrenadierBase">
+		<defName>CJ_PsychoGrenadier_Destructive</defName>
+		<label>SCP-1788-1 bomber</label>
+		<combatPower>70</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<weaponTags>
+		  <li>GrenadeDestructive</li>
+		</weaponTags>
+		<initialResistanceRange>10~16</initialResistanceRange>
+	</PawnKindDef>
+  
+    <PawnKindDef ParentName="CJ_PsychoGrenadierBase">
+		<defName>CJ_PsychoGrenadier_EMP</defName>
+		<label>SCP-1788-1 EMP bomber</label>
+		<combatPower>55</combatPower>
+		<weaponTags>
+		  <li>GrenadeEMP</li>
+		</weaponTags>
+		<initialResistanceRange>15~24</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CJ_PsychoGrenadierBase">
+		<defName>CJ_PsychoGrenadier_Smoke</defName>
+		<label>SCP-1788-1 smoke grenadier</label>
+		<combatPower>55</combatPower>
+		<weaponTags>
+			<li>GrenadeSmoke</li>
+		</weaponTags>
+		<weaponMoney>400~2400</weaponMoney>
+		<initialResistanceRange>18~28</initialResistanceRange>
+	</PawnKindDef>
+  
+    <!--====== Mid-tier - gunner, slasher, sniper, heavy ======-->
+  
+    <PawnKindDef ParentName="CJ_PsychoMercenaryBase" Name="CJ_PsychoMercenaryMidTierBase" Abstract="True">
+		<techHediffsChance>0.42</techHediffsChance>
+		<techHediffsMoney>800~1400</techHediffsMoney>
+		<techHediffsTags>
+			<li>ImplantEmpireCommon</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+		<biocodeWeaponChance>0.5</biocodeWeaponChance>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="CJ_PsychoMercenaryMidTierBase" Name="CJ_PsychoMercenaryGunnerBase" Abstract="True">
+		<label>SCP-1788-1 gunman</label>
+		<combatPower>105</combatPower>
+		<gearHealthRange>1.1~3.2</gearHealthRange>
+		<apparelTags>
+		  <li>IndustrialBasic</li>
+		  <li>IndustrialAdvanced</li>
+		  <li>IndustrialMilitaryBasic</li>
+		  <li>IndustrialMilitaryAdvanced</li>
+		  <li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelMoney>1200~1600</apparelMoney>
+		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+		<weaponMoney>430~850</weaponMoney>
+		<weaponTags>
+		  <li>Gun</li>
+		  <li>SimpleGun</li>
+		</weaponTags>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+		<combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<inventoryOptions>
+		  <skipChance>0.9</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>MedicineIndustrial</thingDef>
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>7~20</range>
+		  </li>
+		</skills>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="CJ_PsychoMercenaryMidTierBase" Name="CJ_PsychoMercenarySniperBase" Abstract="True">
+		<label>SCP-1788-1 sniper</label>
+		<combatPower>140</combatPower>
+		<gearHealthRange>0.7~3.2</gearHealthRange>
+		<apparelTags>
+		  <li>IndustrialBasic</li>
+		  <li>IndustrialAdvanced</li>
+		  <li>IndustrialMilitaryBasic</li>
+		  <li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<apparelMoney>1200~1600</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>600~850</weaponMoney>
+		<weaponTags>
+		  <li>SniperRifle</li>
+		</weaponTags>
+		<inventoryOptions>
+		  <skipChance>0.9</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>MedicineIndustrial</thingDef>
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>9~20</range>
+		  </li>
+		</skills>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+  
+    <PawnKindDef ParentName="CJ_PsychoMercenaryMidTierBase" Name="CJ_PsychoMercenarySlasherBase" Abstract="True">
+		<label>SCP-1788-1 slasher</label>
+		<combatPower>160</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<gearHealthRange>1.1~3.2</gearHealthRange>
+		<apparelTags>
+		  <li>IndustrialBasic</li>
+		  <li>IndustrialAdvanced</li>
+		  <li>IndustrialMilitaryBasic</li>
+		  <li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<apparelRequired>
+		  <li>Apparel_ShieldBelt</li>
+		</apparelRequired>
+		<apparelMoney>300~1400</apparelMoney>
+		<apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+		<weaponMoney>200~500</weaponMoney>
+		<weaponTags>
+			<li>IndustrialMelee</li>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+			<li>Lance</li>
+			<li>Spear</li>
+			<li>SpearMen</li>
+		</weaponTags>
+		<inventoryOptions>
+		  <skipChance>0.9</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>MedicineIndustrial</thingDef>
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		<initialResistanceRange>19~29</initialResistanceRange>
+		<skills>
+		  <li>
+			<skill>Melee</skill>
+			<range>14~20</range>
+		  </li>
+		</skills>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+  
+	<PawnKindDef ParentName="CJ_PsychoMercenaryGunnerBase">
+		<defName>CJ_PsychoMercenary_Gunner</defName>
+		<initialResistanceRange>12~16</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CJ_PsychoMercenarySniperBase">
+		<defName>CJ_PsychoMercenary_Sniper</defName>
+		<initialResistanceRange>13~22</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="CJ_PsychoMercenarySlasherBase">
+		<defName>CJ_PsychoMercenary_Slasher</defName>
+		<initialResistanceRange>10~18</initialResistanceRange>
+	</PawnKindDef>
+  
+    <PawnKindDef ParentName="CJ_PsychoMercenaryMidTierBase">
+		<defName>CJ_PsychoMercenary_Heavy</defName>
+		<label>heavy SCP-1788-1 mercenary</label>
+		<combatPower>140</combatPower>
+		<gearHealthRange>0.7~3.2</gearHealthRange>
+		<apparelTags>
+		  <li>IndustrialBasic</li>
+		  <li>IndustrialAdvanced</li>
+		  <li>IndustrialMilitaryBasic</li>
+		  <li>IndustrialMilitaryAdvanced</li>
+		  <li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelMoney>400~650</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>1200~1500</weaponMoney>
+		<weaponTags>
+		  <li>GunHeavy</li>
+		  <li>IndustrialGunAdvanced</li>
+		  <li>IndustrialGunHeavy</li>
+		  <li>GunSingleUse</li>
+		</weaponTags>
+		<initialResistanceRange>14~23</initialResistanceRange>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>17~20</range>
+		  </li>
+		</skills>
+  </PawnKindDef>
+ 
+	<!-- Elite tier - Pirate boss, Crime Lord and "big-bad cigar-smoking psycho-lord-commanders" --> 
+  
+	<PawnKindDef Abstract="True" Name="CJ_PsychoMercenaryEliteTierBase" ParentName="CJ_PsychoMercenaryBase">
+		<label>elite SCP-1788-1 instance</label>
+		<labelPlural>elite SCP-1788-1 instances</labelPlural>
+		<combatPower>150</combatPower>
+		<maxGenerationAge>45</maxGenerationAge>
+		<backstoryCryptosleepCommonality>0.025</backstoryCryptosleepCommonality>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelTags>
+		  <li>IndustrialBasic</li>
+		  <li>IndustrialAdvanced</li>
+		  <li>IndustrialMilitaryBasic</li>
+		  <li>IndustrialMilitaryAdvanced</li>
+		  <li>SpacerMilitary</li>
+		  <li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelMoney>2800~3500</apparelMoney>
+		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+		<weaponMoney>900~1600</weaponMoney>
+		<weaponTags>
+		  <li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		</disallowedTraits>
+		<techHediffsMoney>1500~1800</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Advanced</li>
+		  <li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsChance>0.5</techHediffsChance>
+		<combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~6</combatEnhancingDrugsCount>
+		<biocodeWeaponChance>1</biocodeWeaponChance>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
+		<modExtensions>
+			<li Class="VFEAncients.PawnKindExtension_Powers" MayRequire="vanillaexpanded.vfea">
+				<numRandomSuperpowers MayRequire="vanillaexpanded.vfea">1</numRandomSuperpowers>
+				<numRandomWeaknesses MayRequire="vanillaexpanded.vfea">1</numRandomWeaknesses>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+ 
+    <PawnKindDef ParentName="CJ_PsychoMercenaryEliteTierBase">
+		<defName>CJ_Psycho_PirateBoss</defName>
+		<label>SCP-1788-1 commander</label>
+		<labelPlural>SCP-1788-1 commanders</labelPlural>
+		<factionLeader>true</factionLeader>
+		<initialWillRange>108~109</initialWillRange>
+		<initialResistanceRange>80~90</initialResistanceRange>
+		<canBeSapper>true</canBeSapper>
+		<inventoryOptions>
+		  <skipChance>0.8</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>Silver</thingDef>
+			  <countRange>50~200</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="CJ_PsychoMercenaryEliteTierBase" Name="CJ_PsychoMercenaryEliteBase" Abstract="True">
+		<label>SCP-1788-1 elite mercenary</label>
+		<labelPlural>elite SCP-1788-1 instances</labelPlural>
+		<inventoryOptions>
+		  <skipChance>0.9</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+			  <thingDef>MedicineIndustrial</thingDef>
+			  <countRange>1</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CJ_PsychoMercenaryEliteBase">
+    <defName>CJ_PsychoMercenary_Elite</defName>
+    <initialResistanceRange>15~23</initialResistanceRange>
+  </PawnKindDef>
+  
+	<!-- Ancient Soldier--> 
+  
+	<PawnKindDef Abstract="True" Name="CJ_PsychoAncientSoldier" ParentName="CJ_PsychoMercenaryEliteTierBase">
+		<label>mothballed SCP-1788-1 instance</label>
+		<labelPlural>SCP-1788-1 instances</labelPlural>
+		<combatPower>180</combatPower>
+		<initialResistanceRange>25~44</initialResistanceRange>
+		<defaultFactionType>AncientsHostile</defaultFactionType>
+		<backstoryCryptosleepCommonality>0.8</backstoryCryptosleepCommonality>
+		<chemicalAddictionChance>1</chemicalAddictionChance>
+		<apparelMoney>2000~3800</apparelMoney>
+		<apparelTags>
+		  <li>IndustrialBasic</li>
+		  <li>IndustrialAdvanced</li>
+		  <li>IndustrialMilitaryBasic</li>
+		  <li>IndustrialMilitaryAdvanced</li>
+		  <li>SpacerMilitary</li>
+		  <li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<weaponMoney>400~1000</weaponMoney>
+		<weaponTags>
+		  <li>Gun</li>
+		  <li>Lance</li>
+		</weaponTags>
+		<techHediffsMoney>2000~3000</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Advanced</li>
+		  <li>AdvancedWeapon</li>
+		  <li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsChance>1</techHediffsChance>
+		<combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<biocodeWeaponChance>1</biocodeWeaponChance>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>17~20</range>
+		  </li>
+		</skills>
+		<startingHediffs Inherit="False">
+			<li>
+				<def>TSP_CJ_SCR_1788_Bonus</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+</Defs>

@@ -2,36 +2,7 @@
 
 <Defs>
 
-	<!-- SCP-154 -->
 
-	<ThoughtDef>
-		<defName>SCR_SCP154Equipped</defName>
-		<workerClass>SecureContainRimworld.ThoughtWorker_SCP154</workerClass>
-		<validWhileDespawned>true</validWhileDespawned>
-		<stages>
-			<li>
-				<label>using SCP-154</label>
-				<description>It shot my arm bones out, and regenerated them instantly! Why does it still hurt?</description>
-				<baseMoodEffect>-5</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
-
-	<ThoughtDef>
-		<defName>SCR_SCP154EquippedMasochist</defName>
-		<workerClass>SecureContainRimworld.ThoughtWorker_SCP154Masochist</workerClass>
-		<validWhileDespawned>true</validWhileDespawned>
-		<requiredTraits>
-			<li>Masochist</li>
-		</requiredTraits>
-		<stages>
-			<li>
-				<label>using SCP-154</label>
-				<description>It shot my arm bones out, and regenerated them instantly! I'm glad it still hurts.</description>
-				<baseMoodEffect>5</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
 
 	<!-- SCP-124 -->
 
@@ -43,7 +14,7 @@
 			<li>
 				<label>using SCP-127</label>
 				<description>It's strange to think that this weapon is alive, just like me...</description>
-				<baseMoodEffect>-4</baseMoodEffect>
+				<baseMoodEffect>-1</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
@@ -54,6 +25,7 @@
 		<validWhileDespawned>true</validWhileDespawned>
 		<requiredTraits>
 			<li>Psychopath</li>
+			<li>Bloodlust</li>
 		</requiredTraits>
 		<stages>
 			<li>
@@ -258,6 +230,37 @@
 				<label>stepping on SCP-610 corruption</label>
 				<description>The corruption of the Flesh That Hates is everywhere. Just hearing the all-consuming fungus squish and throb under my weight makes me feel awful.</description>
 				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- SCP-154 -->
+
+	<ThoughtDef>
+		<defName>SCR_SCP154Equipped</defName>
+		<workerClass>SecureContainRimworld.ThoughtWorker_SCP154</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>using SCP-154</label>
+				<description>It shot my arm bones out, and regenerated them instantly! Why does it still hurt?</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>SCR_SCP154EquippedMasochist</defName>
+		<workerClass>SecureContainRimworld.ThoughtWorker_SCP154Masochist</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<requiredTraits>
+			<li>Masochist</li>
+		</requiredTraits>
+		<stages>
+			<li>
+				<label>using SCP-154</label>
+				<description>AWW YEAH!! SHOOT AND REGENERATE MY ARM AGAIN! YES! YES!!</description>
+				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

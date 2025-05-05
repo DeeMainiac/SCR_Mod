@@ -1,136 +1,200 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <LanguageData>
+	<!-- Letter Incidents -->
 
-<!-- Letter Incidents -->
+	<LetterLabelSCP3199Attack>SCP-3199 Invasion</LetterLabelSCP3199Attack>
+	<LetterSCP3199Attack>A flock of SCP-3199 have appeared.\n\nContain or kill them.\n\nThey will probably leave the area in a few days, leaving a LOT of eggs behind.\n\nDon't wait to get rid of the eggs, they will quickly spiral out of control.</LetterSCP3199Attack>
 
-<LetterLabelSCP3199Attack>SCP-3199 Invasion</LetterLabelSCP3199Attack>
-<LetterSCP3199Attack>A flock of SCP-3199 have appeared.\n\nContain or kill them.\n\nThey will probably leave the area in a few days, leaving a LOT of eggs behind.\n\nDon't wait to get rid of the eggs, they will quickly spiral out of control.</LetterSCP3199Attack>
+	<LetterLabelSCP939Attack>SCP-939 Invasion</LetterLabelSCP939Attack>
+	<LetterSCP939Attack>A pack of SCP-939 have appeared.\n\nContain or kill them.\n\nThey will probably leave the area in a few days.</LetterSCP939Attack>
 
-<LetterLabelSCP939Attack>SCP-939 Invasion</LetterLabelSCP939Attack>
-<LetterSCP939Attack>A pack of SCP-939 have appeared.\n\nContain or kill them.\n\nThey will probably leave the area in a few days.</LetterSCP939Attack>
+	<LetterLabelContainmentBreach>Containment Breach</LetterLabelContainmentBreach>
+	<LetterContainmentBreach>One or more SCPs are trying to escape containment!\n\nStop their advances or destroy them.</LetterContainmentBreach>
 
-<LetterLabelContainmentBreach>Containment Breach</LetterLabelContainmentBreach>
-<LetterContainmentBreach>One or more SCPs are trying to escape containment!\n\nStop their advances or destroy them.</LetterContainmentBreach>
+	<MBReason>The final straw was: </MBReason>
 
-<MBReason>The final straw was: </MBReason>
+	<LetterLabelSCP131Join>SCP-131s join</LetterLabelSCP131Join>
+	<LetterSCP131Join>A pair of SCP-131s, abandoned or lost, have wandered into the area.\n\nThey seem to adore human contact and are joining the colony.</LetterSCP131Join>
 
-<LetterLabelSCP131Join>SCP-131s join</LetterLabelSCP131Join>
-<LetterSCP131Join>A pair of SCP-131s, abandoned or lost, have wandered into the area.\n\nThey seem to adore human contact and are joining the colony.</LetterSCP131Join>
+	<LetterLabelSCP610Local>SCP-610 formation</LetterLabelSCP610Local>
+	<LetterSCP610Local>A few SCP-610 instances formed nearby.</LetterSCP610Local>
 
-<LetterLabelSCP610Local>SCP-610 formation</LetterLabelSCP610Local>
-<LetterSCP610Local>A few SCP-610 instances formed nearby.</LetterSCP610Local>
+	<LetterLabelSCP848>SCP-848 cluster</LetterLabelSCP848>
+	<LetterSCP848>A few SCP-848-1s and their webs have grown in the area.</LetterSCP848>
 
-<LetterLabelSCP848>SCP-848 cluster</LetterLabelSCP848>
-<LetterSCP848>A few SCP-848-1s and their webs have grown in the area.</LetterSCP848>
+	<LetterLabelSCP848_SpawnItem>SCP-848</LetterLabelSCP848_SpawnItem>
+	<LetterSCP848_SpawnItem>One or more SCP-848-1s caught something in their webs.</LetterSCP848_SpawnItem>
 
-<LetterLabelSCP848_SpawnItem>SCP-848</LetterLabelSCP848_SpawnItem>
-<LetterSCP848_SpawnItem>One or more SCP-848-1s caught something in their webs.</LetterSCP848_SpawnItem>
+	<LetterLabelSCP2845Attack>SCP-2845 Invasion</LetterLabelSCP2845Attack>
+	<LetterSCP2845Attack>An SCP-2845 and its SCP-2845-1 minions have appeared.\n\nContain or kill the leading SCP-2845 instance!\n\nThey will probably leave the area in a few days.</LetterSCP2845Attack>
 
-<LetterLabelSCP2845Attack>SCP-2845 Invasion</LetterLabelSCP2845Attack>
-<LetterSCP2845Attack>An SCP-2845 and its SCP-2845-1 minions have appeared.\n\nContain or kill them.\n\nThey will probably leave the area in a few days.</LetterSCP2845Attack>
+	<!-- SCP-specific messages -->
 
-<LetterLabelSCP060Spawn>SCP-060-Alpha</LetterLabelSCP060Spawn>
-<LetterSCP060Spawn>SCP-060-Alpha has reformed and wants to destroy you.\n\nHope you have plenty of firefoam to stop it.</LetterSCP060Spawn>
+	<SCP113>SCP-113 changed the pawn's gender to </SCP113>
+	<SCP113F>nothing happened.</SCP113F>
 
-<!-- SCP-specific messages -->
+	<SCP1577>An old-world airplane has arrived and is dropping some resources for you.</SCP1577>
 
-<SCP113>SCP-113 changed the pawn's gender to </SCP113>
-<SCP113F>nothing happened.</SCP113F>
+	<SCPES019> just lost a lot of faith in their ideoligion!</SCPES019>
 
-<SCP1577>An old-world airplane has arrived and is dropping some resources for you.</SCP1577>
+	<MessageSCP1905Spawn>An SCP-1905-1 instance has appeared, and is attacking your colonists!</MessageSCP1905Spawn>
 
-<SCPES019> just lost a lot of faith in their ideoligion!</SCPES019>
+	<!-- Mod Menu Stuff-->
 
-<MessageSCP1905Spawn>An SCP-1905-1 instance has appeared, and is attacking your colonists!</MessageSCP1905Spawn>
+	<SCP610ToggleTitle>SCP-610 Biome Spawn</SCP610ToggleTitle>
+	<SCP610ToggleDesc>Stops SCP-610 biome from generating on world map. Requires a new save.</SCP610ToggleDesc>
 
-<!-- Mod Menu Stuff-->
+	<SCP3199ToggleTitle>SCP-3199 Toggle</SCP3199ToggleTitle>
+	<SCP3199ToggleDesc>Stops SCP-3199 from spawning from events, and stops their eggs from hatching.</SCP3199ToggleDesc>
 
-<!-- This stuff hasn't been implemented in any fashion yet -->
+	<SCP939ToggleTitle>SCP-939 Toggle</SCP939ToggleTitle>
+	<SCP939ToggleDesc>Stops SCP-939 from spawning from events.</SCP939ToggleDesc>
 
-<SCP610ToggleTitle>SCP-610 Biome Spawn</SCP610ToggleTitle>
-<SCP610ToggleDesc>Stops SCP-610 biome from generating on world map. Requires a new save.</SCP610ToggleDesc>
+	<SCP19051ToggleTitle>SCP-1905-1 Toggle</SCP19051ToggleTitle>
+	<SCP19051ToggleDesc>Stops SCP-1905-1 from spawning.</SCP19051ToggleDesc>
 
-<SCP3199ToggleTitle>SCP-3199 Toggle</SCP3199ToggleTitle>
-<SCP3199ToggleDesc>Stops SCP-3199 from spawning from events, and stops their eggs from hatching.</SCP3199ToggleDesc>
+	<SCP848ToggleTitle>SCP-848 Toggle</SCP848ToggleTitle>
+	<SCP848ToggleDesc>Stops SCP-848 and its webs from spawning, and stops them from finding objects.</SCP848ToggleDesc>
 
-<SCP939ToggleTitle>SCP-939 Toggle</SCP939ToggleTitle>
-<SCP939ToggleDesc>Stops SCP-939 from spawning from events.</SCP939ToggleDesc>
+	<SCP3033ToggleTitle>SCP-3033-1 and SCP-3033-2 Toggle</SCP3033ToggleTitle>
+	<SCP3033ToggleDesc>Stops SCP-3033-1 and SCP-3033-2 from spawning.</SCP3033ToggleDesc>
 
-<SCP19051ToggleTitle>SCP-1905-1 Toggle</SCP19051ToggleTitle>
-<SCP19051ToggleDesc>Stops SCP-1905-1 from spawning.</SCP19051ToggleDesc>
+	<!-- unused -->
 
-<SCP848ToggleTitle>SCP-848 Toggle</SCP848ToggleTitle>
-<SCP848ToggleDesc>Stops SCP-848 and its webs from spawning, and stops them from finding objects.</SCP848ToggleDesc>
+	<LetterLabelCISCP3033Raid>Chaos Insurgency Raid</LetterLabelCISCP3033Raid>
+	<LetterCISCP3033Raid>The Chaos Insurgency has sent SCP-3033 "Mike" units to assault the colony.\n\nThey are attacking immediately.</LetterCISCP3033Raid>
 
-<SCP3033ToggleTitle>SCP-3033-1 and SCP-3033-2 Toggle</SCP3033ToggleTitle>
-<SCP3033ToggleDesc>Stops SCP-3033-1 and SCP-3033-2 from spawning.</SCP3033ToggleDesc>
+	<LetterLabelCISCP3033RaidFriendly>Chaos Insurgency Reinforcements</LetterLabelCISCP3033RaidFriendly>
+	<LetterCISCP3033RaidFriendly>The Chaos Insurgency has sent SCP-3033 "Mike" units to help you out.</LetterCISCP3033RaidFriendly>
 
-<!-- unused -->
+	<!-- //////////////////////////////////////////Containment Procedures////////////////////////////////////////// -->
 
-<LetterLabelCISCP3033Raid>Chaos Insurgency Raid</LetterLabelCISCP3033Raid>
-<LetterCISCP3033Raid>The Chaos Insurgency has sent SCP-3033 "Mike" units to assault the colony.\n\nThey are attacking immediately.</LetterCISCP3033Raid>
+	<!-- I don't recommend translating the primary class names (e.g, 'Vlam'), since they're special classification words -->
 
-<LetterLabelCISCP3033RaidFriendly>Chaos Insurgency Reinforcements</LetterLabelCISCP3033RaidFriendly>
-<LetterCISCP3033RaidFriendly>The Chaos Insurgency has sent SCP-3033 "Mike" units to help you out.</LetterCISCP3033RaidFriendly>
+	<SCR_Contain>Containment class</SCR_Contain>
+	<SCR_Disrupt>Disruption class</SCR_Disrupt>
+	<SCR_Risk>Risk class</SCR_Risk>
 
-<!-- //////////////////////////////////////////Containment Procedures////////////////////////////////////////// -->
+	<!-- Containment -->
 
-<!-- I don't recommend translating the primary class names (e.g, 'Vlam'), since they're special classification words -->
-
-<SCR_Contain>Containment class</SCR_Contain>
-<SCR_Disrupt>Disruption class</SCR_Disrupt>
-<SCR_Risk>Risk class</SCR_Risk>
+	<LetterLabelContainmentBreach>Containment Breach</LetterLabelContainmentBreach>
+	<LetterContainmentBreach>One or more SCPs are trying to escape containment!\n\nStop their advances or destroy them.</LetterContainmentBreach>
 
 
-<!-- Containment -->
+	<SCR_CSafe>Safe</SCR_CSafe>
+	<SCR_CSafeDesc>This SCP is fairly easy to contain, and probably can't break out of containment on its own.</SCR_CSafeDesc>
 
-<SCR_CSafe>Safe</SCR_CSafe>
-<SCR_CSafeDesc>This SCP is fairly easy to contain, and probably can't break out of containment on its own.</SCR_CSafeDesc>
+	<SCR_CEuclid>Euclid</SCR_CEuclid>
+	<SCR_CEuclidDesc>This SCP can probably break out of containment by itself, but advanced containment methods help prevent this.</SCR_CEuclidDesc>
 
-<SCR_CEuclid>Euclid</SCR_CEuclid>
-<SCR_CEuclidDesc>This SCP can probably break out of containment by itself, but advanced containment methods help prevent this.</SCR_CEuclidDesc>
+	<SCR_CKeter>Keter</SCR_CKeter>
+	<SCR_CKeterDesc>This SCP is difficult to contain with advanced containment methods, or is resource intensive to do so.</SCR_CKeterDesc>
 
-<SCR_CKeter>Keter</SCR_CKeter>
-<SCR_CKeterDesc>This SCP is difficult to contain with advanced containment methods, or is resource intensive to do so.</SCR_CKeterDesc>
+	<SCR_CThaumiel>Thaumiel</SCR_CThaumiel>
+	<SCR_CThaumielDesc>This SCP contains or helps contain other SCPs.</SCR_CThaumielDesc>
 
-<SCR_CThaumiel>Thaumiel</SCR_CThaumiel>
-<SCR_CThaumielDesc>This SCP contains or helps contain other SCPs.</SCR_CThaumielDesc>
 
-<SCR_CApollyon>Apollyon</SCR_CApollyon>
-<SCR_CApollyonDesc>This SCP is not containable by any means.</SCR_CApollyonDesc>
+	<SCR_CApollyon>Apollyon</SCR_CApollyon>
+	<SCR_CApollyonDesc>This SCP is not containable by any means.</SCR_CApollyonDesc>
 
-<!-- Disruption -->
+	<LetterLabelSCP848_SpawnItem>SCP-848</LetterLabelSCP848_SpawnItem>
+	<LetterSCP848_SpawnItem>One or more SCP-848-1s caught something in their webs.</LetterSCP848_SpawnItem>
 
-<SCR_DDark>Dark</SCR_DDark>
-<SCR_DDarkDesc>Danger risk is incredibly low, that of no concern, or a danger to only a specific pawn or thing.</SCR_DDarkDesc>
+	<LetterLabelSCP2845Attack>SCP-2845 Invasion</LetterLabelSCP2845Attack>
+	<LetterSCP2845Attack>An SCP-2845 and its SCP-2845-1 minions have appeared.\n\nContain or kill them.\n\nThey will probably leave the area in a few days.</LetterSCP2845Attack>
 
-<SCR_DVlam>Vlam</SCR_DVlam>
-<SCR_DVlamDesc>A danger to a small group of pawns, has a small range, and/or can be neutralized somewhat easily.</SCR_DVlamDesc>
+	<LetterLabelSCP060Spawn>SCP-060-Alpha</LetterLabelSCP060Spawn>
+	<LetterSCP060Spawn>SCP-060-Alpha has reformed and wants to destroy you.\n\nHope you have plenty of firefoam to stop it.</LetterSCP060Spawn>
 
-<SCR_DKeneq>Keneq</SCR_DKeneq>
-<SCR_DKeneqDesc>A danger to a moderate group of pawns, has a moderate range, and probably has a similar difficulty to neutralize.</SCR_DKeneqDesc>
+	<!-- SCP-specific messages -->
 
-<SCR_DEkhi>Ekhi</SCR_DEkhi>
-<SCR_DEkhiDesc>A danger to a large group of pawns, potentially worldwide. It spreads quickly and is quite the consuming task to deal with.</SCR_DEkhiDesc>
+	<SCP113>SCP-113 changed the pawn's gender to </SCP113>
+	<SCP113F>nothing happened.</SCP113F>
 
-<!-- hehehe the player is Amida class -->
+	<SCP1577>An old-world airplane has arrived and is dropping some resources for you.</SCP1577>
 
-<!-- Risk -->
+	<SCPES019> just lost a lot of faith in their ideoligion!</SCPES019>
 
-<SCR_RNotice>Notice</SCR_RNotice>
-<SCR_RNoticeDesc>This SCP is pretty much inert. It has little or no effect on the pawns around it.</SCR_RNoticeDesc>
+	<MessageSCP1905Spawn>An SCP-1905-1 instance has appeared, and is attacking your colonists!</MessageSCP1905Spawn>
 
-<SCR_RCaution>Caution</SCR_RCaution>
-<SCR_RCautionDesc>Mild or moderate effects emanate from this SCP.</SCR_RCautionDesc>
+	<!-- Mod Menu Stuff-->
 
-<SCR_RWarning>Warning</SCR_RWarning>
-<SCR_RWarningDesc>Moderate to significant effects emanate from this SCP.</SCR_RWarningDesc>
+	<!-- This stuff hasn't been implemented in any fashion yet -->
 
-<SCR_RDanger>Danger</SCR_RDanger>
-<SCR_RDangerDesc>Significant to extreme effects emanate from this SCP.</SCR_RDangerDesc>
+	<SCP610ToggleTitle>SCP-610 Biome Spawn</SCP610ToggleTitle>
+	<SCP610ToggleDesc>Stops SCP-610 biome from generating on world map. Requires a new save.</SCP610ToggleDesc>
 
-<SCR_RCritical>Critical</SCR_RCritical>
-<SCR_RCriticalDesc>Near instant or extremely severe effects are felt from this SCP. Nearby pawns cannot recover from these effects.</SCR_RCriticalDesc>
+	<SCP3199ToggleTitle>SCP-3199 Toggle</SCP3199ToggleTitle>
+	<SCP3199ToggleDesc>Stops SCP-3199 from spawning from events, and stops their eggs from hatching.</SCP3199ToggleDesc>
 
+	<SCP939ToggleTitle>SCP-939 Toggle</SCP939ToggleTitle>
+	<SCP939ToggleDesc>Stops SCP-939 from spawning from events.</SCP939ToggleDesc>
+
+	<SCP19051ToggleTitle>SCP-1905-1 Toggle</SCP19051ToggleTitle>
+	<SCP19051ToggleDesc>Stops SCP-1905-1 from spawning.</SCP19051ToggleDesc>
+
+	<SCP848ToggleTitle>SCP-848 Toggle</SCP848ToggleTitle>
+	<SCP848ToggleDesc>Stops SCP-848 and its webs from spawning, and stops them from finding objects.</SCP848ToggleDesc>
+
+	<SCP3033ToggleTitle>SCP-3033-1 and SCP-3033-2 Toggle</SCP3033ToggleTitle>
+	<SCP3033ToggleDesc>Stops SCP-3033-1 and SCP-3033-2 from spawning.</SCP3033ToggleDesc>
+
+	<!-- unused -->
+
+	<LetterLabelCISCP3033Raid>Chaos Insurgency Raid</LetterLabelCISCP3033Raid>
+	<LetterCISCP3033Raid>The Chaos Insurgency has sent SCP-3033 "Mike" units to assault the colony.\n\nThey are attacking immediately.</LetterCISCP3033Raid>
+
+	<LetterLabelCISCP3033RaidFriendly>Chaos Insurgency Reinforcements</LetterLabelCISCP3033RaidFriendly>
+	<LetterCISCP3033RaidFriendly>The Chaos Insurgency has sent SCP-3033 "Mike" units to help you out.</LetterCISCP3033RaidFriendly>
+
+	<!-- //////////////////////////////////////////Containment Procedures////////////////////////////////////////// -->
+
+	<!-- I don't recommend translating the primary class names (e.g, 'Vlam'), since they're special classification words -->
+
+	<SCR_Contain>Containment class</SCR_Contain>
+	<SCR_Disrupt>Disruption class</SCR_Disrupt>
+	<SCR_Risk>Risk class</SCR_Risk>
+
+
+	<!-- Disruption -->
+
+	<SCR_DDark>Dark</SCR_DDark>
+	<SCR_DDarkDesc>Danger risk is incredibly low, that of no concern, or a danger to only a specific pawn or thing.</SCR_DDarkDesc>
+
+	<SCR_DVlam>Vlam</SCR_DVlam>
+	<SCR_DVlamDesc>A danger to a small group of pawns, has a small range, and/or can be neutralized somewhat easily.</SCR_DVlamDesc>
+
+	<SCR_DKeneq>Keneq</SCR_DKeneq>
+	<SCR_DKeneqDesc>A danger to a moderate group of pawns, has a moderate range, and probably has a similar difficulty to neutralize.</SCR_DKeneqDesc>
+
+	<SCR_DEkhi>Ekhi</SCR_DEkhi>
+	<SCR_DEkhiDesc>A danger to a large group of pawns, potentially worldwide. It spreads quickly and is quite the consuming task to deal with.</SCR_DEkhiDesc>
+
+	<!-- hehehe the player is Amida class -->
+
+	<!-- Risk -->
+
+	<SCR_RNotice>Notice</SCR_RNotice>
+	<SCR_RNoticeDesc>This SCP is pretty much inert. It has little or no effect on the pawns around it.</SCR_RNoticeDesc>
+
+	<SCR_RCaution>Caution</SCR_RCaution>
+	<SCR_RCautionDesc>Mild or moderate effects emanate from this SCP.</SCR_RCautionDesc>
+
+	<SCR_RWarning>Warning</SCR_RWarning>
+	<SCR_RWarningDesc>Moderate to significant effects emanate from this SCP.</SCR_RWarningDesc>
+
+	<SCR_RDanger>Danger</SCR_RDanger>
+	<SCR_RDangerDesc>Significant to extreme effects emanate from this SCP.</SCR_RDangerDesc>
+
+	<SCR_RCritical>Critical</SCR_RCritical>
+	<SCR_RCriticalDesc>Near instant or extremely severe effects are felt from this SCP. Nearby pawns cannot recover from these effects.</SCR_RCriticalDesc>
+	
+	
+	<!-- Mod support -->
+	
+	<TSP_SCR_SCP6394>SCP-6394</TSP_SCR_SCP6394>
+	<TSP_SCR_SCP6394R>SCP-6394</TSP_SCR_SCP6394R>
+	<RB_Bee_TSP_SCR_SCP6394R_Queen_Tag>SCP-6394-1 (Queen)</RB_Bee_TSP_SCR_SCP6394R_Queen_Tag>
+	<RB_Bee_TSP_SCR_SCP6394R_Drone_Tag>SCP-6394-2 (Drone)</RB_Bee_TSP_SCR_SCP6394R_Drone_Tag>
 </LanguageData>

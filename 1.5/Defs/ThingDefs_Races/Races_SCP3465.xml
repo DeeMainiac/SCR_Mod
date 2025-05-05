@@ -137,12 +137,12 @@
 		</comps>
 		
 	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="TSP_SCP_Creature_PawnkindDef">
 		<defName>SCR_SCP3465R</defName>
 		<label>SCP-3465</label>
 		<race>SCR_SCP3465R</race>
 		<combatPower>70</combatPower>
-		<ecoSystemWeight>0.50</ecoSystemWeight>
+		<ecoSystemWeight>0</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

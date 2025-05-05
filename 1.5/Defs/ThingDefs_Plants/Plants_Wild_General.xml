@@ -1,97 +1,109 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--====================================== SCP-610 ======================================== -->
+ <!--====================================== SCP-610 ======================================== -->
 
-	<ThingDef ParentName="PlantBase">
-		<defName>SCR_SCP610_Grass</defName>
-		<label>tainted grass</label>
-		<description>Wild grass found in SCP-610 zones. Grows anywhere there is a little light and minimally fertile ground.</description>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Flammability>1.3</Flammability>
-			<Nutrition>0.50</Nutrition>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/SCR_SCP610_Grass</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
-		<ingestible/>
-		<plant>
-			<fertilityMin>0.05</fertilityMin>
-			<fertilitySensitivity>0.3</fertilitySensitivity>
-			<growDays>2.5</growDays>
-			<leaflessGraphicPath>Things/Plant/SCR_SCP610_Grass</leaflessGraphicPath>
-			<harvestWork>40</harvestWork>
-			<maxMeshCount>9</maxMeshCount>
-			<visualSizeRange>0.4~0.6</visualSizeRange>
-			<topWindExposure>0.4</topWindExposure>
-			<wildOrder>1</wildOrder>
-		</plant>
-	</ThingDef>
+  <ThingDef ParentName="PlantBase">
+    <defName>SCR_SCP610_Grass</defName>
+    <label>tainted grass</label>
+    <description>Wild grass found in SCP-610 zones. Grows anywhere there is a little light and minimally fertile ground.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Flammability>1.3</Flammability>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/SCR_SCP610_Grass</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.05</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growDays>2.5</growDays>
+      <leaflessGraphicPath>Things/Plant/SCR_SCP610_Grass</leaflessGraphicPath>
+      <harvestWork>40</harvestWork>
+      <maxMeshCount>9</maxMeshCount>
+      <visualSizeRange>0.4~0.6</visualSizeRange>
+      <topWindExposure>0.4</topWindExposure>
+      <wildOrder>1</wildOrder>
+    </plant>
+  </ThingDef>
 
-	<!--====================================== SCP-848 ======================================== -->
-	<!-- Not technically a plant, but it works better this way -->
+<!--====================================== SCP-848 ======================================== -->
+<!-- Not technically a plant, but it works better this way -->
 
-	<ThingDef ParentName="PlantBaseNonEdible">
-		<defName>SCR_SCP848R</defName>
-		<label>SCP-848-2</label>
-		<description>SCP-848-2 is the web of SCP-848, an anomalous golden silk orb weaver. Occasionally, SCP-848-2 will catch other SCPs or creatures, even if they're not from the area.</description>
-        
-		<modExtensions>
-			<li Class="SecureContainRimworld.CProceduresExtension">
-				<classRating>
-					<li>SCR_CEuclid</li>
-					<li>SCR_DVlam</li>
-					<li>SCR_RNotice</li>
-				</classRating>
-				<containmentTier>0</containmentTier>
-	
-			</li>
-		</modExtensions>
-		<statBases>
-			<BeautyOutdoors>3</BeautyOutdoors>
-			<MaxHitPoints>1000</MaxHitPoints>
-			<Nutrition>0.01</Nutrition>
-			<Mass>0.05</Mass>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plant/SCR_SCP848/SCR_SCP848</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shadowData>
-				<volume>(0.1, 0.1, 0.1)</volume>
-			</shadowData>
-		</graphicData>
-		<minifiedDef>MinifiedTree</minifiedDef>
-		<selectable>true</selectable>
-		<neverMultiSelect>false</neverMultiSelect>
-		<pathCost>69</pathCost>
-		<ingestible>
+  <ThingDef ParentName="PlantBaseNonEdible">
+    <defName>SCR_SCP848R</defName>
+    <label>SCP-848-2</label>
+	<thingClass>Plant</thingClass>
+	<!-- <thingClass MayRequire="mlie.expandableplants">ExpandablePlants.Plant</thingClass> -->
+    <description>SCP-848-2 is the web of SCP-848, an anomalous golden silk orb weaver. Occasionally, SCP-848-2 will catch other SCP's or creatures, even if they're not from the area.</description>
+	<modExtensions>
+		<li Class="SecureContainRimworld.CProceduresExtension">
+			<classRating>
+				<li>SCR_CEuclid</li>
+				<li>SCR_DVlam</li>
+				<li>SCR_RNotice</li>
+			</classRating>
+			<containmentTier>0</containmentTier>
+		</li>
+	</modExtensions>
+	<statBases>
+		<BeautyOutdoors>3</BeautyOutdoors>
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Nutrition>0.0001</Nutrition>
+	       <Mass>0.05</Mass>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/SCR_SCP848/SCR_SCP848</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.21, 0.21, 0.21)</volume>
+      </shadowData>
+    </graphicData>
+	<minifiedDef>MinifiedTree</minifiedDef>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <pathCost>269</pathCost>
+    <ingestible>	
 			<foodType>Tree</foodType>
 			<preferability>NeverForNutrition</preferability>
-		</ingestible>
-		<plant>
-			<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
-			<neverBlightable>true</neverBlightable>
-			<growMinGlow>0</growMinGlow>
-			<fertilitySensitivity>0.15</fertilitySensitivity>
-			<growDays>15</growDays>
-			<visualSizeRange>0.8~1.2</visualSizeRange>
-			<topWindExposure>0.1</topWindExposure>
-			<wildOrder>2</wildOrder>
-			<purpose>Beauty</purpose>
-			<allowAutoCut>false</allowAutoCut>
-		</plant>
-		<!--<comps>
-	      <li Class="CompProperties_ScannerMineralsDeep">
-        <scanSpeedStat>ResearchSpeed</scanSpeedStat>
-        <scanFindMtbDays>3</scanFindMtbDays>
-        <scanFindGuaranteedDays>6</scanFindGuaranteedDays>
-        <soundWorking>ScannerGroundPenetrating_Ambience</soundWorking>
-      </li>
-	</comps> -->
-	</ThingDef>
+	</ingestible> 	
+    <plant>
+		<lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+		<neverBlightable>true</neverBlightable>
+		<growMinGlow>0</growMinGlow>
+		<fertilitySensitivity>0</fertilitySensitivity>
+		<growDays>1</growDays>
+		<visualSizeRange>1.2~1.2</visualSizeRange>
+		<topWindExposure>0</topWindExposure>
+		<wildOrder>2</wildOrder>
+		<purpose>Health</purpose>
+		<allowAutoCut>false</allowAutoCut>
+		<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		<pollution>Any</pollution>
+    </plant>
+	<comps>
+		<!--
+		<li Class="CompProperties_ScannerMineralsDeep">
+			<scanSpeedStat>ResearchSpeed</scanSpeedStat>
+			<scanFindMtbDays>3</scanFindMtbDays>
+			<scanFindGuaranteedDays>6</scanFindGuaranteedDays>
+			<soundWorking>ScannerGroundPenetrating_Ambience</soundWorking>
+		</li>
+		-->
+		<li Class="ExpandablePlants.CompProperties_Plant" MayRequire="mlie.expandableplants">
+			<canDieOfHeat>false</canDieOfHeat>
+			<canDieOfCold>false</canDieOfCold>
+			<minGrowthTemperature>-999</minGrowthTemperature>
+			<maxGrowthTemperature>999</maxGrowthTemperature>
+			<restBegins>0</restBegins>
+			<restEnds>0.001</restEnds>
+		</li>
+	</comps>
+  </ThingDef>
 
 	<!--====================================== SCP-060 ======================================== -->
 
@@ -107,7 +119,6 @@
 					<li>SCR_RNotice</li>
 				</classRating>
 				<containmentTier>0</containmentTier>
-	
 			</li>
 		</modExtensions>
 		<graphicData>
@@ -134,7 +145,6 @@
 			<choppedThingDef>SCR_ChoppedSCP060R</choppedThingDef>
 			<smashedThingDef>SCR_SmashedSCP060R</smashedThingDef>
 			<harvestedThingDef>WoodLog</harvestedThingDef>
-
 		</plant>
 	</ThingDef>
 	

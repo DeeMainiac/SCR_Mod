@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<!-- SCP-6394 -->
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="RB_Bee_Temperate_Queen"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="RB_BeeBase" Name="TSP_SRC_SCBEE" Abstract="True">
+					<label>anomalous bee</label>
+					<!-- <labelPlural>anomalous bees</labelPlural> -->
+					<descriptionHyperlinks>
+						<ResearchProjectDef>SCR_ContainCrate</ResearchProjectDef>
+					</descriptionHyperlinks>
+					<statBases>
+						<MarketValue>2</MarketValue>
+						<Mass>0.0041</Mass>
+						<DeteriorationRate>0</DeteriorationRate>
+						<Flammability>2</Flammability>
+					</statBases>
+					<stackLimit>2</stackLimit>
+					<tradeability>All</tradeability>
+					<thingCategories Inherit="False">
+						<li>RB_BeesAndQueens</li>
+						<li>SCPObjects</li>
+					</thingCategories>
+					<minRewardCount>1</minRewardCount>
+					<thingSetMakerTags>
+						<li>RewardStandardHighFreq</li>
+					</thingSetMakerTags>
+					<tradeTags>
+						<li>SCP</li>
+						<li>SCBee</li>
+					</tradeTags>
+					<comps Inherit="False">
+						<li Class="CompProperties_Forbiddable"></li>
+						<!--
+						<li Class="RimBees.CompProperties_TempRuinableAndDestroy" Inherit="False">
+							<minSafeTemperature>-30</minSafeTemperature>
+							<maxSafeTemperature>80</maxSafeTemperature>
+							<progressPerDegreePerTick>0.00045</progressPerDegreePerTick>
+						</li>
+						<li>
+							<compClass>RimBees.CompDangerBee</compClass>
+						</li>
+						-->
+					</comps>
+				</ThingDef>
+				
+				<!-- BASE BEES -->
+				<!-- Basic Gnees: the source of all further Gnome specializations -->
+				<ThingDef ParentName="TSP_SRC_SCBEE" Name="TSP_SCR_SCP6394" Abstract="True">
+					<description>SCP-6934 is the designation referring to swarms of sapient bees who use their colony's hive work ethic and eusocial intellectual gestalt to produce wholesome art using anomalous beeswax. How they do this with their beeswax, has been the subject of study for centuries and remains unknown. They can communicate with one-another in an established language by telepathy- something they also use to write with -on top of the choreography of navigational "dancing" of normal bees. As with all bees, their eusocial structure means that they are essentially of one mind, meaning the colony can usually speak to other sapient beings with a "spokes-bee" representing the opinion and tastes of the whole colony, normally via a queen bee. \n \n In the centuries since mankind explored the galaxy, the presence of anomalies simply became to great to hide from the masses, resulting in the revelation of anomalous entities to mankind; SCP-6934 entities, at the time, were on the verge of colony collapse, as a galaxy-wide disease affected their recquisite sapient queens. With the anomalous bees teetering on the brink of extinction and neutralization, Glitter World scientists stepped in to cure the blights infecting SCP-3694 queen bees. \n Today, SCP-3694 instances are mostly domesticated and produce a special, anomalous beeswax that can be used for any artistic or architectural endeavor. \n \n SCP-6934 entities love to be put in artificial hives and sheltered, allowing their creative adventures to flourish; they will willingly accept the harvesting of their resources in exchange for provision of security and shelter. Harvesting their honeycombs (with their permission) garners SCP-6394-4 instances (anomalous beeswax) and Tasty Honey. \n \n Remember, to extract SCP-6934-3 instances, the Basic Container Crates Research Project must first be undertaken! \n\n\n\n\n Bee Traits: \n\n 	Production time: one day \n 	Works at Night: No \n 	Works When Raining: Yes \n 	Unusual sources needed: No \n 	Minimum Temperature: 0ºF (-17.7778ºC) \n 	Maximum temperature: 97ºF (36.1111ºC)</description>
+					<descriptionHyperlinks></descriptionHyperlinks>
+					<!--
+					<graphicData Inherit="False">
+						<texPath>Things/Pawn/Animal/Bug_Types/Bee/ST_Bee_south</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					-->
+					<comps>			
+						<li Class="RimBees.CompProperties_Bees" Inherit="False">
+							<species>TSP_SCR_SCP6394R</species>
+							<comb>TSP_SCR_SCP6394_Honeycomb</comb>
+							<combtimedays>1</combtimedays>
+							<nocturnal>false</nocturnal> <!-- Works at night -->
+							<pluviophile>true</pluviophile> <!-- Works in the rain -->
+							<weirdplantneeded>no</weirdplantneeded>
+							<tempMin>-17.7778</tempMin> <!-- Zero degrees Farenheit -->
+							<tempMax>36.1111</tempMax> <!-- Ninety-seven degrees Farenheit -->
+						</li>   
+					</comps>
+					<modExtensions>
+						<li Class="SecureContainRimworld.CProceduresExtension" Inherit="False">
+							<classRating>
+								<li>SCR_CEuclid</li>
+								<li>SCR_DDark</li>
+								<li>SCR_RNotice</li>
+							</classRating>
+							<containmentTier>0</containmentTier>
+						</li>
+					</modExtensions>
+				</ThingDef>
+				
+				<ThingDef ParentName="TSP_SCR_SCP6394">
+					<defName>RB_Bee_TSP_SCR_SCP6394R_Queen</defName>
+					<label>SCP-6394-1 (queen)</label>
+					<descriptionHyperlinks>
+						<!-- <ThingDef>RB_Bee_TSP_SCR_SCP6394R_Queen</ThingDef> -->
+						<ThingDef>RB_Bee_TSP_SCR_SCP6394R_Drone</ThingDef>
+						<ThingDef>TSP_SCR_SCP6394_Honeycomb</ThingDef>
+						<RecipeDef>TSP_SCR_SCP6394_3_Processing</RecipeDef>
+						<ThingDef>TSP_SCR_SCP6394_ArtWax</ThingDef>
+						<ThingDef MayRequire="tsp.zal.patchhoney2">TSP_LaymanHoneyMachine</ThingDef>
+					</descriptionHyperlinks>
+					<graphicData Inherit="False">
+						<texPath>Things/Item/Artifacts/SCR_SCP6394/SCR_SCP6394_Queen</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData> 		
+				</ThingDef>
+				
+				<ThingDef ParentName="TSP_SCR_SCP6394">
+					<defName>RB_Bee_TSP_SCR_SCP6394R_Drone</defName>
+					<label>SCP-6394-2 (drone)</label>
+					<descriptionHyperlinks>
+						<ThingDef>RB_Bee_TSP_SCR_SCP6394R_Queen</ThingDef>
+						<!-- <ThingDef>RB_Bee_TSP_SCR_SCP6394R_Drone</ThingDef> -->
+						<ThingDef>TSP_SCR_SCP6394_Honeycomb</ThingDef>
+						<RecipeDef>TSP_SCR_SCP6394_3_Processing</RecipeDef>
+						<ThingDef>TSP_SCR_SCP6394_ArtWax</ThingDef>
+						<ThingDef MayRequire="tsp.zal.patchhoney2">TSP_LaymanHoneyMachine</ThingDef>
+					</descriptionHyperlinks>
+					<graphicData Inherit="False">
+						<texPath>Things/Item/Artifacts/SCR_SCP6394/SCR_SCP6394_Drone</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData> 		
+				</ThingDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="RB_Temperate_Honeycomb"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="RB_CombBase">
+					<defName>TSP_SCR_SCP6394_Honeycomb</defName>
+					<label>SCP-6394-3 (honeycomb)</label>
+					<description>SCP-6394-3 is the designation given to the harvested honeycombs produced by SCP-6394 instances. It can be processed to receive SCP-3694-4 instances (SCP-6394's anomalous beeswax) and Tasty Honey. SCP-3694-4 beeswax is the primary means by which, in ways still not understood, they can produce media and artistic products. \n \n Remember: to process SCP-6394-3 instances, the Basic Containment Crate Research Project must first be undertaken!</description>
+					<descriptionHyperlinks>
+						<ResearchProjectDef>SCR_ContainCrate</ResearchProjectDef>
+						<ThingDef>RB_Bee_TSP_SCR_SCP6394R_Queen</ThingDef>
+						<ThingDef>RB_Bee_TSP_SCR_SCP6394R_Drone</ThingDef>
+						<!-- <ThingDef>TSP_SCR_SCP6394_Honeycomb</ThingDef> -->
+						<RecipeDef>TSP_SCR_SCP6394_3_Processing</RecipeDef>
+						<ThingDef>TSP_SCR_SCP6394_ArtWax</ThingDef>
+						<ThingDef MayRequire="tsp.zal.patchhoney2">TSP_LaymanHoneyMachine</ThingDef>
+					</descriptionHyperlinks>
+					<statBases>
+						<DeteriorationRate>0</DeteriorationRate>
+					</statBases>
+					<graphicData Inherit="False">
+						<texPath>Things/Item/Artifacts/SCR_SCP6394/SCP_6394_Honeycomb</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>	
+					<butcherProducts>
+						<RB_TastyHoney>12</RB_TastyHoney>
+						<TSP_SCR_SCP6394_ArtWax>12</TSP_SCR_SCP6394_ArtWax>
+					</butcherProducts>
+					<modExtensions>
+						<li Class="SecureContainRimworld.CProceduresExtension" Inherit="False">
+							<classRating>
+								<li>SCR_CEuclid</li>
+								<li>SCR_DDark</li>
+								<li>SCR_RNotice</li>
+							</classRating>
+							<containmentTier>0</containmentTier>
+						</li>
+					</modExtensions>
+				</ThingDef>
+				
+				<RecipeDef>
+					<defName>TSP_SCR_SCP6394_3_Processing</defName>
+					<label>extract from SCP-6394-3 honeycomb</label>
+					<description>Extracts Tasty Honey and SCP-6394-4 (anomalous beeswax) from a SCP-6394-3 instance. \n \n Remember, to extract products from SCP-6934-3 instances, the Basic Container Crates Research Project must first be undertaken!</description>
+					<descriptionHyperlinks>
+						<ResearchProjectDef>SCR_ContainCrate</ResearchProjectDef>
+						<ThingDef>RB_Bee_TSP_SCR_SCP6394R_Queen</ThingDef>
+						<ThingDef>RB_Bee_TSP_SCR_SCP6394R_Drone</ThingDef>
+						<ThingDef>TSP_SCR_SCP6394_Honeycomb</ThingDef>
+						<!-- <RecipeDef>TSP_SCR_SCP6394_3_Processing</RecipeDef> -->
+						<ThingDef>TSP_SCR_SCP6394_ArtWax</ThingDef>
+						<ThingDef MayRequire="tsp.zal.patchhoney2">TSP_LaymanHoneyMachine</ThingDef>
+					</descriptionHyperlinks>
+					<uiIconThing>TSP_SCR_SCP6394_ArtWax</uiIconThing>
+					<jobString>Extracting honey and wax</jobString>
+					<effectWorking>Cremate</effectWorking>
+					<soundWorking>Recipe_Cremate</soundWorking>
+					<workAmount>900</workAmount>
+					<recipeUsers>
+						<li>RB_Honey_Centrifuge</li>
+						<li>RB_Advanced_Honey_Centrifuge</li>
+						<li MayRequire="tsp.zal.patchhoney2">TSP_LaymanHoneyMachine</li>
+					</recipeUsers>	
+					<ingredients>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>TSP_SCR_SCP6394_Honeycomb</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<thingDefs>
+							<li>TSP_SCR_SCP6394_Honeycomb</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<specialProducts>
+						<li>Butchery</li>
+					</specialProducts>
+					<skillRequirements>
+						<Artistic>4</Artistic>
+					</skillRequirements>
+					<researchPrerequisites>
+						<li>SCR_ContainCrate</li>
+						<li>RB_BasicBeekeeping</li>
+					</researchPrerequisites>
+				</RecipeDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="RB_Beeswax"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="RB_BeesWaxBase">
+					<defName>TSP_SCR_SCP6394_ArtWax</defName>
+					<label>SCP-6394-4</label>
+					<description>SCP-6394-4 is the designation given to the anomalous beeswax produced by SCP-6394 instances. Its purpose is for beauty and artistic endeavors; it is its creators' pacifism that is the reason this beeswax is ridiculously brittle and unsuitable for any form of weaponry whatsoever. However, it is versatile and capable of being used in and for any conceivable artistic endeavor imaginable. Its anomalous properties allow for it to be used to produce art and structures in a vastly faster rate. However, due to SCP-6394-4's abundance in the art community, items made with it are not worth very much at the market. \n \n Remember: to extract SCP-6394-4 instances, the Basic Containment Crate Research Project must first be undertaken!</description>
+					<descriptionHyperlinks>
+						<ResearchProjectDef>SCR_ContainCrate</ResearchProjectDef>
+						<ThingDef>RB_Bee_TSP_SCR_SCP6394R_Queen</ThingDef>
+						<ThingDef>RB_Bee_TSP_SCR_SCP6394R_Drone</ThingDef>
+						<ThingDef>TSP_SCR_SCP6394_Honeycomb</ThingDef>
+						<RecipeDef>TSP_SCR_SCP6394_3_Processing</RecipeDef>
+						<!-- <ThingDef>TSP_SCR_SCP6394_ArtWax</ThingDef> -->
+						<ThingDef MayRequire="tsp.zal.patchhoney2">TSP_LaymanHoneyMachine</ThingDef>
+					</descriptionHyperlinks>
+					<graphicData>
+						<texPath>Things/Item/Materials/TSP_SCP6394_Wax3</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>13</MarketValue>
+						<Mass>0.001</Mass>
+						<MaxHitPoints>10</MaxHitPoints>
+						<DeteriorationRate>9</DeteriorationRate>
+						<Beauty>7</Beauty>
+						<SharpDamageMultiplier Inherit="False">0.18</SharpDamageMultiplier>
+						<BluntDamageMultiplier Inherit="False">0.15</BluntDamageMultiplier>
+						<StuffPower_Insulation_Cold Inherit="False">24</StuffPower_Insulation_Cold>
+						<StuffPower_Insulation_Heat Inherit="False">24</StuffPower_Insulation_Heat>
+					</statBases>
+					<stackLimit>2000</stackLimit>
+					<stuffProps>
+						<color>(187,177,157)</color>
+						<commonality>0.33</commonality>
+						<stuffAdjective>SCP-6394-4</stuffAdjective>
+						<categories>
+							<li>Fabric</li>
+							<li>Leathery</li>
+							<li>Woody</li>
+							<li>Stony</li>
+							<li>Metallic</li>
+
+							<!-- Mod support -->
+							<li MayRequire="TaosChagic.Igloo">Snowy</li>
+							<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+							<li MayRequire="Dubwise.Rimefeller">Composite</li>
+							<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+							<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+							<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+							<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+							<li MayRequire="sarg.rimbees">RB_Waxy</li>
+							<li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
+							<li MayRequire="wyr3d.chitin">WYD_Chitin</li>
+							<li MayRequire="wyr3d.chitin">WYD_Padding</li>
+							<li MayRequire="kikohi.jewelry">Gemstones</li>
+						</categories>
+						<statOffsets>
+							<Beauty>7</Beauty>
+						</statOffsets>
+						<statFactors>
+							<MarketValue>0.34</MarketValue>
+							<MaxHitPoints>0.1</MaxHitPoints>
+							<Beauty>4</Beauty>
+							<WorkToMake>0.1</WorkToMake>
+							<WorkToBuild>0.2</WorkToBuild>
+							<DoorOpenSpeed>5</DoorOpenSpeed>
+						</statFactors>
+					</stuffProps>
+					<thingSetMakerTags>
+						<li>RewardStandardMidFreq</li>
+					</thingSetMakerTags>
+					<minRewardCount>300</minRewardCount>
+					<thingCategories Inherit="False">
+						<li>SCPObjects</li>
+						<li>RB_BeeswaxCategory</li>
+					</thingCategories>
+					<modExtensions>
+						<li Class="SecureContainRimworld.CProceduresExtension" Inherit="False">
+							<classRating>
+								<li>SCR_CEuclid</li>
+								<li>SCR_DDark</li>
+								<li>SCR_RNotice</li>
+							</classRating>
+							<containmentTier>0</containmentTier>
+						</li>
+					</modExtensions>
+				</ThingDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>	
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="ABE_BeeCloth_Beeswax"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/RecipeDef[defName = "ABE_BeeCloth_Beeswax" or defName = "ABE_BeeCloth_Brittlewax" or defName = "ABE_BeeCloth_RedBeeswax" or defName = "ABE_BeeCloth_HeavyWax" or defName = "ABE_BeeCloth_WhiteBeeswax" or defName = "ABE_BeeCloth_BlueBeeswax" or defName = "ABE_BeeCloth_Steelwax" or defNAme = "ABE_BeeCloth_BlackBeeswax"]/ingredients/filter/thingDefs</xpath>
+			<value>
+				<li MayRequire="deemainiac.securecontainrimworld,sarg.rimbees">TSP_SCR_SCP6394_ArtWax</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/RecipeDef[defName="ABE_BeeCloth_Beeswax"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/RecipeDef[defName = "ABE_BeeCloth_Beeswax" or defName = "ABE_BeeCloth_Brittlewax" or defName = "ABE_BeeCloth_RedBeeswax" or defName = "ABE_BeeCloth_HeavyWax" or defName = "ABE_BeeCloth_WhiteBeeswax" or defName = "ABE_BeeCloth_BlueBeeswax" or defName = "ABE_BeeCloth_Steelwax" or defNAme = "ABE_BeeCloth_BlackBeeswax"]/fixedIngredientsFilter/thingDefs</xpath>
+			<value>
+				<li MayRequire="deemainiac.securecontainrimworld,sarg.rimbees">TSP_SCR_SCP6394_ArtWax</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="RB_BaseHoney"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs</xpath>
+			<value>
+				<!-- Gnome-Specific Branch -->
+				<!-- Basic Gnees: the source of all further Gnome specializations -->
+				<RimBees.BeeListDef>
+					<defName>TSP_SCR_SCP6394R_Tables</defName>
+					<beeDroneDef>RB_Bee_TSP_SCR_SCP6394R_Drone</beeDroneDef>
+					<beeDroneTag>RB_Bee_TSP_SCR_SCP6394R_Drone_Tag</beeDroneTag>
+					<beeQueenDef>RB_Bee_TSP_SCR_SCP6394R_Queen</beeQueenDef>
+					<beeQueenTag>RB_Bee_TSP_SCR_SCP6394R_Queen_Tag</beeQueenTag>
+				</RimBees.BeeListDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

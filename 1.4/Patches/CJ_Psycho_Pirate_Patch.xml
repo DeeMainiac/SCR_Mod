@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <!-- ============================ Pirate Normal li/1 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "PirateBandBase"]/pawnGroupMakers/li[1]/options</xpath>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <value>
+          <CJ_PsychoScavenger>1</CJ_PsychoScavenger>
+          <CJ_PsychoPirate>1</CJ_PsychoPirate>
+          <CJ_PsychoGrenadier_EMP>0.05</CJ_PsychoGrenadier_EMP>
+          <CJ_PsychoGrenadier_Smoke>0.05</CJ_PsychoGrenadier_Smoke>
+          <CJ_PsychoGrenadier_Destructive>0.2</CJ_PsychoGrenadier_Destructive>
+          <CJ_PsychoMercenary_Gunner>1</CJ_PsychoMercenary_Gunner>
+          <CJ_PsychoMercenary_Heavy>0.6</CJ_PsychoMercenary_Heavy>
+          <CJ_PsychoMercenary_Slasher>0.4</CJ_PsychoMercenary_Slasher>
+          <CJ_PsychoMercenary_Sniper>0.6</CJ_PsychoMercenary_Sniper>
+          <CJ_PsychoMercenary_Elite>1</CJ_PsychoMercenary_Elite>
+          <CJ_Psycho_PirateBoss>0.4</CJ_Psycho_PirateBoss>
+        </value>
+      </li>
+      <!-- ============================ Pirate Slasher li/2 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "PirateBandBase"]/pawnGroupMakers/li[2]/options</xpath>
+        <!-- Normal fights, melee-only -->
+        <value>
+          <CJ_PsychoMercenary_Slasher>1.2</CJ_PsychoMercenary_Slasher>
+        </value>
+      </li>
+      <!-- ============================ Pirate Base li/3 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "PirateBandBase"]/pawnGroupMakers/li[3]/options</xpath>
+        <!-- Normal fights, ranged only -->
+        <value>
+          <CJ_PsychoScavenger>1</CJ_PsychoScavenger>
+          <CJ_PsychoPirate>1</CJ_PsychoPirate>
+          <CJ_PsychoGrenadier_EMP>0.05</CJ_PsychoGrenadier_EMP>
+          <CJ_PsychoGrenadier_Smoke>0.05</CJ_PsychoGrenadier_Smoke>
+          <CJ_PsychoGrenadier_Destructive>0.2</CJ_PsychoGrenadier_Destructive>
+          <CJ_PsychoMercenary_Gunner>1</CJ_PsychoMercenary_Gunner>
+          <CJ_PsychoMercenary_Heavy>0.6</CJ_PsychoMercenary_Heavy>
+          <CJ_PsychoMercenary_Sniper>0.6</CJ_PsychoMercenary_Sniper>
+          <CJ_PsychoMercenary_Elite>1</CJ_PsychoMercenary_Elite>
+          <CJ_Psycho_PirateBoss>0.4</CJ_Psycho_PirateBoss>
+        </value>
+      </li>
+      <!-- ============================ Pirate Base li/4 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "PirateBandBase"]/pawnGroupMakers/li[4]/options</xpath>
+        <!-- Normal fights, explosives with ranged mix-ins -->
+        <value>
+          <CJ_PsychoGrenadier_EMP>0.05</CJ_PsychoGrenadier_EMP>
+          <CJ_PsychoGrenadier_Smoke>0.05</CJ_PsychoGrenadier_Smoke>
+          <CJ_PsychoGrenadier_Destructive>1</CJ_PsychoGrenadier_Destructive>
+          <CJ_PsychoMercenary_Gunner>1</CJ_PsychoMercenary_Gunner>
+          <CJ_PsychoMercenary_Heavy>1</CJ_PsychoMercenary_Heavy>
+          <CJ_PsychoMercenary_Elite>0.1</CJ_PsychoMercenary_Elite>
+          <CJ_Psycho_PirateBoss>0.1</CJ_Psycho_PirateBoss>
+        </value>
+      </li>
+      <!-- ============================ Pirate Base li/5 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "PirateBandBase"]/pawnGroupMakers/li[5]/options</xpath>
+        <!-- Normal fights, snipers only -->
+        <value>
+          <CJ_PsychoMercenary_Sniper>3</CJ_PsychoMercenary_Sniper>
+        </value>
+      </li>
+      <!-- ============================ Pirate Base li/6 ========================== -->
+
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "PirateBandBase"]/pawnGroupMakers/li[6]/options</xpath>
+        <!-- Normal fights, drifters only (very rare) -->
+        <value>
+          <CJ_PsychoDrifter>4</CJ_PsychoDrifter>
+        </value>
+      </li>
+      <!-- ============================ Pirate Base li/7 ========================== -->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[@Name = "PirateBandBase"]/pawnGroupMakers/li[7]/options</xpath>
+        <!-- Base defense, mainly ranged with melee mix-ins -->
+        <value>
+			<CJ_PsychoDrifter>0.841</CJ_PsychoDrifter>
+			<CJ_PsychoPirate>0.8</CJ_PsychoPirate>
+			<CJ_PsychoGrenadier_Destructive>0.2</CJ_PsychoGrenadier_Destructive>
+			<CJ_PsychoMercenary_Slasher>0.4</CJ_PsychoMercenary_Slasher>
+			<CJ_PsychoMercenary_Sniper>1</CJ_PsychoMercenary_Sniper>
+			<CJ_PsychoMercenary_Gunner>1.1</CJ_PsychoMercenary_Gunner>
+			<CJ_PsychoMercenary_Elite>1</CJ_PsychoMercenary_Elite>
+			<CJ_Psycho_PirateBoss>0.71</CJ_Psycho_PirateBoss>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

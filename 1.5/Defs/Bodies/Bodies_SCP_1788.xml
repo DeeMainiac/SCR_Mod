@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <BodyDef>
+    <defName>TSP_CJ_SCR_1788</defName>
+    <label>Psycho Adults</label>
+    <corePart>
+      <def>Torso</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>Ribcage</def>
+		  <customLabel>master ribcage</customLabel>
+          <coverage>0.036</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+		<li>
+          <def>Ribcage</def>
+		  <customLabel>slave ribcage</customLabel>
+          <coverage>0.036</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+			<li>TSP_CJ_SCR_1788_SlaveOrgan</li>
+          </groups>
+		  <parts>
+				<li>
+					<def>Brain</def>
+					<customLabel>slave brain</customLabel>
+					<coverage>0.8</coverage>
+					<groups>
+						<li>TSP_CJ_SCR_1788_SlaveOrgan_Brain</li>
+						<!--
+						<li>Torso</li>
+						<li>TSP_CJ_SCR_1788_SlaveOrgan</li>
+						-->
+					</groups>
+				</li>
+			</parts>
+        </li>
+        <li>
+          <def>Sternum</def>
+		  <customLabel>master sternum</customLabel>
+          <coverage>0.015</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Sternum</def>
+		  <customLabel>slave sternum</customLabel>
+          <coverage>0.015</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+			<li>TSP_CJ_SCR_1788_SlaveOrgan</li>
+          </groups>
+        </li>
+        <li>
+          <def>Pelvis</def>
+          <coverage>0.025</coverage>
+          <height>Bottom</height>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Spine</def>
+		  <customLabel>master spine</customLabel>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Spine</def>
+		  <customLabel>slave spine</customLabel>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+			<li>TSP_CJ_SCR_1788_SlaveOrgan</li>
+          </groups>
+        </li>
+        <li>
+          <def>Stomach</def>
+		  <customLabel>master stomach</customLabel>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+		<li>
+          <def>Stomach</def>
+		  <customLabel>slave stomach</customLabel>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+			<li>TSP_CJ_SCR_1788_SlaveOrgan</li>
+          </groups>
+        </li>
+        <li>
+          <def>Heart</def>
+		  <customLabel>master heart</customLabel>
+          <coverage>0.020</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Heart</def>
+		  <customLabel>slave heart</customLabel>
+          <coverage>0.020</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+			<li>TSP_CJ_SCR_1788_SlaveOrgan</li>
+          </groups>
+        </li>
+        <li>
+          <def>Lung</def>
+          <customLabel>left master lung</customLabel>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Lung</def>
+          <customLabel>left slave lung</customLabel>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+			<li>TSP_CJ_SCR_1788_SlaveOrgan</li>
+          </groups>
+        </li>
+        <li>
+          <def>Lung</def>
+          <customLabel>right master lung</customLabel>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+		<li>
+          <def>Lung</def>
+          <customLabel>right slave lung</customLabel>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+			<li>TSP_CJ_SCR_1788_SlaveOrgan</li>
+          </groups>
+        </li>
+        <li>
+          <def>Kidney</def>
+          <customLabel>left master kidney</customLabel>
+          <coverage>0.017</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Kidney</def>
+          <customLabel>left slave kidney</customLabel>
+          <coverage>0.017</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+			<li>TSP_CJ_SCR_1788_SlaveOrgan</li>
+          </groups>
+        </li>
+        <li>
+          <def>Kidney</def>
+          <customLabel>right master kidney</customLabel>
+          <coverage>0.017</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Kidney</def>
+          <customLabel>right slave kidney</customLabel>
+          <coverage>0.017</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+			<li>TSP_CJ_SCR_1788_SlaveOrgan</li>
+          </groups>
+        </li>
+        <li>
+          <def>Liver</def>
+		  <customLabel>master liver</customLabel>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
+          <def>Liver</def>
+		  <customLabel>slave liver</customLabel>
+          <coverage>0.025</coverage>
+          <depth>Inside</depth>
+          <groups>
+            <li>Torso</li>
+			<li>TSP_CJ_SCR_1788_SlaveOrgan</li>
+          </groups>
+        </li>
+        <li>
+          <def>Neck</def>
+          <coverage>0.075</coverage>
+          <height>Top</height>
+          <groups>
+            <li>Neck</li>
+          </groups>
+          <parts>
+            <li>
+              <def>Head</def>
+              <coverage>0.80</coverage>
+              <groups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Skull</def>
+                  <coverage>0.18</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>UpperHead</li>
+                    <li>Eyes</li>
+                    <li>FullHead</li>
+                  </groups>
+                  <parts>
+                    <li>
+                      <def>Brain</def>
+					  <customLabel>master brain</customLabel>
+                      <coverage>0.8</coverage>
+                      <groups>
+                        <li>UpperHead</li>
+                        <li>Eyes</li>
+                        <li>FullHead</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>left eye</customLabel>
+                  <coverage>0.07</coverage>
+                  <groups>
+                    <li>FullHead</li>
+                    <li>Eyes</li>
+                  </groups>
+                  <woundAnchorTag>LeftEye</woundAnchorTag>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>right eye</customLabel>
+                  <coverage>0.07</coverage>
+                  <groups>
+                    <li>FullHead</li>
+                    <li>Eyes</li>
+                  </groups>
+                  <woundAnchorTag>RightEye</woundAnchorTag>
+                </li>
+                <li>
+                  <def>Ear</def>
+                  <customLabel>left ear</customLabel>
+                  <coverage>0.07</coverage>
+                  <groups>
+                    <li>UpperHead</li>
+                    <li>FullHead</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Ear</def>
+                  <customLabel>right ear</customLabel>
+                  <coverage>0.07</coverage>
+                  <groups>
+                    <li>UpperHead</li>
+                    <li>FullHead</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Nose</def>
+                  <coverage>0.10</coverage>
+                  <groups>
+                    <li>FullHead</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Jaw</def>
+                  <coverage>0.15</coverage>
+                  <groups>
+                    <li>Teeth</li>
+                    <li>FullHead</li>
+                    <li>Mouth</li>
+                  </groups>
+                  <parts>
+                    <li>
+                      <def>Tongue</def>
+                      <coverage>0</coverage>
+                      <depth>Inside</depth>
+                      <groups>
+                        <li>FullHead</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Shoulder</def>
+          <customLabel>left greater shoulder</customLabel>
+          <coverage>0.12</coverage>
+          <woundAnchorTag>LeftShoulder</woundAnchorTag>
+          <groups>
+            <li>Shoulders</li>
+          </groups>
+          <parts>
+            <li>
+              <def>Clavicle</def>
+              <customLabel>left greater clavicle</customLabel>
+              <coverage>0.09</coverage>
+              <height>Top</height>
+              <depth>Inside</depth>
+              <groups>
+                <li>Torso</li>
+              </groups>
+            </li>
+            <li>
+              <def>Arm</def>
+              <customLabel>left greater arm</customLabel>
+              <coverage>0.77</coverage>
+              <groups>
+                <li>Arms</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Humerus</def>
+                  <customLabel>left greater humerus</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Radius</def>
+                  <customLabel>left greater radius</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Hand</def>
+                  <customLabel>left greater hand</customLabel>
+                  <coverage>0.14</coverage>
+                  <height>Bottom</height>
+                  <groups>
+                    <li>Hands</li>
+                  </groups>
+                  <parts>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>left greater pinky</customLabel>
+                      <coverage>0.06</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>left greater ring finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>left greater middle finger</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>LeftHand</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>left greater index finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>left greater thumb</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>LeftHand</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+		<!-- The lesser arms don't have their own shoulders, they are canonically stemming from the same shoulder, under the armpits -->
+        <li>
+          <def>Clavicle</def>
+          <customLabel>left lesser clavicle</customLabel>
+          <coverage>0.12</coverage>
+          <woundAnchorTag>LeftShoulder</woundAnchorTag>
+          <groups>
+			<li>Torso</li>
+            <li>Arms</li>
+          </groups>
+          <parts>
+            <li>
+              <def>Arm</def>
+              <customLabel>left lesser arm</customLabel>
+              <coverage>0.77</coverage>
+              <groups>
+                <li>Arms</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Humerus</def>
+                  <customLabel>left lesser humerus</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Radius</def>
+                  <customLabel>left lesser radius</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Hand</def>
+                  <customLabel>left lesser hand</customLabel>
+                  <coverage>0.14</coverage>
+                  <height>Bottom</height>
+                  <groups>
+                    <li>Hands</li>
+                  </groups>
+                  <parts>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>left lesser pinky</customLabel>
+                      <coverage>0.06</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>TSP_CJ_SCR_1788_LesserArms_Left</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>left lesser ring finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>TSP_CJ_SCR_1788_LesserArms_Left</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>left lesser middle finger</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>TSP_CJ_SCR_1788_LesserArms_Left</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>left lesser index finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>TSP_CJ_SCR_1788_LesserArms_Left</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>left lesser thumb</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>TSP_CJ_SCR_1788_LesserArms_Left</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Shoulder</def>
+          <customLabel>right greater shoulder</customLabel>
+          <coverage>0.12</coverage>
+          <woundAnchorTag>RightShoulder</woundAnchorTag>
+          <groups>
+            <li>Shoulders</li>
+          </groups>
+          <parts>
+            <li>
+              <def>Clavicle</def>
+              <customLabel>right greater clavicle</customLabel>
+              <coverage>0.09</coverage>
+              <height>Top</height>
+              <depth>Inside</depth>
+              <groups>
+                <li>Torso</li>
+              </groups>
+            </li>
+            <li>
+              <def>Arm</def>
+              <customLabel>right greater arm</customLabel>
+              <coverage>0.77</coverage>
+              <groups>
+                <li>Arms</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Humerus</def>
+                  <customLabel>right greater humerus</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Radius</def>
+                  <customLabel>right greater radius</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Hand</def>
+                  <customLabel>right greater hand</customLabel>
+                  <coverage>0.14</coverage>
+                  <height>Bottom</height>
+                  <groups>
+                    <li>Hands</li>
+                  </groups>
+                  <parts>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>right greater pinky</customLabel>
+                      <coverage>0.06</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>right greater ring finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>right greater middle finger</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>RightHand</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>right greater index finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>right greater thumb</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>RightHand</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+		<!-- The lesser arms don't have their own shoulders, they are canonically stemming from the same shoulder, under the armpits -->
+        <li>
+          <def>Clavicle</def>
+          <customLabel>right lesser clavicle</customLabel>
+          <coverage>0.12</coverage>
+          <woundAnchorTag>RightShoulder</woundAnchorTag>
+          <groups>
+			<li>Torso</li>
+            <li>Arms</li>
+          </groups>
+          <parts>
+            <li>
+              <def>Arm</def>
+              <customLabel>right lesser arm</customLabel>
+              <coverage>0.77</coverage>
+              <groups>
+                <li>Arms</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Humerus</def>
+                  <customLabel>right lesser humerus</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Radius</def>
+                  <customLabel>right lesser radius</customLabel>
+                  <coverage>0.1</coverage>
+                  <depth>Inside</depth>
+                  <groups>
+                    <li>Arms</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Hand</def>
+                  <customLabel>right lesser hand</customLabel>
+                  <coverage>0.14</coverage>
+                  <height>Bottom</height>
+                  <groups>
+					<li>Hands</li>
+                    <li>TSP_CJ_SCR_1788_LesserArms_Right</li>
+                  </groups>
+                  <parts>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>right lesser pinky</customLabel>
+                      <coverage>0.06</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>TSP_CJ_SCR_1788_LesserArms_Right</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>right lesser ring finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>TSP_CJ_SCR_1788_LesserArms_Right</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>right lesser middle finger</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>TSP_CJ_SCR_1788_LesserArms_Right</li>
+                        <li>MiddleFingers</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>right lesser index finger</customLabel>
+                      <coverage>0.07</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>TSP_CJ_SCR_1788_LesserArms_Right</li>
+                      </groups>
+                    </li>
+                    <li>
+                      <def>Finger</def>
+                      <customLabel>right lesser thumb</customLabel>
+                      <coverage>0.08</coverage>
+                      <groups>
+                        <li>Hands</li>
+                        <li>TSP_CJ_SCR_1788_LesserArms_Right</li>
+                      </groups>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Waist</def>
+          <coverage>0</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Waist</li>
+          </groups>
+        </li>
+        <li>
+          <def>Leg</def>
+          <customLabel>left leg</customLabel>
+          <coverage>0.14</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Legs</li>
+          </groups>
+          <woundAnchorTag>LeftLeg</woundAnchorTag>
+          <parts>
+            <li>
+              <def>Femur</def>
+              <customLabel>left femur</customLabel>
+              <coverage>0.1</coverage>
+              <depth>Inside</depth>
+              <groups>
+                <li>Legs</li>
+              </groups>
+            </li>
+            <li>
+              <def>Tibia</def>
+              <customLabel>left tibia</customLabel>
+              <coverage>0.1</coverage>
+              <depth>Inside</depth>
+              <groups>
+                <li>Legs</li>
+              </groups>
+            </li>
+            <li>
+              <def>Foot</def>
+              <customLabel>left foot</customLabel>
+              <coverage>0.1</coverage>
+              <groups>
+                <li>Feet</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>left little toe</customLabel>
+                  <coverage>0.06</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>left fourth toe</customLabel>
+                  <coverage>0.07</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>left middle toe</customLabel>
+                  <coverage>0.08</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>left second toe</customLabel>
+                  <coverage>0.09</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>left big toe</customLabel>
+                  <coverage>0.09</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Leg</def>
+          <customLabel>right leg</customLabel>
+          <coverage>0.14</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Legs</li>
+          </groups>
+          <woundAnchorTag>RightLeg</woundAnchorTag>
+          <parts>
+            <li>
+              <def>Femur</def>
+              <customLabel>right femur</customLabel>
+              <coverage>0.1</coverage>
+              <depth>Inside</depth>
+              <groups>
+                <li>Legs</li>
+              </groups>
+            </li>
+            <li>
+              <def>Tibia</def>
+              <customLabel>right tibia</customLabel>
+              <coverage>0.1</coverage>
+              <depth>Inside</depth>
+              <groups>
+                <li>Legs</li>
+              </groups>
+            </li>
+            <li>
+              <def>Foot</def>
+              <customLabel>right foot</customLabel>
+              <coverage>0.1</coverage>
+              <groups>
+                <li>Feet</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>right little toe</customLabel>
+                  <coverage>0.06</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>right fourth toe</customLabel>
+                  <coverage>0.07</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>right middle toe</customLabel>
+                  <coverage>0.08</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>right second toe</customLabel>
+                  <coverage>0.09</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Toe</def>
+                  <customLabel>right big toe</customLabel>
+                  <coverage>0.09</coverage>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+  
+  	<BodyPartGroupDef>
+		<defName>TSP_CJ_SCR_1788_SlaveOrgan</defName>
+		<label>redundant organs</label>
+		<labelShort>redundant organs</labelShort>
+	</BodyPartGroupDef>
+	
+  	<BodyPartGroupDef>
+		<defName>TSP_CJ_SCR_1788_SlaveOrgan_Brain</defName>
+		<label>redundant brain</label>
+		<labelShort>redundant brain</labelShort>
+	</BodyPartGroupDef>
+	
+  	<BodyPartGroupDef>
+		<defName>TSP_CJ_SCR_1788_LesserArms_Right</defName>
+		<label>redundant arm (right)</label>
+		<labelShort>redundant arm (right)</labelShort>
+	</BodyPartGroupDef>
+	
+  	<BodyPartGroupDef>
+		<defName>TSP_CJ_SCR_1788_LesserArms_Left</defName>
+		<label>redundant arm (left)</label>
+		<labelShort>redundant arm (left)</labelShort>
+	</BodyPartGroupDef>
+</Defs>

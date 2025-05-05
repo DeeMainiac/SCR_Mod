@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
+	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name="BasePawn"]/recipes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name="BasePawn"]</xpath>
+			<success>Always</success>
+			<value>
+				<recipes></recipes>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]</xpath>
+			<success>Always</success>
+			<value>
+				<recipes></recipes>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Human"]/recipes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Human"]</xpath>
+			<success>Always</success>
+			<value>
+				<recipes></recipes>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="SCR_SCP30332R"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[@Name="BasePawn"]/recipes</xpath>
+			<value>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_InstallSCP30331R</li>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_RemoveSCP30331R</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="SCR_SCP30332R"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+			<value>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_InstallSCP30331R</li>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_RemoveSCP30331R</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Human"]/recipes</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Human"]/recipes</xpath> <!-- HAR Mod support -->
+			<value>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_InstallSCP30331R</li>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_RemoveSCP30331R</li>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_InstallSCP30332R</li>
+				<li MayRequire="DeeMainiac.SecureContainRimworld">SCR_RemoveSCP30332R</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

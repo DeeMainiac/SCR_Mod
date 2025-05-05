@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
+<Defs>
   <ThingDef ParentName="OrganicProductBase">
     <defName>SCR_SCP1797Meat</defName>
     <label>SCP-1797-A meat</label>
@@ -37,7 +37,7 @@
   <ThingDef ParentName="OrganicProductBase">
     <defName>SCR_SCP594Meat</defName>
     <label>raw thunder mutton</label>
-    <description>Meat from SCP-594. Can be used to make an electrifyingly delicious meal.</description>
+    <description>Meat from SCP-594. Can be used to make an electrifying, delicious meal.</description>
     <graphicData>
 		<texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
@@ -71,14 +71,15 @@
   <ThingDef ParentName="OrganicProductBase">
     <defName>SCR_SCP3199Meat</defName>
     <label>SCP-3199 meat</label>
-    <description>Meat from a SCP-3199 instance. A mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the human taste.</description>
+    <description>Meat from a SCP-3199 instance. It is an anomalous mixture of chicken, chimpanzee, stoat, mussel, adder, and human DNA into one horrible abomination of a meat. Cooking it gets rid of the nasty taste.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Small</texPath>
-	        <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Things/Item/Resource/MeatFoodRaw/Meat_Human</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(212,183,162)</color>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-      <MarketValue>0.5</MarketValue> <!-- Can be used like meat in recipes -->
+      <MarketValue>0.35</MarketValue> <!-- Can be used like meat in recipes -->
       <Mass>0.045</Mass>
       <MaxHitPoints>60</MaxHitPoints>
       <Flammability>2</Flammability>
@@ -89,7 +90,7 @@
 	<stackLimit>1000</stackLimit>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>25</daysToRotStart>
+        <daysToRotStart>45</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
@@ -141,7 +142,7 @@
 			<preferability>RawBad</preferability>
 			<foodType Inherit="False">VegetableOrFruit, Plant, VegetarianAnimal, VegetarianRoughAnimal, Seed, Tree, Kibble</foodType>
 			<optimalityOffsetHumanlikes>0</optimalityOffsetHumanlikes>
-			<optimalityOffsetFeedingAnimals>20</optimalityOffsetFeedingAnimals>
+			<optimalityOffsetFeedingAnimals>60</optimalityOffsetFeedingAnimals>
 			<tasteThought Inherit="False"></tasteThought>
 			<specialThoughtDirect Inherit="False"></specialThoughtDirect>
 			<specialThoughtAsIngredient Inherit="False"></specialThoughtAsIngredient>

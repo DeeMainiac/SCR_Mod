@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<FleshTypeDef>
+		<defName>TSP_SCR_AnomalousFlesh</defName>
+		<ateDirect MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_AteStrangeMeatDirect</ateDirect>
+		<ateAsIngredient MayRequire="rimofmadness.callofcthulhucosmichorrors">ROM_AteStrangeMeatAsIngredient</ateAsIngredient>
+		<!-- <corpseCategory>ROM_CosmicHorrorCorpses</corpseCategory> -->
+		<corpseCategory>TSP_SCR_Corpses_SCP</corpseCategory>
+		<damageEffecter>Damage_HitFlesh</damageEffecter>
+		<isOrganic>true</isOrganic>
+		<genericWounds>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundFleshA</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundFleshB</texture>
+			</li>
+			<li>
+				<texture>Things/Pawn/Wounds/WoundFleshC</texture>
+			</li>
+		</genericWounds>
+	</FleshTypeDef>
+</Defs>

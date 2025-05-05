@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<ThingDef ParentName="ApparelMakeableBase">
+<ThingDef ParentName="SCR_ApparelNoColorBase">
 	<defName>SCR_ClassDJumpsuit</defName>
-	<label>D-class Jumpsuit</label>
-		<description>Orange jumpsuit reserved for D-class personnel. Offers little in the way of protection and supresses the wearer psychologically.</description>
+	<label>D-Class Jumpsuit</label>
+		<description>An orange jumpsuit originally reserved for D-class Personnel. D-Class Personnel were criminals convicted of violent and sentence in judicial courts across the galaxy, who were then offered to the SCP Foundation for experimentation. After the galactic colonization of man, the revelation of SCP's largely caused the Foundation to collapse (the "Broken Masquarade," as they called it), reducing it to a police force. It is comprised of fabric or leather and is stitched in the same way that the ubitiquous slave straps and slave collars are made on less ethical planets. Offers little in the way of protection and supresses the wearer psychologically.</description>
     <graphicData>
       <texPath>Things/Item/Apparel/SCR_ClassDJumpsuit/SCR_ClassDJumpsuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	<techLevel>Industrial</techLevel>
+	<!--
 	<costList>
-      <Cloth>80</Cloth>
-    </costList>
+		<Apparel_BodyStrap>1</Apparel_BodyStrap>
+		<Apparel_Collar>1</Apparel_Collar>
+	</costList>
+	-->
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
@@ -23,18 +26,18 @@
       <StuffEffectMultiplierArmor>0.21</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
+      <EquipDelay>2</EquipDelay>
     </statBases>
 	<equippedStatOffsets>
-      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.35</SlaveSuppressionOffset>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.5</SlaveSuppressionOffset>
     </equippedStatOffsets>
     <apparel>
       <slaveApparel>true</slaveApparel>
       <bodyPartGroups>
-        <li>Neck</li>
 		<li>Shoulders</li>
 		<li>Torso</li>
 		<li>Legs</li>
+		<li>Arms</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Item/Apparel/SCR_ClassDJumpsuit/SCR_ClassDJumpsuit</wornGraphicPath>
       <layers>
@@ -43,14 +46,23 @@
 	  <defaultOutfitTags>
         <li>Slave</li>
       </defaultOutfitTags>
+	  <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+	  <tags>
+		<li>DClassSlave</li>
+	  </tags>
     </apparel>
+	<!--
 	<recipeMaker>
-	      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+	      <researchPrerequisites>
+			<li>SCR_FoundationGear</li>
+		  </researchPrerequisites>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
+		<li>CraftingSpot</li>
       </recipeUsers>
     </recipeMaker>
+	-->
   </ThingDef>
 
 </Defs>
