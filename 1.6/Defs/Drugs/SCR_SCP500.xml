@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MechSerumBase">
+    <defName>SCR_SCP500R</defName>
+    <label>SCP-500 pill</label>
+    <description>SCP-500 is a red pill that cures any and all diseases of the consumer.</description>
+    <modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+	</modExtensions>
+	<graphicData>
+      <texPath>Things/Item/Drug/Penoxycyline</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  	  <color>(200, 0, 0)</color>
+    			<drawSize>.8</drawSize>
+	</graphicData>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+	  <li>SCPObjects</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+	<tradeTags>
+	<li>SCP</li>
+	</tradeTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>consume a SCP-500 pill</useLabel>
+        <useDuration>100</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>SecureContainRimworld.CompUseEffect_UseSCP500</compClass>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>Ingest_Pill</soundOnUsed>
+      </li>
+<li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+  
+  <RecipeDef>
+    <defName>Administer_SCP500R</defName>
+    <label>administer SCP-500</label>
+    <description>Administer a SCP-500 pill to cure any and all diseases.</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Administering SCP-500.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>100</workAmount>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SCR_SCP500R</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_SCP500R</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+  </Defs>

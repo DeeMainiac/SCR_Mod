@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--===================== Amnesticized ===================== -->
+
+  <BackstoryDef ParentName="Solid">
+    <defName>SCR_AmnesticizedChild</defName>  
+    <ignoreIllegalLabelCharacterConfigError>False</ignoreIllegalLabelCharacterConfigError>  
+    <identifier>SCR_AmnesticizedChild</identifier>  
+    <slot>Childhood</slot>  
+    <title>amnesticized</title>  
+    <titleShort>amnesticized</titleShort>  
+    <description>[PAWN_nameDef] has completely forgotten [PAWN_possessive] childhood due to [PAWN_possessive] consumption of amnestics.</description>  
+    <skillGains>
+	<Social>-1</Social>
+    </skillGains>  
+    <workDisables>None</workDisables>  
+    <requiredWorkTags>None</requiredWorkTags>  
+  </BackstoryDef>
+
+<BackstoryDef ParentName="Solid">
+	<defName>SCR_AmnesticizedAdult</defName>
+	<identifier>SCR_AmnesticizedAdult</identifier>
+	<slot>Adulthood</slot>
+	<title>amnesticized</title>
+	<titleShort>amnesticized</titleShort>
+	<description>[PAWN_nameDef] has completely forgotten recent life memories due to [PAWN_possessive] consumption of amnestics.</description>
+	    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+</BackstoryDef>
+
+</Defs>

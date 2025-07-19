@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>SCR_SCP011R</defName>
+	
+	<!-- Note: This mod extension doesn't work -->
+	<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+		<li>SCR_CSafe</li>
+		<li>SCR_DVlam</li>
+		<li>SCR_RNotice</li>
+	</classRating>
+	
+	<containmentTier>0</containmentTier>	
+	</li>
+	</modExtensions> 
+	
+    <commonality>0.15</commonality>
+    <degreeDatas>
+      <li>
+        <label>SCP-011</label>
+        <description>{PAWN_nameDef} has granite-like skin. {PAWN_pronoun} is quite durable and skilled with guns.</description>
+        <marketValueFactorOffset>0.4</marketValueFactorOffset>
+		<hungerRateFactor>0.5</hungerRateFactor>
+		<statFactors>
+          <IncomingDamageFactor>0.5</IncomingDamageFactor>
+		  <!--<StaggerDurationFactor>0.5</StaggerDurationFactor> -->
+        </statFactors>
+		<statOffsets>
+          <RestRateMultiplier>0.5</RestRateMultiplier>
+        </statOffsets>
+        <skillGains>
+          <Shooting>4</Shooting>
+        </skillGains>
+      </li>
+    </degreeDatas>
+	    <conflictingTraits>
+		<li>Wimp</li>
+		<li>Brawler</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </TraitDef>
+
+
+
+
+
+
+
+
+
+</Defs>

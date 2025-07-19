@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="SCR_SCP_Base">
+    <defName>SCR_SCP594R</defName>
+    <label>SCP-594</label>
+    <description>SCP-594 is a ram-like creature that can weaponize static electricity. A great source of wool, milk, and meat.</description>
+      	<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CEuclid</li>
+					<li>SCR_DVlam</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>1</containmentTier>
+				<willManhuntAfterBreach>false</willManhuntAfterBreach>
+				<hatesRoofs>true</hatesRoofs>
+			</li>
+	</modExtensions>
+	<statBases>
+      <MoveSpeed>4.8</MoveSpeed>
+      <MarketValue>400</MarketValue>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+      <ComfyTemperatureMax>45</ComfyTemperatureMax>
+      <FilthRate>8</FilthRate>
+	  <MeatAmount>130</MeatAmount>
+	  <Wildness>.2</Wildness>
+    </statBases>
+    <uiIconScale>1.3</uiIconScale>
+    <comps>
+      <li Class="CompProperties_Shearable">
+        <woolDef>WoolSheep</woolDef>
+        <shearIntervalDays>10</shearIntervalDays>
+        <woolAmount>45</woolAmount>
+      </li>
+	  <li Class="CompProperties_Milkable">
+        <milkDef>Milk</milkDef>
+        <milkIntervalDays>1</milkIntervalDays>
+        <milkAmount>8</milkAmount>
+      </li>
+    </comps>
+    <race>
+	<thinkTreeMain>SCR_SCPAI</thinkTreeMain>
+      <herdAnimal>true</herdAnimal>
+      <body>QuadrupedAnimalWithHooves</body>
+      <baseBodySize>0.8</baseBodySize>
+      <baseHealthScale>0.7</baseHealthScale>
+      <baseHungerRate>0.2</baseHungerRate>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Plain</leatherDef>
+	  <specificMeatDef>SCR_SCP594Meat</specificMeatDef>
+      <gestationPeriodDays>5.66</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.7, 1)</li>
+          <li>(2.0, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <roamMtbDays>5</roamMtbDays>
+      <trainability>None</trainability>
+      <lifeExpectancy>13</lifeExpectancy>
+	  <manhunterOnTameFailChance>.3</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>1</manhunterOnDamageChance>
+	  			<wildBiomes>
+				<AridShrubland>0</AridShrubland>
+				<BorealForest>.25</BorealForest>
+				<ColdBog>.2</ColdBog>
+				<TemperateForest>0</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>.25</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.3333</minAge>
+          <soundWounded>Pawn_Sheep_Wounded</soundWounded>
+          <soundDeath>Pawn_Sheep_Death</soundDeath>
+          <soundCall>Pawn_Sheep_Call</soundCall>
+          <soundAngry>Pawn_Sheep_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalFarm</li>
+	  <li>AnimalUncommon</li>
+	  <li>SCPAnimal</li>
+	  <li>PetSmarter</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+		  <li>SCR_Electric</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.9</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+      <li>
+        <label>left hoof</label>
+        <capacities>
+		  <li>SCR_Electric</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <capacities>
+		  <li>SCR_Electric</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+         <li>SCR_Electric</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>SCR_SCP594R</defName>
+    <label>SCP-594</label>
+    <labelPlural>SCP-594 instances</labelPlural>
+    <labelMale>SCP-594 ram</labelMale>
+    <labelFemale>SCP-594 ewe</labelFemale>
+    <race>SCR_SCP594R</race>
+    <combatPower>80</combatPower>
+    <ecoSystemWeight>0</ecoSystemWeight>
+    <lifeStages Inherit="False">
+      <li>
+        <label>SCP-594 lamb</label>
+		<labelMale>SCP-594 lamb</labelMale>
+		<labelFemale>SCP-594 lamb</labelFemale>
+        <labelPlural>SCP-594 instances</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/SheepFemale</texPath>
+          <drawSize>1</drawSize>
+		  <color>(108, 125, 130)</color>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/SheepMale</texPath>
+          <drawSize>1.60</drawSize>
+		  <color>(108, 125, 130)</color>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/SheepFemale</texPath>
+          <drawSize>1.60</drawSize>
+		  <color>(108, 125, 130)</color>
+		  <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepMale</texPath>
+          <drawSize>1.30</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
+          <drawSize>1.30</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/SheepMale</texPath>
+          <drawSize>2</drawSize>
+      	  <color>(108, 125, 130)</color>
+		  <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/SheepFemale</texPath>
+          <drawSize>2</drawSize>
+          <color>(108, 125, 130)</color>
+		  <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepMale</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
+          <drawSize>1.70</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+</Defs>

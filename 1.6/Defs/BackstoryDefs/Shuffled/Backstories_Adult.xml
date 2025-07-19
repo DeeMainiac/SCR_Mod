@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ===================== Foundation Backstories ===================== -->
+	<!-- <BackstoryDef>
+    <defName>SCR_ArmyCook0</defName>
+    <identifier>ArmyCook0</identifier>
+    <slot>Adulthood</slot>
+    <title>army cook</title>
+    <titleShort>cook</titleShort>
+    <description>[PAWN_nameDef] name [PAWN_possessive] his/her [PAWN_pronoun] she/he </description>
+    <skillGains>
+      <Construction>2</Construction>
+      <Intellectual>-2</Intellectual>
+      <Shooting>2</Shooting>
+      <Melee>2</Melee>
+      <Cooking>3</Cooking>
+      <Crafting>1</Crafting>
+    </skillGains>
+    <workDisables>Caring, Social, Firefighting</workDisables>
+    <requiredWorkTags>None</requiredWorkTags>
+    <spawnCategories>
+      <li>Offworld</li>
+      <li>Pirate</li>
+    </spawnCategories>
+	<forcedTraits>
+	<Industriousness>-2</Industriousness>
+	</forcedTraits>
+	<possessions>
+	<GameOfUrBoard>1</GameOfUrBoard>
+	</possessions>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeFemale>Male</bodyTypeFemale>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <shuffleable>False</shuffleable>
+  </BackstoryDef> -->
+	<BackstoryDef>
+		<defName>SCR_SDClass</defName>
+		<identifier>SCR_SDClass</identifier>
+		<slot>Adulthood</slot>
+		<title>safe D-class</title>
+		<titleShort>d-class</titleShort>
+		<description>[PAWN_nameDef] was a death-row inmate or unfortunate prisoner obtained by the SCP Foundation for the purpose of studying SCPs. [PAWN_pronoun] came into contact with safe-classed SCPs on the regular, not requiring [PAWN_possessive] execution at any point.</description>
+		<skillGains>
+			<Construction>2</Construction>
+			<Intellectual>-2</Intellectual>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+		<spawnCategories>
+			<li>Pirate</li>
+			<li>Offworld</li>
+			<li>SCR_Foundation_Back</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<requiredWorkTags>None</requiredWorkTags>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_DDClass</defName>
+		<identifier>SCR_DDClass</identifier>
+		<slot>Adulthood</slot>
+		<title>doomed D-class</title>
+		<titleShort>d-class</titleShort>
+		<description>[PAWN_nameDef] was a death-row inmate or unfortunate prisoner obtained by the SCP Foundation for the purpose of studying SCPs. [PAWN_pronoun] came into contact with Euclid or Keter-classed SCPs on the regular and has been frequently amnesticized. [PAWN_pronoun] was slated for execution.</description>
+		<skillGains>
+			<Construction>2</Construction>
+			<Intellectual>-2</Intellectual>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+		<spawnCategories>
+			<li>Pirate</li>
+			<li>Offworld</li>
+			<li>SCR_Foundation_Back</li>
+			<li>Madman</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<requiredWorkTags>None</requiredWorkTags>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_DClass</defName>
+		<identifier>SCR_DClass</identifier>
+		<slot>Adulthood</slot>
+		<title>D-class</title>
+		<titleShort>d-class</titleShort>
+		<description>[PAWN_nameDef] was convicted of a violent crime and sentenced to death. The SCP Foundation obtained [PAWN_pronoun] for the purpose of studying SCPs. [PAWN_pronoun] was slated for execution.</description>
+		<skillGains>
+			<Construction>2</Construction>
+			<Social>-4</Social>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+		<spawnCategories>
+			<li>Pirate</li>
+			<li>Offworld</li>
+			<li>SCR_Foundation_Back</li>
+			<li>Madman</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_UEClass</defName>
+		<identifier>SCR_UEClass</identifier>
+		<slot>Adulthood</slot>
+		<title>unfortunate E-class</title>
+		<titleShort>E-class</titleShort>
+		<description>[PAWN_nameDef] was exposed to potentially dangerous effects emanating from an SCP or other anomalous source while on duty. [PAWN_pronoun] was changed in some way that [PAWN_pronoun] refuses to explain.</description>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+		</skillGains>
+		<forcedTraits>
+			<PsychicSensitivity>1</PsychicSensitivity>
+		</forcedTraits>
+		<spawnCategories>
+			<li>Pirate</li>
+			<li>Offworld</li>
+			<li>SCR_Foundation_Back</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	<!-- ======================================== [former] Foundation personnel ======================================== -->
+	<BackstoryDef>
+		<defName>SCR_FContainSpecialist</defName>
+		<identifier>SCR_FContainSpecialist</identifier>
+		<slot>Adulthood</slot>
+		<title>foundation containment specialist</title>
+		<titleShort>containment specialist</titleShort>
+		<description>[PAWN_nameDef] is part of a containment team. [PAWN_possessive] containment team is sent out to secure anomalous objects and contain them for further processing.</description>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Researcher</li>
+			<li>SCR_Foundation_Back</li>
+		</spawnCategories>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<forcedTraits>
+			<Nerves>1</Nerves>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_FContainTech</defName>
+		<identifier>SCR_FContainTech</identifier>
+		<slot>Adulthood</slot>
+		<title>foundation containment technician</title>
+		<titleShort>containment technician</titleShort>
+		<description>[PAWN_nameDef] helps refine and maintain the containment of SCPs and other anomalies. [PAWN_pronoun] works closely with other foundation personnel.</description>
+		<skillGains>
+			<Construction>6</Construction>
+			<Intellectual>2</Intellectual>
+			<Crafting>2</Crafting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Researcher</li>
+			<li>SCR_Foundation_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_FResearchAssistant</defName>
+		<identifier>SCR_FResearchAssistant</identifier>
+		<slot>Adulthood</slot>
+		<title>foundation research assistant</title>
+		<titleShort>research assistant</titleShort>
+		<description>[PAWN_nameDef] is a well-rounded assistant among the foundation's research staff. [PAWN_pronoun] is proficient in getting to various locations around the facility, so much so that others have difficulty keeping up with [PAWN_possessive].</description>
+		<skillGains>
+			<Medicine>5</Medicine>
+			<Intellectual>3</Intellectual>
+			<Cooking>2</Cooking>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<forcedTraits>
+			<SpeedOffset>1</SpeedOffset>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Scientist</li>
+			<li>Researcher</li>
+			<li>SCR_Foundation_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_FChemistResearch</defName>
+		<identifier>SCR_FChemistResearch</identifier>
+		<slot>Adulthood</slot>
+		<title>foundation chemistry researcher</title>
+		<titleShort>foundation chemist</titleShort>
+		<description>[PAWN_nameDef] is a specialized researcher trained in chemistry. [PAWN_pronoun] is knowledgeable about chemicals and helps research SCP-related phenomena on a chemical level.</description>
+		<skillGains>
+			<Medicine>5</Medicine>
+			<Intellectual>3</Intellectual>
+			<Cooking>4</Cooking>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Scientist</li>
+			<li>Researcher</li>
+			<li>SCR_Foundation_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_FBotanyResearch</defName>
+		<identifier>SCR_FBotanyResearch</identifier>
+		<slot>Adulthood</slot>
+		<title>foundation botany researcher</title>
+		<titleShort>foundation botanist</titleShort>
+		<description>[PAWN_nameDef] is a specialized researcher trained in botany. [PAWN_pronoun] is knowledgeable about plants and animals, and brings this expertise to the foundation to better contain SCPs and anomalies.</description>
+		<skillGains>
+			<Medicine>3</Medicine>
+			<Intellectual>3</Intellectual>
+			<Plants>4</Plants>
+			<Animals>4</Animals>
+		</skillGains>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>PlantWork</li>
+			<li>Intellectual</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Researcher</li>
+			<li>Scientist</li>
+			<li>SCR_Foundation_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_FAnomalyResearch</defName>
+		<identifier>SCR_FAnomalyResearch</identifier>
+		<slot>Adulthood</slot>
+		<title>foundation anomaly researcher</title>
+		<titleShort>SCP researcher</titleShort>
+		<description>[PAWN_nameDef] is a specialized researcher. [PAWN_pronoun] spends most of [PAWN_possessive] time researching unexplained anomalies, trying to figure out how they operate.</description>
+		<skillGains>
+			<Medicine>2</Medicine>
+			<Intellectual>3</Intellectual>
+			<Animals>2</Animals>
+			<Plants>1</Plants>
+		</skillGains>
+		<forcedTraits>
+			<Nerves>2</Nerves>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>Researcher</li>
+			<li>Scientist</li>
+			<li>SCR_Foundation_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_FSecurityOfficer</defName>
+		<identifier>SCR_FSecurityOfficer</identifier>
+		<slot>Adulthood</slot>
+		<title>foundation security officer</title>
+		<titleShort>security officer</titleShort>
+		<description>[PAWN_nameDef] is part of a larger crew of officers who are tasked with maintaining physical or information security for Foundation projects, operations, and personnel. [PAWN_pronoun] is often the first line of defense against external threats.</description>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Melee>4</Melee>
+			<Shooting>4</Shooting>
+		</skillGains>
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>SCR_Foundation_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_FTacticalResponseO</defName>
+		<identifier>SCR_FTacticalResponseO</identifier>
+		<slot>Adulthood</slot>
+		<title>foundation tactical response officer</title>
+		<titleShort>tactical response officer</titleShort>
+		<description>[PAWN_nameDef] is a skilled member of a combat team. [PAWN_pronoun] helps escort containment teams when situations are dangerous. [PAWN_nameDef] is used to being ready at the drop of a hat, even during sleep.</description>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Social>2</Social>
+		</skillGains>
+		<forcedTraits>
+			<QuickSleeper/>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>SCR_Foundation_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_FFieldAgent</defName>
+		<identifier>SCR_FFieldAgent</identifier>
+		<slot>Adulthood</slot>
+		<title>foundation field agent</title>
+		<titleShort>field agent</titleShort>
+		<description>[PAWN_nameDef] is trained to look for and investigate any signs of unidentified anomalous activity. [PAWN_pronoun] is trained to go undercover in local services.</description>
+		<skillGains>
+			<Social>6</Social>
+			<Medicine>2</Medicine>
+			<Melee>1</Melee>
+			<Shooting>1</Shooting>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>SCR_Foundation_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_FSiteDirector</defName>
+		<identifier>SCR_FSiteDirector</identifier>
+		<slot>Adulthood</slot>
+		<title>foundation site director</title>
+		<titleShort>site director</titleShort>
+		<description>[PAWN_nameDef] is usually the most important person in a local Foundation site. All departmental directors report directly to [PAWN_possessive].</description>
+		<skillGains>
+			<Social>5</Social>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>SCR_Foundation_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<!-- ======================================== GOC ======================================== -->
+	<BackstoryDef>
+		<defName>SCR_GOCUnderSecretary</defName>
+		<identifier>SCR_GOCUnderSecretary</identifier>
+		<slot>Adulthood</slot>
+		<title>GOC undersecretary</title>
+		<titleShort>undersecretary</titleShort>
+		<description>[PAWN_nameDef] is a principal assistant to a high member of the United Galactical Nations. [PAWN_pronoun] position allows insight into politics between nations.</description>
+		<skillGains>
+			<Social>6</Social>
+			<Intellectual>3</Intellectual>
+			<Melee>-2</Melee>
+			<Shooting>-2</Shooting>
+		</skillGains>
+		<forcedTraits>
+			<Kind>0</Kind>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_GOC_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_GOCNexusAssist</defName>
+		<identifier>SCR_GOCNexusAssist</identifier>
+		<slot>Adulthood</slot>
+		<title>GOC nexus assistant</title>
+		<titleShort>nexus assistant</titleShort>
+		<description>[PAWN_nameDef] helps maintain a network of command hubs to coordinate and support local operations. [PAWN_pronoun] has an excellent memory and is quick on [PAWN_possessive] feet.</description>
+		<skillGains>
+			<Social>5</Social>
+			<Intellectual>3</Intellectual>
+			<Melee>-2</Melee>
+			<Shooting>-2</Shooting>
+		</skillGains>
+		<forcedTraits>
+			<SpeedOffset>1</SpeedOffset>
+			<GreatMemory>0</GreatMemory>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_GOC_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_GOCCommandHub</defName>
+		<identifier>SCR_GOCCommandHub</identifier>
+		<slot>Adulthood</slot>
+		<title>GOC command hub leader</title>
+		<titleShort>command leader</titleShort>
+		<description>[PAWN_nameDef] works in one of the many connected command hubs. [PAWN_pronoun] reports to members of the GOC nexus.</description>
+		<skillGains>
+			<Social>5</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_GOC_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_GOCPInvestigator</defName>
+		<identifier>SCR_GOCPInvestigator</identifier>
+		<slot>Adulthood</slot>
+		<title>GOC physics division assessment team investigator</title>
+		<titleShort>investigator</titleShort>
+		<description>[PAWN_nameDef] is a member of one of the physics division's investigation teams. [PAWN_possessive] job is to investigate possible anomalous entities. Throughout [PAWN_possessive] career, [PAWN_pronoun] has gained a slight resistance to psychic phenomena.</description>
+		<skillGains>
+			<Social>3</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<PsychicSensitivity>-1</PsychicSensitivity>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Social</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_GOC_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_GOCPObserver</defName>
+		<identifier>SCR_GOCPObserver</identifier>
+		<slot>Adulthood</slot>
+		<title>GOC physics division assessment team observer</title>
+		<titleShort>observer</titleShort>
+		<description>[PAWN_nameDef] is a member of the physics division's observation team. [PAWN_possessive] task is to observe and determine if the anomaly can be captured or if it must be neutralized. [PAWN_pronoun] is sensitive to psychic phenomena as a result.</description>
+		<skillGains>
+			<Social>5</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<PsychicSensitivity>1</PsychicSensitivity>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_GOC_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_GOCPEliminator</defName>
+		<identifier>SCR_GOCPEliminator</identifier>
+		<slot>Adulthood</slot>
+		<title>GOC physics division eliminator</title>
+		<titleShort>eliminator</titleShort>
+		<description>[PAWN_nameDef] is a member of the physics division, and [PAWN_pronoun] is part of a strike squad trained to eliminate hostile anomalies. [PAWN_possessive] job has hardened [PAWN_possessive] to the reality of the job and the importance of the survival of intelligent life in the galaxy.</description>
+		<skillGains>
+			<Melee>5</Melee>
+			<Shooting>5</Shooting>
+		</skillGains>
+		<forcedTraits>
+			<Tough/>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_GOC_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_GOCPCaptureS</defName>
+		<identifier>SCR_GOCPCaptureS</identifier>
+		<slot>Adulthood</slot>
+		<title>GOC physics division containment specialist</title>
+		<titleShort>containment specialist</titleShort>
+		<description>[PAWN_nameDef] is a member of the physics division, and [PAWN_pronoun] is part of a strike squad trained to capture anomalies. [PAWN_possessive] experiences have led [PAWN_pronoun] to learn and adapt quickly.</description>
+		<skillGains>
+			<Melee>3</Melee>
+			<Shooting>3</Shooting>
+			<Animals>3</Animals>
+			<Plants>3</Plants>
+		</skillGains>
+		<forcedTraits>
+			<FastLearner/>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_GOC_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_GOCPsObserver</defName>
+		<identifier>SCR_GOCPsObserver</identifier>
+		<slot>Adulthood</slot>
+		<title>GOC psyche division science observer</title>
+		<titleShort>science observer</titleShort>
+		<description>[PAWN_nameDef] is a member of the psyche division. [PAWN_pronoun] is tasked with observing any investigation for any potential anomalous emergencies.</description>
+		<skillGains>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_GOC_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_GOCPsAmbassador</defName>
+		<identifier>SCR_GOCPsAmbassador</identifier>
+		<slot>Adulthood</slot>
+		<title>GOC psyche division ambassador</title>
+		<titleShort>ambassador</titleShort>
+		<description>[PAWN_nameDef] is a member of the psyche division. [PAWN_pronoun] is tasked with maintaining diplomatic contacts with non-hostile anomalous or occult powers.</description>
+		<skillGains>
+			<Social>8</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_GOC_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_GOCPtQuartermaster</defName>
+		<identifier>SCR_GOCPtQuartermaster</identifier>
+		<slot>Adulthood</slot>
+		<title>GOC ptolemy division quartermaster</title>
+		<titleShort>quartermaster</titleShort>
+		<description>[PAWN_nameDef] is a member of the ptolemy division. [PAWN_pronoun] helps maintain the distribution of supplies to various GOC facilities around the planetary system.</description>
+		<skillGains>
+			<Social>3</Social>
+			<Construction>3</Construction>
+			<Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Crafting>2</Crafting>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_GOC_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_GOCPtResearcher</defName>
+		<identifier>SCR_GOCPtResearcher</identifier>
+		<slot>Adulthood</slot>
+		<title>GOC ptolemy division researcher</title>
+		<titleShort>researcher</titleShort>
+		<description>[PAWN_nameDef] is a member of the ptolemy division. [PAWN_pronoun] helps coordinate research into new technology as designated by the council of occult organizations.</description>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Construction>3</Construction>
+			<Shooting>-2</Shooting>
+			<Melee>-1</Melee>
+			<Crafting>2</Crafting>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_GOC_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<!-- ======================================== Chaos Insurgency ======================================== -->
+	<BackstoryDef>
+		<defName>SCR_CIGammaResearch</defName>
+		<identifier>SCR_CIGammaResearch</identifier>
+		<slot>Adulthood</slot>
+		<title>CI gamma researcher</title>
+		<titleShort>gamma researcher</titleShort>
+		<description>[PAWN_nameDef] is a member of the Gamma Class. [PAWN_possessive] research skills allowed [PAWN_pronoun] to have a higher position in the Chaos Insurgency. It gives [PAWN_pronoun] access to oversight over Delta Command's orders.</description>
+		<skillGains>
+			<Intellectual>8</Intellectual>
+			<Social>2</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Intellectual</li>
+			<li>Social</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIGammaCommand</defName>
+		<identifier>SCR_CIGammaCommand</identifier>
+		<slot>Adulthood</slot>
+		<title>CI gamma military commander</title>
+		<titleShort>commander</titleShort>
+		<description>[PAWN_nameDef] is a member of the Gamma Class. [PAWN_possessive] position in the Chaos Insurgency's military gives [PAWN_pronoun] access to oversight on Delta Command's orders.</description>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Social>2</Social>
+			<Melee>5</Melee>
+			<Shooting>5</Shooting>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIBetaFieldworker</defName>
+		<identifier>SCR_CIBetaFieldworker</identifier>
+		<slot>Adulthood</slot>
+		<title>CI beta class fieldworker</title>
+		<titleShort>fieldworker</titleShort>
+		<description>[PAWN_nameDef] does various field work requested by Delta Command. [PAWN_pronoun] does not have the privilege of oversight of Delta Command's orders.</description>
+		<skillGains>
+			<Medicine>-2</Medicine>
+			<Social>2</Social>
+			<Melee>2</Melee>
+			<Shooting>2</Shooting>
+		</skillGains>
+		<forcedTraits>
+			<Nerves>1</Nerves>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIAlphaGrunt</defName>
+		<identifier>SCR_CIAlphaGrunt</identifier>
+		<slot>Adulthood</slot>
+		<title>CI alpha class grunt</title>
+		<titleShort>alpha grunt</titleShort>
+		<description>[PAWN_nameDef] is an ordinary Chaos Insurgency grunt. [PAWN_pronoun] was recruited by the Chaos Insurgency as someone highly expendable... not that [PAWN_nameDef] knows that.</description>
+		<skillGains>
+			<Intellectual>-1</Intellectual>
+			<Melee>2</Melee>
+			<Shooting>2</Shooting>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIAlphaRecruit</defName>
+		<identifier>SCR_CIAlphaRecruit</identifier>
+		<slot>Adulthood</slot>
+		<title>CI alpha class recruit</title>
+		<titleShort>alpha recruit</titleShort>
+		<description>[PAWN_nameDef] is a fresh recruit into the Chaos Insurgency. [PAWN_pronoun] is eager to follow the orders of Delta Command. [PAWN_nameDef] is unaware of [PAWN_possessive] expendability and of the dangers of anomalies.</description>
+		<skillGains>
+			<Intellectual>-2</Intellectual>
+			<Medicine>-2</Medicine>
+			<Social>2</Social>
+			<Melee>2</Melee>
+			<Shooting>2</Shooting>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIAlphaEnslaved</defName>
+		<identifier>SCR_CIAlphaEnslaved</identifier>
+		<slot>Adulthood</slot>
+		<title>CI alpha class enslaved recruit</title>
+		<titleShort>enslaved recruit</titleShort>
+		<description>[PAWN_nameDef] was sold into slavery to the Chaos Insurgency. [PAWN_pronoun] is unaware of [PAWN_possessive] expendability and of the dangers of anomalies.</description>
+		<skillGains>
+			<Intellectual>-2</Intellectual>
+			<Medicine>-2</Medicine>
+			<Melee>2</Melee>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIAlphaArchitect</defName>
+		<identifier>SCR_CIAlphaArchitect</identifier>
+		<slot>Adulthood</slot>
+		<title>CI alpha class architect</title>
+		<titleShort>alpha architect</titleShort>
+		<description>[PAWN_nameDef] is an architect recruited by the Chaos Insurgency. [PAWN_pronoun] was lured by the prospect of steady employment, just like many others.</description>
+		<skillGains>
+			<Construction>3</Construction>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIAlphaChef</defName>
+		<identifier>SCR_CIAlphaChef</identifier>
+		<slot>Adulthood</slot>
+		<title>CI alpha class chef</title>
+		<titleShort>alpha chef</titleShort>
+		<description>[PAWN_nameDef] worked as a line cook before joining the Chaos Insurgency. [PAWN_pronoun] was lured by the prospect of steady employment, just like many others.</description>
+		<skillGains>
+			<Cooking>3</Cooking>
+			<Intellectual>-1</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Cooking</li>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIAlphaBiologist</defName>
+		<identifier>SCR_CIAlphaBiologist</identifier>
+		<slot>Adulthood</slot>
+		<title>CI alpha class biologist</title>
+		<titleShort>alpha biologist</titleShort>
+		<description>[PAWN_nameDef] was a skilled biologist when [PAWN_pronoun] took an offer of recruitment from the Chaos Insurgency. [PAWN_pronoun] was lured by the prospect of steady employment, just like many others.</description>
+		<skillGains>
+			<Animals>3</Animals>
+			<Plants>3</Plants>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIAlphaGun</defName>
+		<identifier>SCR_CIAlphaGun</identifier>
+		<slot>Adulthood</slot>
+		<title>CI alpha class gun specialist</title>
+		<titleShort>alpha gun specialist</titleShort>
+		<description>[PAWN_nameDef] is good at servicing weapons, shooting weapons, and not much else. After all, [PAWN_nameDef] joined the Chaos Insurgency without many questions.</description>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Crafting>3</Crafting>
+			<Intellectual>-2</Intellectual>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>ManualSkilled</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIAlphaSapper</defName>
+		<identifier>SCR_CIAlphaSapper</identifier>
+		<slot>Adulthood</slot>
+		<title>CI alpha class sapper</title>
+		<titleShort>alpha sapper</titleShort>
+		<description>[PAWN_nameDef] was happy to take the offer from the Chaos Insurgency, unaware that [PAWN_pronoun] would be raiding facilities. [PAWN_pronoun] was lured by the prospect of steady employment, just like many others.</description>
+		<skillGains>
+			<Melee>4</Melee>
+			<Mining>4</Mining>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>ManualDumb</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIAlphaMedic</defName>
+		<identifier>SCR_CIAlphaMedic</identifier>
+		<slot>Adulthood</slot>
+		<title>CI alpha class medic</title>
+		<titleShort>alpha medic</titleShort>
+		<description>[PAWN_nameDef] is a skilled medical professional. [PAWN_pronoun] encountered anomalous activity one evening and joined the Chaos Insurgency instead of returning to blissful ignorance.</description>
+		<skillGains>
+			<Medicine>3</Medicine>
+			<Intellectual>-1</Intellectual>
+			<Social>2</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIGOCDefector</defName>
+		<identifier>SCR_CIGOCDefector</identifier>
+		<slot>Adulthood</slot>
+		<title>Global Occult Coalition defector</title>
+		<titleShort>GOC defector</titleShort>
+		<description>[PAWN_nameDef] disliked how the Global Occult Coalition was handling anomalies and defected to the Chaos Insurgency.</description>
+		<skillGains>
+			<Melee>3</Melee>
+			<Intellectual>-2</Intellectual>
+			<Social>-2</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIFDefector</defName>
+		<identifier>SCR_CIFDefector</identifier>
+		<slot>Adulthood</slot>
+		<title>Foundation defector</title>
+		<titleShort>Foundation defector</titleShort>
+		<description>[PAWN_nameDef] disliked how the SCP Foundation was handling anomalies and defected to the Chaos Insurgency.</description>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Construction>2</Construction>
+			<Social>-2</Social>
+		</skillGains>
+		<forcedTraits>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+	<BackstoryDef>
+		<defName>SCR_CIViolence</defName>
+		<identifier>SCR_CIViolence</identifier>
+		<slot>Adulthood</slot>
+		<title>CI violence enthusiast</title>
+		<titleShort>violence enthusiast</titleShort>
+		<description>[PAWN_nameDef] was happy to join the Chaos Insurgency, as long as [PAWN_possessive] bloodlust was satiated.</description>
+		<skillGains>
+			<Melee>6</Melee>
+			<Shooting>2</Shooting>
+		</skillGains>
+		<forcedTraits>
+			<Bloodlust>0</Bloodlust>
+		</forcedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+		<spawnCategories>
+			<li>SCR_CI_Back</li>
+		</spawnCategories>
+	</BackstoryDef>
+</Defs>

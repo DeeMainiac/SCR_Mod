@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>SCR_SCP4074R</defName>
+    <label>SCP-4074</label>
+    <description>SCP-4074 is a moth orchid flower that emits sunlight and heat.</description>
+    <modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+
+	<classRating>
+		<li>SCR_CSafe</li>
+		<li>SCR_DDark</li>
+		<li>SCR_RWarning</li>
+	</classRating>
+
+	</li>
+	</modExtensions>
+	<graphicData>
+      <texPath>Things/Plant/SCR_SCP4074</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.3, 0.15)</volume>
+          <offset>(0,0,-0.38)</offset>
+        </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>14</Beauty>
+      <BeautyOutdoors>14</BeautyOutdoors>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <ingestible />
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+	  <harvestTag>Standard</harvestTag>
+      <sowWork>750</sowWork>
+      <growDays>3</growDays>
+	  <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+      <visualSizeRange>0.2~0.5</visualSizeRange>
+      <sowMinSkill>8</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <sowResearchPrerequisites Inherit="False">
+        <li>TreeSowing</li>
+      </sowResearchPrerequisites>
+      <mustBeWildToSow>false</mustBeWildToSow>
+    </plant>
+	<comps>
+	      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+		<overlightRadius>4.0</overlightRadius>
+        <glowColor>(255,255,255,0)</glowColor>
+      </li>
+	  		<li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>7</heatPerSecond>
+        <heatPushMinTemperature>-1000</heatPushMinTemperature>
+		<heatPushMaxTemperature>34</heatPushMaxTemperature>
+      </li>
+	</comps>
+  </ThingDef>
+
+
+</Defs>

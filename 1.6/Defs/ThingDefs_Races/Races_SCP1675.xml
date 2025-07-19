@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="SCR_SCP_Base">
+    <defName>SCR_SCP1675R</defName>
+    <label>SCP-1675</label>
+    <description>SCP-1675 is an autonomous robot that wanders aimlessly until it detects a goose. Upon seeing a goose, it immediately attempts to slaughter it while shouting insults in French.</description>
+    		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>1</containmentTier>
+			</li>
+		</modExtensions>
+	<statBases>
+      <MoveSpeed>3</MoveSpeed>
+      <MarketValue>550</MarketValue>
+      <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+      <ComfyTemperatureMax>45</ComfyTemperatureMax>
+	  <FilthRate>0</FilthRate>
+	  <PsychicSensitivity>0.5</PsychicSensitivity>
+      <ToxicResistance>1</ToxicResistance>
+	  <Flammability>0</Flammability>
+	  <MeatAmount>0</MeatAmount>
+	  <ArmorRating_Heat>2.00</ArmorRating_Heat>
+	  <Wildness>0</Wildness>
+    </statBases>
+			<butcherProducts>
+			<Steel>30</Steel>
+		</butcherProducts>
+    <uiIconScale>1.1</uiIconScale>
+    <race>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+	  <thinkTreeMain>SCR_SCPAI</thinkTreeMain>
+      <body>Scyther</body>
+      <baseHealthScale>0.72</baseHealthScale>
+      <foodType>None</foodType>
+      <roamMtbDays>2</roamMtbDays>
+      <trainability>None</trainability>
+      <lifeExpectancy>200</lifeExpectancy>
+	  <bloodDef>Filth_MachineBits</bloodDef>
+			<leatherDef>Steel</leatherDef>
+			<specificMeatDef>ChunkSlagSteel</specificMeatDef>
+
+	  	  		<wildBiomes>
+				<AridShrubland>.1</AridShrubland>
+				<BorealForest>.1</BorealForest>
+				<ColdBog>.1</ColdBog>
+				<TemperateForest>.1</TemperateForest>
+				<TemperateSwamp>.1</TemperateSwamp>
+				<TropicalRainforest>.1</TropicalRainforest>
+				<TropicalSwamp>.1</TropicalSwamp>
+				<IceSheet>.1</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>.1</Tundra>
+				<Desert>.1</Desert>
+				<ExtremeDesert>.1</ExtremeDesert>
+			</wildBiomes>
+      <lifeStageAges Inherit="False">
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>BulletImpact_Metal</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+	<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <tradeTags>
+	  <li>AnimalExotic</li>
+	  <li>SCPAnimal</li>
+    </tradeTags>
+    <tools>
+	      <li>
+        <label>left grabber</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right grabber</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+	
+  </ThingDef>
+  
+  <PawnKindDef Name="SCR_SCP1675R" ParentName="AnimalKindBase">
+    <defaultFactionType></defaultFactionType>
+    <defName>SCR_SCP1675R</defName>
+    <label>SCP-1675</label>
+    <race>SCR_SCP1675R</race>
+    <combatPower>25</combatPower>
+    <ecoSystemWeight>0</ecoSystemWeight>
+			<wildGroupSize>
+			<min>1</min>
+			<max>1</max>
+		</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/SCR_SCP1675</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>1.3</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+
+
+</Defs>

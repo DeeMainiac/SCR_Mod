@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <EntityCategoryDef>
+    <defName>SCR_SCP</defName>
+    <label>SCPs</label>
+    <listOrder>3</listOrder>
+  </EntityCategoryDef>
+ 
+ </Defs>

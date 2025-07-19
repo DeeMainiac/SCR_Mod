@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<TraderKindDef>
+    <defName>SCR_Orbital_MCD</defName>
+    <label>Marshall, Carter and Dark shell company</label>
+    <orbital>true</orbital>
+	<requestable>true</requestable>
+	<!--<commonality>.8</commonality>-->
+    <stockGenerators>
+      
+      <!-- Resources -->
+     <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>6000~8000</countRange>
+      </li>
+      
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>SCR_SCP578R</thingDef>
+        <countRange>60~120</countRange>
+      </li>
+	  
+	  <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+        <thingDef>ArchiteCapsule</thingDef>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Techprints">
+        <countChances>
+          <li>
+            <count>1</count>
+            <chance>1</chance>
+          </li>
+        </countChances>
+      </li>
+	  <li Class ="StockGenerator_Tag">
+	  <tradeTag>SCPWeapon</tradeTag>
+	  <thingDefCountRange>2~4</thingDefCountRange>
+	  <totalPriceRange>200~1500</totalPriceRange>
+	  </li>
+	  
+	  <li Class ="StockGenerator_Tag">
+	  <tradeTag>SCPArtifact</tradeTag>
+	  <thingDefCountRange>2~3</thingDefCountRange>
+	  <totalPriceRange>300~3000</totalPriceRange>
+	  </li>
+
+	  <li Class="StockGenerator_Animals">
+        <maxWildness>1</maxWildness>
+        <checkTemperature>false</checkTemperature>
+        <tradeTagsSell>
+		  <li>SCPAnimal</li>
+        </tradeTagsSell>
+        <kindCountRange>2~4</kindCountRange>
+        <countRange>5~9</countRange>
+        <createMatingPair>
+          <li>PetSmarter</li>
+        </createMatingPair>
+      </li>
+	  
+	  <!-- WTB -->
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shell_Deadlife</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>VoidSculpture</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shard</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Bioferrite</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>RevenantSpine</thingDef></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+
+<TraderKindDef>
+    <defName>SCR_Orbital_PetSmarter</defName>
+    <label>PetSmarter affiliated trader</label>
+    <orbital>true</orbital>
+	<requestable>true</requestable>
+	<!--<commonality>.8</commonality>-->
+	
+    <stockGenerators>
+      
+	  <li Class="StockGenerator_Animals">
+        <maxWildness>1</maxWildness>
+        <checkTemperature>false</checkTemperature>
+        <tradeTagsSell>
+		  <li>PetSmarter</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>PetSmarter</li>
+        </tradeTagsBuy>
+        <kindCountRange>5~10</kindCountRange>
+        <countRange>10~20</countRange>
+        <createMatingPair>
+          <li>PetSmarter</li>
+        </createMatingPair>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>2000~5000</countRange>
+      </li> 
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

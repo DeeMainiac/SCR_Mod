@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BuildingBase">
+		<defName>SCR_SCP762R</defName>
+		<label>SCP-762</label>
+		<description>SCP-762 is an ancient iron maiden that keeps it's prisoner in a state of suspended animation... painfully.</description>
+				<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<thingClass>Building_CryptosleepCasket</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/SCR_SCP762/SCR_SCP762</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2, 2)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>SCPObjects</li>
+    </thingCategories>
+		<!-- <tradeTags>
+		</tradeTags> -->
+		<pathCost>68</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>0.8</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>20</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,2)</size>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(1,0,0)</interactionCellOffset>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<comps>
+			<li Class="CompProperties_EmptyStateGraphic">
+				<graphicData>
+					<texPath>Things/Buildings/SCR_SCP762</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2, 2)</drawSize>
+				</graphicData>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_ContentsCasket</li>
+		</inspectorTabs>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+	
+	</Defs>

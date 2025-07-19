@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="HatMakeableBase">       
+    <defName>SCR_Glasses</defName>
+    <label>glasses</label>
+    <description>A pair of spectacles perfect for improving vision and research skills.</description>
+    <graphicData>
+      <texPath>Things/Item/Apparel/Foundation/Glasses/SCR_glasses_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>0.01</Mass>
+      <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	<ResearchSpeed>.10</ResearchSpeed>
+	<WorkSpeedGlobal>.10</WorkSpeedGlobal>
+	<GlobalLearningFactor>.10</GlobalLearningFactor>
+    </equippedStatOffsets>
+    <recipeMaker>
+	      <researchPrerequisite>SCR_FoundationGear</researchPrerequisite>
+		  <displayPriority>208</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <developmentalStageFilter >Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Apparel/Foundation/Glasses/SCR_glasses</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>CI</li>
+      </tags>
+      <forceEyesVisibleForRotations>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </forceEyesVisibleForRotations>
+    </apparel>
+  </ThingDef>
+
+
+  <ThingDef ParentName="SCR_ApparelNoColorBase">
+    <defName>SCR_SuitJacket</defName>
+	<label>suit jacket</label>
+    <description>A stylish suit jacket with a tie.</description>
+    <recipeMaker>
+	      <researchPrerequisite>SCR_FoundationGear</researchPrerequisite>
+		  <displayPriority>208</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Apparel/Foundation/Suit/SCR_Suit_Male_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.8</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+	      <SocialImpact>0.15</SocialImpact>
+	</equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Apparel/Foundation/Suit/SCR_Suit</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <tradeTags>
+      <li>BasicClothing</li>
+	  <li>SCR_Foundation</li>
+    </tradeTags>
+  </ThingDef>
+
+<!--
+
+<ThingDef ParentName="SCR_ApparelNoColorBase">
+    <defName>SCR_Labcoat</defName>
+	<label>labcoat</label>
+    <description>A labcoat frequently worn by Foundation personnel.</description>
+    <recipeMaker>
+	      <researchPrerequisite>SCR_FoundationGear</researchPrerequisite>
+		  <displayPriority>208</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Apparel/Foundation/SCR_Labcoat_Hulk_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.8</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Apparel/Foundation/SCR_Labcoat</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <tradeTags>
+      <li>BasicClothing</li>
+	  <li>SCR_Foundation</li>
+    </tradeTags>
+	<researchPrerequisites Inherit="False">
+	<li>SCR_FoundationGear</li>
+	</researchPrerequisites>
+  </ThingDef>
+ -->
+</Defs>

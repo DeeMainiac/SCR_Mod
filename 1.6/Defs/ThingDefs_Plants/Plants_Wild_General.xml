@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--====================================== SCP-610 ======================================== -->
+
+	<ThingDef ParentName="PlantBase">
+		<defName>SCR_SCP610_Grass</defName>
+		<label>tainted grass</label>
+		<description>Wild grass found in SCP-610 zones. Grows anywhere there is a little light and minimally fertile ground.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.50</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/SCR_SCP610_Grass</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+    <hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<leaflessGraphicPath>Things/Plant/SCR_SCP610_Grass</leaflessGraphicPath>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+
+	<!--====================================== SCP-848 ======================================== -->
+	<!-- Not technically a plant, but it works better this way -->
+
+	<ThingDef ParentName="PlantBaseNonEdible">
+		<defName>SCR_SCP848R</defName>
+		<label>SCP-848-2</label>
+		<description>SCP-848-2 is the web of SCP-848, an anomalous golden silk orb weaver. Occasionally, SCP-848-2 will catch other SCPs or creatures, even if they're not from the area.</description>
+        
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CEuclid</li>
+					<li>SCR_DVlam</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+	
+			</li>
+		</modExtensions>
+		<statBases>
+			<BeautyOutdoors>3</BeautyOutdoors>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Nutrition>0.01</Nutrition>
+			<Mass>0.05</Mass>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/SCR_SCP848/SCR_SCP848</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.1, 0.1, 0.1)</volume>
+			</shadowData>
+		</graphicData>
+		<minifiedDef>MinifiedTree</minifiedDef>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>69</pathCost>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>NeverForNutrition</preferability>
+		</ingestible>
+		<plant>
+			<lifespanDaysPerGrowDays>8</lifespanDaysPerGrowDays>
+			<neverBlightable>true</neverBlightable>
+			<growMinGlow>0</growMinGlow>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>15</growDays>
+			<visualSizeRange>0.8~1.2</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<wildOrder>2</wildOrder>
+			<purpose>Beauty</purpose>
+			<allowAutoCut>false</allowAutoCut>
+		</plant>
+		<!--<comps>
+	      <li Class="CompProperties_ScannerMineralsDeep">
+        <scanSpeedStat>ResearchSpeed</scanSpeedStat>
+        <scanFindMtbDays>3</scanFindMtbDays>
+        <scanFindGuaranteedDays>6</scanFindGuaranteedDays>
+        <soundWorking>ScannerGroundPenetrating_Ambience</soundWorking>
+      </li>
+	</comps> -->
+	</ThingDef>
+
+	<!--====================================== SCP-060 ======================================== -->
+
+	<ThingDef ParentName="DeciduousTreeBase">
+		<defName>SCR_SCP060R</defName>
+		<label>SCP-060</label>
+		<description>SCP-060 is a white oak tree. Should it catch fire, it will cause SCP-060-Alpha, an aggressive giant skeleton, to appear. Firefoam is recommended.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CEuclid</li>
+					<li>SCR_DVlam</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+	
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plant/SCR_SCP060/SCR_SCP060_Leaves</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>30</growDays>
+			<leaflessGraphicPath>Things/Plant/SCR_SCP060/SCR_SCP060</leaflessGraphicPath>
+			<immatureGraphicPath>Things/Plant/SCR_SCP060/SCR_SCP060_Leaves</immatureGraphicPath>
+			<visualSizeRange>1.2~2.1</visualSizeRange>
+			<harvestWork>1400</harvestWork>
+			<harvestYield>46</harvestYield>
+			<wildClusterWeight>35</wildClusterWeight>
+			<burnedThingDef>SCR_BurnedSCP060R</burnedThingDef>
+			<choppedThingDef>SCR_ChoppedSCP060R</choppedThingDef>
+			<smashedThingDef>SCR_SmashedSCP060R</smashedThingDef>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="StumpBase" Name="SCR_060SmashedStump">
+		<defName>SCR_SmashedSCP060R</defName>
+		<label>smashed SCP-060 stump</label>
+		<description>The remnants of an SCP-060 instance destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time. Can still summon SCP-060-Alpha if burned.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CEuclid</li>
+					<li>SCR_DVlam</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>-6</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Smashed</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.15, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="StumpBase" Name="SCR_060ChoppedStump">
+		<defName>SCR_ChoppedSCP060R</defName>
+		<label>chopped SCP-060 stump</label>
+		<description>A stump left behind after an SCP-060 instance has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.  Can still summon SCP-060-Alpha if burned.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CEuclid</li>
+					<li>SCR_DVlam</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+		<statBases>
+			<Beauty>1</Beauty>
+			<DeteriorationRate>20</DeteriorationRate>
+
+		</statBases>
+		<plant>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<harvestWork>90</harvestWork>
+		</plant>
+		<graphicData>
+			<texPath>Things/Plant/Stumps/Chopped</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.1, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="StumpBase" Name="SCR_060BurnedStump">
+		<defName>SCR_BurnedSCP060R</defName>
+		<label>burned SCP-060 stump</label>
+		<description>A burned SCP-060 instance's stump. It's ugly and yields no usable wood, but at least it's neutralized.</description>
+		<statBases>
+			<Beauty>-6</Beauty>
+			<Flammability>0</Flammability>
+		</statBases>
+		<plant>
+			<harvestYield>0</harvestYield>
+		</plant>
+		<graphicData>
+			<texPath>Things/Plant/BurnedTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutPlant</shaderType>
+			<shadowData>
+				<volume>(0.15, 0.15, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+	</ThingDef>
+</Defs>

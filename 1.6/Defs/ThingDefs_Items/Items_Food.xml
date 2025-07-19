@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MealFineBase">
+    <defName>SCR_ThunderMuttonMeal</defName>
+    <label>thunder mutton meal</label>
+    <description>An electrifying, tasty dish assembled with care from SCP-594.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Pemmican</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+    </comps>
+	<tradeTags>
+		<li>Foods</li>
+	</tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>SCR_4155SoftServe</defName>
+    <label>vanilla soft serve</label>
+    <description>Non-anomalous soft serve harvested from SCP-4155. It fulfills the need for recreation, but it is not very nutritious.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/SCR_SCP4155SoftServe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.88</drawSize>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>3</MarketValue>
+      <Mass>0.075</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>8</DeteriorationRate>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <joy>0.10</joy>
+      <joyKind>Gluttonous</joyKind>
+      <maxNumToIngestAtOnce>5</maxNumToIngestAtOnce>
+      <defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+    <possessionCount>5</possessionCount>
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>SCR_SCP666HalfJ</defName>
+    <label>SCP-666-1/2-J</label>
+    <description>SCP-666-1/2-J is a salty, mushroom-stuffed crab dish that induces several K-class scenarios in one's guts. Owing to its anomalous properties, it needs neither mushrooms or crab to be cooked, and can be made out of most meat. Those who know how to make it recommended that it shouldn't even be fed to one's enemy.</description>
+	<statBases>
+		<Nutrition>1</Nutrition>
+		<MarketValue>0.02</MarketValue>
+	</statBases>
+    		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DKeneq</li>
+					<li>SCR_RWarning</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+		</modExtensions>
+    <graphicData>
+      <texPath>Things/Item/Meal/NutrientPaste</texPath>
+      <graphicClass>Graphic_MealVariants</graphicClass>
+    </graphicData>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<foodType>Meal, Processed, Liquor, Fluid, Kibble</foodType>
+			<drugCategory>Any</drugCategory>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<chairSearchRadius>4</chairSearchRadius>
+			<ingestSound>Ingest_Pill</ingestSound>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<tableDesired>false</tableDesired>
+			<ingestCommandString>Force-feed {0}</ingestCommandString>
+			<ingestReportString>Force-feeding {0}.</ingestReportString>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SCR_SCP666Half_FoodPoisoning</hediffDef>
+					<severity>0.05</severity>
+				</li>
+			</outcomeDoers>
+	  </ingestible>
+	  <orderedTakeGroup>Drug</orderedTakeGroup>
+	<comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="SCR_VirusConsume" ParentName="MakeableDrugBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Beauty>-4</Beauty>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>150</stackLimit>
+    <thingCategories>
+	  <li>SCPObjects</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Drugs</li>
+	  <li>SCP</li>
+    </tradeTags>
+    <alwaysHaulable>true</alwaysHaulable>
+    <pathCost>14</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <allowedArchonexusCount>-1</allowedArchonexusCount>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+	  <drugCategory>Any</drugCategory>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <chairSearchRadius>8</chairSearchRadius>
+	  <ingestSound>Ingest_Pill</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Take {0}</ingestCommandString>
+      <ingestReportString>Taking {0}.</ingestReportString>
+    </ingestible>
+	    <orderedTakeGroup>Drug</orderedTakeGroup>
+	<comps>
+	      <li Class="CompProperties_Forbiddable"/>
+	</comps>
+  </ThingDef>
+
+  <ThingDef ParentName="SCR_VirusConsume">
+    <defName>SCR_SCP1797Consume</defName>
+    <label>SCP-1797 sample</label>
+    <description>A sample of SCP-1797.</description>
+	    		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CEuclid</li>
+					<li>SCR_DKeneq</li>
+					<li>SCR_RWarning</li>
+				</classRating>
+				<containmentTier>1</containmentTier>
+			</li>
+		</modExtensions>
+    <descriptionHyperlinks>
+      <HediffDef>SCR_SCP1797R</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Penoxycyline</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(219, 219, 255)</color>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>1000</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SCR_SCP1797R</hediffDef>
+          <severity>0.05</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+	    <recipeMaker>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+	  <SCR_SCP1797Meat>10</SCR_SCP1797Meat>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+    <allowedArchonexusCount>500</allowedArchonexusCount>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>SCR_AdministerSCP1797R</defName>
+    <label>administer SCP-1797</label>
+    <description>Administer a sample of SCP-1797.</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Administering SCP-1797.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>60</workAmount>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+      <thingDefs>
+        <li>SCR_SCP1797Consume</li>
+      </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_SCP1797Consume</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+</Defs>

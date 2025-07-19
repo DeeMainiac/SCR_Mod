@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!--
+  <WorldObjectDef>
+    <defName>SCR_AbandonedContainmentFacility</defName>
+    <label>abandoned SCP containment facility</label>
+    <description>An abandoned SCP Containment Facility. SCPs of some kind likely lurk inside.</description>
+    <worldObjectClass>Site</worldObjectClass>  C# Class that inherits from WorldObject, might need custom 
+    <texture>World/WorldObjects/DefaultSettlement</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/SCR</expandingIconTexture>
+    <expandingIconPriority>70</expandingIconPriority>
+    <comps>
+      <li Class="WorldObjectCompProperties_Timeout" />
+    </comps>
+  </WorldObjectDef>
+
+-->
+
+</Defs>

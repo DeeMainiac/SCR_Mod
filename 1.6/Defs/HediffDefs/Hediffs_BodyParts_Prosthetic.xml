@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<!-- SCP-3033 -->
+
+<!-- this is when it's in the pawn -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>SCR_SCP30331R</defName>
+    <label>SCP-3033-1</label>
+    <labelNoun>an SCP-3033-1</labelNoun>
+    <description>An installed SCP-3033-1 "Mike" unit implant.</description>
+	    <modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+	<li>SCR_CEuclid</li>
+	<li>SCR_DKeneq</li>
+	<li>SCR_RNotice</li>
+	</classRating>	
+		<containmentTier>1</containmentTier>
+		<isTranqable>false</isTranqable>
+	</li>
+	</modExtensions>
+    <descriptionHyperlinks><ThingDef>SCR_SCP30331R</ThingDef></descriptionHyperlinks>
+          <stages>
+         <li>
+            <painFactor>0</painFactor>
+            <restFallFactor>0.1</restFallFactor>
+            <hungerRateFactor>0.1</hungerRateFactor>
+			<disabledWorkTags>
+			<li>Caring</li>
+			<li>Animals</li>
+			<li>Intellectual</li>
+			<li>ManualSkilled</li>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			</disabledWorkTags>
+            <capMods>
+               <li>
+			<capacity>Manipulation</capacity>
+			<setMax>.75</setMax>
+               </li>
+			<li>
+			<capacity>Talking</capacity>
+			<setMax>0</setMax>
+               </li>
+            </capMods>
+         </li>
+      </stages>
+    <spawnThingOnRemoved>SCR_SCP30331R</spawnThingOnRemoved>
+  </HediffDef>
+
+<!-- object on ground -->
+
+  <ThingDef ParentName="BodyPartBase">
+    <defName>SCR_SCP30331R</defName>
+    <label>SCP-3033-1</label>
+    <description>SCP-3033-1 is a brain implant by the Chaos Insurgency to completely control a pawn via another pawn with an SCP-3033-2 "Controller" implant. This implant also gives an immunity to pain and reduces fine motor control, preventing numerous tasks from being done. It is completely inert when not installed.</description>
+	<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+	<li>SCR_CEuclid</li>
+	<li>SCR_DKeneq</li>
+	<li>SCR_RNotice</li>
+	</classRating>	
+		<containmentTier>1</containmentTier>
+	<isTranqable>false</isTranqable>
+	</li>
+	</modExtensions>
+	<descriptionHyperlinks>
+	<RecipeDef>SCR_InstallSCP30331R</RecipeDef>
+	<ThingDef>SCR_SCP30332R</ThingDef>
+	</descriptionHyperlinks>
+	
+    <techHediffsTags>
+      <li>Spacer</li>
+    </techHediffsTags>
+  </ThingDef>
+ 
+ <!--                                    SCP-3033-2                 -->
+ 
+   <HediffDef ParentName="ImplantHediffBase">
+    <defName>SCR_SCP30332R</defName>
+    <label>SCP-3033-2</label>
+    <labelNoun>an SCP-3033-2</labelNoun>
+    <description>An installed SCP-3033-2 "Controller" unit implant.</description>
+	    <modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+	<li>SCR_CEuclid</li>
+	<li>SCR_DKeneq</li>
+	<li>SCR_RNotice</li>
+	</classRating>	
+		<containmentTier>1</containmentTier>
+		<isTranqable>false</isTranqable>
+	</li>
+	</modExtensions>
+    <descriptionHyperlinks><ThingDef>SCR_SCP30332R</ThingDef></descriptionHyperlinks>
+          <stages>
+         <li>
+            <painFactor>0</painFactor>
+         </li>
+      </stages>
+    <spawnThingOnRemoved>SCR_SCP30332R</spawnThingOnRemoved>
+  </HediffDef>
+ 
+   <ThingDef ParentName="BodyPartBase">
+    <defName>SCR_SCP30332R</defName>
+    <label>SCP-3033-2</label>
+    <description>SCP-3033-2 is a brain implant by the Chaos Insurgency to completely control pawns with an SCP-3033-1 "Mike" unit implant. This implant also gives an immunity to pain. It is completely inert when not installed.</description>
+	<modExtensions>
+	<li Class="SecureContainRimworld.CProceduresExtension">
+	<classRating>
+	<li>SCR_CEuclid</li>
+	<li>SCR_DKeneq</li>
+	<li>SCR_RNotice</li>
+	</classRating>	
+		<containmentTier>1</containmentTier>
+	<isTranqable>false</isTranqable>
+	</li>
+	</modExtensions>
+	<descriptionHyperlinks>
+	<RecipeDef>SCR_InstallSCP30332R</RecipeDef>
+	<ThingDef>SCR_SCP30331R</ThingDef>
+	</descriptionHyperlinks>
+    <techHediffsTags>
+      <li>Spacer</li>
+    </techHediffsTags>
+  </ThingDef>
+ 
+
+</Defs>

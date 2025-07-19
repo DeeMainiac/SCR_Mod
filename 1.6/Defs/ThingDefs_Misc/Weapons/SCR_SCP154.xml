@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>SCR_Bullet_SCP154R</defName>
+		<label>arm projectile</label>
+		<projectile>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.2</armorPenetrationBase>
+			<speed>50</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Projectile/Arm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>SCR_SCP154R</defName>
+		<label>SCP-154</label>
+		<description>SCP-154 is a pair of large bronze bracelets that, when worn and aimed like a bow, causes the user's arm bones to be used as a deadly projectile. The user's bones are instantly regenerated with great pain.</description>
+		<modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RWarning</li>
+				</classRating>
+			</li>
+		</modExtensions>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SCR_SCP154</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Bow_Large</soundInteract>
+		<weaponTags>
+			<li>SCR_SCP</li>
+		</weaponTags>
+		<tradeTags>
+		<li>SCPWeapon</li>
+		</tradeTags>
+		<weaponClasses>
+			<li>LongShots</li>
+		</weaponClasses>
+		<statBases>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.85</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SCR_Bullet_SCP154R</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>29.9</range>
+				<soundCast>Bow_Large</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

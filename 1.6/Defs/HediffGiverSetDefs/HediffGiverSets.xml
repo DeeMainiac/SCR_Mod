@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffGiverSetDef>
+		<defName>SCR_SCP3465RImmunity</defName>
+		<hediffGivers>
+
+			<li Class="HediffGiver_Birthday">
+				<hediff>SCR_SCP3465Immunity</hediff>
+				<ageFractionChanceCurve>
+					<points>
+						<li>(0, 1)</li>
+						<li>(1, 1)</li>
+					</points>
+				</ageFractionChanceCurve>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+
+	<HediffGiverSetDef>
+		<defName>TSP_ST_SCP_610_Immunity_Processing</defName>
+		<hediffGivers>
+
+			<li Class="HediffGiver_Birthday">
+				<hediff>TSP_SCR_610_CannotInfectSelf</hediff>
+				<ageFractionChanceCurve>
+					<points>
+						<li>(0, 1)</li>
+						<li>(1, 1)</li>
+					</points>
+				</ageFractionChanceCurve>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+
+
+</Defs>

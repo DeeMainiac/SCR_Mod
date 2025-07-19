@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="DrugBase">
+    <defName>SCR_SCP2022R</defName>
+    <label>SCP-2022 pill</label>
+    <description>SCP-2022 is a glowing yellow gelatin pill that improves immune health and gives pleasant thoughts. Overdosing can cause dangerous side effects.</description>
+    <modExtensions>
+			<li Class="SecureContainRimworld.CProceduresExtension">
+				<classRating>
+					<li>SCR_CSafe</li>
+					<li>SCR_DDark</li>
+					<li>SCR_RNotice</li>
+				</classRating>
+				<containmentTier>0</containmentTier>
+			</li>
+	</modExtensions>
+	<graphicData>
+      <texPath>Things/Item/Drug/Penoxycyline</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  	  <color>(187, 203, 40)</color>
+    			<drawSize>.8</drawSize>
+	</graphicData>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MarketValue>800</MarketValue>
+	  <Mass>0.005</Mass>
+    </statBases>
+	    <techLevel>Spacer</techLevel>
+    <thingCategories>
+	  <li>SCPObjects</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+	<tradeTags>
+	<li>SCPArtifact</li>
+	</tradeTags>
+	<ingestible>
+	<foodType>Processed</foodType>
+	<preferability>NeverForNutrition</preferability>
+	  <drugCategory>Any</drugCategory>
+	  <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <chairSearchRadius>8</chairSearchRadius>
+	  <ingestSound>Ingest_Pill</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Take {0}</ingestCommandString>
+      <ingestReportString>Taking {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SCR_SCP2022High</hediffDef>
+          <severity>1.0</severity>
+        </li>
+		        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AmbrosiaTolerance</hediffDef>
+          <severity>0.032</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+	<orderedTakeGroup>Drug</orderedTakeGroup>
+    <comps>
+	 <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+		<overlightRadius>4.0</overlightRadius>
+        <glowColor>(255,255,255,0)</glowColor>
+      </li>
+	    <li Class="CompProperties_Drug">
+        <chemical>Ambrosia</chemical>
+        <addictiveness>0.1</addictiveness>
+        <minToleranceToAddict>0.15</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>30</listOrder>
+      </li>
+    </comps>
+	    <allowedArchonexusCount>5</allowedArchonexusCount>
+  </ThingDef>
+  
+  
+  
+    <HediffDef>
+    <defName>SCR_SCP2022High</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>SCP-2022</label>
+    <description>SCP-2022-induced health benefits. Increases resistance to diseases, infections, and improves healing.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.2</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+        <li>
+	<minSeverity>0.1</minSeverity>
+          <makeImmuneTo>
+            <li>Malaria</li>
+            <li>SleepingSickness</li>
+            <li>Plague</li>
+          </makeImmuneTo>
+		<naturalHealingFactor>1.2</naturalHealingFactor> 
+		  </li>
+      </stages>
+	  
+  </HediffDef>
+  
+  
+  <RecipeDef>
+    <defName>Administer_SCP2022R</defName>
+    <label>administer SCP-2022</label>
+    <description>Administer a SCP-2022 pill to improve immune health and mood.</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Administering SCP-2022.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>100</workAmount>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SCR_SCP2022R</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SCR_SCP2022R</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+    
+  </Defs>
