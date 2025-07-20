@@ -32,7 +32,7 @@ Got one or all of the DLCs? There are some SCPs and factions that get more of th
 
 # Current SCPs
 
-Almost 50 are available! Check this [wiki page](https://github.com/DeeMainiac/SCR_Mod/wiki/List-of-SCPs-and-factions) for a handy dandy list. 
+Over 50 are available! Check this [wiki page](https://github.com/DeeMainiac/SCR_Mod/wiki/List-of-SCPs-and-factions) for a handy dandy list. 
 
 # Credits
 

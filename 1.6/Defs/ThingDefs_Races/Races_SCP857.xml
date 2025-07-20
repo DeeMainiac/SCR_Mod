@@ -589,9 +589,6 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
 		</tools>
-		<comps>
-			 <li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"></li> <!-- It flies! -->
-		</comps>
 		<tradeTags>
 			<li>AnimalFighter</li>
 		</tradeTags>
